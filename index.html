@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Solvyr — Technical Pilot</title>
-    <meta name="description" content="Solvyr is a technical pilot for batch-oriented AI inference on distributed household GPUs." />
+    <meta
+      name="description"
+      content="Solvyr is a technical pilot for batch-oriented AI inference on distributed household GPUs."
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
@@ -15,7 +18,9 @@
           <div class="mark" aria-hidden="true">S</div>
           <div class="brandtext">
             <div class="name">Solvyr</div>
-            <div class="tag">Technical pilot · batch inference on distributed household GPUs</div>
+            <div class="tag">
+              Technical pilot · batch inference on distributed household GPUs
+            </div>
           </div>
         </div>
 
@@ -33,15 +38,19 @@
         <div class="container">
           <h1>Batch-oriented AI inference on distributed household GPUs.</h1>
           <p class="lede">
-            Solvyr is an early-stage <strong>technical pilot</strong> for running retry-safe, latency-insensitive inference workloads
-            on a constrained pool of household GPUs (starting with RTX 3090).
+            Solvyr is an early-stage <strong>technical pilot</strong> for running
+            retry-safe, latency-insensitive inference workloads on distributed
+            household GPUs (starting with RTX 3090).
           </p>
 
           <div class="callouts">
             <div class="card">
               <div class="kicker">Status</div>
               <div class="big">Pilot-only</div>
-              <p>No UI, no SLA, no automation promises. Hands-on onboarding.</p>
+              <p>
+                <strong>No UI, no SLA, no automation.</strong> Hands-on
+                onboarding, bounded scope.
+              </p>
             </div>
             <div class="card">
               <div class="kicker">Best for</div>
@@ -51,7 +60,10 @@
             <div class="card">
               <div class="kicker">Not for</div>
               <div class="big">Real-time</div>
-              <p>Low-latency APIs, interactive chat, long reservations, or “must never fail”.</p>
+              <p>
+                Low-latency APIs, interactive chat, long reservations, or “must
+                never fail”.
+              </p>
             </div>
           </div>
 
@@ -61,7 +73,8 @@
           </div>
 
           <p class="fine">
-            We optimize for <strong>cost-per-result</strong> and repeatable execution on unreliable nodes, not for latency guarantees.
+            We optimize for <strong>cost-per-result</strong> and repeatable
+            execution on unreliable nodes — not latency guarantees.
           </p>
         </div>
       </section>
@@ -73,20 +86,26 @@
             <div class="panel">
               <h3>Technical pilot (not a product launch)</h3>
               <p>
-                Solvyr is a deliberately constrained system to validate reliability, retries, and economics of batch inference on distributed GPUs.
-                It is not a public signup, and we keep scope tight.
+                Solvyr is a deliberately constrained system to validate
+                reliability, retries, and economics of batch inference on
+                distributed GPUs. It is not a public signup, and we keep scope
+                tight.
               </p>
             </div>
             <div class="panel">
               <h3>Work-unit model</h3>
               <p>
-                Nodes pull small, retryable work units (seconds to a few minutes). Failures are expected; retries and failure visibility are first-class.
+                Nodes pull small, retryable work units (seconds to a few minutes).
+                Failures are expected; retries and failure visibility are
+                first-class.
               </p>
             </div>
             <div class="panel">
               <h3>Security posture</h3>
               <p>
-                Outbound-only from nodes. No exposed home ports. Controlled connectivity (VPN/mesh). We prioritize correctness and containment over convenience.
+                Outbound-only from nodes. No exposed home ports. Controlled
+                connectivity (VPN/mesh). We prioritize correctness and
+                containment over convenience.
               </p>
             </div>
           </div>
@@ -105,12 +124,17 @@
             <div class="check ok">Latency-insensitive (seconds–minutes is fine)</div>
             <div class="check ok">Retry-safe (can be re-run without causing harm)</div>
             <div class="check ok">Inputs/outputs can be minimized and audited</div>
-            <div class="check warn">You can tolerate occasional failures during the pilot</div>
-            <div class="check no">You need strict uptime or low-latency responses</div>
+            <div class="check warn">
+              You can tolerate occasional failures during the pilot
+            </div>
+            <div class="check no">
+              You need strict uptime or low-latency responses
+            </div>
           </div>
 
           <div class="note">
-            <strong>Rule of thumb:</strong> if it barely fits VRAM or needs complex multi-GPU orchestration, it’s not v0.
+            <strong>Rule of thumb:</strong> if it barely fits VRAM or needs complex
+            multi-GPU orchestration, it’s not v0.
           </div>
         </div>
       </section>
@@ -124,7 +148,10 @@
               <div class="num">1</div>
               <div>
                 <h3>Quick fit check (15 minutes)</h3>
-                <p>You share one representative job: model, input shape, runtime expectations, retry-safety, and constraints.</p>
+                <p>
+                  You share one representative job: model, input shape, runtime
+                  expectations, retry-safety, and constraints.
+                </p>
               </div>
             </div>
 
@@ -132,7 +159,10 @@
               <div class="num">2</div>
               <div>
                 <h3>Minimal integration</h3>
-                <p>One customer ID, one API token, one endpoint, one sample payload. Manual ops. Billing only on successful completed work.</p>
+                <p>
+                  One customer ID, one API token, one endpoint, one sample
+                  payload. Manual ops. Billing only on successful completed work.
+                </p>
               </div>
             </div>
 
@@ -140,7 +170,10 @@
               <div class="num">3</div>
               <div>
                 <h3>Run a bounded pilot</h3>
-                <p>We test survivability (retries, failure modes, tail latencies), correctness checks, and cost-per-run versus your baseline.</p>
+                <p>
+                  We test survivability (retries, failure modes, tail latencies),
+                  correctness checks, and cost-per-run versus your baseline.
+                </p>
               </div>
             </div>
 
@@ -148,7 +181,10 @@
               <div class="num">4</div>
               <div>
                 <h3>Decide, fast</h3>
-                <p>At the end we decide: proceed (expand), pause, or stop. No long tail of “maybe”.</p>
+                <p>
+                  At the end we decide: proceed (expand), pause, or stop. No long
+                  tail of “maybe”.
+                </p>
               </div>
             </div>
           </div>
@@ -159,13 +195,16 @@
         <div class="container">
           <h2>Contact</h2>
           <p class="lede small">
-            If you’re evaluating batch inference economics and can tolerate a constrained technical pilot, reach out.
+            If you’re evaluating batch inference economics and can tolerate a
+            constrained technical pilot, reach out.
           </p>
 
           <div class="contact">
             <div class="contactcard">
               <div class="label">Email</div>
-              <div class="value"><a href="mailto:hello@solvyr.example">hello@solvyr.example</a></div>
+              <div class="value">
+                <a href="mailto:hello@solvyr.example">hello@solvyr.example</a>
+              </div>
               <div class="hint">Replace with your real address later.</div>
             </div>
 
@@ -182,7 +221,9 @@
 
           <footer class="footer">
             <div>© <span id="y"></span> Solvyr</div>
-            <div class="muted">This page is a draft intended for pilot discussions.</div>
+            <div class="muted">
+              Private technical pilots · Q1 2026 · Draft for pilot discussions
+            </div>
           </footer>
         </div>
       </section>
