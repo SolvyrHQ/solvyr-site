@@ -3,11 +3,32 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Solvyr — Technical Pilot</title>
     <meta
       name="description"
       content="Solvyr is a technical pilot for batch-oriented AI inference on distributed household GPUs."
     />
+
+    <!-- Favicons (use relative paths for GitHub Pages + local) -->
+    <link rel="icon" href="./assets/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16.png"
+    />
+
+    <!-- Performance: preload logo (PNG, because the SVG file is broken right now) -->
+    <link rel="preload" as="image" href="./assets/logo/solvyr-icon-64.png" />
+
+    <!-- Styles -->
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
@@ -15,7 +36,12 @@
     <header class="top">
       <div class="container">
         <div class="brand">
-          <div class="mark" aria-hidden="true">S</div>
+          <!-- Replaces the old "S" mark -->
+          <img
+            class="brandlogo"
+            src="./assets/logo/solvyr-icon-64.png"
+            alt="Solvyr"
+          />
           <div class="brandtext">
             <div class="name">Solvyr</div>
             <div class="tag">
@@ -55,7 +81,9 @@
             <div class="card">
               <div class="kicker">Best for</div>
               <div class="big">Seconds–minutes</div>
-              <p>Embeddings, classification, tagging, summarization, offline jobs.</p>
+              <p>
+                Embeddings, classification, tagging, summarization, offline jobs.
+              </p>
             </div>
             <div class="card">
               <div class="kicker">Not for</div>
@@ -203,9 +231,9 @@
             <div class="contactcard">
               <div class="label">Email</div>
               <div class="value">
-                <a href="mailto:hello@solvyr.example">hello@solvyr.example</a>
+                <a href="mailto:hello@solvyr.com">hello@solvyr.com</a>
               </div>
-              <div class="hint">Replace with your real address later.</div>
+              <div class="hint">For pilot discussions only.</div>
             </div>
 
             <div class="contactcard">
