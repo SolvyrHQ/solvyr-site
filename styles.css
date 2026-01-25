@@ -16,6 +16,11 @@
 *{ box-sizing:border-box; }
 html,body{ height:100%; }
 
+/* Make anchor jumps account for fixed header (fallback) */
+html{
+  scroll-padding-top: 88px;
+}
+
 body{
   margin:0;
   padding-top: 72px; /* header height */
@@ -40,7 +45,7 @@ a:hover{ text-decoration:underline; }
   margin:0 auto;
 }
 
-/* Header: fixed (more robust than sticky across browsers/containers) */
+/* Header: fixed (robust) */
 .top{
   position: fixed;
   top: 0;
@@ -195,9 +200,13 @@ h1{
   color:var(--faint);
 }
 
+/* Sections */
 .section{
   padding: 46px 0;
   border-top: 1px solid var(--line);
+
+  /* The real fix for #anchors with a fixed header */
+  scroll-margin-top: 88px;
 }
 .section.alt{
   background: rgba(12,17,28,.55);
