@@ -21,11 +21,7 @@
     <header class="top">
       <div class="container">
         <div class="brand">
-          <img
-            class="brandlogo"
-            src="./assets/brand/icon.png"
-            alt="Solvyr"
-          />
+          <img class="brandlogo" src="./assets/brand/icon.png" alt="Solvyr" />
           <div class="brandtext">
             <div class="name">Solvyr</div>
             <div class="tag">
@@ -63,10 +59,11 @@
               </p>
             </div>
             <div class="card">
-              <div class="kicker">Best for</div>
-              <div class="big">Seconds–minutes</div>
+              <div class="kicker">Billing</div>
+              <div class="big">Success-only</div>
               <p>
-                Embeddings, classification, tagging, summarization, offline jobs.
+                We bill only on <strong>successful completed work</strong>.
+                Failures and retries are not billed.
               </p>
             </div>
             <div class="card">
@@ -116,8 +113,9 @@
               <h3>Security posture</h3>
               <p>
                 Outbound-only from nodes. No exposed home ports. Controlled
-                connectivity (VPN/mesh). We prioritize correctness and
-                containment over convenience.
+                connectivity (VPN/mesh). This pilot is not a fit if you require
+                <strong>SOC2/ISO</strong> today, vendor security reviews, strict
+                data residency guarantees, or audited access controls.
               </p>
             </div>
           </div>
@@ -142,6 +140,11 @@
             <div class="check no">
               You need strict uptime or low-latency responses
             </div>
+          </div>
+
+          <div class="note">
+            <strong>Hard gate:</strong> if re-running the same job 3–5x is
+            unacceptable, this pilot is not a fit.
           </div>
 
           <div class="note">
@@ -200,6 +203,20 @@
               </div>
             </div>
           </div>
+
+          <div class="note">
+            <strong>Pilot intake checklist:</strong>
+            workload type, typical runtime (range), model + rough VRAM requirement,
+            retry-safety notes, one sample input/output, and what you compare
+            against (cost / ops burden / reliability).
+          </div>
+
+          <div class="note">
+            <strong>What you get back:</strong>
+            results + logs, a short summary of observed failure modes, a
+            cost-per-run estimate (with assumptions), and a clear go/no-go
+            recommendation.
+          </div>
         </div>
       </section>
 
@@ -217,7 +234,7 @@
               <div class="value">
                 <a href="mailto:vandalen.janwouter@gmail.com">vandalen.janwouter@gmail.com</a>
               </div>
-              <div class="hint">Direct contact for early technical pilot discussions only.</div>
+              <div class="hint">Direct contact for early technical pilots.</div>
             </div>
 
             <div class="contactcard">
