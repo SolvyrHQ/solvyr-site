@@ -61,17 +61,11 @@ a:hover{ text-decoration:underline; }
   gap:12px;
 }
 
-.mark{
-  width:40px;
-  height:40px;
-  display:grid;
-  place-items:center;
-  border-radius: 12px;
-  background: linear-gradient(135deg, rgba(134,168,255,.25), rgba(141,255,214,.18));
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
-  font-weight:700;
-  letter-spacing:.02em;
+.brandlogo{
+  width:34px;
+  height:34px;
+  display:block;
+  object-fit:contain;
 }
 
 .brandtext .name{
@@ -337,40 +331,4 @@ h2{
   .grid{ grid-template-columns: 1fr; }
   .contact{ grid-template-columns: 1fr; }
   .brandtext .tag{ display:none; }
-}
-
-/* Brand logo (replaces .mark) */
-.brandlogo {
-  height: 34px;
-  width: auto;
-  display: block;
-}
-
-/* If your .brand used gap/align already, leave it; otherwise: */
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-/* Brand logo in header */
-.brandlogo{
-  height: 34px;
-  width: 34px;
-  display: block;
-  border-radius: 10px;
-  background: transparent;
-  box-shadow: none;
-  object-fit: contain;
-}
-
-/* Brand row spacing */
-.brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-}
-
-/* Optional: slightly tighter topbar feel */
-.top .container{
-  align-items:center;
 }
