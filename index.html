@@ -10,8 +10,14 @@
       content="Solvyr is a technical pilot for batch-oriented AI inference on distributed household GPUs."
     />
 
-    <!-- Single favicon -->
-    <link rel="icon" href="/favicon.ico" />
+    <!-- Minimal favicon -->
+    <link rel="icon" href="./favicon.ico" />
+
+    <!-- Optional: sets browser UI tint on mobile -->
+    <meta name="theme-color" content="#f6f8fb" />
+
+    <!-- Performance: preload brand icon -->
+    <link rel="preload" as="image" href="./assets/brand/icon.png" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="./styles.css" />
@@ -20,9 +26,15 @@
   <body>
     <header class="top">
       <div class="container">
-        <!-- Brand (clickable, goes to homepage) -->
-        <a href="/" class="brand">
-          <img class="brandlogo" src="./assets/brand/icon.png" alt="Solvyr" />
+        <!-- Brand is clickable → back to top -->
+        <a class="brand" href="#top" aria-label="Solvyr — Back to top">
+          <img
+            class="brandlogo"
+            src="./assets/brand/icon.png"
+            alt="Solvyr icon"
+            width="34"
+            height="34"
+          />
           <div class="brandtext">
             <div class="name">Solvyr</div>
             <div class="tag">
@@ -31,24 +43,53 @@
           </div>
         </a>
 
-        <nav class="nav">
+        <nav class="nav" aria-label="Primary navigation">
           <a href="#what">What</a>
           <a href="#fit">Fit</a>
           <a href="#how">How pilots work</a>
+          <a href="#who">Who we are</a>
           <a href="#contact" class="pill">Contact</a>
         </nav>
       </div>
     </header>
 
+    <!-- Anchor target for "back to top" -->
+    <div id="top" aria-hidden="true"></div>
+
     <main>
       <section class="hero">
         <div class="container">
           <h1>Batch-oriented AI inference on distributed household GPUs.</h1>
+
           <p class="lede">
             Solvyr is an early-stage <strong>technical pilot</strong> for running
             retry-safe, latency-insensitive inference workloads on distributed
             household GPUs (starting with RTX 3090).
           </p>
+
+          <!-- More dominant contact (above the fold) -->
+          <div class="heroContact">
+            <div class="heroContactText">
+              <div class="heroContactKicker">Pilot inquiries</div>
+              <div class="heroContactLine">
+                Email:
+                <a class="heroEmail" href="mailto:vandalen.janwouter@gmail.com"
+                  >vandalen.janwouter@gmail.com</a
+                >
+              </div>
+              <div class="heroContactHint">
+                If you include model + typical runtime + VRAM estimate, we can
+                respond fast.
+              </div>
+            </div>
+
+            <div class="heroContactActions">
+              <a class="button primary" href="mailto:vandalen.janwouter@gmail.com"
+                >Email me</a
+              >
+              <a class="button secondary" href="#contact">What to include</a>
+            </div>
+          </div>
 
           <div class="callouts">
             <div class="card">
@@ -60,11 +101,10 @@
               </p>
             </div>
             <div class="card">
-              <div class="kicker">Billing</div>
-              <div class="big">Success-only</div>
+              <div class="kicker">Best for</div>
+              <div class="big">Seconds–minutes</div>
               <p>
-                We bill only on <strong>successful completed work</strong>.
-                Failures and retries are not billed.
+                Embeddings, classification, tagging, summarization, offline jobs.
               </p>
             </div>
             <div class="card">
@@ -75,11 +115,6 @@
                 never fail”.
               </p>
             </div>
-          </div>
-
-          <div class="cta">
-            <a class="button" href="#contact">Ask about a pilot</a>
-            <a class="button secondary" href="#fit">Check workload fit</a>
           </div>
 
           <p class="fine">
@@ -114,9 +149,8 @@
               <h3>Security posture</h3>
               <p>
                 Outbound-only from nodes. No exposed home ports. Controlled
-                connectivity (VPN/mesh). This pilot is not a fit if you require
-                <strong>SOC2/ISO</strong> today, vendor security reviews, strict
-                data residency guarantees, or audited access controls.
+                connectivity (VPN/mesh). We prioritize correctness and
+                containment over convenience.
               </p>
             </div>
           </div>
@@ -204,24 +238,49 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="note">
-            <strong>Pilot intake checklist:</strong>
-            workload type, typical runtime (range), model + rough VRAM requirement,
-            retry-safety notes, one sample input/output, and what you compare
-            against (cost / ops burden / reliability).
-          </div>
+      <section id="who" class="section alt">
+        <div class="container">
+          <h2>Who we are</h2>
+          <p class="lede small">
+            A small founder–engineer team running a focused technical pilot.
+          </p>
 
-          <div class="note">
-            <strong>What you get back:</strong>
-            results + logs, a short summary of observed failure modes, a
-            cost-per-run estimate (with assumptions), and a clear go/no-go
-            recommendation.
+          <div class="grid">
+            <div class="panel">
+              <h3>Jan (founder / operator)</h3>
+              <p>
+                Runs pilot onboarding and ops with a strong bias for scope
+                discipline: small work units, retries-first, and measurable
+                cost-per-result. The goal is to validate reliability and
+                economics quickly—without “platform” theater.
+              </p>
+            </div>
+
+            <div class="panel">
+              <h3>Maksym (founding engineer)</h3>
+              <p>
+                Builds the runtime and reliability foundation: predictable node
+                behavior, failure visibility, and repeatable execution on
+                unreliable machines. Focus is on robustness before features.
+              </p>
+            </div>
+
+            <div class="panel">
+              <h3>What we optimize for</h3>
+              <p>
+                Batch inference where customers care about cost-per-result and
+                retry-safe execution—not low-latency APIs or strict uptime. We
+                keep v0 deliberately narrow to learn fast.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="section alt">
+      <section id="contact" class="section">
         <div class="container">
           <h2>Contact</h2>
           <p class="lede small">
@@ -230,12 +289,22 @@
           </p>
 
           <div class="contact">
-            <div class="contactcard">
+            <div class="contactcard primaryContact">
               <div class="label">Email</div>
-              <div class="value">
-                <a href="mailto:vandalen.janwouter@gmail.com">vandalen.janwouter@gmail.com</a>
+              <div class="value bigValue">
+                <a href="mailto:vandalen.janwouter@gmail.com"
+                  >vandalen.janwouter@gmail.com</a
+                >
               </div>
-              <div class="hint">Direct contact for early technical pilots.</div>
+              <div class="hint">
+                Pilot discussions only. We reply fastest with one representative job.
+              </div>
+              <div class="contactActions">
+                <a class="button primary" href="mailto:vandalen.janwouter@gmail.com"
+                  >Email me</a
+                >
+                <a class="button secondary" href="#fit">Check workload fit</a>
+              </div>
             </div>
 
             <div class="contactcard">

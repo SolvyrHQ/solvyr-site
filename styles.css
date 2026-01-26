@@ -1,33 +1,42 @@
 :root{
-  --bg: #0b0e14;
-  --panel: #0f1522;
-  --panel2:#0c111c;
-  --text:#e7ecf5;
-  --muted:#a8b3c7;
-  --faint:#6e7a92;
-  --line: rgba(231,236,245,.12);
-  --accent:#86a8ff;
-  --accent2:#8dffd6;
+  /* Light theme default */
+  --bg: #f6f8fb;
+  --bg2: #eef2f8;
+  --panel: rgba(255,255,255,.75);
+  --panel2: rgba(255,255,255,.55);
+
+  --text:#0b0e14;
+  --muted:#3e4a63;
+  --faint:#67718a;
+
+  --line: rgba(11,14,20,.10);
+
+  --accent:#2f62ff;
+  --accent2:#11bfa3;
 
   --radius: 18px;
-  --shadow: 0 10px 30px rgba(0,0,0,.35);
+  --shadow: 0 10px 30px rgba(9,14,25,.10);
+  --shadow2: 0 8px 20px rgba(9,14,25,.08);
+
+  --headerH: 72px;
+  --anchorOffset: 88px;
 }
 
 *{ box-sizing:border-box; }
 html,body{ height:100%; }
 
-/* Make anchor jumps account for fixed header (fallback) */
 html{
-  scroll-padding-top: 88px;
+  scroll-padding-top: var(--anchorOffset);
 }
 
 body{
   margin:0;
-  padding-top: 72px; /* header height */
+  padding-top: var(--headerH);
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
-  background: radial-gradient(1000px 600px at 10% 10%, rgba(134,168,255,.14), transparent 60%),
-              radial-gradient(900px 500px at 90% 20%, rgba(141,255,214,.10), transparent 55%),
-              var(--bg);
+  background:
+    radial-gradient(900px 550px at 10% 10%, rgba(47,98,255,.10), transparent 60%),
+    radial-gradient(900px 550px at 90% 15%, rgba(17,191,163,.08), transparent 55%),
+    linear-gradient(180deg, var(--bg), var(--bg2));
   color:var(--text);
   line-height:1.45;
 }
@@ -45,7 +54,7 @@ a:hover{ text-decoration:underline; }
   margin:0 auto;
 }
 
-/* Header: fixed (robust) */
+/* Header */
 .top{
   position: fixed;
   top: 0;
@@ -53,7 +62,7 @@ a:hover{ text-decoration:underline; }
   right: 0;
   z-index: 100;
   backdrop-filter: blur(10px);
-  background: rgba(11,14,20,.75);
+  background: rgba(246,248,251,.75);
   border-bottom: 1px solid var(--line);
 }
 
@@ -65,7 +74,7 @@ a:hover{ text-decoration:underline; }
   padding:14px 0;
 }
 
-/* Brand is a link now: keep it looking like a brand, not a link */
+/* Brand (clickable) - no underline on hover, just cursor */
 .brand{
   display:flex;
   align-items:center;
@@ -85,12 +94,13 @@ a:hover{ text-decoration:underline; }
   height:34px;
   display:block;
   object-fit:contain;
+  filter: saturate(1.05) contrast(1.05);
 }
 
 .brandtext .name{
-  font-weight:700;
+  font-weight:800;
   font-size:16px;
-  letter-spacing:.02em;
+  letter-spacing:.01em;
 }
 .brandtext .tag{
   font-size:12.5px;
@@ -111,25 +121,29 @@ a:hover{ text-decoration:underline; }
   border-radius: 10px;
 }
 .nav a:hover{
-  background: rgba(231,236,245,.06);
+  background: rgba(11,14,20,.05);
   text-decoration:none;
   color:var(--text);
 }
 .nav .pill{
   border: 1px solid var(--line);
-  background: rgba(231,236,245,.04);
+  background: rgba(255,255,255,.60);
   color:var(--text);
+  box-shadow: var(--shadow2);
 }
 
+/* Hero */
 .hero{
   padding:58px 0 28px;
 }
+
 h1{
   font-size: clamp(30px, 4.2vw, 52px);
   line-height:1.05;
   margin: 0 0 14px;
   letter-spacing:-.02em;
 }
+
 .lede{
   font-size:18px;
   color:var(--muted);
@@ -138,42 +152,95 @@ h1{
 }
 .lede.small{ font-size:16px; }
 
+/* Strong contact panel above the fold */
+.heroContact{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:16px;
+  padding:16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: linear-gradient(135deg, rgba(47,98,255,.10), rgba(17,191,163,.06));
+  box-shadow: var(--shadow);
+  margin: 10px 0 20px;
+}
+
+.heroContactKicker{
+  font-size:12px;
+  color: var(--faint);
+  text-transform:uppercase;
+  letter-spacing:.12em;
+}
+.heroContactLine{
+  margin-top:6px;
+  font-weight:800;
+}
+.heroEmail{
+  text-decoration:none;
+  border-bottom: 1px solid rgba(11,14,20,.18);
+}
+.heroEmail:hover{
+  text-decoration:none;
+  border-bottom-color: rgba(11,14,20,.35);
+}
+
+.heroContactHint{
+  margin-top:6px;
+  color:var(--muted);
+  font-size:13px;
+  max-width: 70ch;
+}
+
+.heroContactActions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:flex-end;
+}
+
 .callouts{
   display:grid;
   grid-template-columns: repeat(3, 1fr);
   gap:14px;
-  margin: 22px 0 18px;
+  margin: 18px 0 18px;
 }
+
 .card{
-  background: rgba(15,21,34,.7);
+  background: var(--panel);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding:16px;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow2);
 }
+
 .kicker{
   font-size:12px;
   color:var(--faint);
   text-transform:uppercase;
   letter-spacing:.12em;
 }
+
 .big{
   font-size:18px;
-  font-weight:700;
+  font-weight:800;
   margin-top:6px;
 }
+
 .card p{
   margin:8px 0 0;
   color:var(--muted);
   font-size:14px;
 }
 
-.cta{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  margin: 10px 0 10px;
+.fine{
+  margin: 10px 0 0;
+  font-size:13px;
+  color:var(--faint);
 }
+
+/* Buttons */
 .button{
   display:inline-flex;
   align-items:center;
@@ -182,34 +249,38 @@ h1{
   padding: 11px 14px;
   border-radius: 12px;
   border: 1px solid var(--line);
-  background: rgba(134,168,255,.12);
+  background: rgba(255,255,255,.65);
   color:var(--text);
   font-size:14px;
-  font-weight:600;
+  font-weight:700;
+  box-shadow: var(--shadow2);
 }
 .button:hover{
   text-decoration:none;
-  background: rgba(134,168,255,.18);
+  background: rgba(255,255,255,.85);
 }
+
+.button.primary{
+  background: rgba(47,98,255,.14);
+  border-color: rgba(47,98,255,.24);
+}
+.button.primary:hover{
+  background: rgba(47,98,255,.18);
+}
+
 .button.secondary{
-  background: rgba(231,236,245,.05);
-}
-.fine{
-  margin: 10px 0 0;
-  font-size:13px;
-  color:var(--faint);
+  background: rgba(255,255,255,.55);
 }
 
 /* Sections */
 .section{
   padding: 46px 0;
   border-top: 1px solid var(--line);
-
-  /* The real fix for #anchors with a fixed header */
-  scroll-margin-top: 88px;
+  scroll-margin-top: var(--anchorOffset);
 }
+
 .section.alt{
-  background: rgba(12,17,28,.55);
+  background: rgba(255,255,255,.35);
 }
 
 h2{
@@ -217,28 +288,34 @@ h2{
   font-size:26px;
   letter-spacing:-.01em;
 }
+
 .grid{
   margin-top:18px;
   display:grid;
   grid-template-columns: repeat(3, 1fr);
   gap:14px;
 }
+
 .panel{
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding:16px;
-  background: rgba(15,21,34,.50);
+  background: var(--panel2);
+  box-shadow: var(--shadow2);
 }
+
 .panel h3{
   margin:0 0 8px;
   font-size:16px;
 }
+
 .panel p{
   margin:0;
   font-size:14px;
   color:var(--muted);
 }
 
+/* Checklist */
 .checklist{
   margin-top: 18px;
   display:grid;
@@ -246,28 +323,33 @@ h2{
   gap:10px;
   max-width: 72ch;
 }
+
 .check{
   border: 1px solid var(--line);
   border-radius: 14px;
   padding: 12px 14px;
-  background: rgba(15,21,34,.45);
+  background: rgba(255,255,255,.55);
   color:var(--muted);
   font-size:14px;
+  box-shadow: var(--shadow2);
 }
-.check.ok::before{ content:"✓ "; color: var(--accent2); }
-.check.warn::before{ content:"• "; color: var(--accent); }
-.check.no::before{ content:"✕ "; color: rgba(255,140,140,.95); }
+
+.check.ok::before{ content:"✓ "; color: var(--accent2); font-weight:800; }
+.check.warn::before{ content:"• "; color: var(--accent); font-weight:800; }
+.check.no::before{ content:"✕ "; color: rgba(200,40,60,.95); font-weight:800; }
 
 .note{
   margin-top: 16px;
   padding: 14px 16px;
   border-radius: var(--radius);
   border: 1px solid var(--line);
-  background: rgba(134,168,255,.08);
+  background: rgba(47,98,255,.06);
   color: var(--muted);
   max-width: 80ch;
+  box-shadow: var(--shadow2);
 }
 
+/* Steps */
 .steps{
   margin-top: 18px;
   display:grid;
@@ -275,14 +357,17 @@ h2{
   gap:12px;
   max-width: 90ch;
 }
+
 .step{
   display:flex;
   gap:12px;
   padding: 14px 16px;
   border-radius: var(--radius);
   border: 1px solid var(--line);
-  background: rgba(15,21,34,.45);
+  background: rgba(255,255,255,.55);
+  box-shadow: var(--shadow2);
 }
+
 .num{
   width:30px;
   height:30px;
@@ -290,54 +375,80 @@ h2{
   display:grid;
   place-items:center;
   border: 1px solid var(--line);
-  background: rgba(231,236,245,.06);
+  background: rgba(255,255,255,.70);
   color: var(--text);
-  font-weight:700;
+  font-weight:900;
 }
+
 .step h3{
   margin:0 0 6px;
   font-size:15px;
 }
+
 .step p{
   margin:0;
   color:var(--muted);
   font-size:14px;
 }
 
+/* Contact */
 .contact{
   margin-top: 16px;
   display:grid;
   grid-template-columns: 1fr 1fr;
   gap:14px;
 }
+
 .contactcard{
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding:16px;
-  background: rgba(15,21,34,.45);
+  background: rgba(255,255,255,.55);
+  box-shadow: var(--shadow2);
 }
+
+.primaryContact{
+  background: linear-gradient(135deg, rgba(47,98,255,.10), rgba(17,191,163,.06));
+}
+
 .label{
   color:var(--faint);
   text-transform:uppercase;
   letter-spacing:.12em;
   font-size:12px;
 }
+
 .value{
   margin-top:6px;
-  font-weight:700;
+  font-weight:900;
   font-size:16px;
 }
+
+.bigValue{
+  font-size:20px;
+}
+
 .hint{
   margin-top:6px;
   color:var(--muted);
   font-size:13px;
 }
+
+.contactActions{
+  margin-top:12px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
 .contactcard ul{
   margin:10px 0 0;
   padding-left: 18px;
   color:var(--muted);
   font-size:14px;
 }
+
+/* Footer */
 .footer{
   margin-top: 24px;
   padding-top: 16px;
@@ -347,11 +458,15 @@ h2{
   gap:12px;
   flex-wrap:wrap;
 }
+
 .muted{ color: var(--faint); }
 
+/* Responsive */
 @media (max-width: 900px){
   .callouts{ grid-template-columns: 1fr; }
   .grid{ grid-template-columns: 1fr; }
   .contact{ grid-template-columns: 1fr; }
   .brandtext .tag{ display:none; }
+  .heroContact{ flex-direction:column; align-items:stretch; }
+  .heroContactActions{ justify-content:flex-start; }
 }
