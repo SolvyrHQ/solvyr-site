@@ -4,33 +4,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Solvyr — Technical Pilot</title>
+    <title>Solvyr — Batch AI Infrastructure</title>
     <meta
       name="description"
-      content="Solvyr is a technical pilot for batch-oriented AI inference on distributed household GPUs."
+      content="Solvyr is early-stage infrastructure for batch, offline AI workloads. We speak with teams running retry-safe, latency-insensitive inference jobs."
     />
 
-    <!-- Minimal favicon -->
-    <link rel="icon" href="./favicon.ico" />
-
-    <!-- Optional: sets browser UI tint on mobile -->
+    <link rel="icon" href="../favicon.ico" />
     <meta name="theme-color" content="#f6f8fb" />
-
-    <!-- Performance: preload brand icon -->
-    <link rel="preload" as="image" href="./assets/brand/icon.png" />
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preload" as="image" href="../assets/brand/icon.png" />
+    <link rel="stylesheet" href="../styles.css" />
   </head>
 
   <body>
     <header class="top">
       <div class="container">
-        <!-- Brand is clickable → back to top -->
         <a class="brand" href="#top" aria-label="Solvyr — Back to top">
           <img
             class="brandlogo"
-            src="./assets/brand/icon.png"
+            src="../assets/brand/icon.png"
             alt="Solvyr icon"
             width="34"
             height="34"
@@ -38,290 +30,216 @@
           <div class="brandtext">
             <div class="name">Solvyr</div>
             <div class="tag">
-              Technical pilot · batch inference on distributed household GPUs
+              Batch inference · distributed GPUs · early-stage infrastructure
             </div>
           </div>
         </a>
 
         <nav class="nav" aria-label="Primary navigation">
-          <a href="#what">What</a>
-          <a href="#fit">Fit</a>
-          <a href="#how">How pilots work</a>
-          <a href="#who">Who we are</a>
-          <a href="#contact" class="pill">Contact</a>
+          <a href="#fit">Who this is for</a>
+          <a href="#how">How it works</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="pill">Talk to us</a>
         </nav>
       </div>
     </header>
 
-    <!-- Anchor target for "back to top" -->
     <div id="top" aria-hidden="true"></div>
 
     <main>
+      <!-- HERO -->
       <section class="hero">
         <div class="container">
-          <h1>Batch-oriented AI inference on distributed household GPUs.</h1>
+          <h1>
+            Batch AI workloads deserve infrastructure built for retries, not
+            latency.
+          </h1>
 
           <p class="lede">
-            Solvyr is an early-stage <strong>technical pilot</strong> for running
-            retry-safe, latency-insensitive inference workloads on distributed
-            household GPUs (starting with RTX 3090).
+            Solvyr is early-stage infrastructure for
+            <strong>offline, retry-safe inference jobs</strong>.
+            We’re speaking with teams running embeddings, classification,
+            document pipelines, and other latency-insensitive workloads to
+            understand fit before scaling.
           </p>
 
-          <!-- More dominant contact (above the fold) -->
           <div class="heroContact">
             <div class="heroContactText">
-              <div class="heroContactKicker">Pilot inquiries</div>
+              <div class="heroContactKicker">Exploratory conversations</div>
               <div class="heroContactLine">
                 Email:
-                <a class="heroEmail" href="mailto:jan@solvyr.com"
-                  >jan@solvyr.com</a
-                >
+                <a class="heroEmail" href="mailto:jan@solvyr.com">
+                  jan@solvyr.com
+                </a>
               </div>
               <div class="heroContactHint">
-                If you include model + typical runtime + VRAM estimate, we can
-                respond fast.
+                Share one representative workload and typical runtime.
               </div>
             </div>
 
             <div class="heroContactActions">
-              <a class="button primary" href="mailto:jan@solvyr.com"
-                >Email me</a
+              <a class="button primary" href="mailto:jan@solvyr.com">
+                Share one workload
+              </a>
+              <a
+                class="button secondary"
+                href="https://forms.gle/AZR6rChByypKV7cF8"
+                target="_blank"
+                rel="noopener"
               >
-              <a class="button secondary" href="#contact">What to include</a>
-            </div>
-          </div>
-
-          <div class="callouts">
-            <div class="card">
-              <div class="kicker">Status</div>
-              <div class="big">Pilot-only</div>
-              <p>
-                <strong>No UI, no SLA, no automation.</strong> Hands-on
-                onboarding, bounded scope.
-              </p>
-            </div>
-            <div class="card">
-              <div class="kicker">Best for</div>
-              <div class="big">Seconds–minutes</div>
-              <p>
-                Embeddings, classification, tagging, summarization, offline jobs.
-              </p>
-            </div>
-            <div class="card">
-              <div class="kicker">Not for</div>
-              <div class="big">Real-time</div>
-              <p>
-                Low-latency APIs, interactive chat, long reservations, or “must
-                never fail”.
-              </p>
+                Submit workload details
+              </a>
             </div>
           </div>
 
           <p class="fine">
-            We optimize for <strong>cost-per-result</strong> and repeatable
-            execution on unreliable nodes — not latency guarantees.
+            No public signup. No marketplace. Just focused discussions around
+            real batch workloads.
           </p>
         </div>
       </section>
 
-      <section id="what" class="section">
+      <!-- FIT -->
+      <section id="fit" class="section alt">
         <div class="container">
-          <h2>What Solvyr is</h2>
-          <div class="grid">
-            <div class="panel">
-              <h3>Technical pilot (not a product launch)</h3>
-              <p>
-                Solvyr is a deliberately constrained system to validate
-                reliability, retries, and economics of batch inference on
-                distributed GPUs. It is not a public signup, and we keep scope
-                tight.
-              </p>
+          <h2>Who this is for</h2>
+
+          <div class="checklist">
+            <div class="check ok">
+              You run batch / offline AI workloads
             </div>
+            <div class="check ok">
+              Jobs are retry-safe and chunkable
+            </div>
+            <div class="check ok">
+              Seconds–minutes latency is acceptable
+            </div>
+            <div class="check ok">
+              Cost-per-result matters more than p95 latency
+            </div>
+            <div class="check no">
+              You need realtime APIs or strict SLAs
+            </div>
+            <div class="check no">
+              You require custom per-job scripting or plugins
+            </div>
+          </div>
+
+          <div class="note">
+            If re-running a job 3–5 times is unacceptable,
+            this is not a fit.
+          </div>
+
+          <div class="panel" style="margin-top: 20px;">
+            <h3>Example workload</h3>
+            <p>
+              100k documents → embeddings → 30–60s per batch → retry-safe →
+              good fit.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW -->
+      <section id="how" class="section">
+        <div class="container">
+          <h2>How it works (high level)</h2>
+
+          <div class="grid">
             <div class="panel">
               <h3>Work-unit model</h3>
               <p>
-                Nodes pull small, retryable work units (seconds to a few minutes).
-                Failures are expected; retries and failure visibility are
-                first-class.
+                Jobs are broken into small, bounded tasks (seconds to a few
+                minutes). Failures are expected. Retries are first-class.
               </p>
             </div>
+
             <div class="panel">
-              <h3>Security posture</h3>
+              <h3>Unreliable nodes, reliable outcomes</h3>
               <p>
-                Outbound-only from nodes. No exposed home ports. Controlled
-                connectivity (VPN/mesh). We prioritize correctness and
-                containment over convenience.
+                Nodes pull work. Tasks are reassigned when needed.
+                Correctness and repeatability matter more than raw speed.
+              </p>
+            </div>
+
+            <div class="panel">
+              <h3>Deliberately constrained</h3>
+              <p>
+                Early stage. Limited workload classes. No self-serve UI.
+                We prioritize learning and survivability over feature breadth.
               </p>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section id="fit" class="section alt">
-        <div class="container">
-          <h2>Is your workload a fit?</h2>
-          <p class="lede small">
-            If you can answer “yes” to most of these, a pilot might make sense.
-          </p>
-
-          <div class="checklist">
-            <div class="check ok">Batch / offline (not interactive)</div>
-            <div class="check ok">Latency-insensitive (seconds–minutes is fine)</div>
-            <div class="check ok">Retry-safe (can be re-run without causing harm)</div>
-            <div class="check ok">Inputs/outputs can be minimized and audited</div>
-            <div class="check warn">
-              You can tolerate occasional failures during the pilot
-            </div>
-            <div class="check no">
-              You need strict uptime or low-latency responses
-            </div>
-          </div>
-
-          <div class="note">
-            <strong>Hard gate:</strong> if re-running the same job 3–5x is
-            unacceptable, this pilot is not a fit.
-          </div>
-
-          <div class="note">
-            <strong>Rule of thumb:</strong> if it barely fits VRAM or needs complex
-            multi-GPU orchestration, it’s not v0.
+          <div class="panel" style="margin-top: 20px;">
+            <h3>What you get from an early conversation</h3>
+            <p>
+              A quick view on whether your workload is likely to fit this setup,
+              what the main technical constraints are, and whether it makes sense
+              to explore a bounded pilot.
+            </p>
           </div>
         </div>
       </section>
 
-      <section id="how" class="section">
+      <!-- ABOUT -->
+      <section id="about" class="section alt">
         <div class="container">
-          <h2>How pilots work</h2>
-
-          <div class="steps">
-            <div class="step">
-              <div class="num">1</div>
-              <div>
-                <h3>Quick fit check (15 minutes)</h3>
-                <p>
-                  You share one representative job: model, input shape, runtime
-                  expectations, retry-safety, and constraints.
-                </p>
-              </div>
-            </div>
-
-            <div class="step">
-              <div class="num">2</div>
-              <div>
-                <h3>Minimal integration</h3>
-                <p>
-                  One customer ID, one API token, one endpoint, one sample
-                  payload. Manual ops. Billing only on successful completed work.
-                </p>
-              </div>
-            </div>
-
-            <div class="step">
-              <div class="num">3</div>
-              <div>
-                <h3>Run a bounded pilot</h3>
-                <p>
-                  We test survivability (retries, failure modes, tail latencies),
-                  correctness checks, and cost-per-run versus your baseline.
-                </p>
-              </div>
-            </div>
-
-            <div class="step">
-              <div class="num">4</div>
-              <div>
-                <h3>Decide, fast</h3>
-                <p>
-                  At the end we decide: proceed (expand), pause, or stop. No long
-                  tail of “maybe”.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="who" class="section alt">
-        <div class="container">
-          <h2>Who we are</h2>
-          <p class="lede small">
-            A small founder–engineer team running a focused technical pilot.
-          </p>
+          <h2>About</h2>
 
           <div class="grid">
             <div class="panel">
-              <h3>Jan (founder / operator)</h3>
+              <h3>Jan — Founder</h3>
               <p>
-                Runs pilot onboarding and ops with a strong bias for scope
-                discipline: small work units, retries-first, and measurable
-                cost-per-result. The goal is to validate reliability and
-                economics quickly—without “platform” theater.
+                Focused on workload economics, operational discipline,
+                and keeping scope tight while validating demand.
               </p>
             </div>
 
             <div class="panel">
-              <h3>Maksym (founding engineer)</h3>
+              <h3>Maksym — Founding Engineer</h3>
               <p>
-                Builds the runtime and reliability foundation: predictable node
-                behavior, failure visibility, and repeatable execution on
-                unreliable machines. Focus is on robustness before features.
+                Focused on reliability, failure visibility,
+                and predictable execution on distributed GPUs.
               </p>
             </div>
 
             <div class="panel">
-              <h3>What we optimize for</h3>
+              <h3>Current stage</h3>
               <p>
-                Batch inference where customers care about cost-per-result and
-                retry-safe execution—not low-latency APIs or strict uptime. We
-                keep v0 deliberately narrow to learn fast.
+                Running focused technical pilots. Speaking with teams
+                who have real batch workloads and want to explore fit
+                before scale.
               </p>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- CONTACT -->
       <section id="contact" class="section">
         <div class="container">
-          <h2>Contact</h2>
-          <p class="lede small">
-            If you’re evaluating batch inference economics and can tolerate a
-            constrained technical pilot, reach out.
-          </p>
+          <h2>Talk to us</h2>
 
           <div class="contact">
             <div class="contactcard primaryContact">
               <div class="label">Email</div>
               <div class="value bigValue">
-                <a href="mailto:jan@solvyr.com"
-                  >jan@solvyr.com</a
-                >
+                <a href="mailto:jan@solvyr.com">
+                  jan@solvyr.com
+                </a>
               </div>
               <div class="hint">
-                Pilot discussions only. We reply fastest with one representative job.
+                Include: workload type, typical runtime,
+                model + VRAM estimate, and retry-safety notes.
               </div>
-              <div class="contactActions">
-                <a class="button primary" href="mailto:jan@solvyr.com"
-                  >Email me</a
-                >
-                <a class="button secondary" href="#fit">Check workload fit</a>
-              </div>
-            </div>
-
-            <div class="contactcard">
-              <div class="label">What to include</div>
-              <ul>
-                <li>Workload type (embeddings / classification / tagging / summarization)</li>
-                <li>Typical runtime per job</li>
-                <li>Model + VRAM requirement (rough)</li>
-                <li>Retry-safety notes</li>
-              </ul>
             </div>
           </div>
 
           <footer class="footer">
             <div>© <span id="y"></span> Solvyr</div>
             <div class="muted">
-              Private technical pilots · Q1 2026 · Draft for pilot discussions
+              Early-stage infrastructure · Batch workloads only
             </div>
           </footer>
         </div>
@@ -329,7 +247,8 @@
     </main>
 
     <script>
-      document.getElementById("y").textContent = new Date().getFullYear();
+      document.getElementById("y").textContent =
+        new Date().getFullYear();
     </script>
   </body>
 </html>
