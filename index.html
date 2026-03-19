@@ -7,7 +7,7 @@
     <title>Solvyr — Batch AI Infrastructure</title>
     <meta
       name="description"
-      content="Solvyr is early-stage infrastructure for batch, offline AI workloads. We speak with teams running retry-safe, latency-insensitive inference jobs."
+      content="Solvyr runs cost-efficient infrastructure for batch AI workloads such as embeddings, document pipelines, and large-scale reprocessing."
     />
 
     <link rel="icon" href="../favicon.ico" />
@@ -51,50 +51,57 @@
       <section class="hero">
         <div class="container">
           <h1>
-            Batch AI workloads deserve infrastructure built for retries, not
-            latency.
+            Batch AI workloads should not be slow, expensive, or fragile.
           </h1>
 
           <p class="lede">
-            Solvyr is early-stage infrastructure for
-            <strong>offline, retry-safe inference jobs</strong>.
-            We’re speaking with teams running embeddings, classification,
-            document pipelines, and other latency-insensitive workloads to
-            understand fit before scaling.
+            Solvyr runs early-stage infrastructure for
+            <strong>batch AI workloads</strong> such as embeddings, document
+            pipelines, classification, and large-scale reprocessing.
+            We use distributed GPUs in people’s homes to explore a lower-cost,
+            failure-tolerant model for offline inference.
+          </p>
+
+          <p class="fine">
+            Currently validating real batch workloads with early partners across
+            documents, embeddings, and reprocessing jobs.
           </p>
 
           <div class="heroContact">
             <div class="heroContactText">
-              <div class="heroContactKicker">Exploratory conversations</div>
+              <div class="heroContactKicker">Run a pilot</div>
               <div class="heroContactLine">
-                Email:
-                <a class="heroEmail" href="mailto:jan@solvyr.com">
-                  jan@solvyr.com
+                Best path:
+                <a
+                  class="heroEmail"
+                  href="https://forms.gle/AZR6rChByypKV7cF8"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  submit one representative workload
                 </a>
               </div>
               <div class="heroContactHint">
-                Share one representative workload and typical runtime.
+                We review fit manually and come back with a clear yes, no, or
+                bounded next step.
               </div>
             </div>
 
             <div class="heroContactActions">
-              <a class="button primary" href="mailto:jan@solvyr.com">
-                Share one workload
-              </a>
               <a
-                class="button secondary"
+                class="button primary"
                 href="https://forms.gle/AZR6rChByypKV7cF8"
                 target="_blank"
                 rel="noopener"
               >
-                Submit workload details
+                Submit a workload for a pilot
               </a>
             </div>
           </div>
 
           <p class="fine">
-            No public signup. No marketplace. Just focused discussions around
-            real batch workloads.
+            No public signup. No marketplace. No generic GPU cloud pitch.
+            Just focused discussions around real batch workloads.
           </p>
         </div>
       </section>
@@ -106,35 +113,35 @@
 
           <div class="checklist">
             <div class="check ok">
-              You run batch / offline AI workloads
+              You run batch or offline AI workloads
             </div>
             <div class="check ok">
-              Jobs are retry-safe and chunkable
+              Jobs are chunkable and retry-safe
             </div>
             <div class="check ok">
-              Seconds–minutes latency is acceptable
+              Seconds to minutes latency is acceptable
             </div>
             <div class="check ok">
-              Cost-per-result matters more than p95 latency
+              Cost per result matters more than p95 latency
             </div>
             <div class="check no">
               You need realtime APIs or strict SLAs
             </div>
             <div class="check no">
-              You require custom per-job scripting or plugins
+              You need custom per-job scripting or plugin-style execution
             </div>
           </div>
 
           <div class="note">
-            If re-running a job 3–5 times is unacceptable,
+            If your workload breaks when a task needs to be retried 3 to 5 times,
             this is not a fit.
           </div>
 
           <div class="panel" style="margin-top: 20px;">
             <h3>Example workload</h3>
             <p>
-              100k documents → embeddings → 30–60s per batch → retry-safe →
-              good fit.
+              100k documents → embeddings → 30 to 60 seconds per batch →
+              retry-safe → good fit.
             </p>
           </div>
         </div>
@@ -147,18 +154,18 @@
 
           <div class="grid">
             <div class="panel">
-              <h3>Work-unit model</h3>
+              <h3>Small work units</h3>
               <p>
-                Jobs are broken into small, bounded tasks (seconds to a few
-                minutes). Failures are expected. Retries are first-class.
+                Jobs are broken into bounded tasks that run in seconds to a few
+                minutes. This makes retries and recovery practical.
               </p>
             </div>
 
             <div class="panel">
-              <h3>Unreliable nodes, reliable outcomes</h3>
+              <h3>Built for failure, not perfect hardware</h3>
               <p>
-                Nodes pull work. Tasks are reassigned when needed.
-                Correctness and repeatability matter more than raw speed.
+                Nodes pull work, tasks can be reassigned, and the system is
+                designed around unreliable execution environments.
               </p>
             </div>
 
@@ -166,7 +173,8 @@
               <h3>Deliberately constrained</h3>
               <p>
                 Early stage. Limited workload classes. No self-serve UI.
-                We prioritize learning and survivability over feature breadth.
+                We prioritize survivability, repeatability, and learning over
+                feature breadth.
               </p>
             </div>
           </div>
@@ -174,9 +182,9 @@
           <div class="panel" style="margin-top: 20px;">
             <h3>What you get from an early conversation</h3>
             <p>
-              A quick view on whether your workload is likely to fit this setup,
+              A quick assessment of whether your workload is likely to fit,
               what the main technical constraints are, and whether it makes sense
-              to explore a bounded pilot.
+              to run a bounded pilot.
             </p>
           </div>
         </div>
@@ -192,7 +200,7 @@
               <h3>Jan — Founder</h3>
               <p>
                 Focused on workload economics, operational discipline,
-                and keeping scope tight while validating demand.
+                and finding narrow but real infrastructure use cases worth proving.
               </p>
             </div>
 
@@ -207,9 +215,8 @@
             <div class="panel">
               <h3>Current stage</h3>
               <p>
-                Running focused technical pilots. Speaking with teams
-                who have real batch workloads and want to explore fit
-                before scale.
+                Running focused technical pilots with teams that have real batch
+                workloads and want to test fit before scale.
               </p>
             </div>
           </div>
@@ -230,8 +237,8 @@
                 </a>
               </div>
               <div class="hint">
-                Include: workload type, typical runtime,
-                model + VRAM estimate, and retry-safety notes.
+                Or send: workload type, typical runtime, model and VRAM estimate,
+                and whether tasks are safe to retry.
               </div>
             </div>
           </div>
