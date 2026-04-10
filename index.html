@@ -7,7 +7,7 @@
     <title>Solvyr — Batch AI Infrastructure</title>
     <meta
       name="description"
-      content="Solvyr runs cost-efficient infrastructure for batch AI workloads such as embeddings, document pipelines, and large-scale reprocessing."
+      content="Send Solvyr one batch job. JSONL or PDFs. We’ll run it on our infrastructure for free and show you the cost versus AWS or OpenAI."
     />
 
     <link rel="icon" href="../favicon.ico" />
@@ -39,7 +39,7 @@
           <a href="#fit">Who this is for</a>
           <a href="#how">How it works</a>
           <a href="#about">About</a>
-          <a href="#contact" class="pill">Talk to us</a>
+          <a href="#contact" class="pill">Run a free test</a>
         </nav>
       </div>
     </header>
@@ -50,58 +50,44 @@
       <!-- HERO -->
       <section class="hero">
         <div class="container">
-          <h1>
-            Batch AI workloads should not be slow, expensive, or fragile.
-          </h1>
+          <h1>Send us one batch job. We’ll run it for free.</h1>
 
           <p class="lede">
-            Solvyr runs early-stage infrastructure for
-            <strong>batch AI workloads</strong> such as embeddings, document
-            pipelines, classification, and large-scale reprocessing.
-            We use distributed GPUs in people’s homes to explore a lower-cost,
-            failure-tolerant model for offline inference.
-          </p>
-
-          <p class="fine">
-            Currently validating real batch workloads with early partners across
-            documents, embeddings, and reprocessing jobs.
+            JSONL or PDFs. We’ll run your workload on our infrastructure and
+            show you the cost versus <strong>AWS or OpenAI</strong>.
           </p>
 
           <div class="heroContact">
             <div class="heroContactText">
-              <div class="heroContactKicker">Run a pilot</div>
+              <div class="heroContactKicker">Best fit</div>
               <div class="heroContactLine">
-                Best path:
-                <a
-                  class="heroEmail"
-                  href="https://forms.gle/AZR6rChByypKV7cF8"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  submit one representative workload
-                </a>
+                Batch, offline, retry-safe inference workloads
               </div>
               <div class="heroContactHint">
-                We review fit manually and come back with a clear yes, no, or
-                bounded next step.
+                Good fit for embeddings, classification, document pipelines, and
+                other latency-insensitive jobs where cost-per-result matters
+                more than realtime latency.
               </div>
             </div>
 
             <div class="heroContactActions">
+              <a class="button primary" href="mailto:jan@solvyr.com">
+                Run a free test
+              </a>
               <a
-                class="button primary"
+                class="button secondary"
                 href="https://forms.gle/AZR6rChByypKV7cF8"
                 target="_blank"
                 rel="noopener"
               >
-                Submit a workload for a pilot
+                Submit workload details
               </a>
             </div>
           </div>
 
           <p class="fine">
-            No public signup. No marketplace. No generic GPU cloud pitch.
-            Just focused discussions around real batch workloads.
+            No public signup. No marketplace. Just focused work on real batch
+            workloads.
           </p>
         </div>
       </section>
@@ -112,36 +98,32 @@
           <h2>Who this is for</h2>
 
           <div class="checklist">
+            <div class="check ok">You run batch or offline AI workloads</div>
+            <div class="check ok">Jobs are retry-safe and chunkable</div>
             <div class="check ok">
-              You run batch or offline AI workloads
+              Seconds-to-minutes latency is acceptable
             </div>
             <div class="check ok">
-              Jobs are chunkable and retry-safe
-            </div>
-            <div class="check ok">
-              Seconds to minutes latency is acceptable
-            </div>
-            <div class="check ok">
-              Cost per result matters more than p95 latency
+              Cost-per-result matters more than p95 latency
             </div>
             <div class="check no">
               You need realtime APIs or strict SLAs
             </div>
             <div class="check no">
-              You need custom per-job scripting or plugin-style execution
+              You require custom per-job scripting or plugins
             </div>
           </div>
 
           <div class="note">
-            If your workload breaks when a task needs to be retried 3 to 5 times,
-            this is not a fit.
+            If re-running part of a job 3–5 times is unacceptable, this is not
+            a fit.
           </div>
 
-          <div class="panel" style="margin-top: 20px;">
+          <div class="panel" style="margin-top: 20px">
             <h3>Example workload</h3>
             <p>
-              100k documents → embeddings → 30 to 60 seconds per batch →
-              retry-safe → good fit.
+              100k documents → embeddings → 30–60s per batch → retry-safe →
+              good fit.
             </p>
           </div>
         </div>
@@ -150,41 +132,40 @@
       <!-- HOW -->
       <section id="how" class="section">
         <div class="container">
-          <h2>How it works (high level)</h2>
+          <h2>How it works</h2>
 
           <div class="grid">
             <div class="panel">
-              <h3>Small work units</h3>
+              <h3>You send one representative workload</h3>
               <p>
-                Jobs are broken into bounded tasks that run in seconds to a few
-                minutes. This makes retries and recovery practical.
+                Send JSONL or PDFs with enough context to understand the job,
+                runtime expectations, and what output you need.
               </p>
             </div>
 
             <div class="panel">
-              <h3>Built for failure, not perfect hardware</h3>
+              <h3>We run it on our infrastructure</h3>
               <p>
-                Nodes pull work, tasks can be reassigned, and the system is
-                designed around unreliable execution environments.
+                Jobs are broken into small, bounded tasks. Failures are
+                expected. Retries are first-class.
               </p>
             </div>
 
             <div class="panel">
-              <h3>Deliberately constrained</h3>
+              <h3>You get a practical comparison</h3>
               <p>
-                Early stage. Limited workload classes. No self-serve UI.
-                We prioritize survivability, repeatability, and learning over
-                feature breadth.
+                We show you whether the workload fits this setup and what the
+                cost looks like versus AWS or OpenAI.
               </p>
             </div>
           </div>
 
-          <div class="panel" style="margin-top: 20px;">
-            <h3>What you get from an early conversation</h3>
+          <div class="panel" style="margin-top: 20px">
+            <h3>What to send</h3>
             <p>
-              A quick assessment of whether your workload is likely to fit,
-              what the main technical constraints are, and whether it makes sense
-              to run a bounded pilot.
+              One representative batch, your workload type, typical runtime,
+              model details if known, VRAM estimate if known, and any
+              retry-safety constraints.
             </p>
           </div>
         </div>
@@ -199,28 +180,24 @@
             <div class="panel">
               <h3>Jan — Founder</h3>
               <p>
-                Nearly seven years at Anker from early-stage to IPO, leading sales
-                and go-to-market across Europe, MEA, and KSA. Now focused on workload
-                economics, cost structures, and validating real demand for batch AI
-                infrastructure.
+                Focused on workload economics, pilot discovery, and keeping
+                scope tight while validating real demand.
               </p>
             </div>
 
             <div class="panel">
               <h3>Maksym — Founding Engineer</h3>
               <p>
-                15+ years in GPU software engineering, including 8+ years at Intel
-                across GPU drivers, deep learning infrastructure, and distributed
-                systems. Led development of C++ drivers integrated into TensorFlow
-                for Nervana ASIC. Focused on reliable execution on unstable hardware.
+                Focused on reliability, failure visibility, and predictable
+                execution on distributed GPUs.
               </p>
             </div>
 
             <div class="panel">
               <h3>Current stage</h3>
               <p>
-                Running focused technical pilots with teams that have real batch
-                workloads and want to test fit before scale.
+                Early-stage infrastructure. Running focused technical pilots
+                with teams that have real batch workloads.
               </p>
             </div>
           </div>
@@ -230,26 +207,22 @@
       <!-- CONTACT -->
       <section id="contact" class="section">
         <div class="container">
-          <h2>Talk to us</h2>
+          <h2>Run a free test</h2>
 
           <div class="contact">
             <div class="contactcard primaryContact">
               <div class="label">Email</div>
               <div class="value bigValue">
-                <a href="mailto:jan@solvyr.com">
-                  jan@solvyr.com
-                </a>
+                <a href="mailto:jan@solvyr.com">jan@solvyr.com</a>
               </div>
               <div class="hint">
-                Solvyr OÜ · Estonia<br />
-                Or send: workload type, typical runtime, model and VRAM estimate,
-                and whether tasks are safe to retry.
+                Send one representative batch. JSONL or PDFs are fine.
               </div>
             </div>
           </div>
 
           <footer class="footer">
-            <div>© <span id="y"></span> Solvyr OÜ · Estonia</div>
+            <div>© <span id="y"></span> Solvyr</div>
             <div class="muted">
               Early-stage infrastructure · Batch workloads only
             </div>
@@ -259,8 +232,7 @@
     </main>
 
     <script>
-      document.getElementById("y").textContent =
-        new Date().getFullYear();
+      document.getElementById("y").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
