@@ -98,34 +98,51 @@
         <div class="container">
           <h2>Who this is for</h2>
 
+          <div class="panel">
+            <p>
+              This is for teams running <strong>large, repeatable AI workloads</strong>
+              where cost matters more than latency.
+            </p>
+          </div>
+
           <div class="checklist">
-            <div class="check ok">You run batch or offline AI workloads</div>
-            <div class="check ok">Jobs are retry-safe and chunkable</div>
             <div class="check ok">
-              Seconds-to-minutes latency is acceptable
+              You process large batches (documents, embeddings, classification)
             </div>
             <div class="check ok">
-              Cost-per-result matters more than p95 latency
+              Jobs run in the background and don’t need realtime responses
+            </div>
+            <div class="check ok">
+              You can split work into smaller chunks and retry when needed
+            </div>
+            <div class="check ok">
+              You care about cost per result more than speed
+            </div>
+            <div class="check ok">
+              You occasionally reprocess data (re-indexing, backfills, corrections)
+            </div>
+
+            <div class="check no">
+              You need low-latency APIs or synchronous user-facing calls
             </div>
             <div class="check no">
-              You need realtime APIs or strict SLAs
+              Every job must succeed in a single run with no retries
             </div>
             <div class="check no">
-              You require custom per-job scripting or plugins
+              You need strict SLAs or guaranteed completion times
             </div>
           </div>
 
           <div class="note">
-            Built for retry-safe workloads, where occasional reprocessing is
-            acceptable and the focus is on efficiency, reliability, and
-            predictable execution.
+            Built for retry-safe workloads, where occasional reprocessing is acceptable
+            and the focus is on efficiency, reliability, and predictable execution.
           </div>
 
-          <div class="panel" style="margin-top: 20px">
-            <h3>Example workload</h3>
+          <div class="panel" style="margin-top: 20px;">
+            <h3>Typical example</h3>
             <p>
-              100k documents → embeddings → 30–60s per batch → retry-safe →
-              good fit.
+              Reprocessing 100k–1M documents → embeddings or classification →
+              background job → retry-safe → cost-sensitive.
             </p>
           </div>
         </div>
