@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Solvyr — Batch AI Infrastructure</title>
+    <title>Solvyr — Lower-cost infrastructure for batch AI workloads</title>
     <meta
       name="description"
-      content="Curious how your batch workload compares? Send a small sample in JSONL or PDFs. Solvyr will run it for free and show you the cost versus AWS or OpenAI."
+      content="Running large AI jobs in the background? Send Solvyr a small sample in JSONL or PDFs. We’ll run it for free and show you the cost versus AWS or OpenAI."
     />
 
     <link rel="icon" href="../favicon.ico" />
@@ -30,7 +30,7 @@
           <div class="brandtext">
             <div class="name">Solvyr</div>
             <div class="tag">
-              Batch inference · distributed GPUs · early-stage infrastructure
+              Lower-cost batch AI infrastructure
             </div>
           </div>
         </a>
@@ -50,45 +50,46 @@
       <!-- HERO -->
       <section class="hero">
         <div class="container">
-          <h1>Curious how your batch workload compares?</h1>
+          <h1>Running big AI jobs in the background?</h1>
 
           <p class="lede">
-            Send a small sample in <strong>JSONL or PDFs</strong>. We’ll run it
-            for free and show you the cost versus
+            If you process documents, generate embeddings, classify large
+            batches, or re-run AI jobs at scale, we may be able to do it at a
+            much lower cost. Send us a small sample in
+            <strong>JSONL or PDFs</strong> and we’ll run it
+            <strong>for free</strong> and show you the cost versus
             <strong>AWS or OpenAI</strong>.
           </p>
 
           <div class="heroContact">
             <div class="heroContactText">
-              <div class="heroContactKicker">Best fit</div>
+              <div class="heroContactKicker">Simple first step</div>
               <div class="heroContactLine">
-                Batch, offline, retry-safe inference workloads
+                No integration. No commitment. Just a real comparison.
               </div>
               <div class="heroContactHint">
-                Good fit for embeddings, classification, document pipelines, and
-                other latency-insensitive jobs where cost-per-result matters
-                more than realtime latency.
+                Best fit for teams with repeatable AI workloads where cost
+                matters more than instant response time.
               </div>
             </div>
 
             <div class="heroContactActions">
-              <a class="button primary" href="mailto:jan@solvyr.com">
-                Run a free test
-              </a>
               <a
-                class="button secondary"
+                class="button primary"
                 href="https://forms.gle/AZR6rChByypKV7cF8"
                 target="_blank"
                 rel="noopener"
               >
-                Submit workload details
+                Submit a sample workload
+              </a>
+              <a class="button secondary" href="mailto:jan@solvyr.com">
+                Email us instead
               </a>
             </div>
           </div>
 
           <p class="fine">
-            No integration required. No public signup. Just focused work on real
-            batch workloads.
+            Please avoid sending sensitive or personal data at this stage.
           </p>
         </div>
       </section>
@@ -100,49 +101,49 @@
 
           <div class="panel">
             <p>
-              This is for teams running <strong>large, repeatable AI workloads</strong>
-              where cost matters more than latency.
+              Solvyr is for teams that already know they have a meaningful AI
+              workload, but do not want to keep paying premium infrastructure
+              prices for jobs that can run in the background.
             </p>
           </div>
 
           <div class="checklist">
             <div class="check ok">
-              You process large batches (documents, embeddings, classification)
+              You process large batches of documents or text
             </div>
             <div class="check ok">
-              Jobs run in the background and don’t need realtime responses
+              You run embeddings, classification, extraction, or other repeatable AI jobs
             </div>
             <div class="check ok">
-              You can split work into smaller chunks and retry when needed
+              Your workload can run in the background
             </div>
             <div class="check ok">
-              You care about cost per result more than speed
+              Lower cost matters more than instant completion
             </div>
             <div class="check ok">
-              You occasionally reprocess data (re-indexing, backfills, corrections)
-            </div>
-
-            <div class="check no">
-              You need low-latency APIs or synchronous user-facing calls
+              You sometimes reprocess old data, backfills, or large archives
             </div>
             <div class="check no">
-              Every job must succeed in a single run with no retries
+              You need a realtime API for user-facing requests
             </div>
             <div class="check no">
-              You need strict SLAs or guaranteed completion times
+              You need strict SLAs or guaranteed response times
+            </div>
+            <div class="check no">
+              Every single run must complete immediately with no room for retries
             </div>
           </div>
 
           <div class="note">
-            Built for retry-safe workloads, where occasional reprocessing is acceptable
-            and the focus is on efficiency, reliability, and predictable execution.
+            Built for batch workloads where efficiency, reliability, and predictable execution matter more than speed for a single request.
           </div>
 
-          <div class="panel" style="margin-top: 20px;">
+          <div class="panel" style="margin-top: 20px">
             <h3>Typical example</h3>
             <p>
-              Reprocessing 100k–1M documents → embeddings or classification →
-              background job → retry-safe → cost-sensitive.
+              A company has 100,000 to 1,000,000 documents to process for
+              embeddings, extraction, or classification. The work is important,
+              but it does not need to finish in real time.
             </p>
           </div>
         </div>
@@ -155,37 +156,36 @@
 
           <div class="grid">
             <div class="panel">
-              <h3>You send one representative sample</h3>
+              <h3>1. You send a small representative sample</h3>
               <p>
-                Share JSONL or PDFs, plus enough context to understand the job,
-                the expected output, and the scale you typically run.
+                Share a small batch in JSONL or PDFs, plus a short note on what
+                you want done with it.
               </p>
             </div>
 
             <div class="panel">
-              <h3>We run it on our infrastructure</h3>
+              <h3>2. We run it for free</h3>
               <p>
-                Jobs are broken into small, bounded tasks. The system is
-                designed for reliability, failure visibility, and predictable
-                execution on distributed GPUs.
+                We test it on our infrastructure and check whether your workload
+                is a good fit for this setup.
               </p>
             </div>
 
             <div class="panel">
-              <h3>You get a practical comparison</h3>
+              <h3>3. You get a practical cost comparison</h3>
               <p>
-                We show you whether the workload fits this setup and what the
-                cost looks like versus AWS or OpenAI.
+                We show you what the workload looks like on our side and how the
+                economics compare with AWS or OpenAI.
               </p>
             </div>
           </div>
 
           <div class="panel" style="margin-top: 20px">
-            <h3>What to send</h3>
+            <h3>Good first workloads</h3>
             <p>
-              A small representative batch, workload type, typical runtime,
-              model details if known, VRAM estimate if known, and any
-              retry-safety constraints.
+              Document processing, embeddings, large-scale classification,
+              archive reprocessing, backfills, and other repeatable AI jobs that
+              do not need realtime responses.
             </p>
           </div>
         </div>
@@ -198,26 +198,27 @@
 
           <div class="grid">
             <div class="panel">
-              <h3>Jan — Founder</h3>
+              <h3>What we are focused on</h3>
               <p>
-                Focused on workload economics, pilot discovery, and keeping
-                scope tight while validating real demand.
+                Solvyr is focused on one thing: helping teams run the right kind
+                of AI workloads more cost-efficiently.
               </p>
             </div>
 
             <div class="panel">
-              <h3>Maksym — Founding Engineer</h3>
+              <h3>How we think</h3>
               <p>
-                Focused on reliability, failure visibility, and predictable
-                execution on distributed GPUs.
+                We care about real workloads, clear economics, and building a
+                system that can keep jobs moving even when parts of the
+                infrastructure fail.
               </p>
             </div>
 
             <div class="panel">
               <h3>Current stage</h3>
               <p>
-                Early-stage infrastructure. Running focused technical pilots
-                with teams that have real batch workloads.
+                Early-stage. We are working with focused technical pilots and
+                speaking with teams that have real batch workloads today.
               </p>
             </div>
           </div>
@@ -227,19 +228,38 @@
       <!-- CONTACT -->
       <section id="contact" class="section">
         <div class="container">
-          <h2>Run a free test</h2>
+          <h2>Try it with a small sample</h2>
 
-          <div class="contact">
-            <div class="contactcard primaryContact">
-              <div class="label">Email</div>
-              <div class="value bigValue">
-                <a href="mailto:jan@solvyr.com">jan@solvyr.com</a>
+          <div class="heroContact">
+            <div class="heroContactText">
+              <div class="heroContactKicker">Low-friction first step</div>
+              <div class="heroContactLine">
+                Send a small sample workload and we’ll run it for free.
               </div>
-              <div class="hint">
-                Send a small representative batch. JSONL or PDFs are fine.
+              <div class="heroContactHint">
+                You’ll get a practical view on fit and a cost comparison versus
+                AWS or OpenAI, without needing to integrate anything first.
               </div>
             </div>
+
+            <div class="heroContactActions">
+              <a
+                class="button primary"
+                href="https://forms.gle/AZR6rChByypKV7cF8"
+                target="_blank"
+                rel="noopener"
+              >
+                Submit workload details
+              </a>
+              <a class="button secondary" href="mailto:jan@solvyr.com">
+                Email us instead
+              </a>
+            </div>
           </div>
+
+          <p class="fine">
+            JSONL or PDFs are fine. Please avoid sending sensitive or personal data at this stage.
+          </p>
 
           <footer class="footer">
             <div>© <span id="y"></span> Solvyr</div>
