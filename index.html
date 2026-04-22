@@ -207,6 +207,21 @@
               existing pipeline or agent workflow.
             </p>
           </div>
+
+          <div class="panel" style="margin-top: 20px">
+            <h3>Example integration (later)</h3>
+            <p>
+              If your workflow is a fit, Solvyr can be added as a simple async
+              batch step behind your existing pipeline or agent workflow.
+            </p>
+
+            <pre style="background:#0f172a;color:#e2e8f0;padding:16px;border-radius:8px;overflow:auto;"><code>job = solvyr.submit(
+  workload="pdf_extraction",
+  inputs=[...]
+)
+
+result = solvyr.wait(job.id)</code></pre>
+          </div>
         </div>
       </section>
 
