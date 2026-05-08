@@ -4,309 +4,599 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Solvyr — Lower-cost infrastructure for batch AI workloads</title>
+    <title>Solvyr - Controlled execution for async AI workloads</title>
     <meta
       name="description"
-      content="Running large AI jobs in the background? Send Solvyr a small sample in JSONL or PDFs. We’ll run it for free and show you the cost versus AWS or OpenAI."
+      content="Solvyr helps teams pilot async document and text AI workloads with measured cost-per-result, visible execution, scoped data handling, and clear integration boundaries."
+    />
+    <meta property="og:title" content="Solvyr - Controlled async AI execution" />
+    <meta
+      property="og:description"
+      content="Pilot heavy document and text AI workloads with measured economics, visible runs, and scoped data handling."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://solvyr.com/" />
+    <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Solvyr - Controlled async AI execution" />
+    <meta
+      name="twitter:description"
+      content="Pilot async document and text AI workloads with cost, control, and clear data boundaries."
     />
 
-    <link rel="icon" href="../favicon.ico" />
-    <meta name="theme-color" content="#f6f8fb" />
-    <link rel="preload" as="image" href="../assets/brand/icon.png" />
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="alternate" hreflang="en" href="index.html" />
+    <link rel="alternate" hreflang="nl" href="nl.html" />
+    <meta name="theme-color" content="#f7f8fb" />
+    <link rel="preload" as="image" href="assets/brand/icon.png" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <header class="top">
-      <div class="container">
-        <a class="brand" href="#top" aria-label="Solvyr — Back to top">
+      <div class="container topbar">
+        <a class="brand" href="#overview" data-tab-target="overview" aria-label="Solvyr home">
           <img
             class="brandlogo"
-            src="../assets/brand/icon.png"
+            src="assets/brand/icon.png"
             alt="Solvyr icon"
             width="34"
             height="34"
           />
           <div class="brandtext">
             <div class="name">Solvyr</div>
-            <div class="tag">
-              Lower-cost batch AI infrastructure
-            </div>
+            <div class="tag">Controlled async AI execution</div>
           </div>
         </a>
 
-        <nav class="nav" aria-label="Primary navigation">
-          <a href="#fit">Who this is for</a>
-          <a href="#how">How it works</a>
-          <a href="#about">About</a>
-          <a href="#contact" class="pill">Run a free test</a>
-        </nav>
+        <div class="headerTools">
+          <div class="languageSwitch" aria-label="Language selection">
+            <a class="lang active" href="index.html" data-language-link="index.html" aria-label="English version"><span aria-hidden="true">🇬🇧</span><span>EN</span></a>
+            <a class="lang" href="nl.html" data-language-link="nl.html" aria-label="Nederlandse versie"><span aria-hidden="true">🇳🇱</span><span>NL</span></a>
+          </div>
+
+          <nav class="tabs" aria-label="Primary navigation">
+            <a class="tab" href="#who" data-tab-target="who" aria-selected="false">Who it is for</a>
+            <a class="tab" href="#deliver" data-tab-target="deliver" aria-selected="false">What we deliver</a>
+            <a class="tab" href="#model" data-tab-target="model" aria-selected="false">Model</a>
+            <a class="tab" href="#security" data-tab-target="security" aria-selected="false">Security</a>
+            <a class="tab cta" href="#pilot" data-tab-target="pilot" aria-selected="false">Pilot</a>
+          </nav>
+        </div>
       </div>
     </header>
 
-    <div id="top" aria-hidden="true"></div>
-
-    <main>
-      <!-- HERO -->
-      <section class="hero">
-        <div class="container">
-          <h1>Running big AI jobs in the background?</h1>
-
+    <main class="container shell">
+      <section class="page active" id="overview-panel" data-page="overview" aria-labelledby="overview-title">
+        <div class="hero">
+          <p class="eyebrow">Solvyr</p>
+          <h1 id="overview-title">A controlled path for heavy document and text AI workloads.</h1>
           <p class="lede">
-            If your team processes documents, generates embeddings, classifies
-            large batches, or re-runs AI jobs at scale, Solvyr may be able to do
-            it at a much lower cost. No infra buildout needed for a first pilot.
-            Send us a small sample in <strong>JSONL or PDFs</strong> and we’ll
-            run it <strong>for free</strong> and show you the cost versus
-            <strong>AWS or OpenAI</strong>.
+            Pilot async AI work with measured economics, visible runs, and scoped
+            data handling.
           </p>
+          <div class="heroActions">
+            <a class="button primary" href="#pilot" data-tab-target="pilot">Scope a pilot</a>
+            <a class="button secondary" href="#deliver" data-tab-target="deliver">See what you get</a>
+          </div>
+        </div>
 
-          <div class="heroContact">
-            <div class="heroContactText">
-              <div class="heroContactKicker">Simple first step</div>
-              <div class="heroContactLine">
-                No integration for the first test. Easy to fit into batch
-                pipelines later.
-              </div>
-              <div class="heroContactHint">
-                Best fit for teams with repeatable AI workloads where cost
-                matters more than instant response time.
-              </div>
+        <div class="reasonGrid" aria-label="Why teams pilot Solvyr">
+          <article class="panel">
+            <p class="miniLabel">Economics</p>
+            <h2>Measure cost-per-result on your own workload.</h2>
+            <p>
+              Runtime, retries, output, and estimated cost per useful result.
+            </p>
+          </article>
+          <article class="panel">
+            <p class="miniLabel">Throughput</p>
+            <h2>Move backlogs without blocking product work.</h2>
+            <p>
+              Refreshes, backfills, enrichment, and reprocessing outside the
+              realtime path.
+            </p>
+          </article>
+          <article class="panel">
+            <p class="miniLabel">Control</p>
+            <h2>See what happened instead of hoping it completed.</h2>
+            <p>
+              Completed, retried, failed, and usable output are visible.
+            </p>
+          </article>
+          <article class="panel">
+            <p class="miniLabel">Adoption</p>
+            <h2>Test the execution model before integration.</h2>
+            <p>
+              Prove fit before building a controlled CLI or API path.
+            </p>
+          </article>
+        </div>
+
+        <section class="band compact" aria-labelledby="connector-title">
+          <div>
+            <p class="eyebrow">When this rings a bell</p>
+            <h2 id="connector-title">A useful intro often starts with a familiar operational problem.</h2>
+          </div>
+          <p>
+            Thousands of PDFs. An index refresh. A repeat document workflow. A
+            team waiting on batch AI jobs. That is enough for a pilot conversation.
+          </p>
+        </section>
+
+        <section class="proofStrip" aria-label="Pilot scope">
+          <div>
+            <strong>One workload</strong>
+            <span>No broad platform migration.</span>
+          </div>
+          <div>
+            <strong>Safe sample</strong>
+            <span>Clear input, output, and boundaries.</span>
+          </div>
+          <div>
+            <strong>Measured result</strong>
+            <span>Cost, runtime, quality, caveats.</span>
+          </div>
+        </section>
+
+        <section class="flowPanel" aria-labelledby="pilot-flow-title">
+          <div>
+            <p class="eyebrow">Pilot flow</p>
+            <h2 id="pilot-flow-title">From sample to decision, without a long platform project.</h2>
+          </div>
+          <ol class="flowSteps">
+            <li>
+              <span>1</span>
+              <strong>Scope</strong>
+              <small>Workload, data boundaries, success signal.</small>
+            </li>
+            <li>
+              <span>2</span>
+              <strong>Run</strong>
+              <small>Controlled execution with visible states.</small>
+            </li>
+            <li>
+              <span>3</span>
+              <strong>Report</strong>
+              <small>Output, cost inputs, runtime, caveats.</small>
+            </li>
+            <li>
+              <span>4</span>
+              <strong>Decide</strong>
+              <small>Continue, adjust, or stop.</small>
+            </li>
+          </ol>
+        </section>
+      </section>
+
+      <section class="page" id="who-panel" data-page="who" aria-labelledby="who-title">
+        <div class="pageHeader">
+          <p class="eyebrow">Who it is for</p>
+          <h1 id="who-title">Teams with recurring document or text work that is too heavy for the normal path.</h1>
+          <p>
+            Best fit: a real backlog, a safe pilot sample, and a clear idea of
+            useful output.
+          </p>
+        </div>
+
+        <div class="split">
+          <section class="panel" aria-labelledby="good-fit-title">
+            <h2 id="good-fit-title">Good fit</h2>
+            <ul class="cleanList">
+              <li>Large PDF or text batches</li>
+              <li>Embedding refreshes, re-indexing, enrichment, or classification</li>
+              <li>Document transformation or reviewable translation</li>
+              <li>Low- or moderate-sensitivity data that can be scoped safely</li>
+            </ul>
+          </section>
+
+          <section class="panel mutedPanel" aria-labelledby="poor-fit-title">
+            <h2 id="poor-fit-title">Not the current fit</h2>
+            <ul class="cleanList">
+              <li>Realtime product requests</li>
+              <li>High-sensitivity data without a safe pilot sample</li>
+              <li>Platform migrations, generic workflow tooling, or open self-serve access</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="split sectionGap">
+          <section class="panel" aria-labelledby="customer-types-title">
+            <h2 id="customer-types-title">Customers could be</h2>
+            <ul class="cleanList">
+              <li>Document processing or workflow automation companies</li>
+              <li>Legal, accounting, compliance, or due-diligence teams</li>
+              <li>Data enrichment, market intelligence, or research operations</li>
+              <li>Municipalities, agencies, archives, libraries, or semi-public organizations</li>
+            </ul>
+          </section>
+
+          <section class="panel" aria-labelledby="use-cases-title">
+            <h2 id="use-cases-title">Use cases could be</h2>
+            <ul class="cleanList">
+              <li>Refreshing an embedding index</li>
+              <li>Reprocessing an archive into searchable chunks</li>
+              <li>Classifying or enriching document batches</li>
+              <li>Transforming, translating, or normalizing manuals and policy documents</li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="band compact" aria-labelledby="buyer-title">
+          <div>
+            <p class="eyebrow">Typical buyer signal</p>
+            <h2 id="buyer-title">A concrete backlog beats general AI infrastructure interest.</h2>
+          </div>
+          <p>
+            Strong prospects can point to a backlog, recurring run, customer
+            obligation, cost concern, or slow process.
+          </p>
+        </section>
+
+        <section class="band compact" aria-labelledby="intro-title">
+          <div>
+            <p class="eyebrow">For connectors</p>
+            <h2 id="intro-title">A good intro is usually to the person who owns the backlog.</h2>
+          </div>
+          <p>
+            Think product operations, data platform, document automation,
+            innovation, or a business owner with a repeat AI-heavy process.
+          </p>
+        </section>
+      </section>
+
+      <section class="page" id="deliver-panel" data-page="deliver" aria-labelledby="deliver-title">
+        <div class="pageHeader">
+          <p class="eyebrow">What we deliver</p>
+          <h1 id="deliver-title">A controlled pilot run with visible outcomes and clear caveats.</h1>
+          <p>
+            Completed work, measured run behavior, and a practical go/no-go.
+          </p>
+        </div>
+
+        <div class="process">
+          <article class="step">
+            <div class="num">1</div>
+            <div>
+              <h2>Workload qualification</h2>
+              <p>
+                Input, output, data sensitivity, retries, current process, success
+                criteria.
+              </p>
             </div>
+          </article>
 
-            <div class="heroContactActions">
+          <article class="step">
+            <div class="num">2</div>
+            <div>
+              <h2>Controlled execution</h2>
+              <p>
+                Bounded tasks, visible terminal states, retries, result references.
+              </p>
+            </div>
+          </article>
+
+          <article class="step">
+            <div class="num">3</div>
+            <div>
+              <h2>Run summary, economics, and next decision</h2>
+              <p>
+                Usable output, run summary, cost-per-result, next step.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="summaryGrid">
+          <article class="panel">
+            <h2>Expected artifacts</h2>
+            <p>
+              Output, run notes, counts, retries, cost inputs, caveats.
+            </p>
+          </article>
+          <article class="panel">
+            <h2>Later integration</h2>
+            <p>
+              If it fits, move toward a controlled CLI or API path.
+            </p>
+          </article>
+          <article class="panel">
+            <h2>Operating principle</h2>
+            <p>
+              Manual operations are acceptable early. Hidden failure is not.
+            </p>
+          </article>
+        </div>
+
+        <section class="reportPreview" aria-labelledby="report-preview-title">
+          <div class="reportCopy">
+            <p class="eyebrow">Example output</p>
+            <h2 id="report-preview-title">A pilot should produce a decision artifact.</h2>
+            <p>
+              No invented benchmark. A real pilot report should show the numbers,
+              caveats, and whether the workload path deserves more engineering.
+            </p>
+          </div>
+          <div class="metricCard" aria-label="Example pilot report fields">
+            <div>
+              <span>Run status</span>
+              <strong>Completed / partial / stopped</strong>
+            </div>
+            <div>
+              <span>Useful output</span>
+              <strong>Accepted items + review notes</strong>
+            </div>
+            <div>
+              <span>Economics</span>
+              <strong>Runtime + cost inputs per result</strong>
+            </div>
+            <div>
+              <span>Next step</span>
+              <strong>Continue, narrow, or stop</strong>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="page" id="model-panel" data-page="model" aria-labelledby="model-title">
+        <div class="pageHeader">
+          <p class="eyebrow">Model</p>
+          <h1 id="model-title">Distributed execution, controlled by workload fit.</h1>
+          <p>
+            Some repeatable async work can run somewhere more appropriate than
+            the default path.
+          </p>
+        </div>
+
+        <div class="summaryGrid">
+          <article class="panel">
+            <h2>Execution pools, not an open marketplace</h2>
+            <p>
+              Solvyr nodes, customer infrastructure, partner pools, or future
+              trusted pools.
+            </p>
+          </article>
+          <article class="panel">
+            <h2>European digital independence</h2>
+            <p>
+              More execution choice, including European or customer-controlled
+              capacity.
+            </p>
+          </article>
+          <article class="panel">
+            <h2>Sustainability should be measured</h2>
+            <p>
+              Energy, retries, runtime, and cost per useful result are evidence,
+              not slogans.
+            </p>
+          </article>
+        </div>
+
+        <section class="band compact" aria-labelledby="model-connectors-title">
+          <div>
+            <p class="eyebrow">Why it can resonate</p>
+            <h2 id="model-connectors-title">This is also an infrastructure story.</h2>
+          </div>
+          <p>
+            Public, semi-public, research, education, and regional innovation
+            networks often recognize the pattern: AI capacity, with sovereignty
+            and concentration in mind.
+          </p>
+        </section>
+
+        <section class="band compact" aria-labelledby="model-boundary-title">
+          <div>
+            <p class="eyebrow">Boundary</p>
+            <h2 id="model-boundary-title">Not a universal datacenter replacement.</h2>
+          </div>
+          <p>
+            Datacenters remain right for many workloads. Solvyr focuses on async,
+            decomposable, retryable work.
+          </p>
+        </section>
+      </section>
+
+      <section class="page" id="security-panel" data-page="security" aria-labelledby="security-title">
+        <div class="pageHeader">
+          <p class="eyebrow">Security</p>
+          <h1 id="security-title">Security for a bounded pilot: lifecycle, access, deletion, and data minimization.</h1>
+          <p>
+            Practical hygiene for low- or moderate-sensitivity pilot workloads,
+            with clear limits before data runs.
+          </p>
+        </div>
+
+        <div class="split">
+          <section class="panel" aria-labelledby="level-one-title">
+            <h2 id="level-one-title">What we can define for a pilot</h2>
+            <ul class="cleanList">
+              <li>Data lifecycle, retention, and deletion</li>
+              <li>Input and output storage locations</li>
+              <li>Scoped operator access</li>
+              <li>Data minimization before execution</li>
+            </ul>
+          </section>
+
+          <section class="panel mutedPanel" aria-labelledby="security-boundaries-title">
+            <h2 id="security-boundaries-title">Current boundaries</h2>
+            <ul class="cleanList">
+              <li>No high-sensitivity workloads without a safe pilot dataset</li>
+              <li>No cryptographic privacy or confidential-compute claims</li>
+              <li>No broad enterprise compliance claim yet</li>
+              <li>No claim that distribution itself creates confidentiality</li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="band compact" aria-labelledby="redaction-title">
+          <div>
+            <p class="eyebrow">Risk reduction</p>
+            <h2 id="redaction-title">Redaction or pseudonymization can be part of the pilot design.</h2>
+          </div>
+          <p>
+            We can help define pre-upload redaction or pseudonymization. Keep
+            rehydration customer-side. Risk reduction, not guaranteed anonymity.
+          </p>
+        </section>
+
+        <section class="band compact" aria-labelledby="security-summary-title">
+          <div>
+            <p class="eyebrow">Practical promise</p>
+            <h2 id="security-summary-title">Security starts with workload selection and honest boundaries.</h2>
+          </div>
+          <p>
+            Some workloads stay out of scope. Suitable pilots get lifecycle,
+            access, deletion, and execution boundaries before data is shared.
+          </p>
+        </section>
+
+        <section class="appendixGrid" aria-labelledby="security-appendix-title">
+          <div>
+            <p class="eyebrow">Security appendix</p>
+            <h2 id="security-appendix-title">Topics to settle before a pilot run.</h2>
+          </div>
+          <dl>
+            <div>
+              <dt>Data lifecycle</dt>
+              <dd>What is uploaded, produced, retained, deleted, and when.</dd>
+            </div>
+            <div>
+              <dt>Scoped access</dt>
+              <dd>Who can see payloads, logs, outputs, and operational metadata.</dd>
+            </div>
+            <div>
+              <dt>Redaction</dt>
+              <dd>Which fields can be removed, replaced, or kept customer-side.</dd>
+            </div>
+            <div>
+              <dt>Exit path</dt>
+              <dd>How outputs, temporary files, and follow-up access are handled.</dd>
+            </div>
+          </dl>
+        </section>
+      </section>
+
+      <section class="page" id="pilot-panel" data-page="pilot" aria-labelledby="pilot-title">
+        <div class="pageHeader">
+          <p class="eyebrow">Pilot</p>
+          <h1 id="pilot-title">Start with one bounded workload and a representative sample.</h1>
+          <p>
+            One workload, one input format, one expected output, one short
+            decision loop.
+          </p>
+        </div>
+
+        <div class="pilotBox">
+          <div>
+            <h2>What to send</h2>
+            <ul class="cleanList">
+              <li>A small safe representative sample</li>
+              <li>Workload type and current process</li>
+              <li>Input, expected output, and validation criteria</li>
+              <li>Data handling requirements</li>
+            </ul>
+          </div>
+
+          <div class="contactCard">
+            <p class="eyebrow">Contact</p>
+            <h2>Discuss a pilot workload</h2>
+            <p>
+              Send the job description and safest sample. We confirm fit before
+              running anything.
+            </p>
+            <div class="contactActions">
+              <a class="button primary" href="mailto:jan@solvyr.com">Email Solvyr</a>
               <a
-                class="button primary"
-                href="https://forms.gle/AZR6rChByypKV7cF8"
-                target="_blank"
-                rel="noopener"
+                class="button secondary"
+                href="pilot-intake.html"
               >
-                Submit a sample workload
-              </a>
-              <a class="button secondary" href="mailto:jan@solvyr.com">
-                Email us instead
+                Open pilot intake
               </a>
             </div>
           </div>
+        </div>
 
-          <p class="fine">
-            Please avoid sending sensitive or personal data at this stage.
+        <section class="band compact" aria-labelledby="pilot-outcome-title">
+          <div>
+            <p class="eyebrow">Pilot outcome</p>
+            <h2 id="pilot-outcome-title">A go/no-go decision for the workload path.</h2>
+          </div>
+          <p>
+            Continue, adjust scope, or stop. The next step should be obvious.
           </p>
-        </div>
-      </section>
-
-      <!-- FIT -->
-      <section id="fit" class="section alt">
-        <div class="container">
-          <h2>Who this is for</h2>
-
-          <div class="panel">
-            <p>
-              Solvyr is for teams that already know they have a meaningful AI
-              workload, but do not want to keep paying premium infrastructure
-              prices for jobs that can run in the background.
-            </p>
-          </div>
-
-          <div class="checklist">
-            <div class="check ok">
-              You process large batches of documents or text
-            </div>
-            <div class="check ok">
-              You run embeddings, classification, extraction, or other repeatable AI jobs
-            </div>
-            <div class="check ok">
-              Your workload can run in the background
-            </div>
-            <div class="check ok">
-              Lower cost matters more than instant completion
-            </div>
-            <div class="check ok">
-              You sometimes reprocess old data, backfills, or large archives
-            </div>
-            <div class="check no">
-              You need a realtime API for user-facing requests
-            </div>
-            <div class="check no">
-              You need strict SLAs or guaranteed response times
-            </div>
-            <div class="check no">
-              Every single run must complete immediately with no room for retries
-            </div>
-          </div>
-
-          <div class="note">
-            Built for batch workloads where efficiency, reliability, and predictable execution matter more than speed for a single request.
-          </div>
-
-          <div class="panel" style="margin-top: 20px">
-            <h3>Typical example</h3>
-            <p>
-              A company has 100,000 to 1,000,000 documents to process for
-              embeddings, extraction, or classification. The work is important,
-              but it does not need to finish in real time.
-            </p>
-          </div>
-
-          <div class="panel" style="margin-top: 20px">
-            <h3>Also relevant for agent workflows</h3>
-            <p>
-              If your agents trigger heavy background jobs such as document
-              extraction, embeddings, enrichment, or reprocessing, Solvyr can
-              act as a simple batch execution layer behind that workflow.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- HOW -->
-      <section id="how" class="section">
-        <div class="container">
-          <h2>How it works</h2>
-
-          <div class="grid">
-            <div class="panel">
-              <h3>1. You send a small representative sample</h3>
-              <p>
-                Share a small batch in JSONL or PDFs, plus a short note on what
-                you want done with it.
-              </p>
-            </div>
-
-            <div class="panel">
-              <h3>2. We run it for free</h3>
-              <p>
-                We test it on our infrastructure and check whether your workload
-                is a good fit for this setup.
-              </p>
-            </div>
-
-            <div class="panel">
-              <h3>3. You get a practical cost comparison</h3>
-              <p>
-                We show you what the workload looks like on our side and how the
-                economics compare with AWS or OpenAI.
-              </p>
-            </div>
-          </div>
-
-          <div class="panel" style="margin-top: 20px">
-            <h3>Good first workloads</h3>
-            <p>
-              Document processing, embeddings, large-scale classification,
-              archive reprocessing, backfills, and other repeatable AI jobs that
-              do not need realtime responses.
-            </p>
-          </div>
-
-          <div class="panel" style="margin-top: 20px">
-            <h3>Simple integration later</h3>
-            <p>
-              Start with a sample first. If the workload is a fit, Solvyr can
-              later be integrated as a simple async batch layer behind your
-              existing pipeline or agent workflow.
-            </p>
-          </div>
-
-          <div class="panel" style="margin-top: 20px">
-            <h3>Example integration (later)</h3>
-            <p>
-              If your workflow is a fit, Solvyr can be added as a simple async
-              batch step behind your existing pipeline or agent workflow.
-            </p>
-
-            <pre style="background:#0f172a;color:#e2e8f0;padding:16px;border-radius:8px;overflow:auto;"><code>job = solvyr.submit(
-  workload="pdf_extraction",
-  inputs=[...]
-)
-
-result = solvyr.wait(job.id)</code></pre>
-          </div>
-        </div>
-      </section>
-
-      <!-- ABOUT -->
-      <section id="about" class="section alt">
-        <div class="container">
-          <h2>About</h2>
-
-          <div class="grid">
-            <div class="panel">
-              <h3>What we are focused on</h3>
-              <p>
-                Solvyr is focused on one thing: helping teams run the right kind
-                of AI workloads more cost-efficiently.
-              </p>
-            </div>
-
-            <div class="panel">
-              <h3>How we think</h3>
-              <p>
-                We care about real workloads, clear economics, and building a
-                system that can keep jobs moving even when parts of the
-                infrastructure fail.
-              </p>
-            </div>
-
-            <div class="panel">
-              <h3>Current stage</h3>
-              <p>
-                Early-stage. We are working with focused technical pilots and
-                speaking with teams that have real batch workloads today.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section id="contact" class="section">
-        <div class="container">
-          <h2>Try it with a small sample</h2>
-
-          <div class="heroContact">
-            <div class="heroContactText">
-              <div class="heroContactKicker">Low-friction first step</div>
-              <div class="heroContactLine">
-                Send a small sample workload and we’ll run it for free.
-              </div>
-              <div class="heroContactHint">
-                You’ll get a practical view on fit and a cost comparison versus
-                AWS or OpenAI, without needing to integrate anything first.
-              </div>
-            </div>
-
-            <div class="heroContactActions">
-              <a
-                class="button primary"
-                href="https://forms.gle/AZR6rChByypKV7cF8"
-                target="_blank"
-                rel="noopener"
-              >
-                Submit workload details
-              </a>
-              <a class="button secondary" href="mailto:jan@solvyr.com">
-                Email us instead
-              </a>
-            </div>
-          </div>
-
-          <p class="fine">
-            JSONL or PDFs are fine. Please avoid sending sensitive or personal data at this stage.
-          </p>
-
-          <footer class="footer">
-            <div>© <span id="y"></span> Solvyr</div>
-            <div class="muted">
-              Early-stage infrastructure · Batch workloads only
-            </div>
-          </footer>
-        </div>
+        </section>
       </section>
     </main>
 
+    <footer class="footer">
+      <div class="container footerInner">
+        <div>&copy; <span id="y"></span> Solvyr</div>
+        <div class="muted">Async document and text workloads only</div>
+      </div>
+    </footer>
+
     <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+
+      const pages = [...document.querySelectorAll("[data-page]")];
+      const tabs = [...document.querySelectorAll("[data-tab-target]")];
+
+      function setActivePage(pageName) {
+        const targetPage = pages.some((page) => page.dataset.page === pageName)
+          ? pageName
+          : "overview";
+
+        pages.forEach((page) => {
+          page.classList.toggle("active", page.dataset.page === targetPage);
+        });
+
+        tabs.forEach((tab) => {
+          const isActive = tab.dataset.tabTarget === targetPage;
+          if (tab.classList.contains("tab")) {
+            tab.classList.toggle("active", isActive);
+            tab.setAttribute("aria-selected", String(isActive));
+          }
+        });
+
+        document.title =
+          targetPage === "overview"
+            ? "Solvyr - Controlled execution for async AI workloads"
+            : `${document.querySelector(`[data-page="${targetPage}"] .eyebrow`).textContent} - Solvyr`;
+      }
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", (event) => {
+          const pageName = tab.dataset.tabTarget;
+          if (!pageName) return;
+          event.preventDefault();
+          history.pushState(null, "", `#${pageName}`);
+          setActivePage(pageName);
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      });
+
+      window.addEventListener("popstate", () => {
+        setActivePage(location.hash.replace("#", ""));
+      });
+
+      document.querySelectorAll("[data-language-link]").forEach((link) => {
+        link.addEventListener("click", () => {
+          const hash = location.hash || "#overview";
+          link.href = `${link.dataset.languageLink}${hash}`;
+        });
+      });
+
       document.getElementById("y").textContent = new Date().getFullYear();
+      const initialPage = location.hash.replace("#", "");
+      setActivePage(initialPage);
+      if (initialPage) {
+        const resetInitialScroll = () => window.scrollTo({ top: 0, behavior: "auto" });
+        resetInitialScroll();
+        setTimeout(resetInitialScroll, 0);
+        window.addEventListener("load", resetInitialScroll, { once: true });
+      }
     </script>
   </body>
 </html>

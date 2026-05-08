@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Solvyr - Pilotintake</title>
+    <meta
+      name="description"
+      content="Deel de vorm van een async document- of tekstworkload zodat Solvyr pilot-fit kan beoordelen."
+    />
+    <meta property="og:title" content="Solvyr - Pilotintake" />
+    <meta
+      property="og:description"
+      content="Bereid een compacte pilotaanvraag voor async document- en tekstwerk voor."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://solvyr.com/pilot-intake-nl.html" />
+    <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="alternate" hreflang="en" href="pilot-intake.html" />
+    <link rel="alternate" hreflang="nl" href="pilot-intake-nl.html" />
+    <meta name="theme-color" content="#f7f8fb" />
+    <link rel="preload" as="image" href="../assets/brand/icon.png" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <header class="top">
+      <div class="container topbar">
+        <a class="brand" href="nl.html#overview" aria-label="Solvyr home">
+          <img
+            class="brandlogo"
+            src="../assets/brand/icon.png"
+            alt="Solvyr icon"
+            width="34"
+            height="34"
+          />
+          <div class="brandtext">
+            <div class="name">Solvyr</div>
+            <div class="tag">Gecontroleerde async AI-uitvoering</div>
+          </div>
+        </a>
+
+        <div class="headerTools">
+          <div class="languageSwitch" aria-label="Taalkeuze">
+            <a class="lang" href="pilot-intake.html" aria-label="English version"><span aria-hidden="true">🇬🇧</span><span>EN</span></a>
+            <a class="lang active" href="pilot-intake-nl.html" aria-label="Nederlandse versie"><span aria-hidden="true">🇳🇱</span><span>NL</span></a>
+          </div>
+          <nav class="tabs" aria-label="Secundaire navigatie">
+            <a class="tab" href="nl.html#overview">Site</a>
+            <a class="tab cta active" href="pilot-intake-nl.html" aria-current="page">Pilotintake</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="container intakeShell">
+      <div class="intakeLayout">
+        <section class="intakeIntro" aria-labelledby="intake-title">
+          <p class="eyebrow">Pilotintake</p>
+          <h1 id="intake-title">Beschrijf een workload duidelijk genoeg om fit te beoordelen.</h1>
+          <p>
+            Deze pagina bereidt een email voor. Plak hier geen gevoelige data;
+            gebruik de veiligste beschrijving en sampleverwijzing die je kunt delen.
+          </p>
+          <section class="proofStrip" aria-label="Goede pilotinput">
+            <div>
+              <strong>Begrensd</strong>
+              <span>Een inputtype en verwachte output.</span>
+            </div>
+            <div>
+              <strong>Herhaalbaar</strong>
+              <span>Een backlog, refresh of terugkerende run.</span>
+            </div>
+            <div>
+              <strong>Veilig</strong>
+              <span>Lage of middelmatige gevoeligheid.</span>
+            </div>
+          </section>
+        </section>
+
+        <form class="intakeForm" id="pilot-form">
+          <div class="fieldGrid">
+            <div class="field">
+              <label for="name">Naam</label>
+              <input id="name" name="name" autocomplete="name" />
+            </div>
+            <div class="field">
+              <label for="org">Organisatie</label>
+              <input id="org" name="org" autocomplete="organization" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" />
+            </div>
+            <div class="field">
+              <label for="timeline">Timing</label>
+              <select id="timeline" name="timeline">
+                <option value="">Kies een optie</option>
+                <option>Orienterend</option>
+                <option>Dit kwartaal</option>
+                <option>Urgente achterstand</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="workload">Workload</label>
+              <textarea id="workload" name="workload" placeholder="Wat moet draaien? PDFs, tekstbestanden, embeddings, classificatie, vertaling, normalisatie..."></textarea>
+            </div>
+            <div class="field full">
+              <label for="current">Huidig proces of pijnpunt</label>
+              <textarea id="current" name="current" placeholder="Wat gebeurt nu, wat is traag of duur, en wie wacht erop?"></textarea>
+            </div>
+            <div class="field">
+              <label for="volume">Typisch volume</label>
+              <input id="volume" name="volume" placeholder="Bestanden, paginas, tokens of records" />
+            </div>
+            <div class="field">
+              <label for="sensitivity">Datagevoeligheid</label>
+              <select id="sensitivity" name="sensitivity">
+                <option value="">Kies een optie</option>
+                <option>Laag</option>
+                <option>Middelmatig</option>
+                <option>Hoog of onzeker</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="output">Verwachte output en validatie</label>
+              <textarea id="output" name="output" placeholder="Wat moet eruit komen, en hoe beoordeel je of het bruikbaar is?"></textarea>
+            </div>
+            <div class="field full">
+              <label for="data">Data-eisen</label>
+              <textarea id="data" name="data" placeholder="Bewaartermijn, verwijdering, weglakken, pseudonimisering, scoped access, opslaglocatie..."></textarea>
+            </div>
+          </div>
+
+          <p class="formNote">
+            De knop opent je emailclient met deze details. Voeg samples alleen
+            apart toe wanneer ze veilig te delen zijn.
+          </p>
+          <div class="contactActions">
+            <button class="button primary" type="submit">Bereid email voor</button>
+            <a class="button secondary" href="nl.html#pilot">Terug naar pilotpagina</a>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footerInner">
+        <div>&copy; <span id="y"></span> Solvyr</div>
+        <div class="muted">Alleen async document- en tekstworkloads</div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+
+      document.getElementById("pilot-form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        const form = event.currentTarget;
+        const data = new FormData(form);
+        const fields = [
+          ["Naam", data.get("name")],
+          ["Organisatie", data.get("org")],
+          ["Email", data.get("email")],
+          ["Timing", data.get("timeline")],
+          ["Workload", data.get("workload")],
+          ["Huidig proces of pijnpunt", data.get("current")],
+          ["Typisch volume", data.get("volume")],
+          ["Datagevoeligheid", data.get("sensitivity")],
+          ["Verwachte output en validatie", data.get("output")],
+          ["Data-eisen", data.get("data")]
+        ];
+        const body = fields
+          .map(([label, value]) => `${label}:\n${String(value || "").trim() || "-"}`)
+          .join("\n\n");
+        const subject = encodeURIComponent("Solvyr pilot workload");
+        window.location.href = `mailto:jan@solvyr.com?subject=${subject}&body=${encodeURIComponent(body)}`;
+      });
+    </script>
+  </body>
+</html>

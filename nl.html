@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Solvyr - Gecontroleerde uitvoering voor async AI-werk</title>
+    <meta
+      name="description"
+      content="Solvyr helpt teams pilots draaien voor async document- en tekstwerk met zicht op kosten per resultaat, uitvoering, data-afbakening en integratie."
+    />
+    <meta property="og:title" content="Solvyr - Gecontroleerde async AI-uitvoering" />
+    <meta
+      property="og:description"
+      content="Pilot zwaar document- en tekstwerk met gemeten kosten, zichtbare runs en duidelijke data-afbakening."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://solvyr.com/nl.html" />
+    <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Solvyr - Gecontroleerde async AI-uitvoering" />
+    <meta
+      name="twitter:description"
+      content="Pilot async document- en tekstwerk met kosten, controle en duidelijke datagrenzen."
+    />
+
+    <link rel="icon" href="favicon.ico" />
+    <link rel="alternate" hreflang="en" href="index.html" />
+    <link rel="alternate" hreflang="nl" href="nl.html" />
+    <meta name="theme-color" content="#f7f8fb" />
+    <link rel="preload" as="image" href="assets/brand/icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="top">
+      <div class="container topbar">
+        <a class="brand" href="#overview" data-tab-target="overview" aria-label="Solvyr home">
+          <img
+            class="brandlogo"
+            src="assets/brand/icon.png"
+            alt="Solvyr icon"
+            width="34"
+            height="34"
+          />
+          <div class="brandtext">
+            <div class="name">Solvyr</div>
+            <div class="tag">Gecontroleerde async AI-uitvoering</div>
+          </div>
+        </a>
+
+        <div class="headerTools">
+          <div class="languageSwitch" aria-label="Taalkeuze">
+            <a class="lang" href="index.html" data-language-link="index.html" aria-label="English version"><span aria-hidden="true">🇬🇧</span><span>EN</span></a>
+            <a class="lang active" href="nl.html" data-language-link="nl.html" aria-label="Nederlandse versie"><span aria-hidden="true">🇳🇱</span><span>NL</span></a>
+          </div>
+
+          <nav class="tabs" aria-label="Hoofdnavigatie">
+            <a class="tab" href="#who" data-tab-target="who" aria-selected="false">Voor wie</a>
+            <a class="tab" href="#deliver" data-tab-target="deliver" aria-selected="false">Wat we leveren</a>
+            <a class="tab" href="#model" data-tab-target="model" aria-selected="false">Model</a>
+            <a class="tab" href="#security" data-tab-target="security" aria-selected="false">Security</a>
+            <a class="tab cta" href="#pilot" data-tab-target="pilot" aria-selected="false">Pilot</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="container shell">
+      <section class="page active" id="overview-panel" data-page="overview" aria-labelledby="overview-title">
+        <div class="hero">
+          <p class="eyebrow">Solvyr</p>
+          <h1 id="overview-title">Een gecontroleerde route voor zwaar document- en tekstwerk met AI.</h1>
+          <p class="lede">
+            Pilot async AI-werk met gemeten kosten, zichtbare runs en duidelijke
+            data-afbakening.
+          </p>
+          <div class="heroActions">
+            <a class="button primary" href="#pilot" data-tab-target="pilot">Verken een pilot</a>
+            <a class="button secondary" href="#deliver" data-tab-target="deliver">Zie wat je krijgt</a>
+          </div>
+        </div>
+
+        <div class="reasonGrid" aria-label="Waarom teams Solvyr piloten">
+          <article class="panel">
+            <p class="miniLabel">Kosten</p>
+            <h2>Meet kosten per resultaat op de echte workload.</h2>
+            <p>
+              Looptijd, retries, output en geschatte kosten per bruikbaar
+              resultaat.
+            </p>
+          </article>
+          <article class="panel">
+            <p class="miniLabel">Doorvoer</p>
+            <h2>Werk achterstanden weg zonder productteams te blokkeren.</h2>
+            <p>
+              Refreshes, backfills, verrijking en herverwerking buiten het
+              realtime pad.
+            </p>
+          </article>
+          <article class="panel">
+            <p class="miniLabel">Controle</p>
+            <h2>Zie wat er is gebeurd in plaats van te hopen dat het klaar is.</h2>
+            <p>
+              Klaar, opnieuw geprobeerd, gefaald en bruikbare output zijn
+              zichtbaar.
+            </p>
+          </article>
+          <article class="panel">
+            <p class="miniLabel">Adoptie</p>
+            <h2>Test het uitvoeringsmodel voordat je integreert.</h2>
+            <p>
+              Bewijs fit voordat je een gecontroleerde CLI- of API-route bouwt.
+            </p>
+          </article>
+        </div>
+
+        <section class="band compact" aria-labelledby="connector-title">
+          <div>
+            <p class="eyebrow">Als dit herkenbaar klinkt</p>
+            <h2 id="connector-title">Een goede intro begint vaak met een concreet operationeel probleem.</h2>
+          </div>
+          <p>
+            Duizenden PDFs. Een index-refresh. Een documentflow die steeds opnieuw
+            draait. Een team dat wacht op batch AI-jobs. Dat is genoeg voor een
+            pilotgesprek.
+          </p>
+        </section>
+
+        <section class="proofStrip" aria-label="Pilotscope">
+          <div>
+            <strong>Een workload</strong>
+            <span>Geen brede platformmigratie.</span>
+          </div>
+          <div>
+            <strong>Veilige sample</strong>
+            <span>Duidelijke input, output en grenzen.</span>
+          </div>
+          <div>
+            <strong>Gemeten resultaat</strong>
+            <span>Kosten, looptijd, kwaliteit, caveats.</span>
+          </div>
+        </section>
+
+        <section class="flowPanel" aria-labelledby="pilot-flow-title">
+          <div>
+            <p class="eyebrow">Pilotflow</p>
+            <h2 id="pilot-flow-title">Van sample naar beslissing, zonder lang platformproject.</h2>
+          </div>
+          <ol class="flowSteps">
+            <li>
+              <span>1</span>
+              <strong>Scope</strong>
+              <small>Workload, datagrenzen, succescriterium.</small>
+            </li>
+            <li>
+              <span>2</span>
+              <strong>Run</strong>
+              <small>Gecontroleerde uitvoering met zichtbare statussen.</small>
+            </li>
+            <li>
+              <span>3</span>
+              <strong>Rapport</strong>
+              <small>Output, kosteninputs, looptijd, caveats.</small>
+            </li>
+            <li>
+              <span>4</span>
+              <strong>Beslis</strong>
+              <small>Doorgaan, aanpassen of stoppen.</small>
+            </li>
+          </ol>
+        </section>
+      </section>
+
+      <section class="page" id="who-panel" data-page="who" aria-labelledby="who-title">
+        <div class="pageHeader">
+          <p class="eyebrow">Voor wie</p>
+          <h1 id="who-title">Teams met terugkerend document- of tekstwerk dat te zwaar is voor het normale pad.</h1>
+          <p>
+            Beste fit: een echte achterstand, een veilige pilotsample en een
+            duidelijk beeld van bruikbare output.
+          </p>
+        </div>
+
+        <div class="split">
+          <section class="panel" aria-labelledby="good-fit-title">
+            <h2 id="good-fit-title">Goede fit</h2>
+            <ul class="cleanList">
+              <li>Grote PDF- of tekstbatches</li>
+              <li>Embedding-refreshes, re-indexing, verrijking of classificatie</li>
+              <li>Documenttransformatie of beoordeelbare vertaling</li>
+              <li>Lage of middelmatige datagevoeligheid die veilig te begrenzen is</li>
+            </ul>
+          </section>
+
+          <section class="panel mutedPanel" aria-labelledby="poor-fit-title">
+            <h2 id="poor-fit-title">Niet de huidige fit</h2>
+            <ul class="cleanList">
+              <li>Realtime productverzoeken</li>
+              <li>Hooggevoelige data zonder veilige pilotsample</li>
+              <li>Platformmigraties, generieke workflowtools of open self-serve toegang</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="split sectionGap">
+          <section class="panel" aria-labelledby="customer-types-title">
+            <h2 id="customer-types-title">Klanten kunnen zijn</h2>
+            <ul class="cleanList">
+              <li>Documentverwerkers of workflow-automatiseringsbedrijven</li>
+              <li>Juridische, accounting-, compliance- of due-diligence teams</li>
+              <li>Dataverrijking, marktinformatie of research operations</li>
+              <li>Gemeenten, overheidsdiensten, archieven, bibliotheken of semi-publieke organisaties</li>
+            </ul>
+          </section>
+
+          <section class="panel" aria-labelledby="use-cases-title">
+            <h2 id="use-cases-title">Use cases kunnen zijn</h2>
+            <ul class="cleanList">
+              <li>Een embedding-index vernieuwen</li>
+              <li>Een archief opnieuw verwerken naar doorzoekbare chunks</li>
+              <li>Documentbatches classificeren of verrijken</li>
+              <li>Handleidingen, beleidsdocumenten of werkinstructies transformeren, vertalen of normaliseren</li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="band compact" aria-labelledby="buyer-title">
+          <div>
+            <p class="eyebrow">Herkenbaar signaal</p>
+            <h2 id="buyer-title">Een concrete achterstand zegt meer dan algemene interesse in AI-infrastructuur.</h2>
+          </div>
+          <p>
+            Sterke prospects wijzen naar een backlog, terugkerende run,
+            klantverplichting, kostenprobleem of traag proces.
+          </p>
+        </section>
+
+        <section class="band compact" aria-labelledby="intro-title">
+          <div>
+            <p class="eyebrow">Voor connectors</p>
+            <h2 id="intro-title">Een goede intro is vaak naar de persoon die de achterstand voelt.</h2>
+          </div>
+          <p>
+            Denk aan product operations, data platform, documentautomatisering,
+            innovatie of een business owner met een herhaalbaar AI-zwaar proces.
+          </p>
+        </section>
+      </section>
+
+      <section class="page" id="deliver-panel" data-page="deliver" aria-labelledby="deliver-title">
+        <div class="pageHeader">
+          <p class="eyebrow">Wat we leveren</p>
+          <h1 id="deliver-title">Een gecontroleerde pilotrun met zichtbare uitkomsten en duidelijke grenzen.</h1>
+          <p>
+            Uitgevoerd werk, gemeten gedrag en een praktische go/no-go.
+          </p>
+        </div>
+
+        <div class="process">
+          <article class="step">
+            <div class="num">1</div>
+            <div>
+              <h2>Workload kwalificeren</h2>
+              <p>
+                Input, output, datagevoeligheid, retries, huidig proces,
+                succescriteria.
+              </p>
+            </div>
+          </article>
+
+          <article class="step">
+            <div class="num">2</div>
+            <div>
+              <h2>Gecontroleerde uitvoering</h2>
+              <p>
+                Begrensde taken, zichtbare eindstatussen, retries,
+                resultaatverwijzingen.
+              </p>
+            </div>
+          </article>
+
+          <article class="step">
+            <div class="num">3</div>
+            <div>
+              <h2>Runsamenvatting, kosten en vervolgkeuze</h2>
+              <p>
+                Bruikbare output, runsamenvatting, kosten per resultaat,
+                volgende stap.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="summaryGrid">
+          <article class="panel">
+            <h2>Verwachte artefacten</h2>
+            <p>
+              Output, run-notities, aantallen, retries, kosteninputs, caveats.
+            </p>
+          </article>
+          <article class="panel">
+            <h2>Latere integratie</h2>
+            <p>
+              Als het past: richting gecontroleerde CLI of API.
+            </p>
+          </article>
+          <article class="panel">
+            <h2>Werkprincipe</h2>
+            <p>
+              Handmatig werk is vroeg acceptabel. Verborgen falen niet.
+            </p>
+          </article>
+        </div>
+
+        <section class="reportPreview" aria-labelledby="report-preview-title">
+          <div class="reportCopy">
+            <p class="eyebrow">Voorbeelduitkomst</p>
+            <h2 id="report-preview-title">Een pilot moet een beslisbaar artefact opleveren.</h2>
+            <p>
+              Geen verzonnen benchmark. Een echte pilotrapportage toont cijfers,
+              caveats en of de workloadroute meer engineering verdient.
+            </p>
+          </div>
+          <div class="metricCard" aria-label="Velden in een pilotrapport">
+            <div>
+              <span>Runstatus</span>
+              <strong>Voltooid / deels / gestopt</strong>
+            </div>
+            <div>
+              <span>Bruikbare output</span>
+              <strong>Geaccepteerde items + reviewnotities</strong>
+            </div>
+            <div>
+              <span>Kostenbeeld</span>
+              <strong>Looptijd + kosteninputs per resultaat</strong>
+            </div>
+            <div>
+              <span>Vervolg</span>
+              <strong>Doorgaan, versmallen of stoppen</strong>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="page" id="model-panel" data-page="model" aria-labelledby="model-title">
+        <div class="pageHeader">
+          <p class="eyebrow">Model</p>
+          <h1 id="model-title">Gedistribueerde uitvoering, gestuurd door workload-fit.</h1>
+          <p>
+            Sommige herhaalbare async taken kunnen passender draaien dan op het
+            standaardpad.
+          </p>
+        </div>
+
+        <div class="summaryGrid">
+          <article class="panel">
+            <h2>Uitvoeringspools, geen open marktplaats</h2>
+            <p>
+              Solvyr-nodes, klantinfrastructuur, partnerpools of toekomstige
+              trusted pools.
+            </p>
+          </article>
+          <article class="panel">
+            <h2>Europese digitale onafhankelijkheid</h2>
+            <p>
+              Meer uitvoeringskeuze, ook met Europese of klantgecontroleerde
+              capaciteit.
+            </p>
+          </article>
+          <article class="panel">
+            <h2>Duurzaamheid moet meetbaar zijn</h2>
+            <p>
+              Energie, retries, looptijd en kosten per resultaat zijn bewijs,
+              geen slogan.
+            </p>
+          </article>
+        </div>
+
+        <section class="band compact" aria-labelledby="model-connectors-title">
+          <div>
+            <p class="eyebrow">Waarom dit kan resoneren</p>
+            <h2 id="model-connectors-title">Dit is ook een infrastructuurverhaal.</h2>
+          </div>
+          <p>
+            Publieke, semi-publieke, research-, onderwijs- en regionale
+            innovatienetwerken herkennen het patroon: AI-capaciteit met
+            soevereiniteit en concentratie in beeld.
+          </p>
+        </section>
+
+        <section class="band compact" aria-labelledby="model-boundary-title">
+          <div>
+            <p class="eyebrow">Grens</p>
+            <h2 id="model-boundary-title">Geen universele vervanging voor datacenters.</h2>
+          </div>
+          <p>
+            Datacenters blijven vaak de juiste plek. Solvyr richt zich op async,
+            opdeelbaar, retrybaar werk.
+          </p>
+        </section>
+      </section>
+
+      <section class="page" id="security-panel" data-page="security" aria-labelledby="security-title">
+        <div class="pageHeader">
+          <p class="eyebrow">Security</p>
+          <h1 id="security-title">Security voor een begrensde pilot: lifecycle, toegang, verwijdering en dataminimalisatie.</h1>
+          <p>
+            Praktische hygiene voor lage of middelmatige datagevoeligheid, met
+            grenzen voordat data draait.
+          </p>
+        </div>
+
+        <div class="split">
+          <section class="panel" aria-labelledby="level-one-title">
+            <h2 id="level-one-title">Wat we voor een pilot kunnen definieren</h2>
+            <ul class="cleanList">
+              <li>Data lifecycle, bewaartermijn en verwijdering</li>
+              <li>Opslaglocaties voor input en output</li>
+              <li>Afgebakende operatortoegang</li>
+              <li>Dataminimalisatie voor uitvoering</li>
+            </ul>
+          </section>
+
+          <section class="panel mutedPanel" aria-labelledby="security-boundaries-title">
+            <h2 id="security-boundaries-title">Huidige grenzen</h2>
+            <ul class="cleanList">
+              <li>Geen hooggevoelige workloads zonder veilige pilotsample</li>
+              <li>Geen cryptografische privacy- of confidential-compute claims</li>
+              <li>Geen brede enterprise-compliance claim</li>
+              <li>Geen claim dat distributie vanzelf vertrouwelijkheid geeft</li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="band compact" aria-labelledby="redaction-title">
+          <div>
+            <p class="eyebrow">Risico verlagen</p>
+            <h2 id="redaction-title">Weglakken of pseudonimisering kan onderdeel zijn van het pilotontwerp.</h2>
+          </div>
+          <p>
+            We kunnen helpen pre-upload weglakken of pseudonimisering te
+            definieren. Rehydratie blijft klantzijdig. Risicoreductie, geen
+            garantie op anonimiteit.
+          </p>
+        </section>
+
+        <section class="band compact" aria-labelledby="security-summary-title">
+          <div>
+            <p class="eyebrow">Praktische belofte</p>
+            <h2 id="security-summary-title">Security begint met workloadselectie en eerlijke grenzen.</h2>
+          </div>
+          <p>
+            Sommige workloads blijven buiten scope. Geschikte pilots krijgen
+            lifecycle-, toegang-, verwijder- en uitvoeringsgrenzen.
+          </p>
+        </section>
+
+        <section class="appendixGrid" aria-labelledby="security-appendix-title">
+          <div>
+            <p class="eyebrow">Security appendix</p>
+            <h2 id="security-appendix-title">Onderwerpen om voor de pilotrun vast te leggen.</h2>
+          </div>
+          <dl>
+            <div>
+              <dt>Data lifecycle</dt>
+              <dd>Wat wordt geupload, geproduceerd, bewaard, verwijderd, en wanneer.</dd>
+            </div>
+            <div>
+              <dt>Scoped access</dt>
+              <dd>Wie payloads, logs, output en operationele metadata kan zien.</dd>
+            </div>
+            <div>
+              <dt>Weglakken</dt>
+              <dd>Welke velden weg kunnen, vervangen worden of klantzijdig blijven.</dd>
+            </div>
+            <div>
+              <dt>Exitpad</dt>
+              <dd>Hoe output, tijdelijke bestanden en vervolgtoegang worden afgehandeld.</dd>
+            </div>
+          </dl>
+        </section>
+      </section>
+
+      <section class="page" id="pilot-panel" data-page="pilot" aria-labelledby="pilot-title">
+        <div class="pageHeader">
+          <p class="eyebrow">Pilot</p>
+          <h1 id="pilot-title">Begin met een begrensde workload en een representatieve sample.</h1>
+          <p>
+            Een workload, een inputformaat, een verwachte output, een korte
+            beslissing.
+          </p>
+        </div>
+
+        <div class="pilotBox">
+          <div>
+            <h2>Wat te sturen</h2>
+            <ul class="cleanList">
+              <li>Een kleine veilige representatieve sample</li>
+              <li>Workloadtype en huidig proces</li>
+              <li>Input, output en validatiecriteria</li>
+              <li>Data-eisen voor uitvoering</li>
+            </ul>
+          </div>
+
+          <div class="contactCard">
+            <p class="eyebrow">Contact</p>
+            <h2>Bespreek een pilotworkload</h2>
+            <p>
+              Stuur de jobbeschrijving en veiligste sample. We bevestigen fit
+              voordat iets draait.
+            </p>
+            <div class="contactActions">
+              <a class="button primary" href="mailto:jan@solvyr.com">Mail Solvyr</a>
+              <a
+                class="button secondary"
+                href="pilot-intake-nl.html"
+              >
+                Open pilotintake
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <section class="band compact" aria-labelledby="pilot-outcome-title">
+          <div>
+            <p class="eyebrow">Pilotuitkomst</p>
+            <h2 id="pilot-outcome-title">Een go/no-go beslissing voor de workloadroute.</h2>
+          </div>
+          <p>
+            Doorgaan, scope aanpassen of stoppen. De volgende stap moet duidelijk
+            zijn.
+          </p>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footerInner">
+        <div>&copy; <span id="y"></span> Solvyr</div>
+        <div class="muted">Alleen async document- en tekstworkloads</div>
+      </div>
+    </footer>
+
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+
+      const pages = [...document.querySelectorAll("[data-page]")];
+      const tabs = [...document.querySelectorAll("[data-tab-target]")];
+
+      function setActivePage(pageName) {
+        const targetPage = pages.some((page) => page.dataset.page === pageName)
+          ? pageName
+          : "overview";
+
+        pages.forEach((page) => {
+          page.classList.toggle("active", page.dataset.page === targetPage);
+        });
+
+        tabs.forEach((tab) => {
+          const isActive = tab.dataset.tabTarget === targetPage;
+          if (tab.classList.contains("tab")) {
+            tab.classList.toggle("active", isActive);
+            tab.setAttribute("aria-selected", String(isActive));
+          }
+        });
+
+        document.title =
+          targetPage === "overview"
+            ? "Solvyr - Gecontroleerde uitvoering voor async AI-werk"
+            : `${document.querySelector(`[data-page="${targetPage}"] .eyebrow`).textContent} - Solvyr`;
+      }
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", (event) => {
+          const pageName = tab.dataset.tabTarget;
+          if (!pageName) return;
+          event.preventDefault();
+          history.pushState(null, "", `#${pageName}`);
+          setActivePage(pageName);
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      });
+
+      window.addEventListener("popstate", () => {
+        setActivePage(location.hash.replace("#", ""));
+      });
+
+      document.querySelectorAll("[data-language-link]").forEach((link) => {
+        link.addEventListener("click", () => {
+          const hash = location.hash || "#overview";
+          link.href = `${link.dataset.languageLink}${hash}`;
+        });
+      });
+
+      document.getElementById("y").textContent = new Date().getFullYear();
+      const initialPage = location.hash.replace("#", "");
+      setActivePage(initialPage);
+      if (initialPage) {
+        const resetInitialScroll = () => window.scrollTo({ top: 0, behavior: "auto" });
+        resetInitialScroll();
+        setTimeout(resetInitialScroll, 0);
+        window.addEventListener("load", resetInitialScroll, { once: true });
+      }
+    </script>
+  </body>
+</html>
