@@ -768,39 +768,102 @@ textarea{
 
 @media (max-width: 560px){
   .container{
-    width:min(100% - 28px, 1120px);
+    width:min(100% - 24px, 1120px);
+  }
+
+  .topbar{
+    display:grid;
+    grid-template-columns:1fr auto;
+    align-items:center;
+    gap:10px 12px;
+    padding:10px 0 8px;
+  }
+
+  .headerTools{
+    display:contents;
+  }
+
+  .brand{
+    min-width:0;
+  }
+
+  .brandlogo{
+    width:30px;
+    height:30px;
+  }
+
+  .brandtext .name{
+    font-size:15px;
   }
 
   .brandtext .tag{
     display:none;
   }
 
+  .languageSwitch{
+    grid-column:2;
+    justify-content:flex-end;
+  }
+
+  .lang{
+    min-height:32px;
+    padding:5px 8px;
+    font-size:12px;
+  }
+
   .shell{
-    padding:30px 0 34px;
+    padding:28px 0 34px;
   }
 
   .tabs{
+    grid-column:1 / -1;
     width:100%;
-    display:grid;
-    grid-template-columns:1fr 1fr;
+    display:flex;
+    gap:8px;
+    justify-content:flex-start;
+    overflow-x:auto;
+    padding:2px 0 4px;
+    flex-wrap:nowrap;
+    scrollbar-width:none;
+  }
+
+  .tabs::-webkit-scrollbar{
+    display:none;
   }
 
   .tab{
-    white-space:normal;
+    min-height:34px;
+    flex:0 0 auto;
+    padding:7px 10px;
+    border-color:var(--line);
+    background:var(--surface);
+    font-size:13px;
+    white-space:nowrap;
     text-align:center;
   }
 
+  .tab.active,
+  .tab.cta{
+    border-color:#b9c7dd;
+    color:var(--accentDark);
+  }
+
   h1{
-    font-size:34px;
+    font-size:31px;
+    line-height:1.08;
   }
 
   .pageHeader h1{
-    font-size:30px;
+    font-size:28px;
   }
 
   .lede,
   .pageHeader p{
     font-size:17px;
+  }
+
+  .hero{
+    padding:8px 0 28px;
   }
 
   .heroActions,
