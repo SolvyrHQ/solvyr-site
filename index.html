@@ -7,7 +7,7 @@
     <title>Solvyr - Controlled execution for async AI workloads</title>
     <meta
       name="description"
-      content="Solvyr helps teams pilot async document and text AI workloads with measured cost-per-result, visible execution, scoped data handling, and clear integration boundaries."
+      content="Solvyr helps teams pilot one async document or text AI workload path with measured cost per successful output, visible execution, scoped data handling, and clear integration boundaries."
     />
     <meta property="og:title" content="Solvyr - Controlled async AI execution" />
     <meta
@@ -21,7 +21,7 @@
     <meta name="twitter:title" content="Solvyr - Controlled async AI execution" />
     <meta
       name="twitter:description"
-      content="Pilot async document and text AI workloads with cost, control, and clear data boundaries."
+      content="Pilot one async document or text AI workload path with cost, control, and clear data boundaries."
     />
 
     <link rel="icon" href="favicon.ico" />
@@ -72,8 +72,8 @@
           <p class="eyebrow">Solvyr</p>
           <h1 id="overview-title">A controlled path for heavy document and text AI workloads.</h1>
           <p class="lede">
-            Pilot async AI work with measured economics, visible runs, and scoped
-            data handling.
+            Pilot one async AI workload path with measured economics, visible
+            runs, and scoped data handling.
           </p>
           <div class="heroActions">
             <a class="button primary" href="#pilot" data-tab-target="pilot">Scope a pilot</a>
@@ -84,9 +84,9 @@
         <div class="reasonGrid" aria-label="Why teams pilot Solvyr">
           <article class="panel">
             <p class="miniLabel">Economics</p>
-            <h2>Measure cost-per-result on your own workload.</h2>
+            <h2>Measure cost per successful output on your own workload.</h2>
             <p>
-              Runtime, retries, output, and estimated cost per useful result.
+              Runtime, retries, accepted output, and estimated unit cost.
             </p>
           </article>
           <article class="panel">
@@ -126,7 +126,7 @@
 
         <section class="proofStrip" aria-label="Pilot scope">
           <div>
-            <strong>One workload</strong>
+            <strong>One workload path</strong>
             <span>No broad platform migration.</span>
           </div>
           <div>
@@ -158,7 +158,7 @@
             <li>
               <span>3</span>
               <strong>Report</strong>
-              <small>Output, cost inputs, runtime, caveats.</small>
+              <small>Output, unit cost inputs, runtime, caveats.</small>
             </li>
             <li>
               <span>4</span>
@@ -174,8 +174,8 @@
           <p class="eyebrow">Who it is for</p>
           <h1 id="who-title">Teams with recurring document or text work that is too heavy for the normal path.</h1>
           <p>
-            Best fit: a real backlog, a safe pilot sample, and a clear idea of
-            useful output.
+            Early pilots choose one path at a time: a real backlog, a safe pilot
+            sample, and a clear idea of useful output.
           </p>
         </div>
 
@@ -250,7 +250,8 @@
           <p class="eyebrow">What we deliver</p>
           <h1 id="deliver-title">A controlled pilot run with visible outcomes and clear caveats.</h1>
           <p>
-            Completed work, measured run behavior, and a practical go/no-go.
+            Completed work, measured run behavior, and a practical go/no-go for
+            one workload path.
           </p>
         </div>
 
@@ -279,9 +280,10 @@
           <article class="step">
             <div class="num">3</div>
             <div>
-              <h2>Run summary, economics, and next decision</h2>
+              <h2>Run summary, unit economics, and next decision</h2>
               <p>
-                Usable output, run summary, cost-per-result, next step.
+                Usable output, run summary, cost per successful output unit,
+                next step.
               </p>
             </div>
           </article>
@@ -291,7 +293,8 @@
           <article class="panel">
             <h2>Expected artifacts</h2>
             <p>
-              Output, run notes, counts, retries, cost inputs, caveats.
+              Output, run notes, success/failure counts, retries, unit-cost
+              inputs, caveats.
             </p>
           </article>
           <article class="panel">
@@ -328,7 +331,7 @@
             </div>
             <div>
               <span>Economics</span>
-              <strong>Runtime + cost inputs per result</strong>
+              <strong>Runtime + cost inputs per successful output</strong>
             </div>
             <div>
               <span>Next step</span>
@@ -341,23 +344,23 @@
       <section class="page" id="model-panel" data-page="model" aria-labelledby="model-title">
         <div class="pageHeader">
           <p class="eyebrow">Model</p>
-          <h1 id="model-title">Distributed execution, controlled by workload fit.</h1>
+          <h1 id="model-title">Controlled workload execution first, distributed capacity where it fits.</h1>
           <p>
-            Some repeatable async work can run somewhere more appropriate than
-            the default path.
+            Distributed infrastructure is a means, not the product. The product
+            is completed work for workloads that fit.
           </p>
         </div>
 
         <div class="summaryGrid">
           <article class="panel">
-            <h2>Execution pools, not an open marketplace</h2>
+            <h2>Execution pools for selected workloads</h2>
             <p>
               Solvyr nodes, customer infrastructure, partner pools, or future
               trusted pools.
             </p>
           </article>
           <article class="panel">
-            <h2>European digital independence</h2>
+            <h2>European digital independence, when the workload fits</h2>
             <p>
               More execution choice, including European or customer-controlled
               capacity.
@@ -379,8 +382,8 @@
           </div>
           <p>
             Public, semi-public, research, education, and regional innovation
-            networks often recognize the pattern: AI capacity, with sovereignty
-            and concentration in mind.
+            networks may recognize the pattern: concrete AI workloads, with
+            sovereignty and infrastructure concentration in mind.
           </p>
         </section>
 
@@ -414,6 +417,8 @@
               <li>Input and output storage locations</li>
               <li>Scoped operator access</li>
               <li>Data minimization before execution</li>
+              <li>Payload logging checks</li>
+              <li>Temporary scratch cleanup checks</li>
             </ul>
           </section>
 
@@ -469,8 +474,8 @@
               <dd>Which fields can be removed, replaced, or kept customer-side.</dd>
             </div>
             <div>
-              <dt>Exit path</dt>
-              <dd>How outputs, temporary files, and follow-up access are handled.</dd>
+              <dt>Logging and scratch</dt>
+              <dd>What payload logging is allowed and how temporary files are cleaned.</dd>
             </div>
           </dl>
         </section>
@@ -479,9 +484,9 @@
       <section class="page" id="pilot-panel" data-page="pilot" aria-labelledby="pilot-title">
         <div class="pageHeader">
           <p class="eyebrow">Pilot</p>
-          <h1 id="pilot-title">Start with one bounded workload and a representative sample.</h1>
+          <h1 id="pilot-title">Start with one bounded workload path and a representative sample.</h1>
           <p>
-            One workload, one input format, one expected output, one short
+            One path, one input format, one expected output, one short
             decision loop.
           </p>
         </div>
@@ -493,6 +498,7 @@
               <li>A small safe representative sample</li>
               <li>Workload type and current process</li>
               <li>Input, expected output, and validation criteria</li>
+              <li>Whether sensitive fields can be removed before sharing</li>
               <li>Data handling requirements</li>
             </ul>
           </div>
@@ -501,8 +507,8 @@
             <p class="eyebrow">Contact</p>
             <h2>Discuss a pilot workload</h2>
             <p>
-              Send the job description and safest sample. We confirm fit before
-              running anything.
+              Send the job description and safest sample. High-sensitivity data
+              is likely out of scope unless it can be reduced to a safe pilot set.
             </p>
             <div class="contactActions">
               <a class="button primary" href="mailto:jan@solvyr.com">Email Solvyr</a>
