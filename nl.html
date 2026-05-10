@@ -4,24 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Solvyr - Gecontroleerde uitvoering voor async AI-werk</title>
+    <title>Solvyr - Goedkopere async AI-uitvoering voor document- en tekstwerk</title>
     <meta
       name="description"
-      content="Solvyr helpt teams een async document- of tekstworkloadpad piloten met zicht op kosten per succesvolle output, uitvoering, data-afbakening en integratie."
+      content="Solvyr helpt teams async document- en tekstworkloads draaien met zicht op kosten per succesvolle output, uitvoering, data-afbakening en integratie."
     />
-    <meta property="og:title" content="Solvyr - Gecontroleerde async AI-uitvoering" />
+    <meta property="og:title" content="Solvyr - Goedkopere async AI-uitvoering" />
     <meta
       property="og:description"
-      content="Pilot zwaar document- en tekstwerk met gemeten kosten, zichtbare runs en duidelijke data-afbakening."
+      content="Draai zwaar document- en tekstwerk met gemeten kosten, zichtbare runs en duidelijke data-afbakening."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://solvyr.com/nl.html" />
     <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Solvyr - Gecontroleerde async AI-uitvoering" />
+    <meta name="twitter:title" content="Solvyr - Goedkopere async AI-uitvoering" />
     <meta
       name="twitter:description"
-      content="Pilot een async document- of tekstworkloadpad met kosten, controle en duidelijke datagrenzen."
+      content="Draai async document- en tekstworkloads met kosten, controle en duidelijke datagrenzen."
     />
 
     <link rel="icon" href="favicon.ico" />
@@ -45,7 +45,7 @@
           />
           <div class="brandtext">
             <div class="name">Solvyr</div>
-            <div class="tag">Gecontroleerde async AI-uitvoering</div>
+            <div class="tag">Goedkopere async AI-uitvoering</div>
           </div>
         </a>
 
@@ -70,10 +70,11 @@
       <section class="page active" id="overview-panel" data-page="overview" aria-labelledby="overview-title">
         <div class="hero">
           <p class="eyebrow">Solvyr</p>
-          <h1 id="overview-title">Een gecontroleerde route voor zwaar document- en tekstwerk met AI.</h1>
+          <h1 id="overview-title">Goedkopere uitvoering voor async document- en tekstwerk met AI.</h1>
           <p class="lede">
-            Pilot een async AI-workloadpad met gemeten kosten, zichtbare runs en
-            duidelijke data-afbakening.
+            Solvyr draait begrensde batchworkloads op gecontroleerde
+            GPU-capaciteit en rapporteert kosten per succesvolle output, niet
+            abstracte GPU-tijd.
           </p>
           <div class="heroActions">
             <a class="button primary" href="#pilot" data-tab-target="pilot">Verken een pilot</a>
@@ -84,9 +85,10 @@
         <div class="reasonGrid" aria-label="Waarom teams Solvyr piloten">
           <article class="panel">
             <p class="miniLabel">Kosten</p>
-            <h2>Meet kosten per succesvolle output op de echte workload.</h2>
+            <h2>Betaal minder waar always-on cloud-GPUs slecht passen.</h2>
             <p>
-              Looptijd, retries, geaccepteerde output en geschatte unitkosten.
+              Gemeten GPU-uren, retries, geaccepteerde output en geschatte
+              unitkosten.
             </p>
           </article>
           <article class="panel">
@@ -114,6 +116,36 @@
           </article>
         </div>
 
+        <section class="reportPreview" aria-labelledby="benchmark-title">
+          <div class="reportCopy">
+            <p class="eyebrow">Recente interne benchmark</p>
+            <h2 id="benchmark-title">100 PDFs verwerkt met gemeten GPU-uren en nul retries.</h2>
+            <p>
+              PDF-tekstextractie, chunking en embeddings. Geen OCR,
+              layoutparsing, gestructureerde factuurextractie of vector database
+              indexing.
+            </p>
+          </div>
+          <div class="metricCard" aria-label="Recente benchmarkmetrics">
+            <div>
+              <span>Input</span>
+              <strong>100 PDFs / 2.052 paginas</strong>
+            </div>
+            <div>
+              <span>Single pass</span>
+              <strong>0,281 GPU-uren / 215s looptijd</strong>
+            </div>
+            <div>
+              <span>Output</span>
+              <strong>987 chunks / ongeveer 1,3M geschatte tokens</strong>
+            </div>
+            <div>
+              <span>Betrouwbaarheid</span>
+              <strong>0 fouten / 0 retries</strong>
+            </div>
+          </div>
+        </section>
+
         <section class="band compact" aria-labelledby="connector-title">
           <div>
             <p class="eyebrow">Als dit herkenbaar klinkt</p>
@@ -136,8 +168,8 @@
             <span>Duidelijke input, output en grenzen.</span>
           </div>
           <div>
-            <strong>Gemeten resultaat</strong>
-            <span>Kosten, looptijd, kwaliteit, caveats.</span>
+            <strong>Gemeten kostenbeeld</strong>
+            <span>Kosten, looptijd, geaccepteerde output, caveats.</span>
           </div>
         </section>
 
@@ -250,7 +282,7 @@
       <section class="page" id="deliver-panel" data-page="deliver" aria-labelledby="deliver-title">
         <div class="pageHeader">
           <p class="eyebrow">Wat we leveren</p>
-          <h1 id="deliver-title">Een gecontroleerde pilotrun met zichtbare uitkomsten en duidelijke grenzen.</h1>
+          <h1 id="deliver-title">Een gecontroleerde run met zichtbare uitkomsten en bruikbaar kostenbewijs.</h1>
           <p>
             Uitgevoerd werk, gemeten gedrag en een praktische go/no-go voor een
             workloadpad.
@@ -347,33 +379,33 @@
       <section class="page" id="model-panel" data-page="model" aria-labelledby="model-title">
         <div class="pageHeader">
           <p class="eyebrow">Model</p>
-          <h1 id="model-title">Gecontroleerde workloaduitvoering eerst, gedistribueerde capaciteit waar het past.</h1>
+          <h1 id="model-title">Gecontroleerde workloaduitvoering eerst, goedkopere capaciteit waar het past.</h1>
           <p>
             Gedistribueerde infrastructuur is een middel, niet het product. Het
-            product is afgerond werk voor workloads die passen.
+            product is afgerond werk tegen gemeten kosten voor workloads die passen.
           </p>
         </div>
 
         <div class="summaryGrid">
           <article class="panel">
-            <h2>Uitvoeringspools voor geselecteerde workloads</h2>
+            <h2>Onderbenutte GPUs voor geselecteerde workloads</h2>
             <p>
-              Solvyr-nodes, klantinfrastructuur, partnerpools of toekomstige
-              trusted pools.
+              Bestaande huishoud-, partner- of klantmachines kunnen nuttig zijn
+              wanneer werk async en begrensd is.
             </p>
           </article>
           <article class="panel">
-            <h2>Europese digitale onafhankelijkheid, wanneer de workload past</h2>
+            <h2>Goedkopere uitvoeringsvensters</h2>
             <p>
-              Meer uitvoeringskeuze, ook met Europese of klantgecontroleerde
-              capaciteit.
+              Dynamische stroomprijzen, zonnestroomoverschot en idle capaciteit
+              tellen mee wanneer de job geen realtime service nodig heeft.
             </p>
           </article>
           <article class="panel">
-            <h2>Duurzaamheid moet meetbaar zijn</h2>
+            <h2>Standaard geen idle cloudreservering</h2>
             <p>
-              Energie, retries, looptijd en kosten per resultaat zijn bewijs,
-              geen slogan.
+              Klanten kopen succesvolle output-units, niet een GPU-instance die
+              tussen batchjobs staat te wachten.
             </p>
           </article>
         </div>
@@ -574,7 +606,7 @@
 
         document.title =
           targetPage === "overview"
-            ? "Solvyr - Gecontroleerde uitvoering voor async AI-werk"
+            ? "Solvyr - Goedkopere async AI-uitvoering voor document- en tekstwerk"
             : `${document.querySelector(`[data-page="${targetPage}"] .eyebrow`).textContent} - Solvyr`;
       }
 
