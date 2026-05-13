@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>100 PDF Fast Corpus Run - Solvyr Proof Note</title>
+    <meta
+      name="description"
+      content="A Solvyr proof note: 100 clean digital PDFs, 2,052 pages, 987 chunks, about 1.3M estimated tokens, 0 failures, 0 retries, and measured GPU-hours."
+    />
+    <meta property="og:title" content="100 PDF Fast Corpus Run - Solvyr Proof Note" />
+    <meta
+      property="og:description"
+      content="Internal benchmark evidence for clean digital PDF/text extraction, chunking, embeddings, and visible run reporting."
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://solvyr.com/proof/100-pdf-fast-corpus-run.html" />
+    <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <header class="top">
+      <div class="container topbar">
+        <a class="brand" href="../index.html#overview" aria-label="Solvyr home">
+          <img class="brandlogo" src="../assets/brand/icon.png" alt="Solvyr icon" width="34" height="34" />
+          <div class="brandtext">
+            <div class="name">Solvyr</div>
+            <div class="tag">Fast Corpus for AI teams</div>
+          </div>
+        </a>
+        <nav class="tabs" aria-label="Page navigation">
+          <a class="tab" href="../use-cases/pdf-to-rag-corpus.html">PDF to RAG</a>
+          <a class="tab" href="../index.html#model">Model</a>
+          <a class="tab cta" href="../pilot-intake.html?intent=fast-corpus&source=proof-100-pdf-run">Pilot</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container shell">
+      <section class="hero">
+        <p class="eyebrow">Proof note</p>
+        <h1>100 clean PDFs processed with visible run evidence.</h1>
+        <p class="lede">
+          This internal run supports Solvyr's clean digital PDF/text path:
+          extraction, chunking, embedding generation, and a visible run summary.
+          It is not an OCR-heavy, layout-parsing, or structured extraction claim.
+        </p>
+      </section>
+
+      <section class="reportPreview" aria-labelledby="metrics-title">
+        <div class="reportCopy">
+          <p class="eyebrow">Measured run</p>
+          <h2 id="metrics-title">What the run showed.</h2>
+          <p>
+            The value of the proof is not a big benchmark claim. It is a concrete
+            artifact boundary: input, output, runtime, failures, retries, and
+            caveats can be inspected.
+          </p>
+        </div>
+        <div class="metricCard" aria-label="100 PDF run metrics">
+          <div>
+            <span>Input</span>
+            <strong>100 PDFs / 2,052 pages</strong>
+          </div>
+          <div>
+            <span>Single pass</span>
+            <strong>0.281 GPU-hours / 215s wall-clock</strong>
+          </div>
+          <div>
+            <span>Output</span>
+            <strong>987 chunks / about 1.3M estimated tokens</strong>
+          </div>
+          <div>
+            <span>Reliability</span>
+            <strong>0 failures / 0 retries</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="split sectionGap">
+        <article class="panel">
+          <h2>What this supports</h2>
+          <ul class="cleanList">
+            <li>Clean digital PDF/text corpus preparation.</li>
+            <li>Chunking and embedding generation as part of a batch path.</li>
+            <li>Run summaries with visible output and caveats.</li>
+            <li>A controlled pilot conversation around similar workloads.</li>
+          </ul>
+        </article>
+        <article class="panel mutedPanel">
+          <h2>What this does not claim</h2>
+          <ul class="cleanList">
+            <li>No OCR-heavy scan support by default.</li>
+            <li>No structured invoice or form extraction claim.</li>
+            <li>No hosted RAG/search product claim.</li>
+            <li>No enterprise SLA claim.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footerInner">
+        <div>&copy; <span id="y"></span> Solvyr</div>
+        <div class="footerLinks">
+          <a href="../llms.txt">llms.txt</a>
+          <a href="../ai/fast-corpus.md">AI brief</a>
+          <a href="../pilot-intake.html?intent=fast-corpus&source=proof-100-pdf-run">Pilot intake</a>
+        </div>
+      </div>
+    </footer>
+    <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  </body>
+</html>

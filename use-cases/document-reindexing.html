@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document Re-indexing and Corpus Refresh - Solvyr Fast Corpus</title>
+    <meta
+      name="description"
+      content="Use Solvyr Fast Corpus for async document re-indexing, corpus refresh, and AI-ready JSONL generation from clean PDFs and text archives."
+    />
+    <meta property="og:title" content="Document Re-indexing and Corpus Refresh - Solvyr" />
+    <meta
+      property="og:description"
+      content="Refresh document corpora for RAG, search, evals, and agent workflows with clean PDF/text to JSONL processing."
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://solvyr.com/use-cases/document-reindexing.html" />
+    <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <header class="top">
+      <div class="container topbar">
+        <a class="brand" href="../index.html#overview" aria-label="Solvyr home">
+          <img class="brandlogo" src="../assets/brand/icon.png" alt="Solvyr icon" width="34" height="34" />
+          <div class="brandtext">
+            <div class="name">Solvyr</div>
+            <div class="tag">Fast Corpus for AI teams</div>
+          </div>
+        </a>
+        <nav class="tabs" aria-label="Page navigation">
+          <a class="tab" href="../index.html#deliver">Output</a>
+          <a class="tab" href="../proof/100-pdf-fast-corpus-run.html">Proof</a>
+          <a class="tab cta" href="../pilot-intake.html?intent=fast-corpus&source=reindexing-use-case">Pilot</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container shell">
+      <section class="hero">
+        <p class="eyebrow">Use case</p>
+        <h1>Refresh and re-index document corpora without turning it into a platform project.</h1>
+        <p class="lede">
+          Fast Corpus supports async reprocessing of clean PDFs and text archives
+          into AI-ready JSONL, chunks, embeddings, stable IDs, and a run report.
+        </p>
+      </section>
+
+      <div class="summaryGrid">
+        <article class="panel">
+          <p class="miniLabel">Backlogs</p>
+          <h2>Reprocess archives into searchable chunks.</h2>
+          <p>Useful when older document sets need to become usable for RAG, search, or agent workflows.</p>
+        </article>
+        <article class="panel">
+          <p class="miniLabel">Refresh</p>
+          <h2>Repeat the corpus job when source documents change.</h2>
+          <p>Recurring refresh is the business layer after the first Fast Corpus test proves fit.</p>
+        </article>
+        <article class="panel">
+          <p class="miniLabel">Control</p>
+          <h2>Keep failures visible.</h2>
+          <p>The output should show counts, caveats, and whether the corpus path should continue.</p>
+        </article>
+      </div>
+
+      <section class="band compact" aria-labelledby="fit-title">
+        <div>
+          <p class="eyebrow">Fit</p>
+          <h2 id="fit-title">Best when the work is batch-oriented and retryable.</h2>
+        </div>
+        <p>
+          Document re-indexing fits Solvyr when the input can be split into
+          bounded tasks, the job can tolerate async delivery, and the buyer cares
+          about cost per usable output rather than realtime serving.
+        </p>
+      </section>
+
+      <section class="band compact" aria-labelledby="cta-title">
+        <div>
+          <p class="eyebrow">Next step</p>
+          <h2 id="cta-title">Start with a representative sample.</h2>
+        </div>
+        <p>
+          Share estimated page count, input type, desired output, sensitivity,
+          and whether this is one-time or recurring. Standard clean PDF/text
+          processing starts at EUR 0.95 per 1000 pages.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footerInner">
+        <div>&copy; <span id="y"></span> Solvyr</div>
+        <div class="footerLinks">
+          <a href="../llms.txt">llms.txt</a>
+          <a href="../ai/fast-corpus.md">AI brief</a>
+          <a href="../pilot-intake.html?intent=fast-corpus&source=reindexing-use-case">Pilot intake</a>
+        </div>
+      </div>
+    </footer>
+    <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PDF to RAG Corpus - Solvyr Fast Corpus</title>
+    <meta
+      name="description"
+      content="Turn clean digital PDFs into an AI-ready RAG corpus with JSONL, chunks, embeddings, stable IDs, and a run report. Controlled async processing from Solvyr Fast Corpus."
+    />
+    <meta property="og:title" content="PDF to RAG Corpus - Solvyr Fast Corpus" />
+    <meta
+      property="og:description"
+      content="Clean digital PDFs to AI-ready JSONL, chunks, embeddings, stable IDs, and a run report for RAG and search."
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://solvyr.com/use-cases/pdf-to-rag-corpus.html" />
+    <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "PDF to RAG Corpus",
+        "description": "Turn clean digital PDFs into an AI-ready RAG corpus with JSONL, chunks, embeddings, stable IDs, and a run report.",
+        "author": { "@type": "Organization", "name": "Solvyr" },
+        "publisher": { "@type": "Organization", "name": "Solvyr" },
+        "mainEntityOfPage": "https://solvyr.com/use-cases/pdf-to-rag-corpus.html"
+      }
+    </script>
+  </head>
+
+  <body>
+    <header class="top">
+      <div class="container topbar">
+        <a class="brand" href="../index.html#overview" aria-label="Solvyr home">
+          <img class="brandlogo" src="../assets/brand/icon.png" alt="Solvyr icon" width="34" height="34" />
+          <div class="brandtext">
+            <div class="name">Solvyr</div>
+            <div class="tag">Fast Corpus for AI teams</div>
+          </div>
+        </a>
+        <nav class="tabs" aria-label="Page navigation">
+          <a class="tab" href="../index.html#who">Fit</a>
+          <a class="tab" href="../index.html#model">Model</a>
+          <a class="tab cta" href="../pilot-intake.html?intent=fast-corpus&source=pdf-rag-use-case">Pilot</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container shell">
+      <section class="hero">
+        <p class="eyebrow">Use case</p>
+        <h1>Turn clean PDFs into an AI-ready RAG corpus.</h1>
+        <p class="lede">
+          Solvyr Fast Corpus converts clean digital PDFs into JSONL with extracted
+          text, chunks, embeddings, stable IDs, and a run report for RAG, search,
+          evals, and agent workflows.
+        </p>
+        <div class="heroActions">
+          <a class="button primary" href="../pilot-intake.html?intent=fast-corpus&source=pdf-rag-use-case">Scope a Fast Corpus run</a>
+          <a class="button secondary" href="../ai/fast-corpus.md">Read the agent brief</a>
+        </div>
+      </section>
+
+      <section class="split">
+        <article class="panel">
+          <h2>Use this when</h2>
+          <ul class="cleanList">
+            <li>You have a backlog of clean digital PDFs.</li>
+            <li>You need chunks, embeddings, and stable source IDs.</li>
+            <li>You want an artifact your AI team can inspect before indexing.</li>
+            <li>The workload can run asynchronously.</li>
+          </ul>
+        </article>
+        <article class="panel mutedPanel">
+          <h2>Not for</h2>
+          <ul class="cleanList">
+            <li>OCR-heavy scans unless scoped separately.</li>
+            <li>Realtime chat serving or model hosting.</li>
+            <li>Custom structured extraction in the current trial.</li>
+            <li>Highly sensitive data without prior agreement.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="band compact" aria-labelledby="output-title">
+        <div>
+          <p class="eyebrow">Output</p>
+          <h2 id="output-title">What a PDF-to-RAG run returns.</h2>
+        </div>
+        <p>
+          The expected bundle includes extracted text, chunks, embeddings, stable
+          IDs, item-level outcome notes where applicable, and a run report with
+          counts and caveats. Standard clean PDF/text processing starts at EUR
+          0.95 per 1000 pages.
+        </p>
+      </section>
+
+      <section class="band compact" aria-labelledby="infra-title">
+        <div>
+          <p class="eyebrow">Why Solvyr</p>
+          <h2 id="infra-title">A corpus product backed by controlled distributed execution.</h2>
+        </div>
+        <p>
+          Fast Corpus is the concrete front door. Underneath it, Solvyr is
+          building controlled scheduling, retries, visibility, and explainable
+          results across distributed execution pools for async AI workloads.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footerInner">
+        <div>&copy; <span id="y"></span> Solvyr</div>
+        <div class="footerLinks">
+          <a href="../llms.txt">llms.txt</a>
+          <a href="../ai/fast-corpus.md">AI brief</a>
+          <a href="../pricing.yaml">Pricing YAML</a>
+        </div>
+      </div>
+    </footer>
+    <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  </body>
+</html>

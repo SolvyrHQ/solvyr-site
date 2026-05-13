@@ -740,6 +740,21 @@ textarea{
   font-weight:700;
 }
 
+.linkStack{
+  display:grid;
+  gap:10px;
+}
+
+.linkStack a{
+  display:block;
+  padding:12px 14px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:#f7f9fc;
+  color:var(--accentDark);
+  font-weight:800;
+}
+
 @media (max-width: 920px){
   .topbar{
     align-items:flex-start;

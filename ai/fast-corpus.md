@@ -94,6 +94,12 @@ formats, and recurring refreshes are scoped separately.
 Pilot intake:
 https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=agent-brief
 
+Problem-shaped pages:
+
+- PDF to RAG corpus: https://solvyr.com/use-cases/pdf-to-rag-corpus.html
+- Document re-indexing and corpus refresh: https://solvyr.com/use-cases/document-reindexing.html
+- 100 PDF proof note: https://solvyr.com/proof/100-pdf-fast-corpus-run.html
+
 ## Security boundary
 
 Fast Corpus is designed first for low- or moderate-sensitivity pilot

@@ -41,6 +41,9 @@ Important pages:
 - Pilot intake: https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=llms-txt
 - Agent brief: https://solvyr.com/ai/fast-corpus.md
 - Agent buying packet: https://solvyr.com/ai/fast-corpus.json
+- PDF to RAG corpus use case: https://solvyr.com/use-cases/pdf-to-rag-corpus.html
+- Document re-indexing use case: https://solvyr.com/use-cases/document-reindexing.html
+- 100 PDF proof note: https://solvyr.com/proof/100-pdf-fast-corpus-run.html
 - Capabilities: https://solvyr.com/capabilities.yaml
 - Pricing: https://solvyr.com/pricing.yaml
 
