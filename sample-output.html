@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fast Corpus Sample Output - Solvyr</title>
+    <meta
+      name="description"
+      content="What Solvyr Fast Corpus output should show: JSONL shape, stable IDs, chunks, embeddings metadata, run report fields, failures, and caveats."
+    />
+    <meta property="og:title" content="Fast Corpus Sample Output - Solvyr" />
+    <meta
+      property="og:description"
+      content="A transparent outline of the artifact Solvyr Fast Corpus should return for clean PDF/text corpus processing."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://solvyr.com/sample-output.html" />
+    <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="top">
+      <div class="container topbar">
+        <a class="brand" href="index.html#overview" aria-label="Solvyr home">
+          <img class="brandlogo" src="assets/brand/icon.png" alt="Solvyr icon" width="34" height="34" />
+          <div class="brandtext">
+            <div class="name">Solvyr</div>
+            <div class="tag">Fast Corpus for AI teams</div>
+          </div>
+        </a>
+        <nav class="tabs" aria-label="Page navigation">
+          <a class="tab" href="proof/100-pdf-fast-corpus-run.html">Proof</a>
+          <a class="tab" href="use-cases/pdf-to-rag-corpus.html">PDF to RAG</a>
+          <a class="tab cta" href="pilot-intake.html?intent=fast-corpus&source=sample-output-page">Pilot</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container shell">
+      <section class="hero">
+        <p class="eyebrow">Sample output</p>
+        <h1>What a Fast Corpus artifact should make inspectable.</h1>
+        <p class="lede">
+          This page describes the expected artifact shape. A real sample bundle
+          still needs to be produced from a representative run before this page
+          becomes proof rather than specification.
+        </p>
+      </section>
+
+      <div class="summaryGrid">
+        <article class="panel">
+          <h2>JSONL records</h2>
+          <p>
+            Source document ID, chunk ID, extracted text, chunk boundaries,
+            embedding reference or vector field, and source metadata.
+          </p>
+        </article>
+        <article class="panel">
+          <h2>Run report</h2>
+          <p>
+            Submitted documents, accepted documents, pages, chunks, successful
+            outputs, failures, retries, runtime, caveats, and pricing basis.
+          </p>
+        </article>
+        <article class="panel">
+          <h2>Failure notes</h2>
+          <p>
+            Items that could not be processed should be visible instead of
+            silently missing from downstream corpus use.
+          </p>
+        </article>
+      </div>
+
+      <section class="band compact" aria-labelledby="needed-title">
+        <div>
+          <p class="eyebrow">Still needed</p>
+          <h2 id="needed-title">A real downloadable sample bundle.</h2>
+        </div>
+        <p>
+          The next proof upgrade is a small safe run that can publish a sanitized
+          input sample, output JSONL, source manifest, and run report. Until
+          then, this page is intentionally framed as the expected contract, not a
+          finished proof artifact.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footerInner">
+        <div>&copy; <span id="y"></span> Solvyr</div>
+        <div class="footerLinks">
+          <a href="llms.txt">llms.txt</a>
+          <a href="ai/fast-corpus.md">AI brief</a>
+          <a href="pilot-intake.html?intent=fast-corpus&source=sample-output-page">Pilot intake</a>
+        </div>
+      </div>
+    </footer>
+    <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  </body>
+</html>

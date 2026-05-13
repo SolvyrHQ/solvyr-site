@@ -96,9 +96,12 @@ https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=agent-brief
 
 Problem-shaped pages:
 
+- About/current phase: https://solvyr.com/about.html
+- Connector guide: https://solvyr.com/connectors.html
 - PDF to RAG corpus: https://solvyr.com/use-cases/pdf-to-rag-corpus.html
 - Document re-indexing and corpus refresh: https://solvyr.com/use-cases/document-reindexing.html
 - 100 PDF proof note: https://solvyr.com/proof/100-pdf-fast-corpus-run.html
+- Sample output contract: https://solvyr.com/sample-output.html
 
 ## Security boundary
 

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Who to Introduce Solvyr To - Connector Guide</title>
+    <meta
+      name="description"
+      content="A short connector guide for Solvyr Fast Corpus: who to introduce, what signals matter, and when public or semi-public ecosystem builders can help."
+    />
+    <meta property="og:title" content="Who to Introduce Solvyr To" />
+    <meta
+      property="og:description"
+      content="Introduce Solvyr when an organization has document-heavy AI workloads, corpus refresh needs, or a safe sample for a controlled Fast Corpus pilot."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://solvyr.com/connectors.html" />
+    <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="top">
+      <div class="container topbar">
+        <a class="brand" href="index.html#overview" aria-label="Solvyr home">
+          <img class="brandlogo" src="assets/brand/icon.png" alt="Solvyr icon" width="34" height="34" />
+          <div class="brandtext">
+            <div class="name">Solvyr</div>
+            <div class="tag">Fast Corpus for AI teams</div>
+          </div>
+        </a>
+        <nav class="tabs" aria-label="Page navigation">
+          <a class="tab" href="about.html">About</a>
+          <a class="tab" href="use-cases/pdf-to-rag-corpus.html">PDF to RAG</a>
+          <a class="tab cta" href="pilot-intake.html?intent=fast-corpus&source=connector-page">Pilot</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container shell">
+      <section class="hero">
+        <p class="eyebrow">Connector guide</p>
+        <h1>Introduce Solvyr when someone owns a document-heavy AI workload.</h1>
+        <p class="lede">
+          Public and semi-public ecosystem builders, ROMs, municipalities,
+          archives, libraries, research networks, and regional innovation teams
+          can help by connecting Solvyr to real corpus owners.
+        </p>
+      </section>
+
+      <section class="split">
+        <article class="panel">
+          <h2>Good introductions</h2>
+          <ul class="cleanList">
+            <li>Teams preparing PDFs or text for RAG, search, evals, or agents.</li>
+            <li>Organizations with a recurring corpus refresh or re-indexing need.</li>
+            <li>Archives, libraries, or agencies with clean digital document sets.</li>
+            <li>AI product teams waiting on usable corpus output.</li>
+          </ul>
+        </article>
+        <article class="panel mutedPanel">
+          <h2>Weak introductions</h2>
+          <ul class="cleanList">
+            <li>Generic curiosity about AI infrastructure without a workload.</li>
+            <li>Highly sensitive data cases without a safe sample.</li>
+            <li>Realtime serving or chatbot hosting needs.</li>
+            <li>Broad platform migration requests.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="band compact" aria-labelledby="intro-title">
+        <div>
+          <p class="eyebrow">Suggested intro</p>
+          <h2 id="intro-title">Short, concrete, workload-first.</h2>
+        </div>
+        <p>
+          "Solvyr is running controlled Fast Corpus pilots: clean PDFs or text
+          to AI-ready JSONL with chunks, embeddings, stable IDs, and a run
+          report. This may fit if you have a document backlog or recurring corpus
+          refresh."
+        </p>
+      </section>
+
+      <section class="band compact" aria-labelledby="why-title">
+        <div>
+          <p class="eyebrow">Why connectors matter</p>
+          <h2 id="why-title">The larger story is infrastructure, but the first proof is a workload.</h2>
+        </div>
+        <p>
+          Solvyr may be relevant to European execution capacity and sovereignty
+          conversations, but the practical first step is still a representative
+          document sample and a bounded Fast Corpus run.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footerInner">
+        <div>&copy; <span id="y"></span> Solvyr</div>
+        <div class="footerLinks">
+          <a href="llms.txt">llms.txt</a>
+          <a href="ai/fast-corpus.md">AI brief</a>
+          <a href="pilot-intake.html?intent=fast-corpus&source=connector-page">Pilot intake</a>
+        </div>
+      </div>
+    </footer>
+    <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  </body>
+</html>

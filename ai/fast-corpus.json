@@ -49,13 +49,16 @@
   "security_boundary": "Low- or moderate-sensitivity pilot workloads. Sensitive or regulated data requires prior agreement.",
   "contact": "https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=agent-packet",
   "human_page": "https://solvyr.com/",
+  "about": "https://solvyr.com/about.html",
+  "connector_guide": "https://solvyr.com/connectors.html",
   "agent_brief": "https://solvyr.com/ai/fast-corpus.md",
   "use_cases": [
     "https://solvyr.com/use-cases/pdf-to-rag-corpus.html",
     "https://solvyr.com/use-cases/document-reindexing.html"
   ],
   "proof": [
-    "https://solvyr.com/proof/100-pdf-fast-corpus-run.html"
+    "https://solvyr.com/proof/100-pdf-fast-corpus-run.html",
+    "https://solvyr.com/sample-output.html"
   ],
   "capabilities": "https://solvyr.com/capabilities.yaml",
   "pricing": "https://solvyr.com/pricing.yaml"

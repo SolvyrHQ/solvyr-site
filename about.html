@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Solvyr - Current Phase and Pilot Boundary</title>
+    <meta
+      name="description"
+      content="Solvyr is building controlled distributed execution for async AI workloads. The current public front door is Fast Corpus: clean PDF/text to AI-ready JSONL under controlled trials."
+    />
+    <meta property="og:title" content="About Solvyr - Current Phase" />
+    <meta
+      property="og:description"
+      content="Fast Corpus is the concrete product front door into Solvyr's controlled distributed execution system for async AI workloads."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://solvyr.com/about.html" />
+    <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="top">
+      <div class="container topbar">
+        <a class="brand" href="index.html#overview" aria-label="Solvyr home">
+          <img class="brandlogo" src="assets/brand/icon.png" alt="Solvyr icon" width="34" height="34" />
+          <div class="brandtext">
+            <div class="name">Solvyr</div>
+            <div class="tag">Fast Corpus for AI teams</div>
+          </div>
+        </a>
+        <nav class="tabs" aria-label="Page navigation">
+          <a class="tab" href="index.html#overview">Fast Corpus</a>
+          <a class="tab" href="connectors.html">Connectors</a>
+          <a class="tab cta" href="pilot-intake.html?intent=fast-corpus&source=about-page">Pilot</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container shell">
+      <section class="hero">
+        <p class="eyebrow">About Solvyr</p>
+        <h1>Fast Corpus is the product front door. Controlled distributed execution is the company underneath.</h1>
+        <p class="lede">
+          Solvyr is in a founder-led, controlled trial phase. The current public
+          offer is narrow on purpose: clean digital PDFs and text archives to
+          AI-ready JSONL, chunks, embeddings, stable IDs, and a run report.
+        </p>
+      </section>
+
+      <div class="summaryGrid">
+        <article class="panel">
+          <h2>What is real now</h2>
+          <p>
+            Controlled async document/text corpus processing, pilot scoping,
+            visible run evidence, and honest fit/non-fit boundaries.
+          </p>
+        </article>
+        <article class="panel">
+          <h2>What is being built</h2>
+          <p>
+            A distributed execution system with central scheduling, bounded
+            tasks, retries, durable status, and explainable results.
+          </p>
+        </article>
+        <article class="panel">
+          <h2>What is not claimed</h2>
+          <p>
+            No broad self-serve platform, generic GPU rental, enterprise SLA,
+            OCR-heavy support, or sensitive-data processing by default.
+          </p>
+        </article>
+      </div>
+
+      <section class="band compact" aria-labelledby="why-title">
+        <div>
+          <p class="eyebrow">Why this shape</p>
+          <h2 id="why-title">A concrete workload is the honest way to prove the system.</h2>
+        </div>
+        <p>
+          Solvyr is not trying to sell infrastructure in the abstract. Fast
+          Corpus gives buyers, connectors, and agents one concrete workload to
+          evaluate before any broader platform conversation.
+        </p>
+      </section>
+
+      <section class="band compact" aria-labelledby="phase-title">
+        <div>
+          <p class="eyebrow">Current phase</p>
+          <h2 id="phase-title">Controlled trials, representative samples, and capped runs.</h2>
+        </div>
+        <p>
+          A good first conversation starts with document count, page count, input
+          type, desired output, data sensitivity, recurrence, and whether a safe
+          representative sample can be shared.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footerInner">
+        <div>&copy; <span id="y"></span> Solvyr</div>
+        <div class="footerLinks">
+          <a href="llms.txt">llms.txt</a>
+          <a href="ai/fast-corpus.md">AI brief</a>
+          <a href="pilot-intake.html?intent=fast-corpus&source=about-page">Pilot intake</a>
+        </div>
+      </div>
+    </footer>
+    <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  </body>
+</html>

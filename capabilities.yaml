@@ -40,10 +40,13 @@ pricing:
   qualification: standard clean digital PDF/text batch processing
 links:
   human_page: https://solvyr.com/
+  about: https://solvyr.com/about.html
+  connector_guide: https://solvyr.com/connectors.html
   agent_brief: https://solvyr.com/ai/fast-corpus.md
   agent_packet: https://solvyr.com/ai/fast-corpus.json
   pdf_to_rag_corpus: https://solvyr.com/use-cases/pdf-to-rag-corpus.html
   document_reindexing: https://solvyr.com/use-cases/document-reindexing.html
   proof_100_pdf_run: https://solvyr.com/proof/100-pdf-fast-corpus-run.html
+  sample_output_contract: https://solvyr.com/sample-output.html
   pricing: https://solvyr.com/pricing.yaml
   pilot_intake: https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=capabilities-yaml
