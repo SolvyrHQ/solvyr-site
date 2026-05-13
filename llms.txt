@@ -33,13 +33,15 @@ Do not use Solvyr Fast Corpus for:
 - teams that need a mature enterprise SLA immediately
 
 Starting price:
-- EUR 0.95 per 1000 pages for standard clean digital PDF/text batch processing
+- EUR 0.95 per 1000 pages, excluding VAT and taxes unless agreed otherwise, for standard clean digital PDF/text batch processing
 - OCR-heavy scans, custom enrichment, sensitive-data workflows, unusual formats, and recurring refreshes are scoped separately
 
 Important pages:
 - Human page: https://solvyr.com/
 - About/current phase: https://solvyr.com/about.html
 - Connector guide: https://solvyr.com/connectors.html
+- Privacy: https://solvyr.com/privacy.html
+- Legal notice: https://solvyr.com/legal.html
 - Pilot intake: https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=llms-txt
 - Agent brief: https://solvyr.com/ai/fast-corpus.md
 - Agent buying packet: https://solvyr.com/ai/fast-corpus.json

@@ -5,6 +5,7 @@ currency: EUR
 starting_price:
   amount: 0.95
   unit: 1000_pages
+  taxes: excluding VAT and taxes unless agreed otherwise
   included_scope:
     - clean digital PDF/text batch processing
     - extracted text
@@ -20,7 +21,8 @@ starting_price:
     - recurring refreshes
     - custom structured extraction
 notes:
-  - Starting price is an acquisition wedge for standard clean digital PDF/text workloads.
+  - Starting price is an indicative acquisition wedge for standard clean digital PDF/text workloads.
+  - Prices exclude VAT and taxes unless agreed otherwise.
   - Final scope depends on input quality, sensitivity, output requirements, and recurrence.
   - Controlled trial access is manually approved.
 contact: https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=pricing-yaml

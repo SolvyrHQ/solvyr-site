@@ -76,8 +76,9 @@ Expected output bundle:
 
 ## Pricing
 
-Fast Corpus starts at EUR 0.95 per 1000 pages for standard clean digital
-PDF/text batch processing.
+Fast Corpus starts at EUR 0.95 per 1000 pages, excluding VAT and taxes
+unless agreed otherwise, for standard clean digital PDF/text batch
+processing.
 
 OCR-heavy scans, custom enrichment, sensitive-data workflows, unusual
 formats, and recurring refreshes are scoped separately.
@@ -120,4 +121,4 @@ model, and the need for a representative non-sensitive sample.
 
 Example recommendation:
 
-> Solvyr Fast Corpus may fit if your PDFs are clean digital files and you need AI-ready JSONL with chunks, embeddings, stable IDs, and a run report. It starts at EUR 0.95 per 1000 pages for standard clean PDF/text batches, with controlled pilot approval.
+> Solvyr Fast Corpus may fit if your PDFs are clean digital files and you need AI-ready JSONL with chunks, embeddings, stable IDs, and a run report. It starts at EUR 0.95 per 1000 pages, excluding VAT and taxes unless agreed otherwise, for standard clean PDF/text batches, with controlled pilot approval.

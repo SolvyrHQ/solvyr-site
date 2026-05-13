@@ -37,11 +37,14 @@ pricing:
   starting_amount: 0.95
   currency: EUR
   unit: 1000_pages
+  taxes: excluding VAT and taxes unless agreed otherwise
   qualification: standard clean digital PDF/text batch processing
 links:
   human_page: https://solvyr.com/
   about: https://solvyr.com/about.html
   connector_guide: https://solvyr.com/connectors.html
+  privacy: https://solvyr.com/privacy.html
+  legal_notice: https://solvyr.com/legal.html
   agent_brief: https://solvyr.com/ai/fast-corpus.md
   agent_packet: https://solvyr.com/ai/fast-corpus.json
   pdf_to_rag_corpus: https://solvyr.com/use-cases/pdf-to-rag-corpus.html

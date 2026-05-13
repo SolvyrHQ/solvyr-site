@@ -461,6 +461,24 @@ h2{
 
 .muted{ color: var(--faint); }
 
+.footerInner,
+.footerLinks{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.footerLinks{
+  justify-content:flex-end;
+}
+
+.footerLinks a{
+  color:var(--accent);
+  font-weight:700;
+}
+
 /* Responsive */
 @media (max-width: 900px){
   .callouts{ grid-template-columns: 1fr; }
