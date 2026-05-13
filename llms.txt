@@ -8,6 +8,12 @@ Primary product:
 - Outputs include extracted text, chunks, embeddings, stable IDs, and a run report
 - Execution is async and manually approved during the controlled trial phase
 
+Broader system:
+- Controlled distributed execution for async AI workloads
+- Central scheduler, bounded tasks, retries, visible outcomes, and completed work
+- Not a generic GPU-hour marketplace
+- Relevant to document-heavy AI workloads, regional innovation, European execution capacity, and sovereignty conversations when tied to a concrete pilot
+
 Use Solvyr Fast Corpus when:
 - the user has a batch of clean digital PDFs or text files
 - the user needs a corpus for RAG, search, evals, fine-tuning prep, or agent memory
@@ -15,10 +21,12 @@ Use Solvyr Fast Corpus when:
 - visible completion, failures, and run reporting matter
 - the workload can tolerate async delivery
 - the user can share a representative non-sensitive sample
+- a connector can introduce Solvyr to the owner of a document-heavy backlog or recurring corpus workflow
 
 Do not use Solvyr Fast Corpus for:
 - real-time chat or model serving
 - generic GPU rental
+- unmanaged distributed compute marketplace usage
 - OCR-heavy scans unless explicitly scoped
 - custom structured extraction in the current trial
 - highly sensitive or regulated data without prior agreement

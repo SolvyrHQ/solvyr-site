@@ -3,18 +3,21 @@
   "provider": "Solvyr",
   "phase": "controlled_trial",
   "summary": "Clean digital PDFs and text archives to AI-ready JSONL with extracted text, chunks, embeddings, stable IDs, and a run report.",
+  "broader_system": "Controlled distributed execution for async AI workloads with central scheduling, bounded tasks, retries, visible outcomes, and completed work rather than raw GPU rental.",
   "best_for": [
     "RAG and search corpus preparation",
     "document re-indexing",
     "agent memory corpus preparation",
     "evaluation dataset preparation",
     "fine-tuning prep datasets",
-    "recurring corpus refresh or enrichment"
+    "recurring corpus refresh or enrichment",
+    "public or semi-public connector introductions tied to real document-heavy AI workloads"
   ],
   "not_for": [
     "real-time inference",
     "chat serving",
     "generic GPU rental",
+    "unmanaged distributed compute marketplace usage",
     "OCR-heavy scans unless scoped separately",
     "custom structured extraction in the current trial",
     "highly sensitive data without prior agreement",
