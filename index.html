@@ -4,32 +4,56 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Solvyr - Lower-cost async AI execution for document and text workloads</title>
+    <title>Solvyr Fast Corpus - AI-ready JSONL from clean PDFs and text</title>
     <meta
       name="description"
-      content="Solvyr helps teams run async document and text AI workloads with measured cost per successful output, visible execution, scoped data handling, and clear integration boundaries."
+      content="Solvyr Fast Corpus turns clean digital PDFs and text archives into AI-ready JSONL with extracted text, chunks, embeddings, stable IDs, and a run report."
     />
-    <meta property="og:title" content="Solvyr - Lower-cost async AI execution" />
+    <meta property="og:title" content="Solvyr Fast Corpus - AI-ready document corpora" />
     <meta
       property="og:description"
-      content="Run heavy document and text AI workloads with measured economics, visible runs, and scoped data handling."
+      content="Clean digital PDFs and text archives to AI-ready JSONL for RAG, search, evals, fine-tuning prep, and agent memory."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://solvyr.com/" />
     <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Solvyr - Lower-cost async AI execution" />
+    <meta name="twitter:title" content="Solvyr Fast Corpus - AI-ready document corpora" />
     <meta
       name="twitter:description"
-      content="Run async document and text workloads with cost, control, and clear data boundaries."
+      content="Clean digital PDFs and text archives to AI-ready JSONL with visible run reporting."
     />
 
     <link rel="icon" href="favicon.ico" />
     <link rel="alternate" hreflang="en" href="index.html" />
     <link rel="alternate" hreflang="nl" href="nl.html" />
+    <link rel="alternate" type="text/markdown" href="ai/fast-corpus.md" title="Fast Corpus agent brief" />
+    <link rel="help" href="llms.txt" />
     <meta name="theme-color" content="#f7f8fb" />
     <link rel="preload" as="image" href="assets/brand/icon.png" />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Solvyr Fast Corpus",
+        "provider": {
+          "@type": "Organization",
+          "name": "Solvyr",
+          "url": "https://solvyr.com/"
+        },
+        "url": "https://solvyr.com/",
+        "description": "Clean digital PDFs and text archives to AI-ready JSONL with extracted text, chunks, embeddings, stable IDs, and a run report.",
+        "serviceType": "Async document corpus preparation",
+        "areaServed": "Worldwide",
+        "offers": {
+          "@type": "Offer",
+          "price": "0.95",
+          "priceCurrency": "EUR",
+          "description": "Starting price per 1000 pages for standard clean digital PDF/text batch processing."
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -45,7 +69,7 @@
           />
           <div class="brandtext">
             <div class="name">Solvyr</div>
-            <div class="tag">Lower-cost async AI execution</div>
+            <div class="tag">Fast Corpus for AI teams</div>
           </div>
         </a>
 
@@ -56,8 +80,8 @@
           </div>
 
           <nav class="tabs" aria-label="Primary navigation">
-            <a class="tab" href="#who" data-tab-target="who" aria-selected="false">For teams</a>
-            <a class="tab" href="#deliver" data-tab-target="deliver" aria-selected="false">What we deliver</a>
+            <a class="tab" href="#who" data-tab-target="who" aria-selected="false">Fit</a>
+            <a class="tab" href="#deliver" data-tab-target="deliver" aria-selected="false">Output</a>
             <a class="tab" href="#model" data-tab-target="model" aria-selected="false">Model</a>
             <a class="tab" href="#security" data-tab-target="security" aria-selected="false">Security</a>
             <a class="tab cta" href="#pilot" data-tab-target="pilot" aria-selected="false">Pilot</a>
@@ -69,59 +93,59 @@
     <main class="container shell">
       <section class="page active" id="overview-panel" data-page="overview" aria-labelledby="overview-title">
         <div class="hero">
-          <p class="eyebrow">Solvyr</p>
-          <h1 id="overview-title">Lower-cost execution for async document and text AI workloads.</h1>
+          <p class="eyebrow">Solvyr Fast Corpus</p>
+          <h1 id="overview-title">AI-ready corpora from clean PDFs and text.</h1>
           <p class="lede">
-            Solvyr runs bounded batch workloads on controlled GPU capacity and
-            reports cost per successful output, not abstract GPU time.
+            Turn clean digital PDFs and text archives into JSONL with extracted
+            text, chunks, embeddings, stable IDs, and a run report.
           </p>
           <div class="heroActions">
-            <a class="button primary" href="#pilot" data-tab-target="pilot">Scope a pilot</a>
-            <a class="button secondary" href="#deliver" data-tab-target="deliver">See what you get</a>
+            <a class="button primary" href="pilot-intake.html?intent=fast-corpus&source=homepage-hero">Scope a Fast Corpus run</a>
+            <a class="button secondary" href="ai/fast-corpus.md">Read the AI/product brief</a>
           </div>
         </div>
 
         <div class="reasonGrid" aria-label="Why teams pilot Solvyr">
           <article class="panel">
-            <p class="miniLabel">Economics</p>
-            <h2>Spend less where always-on cloud GPUs are a poor fit.</h2>
+            <p class="miniLabel">Use case</p>
+            <h2>Corpus prep for RAG, search, evals, and agent memory.</h2>
             <p>
-              Measured GPU-hours, retries, accepted output, and estimated unit
-              cost.
+              A practical path from source documents to model-ready data.
             </p>
           </article>
           <article class="panel">
-            <p class="miniLabel">Throughput</p>
-            <h2>Move backlogs without blocking product work.</h2>
+            <p class="miniLabel">Price</p>
+            <h2>From EUR 0.95 per 1000 pages for standard batches.</h2>
             <p>
-              Refreshes, backfills, enrichment, and reprocessing outside the
-              realtime path.
+              OCR-heavy scans, sensitive data, and custom enrichment are scoped
+              separately.
             </p>
           </article>
           <article class="panel">
-            <p class="miniLabel">Control</p>
-            <h2>See what happened instead of hoping it completed.</h2>
+            <p class="miniLabel">Output</p>
+            <h2>Get JSONL, stable IDs, embeddings, and a run report.</h2>
             <p>
-              Completed, retried, failed, and usable output are visible.
+              Built to be inspected, re-used, and passed into downstream AI
+              workflows.
             </p>
           </article>
           <article class="panel">
-            <p class="miniLabel">Adoption</p>
-            <h2>Test the execution model before integration.</h2>
+            <p class="miniLabel">Access</p>
+            <h2>Controlled trial first, not open self-serve.</h2>
             <p>
-              Prove fit before building a controlled CLI or API path.
+              Start with a representative sample and a bounded pilot decision.
             </p>
           </article>
         </div>
 
         <section class="reportPreview" aria-labelledby="benchmark-title">
           <div class="reportCopy">
-            <p class="eyebrow">Recent internal benchmark</p>
-            <h2 id="benchmark-title">100 PDFs processed with measured GPU-hours and zero retries.</h2>
+            <p class="eyebrow">Evidence boundary</p>
+            <h2 id="benchmark-title">Recent internal run: 100 PDFs processed with measured GPU-hours and zero retries.</h2>
             <p>
-              PDF text extraction, chunking, and embedding generation. Not OCR,
-              layout parsing, structured invoice extraction, or vector database
-              indexing.
+              This supports the clean digital PDF/text path: extraction,
+              chunking, and embedding generation. It is not an OCR-heavy,
+              layout-parsing, or structured extraction claim.
             </p>
           </div>
           <div class="metricCard" aria-label="Recent benchmark metrics">
@@ -146,55 +170,55 @@
 
         <section class="band compact" aria-labelledby="connector-title">
           <div>
-            <p class="eyebrow">When this rings a bell</p>
-            <h2 id="connector-title">A useful intro often starts with a familiar operational problem.</h2>
+            <p class="eyebrow">For humans and agents</p>
+            <h2 id="connector-title">Same truth, different compression.</h2>
           </div>
           <p>
-            Thousands of PDFs. An index refresh. A repeat document workflow. A
-            team waiting on batch AI jobs. That is enough for a pilot conversation.
+            Humans get the product story and pilot path. Agents get plain text,
+            structured capability files, pricing, and clear fit rules.
           </p>
         </section>
 
         <section class="proofStrip" aria-label="Pilot scope">
           <div>
-            <strong>One workload path</strong>
-            <span>No broad platform migration.</span>
+            <strong>Clean digital input</strong>
+            <span>PDFs and text first. OCR-heavy scans are separate.</span>
           </div>
           <div>
-            <strong>Safe sample</strong>
-            <span>Clear input, output, and boundaries.</span>
+            <strong>AI-ready output</strong>
+            <span>JSONL, chunks, embeddings, IDs, run report.</span>
           </div>
           <div>
-            <strong>Measured economics</strong>
-            <span>Cost, runtime, accepted output, caveats.</span>
+            <strong>Pilot-shaped</strong>
+            <span>Representative sample, capped run, clear next step.</span>
           </div>
         </section>
 
         <section class="flowPanel" aria-labelledby="pilot-flow-title">
           <div>
             <p class="eyebrow">Pilot flow</p>
-            <h2 id="pilot-flow-title">From sample to decision, without a long platform project.</h2>
+            <h2 id="pilot-flow-title">From corpus sample to decision, without a platform project.</h2>
           </div>
           <ol class="flowSteps">
             <li>
               <span>1</span>
-              <strong>Scope</strong>
-              <small>Workload, data boundaries, success signal.</small>
+              <strong>Describe</strong>
+              <small>Format, pages, output target, sensitivity.</small>
             </li>
             <li>
               <span>2</span>
-              <strong>Run</strong>
-              <small>Controlled execution with visible states.</small>
+              <strong>Sample</strong>
+              <small>Share the smallest safe representative set.</small>
             </li>
             <li>
               <span>3</span>
-              <strong>Report</strong>
-              <small>Output, unit cost inputs, runtime, caveats.</small>
+              <strong>Process</strong>
+              <small>Run clean digital PDF/text through the corpus path.</small>
             </li>
             <li>
               <span>4</span>
               <strong>Decide</strong>
-              <small>Continue, adjust, or stop.</small>
+              <small>One-time output, recurring refresh, or stop.</small>
             </li>
           </ol>
         </section>
@@ -202,11 +226,11 @@
 
       <section class="page" id="who-panel" data-page="who" aria-labelledby="who-title">
         <div class="pageHeader">
-          <p class="eyebrow">Who it is for</p>
-          <h1 id="who-title">Teams with recurring document or text work that is too heavy for the normal path.</h1>
+          <p class="eyebrow">Fit</p>
+          <h1 id="who-title">For teams that need a real corpus, not another vague data project.</h1>
           <p>
-            Early pilots choose one path at a time: a real backlog, a safe pilot
-            sample, and a clear idea of useful output.
+            Fast Corpus fits when the input is clean enough, the output is
+            useful as JSONL, and the workload can be handled asynchronously.
           </p>
         </div>
 
@@ -214,75 +238,76 @@
           <section class="panel" aria-labelledby="good-fit-title">
             <h2 id="good-fit-title">Good fit</h2>
             <ul class="cleanList">
-              <li>Large PDF or text batches</li>
-              <li>Embedding refreshes, re-indexing, enrichment, or classification</li>
-              <li>Document transformation or reviewable translation</li>
-              <li>Low- or moderate-sensitivity data that can be scoped safely</li>
+              <li>Thousands of clean digital PDF pages or text files</li>
+              <li>RAG, search, evals, fine-tuning prep, or agent memory</li>
+              <li>Embedding refreshes, re-indexing, enrichment, or backfills</li>
+              <li>A representative non-sensitive sample can be shared</li>
             </ul>
           </section>
 
           <section class="panel mutedPanel" aria-labelledby="poor-fit-title">
             <h2 id="poor-fit-title">Not the current fit</h2>
             <ul class="cleanList">
-              <li>Realtime product requests</li>
-              <li>High-sensitivity data without a safe pilot sample</li>
-              <li>Platform migrations, generic workflow tooling, or open self-serve access</li>
+              <li>Realtime chat or model serving</li>
+              <li>OCR-heavy scans unless scoped separately</li>
+              <li>Custom structured extraction in the current trial</li>
+              <li>High-sensitivity data without prior agreement</li>
             </ul>
           </section>
         </div>
 
         <div class="split sectionGap">
           <section class="panel" aria-labelledby="customer-types-title">
-            <h2 id="customer-types-title">Customers could be</h2>
+            <h2 id="customer-types-title">Strong buyer signals</h2>
             <ul class="cleanList">
-              <li>Document processing or workflow automation companies</li>
-              <li>Legal, accounting, compliance, or due-diligence teams</li>
-              <li>Data enrichment, market intelligence, or research operations</li>
-              <li>Municipalities, agencies, archives, libraries, or semi-public organizations</li>
+              <li>A backlog of documents waiting to be made usable</li>
+              <li>A recurring index or corpus refresh</li>
+              <li>A team already building RAG, search, eval, or agent systems</li>
+              <li>A clear owner for input quality and output validation</li>
             </ul>
           </section>
 
           <section class="panel" aria-labelledby="use-cases-title">
-            <h2 id="use-cases-title">Use cases could be</h2>
+            <h2 id="use-cases-title">Common paths</h2>
             <ul class="cleanList">
-              <li>Refreshing an embedding index</li>
               <li>Reprocessing an archive into searchable chunks</li>
-              <li>Classifying or enriching document batches</li>
-              <li>Transforming, translating, or normalizing manuals and policy documents</li>
+              <li>Preparing a RAG corpus from PDFs or text exports</li>
+              <li>Building an eval or fine-tuning prep dataset</li>
+              <li>Creating a repeatable corpus refresh process</li>
             </ul>
           </section>
         </div>
 
         <section class="band compact" aria-labelledby="buyer-title">
           <div>
-            <p class="eyebrow">Typical buyer signal</p>
-            <h2 id="buyer-title">A concrete backlog beats general AI infrastructure interest.</h2>
+            <p class="eyebrow">Qualification rule</p>
+            <h2 id="buyer-title">A concrete corpus beats general AI interest.</h2>
           </div>
           <p>
-            Strong prospects can point to a backlog, recurring run, customer
-            obligation, cost concern, or slow process.
+            The strongest signal is not curiosity about infrastructure. It is a
+            real document set, a target output, and a reason the corpus matters.
           </p>
         </section>
 
         <section class="band compact" aria-labelledby="intro-title">
           <div>
             <p class="eyebrow">For connectors</p>
-            <h2 id="intro-title">A good intro is usually to the person who owns the backlog.</h2>
+            <h2 id="intro-title">A good intro is to the person who owns the document backlog.</h2>
           </div>
           <p>
-            Think product operations, data platform, document automation,
-            innovation, or a business owner with a repeat AI-heavy process.
+            Think product, data platform, document automation, search, AI
+            operations, or a business owner waiting on usable corpus output.
           </p>
         </section>
       </section>
 
       <section class="page" id="deliver-panel" data-page="deliver" aria-labelledby="deliver-title">
         <div class="pageHeader">
-          <p class="eyebrow">What we deliver</p>
-          <h1 id="deliver-title">A controlled run with visible outcomes and usable cost evidence.</h1>
+          <p class="eyebrow">Output</p>
+          <h1 id="deliver-title">A corpus artifact that an AI team can actually inspect and use.</h1>
           <p>
-            Completed work, measured run behavior, and a practical go/no-go for
-            one workload path.
+            Fast Corpus returns files and run evidence, not a vague promise that
+            documents have been "processed."
           </p>
         </div>
 
@@ -292,8 +317,8 @@
             <div>
               <h2>Workload qualification</h2>
               <p>
-                Input, output, data sensitivity, retries, current process, success
-                criteria.
+                Input format, page count, sensitivity, output target, recurrence,
+                and success criteria.
               </p>
             </div>
           </article>
@@ -301,9 +326,10 @@
           <article class="step">
             <div class="num">2</div>
             <div>
-              <h2>Controlled execution</h2>
+              <h2>Fast Corpus processing</h2>
               <p>
-                Bounded tasks, visible terminal states, retries, result references.
+                Clean digital PDF/text extraction, chunking, embedding generation,
+                stable IDs, and visible terminal states.
               </p>
             </div>
           </article>
@@ -311,10 +337,10 @@
           <article class="step">
             <div class="num">3</div>
             <div>
-              <h2>Run summary, unit economics, and next decision</h2>
+              <h2>Artifact, report, and next decision</h2>
               <p>
-                Usable output, run summary, cost per successful output unit,
-                next step.
+                AI-ready JSONL, run summary, caveats, and whether this should
+                become one-time output or recurring refresh.
               </p>
             </div>
           </article>
@@ -324,20 +350,21 @@
           <article class="panel">
             <h2>Expected artifacts</h2>
             <p>
-              Output, run notes, success/failure counts, retries, unit-cost
-              inputs, caveats.
+              Extracted text, chunks, embeddings, stable IDs, success/failure
+              counts, and run notes.
             </p>
           </article>
           <article class="panel">
-            <h2>Later integration</h2>
+            <h2>Agent-readable</h2>
             <p>
-              If it fits, move toward a controlled CLI or API path.
+              Public brief, capability file, pricing file, and structured facts
+              mirror the human page.
             </p>
           </article>
           <article class="panel">
             <h2>Operating principle</h2>
             <p>
-              Manual operations are acceptable early. Hidden failure is not.
+              Manual approval is acceptable early. Hidden failure is not.
             </p>
           </article>
         </div>
@@ -345,10 +372,10 @@
         <section class="reportPreview" aria-labelledby="report-preview-title">
           <div class="reportCopy">
             <p class="eyebrow">Example output</p>
-            <h2 id="report-preview-title">A pilot should produce a decision artifact.</h2>
+            <h2 id="report-preview-title">A Fast Corpus run should produce a decision artifact.</h2>
             <p>
-              No invented benchmark. A real pilot report should show the numbers,
-              caveats, and whether the workload path deserves more engineering.
+              The report should show what was accepted, what failed, what it
+              cost to run, and whether the corpus path deserves repetition.
             </p>
           </div>
           <div class="metricCard" aria-label="Example pilot report fields">
@@ -358,11 +385,11 @@
             </div>
             <div>
               <span>Useful output</span>
-              <strong>Accepted items + review notes</strong>
+              <strong>JSONL + source IDs + review notes</strong>
             </div>
             <div>
               <span>Economics</span>
-              <strong>Runtime + cost inputs per successful output</strong>
+              <strong>Runtime + price basis + caveats</strong>
             </div>
             <div>
               <span>Next step</span>
@@ -375,33 +402,34 @@
       <section class="page" id="model-panel" data-page="model" aria-labelledby="model-title">
         <div class="pageHeader">
           <p class="eyebrow">Model</p>
-          <h1 id="model-title">Controlled workload execution first, lower-cost capacity where it fits.</h1>
+          <h1 id="model-title">Fast Corpus is the wedge. Controlled execution is the system underneath.</h1>
           <p>
-            Distributed infrastructure is a means, not the product. The product
-            is completed work at a measured cost for workloads that fit.
+            The product story should start with the corpus result. The deeper
+            Solvyr system matters because it can make async work observable,
+            bounded, and economically useful.
           </p>
         </div>
 
         <div class="summaryGrid">
           <article class="panel">
-            <h2>Underused GPUs for selected workloads</h2>
+            <h2>Completed work, not raw GPU rental</h2>
             <p>
-              Already-owned household, partner, or customer machines can be
-              useful when work is async and bounded.
+              Customers should buy usable corpus output and run evidence, not
+              abstract GPU hours.
             </p>
           </article>
           <article class="panel">
-            <h2>Lower-cost execution windows</h2>
+            <h2>Async workloads fit the operating model</h2>
             <p>
-              Cheap dynamic electricity, solar surplus, and idle capacity can
-              matter when the job does not need realtime service.
+              Backlogs, refreshes, enrichment, and reprocessing can tolerate
+              queueing better than realtime product paths.
             </p>
           </article>
           <article class="panel">
-            <h2>No idle cloud reservation by default</h2>
+            <h2>Recurring refresh is the business layer</h2>
             <p>
-              Customers should buy successful output units, not a GPU instance
-              sitting around between batch jobs.
+              The entry price opens the door. The stronger business is repeated
+              corpus refresh and operational responsibility.
             </p>
           </article>
         </div>
@@ -409,12 +437,11 @@
         <section class="band compact" aria-labelledby="model-connectors-title">
           <div>
             <p class="eyebrow">Why it can resonate</p>
-            <h2 id="model-connectors-title">This is also an infrastructure story.</h2>
+            <h2 id="model-connectors-title">It starts as a product, but proves infrastructure discipline.</h2>
           </div>
           <p>
-            Public, semi-public, research, education, and regional innovation
-            networks may recognize the pattern: concrete AI workloads, with
-            sovereignty and infrastructure concentration in mind.
+            A concrete corpus job lets Solvyr show scheduling, retries,
+            reporting, and unit economics without selling a broad platform first.
           </p>
         </section>
 
@@ -424,8 +451,9 @@
             <h2 id="model-boundary-title">Not a universal datacenter replacement.</h2>
           </div>
           <p>
-            Datacenters remain right for many workloads. Solvyr focuses on async,
-            decomposable, retryable work.
+            Datacenters and managed APIs remain right for many jobs. Solvyr
+            focuses on bounded async document and text workloads where the
+            output contract is clear.
           </p>
         </section>
       </section>
@@ -515,10 +543,10 @@
       <section class="page" id="pilot-panel" data-page="pilot" aria-labelledby="pilot-title">
         <div class="pageHeader">
           <p class="eyebrow">Pilot</p>
-          <h1 id="pilot-title">Start with one bounded workload path and a representative sample.</h1>
+          <h1 id="pilot-title">Start with one corpus sample and a clear output target.</h1>
           <p>
-            One path, one input format, one expected output, one short
-            decision loop.
+            The useful first step is a bounded Fast Corpus run, not a broad
+            platform conversation.
           </p>
         </div>
 
@@ -526,28 +554,30 @@
           <div>
             <h2>What to send</h2>
             <ul class="cleanList">
-              <li>A small safe representative sample</li>
-              <li>Workload type and current process</li>
-              <li>Input, expected output, and validation criteria</li>
-              <li>Whether sensitive fields can be removed before sharing</li>
-              <li>Data handling requirements</li>
+              <li>Estimated page and document count</li>
+              <li>Input type: clean PDF, text, mixed, or OCR-heavy</li>
+              <li>Target output: JSONL, chunks, embeddings, or re-indexing artifact</li>
+              <li>Use case: RAG, search, evals, fine-tuning prep, or agent memory</li>
+              <li>Data sensitivity and whether a safe sample can be shared</li>
+              <li>Whether this is one-time or recurring</li>
             </ul>
           </div>
 
           <div class="contactCard">
             <p class="eyebrow">Contact</p>
-            <h2>Discuss a pilot workload</h2>
+            <h2>Scope a Fast Corpus test</h2>
             <p>
-              Send the job description and safest sample. High-sensitivity data
-              is likely out of scope unless it can be reduced to a safe pilot set.
+              Standard clean digital PDF/text processing starts at EUR 0.95 per
+              1000 pages. The next step is a representative non-sensitive sample
+              and a capped run.
             </p>
             <div class="contactActions">
-              <a class="button primary" href="mailto:jan@solvyr.com">Email Solvyr</a>
+              <a class="button primary" href="pilot-intake.html?intent=fast-corpus&source=site-pilot">Open pilot intake</a>
               <a
                 class="button secondary"
-                href="pilot-intake.html"
+                href="mailto:jan@solvyr.com?subject=Solvyr%20Fast%20Corpus%20pilot"
               >
-                Open pilot intake
+                Email Solvyr
               </a>
             </div>
           </div>
@@ -556,10 +586,11 @@
         <section class="band compact" aria-labelledby="pilot-outcome-title">
           <div>
             <p class="eyebrow">Pilot outcome</p>
-            <h2 id="pilot-outcome-title">A go/no-go decision for the workload path.</h2>
+            <h2 id="pilot-outcome-title">A go/no-go decision for Fast Corpus and the recurring layer.</h2>
           </div>
           <p>
-            Continue, adjust scope, or stop. The next step should be obvious.
+            Continue as one-time corpus output, move toward recurring refresh,
+            adjust scope, or stop. The next step should be obvious.
           </p>
         </section>
       </section>
@@ -568,7 +599,11 @@
     <footer class="footer">
       <div class="container footerInner">
         <div>&copy; <span id="y"></span> Solvyr</div>
-        <div class="muted">Async document and text workloads only</div>
+        <div class="footerLinks">
+          <a href="llms.txt">llms.txt</a>
+          <a href="ai/fast-corpus.md">AI brief</a>
+          <a href="pricing.yaml">Pricing YAML</a>
+        </div>
       </div>
     </footer>
 
@@ -599,7 +634,7 @@
 
         document.title =
           targetPage === "overview"
-            ? "Solvyr - Lower-cost async AI execution for document and text workloads"
+            ? "Solvyr Fast Corpus - AI-ready JSONL from clean PDFs and text"
             : `${document.querySelector(`[data-page="${targetPage}"] .eyebrow`).textContent} - Solvyr`;
       }
 

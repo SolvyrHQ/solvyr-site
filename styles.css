@@ -726,6 +726,20 @@ textarea{
   color:var(--faint);
 }
 
+.footerLinks{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:14px;
+  flex-wrap:wrap;
+  color:var(--faint);
+}
+
+.footerLinks a{
+  color:var(--accentDark);
+  font-weight:700;
+}
+
 @media (max-width: 920px){
   .topbar{
     align-items:flex-start;
@@ -867,7 +881,9 @@ textarea{
   }
 
   .heroActions,
-  .contactActions{
+  .contactActions,
+  .footerInner,
+  .footerLinks{
     align-items:stretch;
     flex-direction:column;
   }

@@ -1,0 +1,52 @@
+{
+  "product": "Solvyr Fast Corpus",
+  "provider": "Solvyr",
+  "phase": "controlled_trial",
+  "summary": "Clean digital PDFs and text archives to AI-ready JSONL with extracted text, chunks, embeddings, stable IDs, and a run report.",
+  "best_for": [
+    "RAG and search corpus preparation",
+    "document re-indexing",
+    "agent memory corpus preparation",
+    "evaluation dataset preparation",
+    "fine-tuning prep datasets",
+    "recurring corpus refresh or enrichment"
+  ],
+  "not_for": [
+    "real-time inference",
+    "chat serving",
+    "generic GPU rental",
+    "OCR-heavy scans unless scoped separately",
+    "custom structured extraction in the current trial",
+    "highly sensitive data without prior agreement",
+    "mature enterprise SLA requirements"
+  ],
+  "supported_inputs": [
+    "clean digital PDFs",
+    "text files",
+    "text-like exports"
+  ],
+  "outputs": [
+    "extracted text",
+    "chunks",
+    "embeddings",
+    "stable IDs",
+    "run report"
+  ],
+  "starting_price": {
+    "amount": 0.95,
+    "currency": "EUR",
+    "unit": "1000_pages",
+    "qualification": "standard clean digital PDF/text batch processing"
+  },
+  "access": {
+    "model": "manual_approval",
+    "pilot_required": true,
+    "execution": "async"
+  },
+  "security_boundary": "Low- or moderate-sensitivity pilot workloads. Sensitive or regulated data requires prior agreement.",
+  "contact": "https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=agent-packet",
+  "human_page": "https://solvyr.com/",
+  "agent_brief": "https://solvyr.com/ai/fast-corpus.md",
+  "capabilities": "https://solvyr.com/capabilities.yaml",
+  "pricing": "https://solvyr.com/pricing.yaml"
+}

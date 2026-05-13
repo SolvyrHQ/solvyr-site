@@ -4,15 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Solvyr - Pilotintake</title>
+    <title>Solvyr Fast Corpus - Pilotintake</title>
     <meta
       name="description"
-      content="Deel de vorm van een async document- of tekstworkload zodat Solvyr pilot-fit kan beoordelen."
+      content="Deel de vorm van een Fast Corpus workload zodat Solvyr fit voor schone PDF/tekst naar AI-ready JSONL kan beoordelen."
     />
-    <meta property="og:title" content="Solvyr - Pilotintake" />
+    <meta property="og:title" content="Solvyr Fast Corpus - Pilotintake" />
     <meta
       property="og:description"
-      content="Bereid een compacte pilotaanvraag voor async document- en tekstwerk voor."
+      content="Bereid een compacte pilotaanvraag voor schone PDF/tekst naar AI-ready JSONL voor."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://solvyr.com/pilot-intake-nl.html" />
@@ -40,7 +40,7 @@
           />
           <div class="brandtext">
             <div class="name">Solvyr</div>
-            <div class="tag">Goedkopere async AI-uitvoering</div>
+            <div class="tag">Fast Corpus voor AI-teams</div>
           </div>
         </a>
 
@@ -51,6 +51,7 @@
           </div>
           <nav class="tabs" aria-label="Secundaire navigatie">
             <a class="tab" href="nl.html#overview">Site</a>
+            <a class="tab" href="ai/fast-corpus.md">AI brief</a>
             <a class="tab cta active" href="pilot-intake-nl.html" aria-current="page">Pilotintake</a>
           </nav>
         </div>
@@ -60,24 +61,25 @@
     <main class="container intakeShell">
       <div class="intakeLayout">
         <section class="intakeIntro" aria-labelledby="intake-title">
-          <p class="eyebrow">Pilotintake</p>
-          <h1 id="intake-title">Beschrijf een workload duidelijk genoeg om fit te beoordelen.</h1>
+          <p class="eyebrow">Fast Corpus intake</p>
+          <h1 id="intake-title">Beschrijf een corpus duidelijk genoeg om fit te beoordelen.</h1>
           <p>
-            Deze pagina bereidt een email voor. Plak hier geen gevoelige data;
-            gebruik de veiligste beschrijving en sampleverwijzing die je kunt delen.
+            Deze pagina bereidt een email voor. Plak hier geen gevoelige data.
+            Fast Corpus start met schone digitale PDFs of tekst en een veilige
+            representatieve sample.
           </p>
           <section class="proofStrip" aria-label="Goede pilotinput">
             <div>
-              <strong>Begrensd</strong>
-              <span>Een workloadpad, inputtype en verwachte output.</span>
+              <strong>Geprijsd</strong>
+              <span>Vanaf EUR 0,95 per 1000 paginas voor standaard schone batches.</span>
             </div>
             <div>
-              <strong>Herhaalbaar</strong>
-              <span>Een backlog, refresh of terugkerende run.</span>
+              <strong>Concreet</strong>
+              <span>Inputtype, pagina-aantal en gewenste JSONL-output.</span>
             </div>
             <div>
               <strong>Veilig</strong>
-              <span>Lage of middelmatige gevoeligheid. Hooggevoelige data is waarschijnlijk buiten scope.</span>
+              <span>Lage of middelmatige gevoeligheid. Gevoelige data vraagt vooraf overleg.</span>
             </div>
           </section>
         </section>
@@ -105,30 +107,88 @@
                 <option>Urgente achterstand</option>
               </select>
             </div>
+            <div class="field">
+              <label for="pages">Geschat aantal paginas</label>
+              <input id="pages" name="pages" placeholder="Bijvoorbeeld: 25000" />
+            </div>
+            <div class="field">
+              <label for="documents">Geschat aantal documenten</label>
+              <input id="documents" name="documents" placeholder="Bijvoorbeeld: 1200 PDFs" />
+            </div>
+            <div class="field">
+              <label for="input_type">Inputtype</label>
+              <select id="input_type" name="input_type">
+                <option value="">Kies een optie</option>
+                <option>Schone digitale PDFs</option>
+                <option>Tekstbestanden of tekstexports</option>
+                <option>Gemengde schone PDFs en tekst</option>
+                <option>Gescannde of OCR-zware documenten</option>
+                <option>Anders of onzeker</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="use_case">Use case</label>
+              <select id="use_case" name="use_case">
+                <option value="">Kies een optie</option>
+                <option>RAG of search corpus</option>
+                <option>Agent memory corpus</option>
+                <option>Eval dataset</option>
+                <option>Fine-tuning voorbereiding</option>
+                <option>Re-indexing of corpusrefresh</option>
+                <option>Anders of onzeker</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="output_target">Outputdoel</label>
+              <select id="output_target" name="output_target">
+                <option value="">Kies een optie</option>
+                <option>AI-ready JSONL</option>
+                <option>Alleen chunks</option>
+                <option>Chunks en embeddings</option>
+                <option>Re-indexing artifact</option>
+                <option>Anders of onzeker</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="recurrence">Herhaling</label>
+              <select id="recurrence" name="recurrence">
+                <option value="">Kies een optie</option>
+                <option>Eenmalige achterstand</option>
+                <option>Maandelijkse refresh</option>
+                <option>Wekelijkse refresh</option>
+                <option>Onbekend</option>
+              </select>
+            </div>
             <div class="field full">
-              <label for="workload">Workload</label>
-              <textarea id="workload" name="workload" placeholder="Wat moet draaien? PDFs, tekstbestanden, embeddings, classificatie, vertaling, normalisatie..."></textarea>
+              <label for="workload">Corpus- en workflownotities</label>
+              <textarea id="workload" name="workload" placeholder="Wat zijn de documenten, waar komen ze vandaan, en wat moet het corpus ondersteunen?"></textarea>
             </div>
             <div class="field full">
               <label for="current">Huidig proces of pijnpunt</label>
-              <textarea id="current" name="current" placeholder="Wat gebeurt nu, wat is traag of duur, en wie wacht erop?"></textarea>
-            </div>
-            <div class="field">
-              <label for="volume">Typisch volume</label>
-              <input id="volume" name="volume" placeholder="Bestanden, paginas, tokens of records" />
+              <textarea id="current" name="current" placeholder="Wat gebeurt nu, wat is traag of duur, en wie wacht op het corpus?"></textarea>
             </div>
             <div class="field">
               <label for="sensitivity">Datagevoeligheid</label>
               <select id="sensitivity" name="sensitivity">
                 <option value="">Kies een optie</option>
-                <option>Laag</option>
-                <option>Middelmatig</option>
-                <option>Hoog of onzeker - waarschijnlijk buiten huidige scope</option>
+                <option>Publiek</option>
+                <option>Lage gevoeligheid</option>
+                <option>Middelmatige gevoeligheid</option>
+                <option>Gevoelig of gereguleerd - vraagt vooraf overleg</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="sample">Veilige sample beschikbaar?</label>
+              <select id="sample" name="sample">
+                <option value="">Kies een optie</option>
+                <option>Ja, een representatieve sample kan gedeeld worden</option>
+                <option>Misschien, na weglakken</option>
+                <option>Nee, nog niet</option>
               </select>
             </div>
             <div class="field full">
               <label for="output">Verwachte output en validatie</label>
-              <textarea id="output" name="output" placeholder="Wat moet eruit komen, en hoe beoordeel je of het bruikbaar is?"></textarea>
+              <textarea id="output" name="output" placeholder="Wat moet eruit komen, en hoe beoordeel je of de JSONL/chunks/embeddings bruikbaar zijn?"></textarea>
             </div>
             <div class="field full">
               <label for="data">Data-eisen</label>
@@ -138,7 +198,8 @@
 
           <p class="formNote">
             De knop opent je emailclient met deze details. Voeg samples alleen
-            apart toe wanneer ze veilig te delen zijn.
+            apart toe wanneer ze veilig te delen zijn. Bronparameters uit
+            agent-readable links worden automatisch meegenomen.
           </p>
           <div class="contactActions">
             <button class="button primary" type="submit">Bereid email voor</button>
@@ -151,7 +212,11 @@
     <footer class="footer">
       <div class="container footerInner">
         <div>&copy; <span id="y"></span> Solvyr</div>
-        <div class="muted">Alleen async document- en tekstworkloads</div>
+        <div class="footerLinks">
+          <a href="llms.txt">llms.txt</a>
+          <a href="ai/fast-corpus.md">AI brief</a>
+          <a href="pricing.yaml">Pricing YAML</a>
+        </div>
       </div>
     </footer>
 
@@ -162,22 +227,33 @@
         event.preventDefault();
         const form = event.currentTarget;
         const data = new FormData(form);
+        const params = new URLSearchParams(window.location.search);
+        const source = params.get("source") || "direct";
+        const intent = params.get("intent") || "fast-corpus";
         const fields = [
+          ["Bron", source],
+          ["Intent", intent],
           ["Naam", data.get("name")],
           ["Organisatie", data.get("org")],
           ["Email", data.get("email")],
           ["Timing", data.get("timeline")],
-          ["Workload", data.get("workload")],
+          ["Geschat aantal paginas", data.get("pages")],
+          ["Geschat aantal documenten", data.get("documents")],
+          ["Inputtype", data.get("input_type")],
+          ["Use case", data.get("use_case")],
+          ["Outputdoel", data.get("output_target")],
+          ["Herhaling", data.get("recurrence")],
+          ["Corpus- en workflownotities", data.get("workload")],
           ["Huidig proces of pijnpunt", data.get("current")],
-          ["Typisch volume", data.get("volume")],
           ["Datagevoeligheid", data.get("sensitivity")],
+          ["Veilige sample beschikbaar", data.get("sample")],
           ["Verwachte output en validatie", data.get("output")],
           ["Data-eisen", data.get("data")]
         ];
         const body = fields
           .map(([label, value]) => `${label}:\n${String(value || "").trim() || "-"}`)
           .join("\n\n");
-        const subject = encodeURIComponent("Solvyr pilot workload");
+        const subject = encodeURIComponent("Solvyr Fast Corpus pilot");
         window.location.href = `mailto:jan@solvyr.com?subject=${subject}&body=${encodeURIComponent(body)}`;
       });
     </script>

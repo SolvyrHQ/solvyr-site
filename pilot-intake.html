@@ -4,15 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Solvyr - Pilot intake</title>
+    <title>Solvyr Fast Corpus - Pilot intake</title>
     <meta
       name="description"
-      content="Share the shape of an async document or text AI workload so Solvyr can assess pilot fit."
+      content="Share the shape of a Fast Corpus workload so Solvyr can assess fit for clean PDF/text to AI-ready JSONL processing."
     />
-    <meta property="og:title" content="Solvyr - Pilot intake" />
+    <meta property="og:title" content="Solvyr Fast Corpus - Pilot intake" />
     <meta
       property="og:description"
-      content="Prepare a concise pilot request for async document and text AI workloads."
+      content="Prepare a concise pilot request for clean PDF/text to AI-ready JSONL processing."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://solvyr.com/pilot-intake.html" />
@@ -40,7 +40,7 @@
           />
           <div class="brandtext">
             <div class="name">Solvyr</div>
-            <div class="tag">Lower-cost async AI execution</div>
+            <div class="tag">Fast Corpus for AI teams</div>
           </div>
         </a>
 
@@ -51,6 +51,7 @@
           </div>
           <nav class="tabs" aria-label="Secondary navigation">
             <a class="tab" href="index.html#overview">Site</a>
+            <a class="tab" href="ai/fast-corpus.md">AI brief</a>
             <a class="tab cta active" href="pilot-intake.html" aria-current="page">Pilot intake</a>
           </nav>
         </div>
@@ -60,24 +61,25 @@
     <main class="container intakeShell">
       <div class="intakeLayout">
         <section class="intakeIntro" aria-labelledby="intake-title">
-          <p class="eyebrow">Pilot intake</p>
-          <h1 id="intake-title">Describe one workload clearly enough to assess fit.</h1>
+          <p class="eyebrow">Fast Corpus intake</p>
+          <h1 id="intake-title">Describe one corpus clearly enough to assess fit.</h1>
           <p>
-            This page prepares an email. Do not paste sensitive data here; use
-            the safest description and sample path you can share.
+            This page prepares an email. Do not paste sensitive data here. Fast
+            Corpus starts with clean digital PDFs or text and a safe
+            representative sample.
           </p>
           <section class="proofStrip" aria-label="Good pilot input">
             <div>
-              <strong>Bounded</strong>
-              <span>One workload path, input type, and expected output.</span>
+              <strong>Priced</strong>
+              <span>From EUR 0.95 per 1000 pages for standard clean batches.</span>
             </div>
             <div>
-              <strong>Repeatable</strong>
-              <span>A backlog, refresh, or recurring run.</span>
+              <strong>Concrete</strong>
+              <span>Input type, page count, and desired JSONL output.</span>
             </div>
             <div>
               <strong>Safe</strong>
-              <span>Low or moderate sensitivity sample. High-sensitivity data is likely out of scope.</span>
+              <span>Low or moderate sensitivity sample. Sensitive data needs prior agreement.</span>
             </div>
           </section>
         </section>
@@ -105,30 +107,88 @@
                 <option>Urgent backlog</option>
               </select>
             </div>
+            <div class="field">
+              <label for="pages">Estimated pages</label>
+              <input id="pages" name="pages" placeholder="Example: 25000" />
+            </div>
+            <div class="field">
+              <label for="documents">Estimated documents</label>
+              <input id="documents" name="documents" placeholder="Example: 1200 PDFs" />
+            </div>
+            <div class="field">
+              <label for="input_type">Input type</label>
+              <select id="input_type" name="input_type">
+                <option value="">Select one</option>
+                <option>Clean digital PDFs</option>
+                <option>Text files or text exports</option>
+                <option>Mixed clean PDFs and text</option>
+                <option>Scanned or OCR-heavy documents</option>
+                <option>Other or unsure</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="use_case">Use case</label>
+              <select id="use_case" name="use_case">
+                <option value="">Select one</option>
+                <option>RAG or search corpus</option>
+                <option>Agent memory corpus</option>
+                <option>Eval dataset</option>
+                <option>Fine-tuning prep</option>
+                <option>Re-indexing or corpus refresh</option>
+                <option>Other or unsure</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="output_target">Target output</label>
+              <select id="output_target" name="output_target">
+                <option value="">Select one</option>
+                <option>AI-ready JSONL</option>
+                <option>Chunks only</option>
+                <option>Chunks and embeddings</option>
+                <option>Re-indexing artifact</option>
+                <option>Other or unsure</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="recurrence">Recurrence</label>
+              <select id="recurrence" name="recurrence">
+                <option value="">Select one</option>
+                <option>One-time backlog</option>
+                <option>Monthly refresh</option>
+                <option>Weekly refresh</option>
+                <option>Unknown</option>
+              </select>
+            </div>
             <div class="field full">
-              <label for="workload">Workload</label>
-              <textarea id="workload" name="workload" placeholder="What needs to run? PDFs, text files, embeddings, classification, translation, normalization..."></textarea>
+              <label for="workload">Corpus and workflow notes</label>
+              <textarea id="workload" name="workload" placeholder="What are the documents, where do they come from, and what should the corpus support?"></textarea>
             </div>
             <div class="field full">
               <label for="current">Current process or pain</label>
-              <textarea id="current" name="current" placeholder="What happens today, what is slow or expensive, and who is waiting?"></textarea>
-            </div>
-            <div class="field">
-              <label for="volume">Typical volume</label>
-              <input id="volume" name="volume" placeholder="Files, pages, tokens, or records" />
+              <textarea id="current" name="current" placeholder="What happens today, what is slow or expensive, and who is waiting for the corpus?"></textarea>
             </div>
             <div class="field">
               <label for="sensitivity">Data sensitivity</label>
               <select id="sensitivity" name="sensitivity">
                 <option value="">Select one</option>
-                <option>Low</option>
-                <option>Moderate</option>
-                <option>High or unsure - likely out of current scope</option>
+                <option>Public</option>
+                <option>Low sensitivity</option>
+                <option>Moderate sensitivity</option>
+                <option>Sensitive or regulated - needs prior agreement</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="sample">Safe sample available?</label>
+              <select id="sample" name="sample">
+                <option value="">Select one</option>
+                <option>Yes, a representative sample can be shared</option>
+                <option>Maybe, after redaction</option>
+                <option>No, not yet</option>
               </select>
             </div>
             <div class="field full">
               <label for="output">Expected output and validation</label>
-              <textarea id="output" name="output" placeholder="What should come out, and how would you judge whether it is useful?"></textarea>
+              <textarea id="output" name="output" placeholder="What should come out, and how would you judge whether the JSONL/chunks/embeddings are useful?"></textarea>
             </div>
             <div class="field full">
               <label for="data">Data handling requirements</label>
@@ -138,7 +198,8 @@
 
           <p class="formNote">
             The button opens your email client with these details. Attach samples
-            separately only when they are safe to share.
+            separately only when they are safe to share. Source parameters from
+            agent-readable links are included automatically.
           </p>
           <div class="contactActions">
             <button class="button primary" type="submit">Prepare email</button>
@@ -151,7 +212,11 @@
     <footer class="footer">
       <div class="container footerInner">
         <div>&copy; <span id="y"></span> Solvyr</div>
-        <div class="muted">Async document and text workloads only</div>
+        <div class="footerLinks">
+          <a href="llms.txt">llms.txt</a>
+          <a href="ai/fast-corpus.md">AI brief</a>
+          <a href="pricing.yaml">Pricing YAML</a>
+        </div>
       </div>
     </footer>
 
@@ -162,22 +227,33 @@
         event.preventDefault();
         const form = event.currentTarget;
         const data = new FormData(form);
+        const params = new URLSearchParams(window.location.search);
+        const source = params.get("source") || "direct";
+        const intent = params.get("intent") || "fast-corpus";
         const fields = [
+          ["Source", source],
+          ["Intent", intent],
           ["Name", data.get("name")],
           ["Organization", data.get("org")],
           ["Email", data.get("email")],
           ["Timeline", data.get("timeline")],
-          ["Workload", data.get("workload")],
+          ["Estimated pages", data.get("pages")],
+          ["Estimated documents", data.get("documents")],
+          ["Input type", data.get("input_type")],
+          ["Use case", data.get("use_case")],
+          ["Target output", data.get("output_target")],
+          ["Recurrence", data.get("recurrence")],
+          ["Corpus and workflow notes", data.get("workload")],
           ["Current process or pain", data.get("current")],
-          ["Typical volume", data.get("volume")],
           ["Data sensitivity", data.get("sensitivity")],
+          ["Safe sample available", data.get("sample")],
           ["Expected output and validation", data.get("output")],
           ["Data handling requirements", data.get("data")]
         ];
         const body = fields
           .map(([label, value]) => `${label}:\n${String(value || "").trim() || "-"}`)
           .join("\n\n");
-        const subject = encodeURIComponent("Solvyr pilot workload");
+        const subject = encodeURIComponent("Solvyr Fast Corpus pilot");
         window.location.href = `mailto:jan@solvyr.com?subject=${subject}&body=${encodeURIComponent(body)}`;
       });
     </script>

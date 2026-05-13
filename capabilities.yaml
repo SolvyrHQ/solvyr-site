@@ -1,0 +1,43 @@
+service: Solvyr
+product: Solvyr Fast Corpus
+phase: controlled_trial
+summary: Clean digital PDFs and text archives to AI-ready JSONL with extracted text, chunks, embeddings, stable IDs, and a run report.
+execution_mode: async
+access:
+  model: manual_approval
+  pilot_required: true
+best_for:
+  - RAG and search corpus preparation
+  - document re-indexing
+  - agent memory corpus preparation
+  - evaluation dataset preparation
+  - fine-tuning prep datasets
+  - recurring corpus refresh or enrichment
+not_for:
+  - real-time inference
+  - chat serving
+  - generic GPU rental
+  - OCR-heavy scans unless scoped separately
+  - custom structured extraction in the current trial
+  - highly sensitive data without prior agreement
+supported_inputs:
+  - clean digital PDFs
+  - text files
+  - text-like exports
+outputs:
+  - extracted text
+  - chunks
+  - embeddings
+  - stable IDs
+  - run report
+pricing:
+  starting_amount: 0.95
+  currency: EUR
+  unit: 1000_pages
+  qualification: standard clean digital PDF/text batch processing
+links:
+  human_page: https://solvyr.com/
+  agent_brief: https://solvyr.com/ai/fast-corpus.md
+  agent_packet: https://solvyr.com/ai/fast-corpus.json
+  pricing: https://solvyr.com/pricing.yaml
+  pilot_intake: https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=capabilities-yaml

@@ -1,0 +1,26 @@
+service: Solvyr
+product: Solvyr Fast Corpus
+phase: controlled_trial
+currency: EUR
+starting_price:
+  amount: 0.95
+  unit: 1000_pages
+  included_scope:
+    - clean digital PDF/text batch processing
+    - extracted text
+    - chunks
+    - embeddings
+    - stable IDs
+    - run report
+  excluded_or_scoped_separately:
+    - OCR-heavy scans
+    - custom enrichment
+    - sensitive-data workflows
+    - unusual formats
+    - recurring refreshes
+    - custom structured extraction
+notes:
+  - Starting price is an acquisition wedge for standard clean digital PDF/text workloads.
+  - Final scope depends on input quality, sensitivity, output requirements, and recurrence.
+  - Controlled trial access is manually approved.
+contact: https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=pricing-yaml

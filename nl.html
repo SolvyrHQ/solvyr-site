@@ -4,29 +4,31 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Solvyr - Goedkopere async AI-uitvoering voor document- en tekstwerk</title>
+    <title>Solvyr Fast Corpus - AI-ready JSONL uit schone PDFs en tekst</title>
     <meta
       name="description"
-      content="Solvyr helpt teams async document- en tekstworkloads draaien met zicht op kosten per succesvolle output, uitvoering, data-afbakening en integratie."
+      content="Solvyr Fast Corpus zet schone digitale PDFs en tekstarchieven om naar AI-ready JSONL met tekst, chunks, embeddings, stabiele IDs en een runrapport."
     />
-    <meta property="og:title" content="Solvyr - Goedkopere async AI-uitvoering" />
+    <meta property="og:title" content="Solvyr Fast Corpus - AI-ready documentcorpora" />
     <meta
       property="og:description"
-      content="Draai zwaar document- en tekstwerk met gemeten kosten, zichtbare runs en duidelijke data-afbakening."
+      content="Schone digitale PDFs en tekstarchieven naar AI-ready JSONL voor RAG, search, evals, fine-tuning voorbereiding en agent memory."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://solvyr.com/nl.html" />
     <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Solvyr - Goedkopere async AI-uitvoering" />
+    <meta name="twitter:title" content="Solvyr Fast Corpus - AI-ready documentcorpora" />
     <meta
       name="twitter:description"
-      content="Draai async document- en tekstworkloads met kosten, controle en duidelijke datagrenzen."
+      content="Schone digitale PDFs en tekstarchieven naar AI-ready JSONL met zichtbaar runrapport."
     />
 
     <link rel="icon" href="favicon.ico" />
     <link rel="alternate" hreflang="en" href="index.html" />
     <link rel="alternate" hreflang="nl" href="nl.html" />
+    <link rel="alternate" type="text/markdown" href="ai/fast-corpus.md" title="Fast Corpus agent brief" />
+    <link rel="help" href="llms.txt" />
     <meta name="theme-color" content="#f7f8fb" />
     <link rel="preload" as="image" href="assets/brand/icon.png" />
     <link rel="stylesheet" href="styles.css" />
@@ -45,7 +47,7 @@
           />
           <div class="brandtext">
             <div class="name">Solvyr</div>
-            <div class="tag">Goedkopere async AI-uitvoering</div>
+            <div class="tag">Fast Corpus voor AI-teams</div>
           </div>
         </a>
 
@@ -56,8 +58,8 @@
           </div>
 
           <nav class="tabs" aria-label="Hoofdnavigatie">
-            <a class="tab" href="#who" data-tab-target="who" aria-selected="false">Voor wie</a>
-            <a class="tab" href="#deliver" data-tab-target="deliver" aria-selected="false">Wat we leveren</a>
+            <a class="tab" href="#who" data-tab-target="who" aria-selected="false">Fit</a>
+            <a class="tab" href="#deliver" data-tab-target="deliver" aria-selected="false">Output</a>
             <a class="tab" href="#model" data-tab-target="model" aria-selected="false">Model</a>
             <a class="tab" href="#security" data-tab-target="security" aria-selected="false">Security</a>
             <a class="tab cta" href="#pilot" data-tab-target="pilot" aria-selected="false">Pilot</a>
@@ -69,49 +71,46 @@
     <main class="container shell">
       <section class="page active" id="overview-panel" data-page="overview" aria-labelledby="overview-title">
         <div class="hero">
-          <p class="eyebrow">Solvyr</p>
-          <h1 id="overview-title">Goedkopere uitvoering voor async document- en tekstwerk met AI.</h1>
+          <p class="eyebrow">Solvyr Fast Corpus</p>
+          <h1 id="overview-title">AI-ready corpora uit schone PDFs en tekst.</h1>
           <p class="lede">
-            Solvyr draait begrensde batchworkloads op gecontroleerde
-            GPU-capaciteit en rapporteert kosten per succesvolle output, niet
-            abstracte GPU-tijd.
+            Zet schone digitale PDFs en tekstarchieven om naar JSONL met tekst,
+            chunks, embeddings, stabiele IDs en een runrapport.
           </p>
           <div class="heroActions">
-            <a class="button primary" href="#pilot" data-tab-target="pilot">Verken een pilot</a>
-            <a class="button secondary" href="#deliver" data-tab-target="deliver">Zie wat je krijgt</a>
+            <a class="button primary" href="pilot-intake-nl.html?intent=fast-corpus&source=homepage-hero">Scope een Fast Corpus run</a>
+            <a class="button secondary" href="ai/fast-corpus.md">Lees de AI/product brief</a>
           </div>
         </div>
 
         <div class="reasonGrid" aria-label="Waarom teams Solvyr piloten">
           <article class="panel">
-            <p class="miniLabel">Kosten</p>
-            <h2>Betaal minder waar always-on cloud-GPUs slecht passen.</h2>
+            <p class="miniLabel">Use case</p>
+            <h2>Corpusvoorbereiding voor RAG, search, evals en agent memory.</h2>
             <p>
-              Gemeten GPU-uren, retries, geaccepteerde output en geschatte
-              unitkosten.
+              Een praktisch pad van brondocumenten naar model-ready data.
             </p>
           </article>
           <article class="panel">
-            <p class="miniLabel">Doorvoer</p>
-            <h2>Werk achterstanden weg zonder productteams te blokkeren.</h2>
+            <p class="miniLabel">Prijs</p>
+            <h2>Vanaf EUR 0,95 per 1000 paginas voor standaard batches.</h2>
             <p>
-              Refreshes, backfills, verrijking en herverwerking buiten het
-              realtime pad.
+              OCR-zware scans, gevoelige data en custom verrijking worden apart
+              gescoord.
             </p>
           </article>
           <article class="panel">
-            <p class="miniLabel">Controle</p>
-            <h2>Zie wat er is gebeurd in plaats van te hopen dat het klaar is.</h2>
+            <p class="miniLabel">Output</p>
+            <h2>JSONL, stabiele IDs, embeddings en een runrapport.</h2>
             <p>
-              Klaar, opnieuw geprobeerd, gefaald en bruikbare output zijn
-              zichtbaar.
+              Bedoeld om te inspecteren, hergebruiken en door te geven aan AI-workflows.
             </p>
           </article>
           <article class="panel">
-            <p class="miniLabel">Adoptie</p>
-            <h2>Test het uitvoeringsmodel voordat je integreert.</h2>
+            <p class="miniLabel">Toegang</p>
+            <h2>Gecontroleerde trial eerst, geen open self-serve.</h2>
             <p>
-              Bewijs fit voordat je een gecontroleerde CLI- of API-route bouwt.
+              Begin met een representatieve sample en een begrensde pilotbeslissing.
             </p>
           </article>
         </div>
@@ -148,56 +147,55 @@
 
         <section class="band compact" aria-labelledby="connector-title">
           <div>
-            <p class="eyebrow">Als dit herkenbaar klinkt</p>
-            <h2 id="connector-title">Een goede intro begint vaak met een concreet operationeel probleem.</h2>
+            <p class="eyebrow">Voor mensen en agents</p>
+            <h2 id="connector-title">Dezelfde waarheid, anders gecomprimeerd.</h2>
           </div>
           <p>
-            Duizenden PDFs. Een index-refresh. Een documentflow die steeds opnieuw
-            draait. Een team dat wacht op batch AI-jobs. Dat is genoeg voor een
-            pilotgesprek.
+            Mensen krijgen het productverhaal en het pilotpad. Agents krijgen
+            platte tekst, capability-files, pricing en duidelijke fitregels.
           </p>
         </section>
 
         <section class="proofStrip" aria-label="Pilotscope">
           <div>
-            <strong>Een workloadpad</strong>
-            <span>Geen brede platformmigratie.</span>
+            <strong>Schone digitale input</strong>
+            <span>PDFs en tekst eerst. OCR-zware scans zijn apart.</span>
           </div>
           <div>
-            <strong>Veilige sample</strong>
-            <span>Duidelijke input, output en grenzen.</span>
+            <strong>AI-ready output</strong>
+            <span>JSONL, chunks, embeddings, IDs, runrapport.</span>
           </div>
           <div>
-            <strong>Gemeten kostenbeeld</strong>
-            <span>Kosten, looptijd, geaccepteerde output, caveats.</span>
+            <strong>Pilotvorm</strong>
+            <span>Representatieve sample, begrensde run, duidelijke stap.</span>
           </div>
         </section>
 
         <section class="flowPanel" aria-labelledby="pilot-flow-title">
           <div>
             <p class="eyebrow">Pilotflow</p>
-            <h2 id="pilot-flow-title">Van sample naar beslissing, zonder lang platformproject.</h2>
+            <h2 id="pilot-flow-title">Van corpussample naar beslissing, zonder platformproject.</h2>
           </div>
           <ol class="flowSteps">
             <li>
               <span>1</span>
-              <strong>Scope</strong>
-              <small>Workload, datagrenzen, succescriterium.</small>
+              <strong>Beschrijf</strong>
+              <small>Format, paginas, outputdoel, gevoeligheid.</small>
             </li>
             <li>
               <span>2</span>
-              <strong>Run</strong>
-              <small>Gecontroleerde uitvoering met zichtbare statussen.</small>
+              <strong>Sample</strong>
+              <small>Deel de kleinste veilige representatieve set.</small>
             </li>
             <li>
               <span>3</span>
-              <strong>Rapport</strong>
-              <small>Output, unitkosten-inputs, looptijd, caveats.</small>
+              <strong>Verwerk</strong>
+              <small>Schone PDF/tekst door het corpuspad.</small>
             </li>
             <li>
               <span>4</span>
               <strong>Beslis</strong>
-              <small>Doorgaan, aanpassen of stoppen.</small>
+              <small>Eenmalige output, terugkerende refresh of stop.</small>
             </li>
           </ol>
         </section>
@@ -205,11 +203,11 @@
 
       <section class="page" id="who-panel" data-page="who" aria-labelledby="who-title">
         <div class="pageHeader">
-          <p class="eyebrow">Voor wie</p>
-          <h1 id="who-title">Teams met terugkerend document- of tekstwerk dat te zwaar is voor het normale pad.</h1>
+          <p class="eyebrow">Fit</p>
+          <h1 id="who-title">Voor teams die een echt corpus nodig hebben, geen vaag dataproject.</h1>
           <p>
-            Vroege pilots kiezen een pad tegelijk: een echte achterstand, een
-            veilige pilotsample en een duidelijk beeld van bruikbare output.
+            Fast Corpus past als de input schoon genoeg is, de output als JSONL
+            nuttig is en het werk async mag lopen.
           </p>
         </div>
 
@@ -217,19 +215,20 @@
           <section class="panel" aria-labelledby="good-fit-title">
             <h2 id="good-fit-title">Goede fit</h2>
             <ul class="cleanList">
-              <li>Grote PDF- of tekstbatches</li>
-              <li>Embedding-refreshes, re-indexing, verrijking of classificatie</li>
-              <li>Documenttransformatie of beoordeelbare vertaling</li>
-              <li>Lage of middelmatige datagevoeligheid die veilig te begrenzen is</li>
+              <li>Duizenden schone digitale PDF-paginas of tekstbestanden</li>
+              <li>RAG, search, evals, fine-tuning voorbereiding of agent memory</li>
+              <li>Embedding-refreshes, re-indexing, verrijking of backfills</li>
+              <li>Een representatieve niet-gevoelige sample kan gedeeld worden</li>
             </ul>
           </section>
 
           <section class="panel mutedPanel" aria-labelledby="poor-fit-title">
             <h2 id="poor-fit-title">Niet de huidige fit</h2>
             <ul class="cleanList">
-              <li>Realtime productverzoeken</li>
-              <li>Hooggevoelige data zonder veilige pilotsample</li>
-              <li>Platformmigraties, generieke workflowtools of open self-serve toegang</li>
+              <li>Realtime chat of model serving</li>
+              <li>OCR-zware scans tenzij apart gescoord</li>
+              <li>Custom gestructureerde extractie in de huidige trial</li>
+              <li>Hooggevoelige data zonder voorafgaande afspraak</li>
             </ul>
           </section>
         </div>
@@ -395,7 +394,7 @@
             </p>
           </article>
           <article class="panel">
-            <h2>Goedkopere uitvoeringsvensters</h2>
+            <h2>Async uitvoeringsvensters</h2>
             <p>
               Dynamische stroomprijzen, zonnestroomoverschot en idle capaciteit
               tellen mee wanneer de job geen realtime service nodig heeft.
@@ -520,40 +519,41 @@
       <section class="page" id="pilot-panel" data-page="pilot" aria-labelledby="pilot-title">
         <div class="pageHeader">
           <p class="eyebrow">Pilot</p>
-          <h1 id="pilot-title">Begin met een begrensd workloadpad en een representatieve sample.</h1>
+          <h1 id="pilot-title">Start met een corpussample en een duidelijk outputdoel.</h1>
           <p>
-            Een pad, een inputformaat, een verwachte output, een korte
-            beslissing.
+            De nuttige eerste stap is een begrensde Fast Corpus run, geen breed
+            platformgesprek.
           </p>
         </div>
 
         <div class="pilotBox">
           <div>
-            <h2>Wat te sturen</h2>
+            <h2>Wat je stuurt</h2>
             <ul class="cleanList">
-              <li>Een kleine veilige representatieve sample</li>
-              <li>Workloadtype en huidig proces</li>
-              <li>Input, output en validatiecriteria</li>
-              <li>Of gevoelige velden voor delen verwijderd kunnen worden</li>
-              <li>Data-eisen voor uitvoering</li>
+              <li>Geschat aantal paginas en documenten</li>
+              <li>Inputtype: schone PDF, tekst, gemengd of OCR-zwaar</li>
+              <li>Outputdoel: JSONL, chunks, embeddings of re-indexing artifact</li>
+              <li>Use case: RAG, search, evals, fine-tuning prep of agent memory</li>
+              <li>Datagevoeligheid en of een veilige sample gedeeld kan worden</li>
+              <li>Of dit eenmalig of terugkerend is</li>
             </ul>
           </div>
 
           <div class="contactCard">
             <p class="eyebrow">Contact</p>
-            <h2>Bespreek een pilotworkload</h2>
+            <h2>Scope een Fast Corpus test</h2>
             <p>
-              Stuur de jobbeschrijving en veiligste sample. Hooggevoelige data
-              is waarschijnlijk buiten scope tenzij dit tot een veilige pilotset
-              teruggebracht kan worden.
+              Standaard verwerking van schone digitale PDF/tekst start bij EUR
+              0,95 per 1000 paginas. De volgende stap is een representatieve
+              niet-gevoelige sample en een begrensde run.
             </p>
             <div class="contactActions">
-              <a class="button primary" href="mailto:jan@solvyr.com">Mail Solvyr</a>
+              <a class="button primary" href="pilot-intake-nl.html?intent=fast-corpus&source=site-pilot">Open pilot intake</a>
               <a
                 class="button secondary"
-                href="pilot-intake-nl.html"
+                href="mailto:jan@solvyr.com?subject=Solvyr%20Fast%20Corpus%20pilot"
               >
-                Open pilotintake
+                Mail Solvyr
               </a>
             </div>
           </div>
@@ -562,11 +562,11 @@
         <section class="band compact" aria-labelledby="pilot-outcome-title">
           <div>
             <p class="eyebrow">Pilotuitkomst</p>
-            <h2 id="pilot-outcome-title">Een go/no-go beslissing voor de workloadroute.</h2>
+            <h2 id="pilot-outcome-title">Een go/no-go beslissing voor Fast Corpus en de terugkerende laag.</h2>
           </div>
           <p>
-            Doorgaan, scope aanpassen of stoppen. De volgende stap moet duidelijk
-            zijn.
+            Doorgaan als eenmalige corpusoutput, bewegen naar terugkerende
+            refresh, scope aanpassen of stoppen. De volgende stap moet duidelijk zijn.
           </p>
         </section>
       </section>
@@ -575,7 +575,11 @@
     <footer class="footer">
       <div class="container footerInner">
         <div>&copy; <span id="y"></span> Solvyr</div>
-        <div class="muted">Alleen async document- en tekstworkloads</div>
+        <div class="footerLinks">
+          <a href="llms.txt">llms.txt</a>
+          <a href="ai/fast-corpus.md">AI brief</a>
+          <a href="pricing.yaml">Pricing YAML</a>
+        </div>
       </div>
     </footer>
 
@@ -606,7 +610,7 @@
 
         document.title =
           targetPage === "overview"
-            ? "Solvyr - Goedkopere async AI-uitvoering voor document- en tekstwerk"
+            ? "Solvyr Fast Corpus - AI-ready JSONL uit schone PDFs en tekst"
             : `${document.querySelector(`[data-page="${targetPage}"] .eyebrow`).textContent} - Solvyr`;
       }
 

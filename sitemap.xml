@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://solvyr.com/</loc>
+  </url>
+  <url>
+    <loc>https://solvyr.com/nl.html</loc>
+  </url>
+  <url>
+    <loc>https://solvyr.com/pilot-intake.html</loc>
+  </url>
+  <url>
+    <loc>https://solvyr.com/pilot-intake-nl.html</loc>
+  </url>
+  <url>
+    <loc>https://solvyr.com/llms.txt</loc>
+  </url>
+  <url>
+    <loc>https://solvyr.com/ai/fast-corpus.md</loc>
+  </url>
+  <url>
+    <loc>https://solvyr.com/ai/fast-corpus.json</loc>
+  </url>
+  <url>
+    <loc>https://solvyr.com/capabilities.yaml</loc>
+  </url>
+  <url>
+    <loc>https://solvyr.com/pricing.yaml</loc>
+  </url>
+</urlset>
