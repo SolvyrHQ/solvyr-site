@@ -1,0 +1,4 @@
+Contact: mailto:security@solvyr.com
+Expires: 2027-05-01T00:00:00Z
+Preferred-Languages: en, nl
+Canonical: https://solvyr.com/.well-known/security.txt
