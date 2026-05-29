@@ -1,4 +1,5 @@
 const fs = require("fs");
+const https = require("https");
 const path = require("path");
 
 const MAX_MESSAGE_LENGTH = 900;
@@ -193,13 +194,10 @@ async function callOpenAI(message, state) {
   if (!apiKey) return null;
 
   const model = process.env.OPENAI_MODEL || DEFAULT_MODEL;
-  const response = await fetch("https://api.openai.com/v1/responses", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
+  const { status, data } = await postJson("https://api.openai.com/v1/responses", {
+    Authorization: `Bearer ${apiKey}`,
+    "Content-Type": "application/json"
+  }, {
       model,
       store: false,
       max_output_tokens: 700,
@@ -230,17 +228,67 @@ async function callOpenAI(message, state) {
           strict: true
         }
       }
-    })
-  });
+    }
+  );
 
-  const data = await response.json();
-  if (!response.ok) {
-    throw new Error(data.error?.message || `OpenAI request failed with ${response.status}`);
+  if (status < 200 || status >= 300) {
+    throw new Error(data.error?.message || `OpenAI request failed with ${status}`);
   }
 
   const outputText = extractOutputText(data);
   if (!outputText) throw new Error("OpenAI response did not include output text.");
   return JSON.parse(outputText);
+}
+
+function postJson(url, headers, body) {
+  const requestBody = JSON.stringify(body);
+
+  if (typeof fetch === "function") {
+    return fetch(url, {
+      method: "POST",
+      headers,
+      body: requestBody
+    }).then(async (response) => ({
+      status: response.status,
+      data: await response.json()
+    }));
+  }
+
+  return new Promise((resolve, reject) => {
+    const requestUrl = new URL(url);
+    const req = https.request(
+      {
+        method: "POST",
+        hostname: requestUrl.hostname,
+        path: `${requestUrl.pathname}${requestUrl.search}`,
+        headers: {
+          ...headers,
+          "Content-Length": Buffer.byteLength(requestBody)
+        }
+      },
+      (res) => {
+        let raw = "";
+        res.setEncoding("utf8");
+        res.on("data", (chunk) => {
+          raw += chunk;
+        });
+        res.on("end", () => {
+          try {
+            resolve({
+              status: res.statusCode || 0,
+              data: raw ? JSON.parse(raw) : {}
+            });
+          } catch (error) {
+            reject(error);
+          }
+        });
+      }
+    );
+
+    req.on("error", reject);
+    req.write(requestBody);
+    req.end();
+  });
 }
 
 function extractOutputText(data) {
