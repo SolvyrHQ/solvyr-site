@@ -1,0 +1,7 @@
+{"name":"clean_pdf_rag","message":"We have 25000 clean digital PDF pages and want chunks and embeddings for RAG search.","expectedVerdict":"likely","expectedShouldClose":false}
+{"name":"erp_ingestion","message":"I want files recognized and relevant information ingested by my ERP system.","expectedVerdict":"needs_scoping","expectedShouldClose":true}
+{"name":"ocr_heavy","message":"Most of our documents are scanned image PDFs and need OCR before anything else.","expectedVerdict":"needs_scoping","expectedShouldClose":true}
+{"name":"options_meta","message":"What options do I have?","expectedVerdict":"unknown","expectedShouldClose":false}
+{"name":"real_time_chat","message":"We need a real-time chatbot with low latency model serving.","expectedVerdict":"not_fit","expectedShouldClose":true}
+{"name":"sensitive_data","message":"The documents include regulated medical customer data.","expectedVerdict":"needs_scoping","expectedShouldClose":true}
+{"name":"pricing","message":"What does pricing start at?","expectedVerdict":"unknown","expectedShouldClose":false}

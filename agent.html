@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Ask Solvyr - Pilot fit assistant</title>
+    <meta
+      name="description"
+      content="Check whether a clean PDF or text corpus workload may fit Solvyr Fast Corpus. Local-only pilot fit assistant with safe handoff to intake."
+    />
+    <meta property="og:title" content="Ask Solvyr - Pilot fit assistant" />
+    <meta
+      property="og:description"
+      content="A bounded assistant for checking Fast Corpus pilot fit without uploading source documents or sensitive data."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://solvyr.com/agent.html" />
+    <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
+    <link rel="canonical" href="https://solvyr.com/agent.html" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="icon" href="favicon.ico" />
+    <link rel="alternate" hreflang="en" href="agent.html" />
+    <link rel="help" href="llms.txt" />
+    <meta name="theme-color" content="#f7f8fb" />
+    <link rel="preload" as="image" href="assets/brand/icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="agent.js"></script>
+  </head>
+
+  <body>
+    <header class="top">
+      <div class="container topbar">
+        <a class="brand" href="index.html#overview" aria-label="Solvyr home">
+          <img
+            class="brandlogo"
+            src="assets/brand/icon.png"
+            alt="Solvyr icon"
+            width="34"
+            height="34"
+          />
+          <div class="brandtext">
+            <div class="name">Solvyr</div>
+            <div class="tag">Fast Corpus for AI teams</div>
+          </div>
+        </a>
+
+        <div class="headerTools">
+          <div class="languageSwitch" aria-label="Language selection">
+            <a class="lang active" href="agent.html" aria-label="English version"><span aria-hidden="true">EN</span></a>
+            <a class="lang" href="nl.html" aria-label="Nederlandse versie"><span aria-hidden="true">NL</span></a>
+          </div>
+          <nav class="tabs" aria-label="Secondary navigation">
+            <a class="tab" href="index.html#overview">Site</a>
+            <a class="tab" href="index.html#who">Fit</a>
+            <a class="tab" href="index.html#deliver">Output</a>
+            <a class="tab cta active" href="agent.html" aria-current="page">Ask Solvyr</a>
+            <a class="tab" href="pilot-intake.html?intent=fast-corpus&source=agent-nav">Pilot intake</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="container agentShell">
+      <section class="agentHero" aria-labelledby="agent-title">
+        <p class="eyebrow">Ask Solvyr</p>
+        <h1 id="agent-title">Check whether your corpus workload is a fit.</h1>
+        <p class="lede">
+          A local-only pilot-fit assistant for clean PDFs and text archives. It
+          is meant to feel calm and useful, while keeping the data boundary
+          strict.
+        </p>
+      </section>
+
+      <div class="agentLayout">
+        <section class="agentCard" aria-labelledby="agent-chat-title">
+          <div class="agentToolbar">
+            <div>
+              <p class="miniLabel">Pilot fit</p>
+              <h2 id="agent-chat-title">Ask about Fast Corpus</h2>
+            </div>
+            <div class="agentToolbarActions">
+              <button class="agentReset" id="agent-reset" type="button">New check</button>
+              <span class="agentStatus">Bounded</span>
+            </div>
+          </div>
+
+          <div class="chatLog" id="chat-log" aria-live="polite" aria-relevant="additions"></div>
+
+          <div class="agentChips" aria-label="Suggested prompts">
+            <button type="button" data-agent-prompt="We have clean digital PDFs for a RAG or search corpus. Is this a fit?">Clean PDFs</button>
+            <button type="button" data-agent-prompt="Some documents are scanned or OCR-heavy. How should that be scoped?">OCR-heavy</button>
+            <button type="button" data-agent-prompt="We need chunks, embeddings, stable IDs, and JSONL output.">Output bundle</button>
+            <button type="button" data-agent-prompt="I want files to be recognized and the relevant information ingested by my ERP system.">ERP ingest</button>
+            <button type="button" data-agent-prompt="This would be a monthly corpus refresh or re-indexing workflow.">Recurring refresh</button>
+            <button type="button" data-agent-prompt="The data may be sensitive or regulated. What is the boundary?">Sensitive data</button>
+            <button type="button" data-agent-prompt="What does Fast Corpus pricing start at?">Pricing</button>
+          </div>
+
+          <form class="agentComposer" id="agent-form">
+            <label class="srOnly" for="agent-input">Message</label>
+            <textarea
+              id="agent-input"
+              maxlength="900"
+              placeholder="Describe the workload shape, not the source content."
+              required
+            ></textarea>
+            <button class="button primary" type="submit">Send</button>
+          </form>
+
+          <p class="formNote">
+            Do not paste source documents, personal data, secrets, credentials,
+            or confidential text. If smart mode is configured, high-level
+            messages may be sent to Solvyr's agent endpoint for bounded
+            qualification.
+          </p>
+        </section>
+
+        <aside class="agentSide" aria-label="Assistant summary and safety">
+          <section class="agentSummaryCard" aria-labelledby="fit-summary-title">
+            <p class="eyebrow">Current read</p>
+            <h2 id="fit-summary-title">Fit summary</h2>
+            <div class="fitBadge" id="fit-badge" data-state="unknown">Needs shape</div>
+            <p id="fit-summary">
+              Share the input type, approximate volume, use case, sensitivity,
+              and whether a safe representative sample exists.
+            </p>
+            <dl class="agentFactList" id="agent-facts"></dl>
+            <div class="contactActions">
+              <a class="button primary" id="agent-email" href="mailto:pilot@solvyr.com?subject=Solvyr%20Fast%20Corpus%20pilot">Prepare email</a>
+              <a class="button secondary" href="pilot-intake.html?intent=fast-corpus&source=pilot-fit-agent">Open intake</a>
+            </div>
+          </section>
+
+          <section class="agentSafetyCard" aria-labelledby="safety-title">
+            <p class="eyebrow">Safety boundary</p>
+            <h2 id="safety-title">What this assistant can safely do</h2>
+            <ul class="cleanList">
+              <li>Check fit against public Fast Corpus criteria</li>
+              <li>Flag OCR-heavy, sensitive, real-time, or custom extraction work</li>
+              <li>Summarize a pilot request for email or intake</li>
+              <li>Keep the conversation inside the browser unless you choose handoff</li>
+            </ul>
+          </section>
+
+          <section class="agentSafetyCard mutedPanel" aria-labelledby="unsafe-title">
+            <h2 id="unsafe-title">Do not share here</h2>
+            <ul class="cleanList">
+              <li>Source document text or uploads</li>
+              <li>Personal, medical, legal, financial, or regulated data</li>
+              <li>API keys, passwords, tokens, or private links</li>
+              <li>Production samples before a written transfer path exists</li>
+            </ul>
+          </section>
+
+          <section class="agentFeedbackCard" aria-labelledby="experience-title">
+            <p class="eyebrow">Experience feedback</p>
+            <h2 id="experience-title">How did this interaction feel?</h2>
+            <p>
+              This prepares an email with structured UX feedback only. It does
+              not include the raw chat.
+            </p>
+            <form class="experienceForm" id="experience-form">
+              <div class="experienceFields">
+                <label>
+                  Clarity
+                  <input type="range" name="clarity" min="1" max="5" value="3" />
+                </label>
+                <label>
+                  Felt understood
+                  <input type="range" name="understood" min="1" max="5" value="3" />
+                </label>
+                <label>
+                  Tone
+                  <input type="range" name="tone" min="1" max="5" value="3" />
+                </label>
+                <label>
+                  Confidence
+                  <input type="range" name="confidence" min="1" max="5" value="3" />
+                </label>
+              </div>
+              <fieldset class="experienceTags">
+                <legend>What stood out?</legend>
+                <label><input type="checkbox" name="tag" value="felt-human" /> Felt human</label>
+                <label><input type="checkbox" name="tag" value="too-robotic" /> Too robotic</label>
+                <label><input type="checkbox" name="tag" value="clear-boundaries" /> Clear boundaries</label>
+                <label><input type="checkbox" name="tag" value="too-vague" /> Too vague</label>
+                <label><input type="checkbox" name="tag" value="too-much-friction" /> Too much friction</label>
+                <label><input type="checkbox" name="tag" value="wanted-more-detail" /> Wanted more detail</label>
+              </fieldset>
+              <label class="feedbackNote">
+                What should feel better?
+                <textarea
+                  name="note"
+                  maxlength="500"
+                  placeholder="Optional. Do not include source content or confidential details."
+                ></textarea>
+              </label>
+              <div class="contactActions">
+                <button class="button primary" type="submit">Prepare UX feedback</button>
+              </div>
+            </form>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footerInner">
+        <div>&copy; <span id="y"></span> Solvyr</div>
+        <div class="footerLinks">
+          <a href="about.html">About</a>
+          <a href="connectors.html">Connectors</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="legal.html">Legal</a>
+          <a href="llms.txt">llms.txt</a>
+          <a href="ai/fast-corpus.md">AI brief</a>
+          <a href="pricing.yaml">Pricing YAML</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

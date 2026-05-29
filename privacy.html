@@ -64,7 +64,7 @@
         <p class="eyebrow">Privacy</p>
         <h1 id="privacy-title">Plain privacy notes for website visitors and pilot inquiries.</h1>
         <p>
-          Last updated: 13 May 2026. This page covers the public Solvyr
+          Last updated: 29 May 2026. This page covers the public Solvyr
           website, email contact, and early Fast Corpus pilot scoping.
         </p>
       </section>
@@ -102,6 +102,7 @@
         <ul class="cleanList">
           <li>Contact details you provide, such as name, organization, and email address.</li>
           <li>Workload details you choose to share, such as document counts, input type, output requirements, data sensitivity, and timeline.</li>
+          <li>High-level Ask Solvyr assistant messages and structured fit context if the optional AI-backed assistant endpoint is enabled.</li>
           <li>Email metadata and message content when you contact Solvyr.</li>
           <li>Ordinary technical access logs that may be created by website hosting or security infrastructure.</li>
         </ul>
@@ -114,6 +115,7 @@
         </div>
         <ul class="cleanList">
           <li>To reply to inquiries and assess whether a Fast Corpus pilot is a fit.</li>
+          <li>To provide bounded assistant replies, classify pilot fit, and route out-of-scope requests to email or intake.</li>
           <li>To prepare a scoped pilot, quote, security discussion, or written agreement.</li>
           <li>To operate and protect the website and prevent misuse.</li>
           <li>To keep necessary business, contracting, and legal records.</li>
@@ -128,9 +130,24 @@
         <p>
           Solvyr does not sell visitor or inquiry data. Data may be processed by
           service providers needed for email, hosting, security, administration,
-          or agreed pilot delivery. Pilot subprocessors and handling details
-          should be covered in the written pilot agreement before sensitive or
-          production data is shared.
+          bounded AI assistant responses, or agreed pilot delivery. Pilot
+          subprocessors and handling details should be covered in the written
+          pilot agreement before sensitive or production data is shared.
+        </p>
+      </section>
+
+      <section class="band compact" aria-labelledby="assistant-title">
+        <div>
+          <p class="eyebrow">Assistant</p>
+          <h2 id="assistant-title">Ask Solvyr is for high-level qualification only</h2>
+        </div>
+        <p>
+          The Ask Solvyr assistant may run locally in the browser or, if an API
+          endpoint is enabled, send high-level messages to an AI API provider to
+          produce a bounded pilot-fit reply. Do not paste source document text,
+          credentials, confidential details, or sensitive data. Raw chats are
+          not intentionally retained by Solvyr unless you choose to send a
+          summary or feedback by email.
         </p>
       </section>
 
