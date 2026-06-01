@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      if (/^https?:$/.test(window.location.protocol) && window.location.pathname === "/index.html") {
+        window.location.replace(`${window.location.origin}/${window.location.search}${window.location.hash}`);
+      }
+    </script>
 
     <title>Solvyr Fast Corpus - AI-ready JSONL from clean PDFs and text</title>
     <meta
@@ -26,8 +31,9 @@
     />
 
     <link rel="icon" href="favicon.ico" />
-    <link rel="alternate" hreflang="en" href="index.html" />
-    <link rel="alternate" hreflang="nl" href="nl.html" />
+    <link rel="alternate" hreflang="en" href="https://solvyr.com/" />
+    <link rel="alternate" hreflang="nl" href="https://solvyr.com/nl.html" />
+    <link rel="alternate" hreflang="x-default" href="https://solvyr.com/" />
     <link rel="alternate" type="text/markdown" href="ai/fast-corpus.md" title="Fast Corpus agent brief" />
     <link rel="help" href="llms.txt" />
     <meta name="theme-color" content="#f7f8fb" />
@@ -76,8 +82,8 @@
 
         <div class="headerTools">
           <div class="languageSwitch" aria-label="Language selection">
-            <a class="lang active" href="index.html" data-language-link="index.html" aria-label="English version"><span aria-hidden="true">🇬🇧</span><span>EN</span></a>
-            <a class="lang" href="nl.html" data-language-link="nl.html" aria-label="Nederlandse versie"><span aria-hidden="true">🇳🇱</span><span>NL</span></a>
+            <a class="lang active" href="/" data-language-link="/" aria-label="English version"><span aria-hidden="true">🇬🇧</span><span>EN</span></a>
+            <a class="lang" href="/nl.html" data-language-link="/nl.html" aria-label="Nederlandse versie"><span aria-hidden="true">🇳🇱</span><span>NL</span></a>
           </div>
 
           <nav class="tabs" aria-label="Primary navigation">
