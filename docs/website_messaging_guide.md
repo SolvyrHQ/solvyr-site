@@ -85,6 +85,18 @@ Weaker:
 - Get compute
 - Try the platform
 
+## Header Navigation Rule
+
+Keep product-page header navigation stable. Detail pages may have different
+body links, but the top-right nav should not become contextual per page.
+
+Current product nav:
+
+- English: `Fast Corpus`, `Output`, `Proof`, `Pilot`
+- Dutch: `Fast Corpus`, `Output`, `Proefrun`, `Pilot`
+
+`Pilot` should route to the intake page, not a page-specific local section.
+
 ## Evidence Boundaries
 
 When mentioning proof, stay specific:

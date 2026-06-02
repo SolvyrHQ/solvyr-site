@@ -10,10 +10,12 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Infrastructure appears as support, not the headline.
 - [ ] CTAs describe the work or decision, not generic platform access.
 - [ ] Exclusions are still honest: OCR-heavy, sensitive data, custom extraction, mature SLA.
+- [ ] Product-page header navigation stays stable; do not invent contextual top-right nav per page.
 
 ## Consistency
 
 - [ ] `index.html` and `nl.html` carry the same strategic message.
+- [ ] Language-specific CTAs stay in the same language or clearly label a language switch.
 - [ ] Use-case pages still point to a bounded backlog/corpus problem.
 - [ ] `about.html` and `connectors.html` reinforce workload-first positioning.
 - [ ] Agent-readable files match the human copy:
