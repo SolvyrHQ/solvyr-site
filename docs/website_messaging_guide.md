@@ -92,10 +92,11 @@ body links, but the top-right nav should not become contextual per page.
 
 Current product nav:
 
-- English: `Fast Corpus`, `Output`, `Proof`, `Pilot`
-- Dutch: `Fast Corpus`, `Output`, `Proefrun`, `Pilot`
+- English: `Fast Corpus`, `Output`, `Proof`, `Security`, `Pilot`
+- Dutch: `Fast Corpus`, `Output`, `Proefrun`, `Security`, `Pilot`
 
 `Pilot` should route to the intake page, not a page-specific local section.
+Do not remove an existing primary nav route without explicit approval.
 
 ## Evidence Boundaries
 

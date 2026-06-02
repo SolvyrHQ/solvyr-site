@@ -11,6 +11,7 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] CTAs describe the work or decision, not generic platform access.
 - [ ] Exclusions are still honest: OCR-heavy, sensitive data, custom extraction, mature SLA.
 - [ ] Product-page header navigation stays stable; do not invent contextual top-right nav per page.
+- [ ] Existing primary nav routes, especially `Security`, remain reachable unless explicitly approved.
 
 ## Consistency
 
