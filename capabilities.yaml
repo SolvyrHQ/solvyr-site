@@ -1,13 +1,15 @@
 service: Solvyr
 product: Solvyr Fast Corpus
 phase: controlled_trial
-summary: Clean digital PDFs and text archives to AI-ready JSONL with extracted text, chunks, embeddings, stable IDs, and a run report.
-broader_system: Controlled distributed execution for async AI workloads with central scheduling, bounded tasks, retries, visible outcomes, and completed work rather than raw GPU rental.
+summary: Clean PDF and text backlogs to AI-ready JSONL with extracted text, chunks, embeddings, stable IDs, and an inspectable run report.
+positioning: Customers buy completed corpus output and run evidence, not GPU-hours or a platform project.
+broader_system: Controlled distributed execution for async AI workloads with central scheduling, bounded tasks, retries, visible outcomes, and completed work rather than raw capacity rental.
 execution_mode: async
 access:
   model: manual_approval
   pilot_required: true
 best_for:
+  - one-time document backlog processing
   - RAG and search corpus preparation
   - document re-indexing
   - agent memory corpus preparation
