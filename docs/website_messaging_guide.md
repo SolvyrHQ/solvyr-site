@@ -97,6 +97,8 @@ Current product nav:
 
 `Pilot` should route to the intake page, not a page-specific local section.
 Do not remove an existing primary nav route without explicit approval.
+If a page has a translated counterpart, keep the language switch visible on
+both versions.
 
 ## Evidence Boundaries
 

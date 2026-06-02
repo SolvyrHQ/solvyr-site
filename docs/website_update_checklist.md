@@ -17,6 +17,7 @@ Use this checklist before shipping future Solvyr website changes.
 
 - [ ] `index.html` and `nl.html` carry the same strategic message.
 - [ ] Language-specific CTAs stay in the same language or clearly label a language switch.
+- [ ] Pages with translated counterparts keep the EN/NL language switch visible.
 - [ ] Use-case pages still point to a bounded backlog/corpus problem.
 - [ ] `about.html` and `connectors.html` reinforce workload-first positioning.
 - [ ] Agent-readable files match the human copy:
