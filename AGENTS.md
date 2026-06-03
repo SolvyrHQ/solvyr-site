@@ -6,6 +6,7 @@ agent-readable files, read:
 - `docs/website_messaging_guide.md`
 - `docs/website_update_checklist.md`
 - `docs/website_quality_process.md`
+- `docs/website_manager_agent.md`
 
 Use the guide as the website brandbook. Keep the first-screen promise focused
 on customer workload and accepted output:
@@ -20,6 +21,11 @@ Do not remove, hide, rename, or de-prioritize existing primary routes,
 navigation items, footer links, proof links, language switches, or security
 content without explicit approval. If a route feels redundant, raise it first
 instead of silently coding it out.
+
+Do not ask for approval merely for the sake of asking. Use the judgement model
+in `docs/website_manager_agent.md`: act on low-risk reversible fixes, ask for
+human judgement when deletion, claim changes, external mutation, or material
+business/security/indexing risk is involved.
 
 When a website change alters positioning, offer shape, target buyer, proof
 claims, CTAs, pricing scope, or exclusions, update the guide/checklist and the

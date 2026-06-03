@@ -8,6 +8,9 @@ accident.
 - Audits are read-only unless explicitly documented otherwise.
 - Public route deletion, protected file deletion, public route rename, and
   sitemap URL removal require explicit human approval.
+- Approval should be relevant, not performative. Ask when human judgement
+  materially reduces risk; otherwise make low-risk reversible fixes and explain
+  the judgement.
 - Do not use override environment variables silently. Use them only after the
   human reviewer has confirmed the specific route or file removal.
 - Do not combine intentional removals with broad copy/layout changes in one
@@ -23,6 +26,15 @@ Approved override flags, after explicit confirmation only:
 
 - `SOLVYR_APPROVE_PUBLIC_REMOVAL=1`
 - `SOLVYR_APPROVE_SITEMAP_REMOVAL=1`
+
+## Risk Tiers
+
+| Tier | Examples | Agent behavior |
+| --- | --- | --- |
+| Low | typo fixes, broken local links, restoring missing nav/footer items, read-only audits, natural-language polish without claim changes | Act, verify, summarize |
+| Medium | route additions, metadata changes, language counterparts, layout changes, new public page copy within existing positioning | Act with guardrails and audits; ask only if tradeoffs are ambiguous |
+| High | deleting/renaming public routes, changing price/proof/security/legal/privacy claims, adding/removing exclusions, external submissions or mutations | Ask first; keep change scoped; require relevant checks |
+| Blocked | guardrail failure whose fix would remove content, narrow the offer, or contradict prior user direction | Stop and ask for human judgement |
 
 ## Standard Local Suite
 

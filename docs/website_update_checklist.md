@@ -5,6 +5,7 @@ Use this checklist before shipping future Solvyr website changes.
 ## Positioning
 
 - [ ] `docs/website_messaging_guide.md` was read before editing.
+- [ ] `docs/website_manager_agent.md` was followed for judgement/approval thresholds.
 - [ ] First screen leads with document/text backlog to AI-ready output.
 - [ ] The page names the concrete output: JSONL, chunks, embeddings, stable IDs, run report.
 - [ ] Infrastructure appears as support, not the headline.
