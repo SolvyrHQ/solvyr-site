@@ -6,6 +6,7 @@
   "positioning": "Customers buy completed corpus output and run evidence, not GPU-hours, API/CLI access, or a platform project.",
   "cost_positioning": "Cost-effective backlog processing with a scoped run, price per processed page, and a decision based on inspected output.",
   "api_cli_positioning": "API/CLI language is integration or handoff context, not the primary public offer.",
+  "european_sovereignty_positioning": "European execution control and sovereignty are relevant for archives, public-sector teams, research networks, and EU/NL connectors when tied to a real document backlog and pilot decision.",
   "broader_system": "Controlled distributed execution for async AI workloads with central scheduling, bounded tasks, retries, visible outcomes, and completed work rather than raw capacity rental.",
   "best_for": [
     "one-time document backlog processing",
@@ -16,6 +17,7 @@
     "fine-tuning prep datasets",
     "recurring corpus refresh or enrichment",
     "teams that want a cost-effective corpus run without building another internal pipeline",
+    "archives, libraries, municipalities, research networks, and public-sector teams that want European execution-control context",
     "public or semi-public connector introductions tied to real document-heavy AI workloads"
   ],
   "not_for": [

@@ -45,6 +45,31 @@ Avoid:
 Let buyers compare Solvyr with their own cloud or internal pipeline. The site
 should trigger: this is useful, executable, and cost-effective enough to scope.
 
+## European Sovereignty Rule
+
+European execution and sovereignty should be visible for archives, libraries,
+municipalities, public-sector teams, research networks, and EU/NL connectors.
+Keep it attached to a real workload.
+
+Use:
+
+- European execution context
+- European execution control
+- oversight during pilot design
+- archives, libraries, municipalities, public-sector teams
+- sovereignty questions attached to real document runs
+- practical route to pilots
+
+Avoid:
+
+- abstract sovereignty as the headline promise
+- implying mature government-cloud or compliance guarantees
+- implying that distribution alone creates confidentiality or sovereignty
+- replacing the corpus offer with a broad EU infrastructure pitch
+
+The right sequence is: document backlog, inspectable output, predictable run,
+then European control/sovereignty context.
+
 ## First-Screen Rule
 
 The first viewport must answer the felt customer problem:
@@ -75,6 +100,8 @@ Use:
 - controlled distributed execution
 - predictable price per processed page
 - cost-effective backlog processing
+- European execution context
+- archives, libraries, municipalities, and public-sector teams
 
 Avoid:
 
@@ -87,6 +114,7 @@ Avoid:
 - household GPU network as the product
 - sovereignty without a concrete workload
 - API/CLI-first positioning
+- abstract EU infrastructure pitch
 
 ## Narrative Order
 
@@ -96,7 +124,9 @@ Use this order whenever possible:
 2. Concrete output: JSONL, chunks, embeddings, stable IDs, run report.
 3. Pilot shape: representative sample, capped run, decision.
 4. Proof: measured run evidence, caveats, fit boundaries.
-5. Infrastructure: controlled async execution underneath.
+5. European/public-sector context when relevant: archives, oversight,
+   sovereignty, and European execution control.
+6. Infrastructure: controlled async execution underneath.
 
 ## CTA Rules
 
@@ -262,7 +292,8 @@ Keep these lessons alive in future edits:
 - Price the work in terms of completed output, not abstract compute or tooling.
 - A concrete corpus beats general AI interest.
 - Distributed execution is credible only when attached to a workload that fits.
-- Sovereignty and European execution are supporting context, not the lead offer.
+- Sovereignty and European execution should be visible for NL/EU public-sector
+  outreach, but anchored in a concrete corpus run.
 - Recurring refresh is the stronger business layer after a first backlog run.
 - Honest exclusions increase trust when they are specific and not
   self-undermining.
@@ -277,3 +308,5 @@ Before publishing a website change, ask:
 - Are proof claims bounded to what has actually been measured?
 - Are the human pages and agent-readable files consistent?
 - Would a connector know exactly who to introduce?
+- For archives/public-sector outreach, is the European sovereignty angle visible
+  without becoming an abstract infrastructure pitch?
