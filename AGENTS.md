@@ -5,6 +5,7 @@ agent-readable files, read:
 
 - `docs/website_messaging_guide.md`
 - `docs/website_update_checklist.md`
+- `docs/website_quality_process.md`
 
 Use the guide as the website brandbook. Keep the first-screen promise focused
 on customer workload and accepted output:
@@ -28,8 +29,7 @@ When a website change adds, removes, renames, translates, or moves a public
 route, or changes metadata, canonical URLs, hreflang, robots.txt, sitemap.xml,
 header links, or footer links, run:
 
-- `node scripts/audit-indexability.mjs`
-- `node scripts/audit-nav-footer.mjs`
+- `node scripts/audit-website.mjs`
 
 Agent-readable files to keep aligned:
 

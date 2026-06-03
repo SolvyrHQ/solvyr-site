@@ -173,6 +173,10 @@ hreflang, `robots.txt`, `sitemap.xml`, header links, or footer links. Body-copy
 only edits usually do not need it unless they change the page's search promise
 or first-screen intent.
 
+For meaningful website changes, prefer the full local suite:
+`node scripts/audit-website.mjs`. After deploy of route/metadata/indexing
+changes, run `node scripts/audit-live-deploy.mjs`.
+
 ## Evidence Boundaries
 
 When mentioning proof, stay specific:

@@ -38,7 +38,10 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Homepage renders without horizontal overflow on a narrow viewport.
 - [ ] Main CTA target opens.
 - [ ] Tab navigation still works.
-- [ ] `node scripts/audit-indexability.mjs` passes when route/metadata/indexing-sensitive files changed.
+- [ ] `node scripts/audit-website.mjs` passes for meaningful website changes.
+- [ ] `node scripts/audit-live-deploy.mjs` passes after deploy when route/metadata/indexing-sensitive files changed.
+- [ ] Intentional public route/file/sitemap removals had explicit human approval before override flags were used.
+- [ ] Structured data, performance/PageSpeed, or Search Console checks were run if this change made them relevant.
 - [ ] `node scripts/audit-nav-footer.mjs` passes.
 - [ ] No stray local server is left running after verification.
 
