@@ -92,13 +92,43 @@ body links, but the top-right nav should not become contextual per page.
 
 Current product nav:
 
-- English: `Fast Corpus`, `Output`, `Proof`, `Security`, `Pilot`
-- Dutch: `Fast Corpus`, `Output`, `Proefrun`, `Security`, `Pilot`
+- English: `Fast Corpus`, `Fit`, `Output`, `Proof`, `Security`, `Pilot`
+- Dutch: `Fast Corpus`, `Fit`, `Output`, `Proefrun`, `Security`, `Pilot`
 
 `Pilot` should route to the intake page, not a page-specific local section.
 Do not remove an existing primary nav route without explicit approval.
 If a page has a translated counterpart, keep the language switch visible on
 both versions.
+
+## Footer Rule
+
+Keep footer links stable by language. Detail pages may use page-specific UTM or
+source parameters on the pilot link, but the footer should not randomly gain or
+lose core site links.
+
+Current English footer:
+
+- `About`
+- `Connectors`
+- `Privacy`
+- `Legal`
+- `llms.txt`
+- `AI brief`
+- `Pricing YAML`
+- `Pilot intake`
+
+Current Dutch footer:
+
+- `Over`
+- `Connectors`
+- `Privacy`
+- `Juridisch`
+- `llms.txt`
+- `AI brief`
+- `Pricing YAML`
+- `Pilot intake`
+
+Do not remove an existing footer route without explicit approval.
 
 ## Evidence Boundaries
 

@@ -15,6 +15,11 @@ Do not let future edits drift toward leading with distributed GPUs,
 infrastructure abstraction, raw capacity, or sovereignty without a concrete
 workload.
 
+Do not remove, hide, rename, or de-prioritize existing primary routes,
+navigation items, footer links, proof links, language switches, or security
+content without explicit approval. If a route feels redundant, raise it first
+instead of silently coding it out.
+
 When a website change alters positioning, offer shape, target buyer, proof
 claims, CTAs, pricing scope, or exclusions, update the guide/checklist and the
 agent-readable files in the same pass.

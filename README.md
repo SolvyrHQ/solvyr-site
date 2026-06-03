@@ -10,3 +10,9 @@ Before changing website copy, read:
 The short rule: lead with the customer workload and accepted output. The
 infrastructure story supports the offer; it should not be the first thing the
 site asks visitors to understand.
+
+Before committing structural page changes, run:
+
+```sh
+node scripts/audit-nav-footer.mjs
+```

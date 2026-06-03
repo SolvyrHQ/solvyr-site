@@ -11,7 +11,8 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] CTAs describe the work or decision, not generic platform access.
 - [ ] Exclusions are still honest: OCR-heavy, sensitive data, custom extraction, mature SLA.
 - [ ] Product-page header navigation stays stable; do not invent contextual top-right nav per page.
-- [ ] Existing primary nav routes, especially `Security`, remain reachable unless explicitly approved.
+- [ ] Existing primary nav routes, especially `Fit` and `Security`, remain reachable unless explicitly approved.
+- [ ] Footer links stay stable by language; do not randomly drop `About`/`Over`, `Connectors`, legal/privacy, or agent-readable links.
 
 ## Consistency
 
@@ -35,6 +36,7 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Homepage renders without horizontal overflow on a narrow viewport.
 - [ ] Main CTA target opens.
 - [ ] Tab navigation still works.
+- [ ] `node scripts/audit-nav-footer.mjs` passes.
 - [ ] No stray local server is left running after verification.
 
 ## Final Read
