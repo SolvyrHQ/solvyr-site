@@ -69,14 +69,14 @@
           <p class="eyebrow">Fast Corpus intake</p>
           <h1 id="intake-title">Beschrijf een corpus duidelijk genoeg om fit te beoordelen.</h1>
           <p>
-            Deze pagina bereidt een email voor. Plak hier geen gevoelige data.
-            Fast Corpus start met schone digitale PDFs of tekst en een veilige
+            Deze pagina bereidt een e-mail voor. Plak hier geen gevoelige data.
+            Fast Corpus start met schone digitale PDF's of tekst en een veilige
             representatieve sample.
           </p>
           <section class="proofStrip" aria-label="Goede pilotinput">
             <div>
               <strong>Geprijsd</strong>
-              <span>Vanaf EUR 0,95 per 1000 paginas, excl. btw, voor standaard schone batches.</span>
+              <span>Vanaf EUR 0,95 per 1000 pagina's, excl. btw, voor standaard schone batches.</span>
             </div>
             <div>
               <strong>Concreet</strong>
@@ -100,7 +100,7 @@
               <input id="org" name="org" autocomplete="organization" />
             </div>
             <div class="field">
-              <label for="email">Email</label>
+              <label for="email">E-mail</label>
               <input id="email" name="email" type="email" autocomplete="email" />
             </div>
             <div class="field">
@@ -113,33 +113,33 @@
               </select>
             </div>
             <div class="field">
-              <label for="pages">Geschat aantal paginas</label>
+              <label for="pages">Geschat aantal pagina's</label>
               <input id="pages" name="pages" placeholder="Bijvoorbeeld: 25000" />
             </div>
             <div class="field">
               <label for="documents">Geschat aantal documenten</label>
-              <input id="documents" name="documents" placeholder="Bijvoorbeeld: 1200 PDFs" />
+              <input id="documents" name="documents" placeholder="Bijvoorbeeld: 1200 PDF's" />
             </div>
             <div class="field">
               <label for="input_type">Inputtype</label>
               <select id="input_type" name="input_type">
                 <option value="">Kies een optie</option>
-                <option>Schone digitale PDFs</option>
+                <option>Schone digitale PDF's</option>
                 <option>Tekstbestanden of tekstexports</option>
-                <option>Gemengde schone PDFs en tekst</option>
-                <option>Gescannde of OCR-zware documenten</option>
+                <option>Gemengde schone PDF's en tekst</option>
+                <option>Gescande of OCR-zware documenten</option>
                 <option>Anders of onzeker</option>
               </select>
             </div>
             <div class="field">
-              <label for="use_case">Use case</label>
+              <label for="use_case">Toepassing</label>
               <select id="use_case" name="use_case">
                 <option value="">Kies een optie</option>
                 <option>RAG of search corpus</option>
                 <option>Agent memory corpus</option>
                 <option>Eval dataset</option>
-                <option>Fine-tuning voorbereiding</option>
-                <option>Re-indexing of corpusrefresh</option>
+                <option>Fine-tuning-voorbereiding</option>
+                <option>Herindexering of corpusrefresh</option>
                 <option>Anders of onzeker</option>
               </select>
             </div>
@@ -150,7 +150,7 @@
                 <option>AI-ready JSONL</option>
                 <option>Alleen chunks</option>
                 <option>Chunks en embeddings</option>
-                <option>Re-indexing artifact</option>
+                <option>Herindexeringsartefact</option>
                 <option>Anders of onzeker</option>
               </select>
             </div>
@@ -202,13 +202,13 @@
           </div>
 
           <p class="formNote">
-            De knop opent je emailclient met deze details. Voeg geen productie-
+            De knop opent je e-mailclient met deze details. Voeg geen productie-
             of gevoelige samples toe voordat er een schriftelijke scope en
-            overdrachtskanaal is afgesproken. Bronparameters uit agent-readable
+            overdrachtskanaal is afgesproken. Bronparameters uit agentleesbare
             links worden automatisch meegenomen.
           </p>
           <div class="contactActions">
-            <button class="button primary" type="submit">Bereid email voor</button>
+            <button class="button primary" type="submit">Bereid e-mail voor</button>
             <a class="button secondary" href="nl.html#pilot">Terug naar pilotpagina</a>
           </div>
         </form>
@@ -220,7 +220,7 @@
         <div>&copy; <span id="y"></span> Solvyr</div>
         <div class="footerLinks">
           <a href="about-nl.html">Over</a>
-          <a href="connectors.html">Connectors</a>
+          <a href="connectors-nl.html">Connectors</a>
           <a href="privacy-nl.html">Privacy</a>
           <a href="legal-nl.html">Juridisch</a>
           <a href="llms.txt">llms.txt</a>
@@ -246,12 +246,12 @@
           ["Intent", intent],
           ["Naam", data.get("name")],
           ["Organisatie", data.get("org")],
-          ["Email", data.get("email")],
+          ["E-mail", data.get("email")],
           ["Timing", data.get("timeline")],
-          ["Geschat aantal paginas", data.get("pages")],
+          ["Geschat aantal pagina's", data.get("pages")],
           ["Geschat aantal documenten", data.get("documents")],
           ["Inputtype", data.get("input_type")],
-          ["Use case", data.get("use_case")],
+          ["Toepassing", data.get("use_case")],
           ["Outputdoel", data.get("output_target")],
           ["Herhaling", data.get("recurrence")],
           ["Corpus- en workflownotities", data.get("workload")],

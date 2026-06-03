@@ -8,10 +8,30 @@ const expected = {
   en: {
     nav: ["Fast Corpus", "Fit", "Output", "Proof", "Security", "Pilot"],
     footer: ["About", "Connectors", "Privacy", "Legal", "llms.txt", "AI brief", "Pricing YAML", "Pilot intake"],
+    footerHrefIncludes: {
+      About: "about.html",
+      Connectors: "connectors.html",
+      Privacy: "privacy.html",
+      Legal: "legal.html",
+      "llms.txt": "llms.txt",
+      "AI brief": "ai/fast-corpus.md",
+      "Pricing YAML": "pricing.yaml",
+      "Pilot intake": "pilot-intake.html",
+    },
   },
   nl: {
     nav: ["Fast Corpus", "Fit", "Output", "Proefrun", "Security", "Pilot"],
     footer: ["Over", "Connectors", "Privacy", "Juridisch", "llms.txt", "AI brief", "Pricing YAML", "Pilot intake"],
+    footerHrefIncludes: {
+      Over: "about-nl.html",
+      Connectors: "connectors-nl.html",
+      Privacy: "privacy-nl.html",
+      Juridisch: "legal-nl.html",
+      "llms.txt": "llms.txt",
+      "AI brief": "ai/fast-corpus.md",
+      "Pricing YAML": "pricing.yaml",
+      "Pilot intake": "pilot-intake-nl.html",
+    },
   },
 };
 
@@ -33,6 +53,17 @@ function textLabels(fragment) {
       .replace(/\s+/g, " ")
       .trim()
   );
+}
+
+function links(fragment) {
+  return [...fragment.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/g)].map((match) => {
+    const href = match[1].match(/\shref="([^"]+)"/)?.[1] || "";
+    const label = match[2]
+      .replace(/<[^>]+>/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
+    return { href, label };
+  });
 }
 
 function languageFor(relPath) {
@@ -66,8 +97,15 @@ for (const file of walk(repoRoot).sort()) {
   if (!footer) {
     failures.push(`${relPath} footer: missing .footerLinks`);
   } else {
-    const result = compare(relPath, "footer", textLabels(footer[1]), expected[lang].footer);
+    const footerLinks = links(footer[1]);
+    const result = compare(relPath, "footer", footerLinks.map((link) => link.label), expected[lang].footer);
     if (result) failures.push(result);
+    for (const link of footerLinks) {
+      const required = expected[lang].footerHrefIncludes[link.label];
+      if (required && !link.href.includes(required)) {
+        failures.push(`${relPath} footer href for ${link.label}: expected to include ${required}, got ${link.href}`);
+      }
+    }
   }
 }
 

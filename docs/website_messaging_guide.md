@@ -100,6 +100,27 @@ Do not remove an existing primary nav route without explicit approval.
 If a page has a translated counterpart, keep the language switch visible on
 both versions.
 
+## Language Rule
+
+Keep English and Dutch routes parallel when both versions exist. If a Dutch
+page links to a route that has a Dutch counterpart, use the Dutch route.
+
+Some product/navigation terms intentionally stay the same in Dutch because they
+are short product labels or common AI-team language:
+
+- `Fast Corpus`
+- `Fit`
+- `Output`
+- `Security`
+- `Pilot`
+- `Connectors`
+- `AI brief`
+- `Pricing YAML`
+
+Translate surrounding explanatory copy into natural Dutch. Avoid half-English
+phrases such as `apart gescoord`, `Solvyr's`, `re-indexing artifact`, or
+`emailcontact` unless they are deliberate product terms.
+
 ## Footer Rule
 
 Keep footer links stable by language. Detail pages may use page-specific UTM or
@@ -129,6 +150,8 @@ Current Dutch footer:
 - `Pilot intake`
 
 Do not remove an existing footer route without explicit approval.
+Run `node scripts/audit-nav-footer.mjs` after header or footer changes; it
+checks labels and core footer routes for English and Dutch pages.
 
 ## Evidence Boundaries
 
