@@ -8,7 +8,9 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] `docs/website_manager_agent.md` was followed for judgement/approval thresholds.
 - [ ] First screen leads with document/text backlog to AI-ready output.
 - [ ] The page names the concrete output: JSONL, chunks, embeddings, stable IDs, run report.
+- [ ] Cost is framed as a predictable scoped run or cost-per-result, not as a footnote.
 - [ ] Infrastructure appears as support, not the headline.
+- [ ] API/CLI language, if present, supports integration or handoff rather than becoming the public CTA.
 - [ ] CTAs describe the work or decision, not generic platform access.
 - [ ] Exclusions are still honest: OCR-heavy, sensitive data, custom extraction, mature SLA.
 - [ ] Product-page header navigation stays stable; do not invent contextual top-right nav per page.
@@ -54,4 +56,7 @@ It should say, in effect:
 
 > Send a bounded backlog. Get accepted AI-ready corpus output and run evidence.
 
-If the page instead sounds like distributed infrastructure, rewrite it.
+It should also feel useful, executable, and cost-effective enough to scope.
+
+If the page instead sounds like distributed infrastructure, developer tooling,
+or a defensive cloud comparison, rewrite it.

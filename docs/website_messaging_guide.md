@@ -21,6 +21,30 @@ Current public front door:
 
 The customer buys completed corpus output and run evidence, not GPU-hours.
 
+## Cost Messaging Rule
+
+Cost is a buying trigger, not a footnote. Lead with a predictable, scoped run:
+pages processed, output delivered, and evidence the AI team can inspect.
+
+Use:
+
+- cost-effective backlog processing
+- predictable price per processed page
+- clear starting unit
+- priced around completed output
+- useful corpus output without a new internal pipeline project
+- scoped run before recurring work
+
+Avoid:
+
+- claiming Solvyr is always cheaper than cloud
+- telling buyers to process the backlog themselves
+- making the copy sound apologetic about the current trial phase
+- reducing the offer to a commodity API, CLI, GPU-hour, or parser
+
+Let buyers compare Solvyr with their own cloud or internal pipeline. The site
+should trigger: this is useful, executable, and cost-effective enough to scope.
+
 ## First-Screen Rule
 
 The first viewport must answer the felt customer problem:
@@ -31,6 +55,10 @@ The first viewport must answer the felt customer problem:
 
 Do not lead with distributed GPUs, scheduler architecture, sovereignty, or
 infrastructure abstraction. Those belong lower on the page as supporting proof.
+
+Do not lead with API or CLI access either. API/CLI language belongs in
+integration, handoff, agent-readable, or delivery-context copy. The public
+headline and CTA should sell a run or corpus result, not developer tooling.
 
 ## Preferred Language
 
@@ -45,6 +73,8 @@ Use:
 - bounded pilot
 - recurring corpus refresh
 - controlled distributed execution
+- predictable price per processed page
+- cost-effective backlog processing
 
 Avoid:
 
@@ -56,6 +86,7 @@ Avoid:
 - AI infrastructure abstraction layer
 - household GPU network as the product
 - sovereignty without a concrete workload
+- API/CLI-first positioning
 
 ## Narrative Order
 
@@ -228,11 +259,13 @@ Keep these lessons alive in future edits:
 
 - Sell the problem the customer feels, not the infrastructure Solvyr built.
 - Sell completed outcomes and cost-per-result, not distributed GPUs.
+- Price the work in terms of completed output, not abstract compute or tooling.
 - A concrete corpus beats general AI interest.
 - Distributed execution is credible only when attached to a workload that fits.
 - Sovereignty and European execution are supporting context, not the lead offer.
 - Recurring refresh is the stronger business layer after a first backlog run.
-- Honest exclusions increase trust.
+- Honest exclusions increase trust when they are specific and not
+  self-undermining.
 
 ## Quick Review Questions
 

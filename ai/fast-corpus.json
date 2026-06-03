@@ -2,8 +2,10 @@
   "product": "Solvyr Fast Corpus",
   "provider": "Solvyr",
   "phase": "controlled_trial",
-  "summary": "Clean PDF and text backlogs to AI-ready JSONL with extracted text, chunks, embeddings, stable IDs, and an inspectable run report.",
-  "positioning": "Customers buy completed corpus output and run evidence, not GPU-hours or a platform project.",
+  "summary": "Clean PDF and text backlogs to AI-ready JSONL with extracted text, chunks, embeddings, stable IDs, and an inspectable run report at a predictable starting unit price.",
+  "positioning": "Customers buy completed corpus output and run evidence, not GPU-hours, API/CLI access, or a platform project.",
+  "cost_positioning": "Cost-effective backlog processing with a scoped run, price per processed page, and a decision based on inspected output.",
+  "api_cli_positioning": "API/CLI language is integration or handoff context, not the primary public offer.",
   "broader_system": "Controlled distributed execution for async AI workloads with central scheduling, bounded tasks, retries, visible outcomes, and completed work rather than raw capacity rental.",
   "best_for": [
     "one-time document backlog processing",
@@ -13,6 +15,7 @@
     "evaluation dataset preparation",
     "fine-tuning prep datasets",
     "recurring corpus refresh or enrichment",
+    "teams that want a cost-effective corpus run without building another internal pipeline",
     "public or semi-public connector introductions tied to real document-heavy AI workloads"
   ],
   "not_for": [

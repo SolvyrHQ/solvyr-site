@@ -22,6 +22,7 @@ starting_price:
     - custom structured extraction
 notes:
   - Starting price is an indicative acquisition wedge for standard clean digital PDF/text workloads.
+  - Pricing should be explained as a predictable scoped run and cost per processed page, not raw compute, API access, or CLI access.
   - Prices exclude VAT and taxes unless agreed otherwise.
   - Final scope depends on input quality, sensitivity, output requirements, and recurrence.
   - Controlled trial access is manually approved.

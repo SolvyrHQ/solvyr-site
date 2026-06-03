@@ -10,6 +10,8 @@ coherent, discoverable, safe to edit, and aligned with the current offer.
 
 - Preserve the workload-first message: bounded document/text backlog to
   AI-ready corpus output and run evidence.
+- Keep cost messaging clear enough to motivate action: predictable scoped run,
+  cost-per-result, and less internal pipeline work.
 - Keep English and Dutch pages aligned without making the Dutch copy feel
   half-English.
 - Keep public routes, navigation, footer links, proof links, language switches,
@@ -52,6 +54,8 @@ Proceed when the change is low risk and reversible:
 - adding read-only audits or documentation for already-agreed process rules
 - running local read-only checks
 - tightening copy while preserving the same claim, scope, price, and route
+- lowering API/CLI/tooling language when the customer-facing run and output
+  stay the lead promise
 - committing/pushing when the user explicitly asked for that outcome and the
   staged diff is scoped and verified
 
@@ -66,6 +70,7 @@ Ask a concise question before coding or overriding when the change would:
   data-handling claims
 - move Solvyr's positioning to a materially different buyer, product, offer, or
   infrastructure emphasis
+- turn API/CLI access into a new primary public offer or CTA
 - use release-safety override flags
 - submit, mutate, notify, or write to an external system
 - require destructive shell/git behavior
