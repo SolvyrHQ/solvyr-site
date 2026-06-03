@@ -24,6 +24,13 @@ When a website change alters positioning, offer shape, target buyer, proof
 claims, CTAs, pricing scope, or exclusions, update the guide/checklist and the
 agent-readable files in the same pass.
 
+When a website change adds, removes, renames, translates, or moves a public
+route, or changes metadata, canonical URLs, hreflang, robots.txt, sitemap.xml,
+header links, or footer links, run:
+
+- `node scripts/audit-indexability.mjs`
+- `node scripts/audit-nav-footer.mjs`
+
 Agent-readable files to keep aligned:
 
 - `llms.txt`

@@ -14,5 +14,6 @@ site asks visitors to understand.
 Before committing structural page changes, run:
 
 ```sh
+node scripts/audit-indexability.mjs
 node scripts/audit-nav-footer.mjs
 ```

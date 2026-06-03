@@ -22,6 +22,7 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Pages with translated counterparts keep the EN/NL language switch visible.
 - [ ] Use-case pages still point to a bounded backlog/corpus problem.
 - [ ] `about.html` and `connectors.html` reinforce workload-first positioning.
+- [ ] If public routes, metadata, canonicals, hreflang, `robots.txt`, or `sitemap.xml` changed, run the indexability audit.
 - [ ] Agent-readable files match the human copy:
   - [ ] `llms.txt`
   - [ ] `ai/fast-corpus.md`
@@ -37,6 +38,7 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Homepage renders without horizontal overflow on a narrow viewport.
 - [ ] Main CTA target opens.
 - [ ] Tab navigation still works.
+- [ ] `node scripts/audit-indexability.mjs` passes when route/metadata/indexing-sensitive files changed.
 - [ ] `node scripts/audit-nav-footer.mjs` passes.
 - [ ] No stray local server is left running after verification.
 

@@ -153,6 +153,26 @@ Do not remove an existing footer route without explicit approval.
 Run `node scripts/audit-nav-footer.mjs` after header or footer changes; it
 checks labels and core footer routes for English and Dutch pages.
 
+## Indexability Rule
+
+Google discovery should stay boring and explicit:
+
+- `robots.txt` must allow normal search crawling and point to
+  `https://solvyr.com/sitemap.xml`.
+- Every public HTML page should have a title, meta description, canonical URL,
+  Open Graph title/description, and matching `html lang`.
+- Public HTML pages should be listed in `sitemap.xml` under HTTPS canonical
+  URLs.
+- English/Dutch counterpart pages should carry reciprocal `hreflang` links.
+- Do not add `noindex`, remove canonical links, or leave stale sitemap entries
+  without explicit approval.
+
+Run `node scripts/audit-indexability.mjs` when adding, removing, renaming,
+translating, or moving a public page, or when changing metadata, canonical URLs,
+hreflang, `robots.txt`, `sitemap.xml`, header links, or footer links. Body-copy
+only edits usually do not need it unless they change the page's search promise
+or first-screen intent.
+
 ## Evidence Boundaries
 
 When mentioning proof, stay specific:
