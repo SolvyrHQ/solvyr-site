@@ -76,7 +76,7 @@
           />
           <div class="brandtext">
             <div class="name">Solvyr</div>
-            <div class="tag">Fast Corpus for AI teams</div>
+            <div class="tag">Fast Corpus for European AI teams</div>
           </div>
         </a>
 
@@ -539,7 +539,8 @@
           <h1 id="security-title">Security for a bounded pilot: lifecycle, access, deletion, and data minimization.</h1>
           <p>
             Practical hygiene for low- or moderate-sensitivity pilot workloads,
-            with clear limits before data runs.
+            with clear limits before data runs. For European pilots, execution
+            context is part of that boundary.
           </p>
         </div>
 
@@ -548,6 +549,7 @@
             <h2 id="level-one-title">What we can define for a pilot</h2>
             <ul class="cleanList">
               <li>Data lifecycle, retention, and deletion</li>
+              <li>Execution and storage location for the pilot</li>
               <li>Input and output storage locations</li>
               <li>Scoped operator access</li>
               <li>Data minimization before execution</li>
@@ -566,6 +568,18 @@
             </ul>
           </section>
         </div>
+
+        <section class="band compact" aria-labelledby="europe-security-title">
+          <div>
+            <p class="eyebrow">European execution context</p>
+            <h2 id="europe-security-title">Location and oversight belong in the pilot boundary.</h2>
+          </div>
+          <p>
+            For archive, public-sector, and European AI pilots, execution
+            location, storage location, retention, deletion, and operator access
+            can be made explicit before data is shared.
+          </p>
+        </section>
 
         <section class="band compact" aria-labelledby="redaction-title">
           <div>
@@ -598,6 +612,10 @@
             <div>
               <dt>Data lifecycle</dt>
               <dd>What is uploaded, produced, retained, deleted, and when.</dd>
+            </div>
+            <div>
+              <dt>Execution context</dt>
+              <dd>Where pilot work runs and where input, output, and scratch artifacts are stored.</dd>
             </div>
             <div>
               <dt>Scoped access</dt>

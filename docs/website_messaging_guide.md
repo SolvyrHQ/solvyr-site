@@ -15,6 +15,7 @@ Solvyr turns bounded document and text backlogs into accepted AI-ready outputs.
 Current public front door:
 
 - Solvyr Fast Corpus
+- Header tagline: `Fast Corpus for European AI teams`
 - Clean PDF or text backlogs to AI-ready JSONL
 - Outputs: extracted text, chunks, embeddings, stable IDs, run report
 - Controlled async pilot, not open self-serve
@@ -70,6 +71,30 @@ Avoid:
 The right sequence is: document backlog, inspectable output, predictable run,
 then European control/sovereignty context.
 
+In the header, keep the tagline short:
+
+- English: `Fast Corpus for European AI teams`
+- Dutch: `Fast Corpus voor Europese AI-teams`
+
+Do not expand the tagline into a long sovereignty or public-sector sentence.
+
+## Security And European Context
+
+European execution context can appear under Security as a governance boundary,
+not as a blanket security guarantee.
+
+Good:
+
+- execution and storage location for the pilot
+- retention, deletion, and operator access defined before data is shared
+- location and oversight belong in the pilot boundary
+
+Avoid:
+
+- `Europe = secure`
+- mature compliance, government-cloud, or confidential-compute claims
+- implying distribution itself creates confidentiality
+
 ## First-Screen Rule
 
 The first viewport must answer the felt customer problem:
@@ -102,6 +127,7 @@ Use:
 - cost-effective backlog processing
 - European execution context
 - archives, libraries, municipalities, and public-sector teams
+- execution and storage location for the pilot
 
 Avoid:
 
@@ -254,6 +280,7 @@ Do not imply:
 - mature enterprise SLA
 - confidential-compute guarantees
 - broad self-serve availability
+- European execution as a blanket security guarantee
 
 ## Agent-Readable Consistency
 
@@ -310,3 +337,5 @@ Before publishing a website change, ask:
 - Would a connector know exactly who to introduce?
 - For archives/public-sector outreach, is the European sovereignty angle visible
   without becoming an abstract infrastructure pitch?
+- Under Security, is European context framed as explicit pilot boundaries rather
+  than a broad compliance or confidentiality claim?

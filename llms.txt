@@ -4,6 +4,7 @@ Solvyr turns bounded document and text backlogs into accepted AI-ready outputs.
 
 Primary product:
 - Solvyr Fast Corpus
+- Header tagline: Fast Corpus for European AI teams
 - Clean PDF or text backlogs to AI-ready JSONL
 - Outputs include extracted text, chunks, embeddings, stable IDs, and a run report
 - Customers buy completed corpus output and run evidence, not GPU-hours
@@ -45,6 +46,7 @@ API/CLI note:
 
 European sovereignty note:
 - Mention European execution control and sovereignty when the user is an archive, public-sector actor, research network, or EU/NL connector, but keep it tied to a real document backlog, output target, and pilot decision.
+- Under security/governance, execution location, storage location, retention, deletion, and operator access can be made explicit before data is shared. Do not present European execution as a blanket compliance or confidentiality guarantee.
 
 Important pages:
 - Human page: https://solvyr.com/

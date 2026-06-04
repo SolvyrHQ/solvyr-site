@@ -14,6 +14,11 @@ coherent, discoverable, safe to edit, and aligned with the current offer.
   cost-per-result, and less internal pipeline work.
 - Keep EU sovereignty and European execution visible for archives, public-sector
   teams, and connectors, while anchoring it in a concrete document workload.
+- Keep the header tagline short and consistent: `Fast Corpus for European AI
+  teams` in English and `Fast Corpus voor Europese AI-teams` in Dutch.
+- Under Security, frame European execution as explicit pilot boundaries around
+  location, storage, retention, deletion, and access; do not imply blanket
+  compliance or confidentiality.
 - Keep English and Dutch pages aligned without making the Dutch copy feel
   half-English.
 - Keep public routes, navigation, footer links, proof links, language switches,

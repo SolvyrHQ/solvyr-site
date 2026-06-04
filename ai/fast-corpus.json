@@ -2,6 +2,7 @@
   "product": "Solvyr Fast Corpus",
   "provider": "Solvyr",
   "phase": "controlled_trial",
+  "header_tagline": "Fast Corpus for European AI teams",
   "summary": "Clean PDF and text backlogs to AI-ready JSONL with extracted text, chunks, embeddings, stable IDs, and an inspectable run report at a predictable starting unit price.",
   "positioning": "Customers buy completed corpus output and run evidence, not GPU-hours, API/CLI access, or a platform project.",
   "cost_positioning": "Cost-effective backlog processing with a scoped run, price per processed page, and a decision based on inspected output.",
@@ -54,7 +55,7 @@
     "pilot_required": true,
     "execution": "async"
   },
-  "security_boundary": "Low- or moderate-sensitivity pilot workloads. Sensitive or regulated data requires prior agreement.",
+  "security_boundary": "Low- or moderate-sensitivity pilot workloads. Sensitive or regulated data requires prior agreement. For archive, public-sector, and European AI pilots, execution location, storage location, retention, deletion, and operator access can be made explicit before data is shared; this is governance context, not a blanket compliance or confidentiality guarantee.",
   "contact": "https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=agent-packet",
   "human_page": "https://solvyr.com/",
   "about": "https://solvyr.com/about.html",

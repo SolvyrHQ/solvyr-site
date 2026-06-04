@@ -8,10 +8,12 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] `docs/website_manager_agent.md` was followed for judgement/approval thresholds.
 - [ ] First screen leads with document/text backlog to AI-ready output.
 - [ ] The page names the concrete output: JSONL, chunks, embeddings, stable IDs, run report.
+- [ ] Header tagline stays short: `Fast Corpus for European AI teams` / `Fast Corpus voor Europese AI-teams`.
 - [ ] Cost is framed as a predictable scoped run or cost-per-result, not as a footnote.
 - [ ] Infrastructure appears as support, not the headline.
 - [ ] EU sovereignty / European execution is visible when public-sector, archive, or connector outreach is in scope.
 - [ ] Sovereignty language stays attached to a real workload, output, and pilot decision.
+- [ ] Security frames European context as explicit pilot boundaries, not as a blanket compliance or confidentiality claim.
 - [ ] API/CLI language, if present, supports integration or handoff rather than becoming the public CTA.
 - [ ] CTAs describe the work or decision, not generic platform access.
 - [ ] Exclusions are still honest: OCR-heavy, sensitive data, custom extraction, mature SLA.

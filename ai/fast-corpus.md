@@ -3,6 +3,7 @@
 Solvyr Fast Corpus turns clean PDF and text backlogs into AI-ready JSONL
 with extracted text, chunks, embeddings, stable IDs, and an inspectable
 run report at a predictable starting unit price for standard batches.
+The public header tagline is: Fast Corpus for European AI teams.
 
 Fast Corpus is the first concrete offer. The customer buys completed
 corpus output and run evidence, not GPU-hours, API access, CLI access, or
@@ -119,6 +120,11 @@ Problem-shaped pages:
 Fast Corpus is designed first for low- or moderate-sensitivity pilot
 workloads. Sensitive or regulated data requires prior agreement and may
 be out of scope for the current phase.
+
+For archive, public-sector, and European AI pilots, execution location,
+storage location, retention, deletion, and operator access can be made
+explicit before data is shared. Treat this as governance and pilot-boundary
+context, not as a blanket compliance or confidentiality guarantee.
 
 Do not send sensitive source data through public forms or email.
 
