@@ -10,10 +10,14 @@ coherent, discoverable, safe to edit, and aligned with the current offer.
 
 - Preserve the workload-first message: bounded document/text backlog to
   AI-ready corpus output and run evidence.
+- Preserve the adjacent public-data message when relevant: recurring,
+  reviewable batch checks over public/test metadata exports, producing issue
+  lists, suggested fixes, caveats, and run evidence.
 - Keep cost messaging clear enough to motivate action: predictable scoped run,
   cost-per-result, and less internal pipeline work.
 - Keep EU sovereignty and European execution visible for archives, public-sector
-  teams, and connectors, while anchoring it in a concrete document workload.
+  teams, and connectors, while anchoring it in a concrete document or
+  public-data workload.
 - Keep the header tagline short and consistent: `Fast Corpus for European AI
   teams` in English and `Fast Corpus voor Europese AI-teams` in Dutch.
 - Under Security, frame European execution as explicit pilot boundaries around

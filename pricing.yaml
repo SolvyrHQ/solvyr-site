@@ -16,6 +16,7 @@ starting_price:
   excluded_or_scoped_separately:
     - OCR-heavy scans
     - custom enrichment
+    - public-data quality runs
     - sensitive-data workflows
     - unusual formats
     - recurring refreshes

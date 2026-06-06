@@ -2,7 +2,7 @@ service: Solvyr
 product: Solvyr Fast Corpus
 phase: controlled_trial
 header_tagline: Fast Corpus for European AI teams
-summary: Clean PDF and text backlogs to AI-ready JSONL with extracted text, chunks, embeddings, stable IDs, and an inspectable run report at a predictable starting unit price.
+summary: Clean PDF and text backlogs to AI-ready JSONL with extracted text, chunks, embeddings, stable IDs, and an inspectable run report at a predictable starting unit price. Adjacent scoped use cases include recurring public-data quality runs over public or test metadata exports.
 positioning: Customers buy completed corpus output and run evidence, not GPU-hours, API/CLI access, or a platform project.
 cost_positioning: Cost-effective backlog processing with a scoped run, price per processed page, and a decision based on inspected output.
 api_cli_positioning: API/CLI language is integration or handoff context, not the primary public offer.
@@ -21,6 +21,7 @@ best_for:
   - evaluation dataset preparation
   - fine-tuning prep datasets
   - recurring corpus refresh or enrichment
+  - public-data metadata quality checks before publication, harvesting, indexing, or downstream reuse
   - teams that want a cost-effective corpus run without building another internal pipeline
   - archives, libraries, municipalities, research networks, and public-sector teams that want European execution-control context
   - public or semi-public connector introductions tied to real document-heavy AI workloads
@@ -36,18 +37,27 @@ supported_inputs:
   - clean digital PDFs
   - text files
   - text-like exports
+  - public or test catalog metadata exports scoped as public-data quality runs
 outputs:
   - extracted text
   - chunks
   - embeddings
   - stable IDs
   - run report
+  - issue CSV/JSON, record-level notes, suggested fixes, and caveats for public-data quality runs
 pricing:
   starting_amount: 0.95
   currency: EUR
   unit: 1000_pages
   taxes: excluding VAT and taxes unless agreed otherwise
   qualification: standard clean digital PDF/text batch processing
+scoped_separately:
+  - OCR-heavy scans
+  - custom enrichment
+  - public-data quality runs
+  - sensitive-data workflows
+  - unusual formats
+  - recurring refreshes
 links:
   human_page: https://solvyr.com/
   about: https://solvyr.com/about.html
@@ -57,7 +67,11 @@ links:
   agent_brief: https://solvyr.com/ai/fast-corpus.md
   agent_packet: https://solvyr.com/ai/fast-corpus.json
   pdf_to_rag_corpus: https://solvyr.com/use-cases/pdf-to-rag-corpus.html
+  pdf_to_rag_corpus_nl: https://solvyr.com/use-cases/pdf-to-rag-corpus-nl.html
   document_reindexing: https://solvyr.com/use-cases/document-reindexing.html
+  document_reindexing_nl: https://solvyr.com/use-cases/document-reindexing-nl.html
+  public_data_quality: https://solvyr.com/use-cases/public-data-quality.html
+  public_data_quality_nl: https://solvyr.com/use-cases/public-data-quality-nl.html
   proof_100_pdf_run: https://solvyr.com/proof/100-pdf-fast-corpus-run.html
   sample_output_contract: https://solvyr.com/sample-output.html
   pricing: https://solvyr.com/pricing.yaml

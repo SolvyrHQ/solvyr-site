@@ -6,8 +6,8 @@ Use this checklist before shipping future Solvyr website changes.
 
 - [ ] `docs/website_messaging_guide.md` was read before editing.
 - [ ] `docs/website_manager_agent.md` was followed for judgement/approval thresholds.
-- [ ] First screen leads with document/text backlog to AI-ready output.
-- [ ] The page names the concrete output: JSONL, chunks, embeddings, stable IDs, run report.
+- [ ] First screen leads with document/text backlog to AI-ready output, or for public-data pages, a public/test metadata export to a reviewable quality report.
+- [ ] The page names the concrete output: JSONL, chunks, embeddings, stable IDs, run report, or issue list/suggested fixes/caveats for public-data quality runs.
 - [ ] Header tagline stays short: `Fast Corpus for European AI teams` / `Fast Corpus voor Europese AI-teams`.
 - [ ] Cost is framed as a predictable scoped run or cost-per-result, not as a footnote.
 - [ ] Infrastructure appears as support, not the headline.
@@ -17,8 +17,9 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] API/CLI language, if present, supports integration or handoff rather than becoming the public CTA.
 - [ ] CTAs describe the work or decision, not generic platform access.
 - [ ] Exclusions are still honest: OCR-heavy, sensitive data, custom extraction, mature SLA.
-- [ ] Product-page header navigation stays stable; do not invent contextual top-right nav per page.
+- [ ] Product-page header navigation stays stable, including the `Use cases` / `Toepassingen` dropdown; do not invent contextual top-right nav per page.
 - [ ] Existing primary nav routes, especially `Fit` and `Security`, remain reachable unless explicitly approved.
+- [ ] Use-case dropdown links stay parallel in English and Dutch.
 - [ ] Footer links stay stable by language; do not randomly drop `About`/`Over`, `Connectors`, legal/privacy, or agent-readable links.
 
 ## Consistency
@@ -28,6 +29,7 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Dutch pages link to Dutch counterparts when those counterparts exist.
 - [ ] Pages with translated counterparts keep the EN/NL language switch visible.
 - [ ] Use-case pages still point to a bounded backlog/corpus problem.
+- [ ] Public-data use-case pages still point to recurring batch checks over public/test metadata exports, not generic metadata validation infrastructure.
 - [ ] `about.html` and `connectors.html` reinforce workload-first positioning.
 - [ ] If public routes, metadata, canonicals, hreflang, `robots.txt`, or `sitemap.xml` changed, run the indexability audit.
 - [ ] Agent-readable files match the human copy:

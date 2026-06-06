@@ -6,7 +6,13 @@ const repoRoot = dirname(dirname(fileURLToPath(import.meta.url)));
 
 const expected = {
   en: {
-    nav: ["Fast Corpus", "Fit", "Output", "Proof", "Security", "Pilot"],
+    nav: ["Fast Corpus", "Use cases", "Fit", "Output", "Proof", "Security", "Pilot"],
+    useCases: ["PDF to RAG corpus", "Document re-indexing", "Public-data quality runs"],
+    useCaseHrefIncludes: {
+      "PDF to RAG corpus": "use-cases/pdf-to-rag-corpus.html",
+      "Document re-indexing": "use-cases/document-reindexing.html",
+      "Public-data quality runs": "use-cases/public-data-quality.html",
+    },
     footer: ["About", "Connectors", "Privacy", "Legal", "llms.txt", "AI brief", "Pricing YAML", "Pilot intake"],
     footerHrefIncludes: {
       About: "about.html",
@@ -20,7 +26,13 @@ const expected = {
     },
   },
   nl: {
-    nav: ["Fast Corpus", "Fit", "Output", "Proefrun", "Security", "Pilot"],
+    nav: ["Fast Corpus", "Toepassingen", "Fit", "Output", "Proefrun", "Security", "Pilot"],
+    useCases: ["PDF naar RAG-corpus", "Documenten herindexeren", "Publieke datakwaliteit"],
+    useCaseHrefIncludes: {
+      "PDF naar RAG-corpus": "use-cases/pdf-to-rag-corpus-nl.html",
+      "Documenten herindexeren": "use-cases/document-reindexing-nl.html",
+      "Publieke datakwaliteit": "use-cases/public-data-quality-nl.html",
+    },
     footer: ["Over", "Connectors", "Privacy", "Juridisch", "llms.txt", "AI brief", "Pricing YAML", "Pilot intake"],
     footerHrefIncludes: {
       Over: "about-nl.html",
@@ -55,6 +67,17 @@ function textLabels(fragment) {
   );
 }
 
+function primaryNavLabels(fragment) {
+  return [...fragment.matchAll(/<(a|summary)\b([^>]*)>([\s\S]*?)<\/\1>/g)]
+    .filter((match) => /\bclass="[^"]*\btab\b/.test(match[2]))
+    .map((match) =>
+      match[3]
+        .replace(/<[^>]+>/g, "")
+        .replace(/\s+/g, " ")
+        .trim()
+    );
+}
+
 function links(fragment) {
   return [...fragment.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/g)].map((match) => {
     const href = match[1].match(/\shref="([^"]+)"/)?.[1] || "";
@@ -64,6 +87,10 @@ function links(fragment) {
       .trim();
     return { href, label };
   });
+}
+
+function dropdownFragment(fragment) {
+  return fragment.match(/<div class="dropdownMenu">([\s\S]*?)<\/div>/)?.[1] || "";
 }
 
 function languageFor(relPath) {
@@ -90,8 +117,17 @@ for (const file of walk(repoRoot).sort()) {
   if (!nav) {
     failures.push(`${relPath} nav: missing .tabs`);
   } else {
-    const result = compare(relPath, "nav", textLabels(nav[0]), expected[lang].nav);
+    const result = compare(relPath, "nav", primaryNavLabels(nav[0]), expected[lang].nav);
     if (result) failures.push(result);
+    const useCaseLinks = links(dropdownFragment(nav[0]));
+    const dropdownResult = compare(relPath, "use-case dropdown", useCaseLinks.map((link) => link.label), expected[lang].useCases);
+    if (dropdownResult) failures.push(dropdownResult);
+    for (const link of useCaseLinks) {
+      const required = expected[lang].useCaseHrefIncludes[link.label];
+      if (required && !link.href.includes(required)) {
+        failures.push(`${relPath} use-case href for ${link.label}: expected to include ${required}, got ${link.href}`);
+      }
+    }
   }
 
   if (!footer) {

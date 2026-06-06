@@ -19,8 +19,13 @@ Current public front door:
 - Clean PDF or text backlogs to AI-ready JSONL
 - Outputs: extracted text, chunks, embeddings, stable IDs, run report
 - Controlled async pilot, not open self-serve
+- Adjacent public use case: recurring public-data quality runs over public or
+  test metadata exports, with issue lists, suggested fixes, caveats, and run
+  reports
 
 The customer buys completed corpus output and run evidence, not GPU-hours.
+For public-data quality runs, the customer buys recurring, reviewable batch
+work around an export or refresh cycle, not generic metadata tooling.
 
 ## Cost Messaging Rule
 
@@ -116,12 +121,16 @@ Use:
 
 - document backlogs
 - clean PDF and text batches
+- public or test metadata exports
 - AI-ready JSONL
 - accepted corpus output
 - run evidence
+- issue lists, suggested fixes, caveats, and quality reports
 - inspectable run report
 - bounded pilot
 - recurring corpus refresh
+- public-data quality runs
+- catalog refresh or metadata exchange
 - controlled distributed execution
 - predictable price per processed page
 - cost-effective backlog processing
@@ -141,6 +150,7 @@ Avoid:
 - sovereignty without a concrete workload
 - API/CLI-first positioning
 - abstract EU infrastructure pitch
+- metadata validation infrastructure as the headline
 
 ## Narrative Order
 
@@ -154,6 +164,10 @@ Use this order whenever possible:
    sovereignty, and European execution control.
 6. Infrastructure: controlled async execution underneath.
 
+For public-data quality pages, keep the same order but substitute the concrete
+workflow: public/test metadata export, recurring checks, issue list/suggested
+fixes/caveats, reviewer decision, and then European execution context.
+
 ## CTA Rules
 
 CTAs should name the work, not the internal product alone.
@@ -162,6 +176,7 @@ Good:
 
 - Scope a backlog run
 - Scope a PDF backlog run
+- Scope a public-data run
 - See the proof run
 - Open pilot intake
 
@@ -179,8 +194,14 @@ body links, but the top-right nav should not become contextual per page.
 
 Current product nav:
 
-- English: `Fast Corpus`, `Fit`, `Output`, `Proof`, `Security`, `Pilot`
-- Dutch: `Fast Corpus`, `Fit`, `Output`, `Proefrun`, `Security`, `Pilot`
+- English: `Fast Corpus`, `Use cases`, `Fit`, `Output`, `Proof`, `Security`, `Pilot`
+- Dutch: `Fast Corpus`, `Toepassingen`, `Fit`, `Output`, `Proefrun`, `Security`, `Pilot`
+
+`Use cases` / `Toepassingen` is a dropdown. Keep these entries stable:
+
+- English: `PDF to RAG corpus`, `Document re-indexing`, `Public-data quality runs`
+- Dutch: `PDF naar RAG-corpus`, `Documenten herindexeren`,
+  `Publieke datakwaliteit`
 
 `Pilot` should route to the intake page, not a page-specific local section.
 Do not remove an existing primary nav route without explicit approval.
@@ -322,6 +343,9 @@ Keep these lessons alive in future edits:
 - Sovereignty and European execution should be visible for NL/EU public-sector
   outreach, but anchored in a concrete corpus run.
 - Recurring refresh is the stronger business layer after a first backlog run.
+- Public-data quality runs are strongest when positioned as recurring,
+  explainable batch processing over public/test metadata, not as standalone
+  schema validation or generic metadata infrastructure.
 - Honest exclusions increase trust when they are specific and not
   self-undermining.
 
@@ -339,3 +363,5 @@ Before publishing a website change, ask:
   without becoming an abstract infrastructure pitch?
 - Under Security, is European context framed as explicit pilot boundaries rather
   than a broad compliance or confidentiality claim?
+- For public-data outreach, does the page name the export/refresh workflow,
+  reviewer, issue output, and downstream decision?

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Public-Data Quality Runs - Solvyr Fast Corpus</title>
+    <meta
+      name="description"
+      content="Run repeatable checks on public metadata, catalog exports, and harvest workflows with reviewable reports, issue lists, and controlled European execution context."
+    />
+    <meta property="og:title" content="Public-Data Quality Runs - Solvyr Fast Corpus" />
+    <meta
+      property="og:description"
+      content="Repeatable batch checks for public metadata, catalog exports, harvest workflows, and downstream data refreshes."
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://solvyr.com/use-cases/public-data-quality.html" />
+    <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
+    <link rel="canonical" href="https://solvyr.com/use-cases/public-data-quality.html" />
+    <link rel="alternate" hreflang="en" href="https://solvyr.com/use-cases/public-data-quality.html" />
+    <link rel="alternate" hreflang="nl" href="https://solvyr.com/use-cases/public-data-quality-nl.html" />
+    <link rel="alternate" hreflang="x-default" href="https://solvyr.com/use-cases/public-data-quality.html" />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <header class="top">
+      <div class="container topbar">
+        <a class="brand" href="/#overview" aria-label="Solvyr home">
+          <img class="brandlogo" src="../assets/brand/icon.png" alt="Solvyr icon" width="34" height="34" />
+          <div class="brandtext">
+            <div class="name">Solvyr</div>
+            <div class="tag">Fast Corpus for European AI teams</div>
+          </div>
+        </a>
+
+        <div class="headerTools">
+          <div class="languageSwitch" aria-label="Language selection">
+            <a class="lang active" href="public-data-quality.html" aria-label="English version"><span aria-hidden="true">🇬🇧</span><span>EN</span></a>
+            <a class="lang" href="public-data-quality-nl.html" aria-label="Nederlandse versie"><span aria-hidden="true">🇳🇱</span><span>NL</span></a>
+          </div>
+
+          <nav class="tabs" aria-label="Page navigation">
+            <a class="tab" href="/#overview">Fast Corpus</a>
+            <details class="navDropdown">
+              <summary class="tab active">Use cases</summary>
+              <div class="dropdownMenu">
+                <a href="/use-cases/pdf-to-rag-corpus.html">PDF to RAG corpus</a>
+                <a href="/use-cases/document-reindexing.html">Document re-indexing</a>
+                <a href="/use-cases/public-data-quality.html">Public-data quality runs</a>
+              </div>
+            </details>
+            <a class="tab" href="/#who">Fit</a>
+            <a class="tab" href="/#deliver">Output</a>
+            <a class="tab" href="/proof/100-pdf-fast-corpus-run.html">Proof</a>
+            <a class="tab" href="/#security">Security</a>
+            <a class="tab cta" href="../pilot-intake.html?intent=public-data-quality&source=public-data-quality-use-case">Pilot</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="container shell">
+      <section class="hero">
+        <p class="eyebrow">Use case</p>
+        <h1>Run repeatable checks on public metadata, catalog exports, and harvest workflows.</h1>
+        <p class="lede">
+          Solvyr supports reviewable batch runs over public or test metadata
+          before wider publication, harvesting, indexing, or downstream reuse.
+          It is not a catalog replacement; it is a controlled run that returns
+          issue lists, suggested fixes, caveats, and a decision-ready report.
+        </p>
+        <div class="heroActions">
+          <a class="button primary" href="../pilot-intake.html?intent=public-data-quality&source=public-data-quality-use-case">Scope a public-data run</a>
+          <a class="button secondary" href="../ai/fast-corpus.md">Read the agent brief</a>
+        </div>
+      </section>
+
+      <div class="summaryGrid">
+        <article class="panel">
+          <p class="miniLabel">Catalog quality</p>
+          <h2>Find issues before records move downstream.</h2>
+          <p>Check records for missing fields, broken links, stale references, inconsistent classifications, duplicates, and profile drift.</p>
+        </article>
+        <article class="panel">
+          <p class="miniLabel">Recurring runs</p>
+          <h2>Repeat the same workflow after exports refresh.</h2>
+          <p>Useful when metadata, portals, indexes, or reporting systems are refreshed on a predictable cycle.</p>
+        </article>
+        <article class="panel">
+          <p class="miniLabel">Review package</p>
+          <h2>Return visible evidence, not silent pass/fail.</h2>
+          <p>Each run should produce issue data, record-level notes, summary counts, caveats, and recommended next actions.</p>
+        </article>
+      </div>
+
+      <section class="split">
+        <article class="panel">
+          <h2>Use this when</h2>
+          <ul class="cleanList">
+            <li>You manage a public-data, archive, library, or research-data catalog.</li>
+            <li>You exchange metadata through DCAT, XML, CSV, JSON, or portal exports.</li>
+            <li>You need checks before publication, harvesting, indexing, or reuse.</li>
+            <li>The data is public, low-sensitivity, redacted, or safe test data.</li>
+            <li>An internal owner can review suggested fixes before anything changes.</li>
+          </ul>
+        </article>
+        <article class="panel mutedPanel">
+          <h2>Not for</h2>
+          <ul class="cleanList">
+            <li>Replacing CKAN, GeoNetwork, Dataverse, or other catalog software.</li>
+            <li>Automatic production writes without human review.</li>
+            <li>Compliance certification or formal data-quality accreditation.</li>
+            <li>Highly sensitive data without prior agreement.</li>
+            <li>Realtime monitoring or incident response.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="band compact" aria-labelledby="output-title">
+        <div>
+          <p class="eyebrow">Output</p>
+          <h2 id="output-title">What a public-data quality run returns.</h2>
+        </div>
+        <p>
+          A typical bundle can include issue CSV/JSON, record-level notes,
+          broken-link and stale-reference findings, schema or profile warnings,
+          duplicate and classification signals, enrichment suggestions, summary
+          counts, caveats, and a reviewed recommendation for the next run.
+        </p>
+      </section>
+
+      <section class="band compact" aria-labelledby="boundary-title">
+        <div>
+          <p class="eyebrow">Boundary</p>
+          <h2 id="boundary-title">Start with public or test metadata and a narrow acceptance rule.</h2>
+        </div>
+        <p>
+          This is strongest when the first run has a bounded export, visible
+          validation criteria, and a clear reviewer. Solvyr should not receive
+          sensitive production data through public forms or email; transfer,
+          retention, deletion, and operator access need a written scope first.
+        </p>
+      </section>
+
+      <section class="band compact" aria-labelledby="next-title">
+        <div>
+          <p class="eyebrow">Next step</p>
+          <h2 id="next-title">Scope one export or refresh cycle.</h2>
+        </div>
+        <p>
+          Share the record count, export format, current catalog or exchange
+          process, known quality problems, target downstream system, recurrence,
+          sensitivity, and how your team would validate the report.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footerInner">
+        <div>&copy; <span id="y"></span> Solvyr</div>
+        <div class="footerLinks">
+          <a href="../about.html">About</a>
+          <a href="../connectors.html">Connectors</a>
+          <a href="../privacy.html">Privacy</a>
+          <a href="../legal.html">Legal</a>
+          <a href="../llms.txt">llms.txt</a>
+          <a href="../ai/fast-corpus.md">AI brief</a>
+          <a href="../pricing.yaml">Pricing YAML</a>
+          <a href="../pilot-intake.html?intent=public-data-quality&source=public-data-quality-use-case">Pilot intake</a>
+        </div>
+      </div>
+    </footer>
+    <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  </body>
+</html>
