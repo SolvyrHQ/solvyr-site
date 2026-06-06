@@ -187,6 +187,18 @@ Weaker:
 - Get compute
 - Try the platform
 
+Every public use-case page under `use-cases/` should include a first-screen
+`heroActions` block with:
+
+- a primary button that scopes the specific run or workload
+- a secondary human-facing proof, sample, or supporting context link
+
+Use-case pages should not rely only on footer links or lower-page CTAs. Keep
+the primary button label workload-specific, for example `Scope a PDF backlog
+run`, `Scope a re-indexing run`, or `Scope a public-data run`.
+Agent-readable files remain linked from the footer and machine-readable routes;
+they do not need a prominent hero CTA.
+
 ## Header Navigation Rule
 
 Keep product-page header navigation stable. Detail pages may have different

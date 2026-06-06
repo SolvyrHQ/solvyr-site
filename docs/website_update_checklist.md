@@ -16,6 +16,7 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Security frames European context as explicit pilot boundaries, not as a blanket compliance or confidentiality claim.
 - [ ] API/CLI language, if present, supports integration or handoff rather than becoming the public CTA.
 - [ ] CTAs describe the work or decision, not generic platform access.
+- [ ] Every `use-cases/*.html` page has first-screen hero buttons: workload-specific scope CTA plus a human-facing proof, sample, or supporting context link.
 - [ ] Exclusions are still honest: OCR-heavy, sensitive data, custom extraction, mature SLA.
 - [ ] Product-page header navigation stays stable, including the `Use cases` / `Toepassingen` dropdown; do not invent contextual top-right nav per page.
 - [ ] Existing primary nav routes, especially `Fit` and `Security`, remain reachable unless explicitly approved.

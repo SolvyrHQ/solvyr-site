@@ -143,6 +143,25 @@ for (const file of walk(repoRoot).sort()) {
       }
     }
   }
+
+  if (relPath.startsWith("use-cases/")) {
+    const hero = html.match(/<section class="hero"[\s\S]*?<\/section>/);
+    if (!hero) {
+      failures.push(`${relPath} use-case hero: missing .hero section`);
+    } else {
+      const heroLinks = links(hero[0]);
+      const hasPrimaryScopeCta = heroLinks.some(
+        (link) => link.href.includes("pilot-intake") && /\bScope\b/.test(link.label)
+      );
+      const hasSecondaryCta = heroLinks.length >= 2;
+      if (!hasPrimaryScopeCta) {
+        failures.push(`${relPath} use-case hero: missing workload-specific scope CTA`);
+      }
+      if (!hasSecondaryCta) {
+        failures.push(`${relPath} use-case hero: missing secondary CTA`);
+      }
+    }
+  }
 }
 
 if (failures.length) {
