@@ -16,6 +16,8 @@ const defaultUrls = [
   "https://solvyr.com/use-cases/document-reindexing-nl.html",
   "https://solvyr.com/use-cases/public-data-quality.html",
   "https://solvyr.com/use-cases/public-data-quality-nl.html",
+  "https://solvyr.com/use-cases/document-intake.html",
+  "https://solvyr.com/use-cases/document-intake-nl.html",
   "https://solvyr.com/proof/100-pdf-fast-corpus-run.html",
   "https://solvyr.com/sample-output.html",
   "https://solvyr.com/ai/fast-corpus.md",

@@ -11,6 +11,7 @@ Primary product:
 - Cost is framed as a predictable scoped run and cost per successful output, not as raw compute or tooling
 - Execution is async and manually approved during the controlled trial phase
 - Adjacent use cases include document re-indexing, recurring corpus refresh, and public-data quality runs over public or test metadata exports
+- Document intake is an adjacent use case for recurring invoices or business documents prepared into reviewable import-ready output before downstream ERP or operations workflows
 
 Broader system:
 - Controlled distributed execution for async AI workloads
@@ -62,6 +63,7 @@ Important pages:
 - PDF to RAG corpus use case: https://solvyr.com/use-cases/pdf-to-rag-corpus.html
 - Document re-indexing use case: https://solvyr.com/use-cases/document-reindexing.html
 - Public-data quality runs use case: https://solvyr.com/use-cases/public-data-quality.html
+- Document intake use case: https://solvyr.com/use-cases/document-intake.html
 - 100 PDF proof note: https://solvyr.com/proof/100-pdf-fast-corpus-run.html
 - Sample output contract: https://solvyr.com/sample-output.html
 - Capabilities: https://solvyr.com/capabilities.yaml

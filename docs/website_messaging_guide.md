@@ -214,6 +214,10 @@ Current product nav:
 - English: `PDF to RAG corpus`, `Document re-indexing`, `Public-data quality runs`
 - Dutch: `PDF naar RAG-corpus`, `Documenten herindexeren`,
   `Publieke datakwaliteit`
+- Add `Document intake` / `Documentintake` as an ERP-adjacent use case only
+  when it stays bounded to reviewable import-ready output and does not claim
+  direct ERP write-back, certified accounting automation, or named vendor
+  integration.
 
 `Pilot` should route to the intake page, not a page-specific local section.
 Do not remove an existing primary nav route without explicit approval.

@@ -78,9 +78,11 @@
     "https://solvyr.com/use-cases/pdf-to-rag-corpus.html",
     "https://solvyr.com/use-cases/document-reindexing.html",
     "https://solvyr.com/use-cases/public-data-quality.html",
+    "https://solvyr.com/use-cases/document-intake.html",
     "https://solvyr.com/use-cases/pdf-to-rag-corpus-nl.html",
     "https://solvyr.com/use-cases/document-reindexing-nl.html",
-    "https://solvyr.com/use-cases/public-data-quality-nl.html"
+    "https://solvyr.com/use-cases/public-data-quality-nl.html",
+    "https://solvyr.com/use-cases/document-intake-nl.html"
   ],
   "proof": [
     "https://solvyr.com/proof/100-pdf-fast-corpus-run.html",

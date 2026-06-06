@@ -7,11 +7,12 @@ const repoRoot = dirname(dirname(fileURLToPath(import.meta.url)));
 const expected = {
   en: {
     nav: ["Fast Corpus", "Use cases", "Fit", "Output", "Proof", "Security", "Pilot"],
-    useCases: ["PDF to RAG corpus", "Document re-indexing", "Public-data quality runs"],
+    useCases: ["PDF to RAG corpus", "Document re-indexing", "Public-data quality runs", "Document intake"],
     useCaseHrefIncludes: {
       "PDF to RAG corpus": "use-cases/pdf-to-rag-corpus.html",
       "Document re-indexing": "use-cases/document-reindexing.html",
       "Public-data quality runs": "use-cases/public-data-quality.html",
+      "Document intake": "use-cases/document-intake.html",
     },
     footer: ["About", "Connectors", "Privacy", "Legal", "llms.txt", "AI brief", "Pricing YAML", "Pilot intake"],
     footerHrefIncludes: {
@@ -27,11 +28,12 @@ const expected = {
   },
   nl: {
     nav: ["Fast Corpus", "Toepassingen", "Fit", "Output", "Proefrun", "Security", "Pilot"],
-    useCases: ["PDF naar RAG-corpus", "Documenten herindexeren", "Publieke datakwaliteit"],
+    useCases: ["PDF naar RAG-corpus", "Documenten herindexeren", "Publieke datakwaliteit", "Documentintake"],
     useCaseHrefIncludes: {
       "PDF naar RAG-corpus": "use-cases/pdf-to-rag-corpus-nl.html",
       "Documenten herindexeren": "use-cases/document-reindexing-nl.html",
       "Publieke datakwaliteit": "use-cases/public-data-quality-nl.html",
+      Documentintake: "use-cases/document-intake-nl.html",
     },
     footer: ["Over", "Connectors", "Privacy", "Juridisch", "llms.txt", "AI brief", "Pricing YAML", "Pilot intake"],
     footerHrefIncludes: {

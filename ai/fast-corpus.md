@@ -118,6 +118,7 @@ Problem-shaped pages:
 - PDF to RAG corpus: https://solvyr.com/use-cases/pdf-to-rag-corpus.html
 - Document re-indexing and corpus refresh: https://solvyr.com/use-cases/document-reindexing.html
 - Public-data quality runs: https://solvyr.com/use-cases/public-data-quality.html
+- Document intake: https://solvyr.com/use-cases/document-intake.html
 - 100 PDF proof note: https://solvyr.com/proof/100-pdf-fast-corpus-run.html
 - Sample output contract: https://solvyr.com/sample-output.html
 
