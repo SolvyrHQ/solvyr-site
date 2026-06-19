@@ -53,12 +53,53 @@ function canonical(html) {
   return html.match(/<link\b[^>]*rel="canonical"[^>]*href="([^"]+)"/i)?.[1] || "";
 }
 
+function robotsBlock(text, userAgent) {
+  const escaped = userAgent.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return (
+    text.match(
+      new RegExp(
+        `(?:^|\\n)User-agent:\\s*${escaped}\\s*\\n([\\s\\S]*?)(?=\\nUser-agent:|\\nSitemap:|$)`,
+        "i"
+      )
+    )?.[1] || ""
+  );
+}
+
 const failures = [];
 
 const robots = await get(`${origin}/robots.txt`);
 if (robots.status !== 200) failures.push(`robots.txt: expected 200, got ${robots.status}`);
 const robotsText = await robots.text();
 if (!robotsText.includes(`Sitemap: ${origin}/sitemap.xml`)) failures.push("robots.txt: missing sitemap reference");
+if (!/Content-signal:\s*search=yes,\s*ai-input=yes,\s*ai-train=no/i.test(robotsText)) {
+  failures.push("robots.txt: missing GEO content signals");
+}
+for (const userAgent of [
+  "OAI-SearchBot",
+  "ChatGPT-User",
+  "Claude-SearchBot",
+  "Claude-User",
+  "PerplexityBot",
+  "Perplexity-User",
+]) {
+  if (!/Allow:\s*\/\s*(?:\n|$)/i.test(robotsBlock(robotsText, userAgent))) {
+    failures.push(`robots.txt: ${userAgent} is not explicitly allowed`);
+  }
+}
+for (const userAgent of ["GPTBot", "ClaudeBot"]) {
+  if (!/Disallow:\s*\/\s*(?:\n|$)/i.test(robotsBlock(robotsText, userAgent))) {
+    failures.push(`robots.txt: ${userAgent} is not blocked`);
+  }
+}
+const googleExtendedBlock = robotsBlock(robotsText, "Google-Extended");
+for (const path of ["/llms.txt", "/ai/", "/capabilities.yaml", "/pricing.yaml"]) {
+  if (!googleExtendedBlock.includes(`Allow: ${path}`)) {
+    failures.push(`robots.txt: Google-Extended missing ${path}`);
+  }
+}
+if (!/Disallow:\s*\/\s*(?:\n|$)/i.test(googleExtendedBlock)) {
+  failures.push("robots.txt: Google-Extended is not bounded to the curated agent packet");
+}
 
 const sitemap = await get(`${origin}/sitemap.xml`);
 if (sitemap.status !== 200) failures.push(`sitemap.xml: expected 200, got ${sitemap.status}`);

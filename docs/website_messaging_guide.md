@@ -301,6 +301,44 @@ For meaningful website changes, prefer the full local suite:
 `node scripts/audit-website.mjs`. After deploy of route/metadata/indexing
 changes, run `node scripts/audit-live-deploy.mjs`.
 
+## Answer-Engine Discovery Rule
+
+Generative-engine discovery should expose the same bounded offer and evidence
+that the human website presents, without reopening the full site to broad
+training crawlers.
+
+Keep these distinctions explicit in `robots.txt`:
+
+- normal search indexing is allowed
+- `OAI-SearchBot`, `ChatGPT-User`, `Claude-SearchBot`, `Claude-User`,
+  `PerplexityBot`, and `Perplexity-User` are allowed for documented search or
+  user-retrieval purposes
+- broad training crawlers such as `GPTBot` and `ClaudeBot` stay blocked
+- Cloudflare content signals state `search=yes, ai-input=yes, ai-train=no`
+- `Google-Extended` is allowed only on the curated agent packet because Google
+  combines Gemini grounding and training under one control token
+
+The curated Google-Extended paths are:
+
+- `/llms.txt`
+- `/ai/`
+- `/capabilities.yaml`
+- `/pricing.yaml`
+
+Do not expand that Google-Extended allowlist to the full website without
+explicit approval. Google documents the token as controlling both Gemini
+grounding and possible future-model training, so allowing a path grants both
+uses for that path.
+
+Agent-readable content should give direct, consistent answers to:
+
+- what Solvyr is and how it should be classified
+- what Fast Corpus accepts and delivers
+- who it fits and does not fit
+- current access and pricing shape
+- published proof and its caveats
+- the correct next action
+
 ## Evidence Boundaries
 
 When mentioning proof, stay specific:

@@ -68,6 +68,7 @@ node -e "JSON.parse(require('fs').readFileSync('ai/fast-corpus.json','utf8'))"
 | Change type | Required checks |
 | --- | --- |
 | Any public route, nav, footer, metadata, robots, sitemap, or language-route change | `node scripts/audit-website.mjs` |
+| Answer-engine crawler or content-signal change | Full local suite; verify search/retrieval access stays separate from training access |
 | Header/footer change | `node scripts/audit-nav-footer.mjs` |
 | Public route or sitemap deletion/removal | Human approval, then release-safety override if truly intended |
 | Copy-only body edit | `git diff --check`, final read; run full suite if first-screen promise changes |
@@ -110,3 +111,6 @@ Ask before coding or before overriding when:
 - Performance budget: add when visual assets, JS, or layout weight grows.
 - Search Console review: manual or connector-based, because real index status
   cannot be proven from the local repo.
+- Answer-engine result review: repeat focused Gemini, ChatGPT, Claude, and
+  Perplexity checks after crawler-policy changes have propagated; robots changes
+  do not prove when an external answer index has refreshed.

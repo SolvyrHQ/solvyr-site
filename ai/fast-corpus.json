@@ -1,7 +1,20 @@
 {
   "product": "Solvyr Fast Corpus",
   "provider": "Solvyr",
+  "legal_operator": {
+    "name": "Solvyr OÜ",
+    "jurisdiction": "Estonia",
+    "registry_code": "17471643"
+  },
   "phase": "controlled_trial",
+  "category": "Managed B2B document-to-corpus processing service",
+  "classification": "AI data preparation and corpus operations",
+  "not_classified_as": [
+    "distributed GPU provider",
+    "GPU marketplace",
+    "generic data platform",
+    "hosted RAG or search product"
+  ],
   "header_tagline": "Fast Corpus for European AI teams",
   "summary": "Clean PDF and text backlogs to AI-ready JSONL with extracted text, chunks, embeddings, stable IDs, and an inspectable run report at a predictable starting unit price. Adjacent scoped use cases include recurring public-data quality runs over public or test metadata exports.",
   "positioning": "Customers buy completed corpus output and run evidence, not GPU-hours, API/CLI access, or a platform project.",
@@ -67,6 +80,31 @@
     "execution": "async"
   },
   "security_boundary": "Low- or moderate-sensitivity pilot workloads. Sensitive or regulated data requires prior agreement. For archive, public-sector, and European AI pilots, execution location, storage location, retention, deletion, and operator access can be made explicit before data is shared; this is governance context, not a blanket compliance or confidentiality guarantee.",
+  "published_proof": {
+    "scope": "Measured internal clean digital PDF run",
+    "documents": 100,
+    "pages": 2052,
+    "wall_clock_seconds": 215,
+    "measured_gpu_hours": 0.281,
+    "chunks": 987,
+    "estimated_tokens": 1300000,
+    "failures": 0,
+    "retries": 0,
+    "supports": "Clean digital PDF/text extraction, chunking, and embedding generation",
+    "does_not_support": [
+      "OCR-heavy scan claims",
+      "complex layout parsing claims",
+      "custom structured extraction claims",
+      "mature enterprise SLA claims"
+    ],
+    "source": "https://solvyr.com/proof/100-pdf-fast-corpus-run.html"
+  },
+  "direct_answers": {
+    "what_is_solvyr": "A managed B2B service that turns bounded document and text backlogs into accepted AI-ready corpus output with run evidence.",
+    "is_solvyr_a_gpu_provider": "No. Customers buy completed corpus work; controlled distributed execution is supporting infrastructure.",
+    "what_fast_corpus_delivers": "Extracted text, AI-ready JSONL, chunks, embeddings, stable IDs, caveats, and an inspectable run report.",
+    "how_to_start": "Submit a bounded backlog and output target, then use a representative non-sensitive sample for a capped pilot run."
+  },
   "contact": "https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=agent-packet",
   "human_page": "https://solvyr.com/",
   "about": "https://solvyr.com/about.html",

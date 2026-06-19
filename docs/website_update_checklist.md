@@ -33,6 +33,10 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Public-data use-case pages still point to recurring batch checks over public/test metadata exports, not generic metadata validation infrastructure.
 - [ ] `about.html` and `connectors.html` reinforce workload-first positioning.
 - [ ] If public routes, metadata, canonicals, hreflang, `robots.txt`, or `sitemap.xml` changed, run the indexability audit.
+- [ ] Answer-engine access still separates search/retrieval bots from training bots.
+- [ ] Cloudflare content signals remain `search=yes, ai-input=yes, ai-train=no`.
+- [ ] `Google-Extended` remains limited to the curated agent-readable paths unless broader access had explicit approval.
+- [ ] Agent-readable files directly classify Solvyr as managed document-to-corpus processing, not a GPU provider or generic data platform.
 - [ ] Agent-readable files match the human copy:
   - [ ] `llms.txt`
   - [ ] `ai/fast-corpus.md`

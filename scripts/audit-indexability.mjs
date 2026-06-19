@@ -102,6 +102,18 @@ function localizedPartner(relPath) {
   return existsSync(join(repoRoot, nl)) ? { en: relPath, nl } : null;
 }
 
+function robotsBlock(text, userAgent) {
+  const escaped = userAgent.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return (
+    text.match(
+      new RegExp(
+        `(?:^|\\n)User-agent:\\s*${escaped}\\s*\\n([\\s\\S]*?)(?=\\nUser-agent:|\\nSitemap:|$)`,
+        "i"
+      )
+    )?.[1] || ""
+  );
+}
+
 const failures = [];
 const htmlFiles = walk(repoRoot).sort();
 const sitemap = sitemapUrls();
@@ -115,6 +127,43 @@ if (!robots.includes("Sitemap: https://solvyr.com/sitemap.xml")) {
 const starBlock = robots.match(/User-agent:\s*\*([\s\S]*?)(?=\nUser-agent:|\s*$)/i)?.[1] || "";
 if (/Disallow:\s*\/\s*(?:\n|$)/i.test(starBlock)) {
   failures.push("robots.txt: User-agent * blocks /");
+}
+if (!/Content-signal:\s*search=yes,\s*ai-input=yes,\s*ai-train=no/i.test(starBlock)) {
+  failures.push("robots.txt: expected search=yes, ai-input=yes, ai-train=no content signals");
+}
+
+for (const userAgent of [
+  "OAI-SearchBot",
+  "ChatGPT-User",
+  "Claude-SearchBot",
+  "Claude-User",
+  "PerplexityBot",
+  "Perplexity-User",
+]) {
+  const block = robotsBlock(robots, userAgent);
+  if (!/Allow:\s*\/\s*(?:\n|$)/i.test(block)) {
+    failures.push(`robots.txt: ${userAgent} should be allowed for answer-engine discovery`);
+  }
+  if (/Disallow:\s*\/\s*(?:\n|$)/i.test(block)) {
+    failures.push(`robots.txt: ${userAgent} unexpectedly blocks /`);
+  }
+}
+
+for (const userAgent of ["GPTBot", "ClaudeBot"]) {
+  const block = robotsBlock(robots, userAgent);
+  if (!/Disallow:\s*\/\s*(?:\n|$)/i.test(block)) {
+    failures.push(`robots.txt: ${userAgent} should remain blocked as a training crawler`);
+  }
+}
+
+const googleExtendedBlock = robotsBlock(robots, "Google-Extended");
+for (const path of ["/llms.txt", "/ai/", "/capabilities.yaml", "/pricing.yaml"]) {
+  if (!googleExtendedBlock.includes(`Allow: ${path}`)) {
+    failures.push(`robots.txt: Google-Extended missing curated allow path ${path}`);
+  }
+}
+if (!/Disallow:\s*\/\s*(?:\n|$)/i.test(googleExtendedBlock)) {
+  failures.push("robots.txt: Google-Extended should remain blocked outside the curated agent packet");
 }
 
 for (const url of sitemap) {
