@@ -934,11 +934,26 @@ textarea{
   .navDropdown[open]{
     display:grid;
     gap:6px;
+    flex:1 0 100%;
+    width:100%;
+  }
+
+  .tabs:has(.navDropdown[open]){
+    overflow:visible;
+  }
+
+  .tabs:has(.navDropdown[open]) > .tab{
+    display:none;
+  }
+
+  .navDropdown[open] > summary{
+    width:100%;
   }
 
   .dropdownMenu{
     position:static;
-    min-width:220px;
+    min-width:0;
+    width:100%;
     box-shadow:none;
   }
 

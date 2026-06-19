@@ -132,6 +132,14 @@ for (const file of walk(repoRoot).sort()) {
     }
   }
 
+  if (relPath === "index.html" || relPath === "nl.html") {
+    if (
+      !/scrollIntoView\(\{\s*block:\s*"nearest",\s*inline:\s*"center"\s*\}\)/.test(html)
+    ) {
+      failures.push(`${relPath} nav: active mobile tab is not scrolled into view`);
+    }
+  }
+
   if (!footer) {
     failures.push(`${relPath} footer: missing .footerLinks`);
   } else {
@@ -164,6 +172,11 @@ for (const file of walk(repoRoot).sort()) {
       }
     }
   }
+}
+
+const styles = readFileSync(join(repoRoot, "styles.css"), "utf8");
+if (!/\.tabs:has\(\.navDropdown\[open\]\)\s*>\s*\.tab\s*\{[\s\S]*?display:\s*none/.test(styles)) {
+  failures.push("styles.css mobile nav: open use-case menu does not suppress clipped sibling tabs");
 }
 
 if (failures.length) {

@@ -53,6 +53,7 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] JSON files parse.
 - [ ] `git diff --check` passes.
 - [ ] Homepage renders without horizontal overflow on a narrow viewport.
+- [ ] On a narrow viewport, the active primary-nav tab scrolls into view and the open use-case menu does not leave clipped sibling tabs visible.
 - [ ] Main CTA target opens.
 - [ ] Tab navigation still works.
 - [ ] `node scripts/audit-website.mjs` passes for meaningful website changes.
