@@ -74,6 +74,7 @@ node -e "JSON.parse(require('fs').readFileSync('ai/fast-corpus.json','utf8'))"
 | Copy-only body edit | `git diff --check`, final read; run full suite if first-screen promise changes |
 | Positioning, pricing, proof, CTA, buyer, exclusions | Update messaging guide/checklist and agent-readable files if relevant |
 | Layout, responsive behavior, forms, interactions | Local suite plus browser check on desktop/mobile-relevant viewport |
+| Horizontally scrollable mobile navigation | Verify direct hash routes reveal the active tab and the expanded menu has a clean, unambiguous layout |
 | After deploy of route/metadata/indexing-sensitive changes | `node scripts/audit-live-deploy.mjs` |
 | Adding schema.org structured data | Add/run a structured-data audit and manually verify rich-result eligibility |
 | Large asset or layout-heavy change | Browser check; consider performance budget/PageSpeed check |

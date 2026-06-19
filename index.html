@@ -740,6 +740,7 @@
         const targetPage = pages.some((page) => page.dataset.page === pageName)
           ? pageName
           : "overview";
+        let activeTab = null;
 
         pages.forEach((page) => {
           page.classList.toggle("active", page.dataset.page === targetPage);
@@ -750,8 +751,15 @@
           if (tab.classList.contains("tab")) {
             tab.classList.toggle("active", isActive);
             tab.setAttribute("aria-selected", String(isActive));
+            if (isActive) activeTab = tab;
           }
         });
+
+        if (activeTab && window.matchMedia("(max-width: 560px)").matches) {
+          requestAnimationFrame(() => {
+            activeTab.scrollIntoView({ block: "nearest", inline: "center" });
+          });
+        }
 
         document.title =
           targetPage === "overview"
