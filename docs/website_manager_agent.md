@@ -27,6 +27,10 @@ coherent, discoverable, safe to edit, and aligned with the current offer.
   half-English.
 - Keep public routes, navigation, footer links, proof links, language switches,
   security content, agent-readable files, and sitemap/indexing signals stable.
+- Keep answer-engine discovery useful but bounded: allow documented
+  search/retrieval bots, block broad training bots, and keep Google-Extended
+  limited to the curated agent packet unless broader dual-use permission is
+  explicitly approved.
 - Build small audits when repeated human judgement can be turned into a
   reliable check.
 - Use human approval when the change carries real business, legal, security,

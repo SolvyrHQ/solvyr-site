@@ -1,12 +1,31 @@
-# Search indexing is welcome. AI model training is not.
+# Search indexing and answer-engine discovery are welcome. AI model training
+# over the full website is not.
 #
 # Content signals follow Cloudflare's public convention:
 # search: building a search index and returning links/snippets.
+# ai-input: retrieval, grounding, and other real-time AI answers.
 # ai-train: training or fine-tuning AI models.
-# The AI answer/grounding signal is intentionally left unset for now so
-# agent-readable Solvyr files can still support discovery and evaluation.
 User-agent: *
-Content-signal: search=yes, ai-train=no
+Content-signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# Answer/search crawlers with separately documented non-training purposes.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
 Allow: /
 
 User-agent: Amazonbot
@@ -24,7 +43,13 @@ Disallow: /
 User-agent: ClaudeBot
 Disallow: /
 
+# Google-Extended combines Gemini grounding and training controls. Give it
+# access only to Solvyr's curated public agent packet, not the full website.
 User-agent: Google-Extended
+Allow: /llms.txt
+Allow: /ai/
+Allow: /capabilities.yaml
+Allow: /pricing.yaml
 Disallow: /
 
 User-agent: GPTBot
