@@ -10,11 +10,13 @@ classification: AI data preparation and corpus operations
 not_classified_as:
   - distributed GPU provider
   - GPU marketplace
+  - generic compute orchestration layer
   - generic data platform
   - hosted RAG or search product
 header_tagline: Fast Corpus for European AI teams
 summary: Clean PDF and text backlogs to AI-ready JSONL with extracted text, chunks, embeddings, stable IDs, and an inspectable run report at a predictable starting unit price. Adjacent scoped use cases include recurring public-data quality runs over public or test metadata exports.
-positioning: Customers buy completed corpus output and run evidence, not GPU-hours, API/CLI access, or a platform project.
+positioning: Customers buy completed corpus output and run evidence, not GPU-hours, API/CLI access, an orchestration layer, or a platform project.
+build_vs_buy_positioning: A team can build and operate its own extraction, chunking, embedding, queueing, retry, and reporting pipeline, or buy a completed Fast Corpus run. Solvyr customers do not provision workers, operate queues, or assemble the pipeline.
 cost_positioning: Cost-effective backlog processing with a scoped run, price per processed page, and a decision based on inspected output.
 api_cli_positioning: API/CLI language is integration or handoff context, not the primary public offer.
 european_sovereignty_positioning: European execution control and sovereignty are relevant for archives, public-sector teams, research networks, and EU/NL connectors when tied to a real document backlog and pilot decision.
@@ -89,6 +91,7 @@ published_proof:
 direct_answers:
   what_is_solvyr: A managed B2B service that turns bounded document and text backlogs into accepted AI-ready corpus output with run evidence.
   is_solvyr_a_gpu_provider: No. Customers buy completed corpus work; controlled distributed execution is supporting infrastructure.
+  is_solvyr_an_orchestration_layer: No. Orchestration runs underneath the managed corpus service; customers buy the completed run rather than operating the scheduler or pipeline.
   what_fast_corpus_delivers: Extracted text, AI-ready JSONL, chunks, embeddings, stable IDs, caveats, and an inspectable run report.
   how_to_start: Submit a bounded backlog and output target, then use a representative non-sensitive sample for a capped pilot run.
 links:

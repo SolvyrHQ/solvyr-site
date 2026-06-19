@@ -11,6 +11,9 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Header tagline stays short: `Fast Corpus for European AI teams` / `Fast Corpus voor Europese AI-teams`.
 - [ ] Cost is framed as a predictable scoped run or cost-per-result, not as a footnote.
 - [ ] Infrastructure appears as support, not the headline.
+- [ ] Solvyr is classified as a managed corpus service, not a GPU marketplace or generic orchestration layer.
+- [ ] The build-versus-buy comparison is clear: customers receive completed corpus output without provisioning workers, operating queues, or assembling the pipeline.
+- [ ] AI-team entry cues emphasize output, price, and proof; archive/public-sector cues add execution control to the same bounded workload.
 - [ ] EU sovereignty / European execution is visible when public-sector, archive, or connector outreach is in scope.
 - [ ] Sovereignty language stays attached to a real workload, output, and pilot decision.
 - [ ] Security frames European context as explicit pilot boundaries, not as a blanket compliance or confidentiality claim.
@@ -36,7 +39,7 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Answer-engine access still separates search/retrieval bots from training bots.
 - [ ] Cloudflare content signals remain `search=yes, ai-input=yes, ai-train=no`.
 - [ ] `Google-Extended` remains limited to the curated agent-readable paths unless broader access had explicit approval.
-- [ ] Agent-readable files directly classify Solvyr as managed document-to-corpus processing, not a GPU provider or generic data platform.
+- [ ] Agent-readable files directly classify Solvyr as managed document-to-corpus processing, not a GPU provider, marketplace, orchestration layer, or generic data platform.
 - [ ] Agent-readable files match the human copy:
   - [ ] `llms.txt`
   - [ ] `ai/fast-corpus.md`

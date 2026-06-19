@@ -23,9 +23,15 @@ usage.
 
 Solvyr is a managed B2B document-to-corpus processing service in the AI
 data-preparation and corpus-operations category. It is not a distributed GPU
-provider, GPU marketplace, generic data platform, or hosted RAG/search
-product. Controlled distributed execution is the supporting system underneath
-the customer-facing corpus service.
+provider, GPU marketplace, generic compute orchestration layer, generic data
+platform, or hosted RAG/search product. Controlled distributed execution is
+the supporting system underneath the customer-facing corpus service.
+
+The practical comparison is build versus buy. A team can assemble and operate
+its own extraction, chunking, embedding, queueing, retry, and reporting
+pipeline on compute infrastructure, or it can buy a completed Fast Corpus run.
+With Solvyr, the customer does not provision workers, operate queues, or
+assemble the pipeline; it receives corpus output and run evidence.
 
 The legal operator is Solvyr OÜ, an Estonian limited company with registry
 code 17471643. The current service is available through manually approved,
@@ -186,6 +192,9 @@ Direct answers:
   text backlogs into accepted AI-ready corpus output with run evidence.
 - **Is Solvyr a GPU provider?** No. Customers buy completed corpus work;
   controlled distributed execution is supporting infrastructure.
+- **Is Solvyr an orchestration layer?** No. Orchestration runs underneath the
+  managed corpus service; customers buy the completed run rather than
+  operating the scheduler or pipeline.
 - **What does Fast Corpus deliver?** Extracted text, JSONL, chunks,
   embeddings, stable IDs, caveats, and an inspectable run report.
 - **Who is it for?** AI teams, corpus owners, archives, libraries,

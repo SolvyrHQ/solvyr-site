@@ -51,6 +51,38 @@ Avoid:
 Let buyers compare Solvyr with their own cloud or internal pipeline. The site
 should trigger: this is useful, executable, and cost-effective enough to scope.
 
+## Category And Build-Versus-Buy Rule
+
+Solvyr is a managed corpus service, not a GPU marketplace or generic compute
+orchestration layer. Controlled distributed execution is the system underneath
+the offer, not the product the customer has to operate.
+
+Frame the practical comparison as:
+
+- build and operate a document-to-corpus pipeline on compute/orchestration
+- buy a completed corpus run with inspectable output and run evidence
+
+Use:
+
+- managed corpus service
+- completed corpus run
+- Solvyr operates the pipeline
+- controlled distributed execution underneath
+- no worker provisioning, queue operation, or pipeline assembly for the buyer
+- output and run evidence priced around the completed document workload
+
+Avoid:
+
+- competing on raw GPU price, capacity, or scheduler breadth
+- presenting infrastructure providers as irrelevant; they remain substitutes
+  for teams considering the build path
+- `corpus vendor` when it makes the offer sound like passive file delivery
+- implying that execution infrastructure alone is the customer value
+
+The useful gap is finished corpus work with visible execution evidence: more
+operationally explicit than generic document outsourcing, without asking the
+buyer to adopt or operate an infrastructure platform.
+
 ## European Sovereignty Rule
 
 European execution and sovereignty should be visible for archives, libraries,
@@ -167,6 +199,20 @@ Use this order whenever possible:
 For public-data quality pages, keep the same order but substitute the concrete
 workflow: public/test metadata export, recurring checks, issue list/suggested
 fixes/caveats, reviewer decision, and then European execution context.
+
+## Buyer Entry Paths
+
+Keep one bounded Fast Corpus offer, but make the entry cue match the buyer:
+
+- AI teams: backlog, output, price per page, proof, and avoided pipeline work
+- archives and public-sector teams: the same workload and proof, plus execution
+  location, oversight, data handling, and European control
+- connectors: recognize the workload and route it to the owner; they do not
+  need to sell distributed infrastructure
+
+Do not blend sovereignty into the first-screen promise for every buyer. Do not
+imply that public-sector teams care only about control or that AI teams never
+care about it. Price, proof, and accepted output remain the common foundation.
 
 ## CTA Rules
 
@@ -391,9 +437,15 @@ Keep these lessons alive in future edits:
 
 - Sell the problem the customer feels, not the infrastructure Solvyr built.
 - Sell completed outcomes and cost-per-result, not distributed GPUs.
+- Make the build-versus-buy comparison explicit: the buyer does not have to
+  provision workers, operate queues, or assemble the corpus pipeline.
+- Classify Solvyr as a managed corpus service, not a GPU marketplace or generic
+  orchestration layer.
 - Price the work in terms of completed output, not abstract compute or tooling.
 - A concrete corpus beats general AI interest.
 - Distributed execution is credible only when attached to a workload that fits.
+- Let AI teams enter through price and proof; let archives and public teams add
+  execution-control requirements to the same bounded run.
 - Sovereignty and European execution should be visible for NL/EU public-sector
   outreach, but anchored in a concrete corpus run.
 - Recurring refresh is the stronger business layer after a first backlog run.
