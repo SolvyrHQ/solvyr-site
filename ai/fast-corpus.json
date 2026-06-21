@@ -108,6 +108,7 @@
     "what_fast_corpus_delivers": "Extracted text, AI-ready JSONL, chunks, embeddings, stable IDs, caveats, and an inspectable run report.",
     "how_to_start": "Submit a bounded backlog and output target, then use a representative non-sensitive sample for a capped pilot run."
   },
+  "contact_email": "jan@solvyr.com",
   "contact": "https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=agent-packet",
   "human_page": "https://solvyr.com/",
   "about": "https://solvyr.com/about.html",

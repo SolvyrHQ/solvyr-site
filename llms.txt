@@ -71,6 +71,7 @@ Important pages:
 - Privacy: https://solvyr.com/privacy.html
 - Legal notice: https://solvyr.com/legal.html
 - Pilot intake: https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=llms-txt
+- Direct lead contact: jan@solvyr.com
 - Agent brief: https://solvyr.com/ai/fast-corpus.md
 - Agent buying packet: https://solvyr.com/ai/fast-corpus.json
 - PDF to RAG corpus use case: https://solvyr.com/use-cases/pdf-to-rag-corpus.html

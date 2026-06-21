@@ -216,10 +216,12 @@
           </div>
 
           <p class="formNote">
-            De knop opent je e-mailclient met deze details. Voeg geen productie-
-            of gevoelige samples toe voordat er een schriftelijke scope en
-            overdrachtskanaal is afgesproken. Bronparameters uit agentleesbare
-            links worden automatisch meegenomen.
+            De knop opent een conceptmail aan
+            <a href="mailto:jan@solvyr.com">jan@solvyr.com</a> met deze
+            details. Voeg geen productie- of gevoelige samples toe voordat er
+            een schriftelijke scope en overdrachtskanaal is afgesproken.
+            Bronparameters uit agentleesbare links worden automatisch
+            meegenomen.
           </p>
           <div class="contactActions">
             <button class="button primary" type="submit">Bereid e-mail voor</button>
@@ -240,6 +242,7 @@
           <a href="llms.txt">llms.txt</a>
           <a href="ai/fast-corpus.md">AI brief</a>
           <a href="pricing.yaml">Pricing YAML</a>
+          <a href="mailto:jan@solvyr.com">jan@solvyr.com</a>
           <a href="pilot-intake-nl.html?intent=fast-corpus&source=pilot-intake-page">Pilot intake</a>
         </div>
       </div>
@@ -279,7 +282,7 @@
           .map(([label, value]) => `${label}:\n${String(value || "").trim() || "-"}`)
           .join("\n\n");
         const subject = encodeURIComponent("Solvyr Fast Corpus pilot");
-        window.location.href = `mailto:pilot@solvyr.com?subject=${subject}&body=${encodeURIComponent(body)}`;
+        window.location.href = `mailto:jan@solvyr.com?subject=${subject}&body=${encodeURIComponent(body)}`;
       });
     </script>
   </body>

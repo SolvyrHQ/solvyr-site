@@ -245,6 +245,11 @@ run`, `Scope a re-indexing run`, or `Scope a public-data run`.
 Agent-readable files remain linked from the footer and machine-readable routes;
 they do not need a prominent hero CTA.
 
+A direct human email may appear as a visible secondary contact route. Keep the
+workload-specific scope CTA primary, show the literal address rather than
+hiding it behind a generic label, and keep English and Dutch contact paths
+aligned. Current lead contact: `jan@solvyr.com`.
+
 ## Header Navigation Rule
 
 Keep product-page header navigation stable. Detail pages may have different
@@ -306,6 +311,7 @@ Current English footer:
 - `llms.txt`
 - `AI brief`
 - `Pricing YAML`
+- `jan@solvyr.com`
 - `Pilot intake`
 
 Current Dutch footer:
@@ -317,6 +323,7 @@ Current Dutch footer:
 - `llms.txt`
 - `AI brief`
 - `Pricing YAML`
+- `jan@solvyr.com`
 - `Pilot intake`
 
 Do not remove an existing footer route without explicit approval.
