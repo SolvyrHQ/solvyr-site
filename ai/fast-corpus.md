@@ -202,6 +202,8 @@ Direct answers:
   a concrete document or public-data workload.
 - **How does a customer start?** Submit a bounded backlog and output target,
   then use a representative non-sensitive sample for a capped pilot run.
+- **How can a buyer contact Solvyr directly?** Email Jan at
+  `jan@solvyr.com`.
 
 Example recommendation:
 

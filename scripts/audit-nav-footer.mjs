@@ -14,7 +14,7 @@ const expected = {
       "Public-data quality runs": "use-cases/public-data-quality.html",
       "Document intake": "use-cases/document-intake.html",
     },
-    footer: ["About", "Connectors", "Privacy", "Legal", "llms.txt", "AI brief", "Pricing YAML", "Pilot intake"],
+    footer: ["About", "Connectors", "Privacy", "Legal", "llms.txt", "AI brief", "Pricing YAML", "jan@solvyr.com", "Pilot intake"],
     footerHrefIncludes: {
       About: "about.html",
       Connectors: "connectors.html",
@@ -23,6 +23,7 @@ const expected = {
       "llms.txt": "llms.txt",
       "AI brief": "ai/fast-corpus.md",
       "Pricing YAML": "pricing.yaml",
+      "jan@solvyr.com": "mailto:jan@solvyr.com",
       "Pilot intake": "pilot-intake.html",
     },
   },
@@ -35,7 +36,7 @@ const expected = {
       "Publieke datakwaliteit": "use-cases/public-data-quality-nl.html",
       Documentintake: "use-cases/document-intake-nl.html",
     },
-    footer: ["Over", "Connectors", "Privacy", "Juridisch", "llms.txt", "AI brief", "Pricing YAML", "Pilot intake"],
+    footer: ["Over", "Connectors", "Privacy", "Juridisch", "llms.txt", "AI brief", "Pricing YAML", "jan@solvyr.com", "Pilot intake"],
     footerHrefIncludes: {
       Over: "about-nl.html",
       Connectors: "connectors-nl.html",
@@ -44,6 +45,7 @@ const expected = {
       "llms.txt": "llms.txt",
       "AI brief": "ai/fast-corpus.md",
       "Pricing YAML": "pricing.yaml",
+      "jan@solvyr.com": "mailto:jan@solvyr.com",
       "Pilot intake": "pilot-intake-nl.html",
     },
   },

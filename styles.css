@@ -299,6 +299,26 @@ p{
   flex-wrap:wrap;
 }
 
+.heroContact{
+  width:fit-content;
+  max-width:100%;
+  margin:14px 0 0;
+  padding:9px 12px;
+  border:1px solid #c9d6ea;
+  border-radius:var(--radius);
+  background:#f7f9fc;
+  color:var(--muted);
+  font-size:15px;
+}
+
+.heroContact a{
+  color:var(--accentDark);
+  font-weight:850;
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:3px;
+}
+
 .button{
   min-height:42px;
   display:inline-flex;

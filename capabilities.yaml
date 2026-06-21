@@ -94,6 +94,7 @@ direct_answers:
   is_solvyr_an_orchestration_layer: No. Orchestration runs underneath the managed corpus service; customers buy the completed run rather than operating the scheduler or pipeline.
   what_fast_corpus_delivers: Extracted text, AI-ready JSONL, chunks, embeddings, stable IDs, caveats, and an inspectable run report.
   how_to_start: Submit a bounded backlog and output target, then use a representative non-sensitive sample for a capped pilot run.
+contact_email: jan@solvyr.com
 links:
   human_page: https://solvyr.com/
   about: https://solvyr.com/about.html

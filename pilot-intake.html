@@ -216,10 +216,11 @@
           </div>
 
           <p class="formNote">
-            The button opens your email client with these details. Do not attach
-            production or sensitive samples until a written scope and transfer
-            channel are agreed. Source parameters from agent-readable links are
-            included automatically.
+            The button opens a draft to
+            <a href="mailto:jan@solvyr.com">jan@solvyr.com</a> with these
+            details. Do not attach production or sensitive samples until a
+            written scope and transfer channel are agreed. Source parameters
+            from agent-readable links are included automatically.
           </p>
           <div class="contactActions">
             <button class="button primary" type="submit">Prepare email</button>
@@ -240,6 +241,7 @@
           <a href="llms.txt">llms.txt</a>
           <a href="ai/fast-corpus.md">AI brief</a>
           <a href="pricing.yaml">Pricing YAML</a>
+          <a href="mailto:jan@solvyr.com">jan@solvyr.com</a>
           <a href="pilot-intake.html?intent=fast-corpus&source=pilot-intake-page">Pilot intake</a>
         </div>
       </div>
@@ -279,7 +281,7 @@
           .map(([label, value]) => `${label}:\n${String(value || "").trim() || "-"}`)
           .join("\n\n");
         const subject = encodeURIComponent("Solvyr Fast Corpus pilot");
-        window.location.href = `mailto:pilot@solvyr.com?subject=${subject}&body=${encodeURIComponent(body)}`;
+        window.location.href = `mailto:jan@solvyr.com?subject=${subject}&body=${encodeURIComponent(body)}`;
       });
     </script>
   </body>
