@@ -11,6 +11,10 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Header tagline stays short: `Fast Corpus for European AI teams` / `Fast Corpus voor Europese AI-teams`.
 - [ ] Cost is framed as a predictable scoped run or cost-per-result, not as a footnote.
 - [ ] Infrastructure appears as support, not the headline.
+- [ ] The About-page expansion story moves from a proven bounded workload to reusable execution capabilities without implying a broad platform is already available.
+- [ ] Any commercial-validation statement preserves its anonymous, conditional, non-binding boundary and does not imply revenue, deployment, procurement, or a formal partnership.
+- [ ] Research direction is framed as active work, not as formal verification, certification, or support for arbitrary sensitive workloads.
+- [ ] Execution-pool language is supply-neutral and based on explicit node eligibility; household machines do not define the company.
 - [ ] Solvyr is classified as a managed corpus service, not a GPU marketplace or generic orchestration layer.
 - [ ] The build-versus-buy comparison is clear: customers receive completed corpus output without provisioning workers, operating queues, or assembling the pipeline.
 - [ ] AI-team entry cues emphasize output, price, and proof; archive/public-sector cues add execution control to the same bounded workload.

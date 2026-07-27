@@ -93,3 +93,6 @@ Direct answers:
 - What does Fast Corpus deliver? Extracted text, JSONL, chunks, embeddings, stable IDs, caveats, and an inspectable run report.
 - Who is it for? AI teams, corpus owners, archives, libraries, municipalities, research networks, public-sector teams, and connectors with a concrete document or public-data workload.
 - How does a customer start? Submit a bounded backlog and output target through the pilot intake, then use a representative non-sensitive sample for a capped run.
+- What is the expansion path? Fast Corpus is the first bounded workload. Repeated corpus and document workflows exercise reusable scheduling, eligibility, retry, validation, and lifecycle-reporting capabilities for later bounded async AI workloads.
+- Is there external commercial validation? One bounded ERP-adjacent workflow has conditional, non-binding intent to negotiate a paid pilot if validation and mutually acceptable commercial, security, and operating terms are achieved. This is not a deployment, purchase order, unconditional payment obligation, or recurring revenue.
+- What is Solvyr researching? Workload-specific trust requirements, eligible execution environments, scheduler authority, result acceptance, bounded retries, lifecycle evidence, and privacy-conscious observability. Solvyr does not currently claim formal verification or certification.

@@ -24,6 +24,8 @@ starting_price:
 notes:
   - Starting price is an indicative acquisition wedge for standard clean digital PDF/text workloads.
   - Pricing should be explained as a predictable scoped run and cost per processed page, not raw compute, API access, or CLI access.
+  - The published starting unit covers standard clean processing; a complete engagement is scoped around workload, validation requirements, output package, execution boundaries, and operational responsibility.
+  - Recurring refreshes are priced as repeatable managed work, not raw compute resale.
   - Prices exclude VAT and taxes unless agreed otherwise.
   - Final scope depends on input quality, sensitivity, output requirements, and recurrence.
   - Controlled trial access is manually approved.
