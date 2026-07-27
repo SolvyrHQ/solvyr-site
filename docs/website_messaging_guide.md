@@ -27,6 +27,39 @@ The customer buys completed corpus output and run evidence, not GPU-hours.
 For public-data quality runs, the customer buys recurring, reviewable batch
 work around an export or refresh cycle, not generic metadata tooling.
 
+## Company, Validation, And Expansion Story
+
+The About page may make the company-building story legible without turning
+the customer-facing homepage into an investor deck:
+
+- Solvyr is founder-led and operated through Solvyr OÜ.
+- Fast Corpus is the first bounded workload used to prove the underlying
+  execution system.
+- Repeated corpus and document workflows are the first expansion path.
+- The reusable capabilities are accepted workload contracts, scheduling,
+  node eligibility, retries, visible state, result validation, and lifecycle
+  reporting.
+- An anonymized commercial-validation signal may be described only with its
+  conditions and non-binding character intact.
+
+Do not name a commercial or research party without explicit permission. Do not
+turn an LOI, validation letter, research conversation, or prospective work
+package into a customer, revenue, deployment, procurement, or formal-partner
+claim.
+
+The current public commercial-validation boundary is:
+
+- one bounded ERP-adjacent document and data workflow
+- external commercial validation
+- recorded intent to negotiate a paid pilot if technical validation succeeds
+  and scope, pricing, security, and operating terms are mutually acceptable
+- not a production deployment, purchase order, unconditional payment
+  obligation, or recurring revenue
+
+The expansion story must remain demand-led. Do not imply that additional
+workload routes, a broad platform, or multiple execution pools are already
+commercially available.
+
 ## Cost Messaging Rule
 
 Cost is a buying trigger, not a footnote. Lead with a predictable, scoped run:
@@ -50,6 +83,11 @@ Avoid:
 
 Let buyers compare Solvyr with their own cloud or internal pipeline. The site
 should trigger: this is useful, executable, and cost-effective enough to scope.
+
+The published starting unit covers standard clean processing. Explain that a
+complete engagement is scoped around the workload, validation requirements,
+output package, execution boundaries, and operational responsibility.
+Recurring refresh is repeatable managed work, not raw compute resale.
 
 ## Category And Build-Versus-Buy Rule
 
@@ -107,6 +145,33 @@ Avoid:
 
 The right sequence is: document backlog, inspectable output, predictable run,
 then European control/sovereignty context.
+
+European execution becomes meaningful when location, operator access, node
+eligibility, storage, retention, deletion, and run evidence are attached to a
+specific workload. Do not use Europe as a geographical substitute for these
+controls.
+
+## Research Direction Boundary
+
+The public research direction may describe:
+
+- workload-specific trust and execution requirements
+- scheduler authority and node eligibility
+- authorized access, task leases, result acceptance, and bounded retries
+- failure, retention, deletion, and lifecycle evidence
+- privacy-conscious observability when infrastructure is operated by another
+  party
+
+Frame these as active research and product-development questions toward a
+commercially usable execution system. Do not claim formal verification,
+certification, arbitrary sensitive-workload support, or institutional
+commitment.
+
+Use `eligible execution environments` or `controlled execution pools` rather
+than defining the company through household machines. Solvyr-controlled,
+partner-controlled, and customer-controlled workers are possible pool classes,
+but partner/customer workers remain later and explicitly approved—not current
+broad availability.
 
 In the header, keep the tagline short:
 

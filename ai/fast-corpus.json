@@ -20,10 +20,41 @@
   "summary": "Clean PDF and text backlogs to AI-ready JSONL with extracted text, chunks, embeddings, stable IDs, and an inspectable run report at a predictable starting unit price. Adjacent scoped use cases include recurring public-data quality runs over public or test metadata exports.",
   "positioning": "Customers buy completed corpus output and run evidence, not GPU-hours, API/CLI access, an orchestration layer, or a platform project.",
   "build_vs_buy_positioning": "A team can build and operate its own extraction, chunking, embedding, queueing, retry, and reporting pipeline, or buy a completed Fast Corpus run. Solvyr customers do not provision workers, operate queues, or assemble the pipeline.",
-  "cost_positioning": "Cost-effective backlog processing with a scoped run, price per processed page, and a decision based on inspected output.",
+  "cost_positioning": "Cost-effective backlog processing with a scoped run, price per processed page, and a decision based on inspected output. The published starting unit covers standard clean processing; complete engagements also reflect validation, output, execution-boundary, and operational-responsibility requirements.",
   "api_cli_positioning": "API/CLI language is integration or handoff context, not the primary public offer.",
   "european_sovereignty_positioning": "European execution control and sovereignty are relevant for archives, public-sector teams, research networks, and EU/NL connectors when tied to a real document backlog and pilot decision.",
   "broader_system": "Controlled distributed execution for async AI workloads with central scheduling, bounded tasks, retries, visible outcomes, and completed work rather than raw capacity rental.",
+  "expansion_path": "Fast Corpus is the first bounded workload. Repeated corpus and document workflows exercise reusable workload contracts, scheduling, node eligibility, retries, visible state, result validation, and lifecycle reporting before additional bounded async AI workloads are offered.",
+  "execution_pool_positioning": "Suitable async work may run across eligible execution environments, beginning with Solvyr-controlled infrastructure. Explicitly approved partner- or customer-controlled workers are later possible pool classes, not current broad availability.",
+  "research_direction": {
+    "status": "active_research_and_product_development",
+    "topics": [
+      "workload-specific trust and execution requirements",
+      "scheduler authority and node eligibility",
+      "authorized access and task leases",
+      "result acceptance and bounded retries",
+      "failure, retention, deletion, and lifecycle evidence",
+      "privacy-conscious observability across third-party-operated infrastructure"
+    ],
+    "not_claimed": [
+      "formal verification",
+      "certification",
+      "blanket compliance",
+      "support for arbitrary sensitive workloads"
+    ]
+  },
+  "commercial_validation": {
+    "scope": "one bounded ERP-adjacent document and data workflow",
+    "status": "conditional_non_binding_paid_pilot_intent",
+    "condition": "Technical validation must succeed and scope, pricing, security, and operating terms must be mutually acceptable.",
+    "not_claimed": [
+      "production deployment",
+      "purchase order",
+      "unconditional payment obligation",
+      "recurring revenue"
+    ],
+    "counterparty": "intentionally_not_named_publicly"
+  },
   "best_for": [
     "one-time document backlog processing",
     "RAG and search corpus preparation",
