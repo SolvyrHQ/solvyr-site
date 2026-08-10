@@ -120,6 +120,14 @@ const sitemap = sitemapUrls();
 const sitemapSet = new Set(sitemap);
 const robots = readFileSync(join(repoRoot, "robots.txt"), "utf8");
 
+if (sitemapSet.size !== sitemap.length) {
+  failures.push("sitemap.xml: contains duplicate URLs");
+}
+
+for (const alias of ["http://solvyr.com/", "https://www.solvyr.com/", "https://solvyr.com/index.html"]) {
+  if (sitemapSet.has(alias)) failures.push(`sitemap.xml: redirect alias must not be listed ${alias}`);
+}
+
 if (!robots.includes("Sitemap: https://solvyr.com/sitemap.xml")) {
   failures.push("robots.txt: missing canonical sitemap URL");
 }
@@ -204,6 +212,12 @@ for (const file of htmlFiles) {
   if (!sitemapSet.has(url)) failures.push(`${relPath}: missing from sitemap.xml as ${url}`);
 
   for (const match of html.matchAll(/href="([^"]+)"/g)) {
+    if (/^http:\/\/solvyr\.com(?:\/|$)/i.test(match[1]) || /^https:\/\/www\.solvyr\.com(?:\/|$)/i.test(match[1])) {
+      failures.push(`${relPath}: internal link uses a redirecting origin ${match[1]}`);
+    }
+    if (/^(?:https:\/\/solvyr\.com)?\/index\.html(?:[?#]|$)/i.test(match[1])) {
+      failures.push(`${relPath}: internal link uses the redirecting /index.html alias ${match[1]}`);
+    }
     if (!localTargetExists(file, match[1])) {
       failures.push(`${relPath}: broken local href ${match[1]}`);
     }
@@ -216,6 +230,9 @@ for (const file of htmlFiles) {
     const nlUrl = expectedUrl(partner.nl);
     if (alternates.en !== enUrl) failures.push(`${relPath}: hreflang en expected ${enUrl}, got ${alternates.en || "none"}`);
     if (alternates.nl !== nlUrl) failures.push(`${relPath}: hreflang nl expected ${nlUrl}, got ${alternates.nl || "none"}`);
+    if (alternates["x-default"] !== enUrl) {
+      failures.push(`${relPath}: hreflang x-default expected ${enUrl}, got ${alternates["x-default"] || "none"}`);
+    }
   }
 }
 

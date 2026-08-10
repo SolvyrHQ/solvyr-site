@@ -92,6 +92,13 @@ This performs read-only GET requests to `https://solvyr.com`, refuses
 off-origin URLs, checks status codes, verifies `robots.txt` and `sitemap.xml`,
 and verifies live HTML canonicals/noindex state for sitemap HTML routes.
 
+The local indexability audit also rejects canonical redirect aliases in the
+sitemap or internal links (`http://solvyr.com`, `https://www.solvyr.com`, and
+`/index.html`), duplicate sitemap URLs, and incomplete reciprocal hreflang
+clusters including `x-default`. Search Console may still report redirect URLs
+that Google learned historically; those are expected exclusions when the
+redirect target is the canonical homepage.
+
 ## Human-In-The-Loop Points
 
 Ask before coding or before overriding when:

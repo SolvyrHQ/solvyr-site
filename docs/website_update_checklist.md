@@ -62,6 +62,7 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Main CTA target opens.
 - [ ] Tab navigation still works.
 - [ ] `node scripts/audit-website.mjs` passes for meaningful website changes.
+- [ ] Sitemap and internal links contain only final canonical URLs—not `http`, `www`, or `/index.html` redirect aliases—and localized pages include reciprocal `en`, `nl`, and `x-default` hreflang links.
 - [ ] `node scripts/audit-live-deploy.mjs` passes after deploy when route/metadata/indexing-sensitive files changed.
 - [ ] Intentional public route/file/sitemap removals had explicit human approval before override flags were used.
 - [ ] Structured data, performance/PageSpeed, or Search Console checks were run if this change made them relevant.
