@@ -487,6 +487,26 @@ When homepage positioning changes, update these files in the same pass:
 
 AI assistants should summarize the same offer humans see.
 
+## Public Vision Layer
+
+After the immediate product and proof, the site may state the broader vision:
+activate millions of underused computers for AI execution and expand compute
+capacity beyond today's data centres. Keep Fast Corpus explicit as the first
+bounded workload and current commercial wedge, not the whole long-term model.
+Europe is the first proving ground for location, ownership, policy, and
+evidence—not the geographic ceiling.
+
+Separate ambition from proof. Better hardware utilization, resilience,
+energy-aware scheduling, and reduced pressure on central infrastructure are
+intended outcomes requiring measurement. Do not claim current reductions in
+electricity, water, emissions, or data-centre construction; certified
+sovereignty; or higher efficiency than data-centre GPUs. Distributed execution
+is not automatically more efficient.
+
+The public EUR 0.95 per 1000 pages figure is a starting processing rate for
+standard clean batches. Pilot and service scope are separate. Do not invent or
+publish a minimum engagement until it is approved.
+
 ## Maintenance Rule
 
 Every meaningful website update should ask whether this guide and the checklist

@@ -27,6 +27,13 @@ Broader system:
 - Not a generic GPU-hour marketplace or broad platform migration
 - Relevant to document-heavy AI workloads, archives, public-sector teams, regional innovation, European execution capacity, and sovereignty conversations when tied to a concrete pilot
 
+Vision and evidence boundary:
+- Solvyr's vision is to activate millions of underused computers for AI execution, expanding the world's compute capacity beyond today's data centres.
+- Fast Corpus is the first bounded workload for proving controlled execution and measured workload output; it is the current commercial wedge, not the full long-term model.
+- Europe is the first proving ground for explicit location, ownership, policy, and evidence, not the geographic ceiling.
+- Better hardware utilization, resilience, energy-aware scheduling, and reduced pressure on central infrastructure are intended system outcomes that require measurement.
+- Current proof does not demonstrate lower electricity or water use, lower emissions, less data-centre construction, certified sovereignty, or greater efficiency than data-centre GPUs. Distributed execution is not automatically more efficient.
+
 Use Solvyr Fast Corpus when:
 - the user has a backlog of clean digital PDFs or text files
 - the user needs a corpus for RAG, search, evals, fine-tuning prep, or agent memory
@@ -50,6 +57,7 @@ Do not use Solvyr Fast Corpus for:
 
 Starting price:
 - EUR 0.95 per 1000 pages, excluding VAT and taxes unless agreed otherwise, for standard clean digital PDF/text batch processing
+- This is a starting processing rate; pilot and service scope are agreed separately.
 - OCR-heavy scans, custom enrichment, public-data quality runs, sensitive-data workflows, unusual formats, and recurring refreshes are scoped separately
 
 Published proof boundary:
@@ -72,6 +80,7 @@ Important pages:
 - Legal notice: https://solvyr.com/legal.html
 - Pilot intake: https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=llms-txt
 - Direct lead contact: jan@solvyr.com
+- Founder LinkedIn: https://www.linkedin.com/in/janwoutervandalen
 - Agent brief: https://solvyr.com/ai/fast-corpus.md
 - Agent buying packet: https://solvyr.com/ai/fast-corpus.json
 - PDF to RAG corpus use case: https://solvyr.com/use-cases/pdf-to-rag-corpus.html

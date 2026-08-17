@@ -24,6 +24,11 @@
   "api_cli_positioning": "API/CLI language is integration or handoff context, not the primary public offer.",
   "european_sovereignty_positioning": "European execution control and sovereignty are relevant for archives, public-sector teams, research networks, and EU/NL connectors when tied to a real document backlog and pilot decision.",
   "broader_system": "Controlled distributed execution for async AI workloads with central scheduling, bounded tasks, retries, visible outcomes, and completed work rather than raw capacity rental.",
+  "vision": "Solvyr's vision is to activate millions of underused computers for AI execution, expanding the world's compute capacity beyond today's data centres.",
+  "mission": "Make a schedulable portion of distributed hardware dependable for suitable AI work through controlled, inspectable execution.",
+  "current_wedge": "Fast Corpus is the first bounded workload and current commercial wedge, not the full long-term product or economic model.",
+  "geographic_direction": "Europe is the first proving ground for explicit location, ownership, policy, and evidence, not the geographic ceiling.",
+  "vision_claim_boundary": "Better hardware utilization, resilience, energy-aware scheduling, and reduced pressure on central infrastructure are intended outcomes that require measurement. Current proof does not demonstrate lower electricity or water use, lower emissions, less data-centre construction, certified sovereignty, or greater efficiency than data-centre GPUs. Distributed execution is not automatically more efficient.",
   "expansion_path": "Fast Corpus is the first bounded workload. Repeated corpus and document workflows exercise reusable workload contracts, scheduling, node eligibility, retries, visible state, result validation, and lifecycle reporting before additional bounded async AI workloads are offered.",
   "execution_pool_positioning": "Suitable async work may run across eligible execution environments, beginning with Solvyr-controlled infrastructure. Explicitly approved partner- or customer-controlled workers are later possible pool classes, not current broad availability.",
   "research_direction": {
@@ -97,7 +102,8 @@
     "currency": "EUR",
     "unit": "1000_pages",
     "taxes": "excluding VAT and taxes unless agreed otherwise",
-    "qualification": "standard clean digital PDF/text batch processing"
+    "qualification": "standard clean digital PDF/text batch processing",
+    "scope_note": "This is a starting processing rate; pilot and service scope are agreed separately."
   },
   "scoped_separately": [
     "OCR-heavy scans",
@@ -140,6 +146,7 @@
     "how_to_start": "Submit a bounded backlog and output target, then use a representative non-sensitive sample for a capped pilot run."
   },
   "contact_email": "jan@solvyr.com",
+  "founder_linkedin": "https://www.linkedin.com/in/janwoutervandalen",
   "contact": "https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=agent-packet",
   "human_page": "https://solvyr.com/",
   "about": "https://solvyr.com/about.html",

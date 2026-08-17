@@ -15,6 +15,11 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Any commercial-validation statement preserves its anonymous, conditional, non-binding boundary and does not imply revenue, deployment, procurement, or a formal partnership.
 - [ ] Research direction is framed as active work, not as formal verification, certification, or support for arbitrary sensitive workloads.
 - [ ] Execution-pool language is supply-neutral and based on explicit node eligibility; household machines do not define the company.
+- [ ] The broader vision appears only after the immediate Fast Corpus offer and proof, and Fast Corpus remains clear as the current wedge.
+- [ ] Europe is described as the first proving ground, not the geographic ceiling.
+- [ ] Environmental, utilization, resilience, and energy-aware scheduling language is labeled as intended and measurement-dependent.
+- [ ] The site does not claim current electricity, water, emissions, data-centre construction, certified-sovereignty, or data-centre-GPU efficiency outcomes.
+- [ ] EUR 0.95 is described as a starting processing rate for standard clean batches; pilot/service scope is separate and no unapproved minimum is implied.
 - [ ] Solvyr is classified as a managed corpus service, not a GPU marketplace or generic orchestration layer.
 - [ ] The build-versus-buy comparison is clear: customers receive completed corpus output without provisioning workers, operating queues, or assembling the pipeline.
 - [ ] AI-team entry cues emphasize output, price, and proof; archive/public-sector cues add execution control to the same bounded workload.
