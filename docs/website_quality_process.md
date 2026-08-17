@@ -99,6 +99,11 @@ clusters including `x-default`. Search Console may still report redirect URLs
 that Google learned historically; those are expected exclusions when the
 redirect target is the canonical homepage.
 
+Pilot-intake attribution uses URL fragments, not query parameters. Fragments
+preserve the source and intent used in the prepared email without creating
+multiple crawlable intake URLs that can compete with the declared canonical.
+The intake page remains backward-compatible with previously shared query URLs.
+
 ## Human-In-The-Loop Points
 
 Ask before coding or before overriding when:

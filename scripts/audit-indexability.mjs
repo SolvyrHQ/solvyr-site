@@ -218,6 +218,9 @@ for (const file of htmlFiles) {
     if (/^(?:https:\/\/solvyr\.com)?\/index\.html(?:[?#]|$)/i.test(match[1])) {
       failures.push(`${relPath}: internal link uses the redirecting /index.html alias ${match[1]}`);
     }
+    if (/pilot-intake(?:-nl)?\.html\?[^#" ]/i.test(match[1])) {
+      failures.push(`${relPath}: pilot intake attribution must use a fragment, not crawlable query parameters ${match[1]}`);
+    }
     if (!localTargetExists(file, match[1])) {
       failures.push(`${relPath}: broken local href ${match[1]}`);
     }
