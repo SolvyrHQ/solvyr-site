@@ -243,7 +243,7 @@
           <a href="ai/fast-corpus.md">AI brief</a>
           <a href="pricing.yaml">Pricing YAML</a>
           <a href="mailto:jan@solvyr.com">jan@solvyr.com</a>
-          <a href="pilot-intake-nl.html?intent=fast-corpus&source=pilot-intake-page">Pilot intake</a>
+          <a href="pilot-intake-nl.html#intent=fast-corpus&source=pilot-intake-page">Pilot intake</a>
         </div>
       </div>
     </footer>
@@ -255,7 +255,7 @@
         event.preventDefault();
         const form = event.currentTarget;
         const data = new FormData(form);
-        const params = new URLSearchParams(window.location.search);
+        const params = new URLSearchParams(window.location.hash.slice(1) || window.location.search);
         const source = params.get("source") || "direct";
         const intent = params.get("intent") || "fast-corpus";
         const fields = [
