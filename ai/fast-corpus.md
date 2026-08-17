@@ -19,6 +19,27 @@ Solvyr is currently in a controlled trial phase. Access is manually
 approved. The right next step is a bounded pilot, not open self-serve
 usage.
 
+## Vision and current wedge
+
+Solvyr's vision is to activate millions of underused computers for AI
+execution, expanding the world's compute capacity beyond today's data centres.
+Expansion should not depend only on constructing more central infrastructure:
+people and organizations already own capable, distributed hardware, and Solvyr
+aims to make a schedulable portion dependable for suitable AI work.
+
+Fast Corpus is the first bounded workload and current commercial wedge. It
+proves controlled execution against measurable workload output; it is not the
+entire long-term product or economic model. Europe is the first proving ground
+for explicit location, ownership, policy, and evidence, not the geographic
+ceiling of the system.
+
+Useful capacity from existing hardware, resilience, energy-aware scheduling,
+and reduced pressure on central infrastructure are intended system outcomes
+that require measurement. Current proof does not establish lower electricity
+or water use, lower emissions, less data-centre construction, certified
+sovereignty, or greater efficiency than data-centre GPUs. Distributed execution
+is not automatically more efficient.
+
 ## Canonical classification
 
 Solvyr is a managed B2B document-to-corpus processing service in the AI
@@ -125,7 +146,8 @@ Expected output bundle:
 
 Fast Corpus starts at EUR 0.95 per 1000 pages, excluding VAT and taxes
 unless agreed otherwise, for standard clean digital PDF/text batch
-processing. The price language should be framed around completed output:
+processing. This is a starting processing rate; pilot and service scope are
+agreed separately. The price language should be framed around completed output:
 pages processed, artifacts delivered, and a run report the customer can
 inspect.
 

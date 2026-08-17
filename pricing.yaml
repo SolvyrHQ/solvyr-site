@@ -22,7 +22,8 @@ starting_price:
     - recurring refreshes
     - custom structured extraction
 notes:
-  - Starting price is an indicative acquisition wedge for standard clean digital PDF/text workloads.
+  - EUR 0.95 per 1000 pages is a starting processing rate and acquisition wedge for standard clean digital PDF/text workloads, not the full long-term economic model.
+  - Pilot and service scope are agreed separately; no public minimum engagement is currently approved.
   - Pricing should be explained as a predictable scoped run and cost per processed page, not raw compute, API access, or CLI access.
   - The published starting unit covers standard clean processing; a complete engagement is scoped around workload, validation requirements, output package, execution boundaries, and operational responsibility.
   - Recurring refreshes are priced as repeatable managed work, not raw compute resale.

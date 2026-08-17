@@ -366,6 +366,10 @@ p{
   grid-template-columns:repeat(3, 1fr);
 }
 
+.aboutGrid{
+  grid-template-columns:repeat(2, 1fr);
+}
+
 .reasonGrid{
   grid-template-columns:repeat(4, 1fr);
 }
