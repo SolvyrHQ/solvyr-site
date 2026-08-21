@@ -53,6 +53,21 @@ Typography currently uses the self-hosted Inter variable font in
 avoid an unnecessary third-party font request, and do not replace the file
 without checking the replacement's source and licence.
 
+## Copyright And Trade Mark Notice
+
+Jan approved a restrained public notice on 2026-08-22 without waiting for the
+Reze paperwork. Keep the legal distinction precise:
+
+- claim copyright only for original website text and files owned by Solvyr OÜ;
+- leave third-party and separately licensed material under its own rights and
+  licences;
+- state that `Solvyr` is a registered European Union word mark owned by Solvyr
+  OÜ, EUTM 019355983;
+- do not describe that word-mark registration as registration of the B Hybrid
+  symbol or combined logo;
+- keep the full notice on the legal pages rather than adding `®` to every brand
+  mention.
+
 ## Core Positioning
 
 Solvyr turns bounded document and text backlogs into accepted AI-ready outputs.
