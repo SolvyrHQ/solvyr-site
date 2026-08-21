@@ -15,22 +15,88 @@
     />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://solvyr.com/use-cases/document-reindexing.html" />
-    <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
+    <meta property="og:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Solvyr: Turn a document backlog into an AI-ready corpus." />
+    <meta name="twitter:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
+    <meta name="twitter:image:alt" content="Solvyr: Turn a document backlog into an AI-ready corpus." />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://solvyr.com/use-cases/document-reindexing.html" />
     <link rel="alternate" hreflang="en" href="https://solvyr.com/use-cases/document-reindexing.html" />
     <link rel="alternate" hreflang="nl" href="https://solvyr.com/use-cases/document-reindexing-nl.html" />
     <link rel="alternate" hreflang="x-default" href="https://solvyr.com/use-cases/document-reindexing.html" />
-    <link rel="icon" href="../favicon.ico" />
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" href="/assets/brand/solvyr-icon-hybrid.svg?v=20260820-2" type="image/svg+xml" sizes="any" />
+    <link rel="icon" href="/favicon.ico?v=20260820-2" sizes="16x16 32x32 48x48" />
+    <link rel="apple-touch-icon" href="/assets/brand/solvyr-icon-hybrid-256.png?v=20260820-2" />
+    <link rel="stylesheet" href="../styles.css?v=20260821-1" />
+      <script>
+(() => {
+  const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
+  const events = new Set([
+    "pilot-start",
+    "direct-email",
+    "email-prepared",
+    "summary-copied"
+  ]);
+
+  async function measure(eventName) {
+    if (localHosts.has(window.location.hostname) || !events.has(eventName)) return;
+
+    await new Promise((resolve) => {
+      const frame = document.createElement("iframe");
+      const finish = () => {
+        window.setTimeout(() => frame.remove(), 1200);
+        resolve();
+      };
+      const timeout = window.setTimeout(finish, 450);
+
+      frame.hidden = true;
+      frame.tabIndex = -1;
+      frame.setAttribute("aria-hidden", "true");
+      frame.addEventListener("load", () => {
+        window.clearTimeout(timeout);
+        window.setTimeout(finish, 40);
+      }, { once: true });
+      frame.src = `/measure/${eventName}.html`;
+      document.body.appendChild(frame);
+    });
+  }
+
+  window.solvyrMeasure = measure;
+  document.documentElement.dataset.solvyrInteractions = "ready";
+
+  document.addEventListener("click", async (event) => {
+    const link = event.target.closest("a[href]");
+    if (!link || event.defaultPrevented) return;
+
+    const href = link.getAttribute("href") || "";
+    const isModified = event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey;
+
+    if (href.includes("pilot-intake") && !isModified && link.target !== "_blank") {
+      event.preventDefault();
+      await measure("pilot-start");
+      window.location.href = link.href;
+      return;
+    }
+
+    if (/^mailto:hello@solvyr\.com/i.test(href) && !isModified) {
+      event.preventDefault();
+      await measure("direct-email");
+      window.location.href = link.href;
+    }
+  });
+})();
+      </script>
   </head>
 
   <body>
+    <a class="skipLink" href="#main-content">Skip to content</a>
     <header class="top">
       <div class="container topbar">
         <a class="brand" href="/#overview" aria-label="Solvyr home">
-          <img class="brandlogo" src="../assets/brand/icon.png" alt="Solvyr icon" width="34" height="34" />
           <div class="brandtext">
-            <div class="name">Solvyr</div>
+            <img class="brandLogo" src="/assets/brand/solvyr-logo-hybrid.svg" alt="Solvyr" width="175" height="35" />
             <div class="tag">Fast Corpus for European AI teams</div>
           </div>
         </a>
@@ -62,7 +128,7 @@
       </div>
     </header>
 
-    <main class="container shell">
+    <main id="main-content" class="container shell">
       <section class="hero">
         <p class="eyebrow">Use case</p>
         <h1>Refresh and re-index document backlogs without turning it into another pipeline project.</h1>
@@ -73,7 +139,7 @@
         </p>
         <div class="heroActions">
           <a class="button primary" href="../pilot-intake.html#intent=fast-corpus&source=reindexing-use-case">Scope a re-indexing run</a>
-          <a class="button secondary" href="../proof/100-pdf-fast-corpus-run.html">See the proof run</a>
+          <a class="button secondary" href="../proof/100-pdf-fast-corpus-run.html">See the measured clean-PDF run</a>
         </div>
       </section>
 
@@ -125,16 +191,27 @@
 
     <footer class="footer">
       <div class="container footerInner">
-        <div>&copy; <span id="y"></span> Solvyr</div>
+        <a class="footerBrand" href="/" aria-label="Solvyr home">
+          <img src="/assets/brand/solvyr-logo-hybrid-reversed.svg" alt="Solvyr" width="150" height="30" />
+          <span>&copy; <span id="y"></span></span>
+        </a>
         <div class="footerLinks">
           <a href="../about.html">About</a>
           <a href="../connectors.html">Connectors</a>
           <a href="../privacy.html">Privacy</a>
           <a href="../legal.html">Legal</a>
-          <a href="../llms.txt">llms.txt</a>
-          <a href="../ai/fast-corpus.md">AI brief</a>
-          <a href="../pricing.yaml">Pricing YAML</a>
-          <a href="mailto:jan@solvyr.com">jan@solvyr.com</a>
+          <details class="machineLinks">
+
+            <summary>Machine-readable</summary>
+
+            <a href="../llms.txt">llms.txt</a>
+
+            <a href="../ai/fast-corpus.md">AI brief</a>
+
+            <a href="../pricing.yaml">Pricing YAML</a>
+
+          </details>
+          <a href="mailto:hello@solvyr.com">hello@solvyr.com</a>
           <a href="../pilot-intake.html#intent=fast-corpus&source=reindexing-use-case">Pilot intake</a>
         </div>
       </div>

@@ -7,6 +7,8 @@ const checks = [
   "audit-release-safety.mjs",
   "audit-indexability.mjs",
   "audit-nav-footer.mjs",
+  "audit-production-preferences.mjs",
+  "audit-local-links.mjs",
   "audit-accessibility-static.mjs",
 ];
 

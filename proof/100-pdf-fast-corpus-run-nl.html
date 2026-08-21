@@ -15,22 +15,88 @@
     />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://solvyr.com/proof/100-pdf-fast-corpus-run-nl.html" />
-    <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
+    <meta property="og:image" content="https://solvyr.com/assets/brand/solvyr-social-card-nl.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Solvyr: Van documentachterstand naar een AI-klaar corpus." />
+    <meta name="twitter:image" content="https://solvyr.com/assets/brand/solvyr-social-card-nl.png" />
+    <meta name="twitter:image:alt" content="Solvyr: Van documentachterstand naar een AI-klaar corpus." />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://solvyr.com/proof/100-pdf-fast-corpus-run-nl.html" />
     <link rel="alternate" hreflang="en" href="https://solvyr.com/proof/100-pdf-fast-corpus-run.html" />
     <link rel="alternate" hreflang="nl" href="https://solvyr.com/proof/100-pdf-fast-corpus-run-nl.html" />
     <link rel="alternate" hreflang="x-default" href="https://solvyr.com/proof/100-pdf-fast-corpus-run.html" />
-    <link rel="icon" href="../favicon.ico" />
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" href="/assets/brand/solvyr-icon-hybrid.svg?v=20260820-2" type="image/svg+xml" sizes="any" />
+    <link rel="icon" href="/favicon.ico?v=20260820-2" sizes="16x16 32x32 48x48" />
+    <link rel="apple-touch-icon" href="/assets/brand/solvyr-icon-hybrid-256.png?v=20260820-2" />
+    <link rel="stylesheet" href="../styles.css?v=20260821-1" />
+      <script>
+(() => {
+  const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
+  const events = new Set([
+    "pilot-start",
+    "direct-email",
+    "email-prepared",
+    "summary-copied"
+  ]);
+
+  async function measure(eventName) {
+    if (localHosts.has(window.location.hostname) || !events.has(eventName)) return;
+
+    await new Promise((resolve) => {
+      const frame = document.createElement("iframe");
+      const finish = () => {
+        window.setTimeout(() => frame.remove(), 1200);
+        resolve();
+      };
+      const timeout = window.setTimeout(finish, 450);
+
+      frame.hidden = true;
+      frame.tabIndex = -1;
+      frame.setAttribute("aria-hidden", "true");
+      frame.addEventListener("load", () => {
+        window.clearTimeout(timeout);
+        window.setTimeout(finish, 40);
+      }, { once: true });
+      frame.src = `/measure/${eventName}.html`;
+      document.body.appendChild(frame);
+    });
+  }
+
+  window.solvyrMeasure = measure;
+  document.documentElement.dataset.solvyrInteractions = "ready";
+
+  document.addEventListener("click", async (event) => {
+    const link = event.target.closest("a[href]");
+    if (!link || event.defaultPrevented) return;
+
+    const href = link.getAttribute("href") || "";
+    const isModified = event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey;
+
+    if (href.includes("pilot-intake") && !isModified && link.target !== "_blank") {
+      event.preventDefault();
+      await measure("pilot-start");
+      window.location.href = link.href;
+      return;
+    }
+
+    if (/^mailto:hello@solvyr\.com/i.test(href) && !isModified) {
+      event.preventDefault();
+      await measure("direct-email");
+      window.location.href = link.href;
+    }
+  });
+})();
+      </script>
   </head>
 
   <body>
+    <a class="skipLink" href="#main-content">Ga naar inhoud</a>
     <header class="top">
       <div class="container topbar">
         <a class="brand" href="../nl.html#overview" aria-label="Solvyr home">
-          <img class="brandlogo" src="../assets/brand/icon.png" alt="Solvyr icon" width="34" height="34" />
           <div class="brandtext">
-            <div class="name">Solvyr</div>
+            <img class="brandLogo" src="/assets/brand/solvyr-logo-hybrid.svg" alt="Solvyr" width="175" height="35" />
             <div class="tag">Fast Corpus voor Europese AI-teams</div>
           </div>
         </a>
@@ -62,7 +128,7 @@
       </div>
     </header>
 
-    <main class="container shell">
+    <main id="main-content" class="container shell">
       <section class="hero">
         <p class="eyebrow">Proefnotitie</p>
         <h1>100 schone PDF's verwerkt met zichtbaar runbewijs.</h1>
@@ -79,9 +145,8 @@
           <p class="eyebrow">Gemeten run</p>
           <h2 id="metrics-title">Wat de run liet zien.</h2>
           <p>
-            De waarde van deze proef zit niet in een grote benchmarkclaim. Het
-            is een concrete outputgrens: input, output, looptijd, fouten,
-            retries en caveats zijn inspecteerbaar.
+            Deze proef definieert een concrete outputgrens: input, output,
+            looptijd, fouten, retries en caveats zijn inspecteerbaar.
           </p>
         </div>
         <div class="metricCard" aria-label="100 PDF proefrunmetrics">
@@ -115,29 +180,54 @@
           </ul>
         </article>
         <article class="panel mutedPanel">
-          <h2>Wat dit niet claimt</h2>
+          <h2>Buiten deze gemeten run</h2>
           <ul class="cleanList">
-            <li>Geen OCR-zware scanondersteuning standaard.</li>
-            <li>Geen claim voor gestructureerde factuur- of formulierextractie.</li>
-            <li>Geen hosted RAG/search productclaim.</li>
-            <li>Geen enterprise-SLA claim.</li>
+            <li>Verwerking van OCR-zware scans.</li>
+            <li>Gestructureerde factuur- of formulierextractie.</li>
+            <li>Een hosted RAG- of zoekproduct.</li>
+            <li>Een enterprise-SLA.</li>
           </ul>
         </article>
+      </section>
+
+      <section class="band compact" aria-labelledby="inspect-output-title">
+        <div>
+          <p class="eyebrow">Inspecteer de output</p>
+          <h2 id="inspect-output-title">De grotere PDF-run en de publieke sample bewijzen verschillende dingen.</h2>
+        </div>
+        <p>
+          Deze 100-PDF-notitie toont gemeten workloadgedrag. De
+          <a href="../sample-output-nl.html">publieke sample met zeven records</a>
+          voegt downloadbare pipelineoutput, stabiele bron-IDs, een aansluitend
+          runrapport, een foutenbestand en geverifieerde checksums toe voor de
+          plain-text embeddingtak.
+        </p>
       </section>
     </main>
 
     <footer class="footer">
       <div class="container footerInner">
-        <div>&copy; <span id="y"></span> Solvyr</div>
+        <a class="footerBrand" href="/" aria-label="Solvyr home">
+          <img src="/assets/brand/solvyr-logo-hybrid-reversed.svg" alt="Solvyr" width="150" height="30" />
+          <span>&copy; <span id="y"></span></span>
+        </a>
         <div class="footerLinks">
           <a href="../about-nl.html">Over</a>
           <a href="../connectors-nl.html">Connectors</a>
           <a href="../privacy-nl.html">Privacy</a>
           <a href="../legal-nl.html">Juridisch</a>
-          <a href="../llms.txt">llms.txt</a>
-          <a href="../ai/fast-corpus.md">AI brief</a>
-          <a href="../pricing.yaml">Pricing YAML</a>
-          <a href="mailto:jan@solvyr.com">jan@solvyr.com</a>
+          <details class="machineLinks">
+
+            <summary>Machineleesbaar</summary>
+
+            <a href="../llms.txt">llms.txt</a>
+
+            <a href="../ai/fast-corpus.md">AI brief</a>
+
+            <a href="../pricing.yaml">Pricing YAML</a>
+
+          </details>
+          <a href="mailto:hello@solvyr.com">hello@solvyr.com</a>
           <a href="../pilot-intake-nl.html#intent=fast-corpus&source=proof-100-pdf-run-nl">Pilot intake</a>
         </div>
       </div>

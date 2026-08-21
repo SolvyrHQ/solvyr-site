@@ -16,32 +16,91 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://solvyr.com/pilot-intake.html" />
-    <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
+    <meta property="og:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Solvyr: Turn a document backlog into an AI-ready corpus." />
+    <meta name="twitter:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
+    <meta name="twitter:image:alt" content="Solvyr: Turn a document backlog into an AI-ready corpus." />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://solvyr.com/pilot-intake.html" />
-    <meta name="twitter:card" content="summary" />
 
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="/assets/brand/solvyr-icon-hybrid.svg?v=20260820-2" type="image/svg+xml" sizes="any" />
+    <link rel="icon" href="/favicon.ico?v=20260820-2" sizes="16x16 32x32 48x48" />
+    <link rel="apple-touch-icon" href="/assets/brand/solvyr-icon-hybrid-256.png?v=20260820-2" />
     <link rel="alternate" hreflang="en" href="https://solvyr.com/pilot-intake.html" />
     <link rel="alternate" hreflang="nl" href="https://solvyr.com/pilot-intake-nl.html" />
     <link rel="alternate" hreflang="x-default" href="https://solvyr.com/pilot-intake.html" />
-    <meta name="theme-color" content="#f7f8fb" />
+    <meta name="theme-color" content="#f7f9fc" />
     <link rel="preload" as="image" href="assets/brand/icon.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260821-1" />
+      <script>
+(() => {
+  const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
+  const events = new Set([
+    "pilot-start",
+    "direct-email",
+    "email-prepared",
+    "summary-copied"
+  ]);
+
+  async function measure(eventName) {
+    if (localHosts.has(window.location.hostname) || !events.has(eventName)) return;
+
+    await new Promise((resolve) => {
+      const frame = document.createElement("iframe");
+      const finish = () => {
+        window.setTimeout(() => frame.remove(), 1200);
+        resolve();
+      };
+      const timeout = window.setTimeout(finish, 450);
+
+      frame.hidden = true;
+      frame.tabIndex = -1;
+      frame.setAttribute("aria-hidden", "true");
+      frame.addEventListener("load", () => {
+        window.clearTimeout(timeout);
+        window.setTimeout(finish, 40);
+      }, { once: true });
+      frame.src = `/measure/${eventName}.html`;
+      document.body.appendChild(frame);
+    });
+  }
+
+  window.solvyrMeasure = measure;
+  document.documentElement.dataset.solvyrInteractions = "ready";
+
+  document.addEventListener("click", async (event) => {
+    const link = event.target.closest("a[href]");
+    if (!link || event.defaultPrevented) return;
+
+    const href = link.getAttribute("href") || "";
+    const isModified = event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey;
+
+    if (href.includes("pilot-intake") && !isModified && link.target !== "_blank") {
+      event.preventDefault();
+      await measure("pilot-start");
+      window.location.href = link.href;
+      return;
+    }
+
+    if (/^mailto:hello@solvyr\.com/i.test(href) && !isModified) {
+      event.preventDefault();
+      await measure("direct-email");
+      window.location.href = link.href;
+    }
+  });
+})();
+      </script>
   </head>
 
   <body>
+    <a class="skipLink" href="#main-content">Skip to content</a>
     <header class="top">
       <div class="container topbar">
         <a class="brand" href="/#overview" aria-label="Solvyr home">
-          <img
-            class="brandlogo"
-            src="assets/brand/icon.png"
-            alt="Solvyr icon"
-            width="34"
-            height="34"
-          />
           <div class="brandtext">
-            <div class="name">Solvyr</div>
+            <img class="brandLogo" src="/assets/brand/solvyr-logo-hybrid.svg" alt="Solvyr" width="175" height="35" />
             <div class="tag">Fast Corpus for European AI teams</div>
           </div>
         </a>
@@ -72,7 +131,7 @@
       </div>
     </header>
 
-    <main class="container intakeShell">
+    <main id="main-content" class="container intakeShell">
       <div class="intakeLayout">
         <section class="intakeIntro" aria-labelledby="intake-title">
           <p class="eyebrow">Fast Corpus intake</p>
@@ -102,7 +161,7 @@
           <div class="fieldGrid">
             <div class="field">
               <label for="name">Name</label>
-              <input id="name" name="name" autocomplete="name" />
+              <input id="name" name="name" autocomplete="name" required />
             </div>
             <div class="field">
               <label for="org">Organization</label>
@@ -110,28 +169,15 @@
             </div>
             <div class="field">
               <label for="email">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" />
-            </div>
-            <div class="field">
-              <label for="timeline">Timeline</label>
-              <select id="timeline" name="timeline">
-                <option value="">Select one</option>
-                <option>Exploring</option>
-                <option>This quarter</option>
-                <option>Urgent backlog</option>
-              </select>
+              <input id="email" name="email" type="email" autocomplete="email" required />
             </div>
             <div class="field">
               <label for="pages">Estimated pages</label>
               <input id="pages" name="pages" placeholder="Example: 25000" />
             </div>
             <div class="field">
-              <label for="documents">Estimated documents</label>
-              <input id="documents" name="documents" placeholder="Example: 1200 PDFs" />
-            </div>
-            <div class="field">
               <label for="input_type">Input type</label>
-              <select id="input_type" name="input_type">
+              <select id="input_type" name="input_type" required>
                 <option value="">Select one</option>
                 <option>Clean digital PDFs</option>
                 <option>Text files or text exports</option>
@@ -168,80 +214,112 @@
                 <option>Other or unsure</option>
               </select>
             </div>
-            <div class="field">
-              <label for="recurrence">Recurrence</label>
-              <select id="recurrence" name="recurrence">
-                <option value="">Select one</option>
-                <option>One-time backlog</option>
-                <option>Monthly refresh</option>
-                <option>Weekly refresh</option>
-                <option>Unknown</option>
-              </select>
-            </div>
             <div class="field full">
               <label for="workload">Corpus and workflow notes</label>
-              <textarea id="workload" name="workload" placeholder="What are the documents, where do they come from, and what should the corpus support?"></textarea>
-            </div>
-            <div class="field full">
-              <label for="current">Current process or pain</label>
-              <textarea id="current" name="current" placeholder="What happens today, what is slow or expensive, and who is waiting for the corpus?"></textarea>
-            </div>
-            <div class="field">
-              <label for="sensitivity">Data sensitivity</label>
-              <select id="sensitivity" name="sensitivity">
-                <option value="">Select one</option>
-                <option>Public</option>
-                <option>Low sensitivity</option>
-                <option>Moderate sensitivity</option>
-                <option>Sensitive or regulated - needs prior agreement</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="sample">Safe sample available?</label>
-              <select id="sample" name="sample">
-                <option value="">Select one</option>
-                <option>Yes, a representative sample can be shared</option>
-                <option>Maybe, after redaction</option>
-                <option>No, not yet</option>
-              </select>
-            </div>
-            <div class="field full">
-              <label for="output">Expected output and validation</label>
-              <textarea id="output" name="output" placeholder="What should come out, and how would you judge whether the JSONL/chunks/embeddings are useful?"></textarea>
-            </div>
-            <div class="field full">
-              <label for="data">Data handling requirements</label>
-              <textarea id="data" name="data" placeholder="Retention, deletion, redaction, pseudonymization, scoped access, execution or storage location..."></textarea>
+              <textarea id="workload" name="workload" placeholder="What are the documents, where do they come from, and what should the corpus support?" required></textarea>
             </div>
           </div>
 
+          <details class="intakeDetails">
+            <summary>Add optional scoping detail</summary>
+            <div class="fieldGrid">
+              <div class="field">
+                <label for="timeline">Timeline</label>
+                <select id="timeline" name="timeline">
+                  <option value="">Select one</option>
+                  <option>Exploring</option>
+                  <option>This quarter</option>
+                  <option>Urgent backlog</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="documents">Estimated documents</label>
+                <input id="documents" name="documents" placeholder="Example: 1200 PDFs" />
+              </div>
+              <div class="field">
+                <label for="recurrence">Recurrence</label>
+                <select id="recurrence" name="recurrence">
+                  <option value="">Select one</option>
+                  <option>One-time backlog</option>
+                  <option>Monthly refresh</option>
+                  <option>Weekly refresh</option>
+                  <option>Unknown</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="sensitivity">Data sensitivity</label>
+                <select id="sensitivity" name="sensitivity">
+                  <option value="">Select one</option>
+                  <option>Public</option>
+                  <option>Low sensitivity</option>
+                  <option>Moderate sensitivity</option>
+                  <option>Sensitive or regulated - needs prior agreement</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="sample">Safe sample available?</label>
+                <select id="sample" name="sample">
+                  <option value="">Select one</option>
+                  <option>Yes, a representative sample can be shared</option>
+                  <option>Maybe, after redaction</option>
+                  <option>No, not yet</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="current">Current process or pain</label>
+                <textarea id="current" name="current" placeholder="What happens today, what is slow or expensive, and who is waiting for the corpus?"></textarea>
+              </div>
+              <div class="field full">
+                <label for="output">Expected output and validation</label>
+                <textarea id="output" name="output" placeholder="What should come out, and how would you judge whether the JSONL/chunks/embeddings are useful?"></textarea>
+              </div>
+              <div class="field full">
+                <label for="data">Data handling requirements</label>
+                <textarea id="data" name="data" placeholder="Retention, deletion, redaction, pseudonymization, scoped access, execution or storage location..."></textarea>
+              </div>
+            </div>
+          </details>
+
           <p class="formNote">
             The button opens a draft to
-            <a href="mailto:jan@solvyr.com">jan@solvyr.com</a> with these
+            <a href="mailto:hello@solvyr.com">hello@solvyr.com</a> with these
             details. Do not attach production or sensitive samples until a
             written scope and transfer channel are agreed. Source parameters
             from agent-readable links are included automatically.
           </p>
           <div class="contactActions">
             <button class="button primary" type="submit">Prepare email</button>
+            <button class="button secondary" id="copy-request" type="button">Copy request summary</button>
             <a class="button secondary" href="/#pilot">Back to pilot page</a>
           </div>
+          <p class="copyStatus" id="copy-status" role="status" aria-live="polite"></p>
         </form>
       </div>
     </main>
 
     <footer class="footer">
       <div class="container footerInner">
-        <div>&copy; <span id="y"></span> Solvyr</div>
+        <a class="footerBrand" href="/" aria-label="Solvyr home">
+          <img src="/assets/brand/solvyr-logo-hybrid-reversed.svg" alt="Solvyr" width="150" height="30" />
+          <span>&copy; <span id="y"></span></span>
+        </a>
         <div class="footerLinks">
           <a href="about.html">About</a>
           <a href="connectors.html">Connectors</a>
           <a href="privacy.html">Privacy</a>
           <a href="legal.html">Legal</a>
-          <a href="llms.txt">llms.txt</a>
-          <a href="ai/fast-corpus.md">AI brief</a>
-          <a href="pricing.yaml">Pricing YAML</a>
-          <a href="mailto:jan@solvyr.com">jan@solvyr.com</a>
+          <details class="machineLinks">
+
+            <summary>Machine-readable</summary>
+
+            <a href="llms.txt">llms.txt</a>
+
+            <a href="ai/fast-corpus.md">AI brief</a>
+
+            <a href="pricing.yaml">Pricing YAML</a>
+
+          </details>
+          <a href="mailto:hello@solvyr.com">hello@solvyr.com</a>
           <a href="pilot-intake.html#intent=fast-corpus&source=pilot-intake-page">Pilot intake</a>
         </div>
       </div>
@@ -250,9 +328,9 @@
     <script>
       document.getElementById("y").textContent = new Date().getFullYear();
 
-      document.getElementById("pilot-form").addEventListener("submit", (event) => {
-        event.preventDefault();
-        const form = event.currentTarget;
+      const pilotForm = document.getElementById("pilot-form");
+
+      function buildRequestBody(form) {
         const data = new FormData(form);
         const params = new URLSearchParams(window.location.hash.slice(1) || window.location.search);
         const source = params.get("source") || "direct";
@@ -280,8 +358,44 @@
         const body = fields
           .map(([label, value]) => `${label}:\n${String(value || "").trim() || "-"}`)
           .join("\n\n");
+        return body;
+      }
+
+      async function copyText(text) {
+        if (navigator.clipboard?.writeText) {
+          await navigator.clipboard.writeText(text);
+          return;
+        }
+        const fallback = document.createElement("textarea");
+        fallback.value = text;
+        fallback.setAttribute("readonly", "");
+        fallback.style.position = "fixed";
+        fallback.style.opacity = "0";
+        document.body.appendChild(fallback);
+        fallback.select();
+        const copied = document.execCommand("copy");
+        fallback.remove();
+        if (!copied) throw new Error("Copy failed");
+      }
+
+      pilotForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const body = buildRequestBody(event.currentTarget);
         const subject = encodeURIComponent("Solvyr Fast Corpus pilot");
-        window.location.href = `mailto:jan@solvyr.com?subject=${subject}&body=${encodeURIComponent(body)}`;
+        await window.solvyrMeasure?.("email-prepared");
+        window.location.href = `mailto:hello@solvyr.com?subject=${subject}&body=${encodeURIComponent(body)}`;
+      });
+
+      document.getElementById("copy-request").addEventListener("click", async () => {
+        if (!pilotForm.reportValidity()) return;
+        const status = document.getElementById("copy-status");
+        try {
+          await copyText(buildRequestBody(pilotForm));
+          window.solvyrMeasure?.("summary-copied");
+          status.textContent = "Request summary copied. You can paste it into email or your notes.";
+        } catch {
+          status.textContent = "Copying was blocked by the browser. Use Prepare email instead.";
+        }
       });
     </script>
   </body>

@@ -15,22 +15,88 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://solvyr.com/connectors.html" />
-    <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
+    <meta property="og:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Solvyr: Turn a document backlog into an AI-ready corpus." />
+    <meta name="twitter:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
+    <meta name="twitter:image:alt" content="Solvyr: Turn a document backlog into an AI-ready corpus." />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://solvyr.com/connectors.html" />
     <link rel="alternate" hreflang="en" href="https://solvyr.com/connectors.html" />
     <link rel="alternate" hreflang="nl" href="https://solvyr.com/connectors-nl.html" />
     <link rel="alternate" hreflang="x-default" href="https://solvyr.com/connectors.html" />
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="/assets/brand/solvyr-icon-hybrid.svg?v=20260820-2" type="image/svg+xml" sizes="any" />
+    <link rel="icon" href="/favicon.ico?v=20260820-2" sizes="16x16 32x32 48x48" />
+    <link rel="apple-touch-icon" href="/assets/brand/solvyr-icon-hybrid-256.png?v=20260820-2" />
+    <link rel="stylesheet" href="styles.css?v=20260821-1" />
+      <script>
+(() => {
+  const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
+  const events = new Set([
+    "pilot-start",
+    "direct-email",
+    "email-prepared",
+    "summary-copied"
+  ]);
+
+  async function measure(eventName) {
+    if (localHosts.has(window.location.hostname) || !events.has(eventName)) return;
+
+    await new Promise((resolve) => {
+      const frame = document.createElement("iframe");
+      const finish = () => {
+        window.setTimeout(() => frame.remove(), 1200);
+        resolve();
+      };
+      const timeout = window.setTimeout(finish, 450);
+
+      frame.hidden = true;
+      frame.tabIndex = -1;
+      frame.setAttribute("aria-hidden", "true");
+      frame.addEventListener("load", () => {
+        window.clearTimeout(timeout);
+        window.setTimeout(finish, 40);
+      }, { once: true });
+      frame.src = `/measure/${eventName}.html`;
+      document.body.appendChild(frame);
+    });
+  }
+
+  window.solvyrMeasure = measure;
+  document.documentElement.dataset.solvyrInteractions = "ready";
+
+  document.addEventListener("click", async (event) => {
+    const link = event.target.closest("a[href]");
+    if (!link || event.defaultPrevented) return;
+
+    const href = link.getAttribute("href") || "";
+    const isModified = event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey;
+
+    if (href.includes("pilot-intake") && !isModified && link.target !== "_blank") {
+      event.preventDefault();
+      await measure("pilot-start");
+      window.location.href = link.href;
+      return;
+    }
+
+    if (/^mailto:hello@solvyr\.com/i.test(href) && !isModified) {
+      event.preventDefault();
+      await measure("direct-email");
+      window.location.href = link.href;
+    }
+  });
+})();
+      </script>
   </head>
 
   <body>
+    <a class="skipLink" href="#main-content">Skip to content</a>
     <header class="top">
       <div class="container topbar">
         <a class="brand" href="/#overview" aria-label="Solvyr home">
-          <img class="brandlogo" src="assets/brand/icon.png" alt="Solvyr icon" width="34" height="34" />
           <div class="brandtext">
-            <div class="name">Solvyr</div>
+            <img class="brandLogo" src="/assets/brand/solvyr-logo-hybrid.svg" alt="Solvyr" width="175" height="35" />
             <div class="tag">Fast Corpus for European AI teams</div>
           </div>
         </a>
@@ -61,17 +127,15 @@
       </div>
     </header>
 
-    <main class="container shell">
+    <main id="main-content" class="container shell">
       <section class="hero">
         <p class="eyebrow">Connector guide</p>
         <h1>Introduce Solvyr when someone owns a document backlog that needs to become AI-ready.</h1>
         <p class="lede">
-          Public and semi-public ecosystem builders, ROMs, municipalities,
-          archives, libraries, research networks, and regional innovation teams
-          can help by connecting Solvyr to real corpus owners with bounded work:
-          document backlogs, recurring corpus refreshes, public metadata exports,
-          or catalog quality runs. The sovereignty angle matters most when it is
-          tied to a real run, output target, and pilot decision.
+          A useful introduction has a workload owner, a bounded backlog or
+          refresh cycle, a target output, and a safe representative sample.
+          European execution context matters when it is attached to that
+          specific run—not as a separate infrastructure pitch.
         </p>
       </section>
 
@@ -81,11 +145,9 @@
           <ul class="cleanList">
             <li>Teams preparing PDFs or text for RAG, search, evals, or agents.</li>
             <li>Organizations with a recurring corpus refresh or re-indexing need.</li>
-            <li>Public-data teams with metadata exports, catalog refreshes, or quality reports.</li>
-            <li>Archives, libraries, or agencies with clean digital document sets.</li>
-            <li>AI product teams waiting on usable corpus output.</li>
-            <li>Teams under cost or delivery pressure that want a scoped run.</li>
-            <li>Public-sector teams that want European execution and oversight context.</li>
+            <li>Public-data teams with metadata exports or catalog quality runs.</li>
+            <li>Archives, libraries, agencies, or AI teams with clean digital document sets.</li>
+            <li>Teams under cost or delivery pressure that can share a safe sample.</li>
           </ul>
         </article>
         <article class="panel mutedPanel">
@@ -105,41 +167,48 @@
           <h2 id="intro-title">Short, concrete, workload-first.</h2>
         </div>
         <p>
-          "Solvyr is running controlled Fast Corpus pilots: clean PDFs or text
-          backlogs to AI-ready JSONL with chunks, embeddings, stable IDs, and a
-          run report, starting at EUR 0.95 per 1000 pages for standard clean
-          batches. This may fit if you have a document backlog, cost pressure,
-          recurring corpus refresh, public metadata quality workflow, or a
-          European sovereignty question attached to real documents or public
-          data."
+          “Solvyr turns clean PDF or text backlogs into inspectable AI-ready
+          corpus output and run evidence through a scoped pilot. Standard clean
+          batches start at EUR 0.95 per 1000 pages. Would this fit one of your
+          current backlogs or refresh cycles?”
         </p>
       </section>
 
       <section class="band compact" aria-labelledby="why-title">
         <div>
-          <p class="eyebrow">Why connectors matter</p>
-          <h2 id="why-title">The larger story is infrastructure, but the first proof is a workload.</h2>
+          <p class="eyebrow">After the introduction</p>
+          <h2 id="why-title">Solvyr scopes the run; the connector does not sell the system.</h2>
         </div>
         <p>
-          Solvyr may be relevant to European execution capacity, public-sector
-          oversight, and sovereignty conversations. The practical first step is
-          still a representative document sample and a bounded Fast Corpus run.
+          Solvyr handles workload definition, sample boundaries, output
+          acceptance, execution context, and the pilot decision with the owner.
         </p>
       </section>
     </main>
 
     <footer class="footer">
       <div class="container footerInner">
-        <div>&copy; <span id="y"></span> Solvyr</div>
+        <a class="footerBrand" href="/" aria-label="Solvyr home">
+          <img src="/assets/brand/solvyr-logo-hybrid-reversed.svg" alt="Solvyr" width="150" height="30" />
+          <span>&copy; <span id="y"></span></span>
+        </a>
         <div class="footerLinks">
           <a href="about.html">About</a>
           <a href="connectors.html">Connectors</a>
           <a href="privacy.html">Privacy</a>
           <a href="legal.html">Legal</a>
-          <a href="llms.txt">llms.txt</a>
-          <a href="ai/fast-corpus.md">AI brief</a>
-          <a href="pricing.yaml">Pricing YAML</a>
-          <a href="mailto:jan@solvyr.com">jan@solvyr.com</a>
+          <details class="machineLinks">
+
+            <summary>Machine-readable</summary>
+
+            <a href="llms.txt">llms.txt</a>
+
+            <a href="ai/fast-corpus.md">AI brief</a>
+
+            <a href="pricing.yaml">Pricing YAML</a>
+
+          </details>
+          <a href="mailto:hello@solvyr.com">hello@solvyr.com</a>
           <a href="pilot-intake.html#intent=fast-corpus&source=connector-page">Pilot intake</a>
         </div>
       </div>

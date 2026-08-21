@@ -15,22 +15,88 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://solvyr.com/about.html" />
-    <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
+    <meta property="og:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Solvyr: Turn a document backlog into an AI-ready corpus." />
+    <meta name="twitter:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
+    <meta name="twitter:image:alt" content="Solvyr: Turn a document backlog into an AI-ready corpus." />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://solvyr.com/about.html" />
     <link rel="alternate" hreflang="en" href="https://solvyr.com/about.html" />
     <link rel="alternate" hreflang="nl" href="https://solvyr.com/about-nl.html" />
     <link rel="alternate" hreflang="x-default" href="https://solvyr.com/about.html" />
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="/assets/brand/solvyr-icon-hybrid.svg?v=20260820-2" type="image/svg+xml" sizes="any" />
+    <link rel="icon" href="/favicon.ico?v=20260820-2" sizes="16x16 32x32 48x48" />
+    <link rel="apple-touch-icon" href="/assets/brand/solvyr-icon-hybrid-256.png?v=20260820-2" />
+    <link rel="stylesheet" href="styles.css?v=20260821-1" />
+      <script>
+(() => {
+  const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
+  const events = new Set([
+    "pilot-start",
+    "direct-email",
+    "email-prepared",
+    "summary-copied"
+  ]);
+
+  async function measure(eventName) {
+    if (localHosts.has(window.location.hostname) || !events.has(eventName)) return;
+
+    await new Promise((resolve) => {
+      const frame = document.createElement("iframe");
+      const finish = () => {
+        window.setTimeout(() => frame.remove(), 1200);
+        resolve();
+      };
+      const timeout = window.setTimeout(finish, 450);
+
+      frame.hidden = true;
+      frame.tabIndex = -1;
+      frame.setAttribute("aria-hidden", "true");
+      frame.addEventListener("load", () => {
+        window.clearTimeout(timeout);
+        window.setTimeout(finish, 40);
+      }, { once: true });
+      frame.src = `/measure/${eventName}.html`;
+      document.body.appendChild(frame);
+    });
+  }
+
+  window.solvyrMeasure = measure;
+  document.documentElement.dataset.solvyrInteractions = "ready";
+
+  document.addEventListener("click", async (event) => {
+    const link = event.target.closest("a[href]");
+    if (!link || event.defaultPrevented) return;
+
+    const href = link.getAttribute("href") || "";
+    const isModified = event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey;
+
+    if (href.includes("pilot-intake") && !isModified && link.target !== "_blank") {
+      event.preventDefault();
+      await measure("pilot-start");
+      window.location.href = link.href;
+      return;
+    }
+
+    if (/^mailto:hello@solvyr\.com/i.test(href) && !isModified) {
+      event.preventDefault();
+      await measure("direct-email");
+      window.location.href = link.href;
+    }
+  });
+})();
+      </script>
   </head>
 
   <body>
+    <a class="skipLink" href="#main-content">Skip to content</a>
     <header class="top">
       <div class="container topbar">
         <a class="brand" href="/#overview" aria-label="Solvyr home">
-          <img class="brandlogo" src="assets/brand/icon.png" alt="Solvyr icon" width="34" height="34" />
           <div class="brandtext">
-            <div class="name">Solvyr</div>
+            <img class="brandLogo" src="/assets/brand/solvyr-logo-hybrid.svg" alt="Solvyr" width="175" height="35" />
             <div class="tag">Fast Corpus for European AI teams</div>
           </div>
         </a>
@@ -61,108 +127,100 @@
       </div>
     </header>
 
-    <main class="container shell">
+    <main id="main-content" class="container shell">
       <section class="hero">
         <p class="eyebrow">About Solvyr</p>
-        <h1>Fast Corpus sells completed corpus work. Controlled distributed execution is the company underneath.</h1>
+        <h1>Fast Corpus is the first workload. Solvyr operates the system underneath.</h1>
         <p class="lede">
-          Solvyr is in a founder-led, controlled trial phase. The current public
-          offer is narrow on purpose: clean PDF and text backlogs to
-          AI-ready JSONL, chunks, embeddings, stable IDs, a run report, and a
-          clear starting price for standard batches. For archives and public
-          teams, it also creates a practical way to evaluate European execution
-          control around a real workload.
+          Solvyr is founder-led and operated through Solvyr OÜ. The current
+          offer turns clean PDF and text backlogs into accepted AI-ready corpus
+          output and run evidence through controlled, scoped pilots.
         </p>
       </section>
 
       <div class="summaryGrid aboutGrid">
         <article class="panel">
-          <h2>Vision</h2>
+          <h2>Current offer</h2>
           <p>
-            Activate underused computers for suitable AI execution and expand
-            useful compute capacity beyond today's data centres.
+            AI-ready JSONL, chunks, embeddings, stable IDs, and an inspectable
+            run report from a bounded document or text backlog.
           </p>
         </article>
         <article class="panel">
-          <h2>Mission</h2>
+          <h2>What the customer buys</h2>
           <p>
-            Make distributed capacity dependable through controlled,
-            inspectable execution of bounded AI workloads.
+            Completed corpus output and run evidence—not worker provisioning,
+            queue operation, or an internal pipeline project.
           </p>
         </article>
         <article class="panel">
-          <h2>Product</h2>
+          <h2>System underneath</h2>
           <p>
-            A managed execution service: customers buy completed output and
-            run evidence, not raw GPU access or an orchestration project.
+            Workload contracts, scheduling, eligible execution environments,
+            retries, result acceptance, and lifecycle reporting.
           </p>
         </article>
         <article class="panel">
-          <h2>Current wedge</h2>
+          <h2>Direction</h2>
           <p>
-            Fast Corpus turns clean document and text backlogs into accepted
-            AI-ready corpus output. It is the first workload, not the limit of
-            the company.
+            Make suitable distributed capacity dependable and expand useful AI
+            execution beyond today's central infrastructure.
           </p>
         </article>
       </div>
 
-      <section class="band compact" aria-labelledby="why-title">
-        <div>
-          <p class="eyebrow">Why this shape</p>
-          <h2 id="why-title">A concrete workload is the honest way to prove the system.</h2>
+      <section class="teamBlock" aria-labelledby="team-title">
+        <div class="teamIntro">
+          <p class="eyebrow">Founder-led</p>
+          <h2 id="team-title">Product and system ownership stay close to the work.</h2>
+          <p>
+            Talk directly with the people shaping the pilot and the controlled
+            execution system underneath it.
+          </p>
         </div>
-        <p>
-          Solvyr is not trying to sell infrastructure in the abstract. Fast
-          Corpus gives buyers, connectors, and agents one concrete backlog
-          outcome, output bundle, and cost basis to evaluate before any broader
-          platform or sovereignty conversation.
-        </p>
+        <div class="teamGrid">
+          <article class="personCard">
+            <div>
+              <p class="personRole">Founder</p>
+              <h3>Jan Wouter van Dalen</h3>
+              <p>Product direction, customer validation, pilot design, and commercial proof.</p>
+              <a class="profileLink" href="https://nl.linkedin.com/in/janwoutervandalen" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="personCard">
+            <div>
+              <p class="personRole">Founding engineer</p>
+              <h3>Maksym Wezdecki</h3>
+              <p>Scheduler, API, worker execution, system boundaries, and benchmark instrumentation.</p>
+              <a class="profileLink" href="https://pl.linkedin.com/in/maksym-wezdecki-a3b82b6b" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
       </section>
 
-      <section class="band compact" aria-labelledby="company-title">
+      <section class="band compact" id="execution" aria-labelledby="execution-title">
         <div>
-          <p class="eyebrow">Company and direction</p>
-          <h2 id="company-title">Founder-led, with one concrete workload as the starting point.</h2>
+          <p class="eyebrow">Execution model</p>
+          <h2 id="execution-title">Controlled execution stays behind the service.</h2>
         </div>
         <p>
-          Solvyr is led by founder <a href="https://www.linkedin.com/in/janwoutervandalen">Jan Wouter van Dalen</a>, who owns product
-          direction, customer development, partnerships, and pilot design. The
-          engineering work is focused on the controlled execution system
-          underneath Fast Corpus. Solvyr OÜ is the operating company and
-          product-development vehicle. Fast Corpus is the first bounded
-          workload through which Solvyr proves dependable asynchronous
-          execution against a result a customer can inspect.
+          Solvyr manages the workload contract, assignment, retries, result
+          acceptance, and lifecycle evidence across eligible execution
+          environments. The customer receives accepted output and run evidence;
+          the infrastructure is supporting context, not another system to run.
         </p>
       </section>
 
       <section class="band compact" aria-labelledby="expansion-title">
         <div>
           <p class="eyebrow">Expansion path</p>
-          <h2 id="expansion-title">From a completed run to a repeatable system.</h2>
+          <h2 id="expansion-title">One workload first; a repeatable system next.</h2>
         </div>
         <p>
-          Repeated corpus and document workflows exercise the reusable
-          capabilities underneath: scheduling, node eligibility, retries,
-          visible state, result validation, and lifecycle reporting. Europe is
-          the first proving ground for explicit location, ownership, policy, and
-          evidence—not the geographic ceiling of the system.
-        </p>
-      </section>
-
-      <section class="band compact" aria-labelledby="implications-title">
-        <div>
-          <p class="eyebrow">Intended system outcomes</p>
-          <h2 id="implications-title">More useful capacity, control, and scheduling choice.</h2>
-        </div>
-        <p>
-          Better use of existing hardware could support more resilient and
-          plural infrastructure, location-aware execution, and eventually
-          energy-aware scheduling. These outcomes require measurement. Solvyr
-          does not currently claim lower electricity or water use, lower carbon,
-          less data-centre construction, certified sovereignty, or greater
-          efficiency than data-centre GPUs; distributed execution is not
-          automatically more efficient.
+          Repeated corpus and document workflows exercise the same reusable
+          execution capabilities. Europe is the first proving ground for
+          explicit location, ownership, policy, and evidence—not the geographic
+          ceiling of the system.
         </p>
       </section>
 
@@ -181,16 +239,27 @@
 
     <footer class="footer">
       <div class="container footerInner">
-        <div>&copy; <span id="y"></span> Solvyr</div>
+        <a class="footerBrand" href="/" aria-label="Solvyr home">
+          <img src="/assets/brand/solvyr-logo-hybrid-reversed.svg" alt="Solvyr" width="150" height="30" />
+          <span>&copy; <span id="y"></span></span>
+        </a>
         <div class="footerLinks">
           <a href="about.html">About</a>
           <a href="connectors.html">Connectors</a>
           <a href="privacy.html">Privacy</a>
           <a href="legal.html">Legal</a>
-          <a href="llms.txt">llms.txt</a>
-          <a href="ai/fast-corpus.md">AI brief</a>
-          <a href="pricing.yaml">Pricing YAML</a>
-          <a href="mailto:jan@solvyr.com">jan@solvyr.com</a>
+          <details class="machineLinks">
+
+            <summary>Machine-readable</summary>
+
+            <a href="llms.txt">llms.txt</a>
+
+            <a href="ai/fast-corpus.md">AI brief</a>
+
+            <a href="pricing.yaml">Pricing YAML</a>
+
+          </details>
+          <a href="mailto:hello@solvyr.com">hello@solvyr.com</a>
           <a href="pilot-intake.html#intent=fast-corpus&source=about-page">Pilot intake</a>
         </div>
       </div>
