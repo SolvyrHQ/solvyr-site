@@ -120,14 +120,59 @@ published_proof:
     - custom structured extraction claims
     - mature enterprise SLA claims
   source: https://solvyr.com/proof/100-pdf-fast-corpus-run.html
+published_output_sample:
+  scope: Tiny public plain-text embedding run with downloadable output
+  run_date: 2026-08-21
+  documents: 3
+  prepared_chunks: 7
+  completed_records: 7
+  failed_records: 0
+  retries: 0
+  embedding_vector_length: 4096
+  submission_to_completion_seconds: 20.520935
+  model_label: qwen3-embedding:latest
+  model_digest: unavailable_not_returned
+  negative_input_validation: Missing-text JSONL rejected with HTTP 400 before work creation
+  includes:
+    - source manifest
+    - public output JSONL with complete vectors
+    - run report
+    - empty failure file
+    - SHA-256 checksums
+  public_output_fields:
+    - task_id
+    - record_id
+    - status
+    - embedding
+    - error
+    - model
+  withheld_from_public_download:
+    - internal paths and identifiers
+    - private artifact hashes
+    - exact build and run identifiers
+    - stale source snapshots
+    - node, GPU, provider, power, batching, and per-record timing telemetry
+  supports: Clean public text preparation, stable chunk identity, bounded async scheduling, embedding generation, result retrieval, input validation, and inspectable run evidence for a tiny workload
+  does_not_support:
+    - raw-PDF extraction
+    - OCR
+    - structured extraction
+    - retrieval quality
+    - scale
+    - distributed performance
+    - customer-data handling
+    - cost claims
+    - SLA claims
+  source: https://solvyr.com/sample-output.html
+  download: https://solvyr.com/downloads/solvyr-fast-corpus-public-sample-2026-08-21.zip
 direct_answers:
   what_is_solvyr: A managed B2B service that turns bounded document and text backlogs into accepted AI-ready corpus output with run evidence.
   is_solvyr_a_gpu_provider: No. Customers buy completed corpus work; controlled distributed execution is supporting infrastructure.
   is_solvyr_an_orchestration_layer: No. Orchestration runs underneath the managed corpus service; customers buy the completed run rather than operating the scheduler or pipeline.
   what_fast_corpus_delivers: Extracted text, AI-ready JSONL, chunks, embeddings, stable IDs, caveats, and an inspectable run report.
   how_to_start: Submit a bounded backlog and output target, then use a representative non-sensitive sample for a capped pilot run.
-contact_email: jan@solvyr.com
-founder_linkedin: https://www.linkedin.com/in/janwoutervandalen
+contact_email: hello@solvyr.com
+founder_linkedin: https://nl.linkedin.com/in/janwoutervandalen
 links:
   human_page: https://solvyr.com/
   about: https://solvyr.com/about.html
@@ -145,6 +190,8 @@ links:
   document_intake: https://solvyr.com/use-cases/document-intake.html
   document_intake_nl: https://solvyr.com/use-cases/document-intake-nl.html
   proof_100_pdf_run: https://solvyr.com/proof/100-pdf-fast-corpus-run.html
-  sample_output_contract: https://solvyr.com/sample-output.html
+  public_output_sample: https://solvyr.com/sample-output.html
+  public_output_sample_nl: https://solvyr.com/sample-output-nl.html
+  public_output_sample_download: https://solvyr.com/downloads/solvyr-fast-corpus-public-sample-2026-08-21.zip
   pricing: https://solvyr.com/pricing.yaml
   pilot_intake: https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=capabilities-yaml

@@ -16,32 +16,91 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://solvyr.com/privacy.html" />
-    <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
+    <meta property="og:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Solvyr: Turn a document backlog into an AI-ready corpus." />
+    <meta name="twitter:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
+    <meta name="twitter:image:alt" content="Solvyr: Turn a document backlog into an AI-ready corpus." />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://solvyr.com/privacy.html" />
-    <meta name="twitter:card" content="summary" />
 
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="/assets/brand/solvyr-icon-hybrid.svg?v=20260820-2" type="image/svg+xml" sizes="any" />
+    <link rel="icon" href="/favicon.ico?v=20260820-2" sizes="16x16 32x32 48x48" />
+    <link rel="apple-touch-icon" href="/assets/brand/solvyr-icon-hybrid-256.png?v=20260820-2" />
     <link rel="alternate" hreflang="en" href="https://solvyr.com/privacy.html" />
     <link rel="alternate" hreflang="nl" href="https://solvyr.com/privacy-nl.html" />
     <link rel="alternate" hreflang="x-default" href="https://solvyr.com/privacy.html" />
-    <meta name="theme-color" content="#f7f8fb" />
+    <meta name="theme-color" content="#f7f9fc" />
     <link rel="preload" as="image" href="assets/brand/icon.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260821-1" />
+      <script>
+(() => {
+  const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
+  const events = new Set([
+    "pilot-start",
+    "direct-email",
+    "email-prepared",
+    "summary-copied"
+  ]);
+
+  async function measure(eventName) {
+    if (localHosts.has(window.location.hostname) || !events.has(eventName)) return;
+
+    await new Promise((resolve) => {
+      const frame = document.createElement("iframe");
+      const finish = () => {
+        window.setTimeout(() => frame.remove(), 1200);
+        resolve();
+      };
+      const timeout = window.setTimeout(finish, 450);
+
+      frame.hidden = true;
+      frame.tabIndex = -1;
+      frame.setAttribute("aria-hidden", "true");
+      frame.addEventListener("load", () => {
+        window.clearTimeout(timeout);
+        window.setTimeout(finish, 40);
+      }, { once: true });
+      frame.src = `/measure/${eventName}.html`;
+      document.body.appendChild(frame);
+    });
+  }
+
+  window.solvyrMeasure = measure;
+  document.documentElement.dataset.solvyrInteractions = "ready";
+
+  document.addEventListener("click", async (event) => {
+    const link = event.target.closest("a[href]");
+    if (!link || event.defaultPrevented) return;
+
+    const href = link.getAttribute("href") || "";
+    const isModified = event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey;
+
+    if (href.includes("pilot-intake") && !isModified && link.target !== "_blank") {
+      event.preventDefault();
+      await measure("pilot-start");
+      window.location.href = link.href;
+      return;
+    }
+
+    if (/^mailto:hello@solvyr\.com/i.test(href) && !isModified) {
+      event.preventDefault();
+      await measure("direct-email");
+      window.location.href = link.href;
+    }
+  });
+})();
+      </script>
   </head>
 
   <body>
+    <a class="skipLink" href="#main-content">Skip to content</a>
     <header class="top">
       <div class="container topbar">
         <a class="brand" href="/#overview" aria-label="Solvyr home">
-          <img
-            class="brandlogo"
-            src="assets/brand/icon.png"
-            alt="Solvyr icon"
-            width="34"
-            height="34"
-          />
           <div class="brandtext">
-            <div class="name">Solvyr</div>
+            <img class="brandLogo" src="/assets/brand/solvyr-logo-hybrid.svg" alt="Solvyr" width="175" height="35" />
             <div class="tag">Fast Corpus for European AI teams</div>
           </div>
         </a>
@@ -72,12 +131,12 @@
       </div>
     </header>
 
-    <main class="container shell">
+    <main id="main-content" class="container shell">
       <section class="pageHeader" aria-labelledby="privacy-title">
         <p class="eyebrow">Privacy</p>
         <h1 id="privacy-title">Plain privacy notes for website visitors and pilot inquiries.</h1>
         <p>
-          Last updated: 13 May 2026. This page covers the public Solvyr
+          Last updated: 21 August 2026. This page covers the public Solvyr
           website, email contact, and early Fast Corpus pilot scoping.
         </p>
       </section>
@@ -116,7 +175,8 @@
           <li>Contact details you provide, such as name, organization, and email address.</li>
           <li>Workload details you choose to share, such as document counts, input type, output requirements, data sensitivity, and timeline.</li>
           <li>Email metadata and message content when you contact Solvyr.</li>
-          <li>Ordinary technical access logs that may be created by website hosting or security infrastructure.</li>
+          <li>Ordinary technical access logs and aggregate page-performance data created by Cloudflare hosting, security, and Web Analytics.</li>
+          <li>Aggregate counts of four website actions: opening pilot intake, choosing direct email, preparing a pilot email, and copying a request summary.</li>
         </ul>
       </section>
 
@@ -162,14 +222,16 @@
 
       <section class="band compact" aria-labelledby="cookies-title">
         <div>
-          <p class="eyebrow">Cookies</p>
-          <h2 id="cookies-title">No intentional tracking cookies</h2>
+          <p class="eyebrow">Measurement</p>
+          <h2 id="cookies-title">Aggregate measurement without marketing cookies</h2>
         </div>
         <p>
-          The public Solvyr website is designed as a static site and does not
-          intentionally set analytics cookies, advertising cookies, or tracking
-          pixels. If analytics or tracking is added later, this page and the
-          cookie approach should be updated before it goes live.
+          Solvyr does not set analytics or advertising cookies and does not use
+          cross-site tracking. Cloudflare Web Analytics measures page views and
+          performance. For the four actions listed above, the site loads a
+          same-origin, noindex measurement page so Cloudflare can count the
+          action. Solvyr adds no form fields, name, email address, document
+          details, visitor ID, or query string to that measurement URL.
         </p>
       </section>
 
@@ -190,16 +252,27 @@
 
     <footer class="footer">
       <div class="container footerInner">
-        <div>&copy; <span id="y"></span> Solvyr</div>
+        <a class="footerBrand" href="/" aria-label="Solvyr home">
+          <img src="/assets/brand/solvyr-logo-hybrid-reversed.svg" alt="Solvyr" width="150" height="30" />
+          <span>&copy; <span id="y"></span></span>
+        </a>
         <div class="footerLinks">
           <a href="about.html">About</a>
           <a href="connectors.html">Connectors</a>
           <a href="privacy.html">Privacy</a>
           <a href="legal.html">Legal</a>
-          <a href="llms.txt">llms.txt</a>
-          <a href="ai/fast-corpus.md">AI brief</a>
-          <a href="pricing.yaml">Pricing YAML</a>
-          <a href="mailto:jan@solvyr.com">jan@solvyr.com</a>
+          <details class="machineLinks">
+
+            <summary>Machine-readable</summary>
+
+            <a href="llms.txt">llms.txt</a>
+
+            <a href="ai/fast-corpus.md">AI brief</a>
+
+            <a href="pricing.yaml">Pricing YAML</a>
+
+          </details>
+          <a href="mailto:hello@solvyr.com">hello@solvyr.com</a>
           <a href="pilot-intake.html#intent=fast-corpus&source=privacy-page">Pilot intake</a>
         </div>
       </div>

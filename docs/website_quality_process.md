@@ -57,11 +57,34 @@ Also run:
 git diff --check
 ```
 
+Before any production handoff, build and preview the explicit public artifact:
+
+```sh
+node scripts/build-production.mjs
+```
+
+Only `.site-dist/` is a production artifact. It excludes the local `/v2/`
+concept, review material, founder portraits, governance documents, and build
+tooling. Do not publish the repository root.
+
 And parse changed structured files, for example:
 
 ```sh
 node -e "JSON.parse(require('fs').readFileSync('ai/fast-corpus.json','utf8'))"
 ```
+
+When refreshing the seven-record public sample, build the public-lite artifact
+from the verified knowledge-repository evidence before the production build:
+
+```sh
+node scripts/build-public-sample.mjs
+```
+
+The generator verifies the canonical source-bundle checksums, preserves every
+embedding value and customer-relevant output field, removes stale source
+snapshots and internal telemetry, rejects email addresses/private telemetry
+fields, writes new public checksums, and rebuilds the ZIP. Do not hand-edit the
+generated public sample files.
 
 ## Trigger Matrix
 
@@ -73,7 +96,10 @@ node -e "JSON.parse(require('fs').readFileSync('ai/fast-corpus.json','utf8'))"
 | Public route or sitemap deletion/removal | Human approval, then release-safety override if truly intended |
 | Copy-only body edit | `git diff --check`, final read; run full suite if first-screen promise changes |
 | Positioning, pricing, proof, CTA, buyer, exclusions | Update messaging guide/checklist and agent-readable files if relevant |
+| Public seven-record sample or download changes | `node scripts/build-public-sample.mjs`, full local suite, checksum/ZIP verification, and sensitive-data scan |
 | Layout, responsive behavior, forms, interactions | Local suite plus browser check on desktop/mobile-relevant viewport |
+| Contact-address change | Scan source and `.site-dist/` for the retired address; verify visible mailto links, prepared pilot email, and conversion matching in both languages without sending mail |
+| Dropdown or external-profile-link change | Static audit plus browser interaction check; verify external profiles use a new tab and `noopener noreferrer` |
 | Horizontally scrollable mobile navigation | Verify direct hash routes reveal the active tab and the expanded menu has a clean, unambiguous layout |
 | After deploy of route/metadata/indexing-sensitive changes | `node scripts/audit-live-deploy.mjs` |
 | Adding schema.org structured data | Add/run a structured-data audit and manually verify rich-result eligibility |
@@ -103,6 +129,12 @@ Pilot-intake attribution uses URL fragments, not query parameters. Fragments
 preserve the source and intent used in the prepared email without creating
 multiple crawlable intake URLs that can compete with the declared canonical.
 The intake page remains backward-compatible with previously shared query URLs.
+
+Privacy-friendly conversion measurement uses Cloudflare Web Analytics page
+views for four same-origin, `noindex` measurement routes: pilot intake opened,
+direct email chosen, pilot email prepared, and request summary copied. The
+measurement is disabled on localhost. Never add form values, names, email
+addresses, document details, visitor IDs, or query strings to these routes.
 
 ## Human-In-The-Loop Points
 

@@ -8,6 +8,7 @@
 User-agent: *
 Content-signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
+Disallow: /measure/
 
 # Answer/search crawlers with separately documented non-training purposes.
 User-agent: OAI-SearchBot

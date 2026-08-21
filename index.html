@@ -21,16 +21,23 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://solvyr.com/" />
-    <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
+    <meta property="og:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Solvyr: Turn a document backlog into an AI-ready corpus." />
+    <meta name="twitter:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
+    <meta name="twitter:image:alt" content="Solvyr: Turn a document backlog into an AI-ready corpus." />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://solvyr.com/" />
-    <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Solvyr Fast Corpus - Document backlogs to AI-ready JSONL" />
     <meta
       name="twitter:description"
       content="Clean PDF and text backlogs to AI-ready JSONL with visible run reporting."
     />
 
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="/assets/brand/solvyr-icon-hybrid.svg?v=20260820-2" type="image/svg+xml" sizes="any" />
+    <link rel="icon" href="/favicon.ico?v=20260820-2" sizes="16x16 32x32 48x48" />
+    <link rel="apple-touch-icon" href="/assets/brand/solvyr-icon-hybrid-256.png?v=20260820-2" />
     <link rel="alternate" hreflang="en" href="https://solvyr.com/" />
     <link rel="alternate" hreflang="nl" href="https://solvyr.com/nl.html" />
     <link rel="alternate" hreflang="x-default" href="https://solvyr.com/" />
@@ -38,9 +45,9 @@
     <link rel="alternate" type="application/json" href="ai/fast-corpus.json" title="Fast Corpus agent packet" />
     <link rel="alternate" type="application/yaml" href="capabilities.yaml" title="Fast Corpus capabilities" />
     <link rel="help" href="llms.txt" />
-    <meta name="theme-color" content="#f7f8fb" />
+    <meta name="theme-color" content="#f7f9fc" />
     <link rel="preload" as="image" href="assets/brand/icon.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260821-1" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -51,7 +58,7 @@
           "name": "Solvyr",
           "legalName": "Solvyr OÜ",
           "identifier": "Estonian registry code 17471643",
-          "email": "jan@solvyr.com",
+          "email": "hello@solvyr.com",
           "url": "https://solvyr.com/"
         },
         "url": "https://solvyr.com/",
@@ -72,6 +79,11 @@
             "@type": "CreativeWork",
             "name": "100 PDF Fast Corpus proof note",
             "url": "https://solvyr.com/proof/100-pdf-fast-corpus-run.html"
+          },
+          {
+            "@type": "Dataset",
+            "name": "Solvyr Fast Corpus public sample bundle",
+            "url": "https://solvyr.com/sample-output.html"
           }
         ],
         "offers": {
@@ -82,21 +94,73 @@
         }
       }
     </script>
+      <script>
+(() => {
+  const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
+  const events = new Set([
+    "pilot-start",
+    "direct-email",
+    "email-prepared",
+    "summary-copied"
+  ]);
+
+  async function measure(eventName) {
+    if (localHosts.has(window.location.hostname) || !events.has(eventName)) return;
+
+    await new Promise((resolve) => {
+      const frame = document.createElement("iframe");
+      const finish = () => {
+        window.setTimeout(() => frame.remove(), 1200);
+        resolve();
+      };
+      const timeout = window.setTimeout(finish, 450);
+
+      frame.hidden = true;
+      frame.tabIndex = -1;
+      frame.setAttribute("aria-hidden", "true");
+      frame.addEventListener("load", () => {
+        window.clearTimeout(timeout);
+        window.setTimeout(finish, 40);
+      }, { once: true });
+      frame.src = `/measure/${eventName}.html`;
+      document.body.appendChild(frame);
+    });
+  }
+
+  window.solvyrMeasure = measure;
+  document.documentElement.dataset.solvyrInteractions = "ready";
+
+  document.addEventListener("click", async (event) => {
+    const link = event.target.closest("a[href]");
+    if (!link || event.defaultPrevented) return;
+
+    const href = link.getAttribute("href") || "";
+    const isModified = event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey;
+
+    if (href.includes("pilot-intake") && !isModified && link.target !== "_blank") {
+      event.preventDefault();
+      await measure("pilot-start");
+      window.location.href = link.href;
+      return;
+    }
+
+    if (/^mailto:hello@solvyr\.com/i.test(href) && !isModified) {
+      event.preventDefault();
+      await measure("direct-email");
+      window.location.href = link.href;
+    }
+  });
+})();
+      </script>
   </head>
 
   <body>
+    <a class="skipLink" href="#main-content">Skip to content</a>
     <header class="top">
       <div class="container topbar">
         <a class="brand" href="#overview" data-tab-target="overview" aria-label="Solvyr home">
-          <img
-            class="brandlogo"
-            src="assets/brand/icon.png"
-            alt="Solvyr icon"
-            width="34"
-            height="34"
-          />
           <div class="brandtext">
-            <div class="name">Solvyr</div>
+            <img class="brandLogo" src="/assets/brand/solvyr-logo-hybrid.svg" alt="Solvyr" width="175" height="35" />
             <div class="tag">Fast Corpus for European AI teams</div>
           </div>
         </a>
@@ -128,24 +192,52 @@
       </div>
     </header>
 
-    <main class="container shell">
+    <main id="main-content" class="container shell">
       <section class="page active" id="overview-panel" data-page="overview" aria-labelledby="overview-title">
-        <div class="hero">
-          <p class="eyebrow">Solvyr Fast Corpus</p>
-          <h1 id="overview-title">Turn document backlogs into AI-ready JSONL.</h1>
-          <p class="lede">
-            Send a bounded batch of clean PDFs or text. Get extracted text,
-            chunks, embeddings, stable IDs, and a run report your AI team can
-            inspect at a predictable price per processed page.
-          </p>
-          <div class="heroActions">
-            <a class="button primary" href="pilot-intake.html#intent=fast-corpus&source=homepage-hero">Scope a backlog run</a>
-            <a class="button secondary" href="proof/100-pdf-fast-corpus-run.html">See the proof run</a>
+        <div class="hero heroGrid">
+          <div class="heroCopy">
+            <p class="eyebrow">Solvyr Fast Corpus</p>
+            <h1 id="overview-title">Turn a document backlog into an AI-ready corpus.</h1>
+            <p class="lede">
+              Send a bounded batch of clean PDFs or text. Get extracted text,
+              chunks, embeddings, stable IDs, and a run report your team can
+              inspect and accept.
+            </p>
+            <div class="heroActions">
+              <a class="button primary" href="pilot-intake.html#intent=fast-corpus&source=homepage-hero">Scope a backlog run <span aria-hidden="true">→</span></a>
+            </div>
+            <p class="heroContact">
+              Or talk directly with
+              <a href="mailto:hello@solvyr.com?subject=Solvyr%20Fast%20Corpus%20inquiry">the founder at hello@solvyr.com</a>.
+            </p>
           </div>
-          <p class="heroContact">
-            Email Jan directly:
-            <a href="mailto:jan@solvyr.com?subject=Solvyr%20Fast%20Corpus%20inquiry">jan@solvyr.com</a>
-          </p>
+
+          <div class="orchestrationStage" aria-label="Illustration: many documents converge into one accepted corpus output">
+            <div class="stageTopline">
+              <span>Bounded workload</span>
+              <span class="liveState"><i></i> controlled run</span>
+            </div>
+            <div class="inputStack" aria-hidden="true">
+              <span>PDF batch</span>
+              <span>Text files</span>
+              <span>Metadata</span>
+            </div>
+            <div class="flowLines" aria-hidden="true">
+              <i class="flowLine flowOne"></i>
+              <i class="flowLine flowTwo"></i>
+              <i class="flowLine flowThree"></i>
+              <i class="flowResolve"></i>
+              <i class="flowDot"></i>
+            </div>
+            <div class="outputCard">
+              <span class="outputLabel">Accepted output</span>
+              <strong>AI-ready corpus</strong>
+              <small>JSONL · chunks · embeddings · run report</small>
+            </div>
+            <div class="stageFoot">
+              <span>assigned</span><span>validated</span><span>returned</span>
+            </div>
+          </div>
         </div>
 
         <div class="reasonGrid" aria-label="Why teams pilot Solvyr">
@@ -160,8 +252,8 @@
             <p class="miniLabel">Price</p>
             <h2>Standard clean batches start at EUR 0.95 per 1000 pages.</h2>
             <p>
-              This is a starting processing rate. Pilot, service, and extra
-              handling scope are agreed separately before the run.
+              This is the processing starting rate. Pilot and service scope
+              are agreed separately; your team does not build the pipeline.
             </p>
           </article>
           <article class="panel">
@@ -180,27 +272,14 @@
           </article>
         </div>
 
-        <section class="band compact" aria-labelledby="cost-title">
-          <div>
-            <p class="eyebrow">For AI teams</p>
-            <h2 id="cost-title">Price the backlog before you build the pipeline.</h2>
-          </div>
-          <p>
-            Fast Corpus is the buy option: pages processed, corpus delivered,
-            and run evidence attached. Your team does not first have to build
-            and operate its own document pipeline.
-          </p>
-        </section>
-
         <section class="reportPreview" aria-labelledby="benchmark-title">
           <div class="reportCopy">
             <p class="eyebrow">Evidence boundary</p>
             <h2 id="benchmark-title">Recent internal run: 100 PDFs and 2,052 pages in one measured pass.</h2>
             <p>
-              The run covered clean-PDF extraction, chunking, and embedding
-              generation, with no failures or retries. It does not support
-              claims about OCR-heavy scans, layout parsing, or structured
-              extraction.
+              The run covered clean digital PDFs, text extraction, chunking,
+              and embeddings, with no failures or retries. OCR-heavy scans,
+              layout parsing, and structured extraction were outside this run.
             </p>
           </div>
           <div class="metricCard" aria-label="Recent benchmark metrics">
@@ -220,84 +299,6 @@
               <span>Reliability</span>
               <strong>0 failures / 0 retries</strong>
             </div>
-          </div>
-        </section>
-
-        <section class="band compact" aria-labelledby="vision-title">
-          <div>
-            <p class="eyebrow">The larger vision</p>
-            <h2 id="vision-title">Expand AI compute beyond the data centre.</h2>
-          </div>
-          <div>
-            <p>
-              Solvyr's vision is to activate millions of underused computers
-              for AI execution, expanding the world's compute capacity beyond
-              today's data centres. Fast Corpus is the first bounded workload
-              for proving controlled execution and measurable output.
-            </p>
-            <p>
-              The intended system could make useful capacity available from
-              existing hardware, give workload owners more control over
-              location and policy, and match suitable work to suitable
-              resources and energy conditions. These are intended outcomes,
-              not results established by the current prototype: today’s proof
-              does not demonstrate lower electricity, water use, emissions,
-              or data-centre construction.
-            </p>
-            <p><a href="about.html">Read about Solvyr's direction</a></p>
-          </div>
-        </section>
-
-        <section class="band compact" aria-labelledby="europe-title">
-          <div>
-            <p class="eyebrow">For archives and public teams</p>
-            <h2 id="europe-title">Define European execution control around a real document run.</h2>
-          </div>
-          <p>
-            The same bounded pilot can make execution location, oversight, and
-            data handling explicit around inspectable corpus output.
-          </p>
-        </section>
-
-        <section class="band compact" aria-labelledby="connector-title">
-          <div>
-            <p class="eyebrow">Category</p>
-            <h2 id="connector-title">A managed corpus service—not a GPU marketplace or orchestration layer.</h2>
-          </div>
-          <p>
-            Solvyr operates extraction, chunking, embeddings, scheduling, and
-            retries. You receive the completed corpus and run evidence; you do
-            not provision workers, operate queues, or assemble the pipeline.
-          </p>
-        </section>
-
-        <section class="proofStrip" aria-label="Pilot scope">
-          <div>
-            <strong>Clean digital input</strong>
-            <span>PDFs and text first. OCR-heavy scans are separate.</span>
-          </div>
-          <div>
-            <strong>AI-ready output</strong>
-            <span>JSONL, chunks, embeddings, IDs, run report.</span>
-          </div>
-          <div>
-            <strong>Pilot-shaped</strong>
-            <span>Representative sample, capped run, clear next step.</span>
-          </div>
-        </section>
-
-        <section class="band compact" aria-labelledby="discover-title">
-          <div>
-            <p class="eyebrow">Choose an entry path</p>
-            <h2 id="discover-title">AI teams start with price and proof. Public teams add execution control.</h2>
-          </div>
-          <div class="linkStack">
-            <a href="use-cases/pdf-to-rag-corpus.html">PDF to RAG corpus</a>
-            <a href="use-cases/document-reindexing.html">Document re-indexing and corpus refresh</a>
-            <a href="use-cases/public-data-quality.html">Public-data quality runs</a>
-            <a href="use-cases/document-intake.html">Document intake for ERP workflows</a>
-            <a href="proof/100-pdf-fast-corpus-run.html">100 PDF Fast Corpus proof note</a>
-            <a href="sample-output.html">Fast Corpus sample output contract</a>
           </div>
         </section>
 
@@ -390,29 +391,6 @@
           </section>
         </div>
 
-        <section class="band compact" aria-labelledby="buyer-title">
-          <div>
-            <p class="eyebrow">Qualification rule</p>
-            <h2 id="buyer-title">A backlog is a buying signal. General AI interest is not.</h2>
-          </div>
-          <p>
-            Look for a real document set, a target output, and a deadline, cost
-            problem, or recurring refresh behind it.
-          </p>
-        </section>
-
-        <section class="band compact" aria-labelledby="intro-title">
-          <div>
-            <p class="eyebrow">For connectors</p>
-            <h2 id="intro-title">Connectors do not need to sell the infrastructure story.</h2>
-          </div>
-          <p>
-            ROMs, municipalities, archives, libraries, research networks,
-            regional innovation teams, and semi-public organizations only need
-            to recognize a document-heavy workload and a reason to test
-            European execution control.
-          </p>
-        </section>
       </section>
 
       <section class="page" id="deliver-panel" data-page="deliver" aria-labelledby="deliver-title">
@@ -467,6 +445,7 @@
               Extracted text, chunks, embeddings, stable IDs, success/failure
               counts, and run notes.
             </p>
+            <p><a href="sample-output.html">Inspect the public seven-record sample</a></p>
           </article>
           <article class="panel">
             <h2>Review package</h2>
@@ -510,85 +489,6 @@
               <strong>Continue, narrow, or stop</strong>
             </div>
           </div>
-        </section>
-      </section>
-
-      <section class="page" id="model-panel" data-page="model" aria-labelledby="model-title">
-        <div class="pageHeader">
-          <p class="eyebrow">Model</p>
-          <h1 id="model-title">The corpus is the product. Distributed execution is how it gets done.</h1>
-          <p>
-            Solvyr turns heterogeneous capacity into observable, bounded,
-            retryable execution. That machinery matters because the finished
-            corpus has to be dependable.
-          </p>
-        </div>
-
-        <div class="summaryGrid">
-          <article class="panel">
-            <h2>Not a GPU marketplace or orchestration layer</h2>
-            <p>
-              You do not provision workers, operate queues, or assemble the
-              corpus pipeline. You receive completed output and run evidence.
-            </p>
-          </article>
-          <article class="panel">
-            <h2>Controlled execution pools</h2>
-            <p>
-              Solvyr routes suitable async work across eligible execution
-              environments. These can include Solvyr-controlled infrastructure
-              and, later, explicitly approved partner- or customer-controlled
-              workers. The scheduler retains authority over assignment, retries,
-              accepted results, and run evidence.
-            </p>
-          </article>
-          <article class="panel">
-            <h2>Recurring refresh is the business layer</h2>
-            <p>
-              The entry price opens the door. The stronger business is repeated
-              corpus refresh and operational responsibility.
-            </p>
-          </article>
-        </div>
-
-        <section class="band compact" aria-labelledby="model-connectors-title">
-          <div>
-            <p class="eyebrow">Why it can resonate</p>
-            <h2 id="model-connectors-title">European control becomes concrete when the workload is concrete.</h2>
-          </div>
-          <p>
-            Public, semi-public, research, education, and regional innovation
-            networks can evaluate execution control, underused capacity, and
-            cloud dependence against an actual document run. European execution
-            becomes meaningful when location, operator access, node eligibility,
-            storage, retention, deletion, and run evidence are attached to a
-            specific workload—not treated as a geographical label.
-          </p>
-        </section>
-
-        <section class="band compact" aria-labelledby="execution-title">
-          <div>
-            <p class="eyebrow">Execution principle</p>
-            <h2 id="execution-title">The scheduler stays the brain; workers execute bounded tasks.</h2>
-          </div>
-          <p>
-            Solvyr is not trying to sell an unmanaged marketplace of machines.
-            The long-term infrastructure value is controlled scheduling,
-            retries, visibility, and explainable results across distributed
-            execution pools.
-          </p>
-        </section>
-
-        <section class="band compact" aria-labelledby="model-boundary-title">
-          <div>
-            <p class="eyebrow">Boundary</p>
-            <h2 id="model-boundary-title">Built for bounded async corpus work.</h2>
-          </div>
-          <p>
-            Datacenters and managed APIs remain part of many stacks. Solvyr
-            works best beside them when a bounded async document or text workload
-            has a clear output contract.
-          </p>
         </section>
       </section>
 
@@ -727,11 +627,11 @@
               <a class="button primary" href="pilot-intake.html#intent=fast-corpus&source=site-pilot">Open pilot intake</a>
               <a
                 class="button secondary"
-                href="mailto:jan@solvyr.com?subject=Solvyr%20Fast%20Corpus%20pilot"
+                href="mailto:hello@solvyr.com?subject=Solvyr%20Fast%20Corpus%20pilot"
               >
-                jan@solvyr.com
+                hello@solvyr.com
               </a>
-              <a class="button secondary" href="https://www.linkedin.com/in/janwoutervandalen">Jan on LinkedIn</a>
+              <a class="button secondary" href="https://nl.linkedin.com/in/janwoutervandalen" target="_blank" rel="noopener noreferrer">Jan on LinkedIn</a>
             </div>
           </div>
         </div>
@@ -751,16 +651,27 @@
 
     <footer class="footer">
       <div class="container footerInner">
-        <div>&copy; <span id="y"></span> Solvyr</div>
+        <a class="footerBrand" href="/" aria-label="Solvyr home">
+          <img src="/assets/brand/solvyr-logo-hybrid-reversed.svg" alt="Solvyr" width="150" height="30" />
+          <span>&copy; <span id="y"></span></span>
+        </a>
         <div class="footerLinks">
           <a href="about.html">About</a>
           <a href="connectors.html">Connectors</a>
           <a href="privacy.html">Privacy</a>
           <a href="legal.html">Legal</a>
-          <a href="llms.txt">llms.txt</a>
-          <a href="ai/fast-corpus.md">AI brief</a>
-          <a href="pricing.yaml">Pricing YAML</a>
-          <a href="mailto:jan@solvyr.com">jan@solvyr.com</a>
+          <details class="machineLinks">
+
+            <summary>Machine-readable</summary>
+
+            <a href="llms.txt">llms.txt</a>
+
+            <a href="ai/fast-corpus.md">AI brief</a>
+
+            <a href="pricing.yaml">Pricing YAML</a>
+
+          </details>
+          <a href="mailto:hello@solvyr.com">hello@solvyr.com</a>
           <a href="pilot-intake.html#intent=fast-corpus&source=site-footer">Pilot intake</a>
         </div>
       </div>
@@ -775,6 +686,10 @@
       const tabs = [...document.querySelectorAll("[data-tab-target]")];
 
       function setActivePage(pageName) {
+        if (pageName === "model") {
+          location.assign("about.html#execution");
+          return;
+        }
         const targetPage = pages.some((page) => page.dataset.page === pageName)
           ? pageName
           : "overview";

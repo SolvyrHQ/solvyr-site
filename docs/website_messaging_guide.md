@@ -8,6 +8,51 @@ changing homepage copy, metadata, use-case pages, agent-readable files, or CTAs.
 Treat this as a living file. If the website positioning changes, update this
 guide in the same pass so the next edit does not regress to older language.
 
+## Working Visual Identity Reference
+
+The canonical working visual source is the sibling knowledge-repository folder
+`../solvyr-knowledge/pitch/concepts/solvyr_merge_arrow_v0_1/`. Read its
+`README.md`, `brand-book.md`, `sources-and-claims.md`, and `deck-handoff.md`
+before changing logos, brand colours, founder photography, or founder profile
+links.
+
+- Use the exact five-lane **B Hybrid** logo from `logo/variations/svg/` as the
+  working primary. Never recreate or approximate it in CSS.
+- Use the full-colour asset on light surfaces and the reversed asset on navy or
+  dark surfaces. Reserve the compact three-lane mark for genuinely small sizes,
+  including favicons and browser-tab icons. A logo update includes those head
+  assets; do not leave an unrelated legacy icon behind.
+- Use Ink `#08101F`, Night `#050816`, navy `#0B1224`, blue `#1473FF`, violet
+  `#5B3DFF`, proof green `#12805C`, assumption amber `#B87500`, gap red
+  `#C43A3A`, light surface `#F7F9FC`, and divider `#E8ECF2` according to the
+  semantic rules in the brand book.
+- Founder photos must come from the LinkedIn-derived images embedded in the
+  working Slides deck. Do not substitute generated or unrelated portraits.
+- Verified profiles are Jan Wouter van Dalen at
+  `https://nl.linkedin.com/in/janwoutervandalen` and Maksym Wezdecki at
+  `https://pl.linkedin.com/in/maksym-wezdecki-a3b82b6b`.
+
+The identity remains a working concept. Jan approved these assets for the local
+non-binding V2 concept on 2026-08-20, not for automatic production or external
+rollout. Preserve that approval boundary.
+
+The current production website is deliberately portrait-free. The deck-derived
+images are not large enough for a high-quality public presentation. Keep team
+content typographic until Jan approves new high-resolution portraits and their
+public-use basis. If founder profile links appear, open them in a new tab with
+`rel="noopener noreferrer"`.
+
+For any new AI-generated or AI-assisted visual, keep a short provenance record
+and check whether third-party fonts, portraits, reference images, or other
+source material were incorporated. AI generation and Solvyr's EUIPO trademark
+registration do not replace those asset-specific checks.
+
+Typography currently uses the self-hosted Inter variable font in
+`assets/fonts/InterVariable.woff2`; its SIL Open Font License is retained at
+`assets/fonts/Inter-OFL.txt`. Keep the licence alongside the distributed font,
+avoid an unnecessary third-party font request, and do not replace the file
+without checking the replacement's source and licence.
+
 ## Core Positioning
 
 Solvyr turns bounded document and text backlogs into accepted AI-ready outputs.
@@ -249,6 +294,23 @@ Avoid:
 - abstract EU infrastructure pitch
 - metadata validation infrastructure as the headline
 
+## Claim Tone And Boundaries
+
+Lead with what Solvyr can support and what the evidence shows. The site should
+sound precise and confident, not like a legal rebuttal to claims nobody made.
+
+- State the useful positive claim first: accepted output, measured run, scoped
+  pilot, or explicit execution boundary.
+- Include a limitation when omitting it could materially mislead a buyer, but
+  state it once beside the relevant proof, price, security, or fit content.
+- Do not repeat `we do not claim`, `this is not`, or long lists of excluded
+  interpretations across ordinary marketing sections.
+- Keep fuller exclusions on the dedicated Fit, Security, Proof, Legal, or
+  sample pages where a reviewer expects them.
+- Label generated node maps, flow diagrams, and conceptual geometry as
+  illustrations. Never present them as run evidence, topology evidence, or a
+  picture of deployed infrastructure.
+
 ## Narrative Order
 
 Use this order whenever possible:
@@ -264,6 +326,38 @@ Use this order whenever possible:
 For public-data quality pages, keep the same order but substitute the concrete
 workflow: public/test metadata export, recurring checks, issue list/suggested
 fixes/caveats, reviewer decision, and then European execution context.
+
+## Content Density And Page Roles
+
+The homepage is a decision path, not the complete repository of Solvyr's
+strategy. Keep the first active view compact enough that a buyer can understand
+the workload, output, evidence, boundary, and next action without reading the
+same point several times.
+
+- Give each section one job and each headline one claim.
+- Prefer one strong proof block over several repeated evidence summaries.
+- State the processing-rate boundary once near the price; do not repeat the
+  same caveat in every section.
+- Keep the build-versus-buy distinction explicit once, then let Security,
+  use-case pages, and the About execution section carry the depth.
+- Remove duplicated vision, category, buyer-entry, and sovereignty paragraphs
+  from the active homepage view when the same material remains available in a
+  dedicated route or tab.
+- Preserve honest fit boundaries, security content, proof links, language
+  routes, and direct contact even when shortening the active page.
+- Use progressive disclosure for optional intake detail and machine-readable
+  resources; do not make technical utilities compete with the customer CTA.
+
+The desired result is less repetition, not less substance. Detailed pages
+should remain available for buyers who need to validate fit, evidence,
+security, or company direction.
+
+Do not maintain a hidden execution-model tab on the homepage. The concise
+buyer consequence belongs on the homepage: Solvyr operates the pipeline and
+the customer receives accepted output plus run evidence. Execution mechanics
+belong in `about.html#execution` / `about-nl.html#execution`. The connector
+guide should help someone recognize and introduce a workload, not repeat the
+system architecture.
 
 ## Buyer Entry Paths
 
@@ -310,10 +404,17 @@ run`, `Scope a re-indexing run`, or `Scope a public-data run`.
 Agent-readable files remain linked from the footer and machine-readable routes;
 they do not need a prominent hero CTA.
 
+On the homepage, keep one primary workload CTA. Add a secondary hero CTA only
+when it offers a distinct decision path. Do not link from the hero to a proof
+block that is already the next visible content; put the proof link or download
+inside the proof block itself. This does not remove the use-case-page rule
+above, where a secondary supporting link helps a visitor before they have seen
+the rest of that page.
+
 A direct human email may appear as a visible secondary contact route. Keep the
 workload-specific scope CTA primary, show the literal address rather than
 hiding it behind a generic label, and keep English and Dutch contact paths
-aligned. Current lead contact: `jan@solvyr.com`.
+aligned. Current lead contact: `hello@solvyr.com`.
 
 ## Header Navigation Rule
 
@@ -339,6 +440,11 @@ Current product nav:
 Do not remove an existing primary nav route without explicit approval.
 If a page has a translated counterpart, keep the language switch visible on
 both versions.
+
+Static presence is not enough for the dropdown: verify that it opens, its links
+can be activated, and it remains legible without horizontal clipping on both a
+desktop and narrow viewport. Check the English and Dutch versions in the
+browser after interaction or responsive-navigation changes.
 
 ## Language Rule
 
@@ -376,7 +482,7 @@ Current English footer:
 - `llms.txt`
 - `AI brief`
 - `Pricing YAML`
-- `jan@solvyr.com`
+- `hello@solvyr.com`
 - `Pilot intake`
 
 Current Dutch footer:
@@ -388,10 +494,15 @@ Current Dutch footer:
 - `llms.txt`
 - `AI brief`
 - `Pricing YAML`
-- `jan@solvyr.com`
+- `hello@solvyr.com`
 - `Pilot intake`
 
 Do not remove an existing footer route without explicit approval.
+Agent-readable links may be grouped under a quiet `Machine-readable` /
+`Machineleesbaar` disclosure. This is the current preferred presentation,
+provided the literal links remain in the DOM, direct URLs stay unchanged, and
+machine discovery in the document head, robots policy, sitemap, and agent
+packet is preserved.
 Run `node scripts/audit-nav-footer.mjs` after header or footer changes; it
 checks labels and core footer routes for English and Dutch pages.
 
@@ -464,6 +575,30 @@ When mentioning proof, stay specific:
 - clean digital PDF/text path
 - extraction, chunking, embedding generation
 - measured wall-clock, GPU-hours, pages, chunks, failures, retries
+
+The public proof layer has two complementary artifacts:
+
+- the 100-PDF run shows measured behavior for the clean digital PDF/text path;
+- the seven-record public sample exposes real output from the plain-text
+  embedding branch, plus source manifest, run report, failure file, and
+  checksums.
+
+Do not merge those into one end-to-end claim. The public sample did not run raw
+PDF extraction and does not contain returned chunk text. It demonstrates clean
+public text preparation, stable chunk identity, bounded async scheduling,
+embedding generation, result retrieval, input validation, and inspectable run
+evidence for a tiny workload. Present it as technical output evidence beside
+the larger run, not as a scale, retrieval-quality, cost, security, or SLA
+benchmark.
+
+Keep the public download as a public-lite projection of the verified internal
+evidence. Publish complete embedding values, stable task/record IDs, status,
+error, model label, manifest, reconciled aggregate report, failure file, and
+checksums. Keep exact source snapshots with superseded contact/copy, private
+artifact hashes, internal paths/identifiers, exact build/run identifiers, and
+node/GPU/provider/power/batching/per-record timing telemetry in the internal
+evidence archive. Do not weaken the customer-relevant output or alter vector
+values when applying this publication boundary.
 
 Do not imply:
 

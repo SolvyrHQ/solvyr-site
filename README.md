@@ -18,3 +18,12 @@ Before committing structural page changes, run:
 ```sh
 node scripts/audit-website.mjs
 ```
+
+Build the explicit production artifact with:
+
+```sh
+node scripts/build-production.mjs
+```
+
+Preview or publish only `.site-dist/`. The build deliberately excludes the
+local `/v2/` concept, review files, and founder portraits.

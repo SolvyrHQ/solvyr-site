@@ -3,115 +3,263 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Fast Corpus Sample Output - Solvyr</title>
+    <title>Fast Corpus Public Sample - Solvyr</title>
     <meta
       name="description"
-      content="What Solvyr Fast Corpus output should show: JSONL shape, stable IDs, chunks, embeddings metadata, run report fields, failures, and caveats."
+      content="Inspect and download real Solvyr Fast Corpus embedding output, its source manifest, run report, failure file, and verified checksums."
     />
-    <meta property="og:title" content="Fast Corpus Sample Output - Solvyr" />
+    <meta property="og:title" content="Fast Corpus Public Sample - Solvyr" />
     <meta
       property="og:description"
-      content="A transparent outline of the artifact Solvyr Fast Corpus should return for clean PDF/text corpus processing."
+      content="Seven real pipeline outputs from three public Solvyr-owned text documents, with stable source IDs, full vectors, a run report, and checksums."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://solvyr.com/sample-output.html" />
-    <meta property="og:image" content="https://solvyr.com/assets/brand/icon.png" />
+    <meta property="og:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Solvyr: Turn a document backlog into an AI-ready corpus." />
+    <meta name="twitter:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
+    <meta name="twitter:image:alt" content="Solvyr: Turn a document backlog into an AI-ready corpus." />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://solvyr.com/sample-output.html" />
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="alternate" hreflang="en" href="https://solvyr.com/sample-output.html" />
+    <link rel="alternate" hreflang="nl" href="https://solvyr.com/sample-output-nl.html" />
+    <link rel="alternate" hreflang="x-default" href="https://solvyr.com/sample-output.html" />
+    <link rel="icon" href="/assets/brand/solvyr-icon-hybrid.svg?v=20260820-2" type="image/svg+xml" sizes="any" />
+    <link rel="icon" href="/favicon.ico?v=20260820-2" sizes="16x16 32x32 48x48" />
+    <link rel="apple-touch-icon" href="/assets/brand/solvyr-icon-hybrid-256.png?v=20260820-2" />
+    <link rel="stylesheet" href="styles.css?v=20260821-1" />
+      <script>
+(() => {
+  const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
+  const events = new Set([
+    "pilot-start",
+    "direct-email",
+    "email-prepared",
+    "summary-copied"
+  ]);
+
+  async function measure(eventName) {
+    if (localHosts.has(window.location.hostname) || !events.has(eventName)) return;
+
+    await new Promise((resolve) => {
+      const frame = document.createElement("iframe");
+      const finish = () => {
+        window.setTimeout(() => frame.remove(), 1200);
+        resolve();
+      };
+      const timeout = window.setTimeout(finish, 450);
+
+      frame.hidden = true;
+      frame.tabIndex = -1;
+      frame.setAttribute("aria-hidden", "true");
+      frame.addEventListener("load", () => {
+        window.clearTimeout(timeout);
+        window.setTimeout(finish, 40);
+      }, { once: true });
+      frame.src = `/measure/${eventName}.html`;
+      document.body.appendChild(frame);
+    });
+  }
+
+  window.solvyrMeasure = measure;
+  document.documentElement.dataset.solvyrInteractions = "ready";
+
+  document.addEventListener("click", async (event) => {
+    const link = event.target.closest("a[href]");
+    if (!link || event.defaultPrevented) return;
+
+    const href = link.getAttribute("href") || "";
+    const isModified = event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey;
+
+    if (href.includes("pilot-intake") && !isModified && link.target !== "_blank") {
+      event.preventDefault();
+      await measure("pilot-start");
+      window.location.href = link.href;
+      return;
+    }
+
+    if (/^mailto:hello@solvyr\.com/i.test(href) && !isModified) {
+      event.preventDefault();
+      await measure("direct-email");
+      window.location.href = link.href;
+    }
+  });
+})();
+      </script>
   </head>
 
   <body>
+    <a class="skipLink" href="#main-content">Skip to content</a>
     <header class="top">
       <div class="container topbar">
         <a class="brand" href="/#overview" aria-label="Solvyr home">
-          <img class="brandlogo" src="assets/brand/icon.png" alt="Solvyr icon" width="34" height="34" />
           <div class="brandtext">
-            <div class="name">Solvyr</div>
+            <img class="brandLogo" src="/assets/brand/solvyr-logo-hybrid.svg" alt="Solvyr" width="175" height="35" />
             <div class="tag">Fast Corpus for European AI teams</div>
           </div>
         </a>
-        <nav class="tabs" aria-label="Page navigation">
-          <a class="tab" href="/#overview">Fast Corpus</a>
-          <details class="navDropdown">
-            <summary class="tab">Use cases</summary>
-            <div class="dropdownMenu">
-              <a href="/use-cases/pdf-to-rag-corpus.html">PDF to RAG corpus</a>
-              <a href="/use-cases/document-reindexing.html">Document re-indexing</a>
-              <a href="/use-cases/public-data-quality.html">Public-data quality runs</a>
-              <a href="/use-cases/document-intake.html">Document intake</a>
-            </div>
-          </details>
-          <a class="tab" href="/#who">Fit</a>
-          <a class="tab" href="/#deliver">Output</a>
-          <a class="tab" href="/proof/100-pdf-fast-corpus-run.html">Proof</a>
-          <a class="tab" href="/#security">Security</a>
-          <a class="tab cta" href="pilot-intake.html#intent=fast-corpus&source=sample-output-page">Pilot</a>
-        </nav>
+        <div class="headerTools">
+          <div class="languageSwitch" aria-label="Language selection">
+            <a class="lang active" href="sample-output.html" aria-label="English version"><span aria-hidden="true">🇬🇧</span><span>EN</span></a>
+            <a class="lang" href="sample-output-nl.html" aria-label="Nederlandse versie"><span aria-hidden="true">🇳🇱</span><span>NL</span></a>
+          </div>
+
+          <nav class="tabs" aria-label="Page navigation">
+            <a class="tab" href="/#overview">Fast Corpus</a>
+            <details class="navDropdown">
+              <summary class="tab">Use cases</summary>
+              <div class="dropdownMenu">
+                <a href="/use-cases/pdf-to-rag-corpus.html">PDF to RAG corpus</a>
+                <a href="/use-cases/document-reindexing.html">Document re-indexing</a>
+                <a href="/use-cases/public-data-quality.html">Public-data quality runs</a>
+                <a href="/use-cases/document-intake.html">Document intake</a>
+              </div>
+            </details>
+            <a class="tab" href="/#who">Fit</a>
+            <a class="tab active" href="/sample-output.html" aria-current="page">Output</a>
+            <a class="tab" href="/proof/100-pdf-fast-corpus-run.html">Proof</a>
+            <a class="tab" href="/#security">Security</a>
+            <a class="tab cta" href="pilot-intake.html#intent=fast-corpus&source=sample-output-page">Pilot</a>
+          </nav>
+        </div>
       </div>
     </header>
 
-    <main class="container shell">
+    <main id="main-content" class="container shell">
       <section class="hero">
-        <p class="eyebrow">Sample output</p>
-        <h1>What a Fast Corpus artifact should make inspectable.</h1>
+        <p class="eyebrow">Public sample · 21 August 2026</p>
+        <h1>Inspect real pipeline output.</h1>
         <p class="lede">
-          This page describes the expected artifact shape. A real sample bundle
-          still needs to be produced from a representative run before this page
-          becomes proof rather than specification.
+          Three public Solvyr-owned text documents produced seven prepared
+          chunks and seven real embedding records. Download the full public output,
+          source manifest, run report, failure file, and checksums.
         </p>
+        <div class="heroActions">
+          <a class="button primary" href="downloads/solvyr-fast-corpus-public-sample-2026-08-21.zip" download>Download the bundle <span aria-hidden="true">↓</span></a>
+          <a class="button secondary" href="downloads/fast-corpus-public-sample/sample_output.jsonl">Open output JSONL</a>
+        </div>
       </section>
 
-      <div class="summaryGrid">
-        <article class="panel">
-          <h2>JSONL records</h2>
+      <section class="reportPreview" aria-labelledby="sample-metrics-title">
+        <div class="reportCopy">
+          <p class="eyebrow">Verified run</p>
+          <h2 id="sample-metrics-title">Small enough to inspect end to end.</h2>
           <p>
-            Source document ID, chunk ID, extracted text, chunk boundaries,
-            embedding reference or vector field, and source metadata.
+            Counts reconcile across the manifest, submitted chunks, returned
+            output, scheduler state, and failure file. The included checksums
+            verify that the published files are unchanged.
           </p>
-        </article>
-        <article class="panel">
-          <h2>Run report</h2>
-          <p>
-            Submitted documents, accepted documents, pages, chunks, successful
-            outputs, failures, retries, runtime, caveats, and pricing basis.
-          </p>
-        </article>
-        <article class="panel">
-          <h2>Failure notes</h2>
-          <p>
-            Items that could not be processed should be visible instead of
-            silently missing from downstream corpus use.
-          </p>
-        </article>
-      </div>
+        </div>
+        <div class="metricCard" aria-label="Public sample run metrics">
+          <div>
+            <span>Input</span>
+            <strong>3 public text documents / 7 prepared chunks</strong>
+          </div>
+          <div>
+            <span>Output</span>
+            <strong>7 records / 4096 values per embedding</strong>
+          </div>
+          <div>
+            <span>Run</span>
+            <strong>20.521s submission to completion</strong>
+          </div>
+          <div>
+            <span>Outcome</span>
+            <strong>7 completed / 0 failed / 0 retries</strong>
+          </div>
+        </div>
+      </section>
 
-      <section class="band compact" aria-labelledby="needed-title">
+      <section class="sampleInspect sectionGap" aria-labelledby="record-preview-title">
         <div>
-          <p class="eyebrow">Still needed</p>
-          <h2 id="needed-title">A real downloadable sample bundle.</h2>
+          <p class="eyebrow">Readable preview</p>
+          <h2 id="record-preview-title">One returned record, shortened for display.</h2>
+          <p>
+            The page preview shows the first six values from one real vector and
+            adds the derived vector length. The downloadable JSONL contains all
+            4096 returned values plus the customer-relevant IDs, status, error,
+            and model fields; internal node telemetry is withheld.
+          </p>
+        </div>
+        <pre class="codePreview" tabindex="0"><code>{
+  "record_id": "solvyr_fast_corpus_md__chars_000000_006000",
+  "status": "ok",
+  "model": "qwen3-embedding:latest",
+  "embedding_preview": [
+    0.021293184,
+    0.008978858,
+    0.0025378426,
+    -0.019399809,
+    0.027664455,
+    -0.0050018495
+  ],
+  "derived_vector_length": 4096
+}</code></pre>
+      </section>
+
+      <section class="summaryGrid sectionGap" aria-label="Sample bundle files">
+        <article class="panel">
+          <p class="miniLabel">Traceability</p>
+          <h2>Source manifest</h2>
+          <p>Public source URLs, run-date hashes, character counts, chunk counts, and stable source IDs.</p>
+          <p><a href="downloads/fast-corpus-public-sample/sample_input_manifest.csv">Open the CSV manifest</a></p>
+        </article>
+        <article class="panel">
+          <p class="miniLabel">Reconciliation</p>
+          <h2>Run report</h2>
+          <p>Observed facts, derived metrics, unavailable fields, redactions, and explicit caveats.</p>
+          <p><a href="downloads/fast-corpus-public-sample/sample_run_report.json">Open the JSON report</a></p>
+        </article>
+        <article class="panel">
+          <p class="miniLabel">Integrity</p>
+          <h2>Failures and checksums</h2>
+          <p>The failure file is empty because all seven items completed. SHA-256 covers every bundle file.</p>
+          <p><a href="downloads/fast-corpus-public-sample/sample_failures.jsonl">Open failures</a> · <a href="downloads/fast-corpus-public-sample/SHA256SUMS">Open checksums</a></p>
+        </article>
+      </section>
+
+      <section class="band compact" aria-labelledby="boundary-title">
+        <div>
+          <p class="eyebrow">Claim boundary</p>
+          <h2 id="boundary-title">What this sample proves—and what it does not.</h2>
         </div>
         <p>
-          The next proof upgrade is a small safe run that can publish a sanitized
-          input sample, output JSONL, source manifest, and run report. Until
-          then, this page is intentionally framed as the expected contract, not a
-          finished proof artifact.
+          This demonstrates the plain-text embedding branch: clean public text
+          preparation, stable chunk identity, bounded async scheduling,
+          embedding generation, result retrieval, input validation, and run
+          evidence for a tiny workload. It is not a PDF-extraction, OCR,
+          structured-extraction, retrieval-quality, scale, distributed-performance,
+          customer-data, cost, or SLA benchmark. The model digest was not returned
+          and is marked unavailable in the report.
         </p>
       </section>
     </main>
 
     <footer class="footer">
       <div class="container footerInner">
-        <div>&copy; <span id="y"></span> Solvyr</div>
+        <a class="footerBrand" href="/" aria-label="Solvyr home">
+          <img src="/assets/brand/solvyr-logo-hybrid-reversed.svg" alt="Solvyr" width="150" height="30" />
+          <span>&copy; <span id="y"></span></span>
+        </a>
         <div class="footerLinks">
           <a href="about.html">About</a>
           <a href="connectors.html">Connectors</a>
           <a href="privacy.html">Privacy</a>
           <a href="legal.html">Legal</a>
-          <a href="llms.txt">llms.txt</a>
-          <a href="ai/fast-corpus.md">AI brief</a>
-          <a href="pricing.yaml">Pricing YAML</a>
-          <a href="mailto:jan@solvyr.com">jan@solvyr.com</a>
+          <details class="machineLinks">
+
+            <summary>Machine-readable</summary>
+
+            <a href="llms.txt">llms.txt</a>
+
+            <a href="ai/fast-corpus.md">AI brief</a>
+
+            <a href="pricing.yaml">Pricing YAML</a>
+
+          </details>
+          <a href="mailto:hello@solvyr.com">hello@solvyr.com</a>
           <a href="pilot-intake.html#intent=fast-corpus&source=sample-output-page">Pilot intake</a>
         </div>
       </div>

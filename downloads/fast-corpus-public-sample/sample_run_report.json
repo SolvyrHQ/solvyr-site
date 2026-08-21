@@ -1,0 +1,81 @@
+{
+  "acceptance_decision": "safe for public website use",
+  "evidence_label": "public_sample",
+  "run_date": "2026-08-21",
+  "workload_label": "embeddings",
+  "input_format": "jsonl_text_v1",
+  "output_artifact_shape": "Public projection of actual returned pipeline items: task_id, record_id, status, embedding, error, and model.",
+  "observed_facts": {
+    "data_classification": "public Solvyr-owned text",
+    "document_count": 3,
+    "prepared_chunk_count": 7,
+    "completed_item_count": 7,
+    "failed_item_count": 0,
+    "retry_count": 0,
+    "model_label": "qwen3-embedding:latest",
+    "chunking_method": "fixed_character_windows",
+    "chunk_size_chars": 6000,
+    "chunk_overlap_chars": 500,
+    "extraction_method": "UTF-8 decode with Python standard library",
+    "ocr_used": false,
+    "layout_parsing_used": false,
+    "vector_database_indexing_included": false,
+    "page_count": null,
+    "page_count_status": "not_applicable_plain_text",
+    "scheduler_tasks_succeeded": 1,
+    "scheduler_tasks_permanently_failed": 0,
+    "negative_path": {
+      "case": "one JSONL row missing required text",
+      "http_status": 400,
+      "work_created": false
+    }
+  },
+  "derived_metrics": {
+    "all_vectors_same_length": true,
+    "embedding_vector_length": 4096,
+    "submission_to_completion_wall_clock_seconds": 20.520935,
+    "source_output_counts": {
+      "solvyr_capabilities_yaml": 2,
+      "solvyr_fast_corpus_md": 3,
+      "solvyr_llms_txt": 2
+    }
+  },
+  "reconciliation": {
+    "completed_output_items": 7,
+    "downloaded_output_items": 7,
+    "failed_output_items": 0,
+    "input_output_identity_match": true,
+    "manifest_chunks": 7,
+    "manifest_documents": 3,
+    "pipeline_record_count": 7,
+    "prepared_input_rows": 7,
+    "scheduler_retry_count": 0,
+    "scheduler_tasks_permanently_failed": 0,
+    "scheduler_tasks_succeeded": 1,
+    "unique_output_record_ids": 7
+  },
+  "unavailable_or_withheld": {
+    "chunk_text_in_output": "Not returned. The manifest preserves public source identity and the character range encoded in each record ID.",
+    "prepared_input_rows": "Not included in the public bundle. The internal evidence archive retains the exact run evidence.",
+    "model_digest": "not returned by the customer-facing API or downloaded pipeline artifact",
+    "page_count": "not applicable because this smallest run used plain-text documents, not PDFs",
+    "per_item_retry_count": "not returned; only run-level retry_count_total was exposed",
+    "per_item_token_count": "not returned; no tokenizer-derived value was added",
+    "retention_until": "returned as null; no retention duration inferred"
+  },
+  "redactions": [
+    "internal result reference/path",
+    "internal node hostname and client identifier",
+    "exact private platform build identifier",
+    "private pipeline-artifact hash",
+    "node, GPU, provider, power, batching, and per-record timing telemetry",
+    "run identifier and exact timestamps",
+    "run-date source snapshots containing superseded public contact and positioning copy"
+  ],
+  "caveats": [
+    "This is a three-document, seven-chunk public sample, not a scale or distributed-performance benchmark.",
+    "The input branch was clean UTF-8 text. Raw PDF extraction and PDF page counting were not exercised.",
+    "No OCR, layout parsing, structured extraction, vector database, hosted RAG, or search service was included.",
+    "The public output is a customer-relevant field projection of actual returned pipeline items; embeddings were not synthesized or altered."
+  ]
+}

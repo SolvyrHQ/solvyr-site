@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 140" role="img" aria-label="Solvyr hybrid icon">
+  <defs><linearGradient id="g" x1="0" y1="8" x2="0" y2="122" gradientUnits="userSpaceOnUse"><stop stop-color="#0C86FF"/><stop offset=".48" stop-color="#176BFF"/><stop offset="1" stop-color="#6B35FF"/></linearGradient></defs>
+  <g transform="translate(0 10)" fill="none" stroke="url(#g)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 18H72"/>
+    <path d="M16 42H47"/><path d="M62 42H82C98 42 101 60 124 60"/>
+    <path d="M16 60H124"/>
+    <path d="M16 78H47"/><path d="M62 78H82C98 78 101 60 124 60"/>
+    <path d="M16 102H72"/>
+  </g>
+  <circle cx="151" cy="70" r="10" fill="#08101F"/>
+</svg>

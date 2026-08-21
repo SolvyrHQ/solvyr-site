@@ -79,8 +79,8 @@ Important pages:
 - Privacy: https://solvyr.com/privacy.html
 - Legal notice: https://solvyr.com/legal.html
 - Pilot intake: https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=llms-txt
-- Direct lead contact: jan@solvyr.com
-- Founder LinkedIn: https://www.linkedin.com/in/janwoutervandalen
+- Direct lead contact: hello@solvyr.com
+- Founder LinkedIn: https://nl.linkedin.com/in/janwoutervandalen
 - Agent brief: https://solvyr.com/ai/fast-corpus.md
 - Agent buying packet: https://solvyr.com/ai/fast-corpus.json
 - PDF to RAG corpus use case: https://solvyr.com/use-cases/pdf-to-rag-corpus.html
@@ -88,7 +88,15 @@ Important pages:
 - Public-data quality runs use case: https://solvyr.com/use-cases/public-data-quality.html
 - Document intake use case: https://solvyr.com/use-cases/document-intake.html
 - 100 PDF proof note: https://solvyr.com/proof/100-pdf-fast-corpus-run.html
-- Sample output contract: https://solvyr.com/sample-output.html
+- Public output sample: https://solvyr.com/sample-output.html
+
+Public output sample boundary:
+- 3 public Solvyr-owned text documents -> 7 prepared chunks -> 7 real pipeline output records
+- 7 completed, 0 failed, 0 retries; every returned embedding has 4096 values
+- Includes source manifest, public output JSONL with complete vectors, run report, empty failure file, and SHA-256 checksums
+- Public JSONL fields: task ID, record ID, status, complete embedding, error, and model; internal node and per-record telemetry is withheld
+- Demonstrates the plain-text embedding branch and inspectable run evidence for a tiny workload
+- Does not demonstrate raw-PDF extraction, OCR, retrieval quality, scale, distributed performance, customer-data handling, cost, or an SLA
 - Capabilities: https://solvyr.com/capabilities.yaml
 - Pricing: https://solvyr.com/pricing.yaml
 

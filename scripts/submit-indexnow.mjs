@@ -20,6 +20,7 @@ const defaultUrls = [
   "https://solvyr.com/use-cases/document-intake-nl.html",
   "https://solvyr.com/proof/100-pdf-fast-corpus-run.html",
   "https://solvyr.com/sample-output.html",
+  "https://solvyr.com/sample-output-nl.html",
   "https://solvyr.com/ai/fast-corpus.md",
   "https://solvyr.com/llms.txt"
 ];

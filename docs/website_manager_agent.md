@@ -105,14 +105,23 @@ considered, not that every small decision was bounced back.
 ## Operating Loop
 
 1. Read the relevant guide/checklist/process docs.
-2. Inspect the current page/code before changing it.
-3. Classify the change: low-risk edit, route/indexing-sensitive edit,
+2. Inspect `git status` before editing and preserve all existing user changes.
+3. Inventory the affected public routes, language counterparts, templates, and
+   shared components before a full-site change.
+4. For a full-site visual revision, establish the shared logo, tokens,
+   typography, buttons, navigation, cards, footer, and responsive behavior
+   before adapting individual routes.
+5. Inspect the current page/code before changing it.
+6. Classify the change: low-risk edit, route/indexing-sensitive edit,
    claim-sensitive edit, deletion/rename, or external-action.
-4. Choose checks from `docs/website_quality_process.md`.
-5. Make the smallest coherent change.
-6. Run the selected checks.
-7. Review the diff for accidental removals or claim drift.
-8. Commit and push only when requested or when the current task clearly includes
+7. Choose checks from `docs/website_quality_process.md`.
+8. Make the smallest coherent change.
+9. Run the selected checks.
+10. Review the diff for accidental removals or claim drift.
+11. When the user corrects a durable preference, encode it in the guide,
+   checklist, `AGENTS.md`, or an audit before closing the task; do not rely on
+   chat memory.
+12. Commit and push only when requested or when the current task clearly includes
    publishing the change.
 
 ## Default Checks

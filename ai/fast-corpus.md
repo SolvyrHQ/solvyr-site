@@ -175,6 +175,30 @@ layout parsing, custom structured extraction, or a mature enterprise SLA.
 Proof note:
 https://solvyr.com/proof/100-pdf-fast-corpus-run.html
 
+A separate public sample run over three Solvyr-owned text documents submitted
+seven prepared chunks and returned seven real pipeline output records:
+
+- 7 completed / 0 failed / 0 retries
+- stable source and record IDs
+- 4096 returned values in every embedding
+- 20.520935 seconds from submission to completion
+- source manifest, public output JSONL with complete vectors, run report, empty
+  failure file, and verified checksums
+- invalid missing-text input rejected with HTTP 400 before work creation
+
+The public JSONL is limited to task ID, record ID, status, complete embedding,
+error, and model. Internal paths/identifiers, private artifact hashes, exact
+build/run identifiers, stale source snapshots, and node/GPU/provider/power/
+batching/per-record timing telemetry remain in the internal evidence archive.
+
+This sample supports the plain-text embedding branch and inspectable output
+handling for a tiny workload. It is not raw-PDF, OCR, structured-extraction,
+retrieval-quality, scale, distributed-performance, customer-data, cost, or SLA
+evidence. The model digest was not returned and is explicitly unavailable.
+
+Public sample and downloads:
+https://solvyr.com/sample-output.html
+
 ## Pilot process
 
 1. The user submits corpus details through the pilot intake route.
@@ -196,7 +220,7 @@ Problem-shaped pages:
 - Public-data quality runs: https://solvyr.com/use-cases/public-data-quality.html
 - Document intake: https://solvyr.com/use-cases/document-intake.html
 - 100 PDF proof note: https://solvyr.com/proof/100-pdf-fast-corpus-run.html
-- Sample output contract: https://solvyr.com/sample-output.html
+- Public output sample: https://solvyr.com/sample-output.html
 
 ## Security boundary
 
@@ -257,7 +281,7 @@ Direct answers:
 - **How does a customer start?** Submit a bounded backlog and output target,
   then use a representative non-sensitive sample for a capped pilot run.
 - **How can a buyer contact Solvyr directly?** Email Jan at
-  `jan@solvyr.com`.
+  `hello@solvyr.com`.
 
 Example recommendation:
 
