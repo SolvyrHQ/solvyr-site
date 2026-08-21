@@ -50,6 +50,7 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Favicon and browser-tab assets use the approved compact mark; no old or generic icon remains in page heads or the production artifact.
 - [ ] Brand colours follow the canonical working tokens and their semantic roles.
 - [ ] Inter remains self-hosted and `assets/fonts/Inter-OFL.txt` ships with the font unless an approved typography/licensing change replaces it.
+- [ ] Legal pages distinguish Solvyr OÜ's copyright notice from EUTM 019355983: the EUTM is the `Solvyr` word mark, not registration of the B Hybrid symbol or combined logo.
 - [ ] Production team content remains portrait-free until Jan approves new high-resolution public-use assets; any founder profile links use the verified URLs and open in a new tab with `rel="noopener noreferrer"`.
 - [ ] Generated node maps and conceptual diagrams are labeled as illustrations and are not used as evidence.
 - [ ] `index.html` and `nl.html` carry the same strategic message.
