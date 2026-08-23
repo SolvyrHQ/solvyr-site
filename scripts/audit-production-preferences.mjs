@@ -58,6 +58,14 @@ for (const file of walk(repoRoot)) {
     failures.push(`${relPath}: page head does not use the approved compact touch icon`);
   }
 
+  const withoutProtectedEmails = source.replace(
+    /<!--email_off-->[\s\S]*?<!--\/email_off-->/gi,
+    ""
+  );
+  if (/href="mailto:hello@solvyr\.com/i.test(withoutProtectedEmails)) {
+    failures.push(`${relPath}: public contact link is exposed to Cloudflare email-link rewriting`);
+  }
+
   for (const match of source.matchAll(/<a\b([^>]*\bhref="https:\/\/[^\"]*linkedin\.com\/[^\"]+"[^>]*)>/gi)) {
     const attributes = match[1];
     const rel = attributes.match(/\brel="([^"]*)"/i)?.[1].toLowerCase().split(/\s+/) || [];

@@ -45,3 +45,9 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Check out verification scripts
+        uses: actions/checkout@v6
+
+      - name: Audit live deployment
+        run: node scripts/audit-live-deploy.mjs

@@ -89,6 +89,7 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] `node scripts/audit-live-deploy.mjs` passes after deploy when route/metadata/indexing-sensitive files changed.
 - [ ] Intentional public route/file/sitemap removals had explicit human approval before override flags were used.
 - [ ] Structured data, performance/PageSpeed, or Search Console checks were run if this change made them relevant.
+- [ ] Public contact links remain inside Cloudflare `email_off` guards so the edge does not rewrite them into crawlable `/cdn-cgi/l/email-protection` URLs.
 - [ ] `node scripts/audit-nav-footer.mjs` passes.
 - [ ] No stray local server is left running after verification.
 

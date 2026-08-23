@@ -48,7 +48,10 @@ This runs:
 
 - `scripts/audit-release-safety.mjs`
 - `scripts/audit-indexability.mjs`
+- `scripts/audit-structured-data.mjs`
 - `scripts/audit-nav-footer.mjs`
+- `scripts/audit-production-preferences.mjs`
+- `scripts/audit-local-links.mjs`
 - `scripts/audit-accessibility-static.mjs`
 
 Also run:
@@ -115,8 +118,10 @@ node scripts/audit-live-deploy.mjs
 ```
 
 This performs read-only GET requests to `https://solvyr.com`, refuses
-off-origin URLs, checks status codes, verifies `robots.txt` and `sitemap.xml`,
-and verifies live HTML canonicals/noindex state for sitemap HTML routes.
+off-origin URLs, checks status codes and a hard-404 probe, verifies `robots.txt`
+and `sitemap.xml`, checks live titles, descriptions, canonicals, robots headers,
+Dataset JSON-LD, and rejects Cloudflare-generated crawlable email-protection
+links. The production workflow runs this audit after every GitHub Pages deploy.
 
 The local indexability audit also rejects canonical redirect aliases in the
 sitemap or internal links (`http://solvyr.com`, `https://www.solvyr.com`, and
@@ -152,7 +157,6 @@ Ask before coding or before overriding when:
 
 ## Current Gaps To Add Only When Needed
 
-- Structured-data audit: add when schema.org JSON-LD is introduced.
 - Performance budget: add when visual assets, JS, or layout weight grows.
 - Search Console review: manual or connector-based, because real index status
   cannot be proven from the local repo.

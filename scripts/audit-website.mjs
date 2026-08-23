@@ -6,6 +6,7 @@ const repoRoot = dirname(dirname(fileURLToPath(import.meta.url)));
 const checks = [
   "audit-release-safety.mjs",
   "audit-indexability.mjs",
+  "audit-structured-data.mjs",
   "audit-nav-footer.mjs",
   "audit-production-preferences.mjs",
   "audit-local-links.mjs",
