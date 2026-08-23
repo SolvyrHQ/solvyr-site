@@ -33,7 +33,7 @@
     <link rel="alternate" hreflang="x-default" href="https://solvyr.com/privacy.html" />
     <meta name="theme-color" content="#f7f9fc" />
     <link rel="preload" as="image" href="assets/brand/icon.png" />
-    <link rel="stylesheet" href="styles.css?v=20260821-1" />
+    <link rel="stylesheet" href="styles.css?v=20260823-1" />
       <script>
 (() => {
   const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
@@ -110,9 +110,16 @@
             <a class="lang" href="privacy.html" aria-label="English version"><span aria-hidden="true">🇬🇧</span><span>EN</span></a>
             <a class="lang active" href="privacy-nl.html" aria-label="Nederlandse versie"><span aria-hidden="true">🇳🇱</span><span>NL</span></a>
           </div>
-          <nav class="tabs" aria-label="Hoofdnavigatie">
-            <a class="tab" href="nl.html#overview">Fast Corpus</a>
-            <details class="navDropdown">
+          <nav class="tabs" aria-label="Primaire navigatie">
+            <details class="navDropdown navProduct" name="primary-navigation">
+              <summary class="tab">Product</summary>
+              <div class="dropdownMenu">
+                <a href="/nl.html#overview">Fast Corpus</a>
+                <a href="/nl.html#who">Fit</a>
+                <a href="/nl.html#deliver">Output</a>
+              </div>
+            </details>
+            <details class="navDropdown navUseCases" name="primary-navigation">
               <summary class="tab">Toepassingen</summary>
               <div class="dropdownMenu">
                 <a href="/use-cases/pdf-to-rag-corpus-nl.html">PDF naar RAG-corpus</a>
@@ -121,11 +128,10 @@
                 <a href="/use-cases/document-intake-nl.html">Documentintake</a>
               </div>
             </details>
-            <a class="tab" href="nl.html#who">Fit</a>
-            <a class="tab" href="nl.html#deliver">Output</a>
-            <a class="tab" href="proof/100-pdf-fast-corpus-run-nl.html">Proefrun</a>
-            <a class="tab" href="nl.html#security">Security</a>
-            <a class="tab cta" href="pilot-intake-nl.html#intent=fast-corpus&source=privacy-page">Pilot</a>
+            <a class="tab" href="/proof/100-pdf-fast-corpus-run-nl.html">Proefrun</a>
+            <a class="tab" href="/nl.html#security">Security</a>
+            <a class="tab navExample" href="/sample-output-nl.html">Voorbeeldrun</a>
+            <a class="tab cta" href="pilot-intake-nl.html#intent=fast-corpus&source=privacy-page">Run afbakenen</a>
           </nav>
         </div>
       </div>

@@ -6,7 +6,13 @@ const repoRoot = dirname(dirname(fileURLToPath(import.meta.url)));
 
 const expected = {
   en: {
-    nav: ["Fast Corpus", "Use cases", "Fit", "Output", "Proof", "Security", "Pilot"],
+    nav: ["Product", "Use cases", "Proof", "Security", "Example run", "Scope a run"],
+    product: ["Fast Corpus", "Fit", "Output"],
+    productHrefIncludes: {
+      "Fast Corpus": "#overview",
+      Fit: "#who",
+      Output: "#deliver",
+    },
     useCases: ["PDF to RAG corpus", "Document re-indexing", "Public-data quality runs", "Document intake"],
     useCaseHrefIncludes: {
       "PDF to RAG corpus": "use-cases/pdf-to-rag-corpus.html",
@@ -28,7 +34,13 @@ const expected = {
     },
   },
   nl: {
-    nav: ["Fast Corpus", "Toepassingen", "Fit", "Output", "Proefrun", "Security", "Pilot"],
+    nav: ["Product", "Toepassingen", "Proefrun", "Security", "Voorbeeldrun", "Run afbakenen"],
+    product: ["Fast Corpus", "Fit", "Output"],
+    productHrefIncludes: {
+      "Fast Corpus": "#overview",
+      Fit: "#who",
+      Output: "#deliver",
+    },
     useCases: ["PDF naar RAG-corpus", "Documenten herindexeren", "Publieke datakwaliteit", "Documentintake"],
     useCaseHrefIncludes: {
       "PDF naar RAG-corpus": "use-cases/pdf-to-rag-corpus-nl.html",
@@ -93,8 +105,8 @@ function links(fragment) {
   });
 }
 
-function dropdownFragment(fragment) {
-  return fragment.match(/<div class="dropdownMenu">([\s\S]*?)<\/div>/)?.[1] || "";
+function dropdownFragment(fragment, className) {
+  return fragment.match(new RegExp(`<details class="[^"]*${className}[^"]*"[\\s\\S]*?<div class="dropdownMenu">([\\s\\S]*?)<\\/div>[\\s\\S]*?<\\/details>`))?.[1] || "";
 }
 
 function languageFor(relPath) {
@@ -123,7 +135,16 @@ for (const file of walk(repoRoot).sort()) {
   } else {
     const result = compare(relPath, "nav", primaryNavLabels(nav[0]), expected[lang].nav);
     if (result) failures.push(result);
-    const useCaseLinks = links(dropdownFragment(nav[0]));
+    const productLinks = links(dropdownFragment(nav[0], "navProduct"));
+    const productResult = compare(relPath, "product dropdown", productLinks.map((link) => link.label), expected[lang].product);
+    if (productResult) failures.push(productResult);
+    for (const link of productLinks) {
+      const required = expected[lang].productHrefIncludes[link.label];
+      if (required && !link.href.includes(required)) {
+        failures.push(`${relPath} product href for ${link.label}: expected to include ${required}, got ${link.href}`);
+      }
+    }
+    const useCaseLinks = links(dropdownFragment(nav[0], "navUseCases"));
     const dropdownResult = compare(relPath, "use-case dropdown", useCaseLinks.map((link) => link.label), expected[lang].useCases);
     if (dropdownResult) failures.push(dropdownResult);
     for (const link of useCaseLinks) {
@@ -177,8 +198,8 @@ for (const file of walk(repoRoot).sort()) {
 }
 
 const styles = readFileSync(join(repoRoot, "styles.css"), "utf8");
-if (!/\.tabs:has\(\.navDropdown\[open\]\)\s*>\s*\.tab\s*\{[\s\S]*?display:\s*none/.test(styles)) {
-  failures.push("styles.css mobile nav: open use-case menu does not suppress clipped sibling tabs");
+if (!/\.tabs:has\(\.navDropdown\[open\]\)\s*>\s*:not\(\.navDropdown\[open\]\)\s*\{[\s\S]*?display:\s*none/.test(styles)) {
+  failures.push("styles.css mobile nav: an open menu does not suppress clipped sibling controls");
 }
 
 if (failures.length) {

@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Fast Corpus Publieke Sample - Solvyr</title>
+    <title>Fast Corpus Voorbeeldrun - Solvyr</title>
     <meta
       name="description"
-      content="Inspecteer en download echte Solvyr Fast Corpus-embeddingoutput, met bronmanifest, runrapport, foutenbestand en geverifieerde checksums."
+      content="Inspecteer een voltooide Solvyr Fast Corpus-voorbeeldrun met echte embeddingoutput, lifecyclebewijs, artifacts en geverifieerde checksums."
     />
-    <meta property="og:title" content="Fast Corpus Publieke Sample - Solvyr" />
+    <meta property="og:title" content="Fast Corpus Voorbeeldrun - Solvyr" />
     <meta
       property="og:description"
-      content="Zeven echte pipelineoutputs uit drie openbare tekstdocumenten van Solvyr, met stabiele bron-IDs, volledige vectoren, een runrapport en checksums."
+      content="Een voltooide Fast Corpus-run met zeven records, gepresenteerd als inspecteerbaar productvoorbeeld met echte output, runrapport en checksums."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://solvyr.com/sample-output-nl.html" />
@@ -29,7 +29,7 @@
     <link rel="icon" href="/assets/brand/solvyr-icon-hybrid.svg?v=20260820-2" type="image/svg+xml" sizes="any" />
     <link rel="icon" href="/favicon.ico?v=20260820-2" sizes="16x16 32x32 48x48" />
     <link rel="apple-touch-icon" href="/assets/brand/solvyr-icon-hybrid-256.png?v=20260820-2" />
-    <link rel="stylesheet" href="styles.css?v=20260821-1" />
+    <link rel="stylesheet" href="styles.css?v=20260823-1" />
       <script>
 (() => {
   const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
@@ -106,9 +106,16 @@
             <a class="lang active" href="sample-output-nl.html" aria-label="Nederlandse versie"><span aria-hidden="true">🇳🇱</span><span>NL</span></a>
           </div>
 
-          <nav class="tabs" aria-label="Paginanavigatie">
-            <a class="tab" href="/nl.html#overview">Fast Corpus</a>
-            <details class="navDropdown">
+          <nav class="tabs" aria-label="Primaire navigatie">
+            <details class="navDropdown navProduct" name="primary-navigation">
+              <summary class="tab">Product</summary>
+              <div class="dropdownMenu">
+                <a href="/nl.html#overview">Fast Corpus</a>
+                <a href="/nl.html#who">Fit</a>
+                <a href="/nl.html#deliver">Output</a>
+              </div>
+            </details>
+            <details class="navDropdown navUseCases" name="primary-navigation">
               <summary class="tab">Toepassingen</summary>
               <div class="dropdownMenu">
                 <a href="/use-cases/pdf-to-rag-corpus-nl.html">PDF naar RAG-corpus</a>
@@ -117,24 +124,23 @@
                 <a href="/use-cases/document-intake-nl.html">Documentintake</a>
               </div>
             </details>
-            <a class="tab" href="/nl.html#who">Fit</a>
-            <a class="tab active" href="/sample-output-nl.html" aria-current="page">Output</a>
             <a class="tab" href="/proof/100-pdf-fast-corpus-run-nl.html">Proefrun</a>
             <a class="tab" href="/nl.html#security">Security</a>
-            <a class="tab cta" href="pilot-intake-nl.html#intent=fast-corpus&source=sample-output-page-nl">Pilot</a>
+            <a class="tab navExample active" href="/sample-output-nl.html" aria-current="page">Voorbeeldrun</a>
+            <a class="tab cta" href="pilot-intake-nl.html#intent=fast-corpus&source=sample-output-page-nl">Run afbakenen</a>
           </nav>
         </div>
       </div>
     </header>
 
     <main id="main-content" class="container shell">
-      <section class="hero">
-        <p class="eyebrow">Publieke sample · 21 augustus 2026</p>
-        <h1>Inspecteer echte pipelineoutput.</h1>
+      <section class="hero exampleHero">
+        <p class="eyebrow">Voorbeeldrun · Gepubliceerd 21 augustus 2026</p>
+        <h1>Bekijk een voltooide Fast Corpus-run.</h1>
         <p class="lede">
-          Drie openbare tekstdocumenten van Solvyr leverden zeven voorbereide
-          chunks en zeven echte embeddingrecords op. Download de volledige
-          publieke output, het bronmanifest, runrapport, foutenbestand en de checksums.
+          Dit inspecteerbare overzicht toont een echte begrensde run door de
+          uitgerolde testpipeline: drie openbare tekstdocumenten van Solvyr, zeven
+          voorbereide chunks en zeven ontvangen embeddingrecords.
         </p>
         <div class="heroActions">
           <a class="button primary" href="downloads/solvyr-fast-corpus-public-sample-2026-08-21.zip" download>Download de bundle <span aria-hidden="true">↓</span></a>
@@ -142,33 +148,68 @@
         </div>
       </section>
 
-      <section class="reportPreview" aria-labelledby="sample-metrics-title">
-        <div class="reportCopy">
-          <p class="eyebrow">Geverifieerde run</p>
-          <h2 id="sample-metrics-title">Klein genoeg voor volledige inspectie.</h2>
-          <p>
-            De aantallen sluiten aan tussen manifest, ingediende chunks,
-            ontvangen output, schedulerstatus en foutenbestand. De checksums
-            bevestigen dat de gepubliceerde bestanden ongewijzigd zijn.
-          </p>
+      <section class="runSurface" aria-labelledby="example-run-title">
+        <div class="runSurfaceBar">
+          <p><strong>Fast Corpus</strong><span> / Publiek voorbeeld</span></p>
+          <span class="statusBadge"><i aria-hidden="true"></i>Voltooid</span>
         </div>
-        <div class="metricCard" aria-label="Metrics van de publieke samplerun">
-          <div>
-            <span>Input</span>
-            <strong>3 openbare tekstdocumenten / 7 voorbereide chunks</strong>
+
+        <div class="runSurfaceBody">
+          <div class="runMain">
+            <div class="runHeading">
+              <div>
+                <p class="eyebrow">Voltooide run</p>
+                <h2 id="example-run-title">Plain-text embeddingoutput</h2>
+              </div>
+              <p class="runModel"><span>Model</span><code>qwen3-embedding:latest</code></p>
+            </div>
+
+            <div class="runFacts" aria-label="Feiten over de voorbeeldrun">
+              <div><span>Input</span><strong>3 openbare tekstdocumenten</strong></div>
+              <div><span>Voorbereid werk</span><strong>7 chunks</strong></div>
+              <div><span>Doorlooptijd</span><strong>20,521 seconden</strong></div>
+              <div><span>Resultaat</span><strong>7 voltooid · 0 mislukt</strong></div>
+            </div>
+
+            <div class="artifactList" aria-labelledby="artifacts-title">
+              <div class="artifactListHeading">
+                <div>
+                  <p class="miniLabel">Resultaatspakket</p>
+                  <h3 id="artifacts-title">Inspecteerbare artifacts</h3>
+                </div>
+                <span>Gedekt door SHA-256</span>
+              </div>
+              <a href="downloads/fast-corpus-public-sample/sample_output.jsonl">
+                <span><strong>Output-JSONL</strong><small>7 records · volledige vectoren met 4096 waarden</small></span><b>Open ↗</b>
+              </a>
+              <a href="downloads/fast-corpus-public-sample/sample_input_manifest.csv">
+                <span><strong>Bronmanifest</strong><small>Stabiele IDs, bronhashes en chunkaantallen</small></span><b>Open ↗</b>
+              </a>
+              <a href="downloads/fast-corpus-public-sample/sample_run_report.json">
+                <span><strong>Runrapport</strong><small>Waargenomen feiten, aansluiting en caveats</small></span><b>Open ↗</b>
+              </a>
+              <div class="artifactPair">
+                <a href="downloads/fast-corpus-public-sample/sample_failures.jsonl">Fouten <strong>0 records</strong></a>
+                <a href="downloads/fast-corpus-public-sample/SHA256SUMS">Checksums <strong>Geverifieerde bestanden</strong></a>
+              </div>
+            </div>
           </div>
-          <div>
-            <span>Output</span>
-            <strong>7 records / 4096 waarden per embedding</strong>
-          </div>
-          <div>
-            <span>Run</span>
-            <strong>20,521s van indiening tot voltooiing</strong>
-          </div>
-          <div>
-            <span>Resultaat</span>
-            <strong>7 voltooid / 0 mislukt / 0 retries</strong>
-          </div>
+
+          <aside class="runRail" aria-labelledby="lifecycle-title">
+            <p class="miniLabel">Runstatus</p>
+            <h3 id="lifecycle-title">Lifecyclebewijs</h3>
+            <ol class="runTimeline">
+              <li><span>Input voorbereid</span><small>3 openbare UTF-8-documenten werden 7 begrensde chunks.</small></li>
+              <li><span>Gevalideerd</span><small>De aantallen in manifest en voorbereide input sluiten aan.</small></li>
+              <li><span>Ingepland</span><small>1 schedulertaak slaagde; geen enkele faalde permanent.</small></li>
+              <li><span>Voltooid</span><small>7 records ontvangen, met 0 fouten en 0 retries.</small></li>
+            </ol>
+            <div class="validationNote">
+              <strong>Negatief pad gecontroleerd</strong>
+              <p>Een aparte rij zonder verplichte tekst werd vóór werkcreatie afgewezen met HTTP 400.</p>
+            </div>
+            <p class="publicExampleNote">Publiek voorbeeld, geen klantaccount of selfservicedashboard.</p>
+          </aside>
         </div>
       </section>
 
@@ -197,27 +238,6 @@
   ],
   "derived_vector_length": 4096
 }</code></pre>
-      </section>
-
-      <section class="summaryGrid sectionGap" aria-label="Bestanden in de samplebundle">
-        <article class="panel">
-          <p class="miniLabel">Herleidbaarheid</p>
-          <h2>Bronmanifest</h2>
-          <p>Openbare bron-URLs, hashes van de rundatum, tekenaantallen, chunkaantallen en stabiele bron-IDs.</p>
-          <p><a href="downloads/fast-corpus-public-sample/sample_input_manifest.csv">Open het CSV-manifest</a></p>
-        </article>
-        <article class="panel">
-          <p class="miniLabel">Aansluiting</p>
-          <h2>Runrapport</h2>
-          <p>Waargenomen feiten, afgeleide metrics, niet-beschikbare velden, redacties en expliciete caveats.</p>
-          <p><a href="downloads/fast-corpus-public-sample/sample_run_report.json">Open het JSON-rapport</a></p>
-        </article>
-        <article class="panel">
-          <p class="miniLabel">Integriteit</p>
-          <h2>Fouten en checksums</h2>
-          <p>Het foutenbestand is leeg omdat alle zeven items zijn voltooid. SHA-256 dekt elk bestand in de bundle.</p>
-          <p><a href="downloads/fast-corpus-public-sample/sample_failures.jsonl">Open fouten</a> · <a href="downloads/fast-corpus-public-sample/SHA256SUMS">Open checksums</a></p>
-        </article>
       </section>
 
       <section class="band compact" aria-labelledby="boundary-title">
