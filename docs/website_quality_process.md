@@ -121,7 +121,10 @@ This performs read-only GET requests to `https://solvyr.com`, refuses
 off-origin URLs, checks status codes and a hard-404 probe, verifies `robots.txt`
 and `sitemap.xml`, checks live titles, descriptions, canonicals, robots headers,
 Dataset JSON-LD, and rejects Cloudflare-generated crawlable email-protection
-links. The production workflow runs this audit after every GitHub Pages deploy.
+links. The production workflow attempts this audit after every GitHub Pages
+deploy. Cloudflare may return `403` to GitHub-hosted runners; when that happens,
+the workflow records a warning and the release owner must run the same command
+from a trusted network before accepting the release.
 
 The local indexability audit also rejects canonical redirect aliases in the
 sitemap or internal links (`http://solvyr.com`, `https://www.solvyr.com`, and

@@ -42,6 +42,9 @@ for (const file of walk(repoRoot)) {
   if (/sales@solvyr\.com/i.test(source)) {
     failures.push(`${relPath}: contains retired public contact sales@solvyr.com`);
   }
+  if (/privacy@solvyr\.com/i.test(source)) {
+    failures.push(`${relPath}: contains retired public contact privacy@solvyr.com`);
+  }
 
   for (const portrait of founderPortraitFiles) {
     if (source.includes(portrait)) {
