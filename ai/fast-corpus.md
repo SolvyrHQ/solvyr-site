@@ -209,7 +209,7 @@ https://solvyr.com/sample-output.html
 6. If the workload is recurring, Solvyr discusses corpus refresh or workflow ownership.
 
 Pilot intake:
-https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=agent-brief
+https://solvyr.com/pilot-intake.html#intent=fast-corpus&source=agent-brief
 
 Problem-shaped pages:
 

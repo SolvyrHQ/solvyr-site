@@ -194,4 +194,4 @@ links:
   public_output_sample_nl: https://solvyr.com/sample-output-nl.html
   public_output_sample_download: https://solvyr.com/downloads/solvyr-fast-corpus-public-sample-2026-08-21.zip
   pricing: https://solvyr.com/pricing.yaml
-  pilot_intake: https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=capabilities-yaml
+  pilot_intake: https://solvyr.com/pilot-intake.html#intent=fast-corpus&source=capabilities-yaml

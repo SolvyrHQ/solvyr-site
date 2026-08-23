@@ -78,7 +78,7 @@ Important pages:
 - Connector guide: https://solvyr.com/connectors.html
 - Privacy: https://solvyr.com/privacy.html
 - Legal notice: https://solvyr.com/legal.html
-- Pilot intake: https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=llms-txt
+- Pilot intake: https://solvyr.com/pilot-intake.html#intent=fast-corpus&source=llms-txt
 - Direct lead contact: hello@solvyr.com
 - Founder LinkedIn: https://nl.linkedin.com/in/janwoutervandalen
 - Agent brief: https://solvyr.com/ai/fast-corpus.md
