@@ -188,6 +188,11 @@ for (const file of requiredSitemapFiles) {
   if (!sitemapSet.has(url)) {
     failures.push(`sitemap.xml: missing ${url}`);
   }
+
+  const content = readFileSync(join(repoRoot, file), "utf8");
+  for (const match of content.matchAll(/https:\/\/solvyr\.com\/pilot-intake(?:-nl)?\.html\?[^\s"']+/gi)) {
+    failures.push(`${file}: pilot intake attribution must use a fragment, not crawlable query parameters ${match[0]}`);
+  }
 }
 
 for (const file of htmlFiles) {

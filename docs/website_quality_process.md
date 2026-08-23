@@ -136,6 +136,7 @@ redirect target is the canonical homepage.
 Pilot-intake attribution uses URL fragments, not query parameters. Fragments
 preserve the source and intent used in the prepared email without creating
 multiple crawlable intake URLs that can compete with the declared canonical.
+This applies to both human-facing HTML and the curated agent-readable files.
 The intake page remains backward-compatible with previously shared query URLs.
 
 Privacy-friendly conversion measurement uses Cloudflare Web Analytics page

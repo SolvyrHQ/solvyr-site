@@ -197,7 +197,7 @@
   },
   "contact_email": "hello@solvyr.com",
   "founder_linkedin": "https://nl.linkedin.com/in/janwoutervandalen",
-  "contact": "https://solvyr.com/pilot-intake.html?intent=fast-corpus&source=agent-packet",
+  "contact": "https://solvyr.com/pilot-intake.html#intent=fast-corpus&source=agent-packet",
   "human_page": "https://solvyr.com/",
   "about": "https://solvyr.com/about.html",
   "connector_guide": "https://solvyr.com/connectors.html",
