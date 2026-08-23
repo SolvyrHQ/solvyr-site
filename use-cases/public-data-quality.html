@@ -29,7 +29,7 @@
     <link rel="icon" href="/assets/brand/solvyr-icon-hybrid.svg?v=20260820-2" type="image/svg+xml" sizes="any" />
     <link rel="icon" href="/favicon.ico?v=20260820-2" sizes="16x16 32x32 48x48" />
     <link rel="apple-touch-icon" href="/assets/brand/solvyr-icon-hybrid-256.png?v=20260820-2" />
-    <link rel="stylesheet" href="../styles.css?v=20260821-1" />
+    <link rel="stylesheet" href="../styles.css?v=20260823-1" />
       <script>
 (() => {
   const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
@@ -107,9 +107,16 @@
             <a class="lang" href="public-data-quality-nl.html" aria-label="Nederlandse versie"><span aria-hidden="true">🇳🇱</span><span>NL</span></a>
           </div>
 
-          <nav class="tabs" aria-label="Page navigation">
-            <a class="tab" href="/#overview">Fast Corpus</a>
-            <details class="navDropdown">
+          <nav class="tabs" aria-label="Primary navigation">
+            <details class="navDropdown navProduct" name="primary-navigation">
+              <summary class="tab">Product</summary>
+              <div class="dropdownMenu">
+                <a href="/#overview">Fast Corpus</a>
+                <a href="/#who">Fit</a>
+                <a href="/#deliver">Output</a>
+              </div>
+            </details>
+            <details class="navDropdown navUseCases" name="primary-navigation">
               <summary class="tab active">Use cases</summary>
               <div class="dropdownMenu">
                 <a href="/use-cases/pdf-to-rag-corpus.html">PDF to RAG corpus</a>
@@ -118,11 +125,10 @@
                 <a href="/use-cases/document-intake.html">Document intake</a>
               </div>
             </details>
-            <a class="tab" href="/#who">Fit</a>
-            <a class="tab" href="/#deliver">Output</a>
             <a class="tab" href="/proof/100-pdf-fast-corpus-run.html">Proof</a>
             <a class="tab" href="/#security">Security</a>
-            <a class="tab cta" href="../pilot-intake.html#intent=public-data-quality&source=public-data-quality-use-case">Pilot</a>
+            <a class="tab navExample" href="/sample-output.html">Example run</a>
+            <a class="tab cta" href="../pilot-intake.html#intent=public-data-quality&source=public-data-quality-use-case">Scope a run</a>
           </nav>
         </div>
       </div>

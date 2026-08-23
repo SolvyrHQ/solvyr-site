@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Fast Corpus Public Sample - Solvyr</title>
+    <title>Fast Corpus Example Run - Solvyr</title>
     <meta
       name="description"
-      content="Inspect and download real Solvyr Fast Corpus embedding output, its source manifest, run report, failure file, and verified checksums."
+      content="Inspect a completed Solvyr Fast Corpus example run with real embedding output, lifecycle evidence, artifacts, and verified checksums."
     />
-    <meta property="og:title" content="Fast Corpus Public Sample - Solvyr" />
+    <meta property="og:title" content="Fast Corpus Example Run - Solvyr" />
     <meta
       property="og:description"
-      content="Seven real pipeline outputs from three public Solvyr-owned text documents, with stable source IDs, full vectors, a run report, and checksums."
+      content="A completed seven-record Fast Corpus run presented as an inspectable product example with real output, a run report, and checksums."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://solvyr.com/sample-output.html" />
@@ -29,7 +29,7 @@
     <link rel="icon" href="/assets/brand/solvyr-icon-hybrid.svg?v=20260820-2" type="image/svg+xml" sizes="any" />
     <link rel="icon" href="/favicon.ico?v=20260820-2" sizes="16x16 32x32 48x48" />
     <link rel="apple-touch-icon" href="/assets/brand/solvyr-icon-hybrid-256.png?v=20260820-2" />
-    <link rel="stylesheet" href="styles.css?v=20260821-1" />
+    <link rel="stylesheet" href="styles.css?v=20260823-1" />
       <script>
 (() => {
   const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
@@ -106,9 +106,16 @@
             <a class="lang" href="sample-output-nl.html" aria-label="Nederlandse versie"><span aria-hidden="true">🇳🇱</span><span>NL</span></a>
           </div>
 
-          <nav class="tabs" aria-label="Page navigation">
-            <a class="tab" href="/#overview">Fast Corpus</a>
-            <details class="navDropdown">
+          <nav class="tabs" aria-label="Primary navigation">
+            <details class="navDropdown navProduct" name="primary-navigation">
+              <summary class="tab">Product</summary>
+              <div class="dropdownMenu">
+                <a href="/#overview">Fast Corpus</a>
+                <a href="/#who">Fit</a>
+                <a href="/#deliver">Output</a>
+              </div>
+            </details>
+            <details class="navDropdown navUseCases" name="primary-navigation">
               <summary class="tab">Use cases</summary>
               <div class="dropdownMenu">
                 <a href="/use-cases/pdf-to-rag-corpus.html">PDF to RAG corpus</a>
@@ -117,24 +124,23 @@
                 <a href="/use-cases/document-intake.html">Document intake</a>
               </div>
             </details>
-            <a class="tab" href="/#who">Fit</a>
-            <a class="tab active" href="/sample-output.html" aria-current="page">Output</a>
             <a class="tab" href="/proof/100-pdf-fast-corpus-run.html">Proof</a>
             <a class="tab" href="/#security">Security</a>
-            <a class="tab cta" href="pilot-intake.html#intent=fast-corpus&source=sample-output-page">Pilot</a>
+            <a class="tab navExample active" href="/sample-output.html" aria-current="page">Example run</a>
+            <a class="tab cta" href="pilot-intake.html#intent=fast-corpus&source=sample-output-page">Scope a run</a>
           </nav>
         </div>
       </div>
     </header>
 
     <main id="main-content" class="container shell">
-      <section class="hero">
-        <p class="eyebrow">Public sample · 21 August 2026</p>
-        <h1>Inspect real pipeline output.</h1>
+      <section class="hero exampleHero">
+        <p class="eyebrow">Example run · Published 21 August 2026</p>
+        <h1>See a completed Fast Corpus run.</h1>
         <p class="lede">
-          Three public Solvyr-owned text documents produced seven prepared
-          chunks and seven real embedding records. Download the full public output,
-          source manifest, run report, failure file, and checksums.
+          This inspectable view presents a real bounded run through the deployed
+          test pipeline: three public Solvyr-owned text documents,
+          seven prepared chunks, and seven returned embedding records.
         </p>
         <div class="heroActions">
           <a class="button primary" href="downloads/solvyr-fast-corpus-public-sample-2026-08-21.zip" download>Download the bundle <span aria-hidden="true">↓</span></a>
@@ -142,33 +148,68 @@
         </div>
       </section>
 
-      <section class="reportPreview" aria-labelledby="sample-metrics-title">
-        <div class="reportCopy">
-          <p class="eyebrow">Verified run</p>
-          <h2 id="sample-metrics-title">Small enough to inspect end to end.</h2>
-          <p>
-            Counts reconcile across the manifest, submitted chunks, returned
-            output, scheduler state, and failure file. The included checksums
-            verify that the published files are unchanged.
-          </p>
+      <section class="runSurface" aria-labelledby="example-run-title">
+        <div class="runSurfaceBar">
+          <p><strong>Fast Corpus</strong><span> / Public example</span></p>
+          <span class="statusBadge"><i aria-hidden="true"></i>Completed</span>
         </div>
-        <div class="metricCard" aria-label="Public sample run metrics">
-          <div>
-            <span>Input</span>
-            <strong>3 public text documents / 7 prepared chunks</strong>
+
+        <div class="runSurfaceBody">
+          <div class="runMain">
+            <div class="runHeading">
+              <div>
+                <p class="eyebrow">Completed run</p>
+                <h2 id="example-run-title">Plain-text embedding output</h2>
+              </div>
+              <p class="runModel"><span>Model</span><code>qwen3-embedding:latest</code></p>
+            </div>
+
+            <div class="runFacts" aria-label="Example run facts">
+              <div><span>Input</span><strong>3 public text documents</strong></div>
+              <div><span>Prepared work</span><strong>7 chunks</strong></div>
+              <div><span>Elapsed</span><strong>20.521 seconds</strong></div>
+              <div><span>Outcome</span><strong>7 completed · 0 failed</strong></div>
+            </div>
+
+            <div class="artifactList" aria-labelledby="artifacts-title">
+              <div class="artifactListHeading">
+                <div>
+                  <p class="miniLabel">Result package</p>
+                  <h3 id="artifacts-title">Inspectable artifacts</h3>
+                </div>
+                <span>SHA-256 covered</span>
+              </div>
+              <a href="downloads/fast-corpus-public-sample/sample_output.jsonl">
+                <span><strong>Output JSONL</strong><small>7 records · full 4096-value vectors</small></span><b>Open ↗</b>
+              </a>
+              <a href="downloads/fast-corpus-public-sample/sample_input_manifest.csv">
+                <span><strong>Source manifest</strong><small>Stable IDs, source hashes, and chunk counts</small></span><b>Open ↗</b>
+              </a>
+              <a href="downloads/fast-corpus-public-sample/sample_run_report.json">
+                <span><strong>Run report</strong><small>Observed facts, reconciliation, and caveats</small></span><b>Open ↗</b>
+              </a>
+              <div class="artifactPair">
+                <a href="downloads/fast-corpus-public-sample/sample_failures.jsonl">Failures <strong>0 records</strong></a>
+                <a href="downloads/fast-corpus-public-sample/SHA256SUMS">Checksums <strong>Verified files</strong></a>
+              </div>
+            </div>
           </div>
-          <div>
-            <span>Output</span>
-            <strong>7 records / 4096 values per embedding</strong>
-          </div>
-          <div>
-            <span>Run</span>
-            <strong>20.521s submission to completion</strong>
-          </div>
-          <div>
-            <span>Outcome</span>
-            <strong>7 completed / 0 failed / 0 retries</strong>
-          </div>
+
+          <aside class="runRail" aria-labelledby="lifecycle-title">
+            <p class="miniLabel">Run state</p>
+            <h3 id="lifecycle-title">Lifecycle evidence</h3>
+            <ol class="runTimeline">
+              <li><span>Input prepared</span><small>3 public UTF-8 documents became 7 bounded chunks.</small></li>
+              <li><span>Validated</span><small>Manifest and prepared input counts reconciled.</small></li>
+              <li><span>Scheduled</span><small>1 scheduler task succeeded; none permanently failed.</small></li>
+              <li><span>Completed</span><small>7 records returned with 0 failures and 0 retries.</small></li>
+            </ol>
+            <div class="validationNote">
+              <strong>Negative path checked</strong>
+              <p>A separate row without required text was rejected with HTTP 400 before work creation.</p>
+            </div>
+            <p class="publicExampleNote">Public example, not a customer account or self-service dashboard.</p>
+          </aside>
         </div>
       </section>
 
@@ -197,27 +238,6 @@
   ],
   "derived_vector_length": 4096
 }</code></pre>
-      </section>
-
-      <section class="summaryGrid sectionGap" aria-label="Sample bundle files">
-        <article class="panel">
-          <p class="miniLabel">Traceability</p>
-          <h2>Source manifest</h2>
-          <p>Public source URLs, run-date hashes, character counts, chunk counts, and stable source IDs.</p>
-          <p><a href="downloads/fast-corpus-public-sample/sample_input_manifest.csv">Open the CSV manifest</a></p>
-        </article>
-        <article class="panel">
-          <p class="miniLabel">Reconciliation</p>
-          <h2>Run report</h2>
-          <p>Observed facts, derived metrics, unavailable fields, redactions, and explicit caveats.</p>
-          <p><a href="downloads/fast-corpus-public-sample/sample_run_report.json">Open the JSON report</a></p>
-        </article>
-        <article class="panel">
-          <p class="miniLabel">Integrity</p>
-          <h2>Failures and checksums</h2>
-          <p>The failure file is empty because all seven items completed. SHA-256 covers every bundle file.</p>
-          <p><a href="downloads/fast-corpus-public-sample/sample_failures.jsonl">Open failures</a> · <a href="downloads/fast-corpus-public-sample/SHA256SUMS">Open checksums</a></p>
-        </article>
       </section>
 
       <section class="band compact" aria-labelledby="boundary-title">

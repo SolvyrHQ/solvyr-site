@@ -30,12 +30,15 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Security frames European context as explicit pilot boundaries, not as a blanket compliance or confidentiality claim.
 - [ ] API/CLI language, if present, supports integration or handoff rather than becoming the public CTA.
 - [ ] CTAs describe the work or decision, not generic platform access.
+- [ ] The header keeps acquisition and product evidence distinct: `Example run` / `Voorbeeldrun` opens the real public sample, while `Scope a run` / `Run afbakenen` opens pilot intake.
+- [ ] No dashboard, client-access, or sign-in label implies an authenticated or self-service surface that does not exist.
 - [ ] `hello@solvyr.com` remains visibly available as the direct human contact while the workload-specific CTA stays primary.
 - [ ] Mailto links, prepared pilot emails, conversion matching, metadata, footer copy, and agent-readable files use the same current contact address; no retired public address remains.
 - [ ] The homepage hero has no secondary CTA that merely jumps to proof already immediately visible below it.
 - [ ] Every `use-cases/*.html` page has first-screen hero buttons: workload-specific scope CTA plus a human-facing proof, sample, or supporting context link.
 - [ ] Exclusions are still honest: OCR-heavy, sensitive data, custom extraction, mature SLA.
 - [ ] Product-page header navigation stays stable, including the `Use cases` / `Toepassingen` dropdown; do not invent contextual top-right nav per page.
+- [ ] The `Product` dropdown preserves `Fast Corpus`, `Fit`, and `Output` in both languages.
 - [ ] Existing primary nav routes, especially `Fit` and `Security`, remain reachable unless explicitly approved.
 - [ ] The active homepage view avoids repeating the same price, category, vision, sovereignty, or buyer-entry point when a dedicated tab or route already carries it.
 - [ ] Supported claims are stated positively; necessary caveats appear once in the relevant proof, fit, price, security, or legal context rather than as repeated defensive disclaimers.
