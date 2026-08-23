@@ -87,6 +87,7 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Sitemap and internal links contain only final canonical URLs—not `http`, `www`, or `/index.html` redirect aliases—and localized pages include reciprocal `en`, `nl`, and `x-default` hreflang links.
 - [ ] Pilot-intake source/intent attribution uses URL fragments rather than crawlable query parameters in both HTML and agent-readable files.
 - [ ] `node scripts/audit-live-deploy.mjs` passes after deploy when route/metadata/indexing-sensitive files changed.
+- [ ] Historical query variants reported as `Alternate page with proper canonical tag` are not treated as canonical failures after current discovery sources have been removed.
 - [ ] Intentional public route/file/sitemap removals had explicit human approval before override flags were used.
 - [ ] Structured data, performance/PageSpeed, or Search Console checks were run if this change made them relevant.
 - [ ] Public contact links remain inside Cloudflare `email_off` guards so the edge does not rewrite them into crawlable `/cdn-cgi/l/email-protection` URLs.

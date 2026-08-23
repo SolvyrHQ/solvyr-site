@@ -133,6 +133,16 @@ clusters including `x-default`. Search Console may still report redirect URLs
 that Google learned historically; those are expected exclusions when the
 redirect target is the canonical homepage.
 
+Search Console may likewise retain historical pilot-intake query variants as
+`Alternate page with proper canonical tag`. That classification confirms that
+Google selected the clean intake URL; it is not evidence that the canonical is
+broken. A validation can fail while an old variant remains fetchable with a
+correct canonical. Remove current internal discovery sources, keep the clean
+canonical, and allow Google to recrawl. Do not repeatedly start validation or
+add `noindex` merely to make this expected alternate-URL category disappear.
+Use an edge redirect only after a deliberate decision that losing or migrating
+legacy query attribution is worth the infrastructure change.
+
 Pilot-intake attribution uses URL fragments, not query parameters. Fragments
 preserve the source and intent used in the prepared email without creating
 multiple crawlable intake URLs that can compete with the declared canonical.
