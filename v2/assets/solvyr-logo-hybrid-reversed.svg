@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 140" role="img" aria-label="Solvyr hybrid logo reversed">
+  <g transform="translate(0 10)" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 18H72"/>
+    <path d="M16 42H47"/><path d="M62 42H82C98 42 101 60 124 60"/>
+    <path d="M16 60H124"/>
+    <path d="M16 78H47"/><path d="M62 78H82C98 78 101 60 124 60"/>
+    <path d="M16 102H72"/>
+  </g>
+  <circle cx="151" cy="70" r="10" fill="#FFFFFF"/>
+  <text x="190" y="100" fill="#FFFFFF" font-family="Inter,Arial,Helvetica,sans-serif" font-size="94" font-weight="600" letter-spacing="-5">solvyr</text>
+</svg>
