@@ -33,10 +33,11 @@ assets rather than a replacement for the production identity:
 - output-dot, node, status, section-line, card-accent, and footer treatments;
 - product evidence frame based on the measured 100-PDF proof note.
 
-The founder portraits embedded in the working Google Slides deck were copied
-into `v2/assets/` for this concept at Jan's direction. The founder names, roles,
-and LinkedIn links follow the same deck source register. No production logo,
-favicon, app icon, social card, or other production brand asset is replaced.
+Founder presentation is text-only. The available deck portraits are not large
+enough for a high-quality website presentation, so they are not retained in
+this repository. The founder names, roles, and LinkedIn links follow the deck
+source register. No production logo, favicon, app icon, social card, or other
+production brand asset is replaced.
 
 ## Evidence and claim boundaries
 
@@ -58,6 +59,6 @@ approved path rather than current broad availability.
 - No genuine dashboard screenshots were present in this repository. The concept
   therefore uses an evidence frame built from measured proof fields, not a
   fabricated production screenshot.
-- The B Hybrid identity remains a working concept until its geometry, rights,
-  font, colours, photography, and external-use status are finally approved.
+- Any future founder photography still needs a sufficiently large source and a
+  confirmed public-use basis before it is added.
 - A production favicon family and social card should wait until that approval.

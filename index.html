@@ -47,7 +47,7 @@
     <link rel="help" href="llms.txt" />
     <meta name="theme-color" content="#f7f9fc" />
     <link rel="preload" as="image" href="assets/brand/icon.png" />
-    <link rel="stylesheet" href="styles.css?v=20260821-1" />
+    <link rel="stylesheet" href="styles.css?v=20260823-1" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -179,8 +179,15 @@
           </div>
 
           <nav class="tabs" aria-label="Primary navigation">
-            <a class="tab" href="#overview" data-tab-target="overview" aria-selected="false">Fast Corpus</a>
-            <details class="navDropdown">
+            <details class="navDropdown navProduct" name="primary-navigation">
+              <summary class="tab active">Product</summary>
+              <div class="dropdownMenu">
+                <a href="#overview" data-tab-target="overview">Fast Corpus</a>
+                <a href="#who" data-tab-target="who">Fit</a>
+                <a href="#deliver" data-tab-target="deliver">Output</a>
+              </div>
+            </details>
+            <details class="navDropdown navUseCases" name="primary-navigation">
               <summary class="tab">Use cases</summary>
               <div class="dropdownMenu">
                 <a href="/use-cases/pdf-to-rag-corpus.html">PDF to RAG corpus</a>
@@ -189,11 +196,10 @@
                 <a href="/use-cases/document-intake.html">Document intake</a>
               </div>
             </details>
-            <a class="tab" href="#who" data-tab-target="who" aria-selected="false">Fit</a>
-            <a class="tab" href="#deliver" data-tab-target="deliver" aria-selected="false">Output</a>
-            <a class="tab" href="proof/100-pdf-fast-corpus-run.html">Proof</a>
+            <a class="tab" href="/proof/100-pdf-fast-corpus-run.html">Proof</a>
             <a class="tab" href="#security" data-tab-target="security" aria-selected="false">Security</a>
-            <a class="tab cta" href="pilot-intake.html#intent=fast-corpus&source=site-nav">Pilot</a>
+            <a class="tab navExample" href="/sample-output.html">Example run</a>
+            <a class="tab cta" href="pilot-intake.html#intent=fast-corpus&source=site-nav">Scope a run</a>
           </nav>
         </div>
       </div>
@@ -691,6 +697,7 @@
 
       const pages = [...document.querySelectorAll("[data-page]")];
       const tabs = [...document.querySelectorAll("[data-tab-target]")];
+      const productSummary = document.querySelector(".navProduct > summary");
 
       function setActivePage(pageName) {
         if (pageName === "model") {
@@ -715,6 +722,10 @@
           }
         });
 
+        const productIsActive = ["overview", "who", "deliver"].includes(targetPage);
+        productSummary?.classList.toggle("active", productIsActive);
+        if (productIsActive) activeTab = productSummary;
+
         if (activeTab && window.matchMedia("(max-width: 560px)").matches) {
           requestAnimationFrame(() => {
             activeTab.scrollIntoView({ block: "nearest", inline: "center" });
@@ -732,6 +743,7 @@
           const pageName = tab.dataset.tabTarget;
           if (!pageName) return;
           event.preventDefault();
+          tab.closest("details")?.removeAttribute("open");
           history.pushState(null, "", `#${pageName}`);
           setActivePage(pageName);
           window.scrollTo({ top: 0, behavior: "smooth" });

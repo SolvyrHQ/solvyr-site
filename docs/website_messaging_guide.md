@@ -436,12 +436,19 @@ aligned. Current lead contact: `hello@solvyr.com`.
 Keep product-page header navigation stable. Detail pages may have different
 body links, but the top-right nav should not become contextual per page.
 
-Current product nav:
+Current product nav separates product discovery from the two next actions:
 
-- English: `Fast Corpus`, `Use cases`, `Fit`, `Output`, `Proof`, `Security`, `Pilot`
-- Dutch: `Fast Corpus`, `Toepassingen`, `Fit`, `Output`, `Proefrun`, `Security`, `Pilot`
+- English: `Product`, `Use cases`, `Proof`, `Security`, `Example run`, `Scope a run`
+- Dutch: `Product`, `Toepassingen`, `Proefrun`, `Security`, `Voorbeeldrun`, `Run afbakenen`
+- `Product` contains `Fast Corpus`, `Fit`, and `Output`, preserving those
+  destinations without giving every section equal top-level weight.
+- `Example run` / `Voorbeeldrun` opens the real seven-record public sample in
+  an inspectable completed-run surface. It is a public example, not a customer
+  account, login, self-service dashboard, or claim of broad product access.
+- `Scope a run` / `Run afbakenen` remains the primary acquisition action and
+  routes to the controlled pilot intake.
 
-`Use cases` / `Toepassingen` is a dropdown. Keep these entries stable:
+`Product` and `Use cases` / `Toepassingen` are dropdowns. Keep their entries stable:
 
 - English: `PDF to RAG corpus`, `Document re-indexing`, `Public-data quality runs`
 - Dutch: `PDF naar RAG-corpus`, `Documenten herindexeren`,
@@ -451,10 +458,15 @@ Current product nav:
   direct ERP write-back, certified accounting automation, or named vendor
   integration.
 
-`Pilot` should route to the intake page, not a page-specific local section.
+`Scope a run` / `Run afbakenen` should route to the intake page, not a
+page-specific local section.
 Do not remove an existing primary nav route without explicit approval.
 If a page has a translated counterpart, keep the language switch visible on
 both versions.
+
+Do not add `Dashboard`, `Client access`, `Sign in`, or another return-path label
+until it points to a real access-controlled customer surface. Until then, the
+public example run is the honest product-presence signal.
 
 Static presence is not enough for the dropdown: verify that it opens, its links
 can be activated, and it remains legible without horizontal clipping on both a
