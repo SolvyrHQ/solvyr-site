@@ -1,0 +1,2 @@
+# Preserve whitespace in immutable upstream source snapshots exactly as pinned.
+downloads/fast-corpus-gitignore-sample/input/sources/*.gitignore whitespace=-blank-at-eol

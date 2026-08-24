@@ -442,7 +442,7 @@ Current product nav separates product discovery from the two next actions:
 - Dutch: `Product`, `Toepassingen`, `Proefrun`, `Security`, `Voorbeeldrun`, `Run afbakenen`
 - `Product` contains `Fast Corpus`, `Fit`, and `Output`, preserving those
   destinations without giving every section equal top-level weight.
-- `Example run` / `Voorbeeldrun` opens the real seven-record public sample in
+- `Example run` / `Voorbeeldrun` opens the real four-record public .gitignore sample in
   an inspectable completed-run surface. It is a public example, not a customer
   account, login, self-service dashboard, or claim of broad product access.
 - `Scope a run` / `Run afbakenen` remains the primary acquisition action and
@@ -606,26 +606,26 @@ When mentioning proof, stay specific:
 The public proof layer has two complementary artifacts:
 
 - the 100-PDF run shows measured behavior for the clean digital PDF/text path;
-- the seven-record public sample exposes real output from the plain-text
-  embedding branch, plus source manifest, run report, failure file, and
-  checksums.
+- the four-record public .gitignore sample exposes a usable
+  text-and-embedding corpus, pinned CC0 source snapshots, the projected
+  returned items, source manifest, run report, failure file, and checksums.
 
 Do not merge those into one end-to-end claim. The public sample did not run raw
-PDF extraction and does not contain returned chunk text. It demonstrates clean
-public text preparation, stable chunk identity, bounded async scheduling,
-embedding generation, result retrieval, input validation, and inspectable run
-evidence for a tiny workload. Present it as technical output evidence beside
-the larger run, not as a scale, retrieval-quality, cost, security, or SLA
-benchmark.
+PDF extraction. It demonstrates exact public text preparation, stable chunk
+identity, bounded async scheduling, embedding generation, result retrieval,
+input validation, and a usable joined corpus artifact for a tiny workload.
+Present it as technical output evidence beside the larger run, not as a scale,
+retrieval-quality, cost, security, or SLA benchmark.
 
 Keep the public download as a public-lite projection of the verified internal
-evidence. Publish complete embedding values, stable task/record IDs, status,
-error, model label, manifest, reconciled aggregate report, failure file, and
-checksums. Keep exact source snapshots with superseded contact/copy, private
-artifact hashes, internal paths/identifiers, exact build/run identifiers, and
-node/GPU/provider/power/batching/per-record timing telemetry in the internal
-evidence archive. Do not weaken the customer-relevant output or alter vector
-values when applying this publication boundary.
+evidence. Publish the usable text-plus-vector corpus, projected returned items,
+complete embedding values, stable task/record IDs, status, error, model label,
+pinned GitHub .gitignore source snapshots, the CC0 license, manifest,
+reconciled report, failure file, and checksums. Keep private artifact hashes,
+internal paths/identifiers, exact build/run identifiers, and
+node/GPU/provider/power/batching/per-record timing
+telemetry in the internal evidence archive. Do not alter text or vector values
+when applying this publication boundary.
 
 Do not imply:
 

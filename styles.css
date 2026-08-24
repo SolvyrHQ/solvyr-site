@@ -828,6 +828,42 @@ h3 { margin-bottom: 8px; font-size: 17px; }
   tab-size: 2;
 }
 
+.sampleSources {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.7fr) minmax(0, 1.3fr);
+  gap: clamp(28px, 5vw, 64px);
+  margin: 6px 0 18px;
+  padding: clamp(26px, 4vw, 44px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--canvas);
+}
+
+.sampleSourcesHeading h2 { margin-bottom: 10px; font-size: clamp(28px, 3vw, 38px); }
+.sampleSourcesHeading > p:last-child { margin: 0; color: var(--muted); }
+
+.sampleSourceGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.sampleSourceGrid a {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.sampleSourceGrid a:hover { border-color: #a9c7f6; box-shadow: 0 8px 22px rgba(20, 115, 255, 0.08); }
+.sampleSourceGrid span { color: var(--blue-dark); font-size: 10px; font-weight: 780; letter-spacing: 0.09em; text-transform: uppercase; }
+.sampleSourceGrid strong { margin-top: 8px; font-size: 14px; line-height: 1.35; }
+.sampleSourceGrid small { margin-top: 8px; color: var(--muted); font-size: 12px; line-height: 1.45; }
+
 .metricCard {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1466,11 +1502,14 @@ textarea:focus {
   .flowPanel,
   .reportPreview,
   .sampleInspect,
+  .sampleSources,
   .appendixGrid,
   .pilotBox > div,
   .teamBlock { padding: 26px; }
 
-  .sampleInspect { grid-template-columns: 1fr; }
+  .sampleInspect,
+  .sampleSources { grid-template-columns: 1fr; }
+  .sampleSourceGrid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .runFacts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
   .flowSteps { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 28px; }
@@ -1546,6 +1585,7 @@ textarea:focus {
   .artifactListHeading { align-items: flex-start; flex-direction: column; gap: 7px; }
   .artifactList > a { align-items: flex-start; }
   .artifactPair { grid-template-columns: 1fr; }
+  .sampleSourceGrid { grid-template-columns: 1fr; }
 
   .navDropdown[open] {
     display: grid;

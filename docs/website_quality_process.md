@@ -76,18 +76,18 @@ And parse changed structured files, for example:
 node -e "JSON.parse(require('fs').readFileSync('ai/fast-corpus.json','utf8'))"
 ```
 
-When refreshing the seven-record public sample, build the public-lite artifact
-from the verified knowledge-repository evidence before the production build:
+When refreshing the four-record public .gitignore sample, build the public-lite artifact
+from the verified local run evidence before the production build:
 
 ```sh
 node scripts/build-public-sample.mjs
 ```
 
-The generator verifies the canonical source-bundle checksums, preserves every
-embedding value and customer-relevant output field, removes stale source
-snapshots and internal telemetry, rejects email addresses/private telemetry
-fields, writes new public checksums, and rebuilds the ZIP. Do not hand-edit the
-generated public sample files.
+The generator verifies the exact pinned source and CC0-license hashes, exact
+source slices, input/output identity, and customer-corpus join; preserves every
+embedding value and customer-relevant output field; excludes private runtime
+telemetry; writes new public checksums; and rebuilds the ZIP.
+Do not hand-edit the generated public sample files.
 
 ## Trigger Matrix
 
@@ -99,7 +99,7 @@ generated public sample files.
 | Public route or sitemap deletion/removal | Human approval, then release-safety override if truly intended |
 | Copy-only body edit | `git diff --check`, final read; run full suite if first-screen promise changes |
 | Positioning, pricing, proof, CTA, buyer, exclusions | Update messaging guide/checklist and agent-readable files if relevant |
-| Public seven-record sample or download changes | `node scripts/build-public-sample.mjs`, full local suite, checksum/ZIP verification, and sensitive-data scan |
+| Public four-record .gitignore sample or download changes | `node scripts/build-public-sample.mjs`, full local suite, checksum/ZIP verification, and sensitive-data scan |
 | Layout, responsive behavior, forms, interactions | Local suite plus browser check on desktop/mobile-relevant viewport |
 | Contact-address change | Scan source and `.site-dist/` for the retired address; verify visible mailto links, prepared pilot email, and conversion matching in both languages without sending mail |
 | Dropdown or external-profile-link change | Static audit plus browser interaction check; verify external profiles use a new tab and `noopener noreferrer` |

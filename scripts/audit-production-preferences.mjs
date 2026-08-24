@@ -54,11 +54,15 @@ for (const file of walk(repoRoot)) {
 
   if (!file.endsWith(".html")) continue;
 
-  if (!source.includes('href="/favicon.ico')) {
-    failures.push(`${relPath}: page head does not use the approved favicon`);
-  }
-  if (!source.includes('href="/assets/brand/solvyr-icon-hybrid-256.png')) {
-    failures.push(`${relPath}: page head does not use the approved compact touch icon`);
+  // Standalone download-bundle viewers must also work after unzipping, where
+  // root-relative site assets are unavailable.
+  if (!relPath.startsWith("downloads/")) {
+    if (!source.includes('href="/favicon.ico')) {
+      failures.push(`${relPath}: page head does not use the approved favicon`);
+    }
+    if (!source.includes('href="/assets/brand/solvyr-icon-hybrid-256.png')) {
+      failures.push(`${relPath}: page head does not use the approved compact touch icon`);
+    }
   }
 
   const withoutProtectedEmails = source.replace(

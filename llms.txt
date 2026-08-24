@@ -91,12 +91,13 @@ Important pages:
 - Public output sample: https://solvyr.com/sample-output.html
 
 Public output sample boundary:
-- 3 public Solvyr-owned text documents -> 7 prepared chunks -> 7 real pipeline output records
-- 7 completed, 0 failed, 0 retries; every returned embedding has 4096 values
-- Includes source manifest, public output JSONL with complete vectors, run report, empty failure file, and SHA-256 checksums
-- Public JSONL fields: task ID, record ID, status, complete embedding, error, and model; internal node and per-record telemetry is withheld
-- Demonstrates the plain-text embedding branch and inspectable run evidence for a tiny workload
-- Does not demonstrate raw-PDF extraction, OCR, retrieval quality, scale, distributed performance, customer-data handling, cost, or an SLA
+- Exact GitHub Python, Node, and Visual Studio .gitignore templates pinned at commit 57286c3887203259752b747db94e6c3ad10ec53d -> 4 prepared chunks -> 4 real pipeline output records
+- Source basis: GitHub's official gitignore repository, dedicated under CC0-1.0
+- 4 completed, 0 failed, 0 retries; every returned embedding has 4096 values
+- Includes exact source snapshots, source notice and CC0 license, a customer-ready text-plus-vector corpus, CSV preview, schema, projected returned items, source manifest, reconciled run report, empty failure file, and SHA-256 checksums
+- The corpus joins exact submitted text to complete returned vectors by stable record ID; internal node and per-record telemetry is withheld
+- Demonstrates the plain-text embedding branch and a usable joined corpus artifact for a tiny workload
+- Does not demonstrate raw-PDF extraction, OCR, retrieval quality, scale, distributed performance, customer-data handling, cost, security, or an SLA
 - Capabilities: https://solvyr.com/capabilities.yaml
 - Pricing: https://solvyr.com/pricing.yaml
 

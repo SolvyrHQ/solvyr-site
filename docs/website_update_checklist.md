@@ -8,8 +8,8 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] `docs/website_manager_agent.md` was followed for judgement/approval thresholds.
 - [ ] First screen leads with document/text backlog to AI-ready output, or for public-data pages, a public/test metadata export to a reviewable quality report.
 - [ ] The page names the concrete output: JSONL, chunks, embeddings, stable IDs, run report, or issue list/suggested fixes/caveats for public-data quality runs.
-- [ ] The public seven-record sample is framed as plain-text embedding-output evidence, not as raw-PDF, OCR, retrieval-quality, scale, distributed-performance, customer-data, cost, or SLA proof.
-- [ ] The public sample download exposes complete vectors and customer-relevant IDs/status/error/model fields, but no stale source snapshots, private artifact hashes, internal identifiers, or node/GPU/provider/per-record telemetry.
+- [ ] The public four-record .gitignore sample is framed as plain-text corpus-output evidence, not as raw-PDF, OCR, retrieval-quality, scale, distributed-performance, customer-data, cost, or SLA proof.
+- [ ] The public sample download exposes pinned CC0 .gitignore source snapshots, the source license, usable text-plus-vector records, projected returned items, complete vectors, and customer-relevant IDs/status/error/model fields, but no private artifact hashes, internal identifiers, or node/GPU/provider/per-record telemetry.
 - [ ] Header tagline stays short: `Fast Corpus for European AI teams` / `Fast Corpus voor Europese AI-teams`.
 - [ ] Cost is framed as a predictable scoped run or cost-per-result, not as a footnote.
 - [ ] Infrastructure appears as support, not the headline.

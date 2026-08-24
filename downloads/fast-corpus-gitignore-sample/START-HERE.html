@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Inspect the completed WHAT GIT LEAVES OUT corpus sample: three pinned CC0 .gitignore templates, four text chunks, complete embedding vectors, and reconciled run evidence.">
+  <meta property="og:title" content="WHAT GIT LEAVES OUT — Solvyr Fast Corpus sample">
+  <meta property="og:description" content="A completed public text-to-corpus run with pinned CC0 inputs, complete vectors, and inspectable evidence.">
+  <link rel="canonical" href="https://solvyr.com/downloads/fast-corpus-gitignore-sample/START-HERE.html">
+  <title>WHAT GIT LEAVES OUT — Solvyr Fast Corpus sample</title>
+  <style>
+    :root { color-scheme: light; --ink:#08101F; --muted:#526078; --line:#E8ECF2; --surface:#F7F9FC; --blue:#1473FF; --green:#12805C; }
+    * { box-sizing: border-box; }
+    body { margin:0; font:16px/1.55 Inter, ui-sans-serif, system-ui, sans-serif; color:var(--ink); background:white; }
+    main { max-width:1040px; margin:auto; padding:64px 28px 80px; }
+    .eyebrow { color:var(--blue); font-size:13px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+    h1 { max-width:760px; margin:.2em 0; font-size:clamp(38px,7vw,72px); line-height:.98; letter-spacing:-.05em; }
+    .lede { max-width:750px; font-size:21px; color:var(--muted); }
+    .facts { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; margin:42px 0; background:var(--line); border:1px solid var(--line); border-radius:18px; overflow:hidden; }
+    .fact { padding:24px; background:white; }
+    .fact span { display:block; color:var(--muted); font-size:13px; }
+    .fact strong { display:block; margin-top:7px; font-size:25px; }
+    .result { padding:28px; border-radius:18px; background:#edf8f3; border:1px solid #cdeadd; }
+    .result strong { color:var(--green); }
+    h2 { margin-top:58px; font-size:32px; letter-spacing:-.025em; }
+    .links { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+    .links a { padding:20px; color:var(--ink); text-decoration:none; border:1px solid var(--line); border-radius:14px; }
+    .links a:hover { border-color:var(--blue); }
+    .links strong,.links span { display:block; }
+    .links span { color:var(--muted); margin-top:5px; }
+    .records { display:grid; grid-template-columns:minmax(0,1fr); gap:14px; }
+    .record { min-width:0; padding:24px; border:1px solid var(--line); border-radius:16px; }
+    .record h3 { margin:.2em 0; }
+    .record-source { color:var(--blue); font-size:12px; font-weight:800; letter-spacing:.08em; }
+    .record-id,.record-proof { color:var(--muted); font:13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; overflow-wrap:anywhere; }
+    blockquote { margin:18px 0; padding-left:18px; border-left:3px solid var(--blue); color:#33415b; overflow-wrap:anywhere; word-break:break-word; }
+    .boundary { margin-top:48px; padding:24px; background:var(--surface); border-radius:16px; color:var(--muted); }
+    @media (max-width:720px) { .facts,.links { grid-template-columns:1fr; } main { padding-top:38px; } }
+  </style>
+</head>
+<body><main>
+  <p class="eyebrow">Completed public text run · 24 August 2026</p>
+  <h1>WHAT GIT LEAVES OUT.</h1>
+  <p class="lede">Three official .gitignore templates engineers recognize immediately became a usable text-and-embedding corpus—with pinned CC0 inputs, stable chunk IDs, complete vectors, and run evidence included.</p>
+  <section class="facts" aria-label="Run facts">
+    <div class="fact"><span>Sources</span><strong>3 templates</strong></div>
+    <div class="fact"><span>Prepared work</span><strong>4 chunks</strong></div>
+    <div class="fact"><span>Outcome</span><strong>4 / 4</strong></div>
+    <div class="fact"><span>Retries</span><strong>0</strong></div>
+  </section>
+  <p class="result"><strong>Accepted result:</strong> every submitted chunk returned one 4,096-value embedding, and the retrieved input hash matched the submitted input exactly.</p>
+
+  <h2>Use the result—or inspect the proof.</h2>
+  <div class="links">
+    <a href="deliverable/corpus.jsonl"><strong>Customer-ready corpus</strong><span>Exact text joined to complete embedding vectors.</span></a>
+    <a href="deliverable/corpus-preview.csv"><strong>Readable CSV preview</strong><span>Four rows with text and vector previews.</span></a>
+    <a href="input/source-manifest.csv"><strong>Source manifest</strong><span>Official URLs, rights basis, hashes, and counts.</span></a>
+    <a href="evidence/run-report.json"><strong>Technical run report</strong><span>Observed facts, reconciliation, derivation, and boundaries.</span></a>
+  </div>
+
+  <h2>See what each vector represents.</h2>
+  <div class="records">
+  <article class="record">
+    <p class="record-source">PYTHON_GITIGNORE · chunk 1</p>
+    <h3>Python .gitignore template</h3>
+    <p class="record-id">python_gitignore__chars_000000_004657</p>
+    <blockquote># Byte-compiled / optimized / DLL files __pycache__/ *.py[codz] *$py.class # C extensions *.so # Distribution / packaging .Python build/ develop-eggs/ dist/ downloads/ eggs/ .eggs/ lib/ lib64/ parts/ sdist/ var/ wheels/ share/python-wheels/ *.egg-info/ .installed.cfg *.egg MANIFEST # PyInstaller # Usually these files are written by a python script from a tem…</blockquote>
+    <p class="record-proof">4,657 characters · 4,096 embedding values · <strong>ok</strong></p>
+  </article>
+  <article class="record">
+    <p class="record-source">NODE_GITIGNORE · chunk 1</p>
+    <h3>Node .gitignore template</h3>
+    <p class="record-id">node_gitignore__chars_000000_002165</p>
+    <blockquote># Logs logs *.log npm-debug.log* yarn-debug.log* yarn-error.log* lerna-debug.log* # Diagnostic reports (https://nodejs.org/api/report.html) report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json # Runtime data pids *.pid *.seed *.pid.lock # Directory for instrumented libs generated by jscoverage/JSCover lib-cov # Coverage directory used by tools like istanbul coverage *.lc…</blockquote>
+    <p class="record-proof">2,165 characters · 4,096 embedding values · <strong>ok</strong></p>
+  </article>
+  <article class="record">
+    <p class="record-source">VISUALSTUDIO_GITIGNORE · chunk 1</p>
+    <h3>Visual Studio .gitignore template</h3>
+    <p class="record-id">visualstudio_gitignore__chars_000000_006000</p>
+    <blockquote>## Ignore Visual Studio temporary files, build results, and ## files generated by popular Visual Studio add-ons. ## ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore # User-specific files *.rsuser *.suo *.user *.userosscache *.sln.docstates *.env # User-specific files (MonoDevelop/Xamarin Studio) *.userprefs # Mono auto …</blockquote>
+    <p class="record-proof">6,000 characters · 4,096 embedding values · <strong>ok</strong></p>
+  </article>
+  <article class="record">
+    <p class="record-source">VISUALSTUDIO_GITIGNORE · chunk 2</p>
+    <h3>Visual Studio .gitignore template</h3>
+    <p class="record-id">visualstudio_gitignore__chars_005500_007454</p>
+    <blockquote>udio 6 auto-generated workspace file (contains which files were open etc.) *.vbw # Visual Studio 6 workspace and project file (working project files containing files to include in project) *.dsw *.dsp # Visual Studio 6 technical files *.ncb *.aps # Visual Studio LightSwitch build output **/*.HTMLClient/GeneratedArtifacts **/*.DesktopClient/GeneratedArtifacts…</blockquote>
+    <p class="record-proof">1,954 characters · 4,096 embedding values · <strong>ok</strong></p>
+  </article>
+  </div>
+
+  <div class="boundary"><strong>Evidence boundary.</strong> This tiny plain-text run demonstrates preparation, stable chunk identity, bounded scheduling, embedding generation, result retrieval, input validation, and a usable joined corpus artifact. It is not evidence for PDF extraction, OCR, retrieval quality, broad scale, distributed performance, cost, security, or an SLA.</div>
+</main></body></html>
