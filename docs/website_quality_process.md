@@ -101,6 +101,7 @@ Do not hand-edit the generated public sample files.
 | Positioning, pricing, proof, CTA, buyer, exclusions | Update messaging guide/checklist and agent-readable files if relevant |
 | Public four-record .gitignore sample or download changes | `node scripts/build-public-sample.mjs`, full local suite, checksum/ZIP verification, and sensitive-data scan |
 | Layout, responsive behavior, forms, interactions | Local suite plus browser check on desktop/mobile-relevant viewport |
+| Shared stylesheet changes | Bump the stylesheet cache key on every affected public page, then verify the deployed page loads the new key |
 | Contact-address change | Scan source and `.site-dist/` for the retired address; verify visible mailto links, prepared pilot email, and conversion matching in both languages without sending mail |
 | Dropdown or external-profile-link change | Static audit plus browser interaction check; verify external profiles use a new tab and `noopener noreferrer` |
 | Horizontally scrollable mobile navigation | Verify direct hash routes reveal the active tab and the expanded menu has a clean, unambiguous layout |
