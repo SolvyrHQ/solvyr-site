@@ -175,26 +175,33 @@ layout parsing, custom structured extraction, or a mature enterprise SLA.
 Proof note:
 https://solvyr.com/proof/100-pdf-fast-corpus-run.html
 
-A separate public sample run over three Solvyr-owned text documents submitted
-seven prepared chunks and returned seven real pipeline output records:
+A separate public sample run over the exact GitHub Python, Node, and Visual
+Studio `.gitignore` templates, pinned at commit
+`57286c3887203259752b747db94e6c3ad10ec53d` and dedicated under CC0-1.0,
+submitted four prepared chunks and returned four real pipeline output records:
 
-- 7 completed / 0 failed / 0 retries
+- 4 completed / 0 failed / 0 retries
 - stable source and record IDs
 - 4096 returned values in every embedding
-- 20.520935 seconds from submission to completion
-- source manifest, public output JSONL with complete vectors, run report, empty
-  failure file, and verified checksums
+- 6.751 seconds from submission to completion
+- exact public source snapshots, a usable text-plus-vector corpus, readable CSV
+  preview, JSON Schema, projected returned items, source manifest, reconciled
+  run report, empty failure file, and verified checksums
 - invalid missing-text input rejected with HTTP 400 before work creation
 
-The public JSONL is limited to task ID, record ID, status, complete embedding,
-error, and model. Internal paths/identifiers, private artifact hashes, exact
-build/run identifiers, stale source snapshots, and node/GPU/provider/power/
-batching/per-record timing telemetry remain in the internal evidence archive.
+The customer-ready JSONL joins each exact submitted text chunk to its complete
+returned vector by stable record ID. A separate returned-items file preserves
+the customer-field projection of the actual API result. Internal paths and
+identifiers, private artifact hashes, exact build/run identifiers, and
+node/GPU/provider/power/batching/per-record timing telemetry remain in the
+internal evidence archive. The source notice records the exact source commit,
+file hashes, and CC0 redistribution basis.
 
-This sample supports the plain-text embedding branch and inspectable output
-handling for a tiny workload. It is not raw-PDF, OCR, structured-extraction,
-retrieval-quality, scale, distributed-performance, customer-data, cost, or SLA
-evidence. The model digest was not returned and is explicitly unavailable.
+This sample supports exact public text preparation, the plain-text embedding
+branch, and a usable joined corpus artifact for a tiny workload. It is not
+raw-PDF, OCR, structured-extraction, retrieval-quality, scale,
+distributed-performance, customer-data, cost, security, or SLA evidence. The
+model digest was not returned and is explicitly unavailable.
 
 Public sample and downloads:
 https://solvyr.com/sample-output.html

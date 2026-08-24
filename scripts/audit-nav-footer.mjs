@@ -67,7 +67,9 @@ function walk(dir) {
   return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
     const path = join(dir, entry.name);
     if (entry.isDirectory()) {
-      if ([".git", ".site-dist", "measure", "v2"].includes(entry.name)) return [];
+      // Download-bundle HTML is deliberately portable and does not carry the
+      // website's global navigation or footer chrome.
+      if ([".git", ".site-dist", "downloads", "measure", "v2"].includes(entry.name)) return [];
       return walk(path);
     }
     return entry.isFile() && entry.name.endsWith(".html") ? [path] : [];

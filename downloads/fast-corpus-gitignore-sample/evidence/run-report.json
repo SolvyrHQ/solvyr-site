@@ -1,0 +1,60 @@
+{
+  "evidence_label": "public_sample",
+  "evidence_category": "single bounded test-scheduler run",
+  "corpus_label": "WHAT GIT LEAVES OUT",
+  "data_classification": "public CC0 .gitignore templates",
+  "run_date_local": "2026-08-24 Europe/Amsterdam",
+  "workload_type": "embeddings",
+  "input_format": "jsonl_text_v1",
+  "deliverable_format": "solvyr_corpus_record_v1 JSONL",
+  "observed_facts": {
+    "source_document_count": 3,
+    "prepared_chunk_count": 4,
+    "completed_item_count": 4,
+    "failed_item_count": 0,
+    "scheduler_tasks_succeeded": 1,
+    "scheduler_tasks_permanently_failed": 0,
+    "scheduler_retry_count": 0,
+    "model_label": "qwen3-embedding:latest",
+    "embedding_dimensions": 4096,
+    "chunking_method": "fixed_character_windows",
+    "chunk_size_chars": 6000,
+    "chunk_overlap_chars": 500,
+    "submission_to_completion_wall_clock_seconds": 6.751,
+    "execution_wall_clock_seconds": 6.393,
+    "negative_path": {
+      "case": "one JSONL row with an ID but no text",
+      "http_status": 400,
+      "work_created": false,
+      "response_detail": "no valid tasks: each line/object needs non-empty text (or prompt/content) and optional task_id/record_id, like json/*.jsonl"
+    }
+  },
+  "reconciliation": {
+    "prepared_input_sha256": "5e64e77f2f0ce6c0bd5d03f2f97778b20e7904b72303a3b6b3b31224b17fb28e",
+    "downloaded_input_sha256": "5e64e77f2f0ce6c0bd5d03f2f97778b20e7904b72303a3b6b3b31224b17fb28e",
+    "input_download_hash_match": true,
+    "source_manifest_sha256": "2e148f4b5989ebdee3fb1432b5f49d92a2f6c0d5aa774999c3016429b5936250",
+    "public_returned_items_sha256": "97956edcd5ad933ba3dd45ba3128f98cbb1cc6273a59fe1bb2ed032af965690c",
+    "customer_corpus_sha256": "ba74c10ecc54b81aa2f9ef77ce22f78ad016b15d3c82f69626b033d13cfa49e5",
+    "input_output_identity_match": true,
+    "unique_input_ids": 4,
+    "unique_output_ids": 4,
+    "source_output_counts": {
+      "python_gitignore": 1,
+      "node_gitignore": 1,
+      "visualstudio_gitignore": 2
+    }
+  },
+  "derivation": {
+    "customer_corpus": "Deterministic join of the exact submitted text rows and returned embedding items on record_id.",
+    "returned_items": "Customer-relevant item-field projection of the actual pipeline result; embedding numeric values are preserved.",
+    "preview_csv": "Derived from corpus.jsonl; text is shortened and embeddings are limited to the first six values for readability."
+  },
+  "unavailable_or_withheld": {
+    "model_digest": "not returned by the supported API artifact",
+    "retention_duration": "retention_until was null; no duration is inferred",
+    "exact_test_build_and_job_identifier": "retained in the private QA evidence",
+    "private_node_telemetry": "withheld from the public bundle"
+  },
+  "claim_boundary": "This tiny plain-text run demonstrates preparation, stable chunk identity, bounded scheduling, embedding generation, result retrieval, input validation, and a usable joined corpus artifact. It is not a PDF/OCR, retrieval-quality, scale, distributed-performance, cost, security, or SLA benchmark."
+}
