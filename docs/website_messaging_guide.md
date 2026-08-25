@@ -68,14 +68,55 @@ Reze paperwork. Keep the legal distinction precise:
 - keep the full notice on the legal pages rather than adding `®` to every brand
   mention.
 
-## Core Positioning
+## Corporate Homepage And Route Hierarchy
 
-Solvyr turns bounded document and text backlogs into accepted AI-ready outputs.
+The corporate homepage leads with the partner/integrator strategy:
 
-Current public front door:
+> Ship reliable AI document workflows without maintaining the AI layer.
+
+The partner keeps the customer, application, workflow, business rules, and
+downstream action. Solvyr owns the bounded AI execution, retry, validation,
+exception classification, typed result delivery, and run evidence needed for a
+checked result.
+
+Primary public audience: European ERP and document-workflow integrators with a
+repeated, delay-tolerant document step across several customers.
+
+Public route hierarchy:
+
+- `/` and `/nl.html`: corporate partner/builder story;
+- `/fast-corpus.html` and `/fast-corpus-nl.html`: preserved bounded
+  backlog-to-corpus offer, including its page-based starting rate;
+- `/use-cases/document-intake.html` and its Dutch counterpart: first
+  ERP-adjacent route;
+- `/proof.html` and its Dutch counterpart: corporate technical and
+  accepted-result evidence;
+- `/security.html` and its Dutch counterpart: concrete execution, storage,
+  access, retention, and deletion boundaries;
+- `/about.html` and its Dutch counterpart: execution-layer and flexible-compute
+  vision.
+
+Do not put the public Fast Corpus page-based price on the corporate homepage.
+Predictable price per accepted result remains a shadow-metered commercial
+hypothesis. Customer-local execution remains a later deployment direction, not
+current broad availability.
+
+Company-level narrative order:
+
+1. Customer result.
+2. Builder advantage and ownership boundary.
+3. Trust and outcome economics.
+4. Flexible compute underneath.
+
+## Fast Corpus Route Positioning
+
+Solvyr Fast Corpus turns bounded document and text backlogs into accepted
+AI-ready corpus outputs.
+
+Current Fast Corpus route:
 
 - Solvyr Fast Corpus
-- Header tagline: `Fast Corpus for European AI teams`
+- Route header tagline: `Fast Corpus for European AI teams`
 - Clean PDF or text backlogs to AI-ready JSONL
 - Outputs: extracted text, chunks, embeddings, stable IDs, run report
 - Controlled async pilot, not open self-serve
@@ -233,7 +274,12 @@ partner-controlled, and customer-controlled workers are possible pool classes,
 but partner/customer workers remain later and explicitly approved—not current
 broad availability.
 
-In the header, keep the tagline short:
+In the corporate header, keep the adopted descriptor short:
+
+- English: `Dependable execution for asynchronous AI work`
+- Dutch: `Betrouwbare uitvoering voor asynchroon AI-werk`
+
+The dedicated Fast Corpus route may retain:
 
 - English: `Fast Corpus for European AI teams`
 - Dutch: `Fast Corpus voor Europese AI-teams`
@@ -259,7 +305,13 @@ Avoid:
 
 ## First-Screen Rule
 
-The first viewport must answer the felt customer problem:
+The corporate homepage first viewport must answer:
+
+- Who keeps the customer and workflow?
+- What AI execution, validation, and exception work does Solvyr own?
+- What partner route should the visitor discuss?
+
+The Fast Corpus route first viewport must answer:
 
 - What backlog can Solvyr process?
 - What output does the customer get?
@@ -326,9 +378,9 @@ sound precise and confident, not like a legal rebuttal to claims nobody made.
   illustrations. Never present them as run evidence, topology evidence, or a
   picture of deployed infrastructure.
 
-## Narrative Order
+## Fast Corpus Narrative Order
 
-Use this order whenever possible:
+Use this order on the Fast Corpus route whenever possible:
 
 1. Customer problem: a document or text backlog needs to become usable.
 2. Concrete output: JSONL, chunks, embeddings, stable IDs, run report.
@@ -419,7 +471,8 @@ run`, `Scope a re-indexing run`, or `Scope a public-data run`.
 Agent-readable files remain linked from the footer and machine-readable routes;
 they do not need a prominent hero CTA.
 
-On the homepage, keep one primary workload CTA. Add a secondary hero CTA only
+On the corporate homepage, keep `Discuss a partner route` as the primary hero
+CTA. Add a secondary hero CTA only
 when it offers a distinct decision path. Do not link from the hero to a proof
 block that is already the next visible content; put the proof link or download
 inside the proof block itself. This does not remove the use-case-page rule
@@ -440,8 +493,8 @@ Current product nav separates product discovery from the two next actions:
 
 - English: `Product`, `Use cases`, `Proof`, `Security`, `Example run`, `Scope a run`
 - Dutch: `Product`, `Toepassingen`, `Proefrun`, `Security`, `Voorbeeldrun`, `Run afbakenen`
-- `Product` contains `Fast Corpus`, `Fit`, and `Output`, preserving those
-  destinations without giving every section equal top-level weight.
+- `Product` contains `Fast Corpus`, `Fit`, and `Output`, linking to the dedicated
+  Fast Corpus route without giving every section equal top-level weight.
 - `Example run` / `Voorbeeldrun` opens the real four-record public .gitignore sample in
   an inspectable completed-run surface. It is a public example, not a customer
   account, login, self-service dashboard, or claim of broad product access.
@@ -639,7 +692,9 @@ Do not imply:
 
 ## Agent-Readable Consistency
 
-When homepage positioning changes, update these files in the same pass:
+When homepage positioning changes, update these files in the same pass. They
+must explain the corporate partner route while preserving Fast Corpus as a
+separate offer:
 
 - `llms.txt`
 - `ai/fast-corpus.md`
@@ -651,7 +706,8 @@ AI assistants should summarize the same offer humans see.
 
 ## Public Vision Layer
 
-After the immediate product and proof, the site may state the broader vision:
+After the immediate partner result, proof, trust, and economics, the site may
+state the broader vision:
 activate millions of underused computers for AI execution and expand compute
 capacity beyond today's data centres. Keep Fast Corpus explicit as the first
 bounded workload and current commercial wedge, not the whole long-term model.

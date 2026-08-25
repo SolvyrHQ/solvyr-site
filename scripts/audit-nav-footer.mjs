@@ -157,7 +157,7 @@ for (const file of walk(repoRoot).sort()) {
     }
   }
 
-  if (relPath === "index.html" || relPath === "nl.html") {
+  if (relPath === "fast-corpus.html" || relPath === "fast-corpus-nl.html") {
     if (
       !/scrollIntoView\(\{\s*block:\s*"nearest",\s*inline:\s*"center"\s*\}\)/.test(html)
     ) {

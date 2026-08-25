@@ -1,21 +1,40 @@
 service: Solvyr
-product: Solvyr Fast Corpus
+product: Solvyr supported result routes
 legal_operator:
   name: Solvyr OÜ
   jurisdiction: Estonia
   registry_code: "17471643"
 phase: controlled_trial
-category: Managed B2B document-to-corpus processing service
-classification: AI data preparation and corpus operations
+category: AI execution layer for bounded asynchronous work
+classification: Supported result layer for ERP and document-workflow integrators
 not_classified_as:
   - distributed GPU provider
   - GPU marketplace
   - generic compute orchestration layer
   - generic data platform
   - hosted RAG or search product
-header_tagline: Fast Corpus for European AI teams
-summary: Clean PDF and text backlogs to AI-ready JSONL with extracted text, chunks, embeddings, stable IDs, and an inspectable run report at a predictable starting unit price. Adjacent scoped use cases include recurring public-data quality runs over public or test metadata exports.
-positioning: Customers buy completed corpus output and run evidence, not GPU-hours, API/CLI access, an orchestration layer, or a platform project.
+header_tagline: Dependable execution for asynchronous AI work
+summary: Workflow partners keep the customer and workflow. Solvyr handles bounded AI execution, validation and exceptions, then returns typed results with explicit accepted, rejected, or review-required state.
+positioning: Buyers delegate a supported result layer, not raw model calls, GPU-hours, arbitrary containers, or generic orchestration.
+partner_route:
+  audience: European ERP and document-workflow integrators with a repeated delay-tolerant document step across customers
+  first_route: document intake before downstream ERP or operations workflows
+  partner_keeps:
+    - customer relationship and commercial package
+    - application, workflow, and business rules
+    - downstream action and final review authority
+  solvyr_owns:
+    - bounded AI execution and visible state
+    - retry and failure handling
+    - output validation and exception classification
+    - typed result delivery and run evidence
+  result_states:
+    - accepted
+    - rejected
+    - review_required
+  pricing_boundary: Predictable price per accepted result is a shadow-metered commercial hypothesis, not a published or measured price.
+  deployment_boundary: Customer-local execution is a later deployment direction, not current broad availability.
+fast_corpus_route: https://solvyr.com/fast-corpus.html
 build_vs_buy_positioning: A team can build and operate its own extraction, chunking, embedding, queueing, retry, and reporting pipeline, or buy a completed Fast Corpus run. Solvyr customers do not provision workers, operate queues, or assemble the pipeline.
 cost_positioning: Cost-effective backlog processing with a scoped run, price per processed page, and a decision based on inspected output. The published starting unit covers standard clean processing; complete engagements also reflect validation, output, execution-boundary, and operational-responsibility requirements.
 api_cli_positioning: API/CLI language is integration or handoff context, not the primary public offer.

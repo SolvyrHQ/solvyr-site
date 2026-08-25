@@ -6,11 +6,12 @@ Use this checklist before shipping future Solvyr website changes.
 
 - [ ] `docs/website_messaging_guide.md` was read before editing.
 - [ ] `docs/website_manager_agent.md` was followed for judgement/approval thresholds.
-- [ ] First screen leads with document/text backlog to AI-ready output, or for public-data pages, a public/test metadata export to a reviewable quality report.
+- [ ] Corporate first screen leads with the partner ownership boundary: the builder keeps the customer and workflow while Solvyr owns bounded AI execution, validation, exceptions, and typed result delivery.
+- [ ] Fast Corpus first screen still leads with document/text backlog to AI-ready output; public-data pages still lead with an export to a reviewable quality report.
 - [ ] The page names the concrete output: JSONL, chunks, embeddings, stable IDs, run report, or issue list/suggested fixes/caveats for public-data quality runs.
 - [ ] The public four-record .gitignore sample is framed as plain-text corpus-output evidence, not as raw-PDF, OCR, retrieval-quality, scale, distributed-performance, customer-data, cost, or SLA proof.
 - [ ] The public sample download exposes pinned CC0 .gitignore source snapshots, the source license, usable text-plus-vector records, projected returned items, complete vectors, and customer-relevant IDs/status/error/model fields, but no private artifact hashes, internal identifiers, or node/GPU/provider/per-record telemetry.
-- [ ] Header tagline stays short: `Fast Corpus for European AI teams` / `Fast Corpus voor Europese AI-teams`.
+- [ ] Corporate header tagline stays `Dependable execution for asynchronous AI work` / `Betrouwbare uitvoering voor asynchroon AI-werk`; dedicated Fast Corpus routes may retain their Fast Corpus taglines.
 - [ ] Cost is framed as a predictable scoped run or cost-per-result, not as a footnote.
 - [ ] Infrastructure appears as support, not the headline.
 - [ ] The About-page expansion story moves from a proven bounded workload to reusable execution capabilities without implying a broad platform is already available.
@@ -21,7 +22,9 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Europe is described as the first proving ground, not the geographic ceiling.
 - [ ] Environmental, utilization, resilience, and energy-aware scheduling language is labeled as intended and measurement-dependent.
 - [ ] The site does not claim current electricity, water, emissions, data-centre construction, certified-sovereignty, or data-centre-GPU efficiency outcomes.
-- [ ] EUR 0.95 is described as a starting processing rate for standard clean batches; pilot/service scope is separate and no unapproved minimum is implied.
+- [ ] EUR 0.95 appears only on the Fast Corpus route and related Fast Corpus materials, described as a starting processing rate for standard clean batches; it does not appear on the corporate homepage.
+- [ ] Predictable price per accepted result is presented as a shadow-metered hypothesis, not a published or measured price.
+- [ ] Customer-local execution is presented as a deployment direction, not current broad availability.
 - [ ] Solvyr is classified as a managed corpus service, not a GPU marketplace or generic orchestration layer.
 - [ ] The build-versus-buy comparison is clear: customers receive completed corpus output without provisioning workers, operating queues, or assembling the pipeline.
 - [ ] AI-team entry cues emphasize output, price, and proof; archive/public-sector cues add execution control to the same bounded workload.
@@ -40,7 +43,8 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Product-page header navigation stays stable, including the `Use cases` / `Toepassingen` dropdown; do not invent contextual top-right nav per page.
 - [ ] The `Product` dropdown preserves `Fast Corpus`, `Fit`, and `Output` in both languages.
 - [ ] Existing primary nav routes, especially `Fit` and `Security`, remain reachable unless explicitly approved.
-- [ ] The active homepage view avoids repeating the same price, category, vision, sovereignty, or buyer-entry point when a dedicated tab or route already carries it.
+- [ ] The active corporate homepage follows the hierarchy: customer result, builder advantage, trust/economics, then compute supply underneath.
+- [ ] The active homepage avoids repeating the same price, category, vision, sovereignty, or buyer-entry point when a dedicated route already carries it.
 - [ ] Supported claims are stated positively; necessary caveats appear once in the relevant proof, fit, price, security, or legal context rather than as repeated defensive disclaimers.
 - [ ] The homepage has no hidden execution-model content; deeper execution context stays on the About execution section.
 - [ ] Use-case dropdown links stay parallel in English and Dutch.

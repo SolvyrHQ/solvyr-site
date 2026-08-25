@@ -45,19 +45,19 @@ const cards = [
   {
     file: "solvyr-social-card.png",
     lines: [
-      "Turn a document backlog into",
-      "an AI-ready corpus.",
-      "Accepted JSONL, chunks, embeddings, stable IDs",
-      "and run evidence."
+      "Ship reliable AI document workflows.",
+      "Keep the customer and workflow.",
+      "Solvyr handles execution, validation and exceptions.",
+      "Checked results in the format your system needs."
     ]
   },
   {
     file: "solvyr-social-card-nl.png",
     lines: [
-      "Van documentachterstand naar",
-      "een AI-klaar corpus.",
-      "Geaccepteerde JSONL, chunks, embeddings, stabiele ID's",
-      "en runbewijs."
+      "Betrouwbare AI-documentroutes.",
+      "Behoud klant en workflow.",
+      "Solvyr verzorgt uitvoering, validatie en uitzonderingen.",
+      "Gecontroleerde resultaten in het benodigde formaat."
     ]
   }
 ];

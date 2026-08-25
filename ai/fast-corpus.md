@@ -5,6 +5,14 @@ with extracted text, chunks, embeddings, stable IDs, and an inspectable
 run report at a predictable starting unit price for standard batches.
 The public header tagline is: Fast Corpus for European AI teams.
 
+Fast Corpus now has its own route at https://solvyr.com/fast-corpus.html. The
+corporate homepage at https://solvyr.com/ leads with Solvyr's partner strategy:
+ERP and document-workflow builders keep the customer and workflow while Solvyr
+handles bounded AI execution, validation, exceptions, and typed result
+delivery. Document intake is the first route-specific commercial test. A
+predictable price per accepted result is still a shadow-metered hypothesis, and
+customer-local execution remains a later deployment direction.
+
 Fast Corpus is the first concrete offer. The customer buys completed
 corpus output and run evidence, not GPU-hours, API access, CLI access, or
 a new internal pipeline project. The broader Solvyr system is a controlled

@@ -305,6 +305,12 @@ summary:focus-visible {
 
 .heroCopy { min-width: 0; }
 
+.corporateHero h1 {
+  max-width: 20ch;
+  font-size: clamp(44px, 4.8vw, 62px);
+  line-height: 1.02;
+}
+
 .eyebrow,
 .miniLabel {
   margin: 0 0 12px;
