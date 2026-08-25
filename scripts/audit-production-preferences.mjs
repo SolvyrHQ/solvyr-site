@@ -54,6 +54,10 @@ for (const file of walk(repoRoot)) {
 
   if (!file.endsWith(".html")) continue;
 
+  if (source.includes("assets/brand/icon.png")) {
+    failures.push(`${relPath}: references the retired generic brand icon`);
+  }
+
   // Standalone download-bundle viewers must also work after unzipping, where
   // root-relative site assets are unavailable.
   if (!relPath.startsWith("downloads/")) {

@@ -1,4 +1,15 @@
 {
+  "company_positioning": {
+    "category": "AI execution layer for bounded asynchronous work",
+    "primary_audience": "European ERP and document-workflow integrators with a repeated delay-tolerant document step across customers",
+    "promise": "The partner keeps the customer and workflow. Solvyr handles bounded AI execution, validation and exceptions, then returns typed results with accepted, rejected, or review-required state.",
+    "first_route": "Document intake before downstream ERP or operations workflows",
+    "pricing_boundary": "Predictable price per accepted result is a shadow-metered commercial hypothesis, not a published or measured price.",
+    "deployment_boundary": "Customer-local execution is a later deployment direction, not current broad availability.",
+    "homepage": "https://solvyr.com/",
+    "proof": "https://solvyr.com/proof.html",
+    "security": "https://solvyr.com/security.html"
+  },
   "product": "Solvyr Fast Corpus",
   "provider": "Solvyr",
   "legal_operator": {
@@ -26,7 +37,8 @@
   "broader_system": "Controlled distributed execution for async AI workloads with central scheduling, bounded tasks, retries, visible outcomes, and completed work rather than raw capacity rental.",
   "vision": "Solvyr's vision is to activate millions of underused computers for AI execution, expanding the world's compute capacity beyond today's data centres.",
   "mission": "Make a schedulable portion of distributed hardware dependable for suitable AI work through controlled, inspectable execution.",
-  "current_wedge": "Fast Corpus is the first bounded workload and current commercial wedge, not the full long-term product or economic model.",
+  "current_wedge": "Fast Corpus is the first bounded workload and remains a route and fallback acquisition wedge, not the full company story or long-term economic model.",
+  "route_url": "https://solvyr.com/fast-corpus.html",
   "geographic_direction": "Europe is the first proving ground for explicit location, ownership, policy, and evidence, not the geographic ceiling.",
   "vision_claim_boundary": "Better hardware utilization, resilience, energy-aware scheduling, and reduced pressure on central infrastructure are intended outcomes that require measurement. Current proof does not demonstrate lower electricity or water use, lower emissions, less data-centre construction, certified sovereignty, or greater efficiency than data-centre GPUs. Distributed execution is not automatically more efficient.",
   "expansion_path": "Fast Corpus is the first bounded workload. Repeated corpus and document workflows exercise reusable workload contracts, scheduling, node eligibility, retries, visible state, result validation, and lifecycle reporting before additional bounded async AI workloads are offered.",

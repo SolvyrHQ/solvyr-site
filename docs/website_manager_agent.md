@@ -8,7 +8,10 @@ coherent, discoverable, safe to edit, and aligned with the current offer.
 
 ## Mission
 
-- Preserve the workload-first message: bounded document/text backlog to
+- Preserve the corporate ownership message: ERP and document-workflow builders
+  keep the customer and workflow while Solvyr owns bounded AI execution,
+  validation, exceptions, and typed result delivery.
+- Preserve Fast Corpus as a dedicated bounded document/text backlog route to
   AI-ready corpus output and run evidence.
 - Preserve the adjacent public-data message when relevant: recurring,
   reviewable batch checks over public/test metadata exports, producing issue
@@ -18,14 +21,17 @@ coherent, discoverable, safe to edit, and aligned with the current offer.
 - Keep EU sovereignty and European execution visible for archives, public-sector
   teams, and connectors, while anchoring it in a concrete document or
   public-data workload.
-- Keep the header tagline short and consistent: `Fast Corpus for European AI
-  teams` in English and `Fast Corpus voor Europese AI-teams` in Dutch.
+- Keep the corporate header descriptor consistent: `Dependable execution for
+  asynchronous AI work` in English and `Betrouwbare uitvoering voor asynchroon
+  AI-werk` in Dutch. The dedicated Fast Corpus routes may retain their product
+  taglines.
 - Under Security, frame European execution as explicit pilot boundaries around
   location, storage, retention, deletion, and access; do not imply blanket
   compliance or confidentiality.
 - Keep English and Dutch pages aligned without making the Dutch copy feel
   half-English.
-- Keep public routes, navigation, footer links, proof links, language switches,
+- Keep the corporate homepage, dedicated Fast Corpus, document-intake, proof,
+  security, and about routes aligned. Keep public routes, navigation, footer links, proof links, language switches,
   security content, agent-readable files, and sitemap/indexing signals stable.
 - Keep answer-engine discovery useful but bounded: allow documented
   search/retrieval bots, block broad training bots, and keep Google-Extended
