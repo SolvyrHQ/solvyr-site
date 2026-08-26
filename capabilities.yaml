@@ -14,7 +14,7 @@ not_classified_as:
   - generic data platform
   - hosted RAG or search product
 header_tagline: Dependable execution for asynchronous AI work
-summary: Workflow partners keep the customer and workflow. Solvyr handles bounded AI execution, validation and exceptions, then returns typed results with explicit accepted, rejected, or review-required state.
+summary: Solvyr provides dependable execution for recurring AI work, turning supported business inputs into checked results without making customers manage the machines underneath.
 positioning: Buyers delegate a supported result layer, not raw model calls, GPU-hours, arbitrary containers, or generic orchestration.
 partner_route:
   audience: European ERP and document-workflow integrators with a repeated delay-tolerant document step across customers
@@ -46,7 +46,14 @@ current_wedge: Fast Corpus is the first bounded workload and current commercial 
 geographic_direction: Europe is the first proving ground for explicit location, ownership, policy, and evidence, not the geographic ceiling.
 vision_claim_boundary: Better hardware utilization, resilience, energy-aware scheduling, and reduced pressure on central infrastructure are intended outcomes that require measurement. Current proof does not demonstrate lower electricity or water use, lower emissions, less data-centre construction, certified sovereignty, or greater efficiency than data-centre GPUs. Distributed execution is not automatically more efficient.
 expansion_path: Fast Corpus is the first bounded workload. Repeated corpus and document workflows exercise reusable workload contracts, scheduling, node eligibility, retries, visible state, result validation, and lifecycle reporting before any additional bounded async AI workload is offered.
-execution_pool_positioning: Suitable async work may run across eligible execution environments, beginning with Solvyr-controlled infrastructure. Explicitly approved partner- or customer-controlled workers are later possible pool classes, not current broad availability.
+worker_mechanism: Lightweight workers pull bounded tasks from the scheduler, execute them locally, and return status and results.
+capacity_sources:
+  demonstrated_internally:
+    - Solvyr-controlled machines
+  intended_routes:
+    - explicitly approved customer and partner machines
+    - European GPU providers for overflow and workload-specific capacity
+execution_pool_positioning: Suitable async work currently begins with Solvyr-controlled infrastructure. Explicitly approved partner- or customer-controlled workers and European GPU providers are intended pool classes, not current broad availability.
 research_direction:
   status: active_research_and_product_development
   topics:

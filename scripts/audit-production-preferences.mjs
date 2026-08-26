@@ -34,8 +34,8 @@ for (const homepage of ["index.html", "nl.html"]) {
   const source = readFileSync(join(repoRoot, homepage), "utf8");
   const main = source.match(/<main\b[\s\S]*?<\/main>/i)?.[0] || "";
   const sectionCount = [...main.matchAll(/<section\b/gi)].length;
-  if (sectionCount !== 6) {
-    failures.push(`${homepage}: corporate homepage must keep the six-section decision path; found ${sectionCount}`);
+  if (sectionCount !== 7) {
+    failures.push(`${homepage}: corporate homepage must keep the seven-section decision path; found ${sectionCount}`);
   }
 }
 

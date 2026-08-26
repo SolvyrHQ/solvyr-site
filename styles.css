@@ -639,6 +639,77 @@ h3 { margin-bottom: 8px; font-size: 17px; }
 
 .compactSplit .panel { padding: 22px; }
 
+.capacitySection {
+  margin-top: 24px;
+  padding: clamp(28px, 4vw, 48px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+
+.capacityIntro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+  align-items: start;
+  gap: clamp(30px, 6vw, 80px);
+}
+
+.capacityIntro h2 { margin-bottom: 0; }
+
+.capacityIntro > p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.capacitySources {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.capacitySource {
+  min-height: 172px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--canvas);
+}
+
+.capacitySource.demonstrated { border-color: rgba(18, 128, 92, 0.38); }
+.capacitySource.intended { border-color: rgba(184, 117, 0, 0.34); }
+
+.capacityStatus {
+  display: inline-flex;
+  margin-bottom: 18px;
+  padding: 5px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.demonstrated .capacityStatus {
+  color: var(--green);
+  background: rgba(18, 128, 92, 0.1);
+}
+
+.intended .capacityStatus {
+  color: var(--amber);
+  background: rgba(184, 117, 0, 0.1);
+}
+
+.capacitySource h3 { margin-bottom: 8px; }
+
+.capacitySource p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.capacityActions { margin-top: 18px; }
+
 .proofStrip {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1547,6 +1618,7 @@ textarea:focus {
   .process,
   .pilotBox,
   .band,
+  .capacityIntro,
   .proofStrip,
   .teamGrid,
   .fieldGrid { grid-template-columns: 1fr; }
@@ -1559,6 +1631,7 @@ textarea:focus {
 
   .band,
   .flowPanel,
+  .capacitySection,
   .reportPreview,
   .sampleInspect,
   .sampleSources,

@@ -70,9 +70,17 @@ Reze paperwork. Keep the legal distinction precise:
 
 ## Corporate Homepage And Route Hierarchy
 
-The corporate homepage leads with the partner/integrator strategy:
+The corporate homepage leads with a dependable result and introduces the
+execution mechanism early:
 
-> Ship reliable AI document workflows without maintaining the AI layer.
+> Dependable execution for recurring AI work.
+
+The first supporting message may explain that Solvyr turns supported business
+inputs into checked results and that its lightweight workers are designed for
+approved European and customer-owned compute. Keep the deployment boundary
+beside that mechanism: Solvyr-controlled multi-worker execution is demonstrated
+internally; customer-, partner-, and European-provider capacity are intended
+routes rather than generally available deployment classes.
 
 The partner keeps the customer, application, workflow, business rules, and
 downstream action. Solvyr owns the bounded AI execution, retry, validation,
@@ -104,9 +112,10 @@ current broad availability.
 Company-level narrative order:
 
 1. Customer result.
-2. Builder advantage and ownership boundary.
-3. Trust and outcome economics.
-4. Flexible compute underneath.
+2. Plain-language workflow.
+3. Flexible-compute mechanism, with demonstrated and intended routes separated.
+4. Builder advantage and ownership boundary.
+5. Trust and outcome economics.
 
 ## Fast Corpus Route Positioning
 
@@ -401,21 +410,25 @@ strategy. Keep the first active view compact enough that a buyer can understand
 the workload, output, evidence, boundary, and next action without reading the
 same point several times.
 
-The corporate homepage should normally stay to six visible sections, including
+The corporate homepage should normally stay to seven visible sections, including
 the hero and closing CTA:
 
 1. outcome-led hero;
-2. audience and ownership together;
-3. one plain-language input-to-result flow;
-4. the first ERP document-intake route;
-5. one combined proof-and-trust section linking to deeper routes;
-6. closing conversation CTA.
+2. one plain-language input-to-result flow;
+3. one compact existing-hardware section with demonstrated and intended routes;
+4. audience and ownership together;
+5. the first ERP document-intake route;
+6. one combined proof-and-trust section linking to deeper routes;
+7. closing conversation CTA.
 
 Use buyer language on this path. Prefer `AI step`, `checked result`, `agreed
 format`, `clear review status`, and `where data runs` over internal terms such
 as `bounded execution`, `typed result delivery`, `exception classification`,
 `shadow metering`, or `policy-aware placement`. Those exact terms remain useful
-on Proof, Security, About, technical and agent-readable pages.
+on Proof, Security, About, technical and agent-readable pages. The compact
+hardware section may use `worker`, `scheduler`, and `bounded task` because the
+mechanism is the subject there; explain them in a single plain-language
+sentence rather than expanding the homepage into platform documentation.
 
 - Give each section one job and each headline one claim.
 - Prefer one strong proof block over several repeated evidence summaries.
@@ -487,8 +500,10 @@ run`, `Scope a re-indexing run`, or `Scope a public-data run`.
 Agent-readable files remain linked from the footer and machine-readable routes;
 they do not need a prominent hero CTA.
 
-On the corporate homepage, keep `Discuss a partner route` as the primary hero
-CTA. Add a secondary hero CTA only
+On the corporate homepage, keep `Discuss a workflow` as the primary hero CTA.
+The compact hardware section may carry the visually quieter secondary CTA
+`Discuss an organizational GPU pool`, but it must not compete with the hero
+action or imply current customer-owned deployment. Add a secondary hero CTA only
 when it offers a distinct decision path. Do not link from the hero to a proof
 block that is already the next visible content; put the proof link or download
 inside the proof block itself. This does not remove the use-case-page rule
