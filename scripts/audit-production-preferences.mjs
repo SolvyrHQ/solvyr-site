@@ -30,6 +30,15 @@ for (const asset of requiredAssets) {
   if (!existsSync(join(repoRoot, asset))) failures.push(`missing settled production asset: ${asset}`);
 }
 
+for (const homepage of ["index.html", "nl.html"]) {
+  const source = readFileSync(join(repoRoot, homepage), "utf8");
+  const main = source.match(/<main\b[\s\S]*?<\/main>/i)?.[0] || "";
+  const sectionCount = [...main.matchAll(/<section\b/gi)].length;
+  if (sectionCount !== 6) {
+    failures.push(`${homepage}: corporate homepage must keep the six-section decision path; found ${sectionCount}`);
+  }
+}
+
 const styles = readFileSync(join(repoRoot, "styles.css"), "utf8");
 if (!styles.includes('url("/assets/fonts/InterVariable.woff2")')) {
   failures.push("styles.css: Inter must use the self-hosted variable font");
