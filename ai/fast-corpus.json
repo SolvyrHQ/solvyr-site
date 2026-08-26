@@ -2,8 +2,16 @@
   "company_positioning": {
     "category": "AI execution layer for bounded asynchronous work",
     "primary_audience": "European ERP and document-workflow integrators with a repeated delay-tolerant document step across customers",
-    "promise": "The partner keeps the customer and workflow. Solvyr handles bounded AI execution, validation and exceptions, then returns typed results with accepted, rejected, or review-required state.",
+    "promise": "Solvyr provides dependable execution for recurring AI work, turning supported business inputs into checked results without making customers manage the machines underneath.",
     "first_route": "Document intake before downstream ERP or operations workflows",
+    "worker_mechanism": "Lightweight workers pull bounded tasks from the scheduler, execute them locally, and return status and results.",
+    "demonstrated_capacity": [
+      "Solvyr-controlled multi-worker execution"
+    ],
+    "intended_capacity_routes": [
+      "explicitly approved customer and partner machines",
+      "European GPU providers for overflow and workload-specific capacity"
+    ],
     "pricing_boundary": "Predictable price per accepted result is a shadow-metered commercial hypothesis, not a published or measured price.",
     "deployment_boundary": "Customer-local execution is a later deployment direction, not current broad availability.",
     "homepage": "https://solvyr.com/",
@@ -42,7 +50,7 @@
   "geographic_direction": "Europe is the first proving ground for explicit location, ownership, policy, and evidence, not the geographic ceiling.",
   "vision_claim_boundary": "Better hardware utilization, resilience, energy-aware scheduling, and reduced pressure on central infrastructure are intended outcomes that require measurement. Current proof does not demonstrate lower electricity or water use, lower emissions, less data-centre construction, certified sovereignty, or greater efficiency than data-centre GPUs. Distributed execution is not automatically more efficient.",
   "expansion_path": "Fast Corpus is the first bounded workload. Repeated corpus and document workflows exercise reusable workload contracts, scheduling, node eligibility, retries, visible state, result validation, and lifecycle reporting before additional bounded async AI workloads are offered.",
-  "execution_pool_positioning": "Suitable async work may run across eligible execution environments, beginning with Solvyr-controlled infrastructure. Explicitly approved partner- or customer-controlled workers are later possible pool classes, not current broad availability.",
+  "execution_pool_positioning": "Suitable async work currently begins with Solvyr-controlled infrastructure. Explicitly approved partner- or customer-controlled workers and European GPU providers are intended pool classes, not current broad availability.",
   "research_direction": {
     "status": "active_research_and_product_development",
     "topics": [
