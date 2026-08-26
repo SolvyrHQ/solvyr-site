@@ -401,6 +401,22 @@ strategy. Keep the first active view compact enough that a buyer can understand
 the workload, output, evidence, boundary, and next action without reading the
 same point several times.
 
+The corporate homepage should normally stay to six visible sections, including
+the hero and closing CTA:
+
+1. outcome-led hero;
+2. audience and ownership together;
+3. one plain-language input-to-result flow;
+4. the first ERP document-intake route;
+5. one combined proof-and-trust section linking to deeper routes;
+6. closing conversation CTA.
+
+Use buyer language on this path. Prefer `AI step`, `checked result`, `agreed
+format`, `clear review status`, and `where data runs` over internal terms such
+as `bounded execution`, `typed result delivery`, `exception classification`,
+`shadow metering`, or `policy-aware placement`. Those exact terms remain useful
+on Proof, Security, About, technical and agent-readable pages.
+
 - Give each section one job and each headline one claim.
 - Prefer one strong proof block over several repeated evidence summaries.
 - State the processing-rate boundary once near the price; do not repeat the

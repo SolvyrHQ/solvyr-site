@@ -44,6 +44,8 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] The `Product` dropdown preserves `Fast Corpus`, `Fit`, and `Output` in both languages.
 - [ ] Existing primary nav routes, especially `Fit` and `Security`, remain reachable unless explicitly approved.
 - [ ] The active corporate homepage follows the hierarchy: customer result, builder advantage, trust/economics, then compute supply underneath.
+- [ ] The corporate homepage stays near the six-section decision path: hero, combined audience/ownership, one result flow, first ERP route, combined proof/trust, and closing CTA.
+- [ ] Homepage copy uses buyer language; internal terms such as bounded execution, typed delivery, exception classification, shadow metering, and policy-aware placement stay on the relevant detailed routes unless essential.
 - [ ] The active homepage avoids repeating the same price, category, vision, sovereignty, or buyer-entry point when a dedicated route already carries it.
 - [ ] Supported claims are stated positively; necessary caveats appear once in the relevant proof, fit, price, security, or legal context rather than as repeated defensive disclaimers.
 - [ ] The homepage has no hidden execution-model content; deeper execution context stays on the About execution section.
