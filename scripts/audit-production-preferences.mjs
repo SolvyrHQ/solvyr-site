@@ -30,13 +30,74 @@ for (const asset of requiredAssets) {
   if (!existsSync(join(repoRoot, asset))) failures.push(`missing settled production asset: ${asset}`);
 }
 
-for (const homepage of ["index.html", "nl.html"]) {
+const homepageExpectations = {
+  "index.html": {
+    promise: "Reliable AI work. Running where customers choose.",
+    descriptor: "Reliable AI work, running where customers choose",
+    compute: "The result stays the same. The compute can change.",
+  },
+  "nl.html": {
+    promise: "Betrouwbaar AI-werk. Uitgevoerd waar klanten kiezen.",
+    descriptor: "Betrouwbaar AI-werk, uitgevoerd waar klanten kiezen",
+    compute: "Het resultaat blijft hetzelfde. De rekenkracht kan veranderen.",
+  },
+};
+
+for (const [homepage, expected] of Object.entries(homepageExpectations)) {
   const source = readFileSync(join(repoRoot, homepage), "utf8");
   const main = source.match(/<main\b[\s\S]*?<\/main>/i)?.[0] || "";
   const sectionCount = [...main.matchAll(/<section\b/gi)].length;
   if (sectionCount !== 7) {
     failures.push(`${homepage}: corporate homepage must keep the seven-section decision path; found ${sectionCount}`);
   }
+  if (!source.includes(expected.promise)) {
+    failures.push(`${homepage}: adopted corporate promise is missing or has drifted`);
+  }
+  if (!source.includes(`<div class="tag">${expected.descriptor}</div>`)) {
+    failures.push(`${homepage}: adopted corporate header descriptor is missing or has drifted`);
+  }
+  if (!source.includes(expected.compute)) {
+    failures.push(`${homepage}: flexible-compute brand idea is missing or has drifted`);
+  }
+  if (/intent=organizational-gpu-pool/.test(source)) {
+    failures.push(`${homepage}: capacity acquisition must not be the homepage CTA`);
+  }
+}
+
+const agentPacket = JSON.parse(readFileSync(join(repoRoot, "ai/fast-corpus.json"), "utf8"));
+if (agentPacket.company_positioning?.category !== "AI execution layer for bounded asynchronous work") {
+  failures.push("ai/fast-corpus.json: company context must describe the company-level AI execution layer");
+}
+if (agentPacket.company_positioning?.promise !== "Reliable AI work. Running where customers choose.") {
+  failures.push("ai/fast-corpus.json: adopted company promise is missing or has drifted");
+}
+if (!agentPacket.company_positioning?.capacity_principle?.startsWith("Workload demand comes before capacity expansion")) {
+  failures.push("ai/fast-corpus.json: demand-led capacity principle is missing or has drifted");
+}
+if (agentPacket.category !== "Managed B2B document-to-corpus processing service") {
+  failures.push("ai/fast-corpus.json: route category must classify Fast Corpus as the managed corpus service");
+}
+if (!agentPacket.direct_answers?.what_is_solvyr?.includes("supported AI result layer")) {
+  failures.push("ai/fast-corpus.json: what_is_solvyr must describe the company-level supported result layer");
+}
+
+const agentBrief = readFileSync(join(repoRoot, "ai/fast-corpus.md"), "utf8");
+if (!agentBrief.includes("Solvyr is an AI execution layer and supported result layer")) {
+  failures.push("ai/fast-corpus.md: company classification is missing or has drifted");
+}
+if (!agentBrief.includes("Solvyr Fast Corpus is the managed B2B")) {
+  failures.push("ai/fast-corpus.md: Fast Corpus product classification is missing or has drifted");
+}
+
+const capabilities = readFileSync(join(repoRoot, "capabilities.yaml"), "utf8");
+if (!capabilities.includes("category: AI execution layer for bounded asynchronous work")) {
+  failures.push("capabilities.yaml: company category is missing or has drifted");
+}
+if (!capabilities.includes("header_tagline: Reliable AI work, running where customers choose")) {
+  failures.push("capabilities.yaml: adopted corporate descriptor is missing or has drifted");
+}
+if (!capabilities.includes("what_is_fast_corpus: The managed document-to-corpus route")) {
+  failures.push("capabilities.yaml: Fast Corpus route classification is missing or has drifted");
 }
 
 const styles = readFileSync(join(repoRoot, "styles.css"), "utf8");

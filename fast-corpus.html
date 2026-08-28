@@ -286,12 +286,11 @@
 
         <section class="reportPreview" aria-labelledby="benchmark-title">
           <div class="reportCopy">
-            <p class="eyebrow">Evidence boundary</p>
+            <p class="eyebrow">Measured proof</p>
             <h2 id="benchmark-title">Recent internal run: 100 PDFs and 2,052 pages in one measured pass.</h2>
             <p>
               The run covered clean digital PDFs, text extraction, chunking,
-              and embeddings, with no failures or retries. OCR-heavy scans,
-              layout parsing, and structured extraction were outside this run.
+              and embeddings. It completed with zero failures and zero retries.
             </p>
           </div>
           <div class="metricCard" aria-label="Recent benchmark metrics">
@@ -530,12 +529,12 @@
           </section>
 
           <section class="panel mutedPanel" aria-labelledby="security-boundaries-title">
-            <h2 id="security-boundaries-title">Current boundaries</h2>
+            <h2 id="security-boundaries-title">Current pilot fit</h2>
             <ul class="cleanList">
-              <li>No high-sensitivity workloads without a safe pilot dataset</li>
-              <li>No cryptographic privacy or confidential-compute claims</li>
-              <li>No broad enterprise compliance claim yet</li>
-              <li>No claim that distribution itself creates confidentiality</li>
+              <li>Low- or moderate-sensitivity data</li>
+              <li>A safe representative sample</li>
+              <li>Explicit location, access, retention, and deletion rules</li>
+              <li>Solvyr-maintained workloads within the agreed route</li>
             </ul>
           </section>
         </div>
@@ -558,15 +557,16 @@
             <h2 id="redaction-title">Redaction or pseudonymization can be part of the pilot design.</h2>
           </div>
           <p>
-            We can help define pre-upload redaction or pseudonymization. Keep
-            rehydration customer-side. Risk reduction, not guaranteed anonymity.
+            We can help define pre-upload redaction or pseudonymization.
+            Pseudonymization reduces exposure while rehydration remains
+            customer-side.
           </p>
         </section>
 
         <section class="band compact" aria-labelledby="security-summary-title">
           <div>
-            <p class="eyebrow">Scope boundary</p>
-            <h2 id="security-summary-title">Some data should not enter the pilot.</h2>
+            <p class="eyebrow">Data fit</p>
+            <h2 id="security-summary-title">Bring the right data into the pilot.</h2>
           </div>
           <p>
             Suitable workloads get explicit lifecycle, access, deletion, and

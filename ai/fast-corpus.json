@@ -2,7 +2,9 @@
   "company_positioning": {
     "category": "AI execution layer for bounded asynchronous work",
     "primary_audience": "European ERP and document-workflow integrators with a repeated delay-tolerant document step across customers",
-    "promise": "Solvyr provides dependable execution for recurring AI work, turning supported business inputs into checked results without making customers manage the machines underneath.",
+    "promise": "Reliable AI work. Running where customers choose.",
+    "partner_message": "Partners keep the customer and workflow. Solvyr runs the AI work underneath, handles failures, and returns the result in the agreed form.",
+    "capacity_principle": "Workload demand comes before capacity expansion; the result contract stays stable as approved compute changes underneath.",
     "first_route": "Document intake before downstream ERP or operations workflows",
     "worker_mechanism": "Lightweight workers pull bounded tasks from the scheduler, execute them locally, and return status and results.",
     "demonstrated_capacity": [
@@ -20,6 +22,7 @@
   },
   "product": "Solvyr Fast Corpus",
   "provider": "Solvyr",
+  "scope": "fast_corpus_route_with_company_context",
   "legal_operator": {
     "name": "Solvyr OÜ",
     "jurisdiction": "Estonia",
@@ -43,7 +46,7 @@
   "api_cli_positioning": "API/CLI language is integration or handoff context, not the primary public offer.",
   "european_sovereignty_positioning": "European execution control and sovereignty are relevant for archives, public-sector teams, research networks, and EU/NL connectors when tied to a real document backlog and pilot decision.",
   "broader_system": "Controlled distributed execution for async AI workloads with central scheduling, bounded tasks, retries, visible outcomes, and completed work rather than raw capacity rental.",
-  "vision": "Solvyr's vision is to activate millions of underused computers for AI execution, expanding the world's compute capacity beyond today's data centres.",
+  "vision": "Build a European AI execution network that grows approved compute behind real workload demand.",
   "mission": "Make a schedulable portion of distributed hardware dependable for suitable AI work through controlled, inspectable execution.",
   "current_wedge": "Fast Corpus is the first bounded workload and remains a route and fallback acquisition wedge, not the full company story or long-term economic model.",
   "route_url": "https://solvyr.com/fast-corpus.html",
@@ -215,11 +218,13 @@
     "download": "https://solvyr.com/downloads/solvyr-fast-corpus-gitignore-sample-2026-08-24.zip"
   },
   "direct_answers": {
-    "what_is_solvyr": "A managed B2B service that turns bounded document and text backlogs into accepted AI-ready corpus output with run evidence.",
-    "is_solvyr_a_gpu_provider": "No. Customers buy completed corpus work; controlled distributed execution is supporting infrastructure.",
-    "is_solvyr_an_orchestration_layer": "No. Orchestration runs underneath the managed corpus service; customers buy the completed run rather than operating the scheduler or pipeline.",
+    "what_is_solvyr": "A supported AI result layer for bounded asynchronous work. Partners keep the customer and workflow while Solvyr handles execution, validation, exceptions, and typed result delivery.",
+    "is_solvyr_a_gpu_provider": "No. Customers buy supported, checked results; controlled distributed execution is Solvyr's delivery engine rather than a raw GPU offer.",
+    "is_solvyr_an_orchestration_layer": "Solvyr builds an AI execution layer, but does not sell generic compute orchestration. The buyer receives a supported, checked result rather than a scheduler, container platform, or GPU-hour.",
+    "what_is_fast_corpus": "The managed document-to-corpus route for bounded PDF and text backlogs; it is the first commercial route, not the whole company.",
     "what_fast_corpus_delivers": "Extracted text, AI-ready JSONL, chunks, embeddings, stable IDs, caveats, and an inspectable run report.",
-    "how_to_start": "Submit a bounded backlog and output target, then use a representative non-sensitive sample for a capped pilot run."
+    "how_to_start": "Discuss one repeated, delay-tolerant workflow and define a bounded representative sample and expected result.",
+    "how_to_start_fast_corpus": "Submit a bounded backlog and output target, then use a representative non-sensitive sample for a capped pilot run."
   },
   "contact_email": "hello@solvyr.com",
   "founder_linkedin": "https://nl.linkedin.com/in/janwoutervandalen",

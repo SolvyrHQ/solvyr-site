@@ -8,8 +8,19 @@ agent-readable files, read:
 - `docs/website_quality_process.md`
 - `docs/website_manager_agent.md`
 
-Use the guide as the website brandbook. Keep the first-screen promise focused
-on customer workload and accepted output:
+Use the guide as the website brandbook. Keep the corporate first-screen promise
+focused on the supported result and partner ownership boundary:
+
+> reliable AI work, running where customers choose
+
+> partners keep the customer and workflow; Solvyr owns bounded AI execution,
+> validation, exceptions, and typed result delivery
+
+Introduce flexible compute only after the result flow. Keep capacity expansion
+demand-led: Solvyr-controlled workers today, approved organizational capacity
+next, and European-provider overflow when real workloads require it.
+
+Keep dedicated Fast Corpus first screens focused on:
 
 > bounded document/text backlog to AI-ready corpus output and run evidence
 
@@ -64,6 +75,10 @@ Founder LinkedIn links may remain, but must open in a new tab with
 - Make supported claims positively and directly. Put a necessary caveat once,
   beside the relevant proof, price, security, or fit statement; do not fill
   customer copy with unsolicited lists of things Solvyr never claimed.
+- Let measured values define the scope of a proof. Do not append warnings
+  against extrapolations, certifications, workloads, or product states that
+  the page has not claimed; keep that detail in the claim register or
+  agent-readable evidence packet unless it changes the buyer's decision.
 - Keep agent-readable resources discoverable but visually quiet in the footer;
   they must not compete with the workload CTA.
 - Treat node maps and other generated diagrams as illustrations, never as
