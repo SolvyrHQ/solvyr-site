@@ -35,7 +35,7 @@ Fast Corpus route:
 Broader system:
 - Controlled distributed execution for async AI workloads
 - Central scheduler, bounded tasks, retries, visible outcomes, and completed work
-- Run004 completed the same suitable workload in 18:35 with one controlled worker and 5:31 with four, demonstrating division across multiple controlled machines with valid outputs
+- A measured run completed the same suitable workload in 18:35 with one controlled worker and 5:31 with four, demonstrating division across multiple controlled machines with valid outputs
 - Not a generic GPU-hour marketplace or broad platform migration
 - Relevant to document-heavy AI workloads, archives, public-sector teams, regional innovation, European execution capacity, and sovereignty conversations when tied to a concrete pilot
 

@@ -458,6 +458,22 @@ The desired result is less repetition, not less substance. Detailed pages
 should remain available for buyers who need to validate fit, evidence,
 security, or company direction.
 
+Use the native Merge Arrow visual family for the three relationships that are
+faster to understand as diagrams than prose:
+
+- the homepage flexible-compute section converges current, next and overflow
+  capacity routes through the Solvyr execution layer into one workflow-ready
+  result;
+- the Proof page shows measured multi-worker elapsed time with directly labelled bars and a
+  compact verified-result band;
+- the Security page shows the explicit scheduler-and-worker trust zone,
+  current bounded controls and later narrowing path in one composition.
+
+These are HTML/CSS explanations, not screenshots or infrastructure evidence.
+Keep current execution blue, later routes violet, verified proof green and the
+workflow-ready result navy. Preserve equivalent English and Dutch compositions
+and avoid adding decorative dashboards around them.
+
 Do not maintain a hidden execution-model tab on the homepage. The concise
 buyer consequence belongs on the homepage: Solvyr operates the pipeline and
 the customer receives accepted output plus run evidence. Execution mechanics

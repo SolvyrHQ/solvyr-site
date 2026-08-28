@@ -46,11 +46,14 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] The active corporate homepage follows the hierarchy: customer result, plain-language workflow, demonstrated-versus-intended compute mechanism, builder advantage, then trust/economics.
 - [ ] The corporate homepage stays near the seven-section decision path: hero, one result flow, flexible compute, combined audience/ownership, first ERP route, combined proof/trust, and closing CTA.
 - [ ] The flexible-compute section says the result stays stable while approved compute can change, puts demand before supply, and distinguishes current, next, and overflow capacity routes.
+- [ ] The flexible-compute visual converges those routes through the Solvyr execution layer into a workflow-ready result; current and later routes remain visually distinct.
 - [ ] `Discuss a workflow` remains primary; the lower capacity CTA explains execution instead of soliciting an organizational GPU pool.
 - [ ] Homepage copy uses buyer language; internal terms such as bounded execution, typed delivery, exception classification, shadow metering, and policy-aware placement stay on the relevant detailed routes unless essential.
 - [ ] The active homepage avoids repeating the same price, category, vision, sovereignty, or buyer-entry point when a dedicated route already carries it.
 - [ ] Supported claims are stated positively; necessary caveats appear once in the relevant proof, fit, price, security, or legal context rather than as repeated defensive disclaimers.
 - [ ] Measured proof pages let inputs, outputs, worker counts, elapsed time and acceptance results define scope; they do not warn against extrapolations or claims the page never makes.
+- [ ] Measured multi-worker bars are directly labelled, proportional to the published elapsed times, and the green result band contains verified evidence only; internal run identifiers stay out of public copy.
+- [ ] The Security trust-zone visual preserves the current bounded controls, encrypted external path, plaintext scheduler/worker processing boundary and later narrowing path without implying present confidential computing or attestation.
 - [ ] The homepage has no hidden execution-model content; deeper execution context stays on the About execution section.
 - [ ] Use-case dropdown links stay parallel in English and Dutch.
 - [ ] Footer links stay stable by language; do not randomly drop `About`/`Over`, `Connectors`, legal/privacy, `hello@solvyr.com`, or agent-readable links.

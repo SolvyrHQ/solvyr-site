@@ -33,7 +33,7 @@
     <link rel="icon" href="/assets/brand/solvyr-icon-hybrid.svg?v=20260820-2" type="image/svg+xml" sizes="any" />
     <link rel="icon" href="/favicon.ico?v=20260820-2" sizes="16x16 32x32 48x48" />
     <link rel="apple-touch-icon" href="/assets/brand/solvyr-icon-hybrid-256.png?v=20260820-2" />
-    <link rel="stylesheet" href="/styles.css?v=20260826-3" />
+    <link rel="stylesheet" href="/styles.css?v=20260828-1" />
     <meta name="theme-color" content="#f7f9fc" />
     <script type="application/ld+json">
       {
@@ -150,13 +150,20 @@
         </ol>
       </section>
 
-      <section class="capacitySection" aria-labelledby="capacity-title">
+      <section class="capacitySection" id="execution-map" aria-labelledby="capacity-title">
         <div class="capacityIntro"><div><p class="eyebrow">Execution underneath</p><h2 id="capacity-title">The result stays the same. The compute can change.</h2></div><p>Solvyr schedules suitable work across approved compute and returns one workflow-ready result. Demand comes first: the workload and result requirements decide which capacity belongs in the route.</p></div>
-        <div class="capacitySources">
-          <article class="capacitySource demonstrated"><span class="capacityStatus">Built today</span><h3>Solvyr-controlled workers</h3><p>Multi-worker execution already runs across the controlled pool.</p></article>
-          <article class="capacitySource intended"><span class="capacityStatus">Next</span><h3>Customer and partner GPUs</h3><p>Approved organizational capacity can extend the same result route behind real workload demand.</p></article>
-          <article class="capacitySource intended"><span class="capacityStatus">Overflow</span><h3>European GPU capacity</h3><p>Commercial capacity can support workload-specific demand when it fits the route.</p></article>
+        <div class="computeMap" role="img" aria-label="Illustration: Solvyr-controlled workers today, customer and partner GPUs next, and European GPU capacity for overflow converge through the Solvyr execution layer into one workflow-ready result.">
+          <div class="computeSources">
+            <article class="computeSource current"><span class="computeStatus">Built today</span><h3>Solvyr-controlled workers</h3><p>Demonstrated multi-worker route</p></article>
+            <article class="computeSource future"><span class="computeStatus">Next</span><h3>Customer + partner GPUs</h3><p>Intended deployment route</p></article>
+            <article class="computeSource future"><span class="computeStatus">Overflow</span><h3>European GPU providers</h3><p>Intended capacity route</p></article>
+          </div>
+          <span class="computeArrow" aria-hidden="true">&rarr;</span>
+          <div class="computeEngine"><strong>Solvyr execution layer</strong><small>Coordinates the work across the selected route</small><div class="computeSteps" aria-hidden="true"><span>Schedule</span><span>Retry</span><span>Validate</span></div></div>
+          <span class="computeArrow" aria-hidden="true">&rarr;</span>
+          <div class="computeResult"><strong>Workflow-ready result</strong><small>Agreed format &middot; clear review status &middot; run evidence</small></div>
         </div>
+        <p class="visualCaption">The mechanism supports the customer promise; it does not replace it.</p>
         <div class="capacityActions"><a class="button" href="/about.html#execution">See how execution works</a></div>
       </section>
 
@@ -174,7 +181,7 @@
       </section>
 
       <section class="reportPreview homepageEvidence" aria-labelledby="proof-title">
-        <div class="reportCopy"><p class="eyebrow">Current proof</p><h2 id="proof-title">Run004: multi-worker execution demonstrated.</h2><p>The same workload completed in 18:35 with one worker and 5:31 with four: a 3.37× speedup, 987 of 987 valid outputs and zero errors or retries. A separate acceptance test kept schema-invalid output out of the customer workflow.</p><div class="heroActions sectionGap"><a class="button secondary" href="/proof.html">Review the evidence</a></div></div>
+        <div class="reportCopy"><p class="eyebrow">Current proof</p><h2 id="proof-title">Multi-worker execution demonstrated.</h2><p>The same workload completed in 18:35 with one worker and 5:31 with four: a 3.37× speedup, 987 of 987 valid outputs and zero errors or retries. A separate acceptance test kept schema-invalid output out of the customer workflow.</p><div class="heroActions sectionGap"><a class="button secondary" href="/proof.html">Review the evidence</a></div></div>
         <div class="decisionLinks" aria-label="Proof, trust and company routes">
           <a href="/security.html"><span>Security</span><strong>Agree where data runs and who can access it.</strong><i aria-hidden="true">→</i></a>
           <a href="/about.html"><span>About Solvyr</span><strong>See how this grows beyond document workflows.</strong><i aria-hidden="true">→</i></a>
