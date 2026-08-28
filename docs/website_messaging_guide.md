@@ -105,12 +105,15 @@ Public route hierarchy:
 - `/about.html` and its Dutch counterpart: execution-layer and flexible-compute
   vision.
 
-Keep the current ERP workflow partner and ERP platform anonymous across every
-public surface, including visible pages, metadata, structured data,
-agent-readable files, downloads, and public visual labels. In particular,
-`Promentum` and `Uniconta` are internal evidence names and must never appear on
-the website. Use `a workflow partner`, `the first ERP route`, `the existing ERP
-workflow`, or `ERP-ready results` as appropriate.
+Keep every customer and partner anonymous across public surfaces unless Jan
+explicitly approves that exact name or identifying reference for that exact
+public use. This includes visible pages, metadata, structured data,
+agent-readable files, downloads, logos, quotes, case studies, and visual
+labels. `Promentum` and `Uniconta` remain internal evidence names and must not
+appear on the website. Use `a workflow partner`, `the first ERP route`, `the
+existing ERP workflow`, or `ERP-ready results` as appropriate. Ask Jan before
+publishing any other customer or partner identity; do not infer approval from
+an internal agreement, pilot, email, deck, or repository reference.
 
 Do not put the public Fast Corpus page-based price on the corporate homepage.
 Predictable price per accepted result remains a shadow-metered commercial
