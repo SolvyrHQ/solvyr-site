@@ -6,6 +6,10 @@ const repoRoot = dirname(dirname(fileURLToPath(import.meta.url)));
 const excludedDirectories = new Set([".git", ".site-dist", "docs", "measure", "scripts", "v2"]);
 const publicTextExtensions = new Set([".html", ".json", ".md", ".txt", ".yaml"]);
 const founderPortraitFiles = ["jan-wouter-van-dalen.png", "maksym-wezdecki.png"];
+const forbiddenExternalNames = [
+  { name: "Promentum", pattern: /\bpromentum\b/i },
+  { name: "Uniconta", pattern: /\buniconta\b/i },
+];
 
 function walk(dir) {
   return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
@@ -108,6 +112,12 @@ if (!styles.includes('url("/assets/fonts/InterVariable.woff2")')) {
 for (const file of walk(repoRoot)) {
   const relPath = relative(repoRoot, file);
   const source = readFileSync(file, "utf8");
+
+  for (const forbidden of forbiddenExternalNames) {
+    if (forbidden.pattern.test(source)) {
+      failures.push(`${relPath}: contains internal route name ${forbidden.name}; keep the partner and ERP platform anonymous`);
+    }
+  }
 
   if (/sales@solvyr\.com/i.test(source)) {
     failures.push(`${relPath}: contains retired public contact sales@solvyr.com`);
