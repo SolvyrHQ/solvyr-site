@@ -16,7 +16,7 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Infrastructure appears as support, not the headline.
 - [ ] The About-page expansion story moves from a proven bounded workload to reusable execution capabilities without implying a broad platform is already available.
 - [ ] Any commercial-validation statement preserves its anonymous, conditional, non-binding boundary and does not imply revenue, deployment, procurement, or a formal partnership.
-- [ ] The current ERP workflow partner and ERP platform remain anonymous on every public and agent-readable surface; `Promentum` and `Uniconta` never appear in publishable website content.
+- [ ] Every customer and partner remains anonymous on public and agent-readable surfaces unless Jan explicitly approved that exact name, logo, quote, case study, or identifying reference for that exact public use; `Promentum` and `Uniconta` remain blocked.
 - [ ] Research direction is framed as active work, not as formal verification, certification, or support for arbitrary sensitive workloads.
 - [ ] Execution-pool language is supply-neutral and based on explicit node eligibility; household machines do not define the company.
 - [ ] The broader vision appears only after the immediate Fast Corpus offer and proof, and Fast Corpus remains clear as the current wedge.

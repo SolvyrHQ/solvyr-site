@@ -31,6 +31,10 @@ coherent, discoverable, safe to edit, and aligned with the current offer.
 - Keep capacity demand-led: Solvyr-controlled workers today, approved customer
   or partner capacity next, and European-provider overflow behind real workload
   demand. Do not use capacity acquisition as the corporate homepage CTA.
+- Keep customers and partners anonymous unless Jan explicitly approves the
+  exact name, logo, quote, case study, or identifying reference for the exact
+  public use. Ask before publishing; internal evidence never implies publicity
+  permission.
 - Keep human proof copy confident: measured values define their own scope;
   detailed non-claims belong in the claim register and agent evidence packet
   unless omitting one would change a buyer's fit, security, or legal decision.

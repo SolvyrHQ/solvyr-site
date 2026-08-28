@@ -100,6 +100,10 @@ navigation items, footer links, proof links, language switches, or security
 content without explicit approval. If a route feels redundant, raise it first
 instead of silently coding it out.
 
+Do not publish any customer or partner name, logo, quote, case study, or other
+identifying reference without Jan's explicit approval for that exact public
+use. Ask first and keep the public wording anonymous until approval is given.
+
 Do not ask for approval merely for the sake of asking. Use the judgement model
 in `docs/website_manager_agent.md`: act on low-risk reversible fixes, ask for
 human judgement when deletion, claim changes, external mutation, or material
