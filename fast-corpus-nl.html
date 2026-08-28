@@ -228,12 +228,11 @@
 
         <section class="reportPreview" aria-labelledby="benchmark-title">
           <div class="reportCopy">
-            <p class="eyebrow">Bewijsgrens</p>
+            <p class="eyebrow">Gemeten bewijs</p>
             <h2 id="benchmark-title">Recente interne run: 100 PDF's en 2.052 pagina's in een gemeten pass.</h2>
             <p>
               De run omvatte schone digitale PDF's, tekstextractie, chunking
-              en embeddings, zonder fouten of retries. OCR-zware scans,
-              layoutparsing en gestructureerde extractie vielen buiten deze run.
+              en embeddings. De run eindigde met nul fouten en nul retries.
             </p>
           </div>
           <div class="metricCard" aria-label="Recente benchmarkmetrics">
@@ -471,12 +470,12 @@
           </section>
 
           <section class="panel mutedPanel" aria-labelledby="security-boundaries-title">
-            <h2 id="security-boundaries-title">Huidige grenzen</h2>
+            <h2 id="security-boundaries-title">Huidige pilotfit</h2>
             <ul class="cleanList">
-              <li>Geen hooggevoelige workloads zonder veilige pilotsample</li>
-              <li>Geen cryptografische privacy- of confidential-compute claims</li>
-              <li>Geen brede enterprise-compliance claim</li>
-              <li>Geen claim dat distributie vanzelf vertrouwelijkheid geeft</li>
+              <li>Laag- of middelgevoelige data</li>
+              <li>Een veilige representatieve sample</li>
+              <li>Expliciete regels voor locatie, toegang, bewaartermijn en verwijdering</li>
+              <li>Workloads onder beheer van Solvyr binnen de afgesproken route</li>
             </ul>
           </section>
         </div>
@@ -500,15 +499,15 @@
           </div>
           <p>
             We kunnen helpen pre-upload weglakken of pseudonimisering te
-            definieren. Rehydratie blijft klantzijdig. Risicoreductie, geen
-            garantie op anonimiteit.
+            definiëren. Pseudonimisering verkleint de blootstelling terwijl
+            rehydratie klantzijdig blijft.
           </p>
         </section>
 
         <section class="band compact" aria-labelledby="security-summary-title">
           <div>
-            <p class="eyebrow">Scopegrens</p>
-            <h2 id="security-summary-title">Sommige data hoort niet in de pilot.</h2>
+            <p class="eyebrow">Datafit</p>
+            <h2 id="security-summary-title">Breng de juiste data in de pilot.</h2>
           </div>
           <p>
             Geschikte workloads krijgen expliciete regels voor lifecycle,

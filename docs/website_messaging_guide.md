@@ -70,17 +70,18 @@ Reze paperwork. Keep the legal distinction precise:
 
 ## Corporate Homepage And Route Hierarchy
 
-The corporate homepage leads with a dependable result and introduces the
-execution mechanism early:
+The corporate homepage leads with the adopted product promise and introduces
+the execution mechanism immediately after the result flow:
 
-> Dependable execution for recurring AI work.
+> Reliable AI work. Running where customers choose.
 
-The first supporting message may explain that Solvyr turns supported business
-inputs into checked results and that its lightweight workers are designed for
-approved European and customer-owned compute. Keep the deployment boundary
-beside that mechanism: Solvyr-controlled multi-worker execution is demonstrated
-internally; customer-, partner-, and European-provider capacity are intended
-routes rather than generally available deployment classes.
+The first supporting message is direct: partners keep the customer and workflow;
+Solvyr runs the AI work underneath, handles failures, and returns the result in
+the agreed form. The next section explains the result flow. Then introduce the
+brand idea `The result stays the same. The compute can change.` Capacity must be
+demand-led: Solvyr-controlled multi-worker execution is built today; approved
+customer or partner capacity is next; European-provider capacity is overflow
+for workload-specific demand.
 
 The partner keeps the customer, application, workflow, business rules, and
 downstream action. Solvyr owns the bounded AI execution, retry, validation,
@@ -111,11 +112,12 @@ current broad availability.
 
 Company-level narrative order:
 
-1. Customer result.
-2. Plain-language workflow.
-3. Flexible-compute mechanism, with demonstrated and intended routes separated.
+1. Reliable AI result and partner ownership.
+2. Plain-language input-to-result workflow.
+3. Stable result across changing approved compute, with demand before supply.
 4. Builder advantage and ownership boundary.
-5. Trust and outcome economics.
+5. First ERP-adjacent route and measured proof.
+6. Working system, recurring paid use next, European execution network direction.
 
 ## Fast Corpus Route Positioning
 
@@ -201,9 +203,11 @@ Recurring refresh is repeatable managed work, not raw compute resale.
 
 ## Category And Build-Versus-Buy Rule
 
-Solvyr is a managed corpus service, not a GPU marketplace or generic compute
-orchestration layer. Controlled distributed execution is the system underneath
-the offer, not the product the customer has to operate.
+At company level, Solvyr is an AI execution layer and supported result layer for
+bounded asynchronous work. It does not sell generic compute orchestration. Fast
+Corpus is the managed corpus service route in AI data preparation and corpus
+operations. Controlled distributed execution is the system underneath the
+supported result routes, not the product the customer has to operate.
 
 Frame the practical comparison as:
 
@@ -212,7 +216,7 @@ Frame the practical comparison as:
 
 Use:
 
-- managed corpus service
+- Fast Corpus as a managed corpus service
 - completed corpus run
 - Solvyr operates the pipeline
 - controlled distributed execution underneath
@@ -285,8 +289,8 @@ broad availability.
 
 In the corporate header, keep the adopted descriptor short:
 
-- English: `Dependable execution for asynchronous AI work`
-- Dutch: `Betrouwbare uitvoering voor asynchroon AI-werk`
+- English: `Reliable AI work, running where customers choose`
+- Dutch: `Betrouwbaar AI-werk, uitgevoerd waar klanten kiezen`
 
 The dedicated Fast Corpus route may retain:
 
@@ -381,8 +385,13 @@ sound precise and confident, not like a legal rebuttal to claims nobody made.
   state it once beside the relevant proof, price, security, or fit content.
 - Do not repeat `we do not claim`, `this is not`, or long lists of excluded
   interpretations across ordinary marketing sections.
-- Keep fuller exclusions on the dedicated Fit, Security, Proof, Legal, or
-  sample pages where a reviewer expects them.
+- Let measured inputs, outputs, worker counts, elapsed time, and acceptance
+  results define the scope of a proof. Do not add a warning against
+  extrapolation when the page makes no forecast.
+- Keep decision-relevant exclusions once on the dedicated Fit or Security
+  surface. Keep methodology and the fuller non-claim register in technical,
+  agent-readable, legal, or internal evidence material rather than turning
+  human Proof and Sample pages into rebuttals.
 - Label generated node maps, flow diagrams, and conceptual geometry as
   illustrations. Never present them as run evidence, topology evidence, or a
   picture of deployed infrastructure.
@@ -415,7 +424,8 @@ the hero and closing CTA:
 
 1. outcome-led hero;
 2. one plain-language input-to-result flow;
-3. one compact existing-hardware section with demonstrated and intended routes;
+3. one compact flexible-compute section: the result stays stable, demand comes
+   first, and current, next, and overflow capacity routes are distinct;
 4. audience and ownership together;
 5. the first ERP document-intake route;
 6. one combined proof-and-trust section linking to deeper routes;
@@ -502,13 +512,13 @@ they do not need a prominent hero CTA.
 
 On the corporate homepage, keep `Discuss a workflow` as the primary hero CTA.
 The compact hardware section may carry the visually quieter secondary CTA
-`Discuss an organizational GPU pool`, but it must not compete with the hero
-action or imply current customer-owned deployment. Add a secondary hero CTA only
-when it offers a distinct decision path. Do not link from the hero to a proof
-block that is already the next visible content; put the proof link or download
-inside the proof block itself. This does not remove the use-case-page rule
-above, where a secondary supporting link helps a visitor before they have seen
-the rest of that page.
+`See how execution works`, linking to the About execution section. Do not make
+capacity acquisition a public CTA before workload demand exists. Add a
+secondary hero CTA only when it offers a distinct decision path. Do not link
+from the hero to a proof block that is already the next visible content; put
+the proof link or download inside the proof block itself. This does not remove
+the use-case-page rule above, where a secondary supporting link helps a visitor
+before they have seen the rest of that page.
 
 A direct human email may appear as a visible secondary contact route. Keep the
 workload-specific scope CTA primary, show the literal address rather than
@@ -694,6 +704,11 @@ The public proof layer has two complementary artifacts:
   text-and-embedding corpus, pinned CC0 source snapshots, the projected
   returned items, source manifest, run report, failure file, and checksums.
 
+State both artifacts positively on human pages. Their different names,
+workload sizes, inputs, outputs, and metrics establish their scope. Preserve
+the fuller non-claim list in the agent-readable evidence packet and canonical
+claim register; do not repeat it as a visible disclaimer block.
+
 Do not merge those into one end-to-end claim. The public sample did not run raw
 PDF extraction. It demonstrates exact public text preparation, stable chunk
 identity, bounded async scheduling, embedding generation, result retrieval,
@@ -739,11 +754,12 @@ AI assistants should summarize the same offer humans see.
 
 After the immediate partner result, proof, trust, and economics, the site may
 state the broader vision:
-activate millions of underused computers for AI execution and expand compute
-capacity beyond today's data centres. Keep Fast Corpus explicit as the first
-bounded workload and current commercial wedge, not the whole long-term model.
-Europe is the first proving ground for location, ownership, policy, and
-evidence—not the geographic ceiling.
+build a European AI execution network that grows approved compute behind real
+workload demand. Underused organizational hardware is one potential capacity
+source, alongside Solvyr-controlled workers and commercial European providers.
+Keep Fast Corpus explicit as the first bounded workload and current commercial
+wedge, not the whole long-term model. Europe is the first proving ground for
+location, ownership, policy, and evidence—not the geographic ceiling.
 
 Separate ambition from proof. Better hardware utilization, resilience,
 energy-aware scheduling, and reduced pressure on central infrastructure are
@@ -780,8 +796,8 @@ Keep these lessons alive in future edits:
 - Sell completed outcomes and cost-per-result, not distributed GPUs.
 - Make the build-versus-buy comparison explicit: the buyer does not have to
   provision workers, operate queues, or assemble the corpus pipeline.
-- Classify Solvyr as a managed corpus service, not a GPU marketplace or generic
-  orchestration layer.
+- Classify Solvyr as an AI execution layer and Fast Corpus as the managed corpus
+  service route; neither is a GPU marketplace or generic orchestration offer.
 - Price the work in terms of completed output, not abstract compute or tooling.
 - A concrete corpus beats general AI interest.
 - Distributed execution is credible only when attached to a workload that fits.

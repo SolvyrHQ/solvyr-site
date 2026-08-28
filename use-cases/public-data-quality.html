@@ -97,7 +97,7 @@
         <a class="brand" href="/" aria-label="Solvyr home">
           <div class="brandtext">
             <img class="brandLogo" src="/assets/brand/solvyr-logo-hybrid.svg" alt="Solvyr" width="175" height="35" />
-            <div class="tag">Dependable execution for asynchronous AI work</div>
+            <div class="tag">Reliable AI work, running where customers choose</div>
           </div>
         </a>
 
@@ -141,8 +141,8 @@
         <p class="lede">
           Solvyr supports reviewable batch runs over public or test metadata
           before wider publication, harvesting, indexing, or downstream reuse.
-          It is not a catalog replacement; it is a controlled run that returns
-          issue lists, suggested fixes, caveats, and a decision-ready report.
+          Each run returns issue lists, suggested fixes, caveats, and a
+          decision-ready report to the team that owns the catalog workflow.
         </p>
         <div class="heroActions">
           <a class="button primary" href="../pilot-intake.html#intent=public-data-quality&source=public-data-quality-use-case">Scope a public-data run</a>
@@ -180,13 +180,13 @@
           </ul>
         </article>
         <article class="panel mutedPanel">
-          <h2>Not for</h2>
+          <h2>Current operating model</h2>
           <ul class="cleanList">
-            <li>Replacing CKAN, GeoNetwork, Dataverse, or other catalog software.</li>
-            <li>Automatic production writes without human review.</li>
-            <li>Compliance certification or formal data-quality accreditation.</li>
-            <li>Highly sensitive data without prior agreement.</li>
-            <li>Realtime monitoring or incident response.</li>
+            <li>The existing catalog remains the system of record.</li>
+            <li>A human owner reviews recommendations before changes are made.</li>
+            <li>Runs follow an export or refresh cycle.</li>
+            <li>Public, test, redacted, or agreed low-sensitivity data enters the route.</li>
+            <li>Results support an operational decision by the catalog owner.</li>
           </ul>
         </article>
       </section>
@@ -206,14 +206,14 @@
 
       <section class="band compact" aria-labelledby="boundary-title">
         <div>
-          <p class="eyebrow">Boundary</p>
-          <h2 id="boundary-title">Start with public or test metadata and a narrow acceptance rule.</h2>
+          <p class="eyebrow">Data route</p>
+          <h2 id="boundary-title">Start with public or test metadata and a clear acceptance rule.</h2>
         </div>
         <p>
-          This is strongest when the first run has a bounded export, visible
-          validation criteria, and a clear reviewer. Solvyr should not receive
-          sensitive production data through public forms or email; transfer,
-          retention, deletion, and operator access need a written scope first.
+          The strongest first run has one export, visible validation criteria,
+          and a clear reviewer. Sensitive production data uses an agreed
+          transfer route with retention, deletion, and operator access defined
+          before transfer.
         </p>
       </section>
 

@@ -13,6 +13,9 @@ coherent, discoverable, safe to edit, and aligned with the current offer.
   validation, exceptions, and typed result delivery.
 - Preserve Fast Corpus as a dedicated bounded document/text backlog route to
   AI-ready corpus output and run evidence.
+- Keep company-level agent answers classified as an AI execution layer and
+  supported result layer, and route-level Fast Corpus answers classified as a
+  managed corpus service.
 - Preserve the adjacent public-data message when relevant: recurring,
   reviewable batch checks over public/test metadata exports, producing issue
   lists, suggested fixes, caveats, and run evidence.
@@ -21,10 +24,16 @@ coherent, discoverable, safe to edit, and aligned with the current offer.
 - Keep EU sovereignty and European execution visible for archives, public-sector
   teams, and connectors, while anchoring it in a concrete document or
   public-data workload.
-- Keep the corporate header descriptor consistent: `Dependable execution for
-  asynchronous AI work` in English and `Betrouwbare uitvoering voor asynchroon
-  AI-werk` in Dutch. The dedicated Fast Corpus routes may retain their product
-  taglines.
+- Keep the corporate header descriptor consistent: `Reliable AI work, running
+  where customers choose` in English and `Betrouwbaar AI-werk, uitgevoerd waar
+  klanten kiezen` in Dutch. The dedicated Fast Corpus routes may retain their
+  product taglines.
+- Keep capacity demand-led: Solvyr-controlled workers today, approved customer
+  or partner capacity next, and European-provider overflow behind real workload
+  demand. Do not use capacity acquisition as the corporate homepage CTA.
+- Keep human proof copy confident: measured values define their own scope;
+  detailed non-claims belong in the claim register and agent evidence packet
+  unless omitting one would change a buyer's fit, security, or legal decision.
 - Under Security, frame European execution as explicit pilot boundaries around
   location, storage, retention, deletion, and access; do not imply blanket
   compliance or confidentiality.

@@ -6,15 +6,15 @@ run report at a predictable starting unit price for standard batches.
 The public header tagline is: Fast Corpus for European AI teams.
 
 Fast Corpus now has its own route at https://solvyr.com/fast-corpus.html. The
-corporate homepage at https://solvyr.com/ leads with dependable execution for
-recurring AI work. Solvyr turns supported business inputs into checked results;
-ERP and document-workflow builders keep the customer and workflow. Lightweight
-workers pull bounded tasks from the scheduler, execute them locally, and return
-status and results. Solvyr-controlled multi-worker execution is demonstrated
-internally. Explicitly approved customer or partner machines and European GPU
-providers are intended capacity routes, not generally available deployment
-classes. Document intake is the first route-specific commercial test. A
-predictable price per accepted result is still a shadow-metered hypothesis.
+corporate homepage at https://solvyr.com/ leads with reliable AI work running
+where customers choose. Partners keep the customer and workflow. Solvyr runs
+the AI work underneath, handles failures, and returns the result in the agreed
+form. Lightweight workers pull bounded tasks from the scheduler, execute them
+locally, and return status and results. Solvyr-controlled multi-worker
+execution is demonstrated internally. Approved customer or partner machines
+are the next capacity path; European GPU providers can add overflow and
+workload-specific capacity. Workload demand comes before capacity expansion.
+Document intake is the first route-specific commercial test.
 
 Fast Corpus is the first concrete offer. The customer buys completed
 corpus output and run evidence, not GPU-hours, API access, CLI access, or
@@ -32,11 +32,11 @@ usage.
 
 ## Vision and current wedge
 
-Solvyr's vision is to activate millions of underused computers for AI
-execution, expanding the world's compute capacity beyond today's data centres.
-Expansion should not depend only on constructing more central infrastructure:
-people and organizations already own capable, distributed hardware, and Solvyr
-aims to make a schedulable portion dependable for suitable AI work.
+Solvyr's long-term direction is a European AI execution network that grows
+approved compute behind real workload demand. Underused organizational
+capacity is one source, alongside Solvyr-controlled workers and commercial
+European providers. The result contract stays stable as suitable compute
+changes underneath.
 
 Fast Corpus is the first bounded workload and current commercial wedge. It
 proves controlled execution against measurable workload output; it is not the
@@ -51,13 +51,17 @@ or water use, lower emissions, less data-centre construction, certified
 sovereignty, or greater efficiency than data-centre GPUs. Distributed execution
 is not automatically more efficient.
 
-## Canonical classification
+## Company and product classification
 
-Solvyr is a managed B2B document-to-corpus processing service in the AI
-data-preparation and corpus-operations category. It is not a distributed GPU
-provider, GPU marketplace, generic compute orchestration layer, generic data
-platform, or hosted RAG/search product. Controlled distributed execution is
-the supporting system underneath the customer-facing corpus service.
+Solvyr is an AI execution layer and supported result layer for bounded
+asynchronous work. ERP and document-workflow partners keep the customer and
+workflow while Solvyr owns bounded execution, retry, validation, exception
+state, and typed result delivery. Solvyr Fast Corpus is the managed B2B
+document-to-corpus route in the AI data-preparation and corpus-operations
+category. Neither is a distributed GPU provider, GPU marketplace, generic
+compute orchestration offer, generic data platform, or hosted RAG/search
+product. Controlled distributed execution is the supporting system underneath
+the customer-facing result routes.
 
 The practical comparison is build versus buy. A team can assemble and operate
 its own extraction, chunking, embedding, queueing, retry, and reporting
@@ -284,20 +288,28 @@ the main offer: a scoped corpus run with inspectable output.
 
 Direct answers:
 
-- **What is Solvyr?** A managed B2B service that turns bounded document and
-  text backlogs into accepted AI-ready corpus output with run evidence.
-- **Is Solvyr a GPU provider?** No. Customers buy completed corpus work;
-  controlled distributed execution is supporting infrastructure.
-- **Is Solvyr an orchestration layer?** No. Orchestration runs underneath the
-  managed corpus service; customers buy the completed run rather than
-  operating the scheduler or pipeline.
+- **What is Solvyr?** A supported AI result layer for bounded asynchronous
+  work. Partners keep the customer and workflow while Solvyr handles execution,
+  validation, exceptions, and typed result delivery.
+- **Is Solvyr a GPU provider?** No. Customers buy supported, checked results;
+  controlled distributed execution is Solvyr's delivery engine rather than a
+  raw GPU offer.
+- **Is Solvyr an orchestration layer?** Solvyr builds an AI execution layer,
+  but does not sell generic compute orchestration. The buyer receives a
+  supported, checked result rather than a scheduler, container platform, or
+  GPU-hour.
+- **What is Fast Corpus?** The managed document-to-corpus route for bounded PDF
+  and text backlogs; it is the first commercial route, not the whole company.
 - **What does Fast Corpus deliver?** Extracted text, JSONL, chunks,
   embeddings, stable IDs, caveats, and an inspectable run report.
 - **Who is it for?** AI teams, corpus owners, archives, libraries,
   municipalities, research networks, public-sector teams, and connectors with
   a concrete document or public-data workload.
-- **How does a customer start?** Submit a bounded backlog and output target,
-  then use a representative non-sensitive sample for a capped pilot run.
+- **How does a buyer start with Solvyr?** Discuss one repeated, delay-tolerant
+  workflow and define a bounded representative sample and expected result.
+- **How does a buyer start with Fast Corpus?** Submit a bounded backlog and
+  output target, then use a representative non-sensitive sample for a capped
+  pilot run.
 - **How can a buyer contact Solvyr directly?** Email Jan at
   `hello@solvyr.com`.
 

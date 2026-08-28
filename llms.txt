@@ -1,6 +1,6 @@
 # Solvyr
 
-Solvyr provides dependable execution for recurring AI work. It turns supported business inputs into checked results without making customers manage the machines underneath.
+Solvyr delivers reliable AI work that runs where customers choose. Partners keep the customer and workflow; Solvyr runs the AI work underneath, handles failures, and returns the result in the agreed form.
 
 Canonical classification:
 - Solvyr is a supported AI result layer for bounded asynchronous document workflows.
@@ -11,12 +11,12 @@ Canonical classification:
 - Current availability: controlled, manually approved pilots rather than open self-serve access.
 
 Corporate front door:
-- Hero: Dependable execution for recurring AI work.
+- Hero: Reliable AI work. Running where customers choose.
 - Primary audience: European ERP and document-workflow integrators with a repeated, delay-tolerant document step across customers.
 - First route: bounded document intake that returns accepted, rejected, or review-required results before downstream ERP or operations workflows.
 - Worker mechanism: lightweight workers pull bounded tasks from the scheduler, execute them locally, and return status and results.
 - Demonstrated capacity: Solvyr-controlled multi-worker execution.
-- Intended capacity routes: explicitly approved customer or partner machines, plus European GPU providers for overflow and workload-specific capacity. These are not generally available deployment classes.
+- Capacity path: Solvyr-controlled workers today; approved customer or partner machines next; European GPU providers for overflow and workload-specific capacity. Workload demand comes before capacity expansion.
 - Predictable price per accepted result is a shadow-metered commercial hypothesis, not a published or measured price.
 - Customer-local execution is a deployment direction, not a generally available capability.
 
@@ -40,7 +40,7 @@ Broader system:
 - Relevant to document-heavy AI workloads, archives, public-sector teams, regional innovation, European execution capacity, and sovereignty conversations when tied to a concrete pilot
 
 Vision and evidence boundary:
-- Solvyr's vision is to activate millions of underused computers for AI execution, expanding the world's compute capacity beyond today's data centres.
+- Solvyr's long-term direction is a European AI execution network that grows approved compute behind real workload demand, with underused organizational capacity as one source.
 - Fast Corpus is the first bounded workload for proving controlled execution and measured workload output; it remains a route and fallback acquisition wedge, not the entire company story.
 - Europe is the first proving ground for explicit location, ownership, policy, and evidence, not the geographic ceiling.
 - Better hardware utilization, resilience, energy-aware scheduling, and reduced pressure on central infrastructure are intended system outcomes that require measurement.
