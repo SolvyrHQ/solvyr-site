@@ -4,14 +4,16 @@ Use this checklist before shipping future Solvyr website changes.
 
 ## Positioning
 
+Revision reviewed locally on 2026-11-06; Jan subsequently authorized the live update with document intake directly in the main navigation.
+
 - [ ] `docs/website_messaging_guide.md` was read before editing.
 - [ ] `docs/website_manager_agent.md` was followed for judgement/approval thresholds.
-- [ ] Corporate first screen leads with `Reliable AI work. Running where customers choose.` and immediately states that the partner keeps the customer and workflow while Solvyr runs the AI work underneath and returns the agreed result.
+- [ ] Corporate first screen leads with document processing and a concrete sample-led test of output quality and processing costs; partner ownership is clear once.
 - [ ] Fast Corpus first screen still leads with document/text backlog to AI-ready output; public-data pages still lead with an export to a reviewable quality report.
 - [ ] The page names the concrete output: JSONL, chunks, embeddings, stable IDs, run report, or issue list/suggested fixes/caveats for public-data quality runs.
 - [ ] The public four-record .gitignore sample is framed positively as exact text-to-vector output evidence with stable IDs, validation, complete vectors and a usable joined artifact; fuller non-claims stay in the agent packet and claim register.
 - [ ] The public sample download exposes pinned CC0 .gitignore source snapshots, the source license, usable text-plus-vector records, projected returned items, complete vectors, and customer-relevant IDs/status/error/model fields, but no private artifact hashes, internal identifiers, or node/GPU/provider/per-record telemetry.
-- [ ] Corporate header tagline stays `Reliable AI work, running where customers choose` / `Betrouwbaar AI-werk, uitgevoerd waar klanten kiezen`; dedicated Fast Corpus routes may retain their Fast Corpus taglines.
+- [ ] Corporate header tagline stays `AI document processing` / `AI-documentverwerking`; Fast Corpus retains its route tagline.
 - [ ] Cost is framed as a predictable scoped run or cost-per-result, not as a footnote.
 - [ ] Infrastructure appears as support, not the headline.
 - [ ] The About-page expansion story moves from a proven bounded workload to reusable execution capabilities without implying a broad platform is already available.
@@ -19,13 +21,13 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Every customer and partner remains anonymous on public and agent-readable surfaces unless Jan explicitly approved that exact name, logo, quote, case study, or identifying reference for that exact public use; `Promentum` and `Uniconta` remain blocked.
 - [ ] Research direction is framed as active work, not as formal verification, certification, or support for arbitrary sensitive workloads.
 - [ ] Execution-pool language is supply-neutral and based on explicit node eligibility; household machines do not define the company.
-- [ ] The broader vision appears only after the immediate Fast Corpus offer and proof, and Fast Corpus remains clear as the current wedge.
+- [ ] The execution-network vision supports the document-first customer entry; Fast Corpus remains a distinct demonstrated corpus route.
 - [ ] Europe is described as the first proving ground, not the geographic ceiling.
 - [ ] Environmental, utilization, resilience, and energy-aware scheduling language is labeled as intended and measurement-dependent.
 - [ ] The site does not claim current electricity, water, emissions, data-centre construction, certified-sovereignty, or data-centre-GPU efficiency outcomes.
 - [ ] EUR 0.95 appears only on the Fast Corpus route and related Fast Corpus materials, described as a starting processing rate for standard clean batches; it does not appear on the corporate homepage.
-- [ ] Predictable price per accepted result is presented as a shadow-metered hypothesis, not a published or measured price.
-- [ ] Customer-local execution is presented as a deployment direction, not current broad availability.
+- [ ] Lower total cost is an ambition tested per task at the required quality, including review/correction/operating effort; no universal saving is claimed.
+- [ ] Own hardware and specific placement are assessed per task; own hardware is optional and no universal placement availability is implied.
 - [ ] Solvyr is classified at company level as an AI execution layer and supported result layer; Fast Corpus is classified as the managed corpus service route.
 - [ ] The build-versus-buy comparison is clear: customers receive completed corpus output without provisioning workers, operating queues, or assembling the pipeline.
 - [ ] AI-team entry cues emphasize output, price, and proof; archive/public-sector cues add execution control to the same bounded workload.
@@ -34,21 +36,21 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Security frames European context as explicit pilot boundaries, not as a blanket compliance or confidentiality claim.
 - [ ] API/CLI language, if present, supports integration or handoff rather than becoming the public CTA.
 - [ ] CTAs describe the work or decision, not generic platform access.
-- [ ] The header keeps acquisition and product evidence distinct: `Example run` / `Voorbeeldrun` opens the real public sample, while `Scope a run` / `Run afbakenen` opens pilot intake.
+- [ ] The header keeps `Example run` / `Voorbeeldrun` on the real sample and `Discuss a test` / `Bespreek een test` on the existing intake destination.
 - [ ] No dashboard, client-access, or sign-in label implies an authenticated or self-service surface that does not exist.
 - [ ] `hello@solvyr.com` remains visibly available as the direct human contact while the workload-specific CTA stays primary.
 - [ ] Mailto links, prepared pilot emails, conversion matching, metadata, footer copy, and agent-readable files use the same current contact address; no retired public address remains.
 - [ ] The homepage hero has no secondary CTA that merely jumps to proof already immediately visible below it.
 - [ ] Every `use-cases/*.html` page has first-screen hero buttons: workload-specific scope CTA plus a human-facing proof, sample, or supporting context link.
-- [ ] Decision-relevant fit exclusions remain honest and appear once on the appropriate Fit or Security surface rather than as repeated negative lists.
+- [ ] Scans, layouts, extraction, matching and enrichment are tasks to agree, not blanket rejections; price and actual data-handling requirements remain clear.
 - [ ] Product-page header navigation stays stable, including the `Use cases` / `Toepassingen` dropdown; do not invent contextual top-right nav per page.
-- [ ] The `Product` dropdown preserves `Fast Corpus`, `Fit`, and `Output` in both languages.
+- [ ] `Document intake` / `Documentintake` appears once as the first direct main-navigation link; `Product` preserves `Fast Corpus`, `Fit`, and `Output`.
 - [ ] Existing primary nav routes, especially `Fit` and `Security`, remain reachable unless explicitly approved.
-- [ ] The active corporate homepage follows the hierarchy: customer result, plain-language workflow, demonstrated-versus-intended compute mechanism, builder advantage, then trust/economics.
-- [ ] The corporate homepage stays near the seven-section decision path: hero, one result flow, flexible compute, combined audience/ownership, first ERP route, combined proof/trust, and closing CTA.
-- [ ] The flexible-compute section says the result stays stable while approved compute can change, puts demand before supply, and distinguishes current, next, and overflow capacity routes.
-- [ ] The flexible-compute visual converges those routes through the Solvyr execution layer into a workflow-ready result; current and later routes remain visually distinct.
-- [ ] `Discuss a workflow` remains primary; the lower capacity CTA explains execution instead of soliciting an organizational GPU pool.
+- [ ] The corporate homepage follows the document-first path: task, output, sample test, quality/cost review, processing requirements and next action.
+- [ ] The local corporate homepage has five concise sections; the removed capacity-source diagram and internal commercial milestones do not reappear.
+- [ ] Processing location is expressed as a task requirement and agreement; detailed execution strategy remains on About and in agent context.
+- [ ] The document-task illustration is labelled as an example, with no implied measured extraction or enrichment result.
+- [ ] `Discuss a document test` / `Bespreek een documenttest` remains primary; capacity acquisition is not a customer CTA.
 - [ ] Homepage copy uses buyer language; internal terms such as bounded execution, typed delivery, exception classification, shadow metering, and policy-aware placement stay on the relevant detailed routes unless essential.
 - [ ] The active homepage avoids repeating the same price, category, vision, sovereignty, or buyer-entry point when a dedicated route already carries it.
 - [ ] Supported claims are stated positively; necessary caveats appear once in the relevant proof, fit, price, security, or legal context rather than as repeated defensive disclaimers.
@@ -56,7 +58,7 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Measured multi-worker bars are directly labelled, proportional to the published elapsed times, and the green result band contains verified evidence only; internal run identifiers stay out of public copy.
 - [ ] The Security trust-zone visual preserves the current bounded controls, encrypted external path, plaintext scheduler/worker processing boundary and later narrowing path without implying present confidential computing or attestation.
 - [ ] The homepage has no hidden execution-model content; deeper execution context stays on the About execution section.
-- [ ] Use-case dropdown links stay parallel in English and Dutch.
+- [ ] Use-case dropdown links stay parallel in English and Dutch; document intake is the direct main-navigation link and is not repeated in either dropdown.
 - [ ] Footer links stay stable by language; do not randomly drop `About`/`Over`, `Connectors`, legal/privacy, `hello@solvyr.com`, or agent-readable links.
 - [ ] If agent-readable footer links are visually grouped, their literal links and machine-discovery signals remain intact.
 
@@ -73,7 +75,7 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Language-specific CTAs stay in the same language or clearly label a language switch.
 - [ ] Dutch pages link to Dutch counterparts when those counterparts exist.
 - [ ] Pages with translated counterparts keep the EN/NL language switch visible.
-- [ ] Use-case pages still point to a bounded backlog/corpus problem.
+- [ ] Use cases retain distinct tasks: document intake/enrichment, corpus preparation, re-indexing and public-data checks.
 - [ ] Public-data use-case pages still point to recurring batch checks over public/test metadata exports, not generic metadata validation infrastructure.
 - [ ] `about.html` and `connectors.html` reinforce workload-first positioning.
 - [ ] If public routes, metadata, canonicals, hreflang, `robots.txt`, or `sitemap.xml` changed, run the indexability audit.
@@ -91,7 +93,10 @@ Use this checklist before shipping future Solvyr website changes.
 
 ## Verification
 
-- [ ] JSON files parse.
+- [ ] JSON and YAML files parse.
+- [ ] Every prior route and link destination is preserved; redirects, canonicals, language links and sitemap entries are unchanged.
+- [ ] Minimal intake works without opening optional details; enrichment is available as a task.
+- [ ] Prepared email body omits empty optional fields and keeps each value on one physical line.
 - [ ] `git diff --check` passes.
 - [ ] Homepage renders without horizontal overflow on a narrow viewport.
 - [ ] On a narrow viewport, the active primary-nav tab scrolls into view and the open use-case menu does not leave clipped sibling tabs visible.
@@ -109,7 +114,7 @@ Use this checklist before shipping future Solvyr website changes.
 - [ ] Structured data, performance/PageSpeed, or Search Console checks were run if this change made them relevant.
 - [ ] Public contact links remain inside Cloudflare `email_off` guards so the edge does not rewrite them into crawlable `/cdn-cgi/l/email-protection` URLs.
 - [ ] `node scripts/audit-nav-footer.mjs` passes.
-- [ ] No stray local server is left running after verification.
+- [ ] Stop the verification server; for a requested local review, open the file preview and provide a reproducible local-server command.
 
 ## Final Read
 
@@ -117,7 +122,7 @@ Read the first viewport as if you are a busy buyer.
 
 The corporate homepage should say, in effect:
 
-> Keep the customer and workflow. Solvyr returns reliable AI work across approved compute.
+> Bring example documents and a task. Test quality and processing costs, then decide.
 
 The Fast Corpus route should still say, in effect:
 

@@ -8,6 +8,16 @@ coherent, discoverable, safe to edit, and aligned with the current offer.
 
 ## Mission
 
+Current local brief, Jan 2026-11-06: lead with document intake and a sample-led
+quality/cost test. Confidently include classification, extraction, matching and
+enrichment as work to scope and build. Lower cost is the ambition to prove;
+location and own hardware are task-specific agreements. Own hardware is
+optional. Reduce duplication, capacity diagrams and defensive exclusions,
+while preserving all existing routes, link destinations, measured proof,
+price scope and concrete data-handling content. Jan authorized publication after local review. Document intake is the
+primary offer and the first direct main-navigation link in both languages;
+it is not duplicated inside Product or Use cases dropdowns.
+
 - Preserve the corporate ownership message: ERP and document-workflow builders
   keep the customer and workflow while Solvyr owns bounded AI execution,
   validation, exceptions, and typed result delivery.
@@ -24,9 +34,8 @@ coherent, discoverable, safe to edit, and aligned with the current offer.
 - Keep EU sovereignty and European execution visible for archives, public-sector
   teams, and connectors, while anchoring it in a concrete document or
   public-data workload.
-- Keep the corporate header descriptor consistent: `Reliable AI work, running
-  where customers choose` in English and `Betrouwbaar AI-werk, uitgevoerd waar
-  klanten kiezen` in Dutch. The dedicated Fast Corpus routes may retain their
+- Keep the corporate header descriptor consistent: `AI document processing`
+  in English and `AI-documentverwerking` in Dutch. The dedicated Fast Corpus routes may retain their
   product taglines.
 - Keep capacity demand-led: Solvyr-controlled workers today, approved customer
   or partner capacity next, and European-provider overflow behind real workload

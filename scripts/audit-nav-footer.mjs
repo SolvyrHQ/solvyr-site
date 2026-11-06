@@ -6,21 +6,21 @@ const repoRoot = dirname(dirname(fileURLToPath(import.meta.url)));
 
 const expected = {
   en: {
-    nav: ["Product", "Use cases", "Proof", "Security", "Example run", "Scope a run"],
+    nav: ["Document intake", "Product", "Use cases", "Proof", "Security", "Example run", "Discuss a test"],
     product: ["Fast Corpus", "Fit", "Output"],
     productHrefIncludes: {
       "Fast Corpus": "#overview",
       Fit: "#who",
       Output: "#deliver",
     },
-    useCases: ["PDF to RAG corpus", "Document re-indexing", "Public-data quality runs", "Document intake"],
+    useCases: ["PDF to RAG corpus", "Document re-indexing", "Public-data quality runs"],
     useCaseHrefIncludes: {
       "PDF to RAG corpus": "use-cases/pdf-to-rag-corpus.html",
       "Document re-indexing": "use-cases/document-reindexing.html",
       "Public-data quality runs": "use-cases/public-data-quality.html",
       "Document intake": "use-cases/document-intake.html",
     },
-    footer: ["About", "Connectors", "Privacy", "Legal", "llms.txt", "AI brief", "Pricing YAML", "hello@solvyr.com", "Pilot intake"],
+    footer: ["About", "Connectors", "Privacy", "Legal", "llms.txt", "AI brief", "Pricing YAML", "hello@solvyr.com", "Discuss a test"],
     footerHrefIncludes: {
       About: "about.html",
       Connectors: "connectors.html",
@@ -30,25 +30,25 @@ const expected = {
       "AI brief": "ai/fast-corpus.md",
       "Pricing YAML": "pricing.yaml",
       "hello@solvyr.com": "mailto:hello@solvyr.com",
-      "Pilot intake": "pilot-intake.html",
+      "Discuss a test": "pilot-intake.html",
     },
   },
   nl: {
-    nav: ["Product", "Toepassingen", "Proefrun", "Security", "Voorbeeldrun", "Run afbakenen"],
+    nav: ["Documentintake", "Product", "Toepassingen", "Proefrun", "Security", "Voorbeeldrun", "Bespreek een test"],
     product: ["Fast Corpus", "Fit", "Output"],
     productHrefIncludes: {
       "Fast Corpus": "#overview",
       Fit: "#who",
       Output: "#deliver",
     },
-    useCases: ["PDF naar RAG-corpus", "Documenten herindexeren", "Publieke datakwaliteit", "Documentintake"],
+    useCases: ["PDF naar RAG-corpus", "Documenten herindexeren", "Publieke datakwaliteit"],
     useCaseHrefIncludes: {
       "PDF naar RAG-corpus": "use-cases/pdf-to-rag-corpus-nl.html",
       "Documenten herindexeren": "use-cases/document-reindexing-nl.html",
       "Publieke datakwaliteit": "use-cases/public-data-quality-nl.html",
       Documentintake: "use-cases/document-intake-nl.html",
     },
-    footer: ["Over", "Connectors", "Privacy", "Juridisch", "llms.txt", "AI brief", "Pricing YAML", "hello@solvyr.com", "Pilot intake"],
+    footer: ["Over", "Connectors", "Privacy", "Juridisch", "llms.txt", "AI brief", "Pricing YAML", "hello@solvyr.com", "Test bespreken"],
     footerHrefIncludes: {
       Over: "about-nl.html",
       Connectors: "connectors-nl.html",
@@ -58,7 +58,7 @@ const expected = {
       "AI brief": "ai/fast-corpus.md",
       "Pricing YAML": "pricing.yaml",
       "hello@solvyr.com": "mailto:hello@solvyr.com",
-      "Pilot intake": "pilot-intake-nl.html",
+      "Test bespreken": "pilot-intake-nl.html",
     },
   },
 };
@@ -137,6 +137,12 @@ for (const file of walk(repoRoot).sort()) {
   } else {
     const result = compare(relPath, "nav", primaryNavLabels(nav[0]), expected[lang].nav);
     if (result) failures.push(result);
+    const documentLinks = links(nav[0]).filter((link) => /use-cases\/document-intake(?:-nl)?\.html$/.test(link.href));
+    const documentLabel = lang === "nl" ? "Documentintake" : "Document intake";
+    const documentHref = `/use-cases/document-intake${lang === "nl" ? "-nl" : ""}.html`;
+    if (documentLinks.length !== 1 || documentLinks[0]?.label !== documentLabel || documentLinks[0]?.href !== documentHref || !/class="tab navDocument/.test(nav[0])) {
+      failures.push(`${relPath} nav: document intake must appear once as the direct primary-product link`);
+    }
     const productLinks = links(dropdownFragment(nav[0], "navProduct"));
     const productResult = compare(relPath, "product dropdown", productLinks.map((link) => link.label), expected[lang].product);
     if (productResult) failures.push(productResult);
@@ -186,7 +192,7 @@ for (const file of walk(repoRoot).sort()) {
     } else {
       const heroLinks = links(hero[0]);
       const hasPrimaryScopeCta = heroLinks.some(
-        (link) => link.href.includes("pilot-intake") && /\bScope\b/.test(link.label)
+        (link) => link.href.includes("pilot-intake") && /\b(?:Discuss|Bespreek)\b/.test(link.label)
       );
       const hasSecondaryCta = heroLinks.length >= 2;
       if (!hasPrimaryScopeCta) {

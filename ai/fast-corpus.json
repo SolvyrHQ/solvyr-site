@@ -1,9 +1,9 @@
 {
   "company_positioning": {
     "category": "AI execution layer for bounded asynchronous work",
-    "primary_audience": "European ERP and document-workflow integrators with a repeated delay-tolerant document step across customers",
-    "promise": "Reliable AI work. Running where customers choose.",
-    "partner_message": "Partners keep the customer and workflow. Solvyr runs the AI work underneath, handles failures, and returns the result in the agreed form.",
+    "primary_audience": "Software companies, integrators and organisations with document work to improve",
+    "promise": "AI document processing. Clarity on quality and cost.",
+    "partner_message": "You keep the customer and workflow. Solvyr handles the agreed AI processing.",
     "capacity_principle": "Workload demand comes before capacity expansion; the result contract stays stable as approved compute changes underneath.",
     "first_route": "Document intake before downstream ERP or operations workflows",
     "worker_mechanism": "Lightweight workers pull bounded tasks from the scheduler, execute them locally, and return status and results.",
@@ -14,8 +14,8 @@
       "explicitly approved customer and partner machines",
       "European GPU providers for overflow and workload-specific capacity"
     ],
-    "pricing_boundary": "Predictable price per accepted result is a shadow-metered commercial hypothesis, not a published or measured price.",
-    "deployment_boundary": "Customer-local execution is a later deployment direction, not current broad availability.",
+    "pricing_boundary": "Lower total cost is the aim, assessed per task at the required quality, including human review and operating effort.",
+    "deployment_boundary": "Managed execution is the starting point. Customer hardware and specific placement are assessed and agreed for each task; they are not universal current availability claims.",
     "homepage": "https://solvyr.com/",
     "proof": "https://solvyr.com/proof.html",
     "security": "https://solvyr.com/security.html"
@@ -48,7 +48,7 @@
   "broader_system": "Controlled distributed execution for async AI workloads with central scheduling, bounded tasks, retries, visible outcomes, and completed work rather than raw capacity rental.",
   "vision": "Build a European AI execution network that grows approved compute behind real workload demand.",
   "mission": "Make a schedulable portion of distributed hardware dependable for suitable AI work through controlled, inspectable execution.",
-  "current_wedge": "Fast Corpus is the first bounded workload and remains a route and fallback acquisition wedge, not the full company story or long-term economic model.",
+  "current_wedge": "Document intake is the current customer entry; Fast Corpus remains the dedicated document-to-corpus offer and demonstrated processing path.",
   "route_url": "https://solvyr.com/fast-corpus.html",
   "geographic_direction": "Europe is the first proving ground for explicit location, ownership, policy, and evidence, not the geographic ceiling.",
   "vision_claim_boundary": "Better hardware utilization, resilience, energy-aware scheduling, and reduced pressure on central infrastructure are intended outcomes that require measurement. Current proof does not demonstrate lower electricity or water use, lower emissions, less data-centre construction, certified sovereignty, or greater efficiency than data-centre GPUs. Distributed execution is not automatically more efficient.",
@@ -101,8 +101,6 @@
     "chat serving",
     "generic GPU rental",
     "unmanaged distributed compute marketplace usage",
-    "OCR-heavy scans unless scoped separately",
-    "custom structured extraction in the current trial",
     "highly sensitive data without prior agreement",
     "mature enterprise SLA requirements"
   ],
@@ -134,7 +132,8 @@
     "public-data quality runs",
     "sensitive-data workflows",
     "unusual formats",
-    "recurring refreshes"
+    "recurring refreshes",
+    "custom structured extraction and document matching"
   ],
   "access": {
     "model": "manual_approval",
@@ -165,7 +164,11 @@
     "scope": "Tiny public plain-text run with a usable text-and-embedding corpus over three familiar .gitignore templates",
     "run_date": "2026-08-24",
     "documents": 3,
-    "source_documents": ["GitHub Python.gitignore", "GitHub Node.gitignore", "GitHub VisualStudio.gitignore"],
+    "source_documents": [
+      "GitHub Python.gitignore",
+      "GitHub Node.gitignore",
+      "GitHub VisualStudio.gitignore"
+    ],
     "source_commit": "57286c3887203259752b747db94e6c3ad10ec53d",
     "source_license": "CC0-1.0",
     "prepared_chunks": 4,
@@ -218,13 +221,13 @@
     "download": "https://solvyr.com/downloads/solvyr-fast-corpus-gitignore-sample-2026-08-24.zip"
   },
   "direct_answers": {
-    "what_is_solvyr": "A supported AI result layer for bounded asynchronous work. Partners keep the customer and workflow while Solvyr handles execution, validation, exceptions, and typed result delivery.",
+    "what_is_solvyr": "AI document processing and a supported AI result layer. Start with example documents and a task, test quality and processing costs, then agree the next step. Partners keep the customer and workflow.",
     "is_solvyr_a_gpu_provider": "No. Customers buy supported, checked results; controlled distributed execution is Solvyr's delivery engine rather than a raw GPU offer.",
     "is_solvyr_an_orchestration_layer": "Solvyr builds an AI execution layer, but does not sell generic compute orchestration. The buyer receives a supported, checked result rather than a scheduler, container platform, or GPU-hour.",
-    "what_is_fast_corpus": "The managed document-to-corpus route for bounded PDF and text backlogs; it is the first commercial route, not the whole company.",
+    "what_is_fast_corpus": "The managed document-to-corpus route for digital PDF and text backlogs, with its own standard-processing starting rate.",
     "what_fast_corpus_delivers": "Extracted text, AI-ready JSONL, chunks, embeddings, stable IDs, caveats, and an inspectable run report.",
-    "how_to_start": "Discuss one repeated, delay-tolerant workflow and define a bounded representative sample and expected result.",
-    "how_to_start_fast_corpus": "Submit a bounded backlog and output target, then use a representative non-sensitive sample for a capped pilot run."
+    "how_to_start": "Describe your documents and intended result. Agree representative examples, then assess quality, human review and processing costs.",
+    "how_to_start_fast_corpus": "Describe the corpus you need, then test representative examples before agreeing a batch or recurring refresh."
   },
   "contact_email": "hello@solvyr.com",
   "founder_linkedin": "https://nl.linkedin.com/in/janwoutervandalen",
@@ -250,5 +253,21 @@
     "https://solvyr.com/sample-output.html"
   ],
   "capabilities": "https://solvyr.com/capabilities.yaml",
-  "pricing": "https://solvyr.com/pricing.yaml"
+  "pricing": "https://solvyr.com/pricing.yaml",
+  "document_intake": {
+    "offer": "Bring example documents and the intended task; test output quality and processing costs before agreeing recurring use.",
+    "tasks_to_scope": [
+      "document classification and routing",
+      "field and line-item extraction",
+      "validation and review flags",
+      "matching to customer records or catalogues",
+      "enrichment using agreed sources"
+    ],
+    "delivery": "Agreed fields and source references, with items requiring review made clear; the customer or workflow partner keeps approvals and downstream actions.",
+    "capability_boundary": "These are tasks Solvyr undertakes to investigate and build into the agreed route. Quality, formats, integrations and deployment are established on the representative sample; published corpus benchmarks remain evidence for their measured paths.",
+    "comparison": "Compare at equivalent useful quality, including human checking, correction and operating costs.",
+    "starting_action": "Discuss a document test",
+    "route": "https://solvyr.com/use-cases/document-intake.html",
+    "contact": "https://solvyr.com/pilot-intake.html#intent=document-intake&source=agent-packet"
+  }
 }

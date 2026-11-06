@@ -31,3 +31,9 @@ notes:
   - Final scope depends on input quality, sensitivity, output requirements, and recurrence.
   - Controlled trial access is manually approved.
 contact: https://solvyr.com/pilot-intake.html#intent=fast-corpus&source=pricing-yaml
+
+document_intake:
+  price: Agreed after reviewing the task and representative examples.
+  tasks: Classification, extraction, matching, validation and enrichment using agreed sources.
+  comparison: Lower total cost is an ambition tested per task at equivalent useful quality, including human review and operating effort.
+  relation_to_starting_rate: The Fast Corpus starting rate above covers its standard clean corpus processing only.

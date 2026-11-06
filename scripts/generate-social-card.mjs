@@ -45,19 +45,19 @@ const cards = [
   {
     file: "solvyr-social-card.png",
     lines: [
-      "Ship reliable AI document workflows.",
-      "Keep the customer and workflow.",
-      "Solvyr handles execution, validation and exceptions.",
-      "Checked results in the format your system needs."
+      "AI document processing.",
+      "Clarity on quality and cost.",
+      "Bring example documents and the task you need.",
+      "Test the output. Understand the processing cost."
     ]
   },
   {
     file: "solvyr-social-card-nl.png",
     lines: [
-      "Betrouwbare AI-documentroutes.",
-      "Behoud klant en workflow.",
-      "Solvyr verzorgt uitvoering, validatie en uitzonderingen.",
-      "Gecontroleerde resultaten in het benodigde formaat."
+      "AI-documentverwerking.",
+      "Grip op kwaliteit en kosten.",
+      "Breng voorbeelddocumenten en de gewenste taak.",
+      "Test de output. Krijg inzicht in de verwerkingskosten."
     ]
   }
 ];

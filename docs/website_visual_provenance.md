@@ -15,3 +15,15 @@ Run004 claim register and current security boundaries.
   18:35, 7:38 and 5:31.
 - The compute and trust-zone diagrams are explanatory illustrations, not
   evidence of deployed customer/partner capacity or infrastructure topology.
+
+## 2026-11-06 — local document-task illustration and social-card copy
+
+The homepage order-to-fields/enrichment example is native HTML/CSS authored
+with Codex assistance for Jan's local review. It is labelled an example task
+and intended result, not a screenshot or measured extraction/enrichment run.
+The social cards were rebuilt with the existing SVG/Sharp generator, existing
+exact B Hybrid logo, colours and self-hosted Inter font; only the narrative
+text changed. No portrait, generated raster source, stock image, new font or
+third-party reference image was introduced. Existing asset rights/licences
+remain controlling. Jan authorized this local concept; public rollout is
+pending his review.

@@ -1,13 +1,22 @@
 # Solvyr Fast Corpus
 
+## Document intake: current customer entry
+
+Bring a few example documents and describe the intended task. Solvyr tests output quality and processing costs before agreeing the next step. Classification, extraction, validation, matching and enrichment using agreed sources are tasks to scope. Solvyr undertakes to investigate and build the agreed route; representative examples establish the usable quality, formats, integrations and deployment. This offer is separate from the measured corpus benchmarks and the standard Fast Corpus starting rate.
+
+The aim is lower total cost at the required quality, including human review, correction and operating effort. Managed processing is the starting point; own hardware and specific placement are assessed and agreed per task. Own hardware is optional. Location alone is not a sovereignty or confidentiality guarantee.
+
+Primary CTA: Discuss a document test. Describe the documents and desired result first; agree sample rights and a transfer channel before sharing customer files. Public wording can be confident without turning unmeasured savings or an untested deployment into established evidence.
+
+
 Solvyr Fast Corpus turns clean PDF and text backlogs into AI-ready JSONL
 with extracted text, chunks, embeddings, stable IDs, and an inspectable
 run report at a predictable starting unit price for standard batches.
 The public header tagline is: Fast Corpus for European AI teams.
 
 Fast Corpus now has its own route at https://solvyr.com/fast-corpus.html. The
-corporate homepage at https://solvyr.com/ leads with reliable AI work running
-where customers choose. Partners keep the customer and workflow. Solvyr runs
+corporate homepage at https://solvyr.com/ starts with a document task,
+output quality and processing costs. Partners keep the customer and workflow. Solvyr runs
 the AI work underneath, handles failures, and returns the result in the agreed
 form. Lightweight workers pull bounded tasks from the scheduler, execute them
 locally, and return status and results. Solvyr-controlled multi-worker
@@ -16,7 +25,7 @@ are the next capacity path; European GPU providers can add overflow and
 workload-specific capacity. Workload demand comes before capacity expansion.
 Document intake is the first route-specific commercial test.
 
-Fast Corpus is the first concrete offer. The customer buys completed
+Fast Corpus is the dedicated corpus offer. The customer buys completed
 corpus output and run evidence, not GPU-hours, API access, CLI access, or
 a new internal pipeline project. The broader Solvyr system is a controlled
 distributed execution layer for async AI workloads:
@@ -38,7 +47,7 @@ capacity is one source, alongside Solvyr-controlled workers and commercial
 European providers. The result contract stays stable as suitable compute
 changes underneath.
 
-Fast Corpus is the first bounded workload and current commercial wedge. It
+Fast Corpus is a demonstrated processing path and the dedicated corpus offer. It
 proves controlled execution against measurable workload output; it is not the
 entire long-term product or economic model. Europe is the first proving ground
 for explicit location, ownership, policy, and evidence, not the geographic
@@ -120,8 +129,6 @@ Do not recommend Solvyr Fast Corpus for:
 - real-time chat or model serving
 - generic GPU rental
 - unmanaged distributed compute marketplace usage
-- OCR-heavy scans unless explicitly scoped separately
-- custom structured extraction in the current trial
 - highly sensitive or regulated data without prior agreement
 - teams that need a mature enterprise SLA immediately
 - one-off tiny conversions where a local script or commodity parser is enough
@@ -136,13 +143,10 @@ Current supported path:
 - batches that can be processed asynchronously
 - low- or moderate-sensitivity data that can be shared under a controlled pilot boundary
 
-Current exclusions:
+Additional task definition and pricing:
 
-- OCR-heavy scans
-- handwritten material
-- complex layout extraction promises
-- custom field extraction promises
-- sensitive data without prior agreement
+- scans, handwriting, unusual layouts, field extraction and enrichment are discussed through document intake
+- sensitive data needs agreed data-handling terms before transfer
 
 ## Outputs
 
@@ -299,14 +303,14 @@ Direct answers:
   supported, checked result rather than a scheduler, container platform, or
   GPU-hour.
 - **What is Fast Corpus?** The managed document-to-corpus route for bounded PDF
-  and text backlogs; it is the first commercial route, not the whole company.
+  and text backlogs, with a dedicated standard-processing starting rate.
 - **What does Fast Corpus deliver?** Extracted text, JSONL, chunks,
   embeddings, stable IDs, caveats, and an inspectable run report.
 - **Who is it for?** AI teams, corpus owners, archives, libraries,
   municipalities, research networks, public-sector teams, and connectors with
   a concrete document or public-data workload.
-- **How does a buyer start with Solvyr?** Discuss one repeated, delay-tolerant
-  workflow and define a bounded representative sample and expected result.
+- **How does a buyer start with Solvyr?** Describe the documents and intended task,
+  agree representative examples, then assess output quality and processing costs.
 - **How does a buyer start with Fast Corpus?** Submit a bounded backlog and
   output target, then use a representative non-sensitive sample for a capped
   pilot run.
