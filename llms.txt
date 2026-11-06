@@ -25,6 +25,7 @@ Canonical classification:
 - Current availability: controlled, manually approved pilots rather than open self-serve access.
 
 Corporate front door:
+- Fixed header descriptor on every public page, including Fast Corpus: AI document processing (English) / AI-documentverwerking (Dutch).
 - Hero: AI document processing. Clarity on quality and cost.
 - Primary audience: software companies, integrators and organisations with document work to improve.
 - First route: bounded document intake that returns accepted, rejected, or review-required results before downstream ERP or operations workflows.
@@ -36,7 +37,9 @@ Corporate front door:
 
 Fast Corpus route:
 - Solvyr Fast Corpus
-- Header tagline: Fast Corpus for European AI teams
+- Hero: Your documents, ready for RAG and search. / Je documenten, klaar voor RAG en zoektoepassingen.
+- Solvyr handles document processing and returns corpus files, source references and a run report, so the customer's team can focus on its application
+- European sovereignty is made concrete for each corpus test through agreements on processing and storage location, access, retention and deletion
 - Clean PDF or text backlogs to AI-ready JSONL
 - Outputs include extracted text, chunks, embeddings, stable IDs, and a run report
 - Customers buy completed corpus output and run evidence, not GPU-hours

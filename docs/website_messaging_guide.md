@@ -128,13 +128,23 @@ matching or enrichment.
 
 ## Fast Corpus Route Positioning
 
-Solvyr Fast Corpus turns bounded document and text backlogs into accepted
-AI-ready corpus outputs.
+Solvyr Fast Corpus makes documents ready for RAG and search. Solvyr handles
+the corpus processing and returns files, source references and a run report,
+so the customer's team can focus on its application.
+
+Jan approved this bilingual first-screen message on 2026-11-06:
+
+- English: `Your documents, ready for RAG and search.`
+- Dutch: `Je documenten, klaar voor RAG en zoektoepassingen.`
+
+Explain the managed-service benefit in the introduction. Keep chunks,
+embeddings, JSONL and stable source IDs under Output, rather than stacking
+technical terms in the hero. Keep the existing corpus-test CTA and price scope.
 
 Current Fast Corpus route:
 
 - Solvyr Fast Corpus
-- Route header tagline: `Fast Corpus for European AI teams`
+- Fixed company header descriptor, shared with every public page
 - Clean PDF or text backlogs to AI-ready JSONL
 - Outputs: extracted text, chunks, embeddings, stable IDs, run report
 - Controlled async pilot, not open self-serve
@@ -255,6 +265,13 @@ Use the existing text blocks and preserve the shared navigation geometry.
 This is an owned development direction and task-specific operating agreement,
 not a universal deployment, residency or compliance guarantee.
 
+Fast Corpus also names `European sovereignty` / `Europese soevereiniteit`
+explicitly in its existing security section. Connect the European AI
+execution-layer direction to the corpus test: agree processing and storage
+location, access, retention and deletion up front. Preserve the concrete
+logging, temporary-file and redaction details and the Security link. Keep this
+context in the page body, separate from the fixed line under the logo.
+
 European execution and sovereignty should be visible for archives, libraries,
 municipalities, public-sector teams, research networks, and EU/NL connectors.
 Keep it attached to a real workload.
@@ -305,17 +322,19 @@ partner-controlled, and customer-controlled workers are possible pool classes,
 but partner/customer workers remain later and explicitly approved—not current
 broad availability.
 
-In the corporate header, keep the adopted descriptor short:
+## Fixed Header Descriptor
+
+Jan fixed the line under the logo for the entire public website on 2026-11-06.
+Use these exact localized descriptors on every page, including Fast Corpus:
 
 - English: `AI document processing`
 - Dutch: `AI-documentverwerking`
 
-The dedicated Fast Corpus route may retain:
-
-- English: `Fast Corpus for European AI teams`
-- Dutch: `Fast Corpus voor Europese AI-teams`
-
-Do not expand the tagline into a long sovereignty or public-sector sentence.
+There are no product-, audience-, campaign- or route-specific exceptions.
+Product names and promises belong in the page body. European sovereignty
+belongs beside the workload and data-handling agreements. Do not rewrite,
+expand or replace the descriptor without Jan's explicit direction. The
+production-preferences audit checks every public page and the agent packet.
 
 ## Security And European Context
 

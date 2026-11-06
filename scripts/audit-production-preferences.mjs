@@ -72,6 +72,9 @@ for (const [homepage, expected] of Object.entries(homepageExpectations)) {
 }
 
 const agentPacket = JSON.parse(readFileSync(join(repoRoot, "ai/fast-corpus.json"), "utf8"));
+if (agentPacket.header_tagline !== "AI document processing" || agentPacket.header_tagline_nl !== "AI-documentverwerking") {
+  failures.push("ai/fast-corpus.json: header descriptors must match the fixed English and Dutch site-wide wording");
+}
 if (agentPacket.company_positioning?.category !== "AI execution layer for bounded asynchronous work") {
   failures.push("ai/fast-corpus.json: company context must describe the company-level AI execution layer");
 }
@@ -102,6 +105,9 @@ if (!capabilities.includes("category: AI execution layer for bounded asynchronou
 }
 if (!capabilities.includes("header_tagline: AI document processing")) {
   failures.push("capabilities.yaml: adopted corporate descriptor is missing or has drifted");
+}
+if (!capabilities.includes("header_tagline_nl: AI-documentverwerking")) {
+  failures.push("capabilities.yaml: fixed Dutch header descriptor is missing or has drifted");
 }
 if (!capabilities.includes("what_is_fast_corpus: The managed document-to-corpus route")) {
   failures.push("capabilities.yaml: Fast Corpus route classification is missing or has drifted");
@@ -144,6 +150,14 @@ for (const file of walk(repoRoot)) {
   // Standalone download-bundle viewers must also work after unzipping, where
   // root-relative site assets are unavailable.
   if (!relPath.startsWith("downloads/")) {
+    const header = source.match(/<header\b[\s\S]*?<\/header>/i)?.[0] || "";
+    const descriptor = /<html\b[^>]*\blang="nl(?:-[^"]*)?"/i.test(source)
+      ? "AI-documentverwerking"
+      : "AI document processing";
+    const tags = [...header.matchAll(/<div\b[^>]*\bclass="[^"]*\btag\b[^"]*"[^>]*>([\s\S]*?)<\/div>/gi)];
+    if (tags.length !== 1 || tags[0][1].trim() !== descriptor) {
+      failures.push(`${relPath}: header must use the fixed descriptor "${descriptor}" exactly once; page-specific taglines are not allowed`);
+    }
     if (!source.includes('href="/favicon.ico')) {
       failures.push(`${relPath}: page head does not use the approved favicon`);
     }

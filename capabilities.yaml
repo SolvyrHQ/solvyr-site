@@ -14,6 +14,7 @@ not_classified_as:
   - generic data platform
   - hosted RAG or search product
 header_tagline: AI document processing
+header_tagline_nl: AI-documentverwerking
 european_direction: Solvyr is building a European AI execution layer. Control is made concrete through workload-specific agreements on processing location, access and retention.
 summary: Bring example documents and a task. Test output quality and processing costs, then agree the next step. Partners keep the customer and workflow.
 positioning: Buyers delegate a supported result layer, not raw model calls, GPU-hours, arbitrary containers, or generic orchestration.
@@ -36,10 +37,12 @@ partner_route:
   pricing_boundary: Lower total cost is the aim, assessed per task at the required quality including human review and operating effort.
   deployment_boundary: Start with managed execution; assess and agree own hardware and specific placement for each task.
 fast_corpus_route: https://solvyr.com/fast-corpus.html
+fast_corpus_headline: Your documents, ready for RAG and search.
+fast_corpus_headline_nl: Je documenten, klaar voor RAG en zoektoepassingen.
 build_vs_buy_positioning: A team can build and operate its own extraction, chunking, embedding, queueing, retry, and reporting pipeline, or buy a completed Fast Corpus run. Solvyr customers do not provision workers, operate queues, or assemble the pipeline.
 cost_positioning: Cost-effective backlog processing with a scoped run, price per processed page, and a decision based on inspected output. The published starting unit covers standard clean processing; complete engagements also reflect validation, output, execution-boundary, and operational-responsibility requirements.
 api_cli_positioning: API/CLI language is integration or handoff context, not the primary public offer.
-european_sovereignty_positioning: European execution control and sovereignty are relevant for archives, public-sector teams, research networks, and EU/NL connectors when tied to a real document backlog and pilot decision.
+european_sovereignty_positioning: European sovereignty is made concrete for each corpus test through agreements on processing and storage location, access, retention and deletion. This supports archives, public-sector teams, research networks and EU/NL connectors with a real document workload.
 broader_system: Controlled distributed execution for async AI workloads with central scheduling, bounded tasks, retries, visible outcomes, and completed work rather than raw capacity rental.
 vision: Build a European AI execution network that grows approved compute behind real workload demand.
 capacity_principle: Workload demand comes before capacity expansion; the result contract stays stable as approved compute changes underneath.
