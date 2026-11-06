@@ -4,24 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Solvyr - Workload- en partnerroute-intake</title>
+    <title>Bespreek een documenttest - Solvyr</title>
     <meta
       name="description"
-      content="Beschrijf één terugkerende documentstap of afgebakende corpusworkload zodat Solvyr route-, resultaat-, security- en pilotfit kan beoordelen."
+      content="Beschrijf je documenten en het gewenste resultaat. Solvyr helpt een eerste test van kwaliteit en verwerkingskosten af te spreken."
     />
-    <meta property="og:title" content="Solvyr - Workload- en partnerroute-intake" />
+    <meta property="og:title" content="Bespreek een documenttest - Solvyr" />
     <meta
       property="og:description"
-      content="Bereid een compacte pilotaanvraag voor schone PDF/tekst naar AI-ready JSONL voor."
+      content="Beschrijf je documenten en het gewenste resultaat. Solvyr helpt een eerste test van kwaliteit en verwerkingskosten af te spreken."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://solvyr.com/pilot-intake-nl.html" />
     <meta property="og:image" content="https://solvyr.com/assets/brand/solvyr-social-card-nl.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Solvyr: Lever betrouwbare AI-documentroutes en behoud klant en workflow." />
+    <meta property="og:image:alt" content="Solvyr: AI-documentverwerking met grip op kwaliteit en kosten." />
     <meta name="twitter:image" content="https://solvyr.com/assets/brand/solvyr-social-card-nl.png" />
-    <meta name="twitter:image:alt" content="Solvyr: Lever betrouwbare AI-documentroutes en behoud klant en workflow." />
+    <meta name="twitter:image:alt" content="Solvyr: AI-documentverwerking met grip op kwaliteit en kosten." />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://solvyr.com/pilot-intake-nl.html" />
 
@@ -32,7 +32,7 @@
     <link rel="alternate" hreflang="nl" href="https://solvyr.com/pilot-intake-nl.html" />
     <link rel="alternate" hreflang="x-default" href="https://solvyr.com/pilot-intake.html" />
     <meta name="theme-color" content="#f7f9fc" />
-    <link rel="stylesheet" href="styles.css?v=20260823-1" />
+    <link rel="stylesheet" href="styles.css?v=20261106-2" />
       <script>
 (() => {
   const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
@@ -100,7 +100,7 @@
         <a class="brand" href="/nl.html" aria-label="Solvyr home">
           <div class="brandtext">
             <img class="brandLogo" src="/assets/brand/solvyr-logo-hybrid.svg" alt="Solvyr" width="175" height="35" />
-            <div class="tag">Betrouwbaar AI-werk, uitgevoerd waar klanten kiezen</div>
+            <div class="tag">AI-documentverwerking</div>
           </div>
         </a>
 
@@ -110,6 +110,7 @@
             <a class="lang active" href="pilot-intake-nl.html" aria-label="Nederlandse versie"><span aria-hidden="true">🇳🇱</span><span>NL</span></a>
           </div>
           <nav class="tabs" aria-label="Primaire navigatie">
+            <a class="tab navDocument" href="/use-cases/document-intake-nl.html">Documentintake</a>
             <details class="navDropdown navProduct" name="primary-navigation">
               <summary class="tab">Product</summary>
               <div class="dropdownMenu">
@@ -124,13 +125,12 @@
                 <a href="/use-cases/pdf-to-rag-corpus-nl.html">PDF naar RAG-corpus</a>
                 <a href="/use-cases/document-reindexing-nl.html">Documenten herindexeren</a>
                 <a href="/use-cases/public-data-quality-nl.html">Publieke datakwaliteit</a>
-                <a href="/use-cases/document-intake-nl.html">Documentintake</a>
               </div>
             </details>
             <a class="tab" href="/proof-nl.html">Proefrun</a>
             <a class="tab" href="/security-nl.html">Security</a>
             <a class="tab navExample" href="/sample-output-nl.html">Voorbeeldrun</a>
-            <a class="tab cta active" href="pilot-intake-nl.html" aria-current="page">Run afbakenen</a>
+            <a class="tab cta active" href="pilot-intake-nl.html" aria-current="page">Bespreek een test</a>
           </nav>
         </div>
       </div>
@@ -139,28 +139,10 @@
     <main id="main-content" class="container intakeShell">
       <div class="intakeLayout">
         <section class="intakeIntro" aria-labelledby="intake-title">
-          <p class="eyebrow">Workloadintake</p>
-          <h1 id="intake-title">Beschrijf één terugkerende documentstap duidelijk genoeg om fit te beoordelen.</h1>
-          <p>
-            Deze pagina bereidt een e-mail voor. Plak hier geen gevoelige data.
-            Beschrijf de workflow, het verwachte resultaat, uitzonderingsgedrag
-            en het kleinste veilige representatieve voorbeeld. Fast
-            Corpus-aanvragen kunnen dezelfde intake gebruiken.
-          </p>
-          <section class="proofStrip" aria-label="Goede pilotinput">
-            <div>
-              <strong>Afgebakend</strong>
-              <span>Eén terugkerende stap, expliciete invoer, verwacht resultaat en revieweigenaar.</span>
-            </div>
-            <div>
-              <strong>Concreet</strong>
-              <span>Inputtype, volume, outputschema en geaccepteerde of uitzonderingsstatus.</span>
-            </div>
-            <div>
-              <strong>Veilig</strong>
-              <span>Lage of middelmatige gevoeligheid. Gevoelige data vraagt vooraf overleg.</span>
-            </div>
-          </section>
+          <p class="eyebrow">Documenttest</p>
+          <h1 id="intake-title">Welke documenten wil je verwerken?</h1>
+          <p>Vertel wat er binnenkomt en wat eruit moet komen. Daarna stemmen we enkele voorbeelden af en testen we kwaliteit en kosten.</p>
+          <ol class="intakeNext"><li>Beschrijf de taak.</li><li>Kies samen geschikte voorbeelden.</li><li>Beoordeel output en kosten.</li></ol>
         </section>
 
         <form class="intakeForm" id="pilot-form">
@@ -177,13 +159,25 @@
               <label for="email">E-mail</label>
               <input id="email" name="email" type="email" autocomplete="email" required />
             </div>
-            <div class="field">
+
+
+
+
+            <div class="field full">
+              <label for="workload">Documenten en gewenst resultaat</label>
+              <textarea id="workload" name="workload" placeholder="Bijvoorbeeld: orderregels uitlezen, artikelen koppelen aan onze catalogus en ontbrekende leverdatums aangeven." required></textarea>
+            </div>
+          </div>
+
+          <details class="intakeDetails">
+            <summary>Voeg details toe als je ze al weet</summary>
+            <div class="fieldGrid">
+<div class="field">
               <label for="pages">Geschat aantal pagina's</label>
               <input id="pages" name="pages" placeholder="Bijvoorbeeld: 25000" />
-            </div>
-            <div class="field">
+            </div><div class="field">
               <label for="input_type">Inputtype</label>
-              <select id="input_type" name="input_type" required>
+              <select id="input_type" name="input_type">
                 <option value="">Kies een optie</option>
                 <option>Schone digitale PDF's</option>
                 <option>Tekstbestanden of tekstexports</option>
@@ -192,8 +186,7 @@
                 <option>Gescande of OCR-zware documenten</option>
                 <option>Anders of onzeker</option>
               </select>
-            </div>
-            <div class="field">
+            </div><div class="field">
               <label for="use_case">Toepassing</label>
               <select id="use_case" name="use_case">
                 <option value="">Kies een optie</option>
@@ -205,9 +198,9 @@
                 <option>Publieke metadata- of cataloguskwaliteit</option>
                 <option>Documentintake voor ERP- of operations-workflow</option>
                 <option>Anders of onzeker</option>
-              </select>
-            </div>
-            <div class="field">
+              <option>Gegevens matchen of verrijken</option>
+</select>
+            </div><div class="field">
               <label for="output_target">Outputdoel</label>
               <select id="output_target" name="output_target">
                 <option value="">Kies een optie</option>
@@ -218,17 +211,10 @@
                 <option>Kwaliteitsrapport of issuelijst</option>
                 <option>Reviewbare importklare output</option>
                 <option>Anders of onzeker</option>
-              </select>
+              <option>Verrijkte gegevens</option>
+</select>
             </div>
-            <div class="field full">
-              <label for="workload">Documentstap en workflownotities</label>
-              <textarea id="workload" name="workload" placeholder="Wat zijn de documenten, waar komen ze vandaan, welk resultaat moet terugkomen en wie beoordeelt uitzonderingen?" required></textarea>
-            </div>
-          </div>
 
-          <details class="intakeDetails">
-            <summary>Voeg optionele scopedetails toe</summary>
-            <div class="fieldGrid">
               <div class="field">
                 <label for="timeline">Timing</label>
                 <select id="timeline" name="timeline">
@@ -286,14 +272,7 @@
             </div>
           </details>
 
-          <p class="formNote">
-            De knop opent een conceptmail aan
-            <!--email_off--><a href="mailto:hello@solvyr.com">hello@solvyr.com</a><!--/email_off--> met deze
-            details. Voeg geen productie- of gevoelige samples toe voordat er
-            een schriftelijke scope en overdrachtskanaal is afgesproken.
-            Bronparameters uit agentleesbare links worden automatisch
-            meegenomen.
-          </p>
+          <p class="formNote">Deze knop bereidt een e-mail aan ons voor. Zet hier alleen een beschrijving; voorbeelden delen we daarna via een afgesproken kanaal. <!--email_off--><a href="mailto:hello@solvyr.com">hello@solvyr.com</a><!--/email_off--></p>
           <div class="contactActions">
             <button class="button primary" type="submit">Bereid e-mail voor</button>
             <button class="button secondary" id="copy-request" type="button">Kopieer aanvraagsamenvatting</button>
@@ -327,7 +306,7 @@
 
           </details>
           <!--email_off--><a href="mailto:hello@solvyr.com">hello@solvyr.com</a><!--/email_off-->
-          <a href="pilot-intake-nl.html#intent=fast-corpus&source=pilot-intake-page">Pilot intake</a>
+          <a href="pilot-intake-nl.html#intent=fast-corpus&source=pilot-intake-page">Test bespreken</a>
         </div>
       </div>
     </footer>
@@ -355,7 +334,7 @@
           ["Toepassing", data.get("use_case")],
           ["Outputdoel", data.get("output_target")],
           ["Herhaling", data.get("recurrence")],
-          ["Documentstap en workflownotities", data.get("workload")],
+          ["Documenten en gewenst resultaat", data.get("workload")],
           ["Huidig proces of pijnpunt", data.get("current")],
           ["Datagevoeligheid", data.get("sensitivity")],
           ["Veilige sample beschikbaar", data.get("sample")],
@@ -363,7 +342,8 @@
           ["Data-eisen", data.get("data")]
         ];
         const body = fields
-          .map(([label, value]) => `${label}:\n${String(value || "").trim() || "-"}`)
+          .filter(([, value]) => String(value || "").trim())
+          .map(([label, value]) => `${label}: ${String(value).replace(/\s+/g, " ").trim()}`)
           .join("\n\n");
         return body;
       }
@@ -388,7 +368,7 @@
       pilotForm.addEventListener("submit", async (event) => {
         event.preventDefault();
         const body = buildRequestBody(event.currentTarget);
-        const subject = encodeURIComponent("Solvyr workloadroute bespreken");
+        const subject = encodeURIComponent("Solvyr documenttest");
         await window.solvyrMeasure?.("email-prepared");
         window.location.href = `mailto:hello@solvyr.com?subject=${subject}&body=${encodeURIComponent(body)}`;
       });

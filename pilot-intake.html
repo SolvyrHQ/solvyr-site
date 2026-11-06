@@ -4,24 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Solvyr - Workload and partner-route intake</title>
+    <title>Discuss a document test - Solvyr</title>
     <meta
       name="description"
-      content="Describe one repeated document step or bounded corpus workload so Solvyr can assess route, result, security, and pilot fit."
+      content="Describe your documents and intended result. Solvyr helps define a first test of quality and processing costs."
     />
-    <meta property="og:title" content="Solvyr - Workload and partner-route intake" />
+    <meta property="og:title" content="Discuss a document test - Solvyr" />
     <meta
       property="og:description"
-      content="Prepare a concise pilot request for clean PDF/text to AI-ready JSONL processing."
+      content="Describe your documents and intended result. Solvyr helps define a first test of quality and processing costs."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://solvyr.com/pilot-intake.html" />
     <meta property="og:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Solvyr: Ship reliable AI document workflows while keeping the customer and workflow." />
+    <meta property="og:image:alt" content="Solvyr: AI document processing with clarity on quality and cost." />
     <meta name="twitter:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
-    <meta name="twitter:image:alt" content="Solvyr: Ship reliable AI document workflows while keeping the customer and workflow." />
+    <meta name="twitter:image:alt" content="Solvyr: AI document processing with clarity on quality and cost." />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://solvyr.com/pilot-intake.html" />
 
@@ -32,7 +32,7 @@
     <link rel="alternate" hreflang="nl" href="https://solvyr.com/pilot-intake-nl.html" />
     <link rel="alternate" hreflang="x-default" href="https://solvyr.com/pilot-intake.html" />
     <meta name="theme-color" content="#f7f9fc" />
-    <link rel="stylesheet" href="styles.css?v=20260823-1" />
+    <link rel="stylesheet" href="styles.css?v=20261106-2" />
       <script>
 (() => {
   const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
@@ -100,7 +100,7 @@
         <a class="brand" href="/" aria-label="Solvyr home">
           <div class="brandtext">
             <img class="brandLogo" src="/assets/brand/solvyr-logo-hybrid.svg" alt="Solvyr" width="175" height="35" />
-            <div class="tag">Reliable AI work, running where customers choose</div>
+            <div class="tag">AI document processing</div>
           </div>
         </a>
 
@@ -110,6 +110,7 @@
             <a class="lang" href="pilot-intake-nl.html" aria-label="Nederlandse versie"><span aria-hidden="true">🇳🇱</span><span>NL</span></a>
           </div>
           <nav class="tabs" aria-label="Primary navigation">
+            <a class="tab navDocument" href="/use-cases/document-intake.html">Document intake</a>
             <details class="navDropdown navProduct" name="primary-navigation">
               <summary class="tab">Product</summary>
               <div class="dropdownMenu">
@@ -124,13 +125,12 @@
                 <a href="/use-cases/pdf-to-rag-corpus.html">PDF to RAG corpus</a>
                 <a href="/use-cases/document-reindexing.html">Document re-indexing</a>
                 <a href="/use-cases/public-data-quality.html">Public-data quality runs</a>
-                <a href="/use-cases/document-intake.html">Document intake</a>
               </div>
             </details>
             <a class="tab" href="/proof.html">Proof</a>
             <a class="tab" href="/security.html">Security</a>
             <a class="tab navExample" href="/sample-output.html">Example run</a>
-            <a class="tab cta active" href="pilot-intake.html" aria-current="page">Scope a run</a>
+            <a class="tab cta active" href="pilot-intake.html" aria-current="page">Discuss a test</a>
           </nav>
         </div>
       </div>
@@ -139,28 +139,10 @@
     <main id="main-content" class="container intakeShell">
       <div class="intakeLayout">
         <section class="intakeIntro" aria-labelledby="intake-title">
-          <p class="eyebrow">Workload intake</p>
-          <h1 id="intake-title">Describe one repeated document step clearly enough to assess fit.</h1>
-          <p>
-            This page prepares an email. Do not paste sensitive data here.
-            Describe the workflow, expected result, exception behavior, and the
-            smallest safe representative sample. Fast Corpus requests can use
-            the same intake.
-          </p>
-          <section class="proofStrip" aria-label="Good pilot input">
-            <div>
-              <strong>Bounded</strong>
-              <span>One repeated step, explicit input, expected result, and review owner.</span>
-            </div>
-            <div>
-              <strong>Concrete</strong>
-              <span>Input type, volume, output schema, and accepted or exception state.</span>
-            </div>
-            <div>
-              <strong>Safe</strong>
-              <span>Low or moderate sensitivity sample. Sensitive data needs prior agreement.</span>
-            </div>
-          </section>
+          <p class="eyebrow">Document test</p>
+          <h1 id="intake-title">Which documents do you want to process?</h1>
+          <p>Tell us what comes in and what should come out. Then we agree on a few examples and test quality and cost.</p>
+          <ol class="intakeNext"><li>Describe the task.</li><li>Agree on suitable examples.</li><li>Review output and cost.</li></ol>
         </section>
 
         <form class="intakeForm" id="pilot-form">
@@ -177,13 +159,25 @@
               <label for="email">Email</label>
               <input id="email" name="email" type="email" autocomplete="email" required />
             </div>
-            <div class="field">
+
+
+
+
+            <div class="field full">
+              <label for="workload">Documents and intended result</label>
+              <textarea id="workload" name="workload" placeholder="For example: extract order lines, match items to our catalogue and flag missing delivery dates." required></textarea>
+            </div>
+          </div>
+
+          <details class="intakeDetails">
+            <summary>Add details if you have them</summary>
+            <div class="fieldGrid">
+<div class="field">
               <label for="pages">Estimated pages</label>
               <input id="pages" name="pages" placeholder="Example: 25000" />
-            </div>
-            <div class="field">
+            </div><div class="field">
               <label for="input_type">Input type</label>
-              <select id="input_type" name="input_type" required>
+              <select id="input_type" name="input_type">
                 <option value="">Select one</option>
                 <option>Clean digital PDFs</option>
                 <option>Text files or text exports</option>
@@ -192,8 +186,7 @@
                 <option>Scanned or OCR-heavy documents</option>
                 <option>Other or unsure</option>
               </select>
-            </div>
-            <div class="field">
+            </div><div class="field">
               <label for="use_case">Use case</label>
               <select id="use_case" name="use_case">
                 <option value="">Select one</option>
@@ -205,9 +198,9 @@
                 <option>Public-data metadata or catalog quality</option>
                 <option>Document intake before ERP or operations workflow</option>
                 <option>Other or unsure</option>
-              </select>
-            </div>
-            <div class="field">
+              <option>Data matching or enrichment</option>
+</select>
+            </div><div class="field">
               <label for="output_target">Target output</label>
               <select id="output_target" name="output_target">
                 <option value="">Select one</option>
@@ -218,17 +211,10 @@
                 <option>Quality report or issue list</option>
                 <option>Reviewable import-ready output</option>
                 <option>Other or unsure</option>
-              </select>
+              <option>Enriched data</option>
+</select>
             </div>
-            <div class="field full">
-              <label for="workload">Document step and workflow notes</label>
-              <textarea id="workload" name="workload" placeholder="What are the documents, where do they come from, what result should return, and who reviews exceptions?" required></textarea>
-            </div>
-          </div>
 
-          <details class="intakeDetails">
-            <summary>Add optional scoping detail</summary>
-            <div class="fieldGrid">
               <div class="field">
                 <label for="timeline">Timeline</label>
                 <select id="timeline" name="timeline">
@@ -277,7 +263,7 @@
               </div>
               <div class="field full">
                 <label for="output">Expected output and validation</label>
-                <textarea id="output" name="output" placeholder="What should come out, and how would you judge whether the JSONL/chunks/embeddings are useful?"></textarea>
+                <textarea id="output" name="output" placeholder="What should come out, and how would your team check that it is useful?"></textarea>
               </div>
               <div class="field full">
                 <label for="data">Data handling requirements</label>
@@ -286,13 +272,7 @@
             </div>
           </details>
 
-          <p class="formNote">
-            The button opens a draft to
-            <!--email_off--><a href="mailto:hello@solvyr.com">hello@solvyr.com</a><!--/email_off--> with these
-            details. Do not attach production or sensitive samples until a
-            written scope and transfer channel are agreed. Source parameters
-            from agent-readable links are included automatically.
-          </p>
+          <p class="formNote">This button prepares an email to us. Include a description here; we will agree a channel for sharing examples afterwards. <!--email_off--><a href="mailto:hello@solvyr.com">hello@solvyr.com</a><!--/email_off--></p>
           <div class="contactActions">
             <button class="button primary" type="submit">Prepare email</button>
             <button class="button secondary" id="copy-request" type="button">Copy request summary</button>
@@ -326,7 +306,7 @@
 
           </details>
           <!--email_off--><a href="mailto:hello@solvyr.com">hello@solvyr.com</a><!--/email_off-->
-          <a href="pilot-intake.html#intent=fast-corpus&source=pilot-intake-page">Pilot intake</a>
+          <a href="pilot-intake.html#intent=fast-corpus&source=pilot-intake-page">Discuss a test</a>
         </div>
       </div>
     </footer>
@@ -354,7 +334,7 @@
           ["Use case", data.get("use_case")],
           ["Target output", data.get("output_target")],
           ["Recurrence", data.get("recurrence")],
-          ["Document step and workflow notes", data.get("workload")],
+          ["Documents and intended result", data.get("workload")],
           ["Current process or pain", data.get("current")],
           ["Data sensitivity", data.get("sensitivity")],
           ["Safe sample available", data.get("sample")],
@@ -362,7 +342,8 @@
           ["Data handling requirements", data.get("data")]
         ];
         const body = fields
-          .map(([label, value]) => `${label}:\n${String(value || "").trim() || "-"}`)
+          .filter(([, value]) => String(value || "").trim())
+          .map(([label, value]) => `${label}: ${String(value).replace(/\s+/g, " ").trim()}`)
           .join("\n\n");
         return body;
       }
@@ -387,7 +368,7 @@
       pilotForm.addEventListener("submit", async (event) => {
         event.preventDefault();
         const body = buildRequestBody(event.currentTarget);
-        const subject = encodeURIComponent("Solvyr workload route discussion");
+        const subject = encodeURIComponent("Solvyr document test");
         await window.solvyrMeasure?.("email-prepared");
         window.location.href = `mailto:hello@solvyr.com?subject=${subject}&body=${encodeURIComponent(body)}`;
       });

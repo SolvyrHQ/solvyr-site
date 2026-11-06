@@ -36,14 +36,14 @@ for (const asset of requiredAssets) {
 
 const homepageExpectations = {
   "index.html": {
-    promise: "Reliable AI work. Running where customers choose.",
-    descriptor: "Reliable AI work, running where customers choose",
-    compute: "The result stays the same. The compute can change.",
+    promise: "AI document processing.",
+    descriptor: "AI document processing",
+    testCta: "Discuss a document test",
   },
   "nl.html": {
-    promise: "Betrouwbaar AI-werk. Uitgevoerd waar klanten kiezen.",
-    descriptor: "Betrouwbaar AI-werk, uitgevoerd waar klanten kiezen",
-    compute: "Het resultaat blijft hetzelfde. De rekenkracht kan veranderen.",
+    promise: "AI-documentverwerking.",
+    descriptor: "AI-documentverwerking",
+    testCta: "Bespreek een documenttest",
   },
 };
 
@@ -51,8 +51,8 @@ for (const [homepage, expected] of Object.entries(homepageExpectations)) {
   const source = readFileSync(join(repoRoot, homepage), "utf8");
   const main = source.match(/<main\b[\s\S]*?<\/main>/i)?.[0] || "";
   const sectionCount = [...main.matchAll(/<section\b/gi)].length;
-  if (sectionCount !== 7) {
-    failures.push(`${homepage}: corporate homepage must keep the seven-section decision path; found ${sectionCount}`);
+  if (sectionCount !== 5) {
+    failures.push(`${homepage}: corporate homepage must keep the five-section document-test path; found ${sectionCount}`);
   }
   if (!source.includes(expected.promise)) {
     failures.push(`${homepage}: adopted corporate promise is missing or has drifted`);
@@ -60,8 +60,11 @@ for (const [homepage, expected] of Object.entries(homepageExpectations)) {
   if (!source.includes(`<div class="tag">${expected.descriptor}</div>`)) {
     failures.push(`${homepage}: adopted corporate header descriptor is missing or has drifted`);
   }
-  if (!source.includes(expected.compute)) {
-    failures.push(`${homepage}: flexible-compute brand idea is missing or has drifted`);
+  if (!source.includes(expected.testCta)) {
+    failures.push(`${homepage}: the document-test invitation is missing`);
+  }
+  if (/class="computeMap"/.test(main)) {
+    failures.push(`${homepage}: capacity-source diagram must stay out of the document-first homepage`);
   }
   if (/intent=organizational-gpu-pool/.test(source)) {
     failures.push(`${homepage}: capacity acquisition must not be the homepage CTA`);
@@ -72,7 +75,7 @@ const agentPacket = JSON.parse(readFileSync(join(repoRoot, "ai/fast-corpus.json"
 if (agentPacket.company_positioning?.category !== "AI execution layer for bounded asynchronous work") {
   failures.push("ai/fast-corpus.json: company context must describe the company-level AI execution layer");
 }
-if (agentPacket.company_positioning?.promise !== "Reliable AI work. Running where customers choose.") {
+if (agentPacket.company_positioning?.promise !== "AI document processing. Clarity on quality and cost.") {
   failures.push("ai/fast-corpus.json: adopted company promise is missing or has drifted");
 }
 if (!agentPacket.company_positioning?.capacity_principle?.startsWith("Workload demand comes before capacity expansion")) {
@@ -97,7 +100,7 @@ const capabilities = readFileSync(join(repoRoot, "capabilities.yaml"), "utf8");
 if (!capabilities.includes("category: AI execution layer for bounded asynchronous work")) {
   failures.push("capabilities.yaml: company category is missing or has drifted");
 }
-if (!capabilities.includes("header_tagline: Reliable AI work, running where customers choose")) {
+if (!capabilities.includes("header_tagline: AI document processing")) {
   failures.push("capabilities.yaml: adopted corporate descriptor is missing or has drifted");
 }
 if (!capabilities.includes("what_is_fast_corpus: The managed document-to-corpus route")) {

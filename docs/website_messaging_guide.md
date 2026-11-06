@@ -70,64 +70,61 @@ Reze paperwork. Keep the legal distinction precise:
 
 ## Corporate Homepage And Route Hierarchy
 
-The corporate homepage leads with the adopted product promise and introduces
-the execution mechanism immediately after the result flow:
+Revision requested by Jan on 2026-11-06. After local review, Jan requested
+document intake directly in the main navigation and authorized updating the
+live website in his final sentence. Release verification is recorded in the
+review report.
+This replaces the earlier seven-section homepage and compute-led supporting
+sequence for this local review.
 
-> Reliable AI work. Running where customers choose.
+The first screen explains AI document processing and a concrete first test:
 
-The first supporting message is direct: partners keep the customer and workflow;
-Solvyr runs the AI work underneath, handles failures, and returns the result in
-the agreed form. The next section explains the result flow. Then introduce the
-brand idea `The result stays the same. The compute can change.` Capacity must be
-demand-led: Solvyr-controlled multi-worker execution is built today; approved
-customer or partner capacity is next; European-provider capacity is overflow
-for workload-specific demand.
+> AI document processing. Clarity on quality and cost.
 
-The partner keeps the customer, application, workflow, business rules, and
-downstream action. Solvyr owns the bounded AI execution, retry, validation,
-exception classification, typed result delivery, and run evidence needed for a
-checked result.
+> AI-documentverwerking. Grip op kwaliteit en kosten.
 
-Primary public audience: European ERP and document-workflow integrators with a
-repeated, delay-tolerant document step across several customers.
+Bring example documents and the intended task. Test output quality, human
+review and processing costs. Lower cost is an ambition to prove per task at
+the required quality, not a measured general advantage.
 
-Public route hierarchy:
+Document intake may lead confidently with classification, extraction,
+validation, matching and enrichment using agreed sources. Treat these as work
+Solvyr undertakes to scope, investigate and build. Do not exclude a useful task
+merely because it needs additional development. Do not label every task as
+already demonstrated or imply universal format support, production readiness,
+proven content accuracy, saving or deployment availability.
 
-- `/` and `/nl.html`: corporate partner/builder story;
-- `/fast-corpus.html` and `/fast-corpus-nl.html`: preserved bounded
-  backlog-to-corpus offer, including its page-based starting rate;
-- `/use-cases/document-intake.html` and its Dutch counterpart: first
-  ERP-adjacent route;
-- `/proof.html` and its Dutch counterpart: corporate technical and
-  accepted-result evidence;
-- `/security.html` and its Dutch counterpart: concrete execution, storage,
-  access, retention, and deletion boundaries;
-- `/about.html` and its Dutch counterpart: execution-layer and flexible-compute
-  vision.
+Partners keep the customer, workflow, approval and downstream actions.
+Solvyr handles the agreed processing and result delivery. State this once.
 
-Keep every customer and partner anonymous across public surfaces unless Jan
-explicitly approves that exact name or identifying reference for that exact
-public use. This includes visible pages, metadata, structured data,
-agent-readable files, downloads, logos, quotes, case studies, and visual
-labels. `Promentum` and `Uniconta` remain internal evidence names and must not
-appear on the website. Use `a workflow partner`, `the first ERP route`, `the
-existing ERP workflow`, or `ERP-ready results` as appropriate. Ask Jan before
-publishing any other customer or partner identity; do not infer approval from
-an internal agreement, pilot, email, deck, or repository reference.
+The local homepage has five sections:
 
-Do not put the public Fast Corpus page-based price on the corporate homepage.
-Predictable price per accepted result remains a shadow-metered commercial
-hypothesis. Customer-local execution remains a later deployment direction, not
-current broad availability.
+1. Document task, quality/cost test and primary CTA.
+2. Classification, extraction and enrichment examples with document-intake and
+   Fast Corpus links.
+3. Representative sample, quality/cost review and continuation decision.
+4. Processing-location requirements and compact links to security, execution,
+   proof and company information.
+5. Closing document-test invitation.
 
-Company-level narrative order:
+All existing public paths, link destinations, language switches, canonical
+URLs and sitemap entries remain. Fast Corpus retains its own offer and price;
+proof, samples, security, About and Connectors keep dedicated routes. The
+capacity-source diagram and investor-like paid-use/network milestones are
+removed from the homepage. The broader execution network remains company
+strategy, with a short direction paragraph on About and detailed machine
+context. Hardware ownership and counts are not buyer qualification criteria.
 
-1. Reliable AI result and partner ownership.
-2. Plain-language input-to-result workflow.
-3. Stable result across changing approved compute, with demand before supply.
-4. Builder advantage and ownership boundary.
-5. First ERP-adjacent route and measured proof.
-6. Working system, recurring paid use next, European execution network direction.
+Use the corporate header descriptors `AI document processing` and
+`AI-documentverwerking`. Start in a managed environment; investigate own
+hardware or specific placement when it matters to the customer. Own hardware
+is optional. Sovereignty is expressed through actual processing, storage,
+access and lifecycle agreements, not an unrestricted location guarantee.
+
+Customers and partners remain anonymous unless Jan explicitly approves the
+exact public reference. Internal customer evidence does not grant publicity
+permission. The Fast Corpus starting rate does not price document intake,
+matching or enrichment.
 
 ## Fast Corpus Route Positioning
 
@@ -299,8 +296,8 @@ broad availability.
 
 In the corporate header, keep the adopted descriptor short:
 
-- English: `Reliable AI work, running where customers choose`
-- Dutch: `Betrouwbaar AI-werk, uitgevoerd waar klanten kiezen`
+- English: `AI document processing`
+- Dutch: `AI-documentverwerking`
 
 The dedicated Fast Corpus route may retain:
 
@@ -328,24 +325,15 @@ Avoid:
 
 ## First-Screen Rule
 
-The corporate homepage first viewport must answer:
+The first viewport must explain the document task, useful output and next
+action. For the corporate homepage, offer a sample-led test of quality and
+processing costs. For Fast Corpus, explain the corpus output. Public-data
+pages explain export checks and reviewable suggestions.
 
-- Who keeps the customer and workflow?
-- What AI execution, validation, and exception work does Solvyr own?
-- What partner route should the visitor discuss?
-
-The Fast Corpus route first viewport must answer:
-
-- What backlog can Solvyr process?
-- What output does the customer get?
-- What is the first action?
-
-Do not lead with distributed GPUs, scheduler architecture, sovereignty, or
-infrastructure abstraction. Those belong lower on the page as supporting proof.
-
-Do not lead with API or CLI access either. API/CLI language belongs in
-integration, handoff, agent-readable, or delivery-context copy. The public
-headline and CTA should sell a run or corpus result, not developer tooling.
+Do not require the visitor to understand workers, schedulers, capacity supply,
+API schemas or output states before starting. Keep the execution network as
+supporting strategy. Own hardware is optional. Keep claims about savings,
+quality and location tied to the task and evidence.
 
 ## Preferred Language
 
@@ -424,72 +412,29 @@ fixes/caveats, reviewer decision, and then European execution context.
 
 ## Content Density And Page Roles
 
-The homepage is a decision path, not the complete repository of Solvyr's
-strategy. Keep the first active view compact enough that a buyer can understand
-the workload, output, evidence, boundary, and next action without reading the
-same point several times.
+Keep one main job per section and one clear next action. The local homepage
+uses the five-section path in Corporate Homepage And Route Hierarchy.
 
-The corporate homepage should normally stay to seven visible sections, including
-the hero and closing CTA:
-
-1. outcome-led hero;
-2. one plain-language input-to-result flow;
-3. one compact flexible-compute section: the result stays stable, demand comes
-   first, and current, next, and overflow capacity routes are distinct;
-4. audience and ownership together;
-5. the first ERP document-intake route;
-6. one combined proof-and-trust section linking to deeper routes;
-7. closing conversation CTA.
-
-Use buyer language on this path. Prefer `AI step`, `checked result`, `agreed
-format`, `clear review status`, and `where data runs` over internal terms such
-as `bounded execution`, `typed result delivery`, `exception classification`,
-`shadow metering`, or `policy-aware placement`. Those exact terms remain useful
-on Proof, Security, About, technical and agent-readable pages. The compact
-hardware section may use `worker`, `scheduler`, and `bounded task` because the
-mechanism is the subject there; explain them in a single plain-language
-sentence rather than expanding the homepage into platform documentation.
-
-- Give each section one job and each headline one claim.
-- Prefer one strong proof block over several repeated evidence summaries.
-- State the processing-rate boundary once near the price; do not repeat the
-  same caveat in every section.
-- Keep the build-versus-buy distinction explicit once, then let Security,
-  use-case pages, and the About execution section carry the depth.
-- Remove duplicated vision, category, buyer-entry, and sovereignty paragraphs
-  from the active homepage view when the same material remains available in a
-  dedicated route or tab.
-- Preserve honest fit boundaries, security content, proof links, language
-  routes, and direct contact even when shortening the active page.
-- Use progressive disclosure for optional intake detail and machine-readable
-  resources; do not make technical utilities compete with the customer CTA.
-
-The desired result is less repetition, not less substance. Detailed pages
-should remain available for buyers who need to validate fit, evidence,
-security, or company direction.
-
-Use the native Merge Arrow visual family for the three relationships that are
-faster to understand as diagrams than prose:
-
-- the homepage flexible-compute section converges current, next and overflow
-  capacity routes through the Solvyr execution layer into one workflow-ready
-  result;
-- the Proof page shows measured multi-worker elapsed time with directly labelled bars and a
-  compact verified-result band;
-- the Security page shows the explicit scheduler-and-worker trust zone,
-  current bounded controls and later narrowing path in one composition.
-
-These are HTML/CSS explanations, not screenshots or infrastructure evidence.
-Keep current execution blue, later routes violet, verified proof green and the
-workflow-ready result navy. Preserve equivalent English and Dutch compositions
-and avoid adding decorative dashboards around them.
-
-Do not maintain a hidden execution-model tab on the homepage. The concise
-buyer consequence belongs on the homepage: Solvyr operates the pipeline and
-the customer receives accepted output plus run evidence. Execution mechanics
-belong in `about.html#execution` / `about-nl.html#execution`. The connector
-guide should help someone recognize and introduce a workload, not repeat the
-system architecture.
+- Remove repeated role, category, sovereignty, price and vision explanations.
+- Use plain task language. Keep technical methodology on proof/sample pages
+  and in the machine-readable evidence packet.
+- Reduce defensive exclusion lists. Explain scans, layouts, extraction and
+  enrichment as work to agree and price, rather than a reason to reject the
+  conversation. Preserve actual data-handling requirements and price scope.
+- Keep Fast Corpus's Overview, Fit, Output, Security and Pilot hash views.
+- Keep measured proof numbers, diagrams and download contents tied to their
+  exact test. Schema validity is a format check, not a content-accuracy result.
+- Preserve concrete processing, storage, access, retention, deletion, logging,
+  temporary-file and redaction information on the security routes.
+- Keep the legal/privacy substance, trademarks, contact address, founder links,
+  licences, navigation destinations and language routes intact.
+- The first intake shows name, organisation, email and the intended document
+  task. Existing technical fields remain optional in progressive disclosure.
+- Prepared request bodies omit empty optional fields and normalize line breaks
+  within a value. Intent/source fragment and legacy-query attribution remain.
+- Illustrations are labelled examples and do not serve as output evidence.
+- Use the existing brand, self-hosted Inter and native HTML/CSS; avoid new
+  decorative images or an unrelated visual system.
 
 ## Buyer Entry Paths
 
@@ -507,49 +452,22 @@ care about it. Price, proof, and accepted output remain the common foundation.
 
 ## CTA Rules
 
-CTAs should name the work, not the internal product alone.
+The corporate primary CTA is `Discuss a document test` /
+`Bespreek een documenttest`. Fast Corpus and use cases use the specific test,
+such as `Discuss a corpus test` / `Bespreek een corpustest`.
 
-Good:
+The shared header CTA is `Discuss a test` / `Bespreek een test`; its existing
+intake destination and source/intent attribution remain. Footer intake links
+are labelled `Discuss a test` / `Test bespreken`, with their existing URLs.
 
-- Scope a backlog run
-- Scope a PDF backlog run
-- Scope a public-data run
-- See the proof run
-- Open pilot intake
+Every use-case page keeps a first-screen primary test invitation and a useful
+secondary proof or output link. Direct contact stays visibly available as
+`hello@solvyr.com`, inside the Cloudflare email guards. The homepage hero has
+one primary action. Never add a CTA to acquire hardware capacity here.
 
-Weaker:
-
-- Learn more
-- Start deploying
-- Get compute
-- Try the platform
-
-Every public use-case page under `use-cases/` should include a first-screen
-`heroActions` block with:
-
-- a primary button that scopes the specific run or workload
-- a secondary human-facing proof, sample, or supporting context link
-
-Use-case pages should not rely only on footer links or lower-page CTAs. Keep
-the primary button label workload-specific, for example `Scope a PDF backlog
-run`, `Scope a re-indexing run`, or `Scope a public-data run`.
-Agent-readable files remain linked from the footer and machine-readable routes;
-they do not need a prominent hero CTA.
-
-On the corporate homepage, keep `Discuss a workflow` as the primary hero CTA.
-The compact hardware section may carry the visually quieter secondary CTA
-`See how execution works`, linking to the About execution section. Do not make
-capacity acquisition a public CTA before workload demand exists. Add a
-secondary hero CTA only when it offers a distinct decision path. Do not link
-from the hero to a proof block that is already the next visible content; put
-the proof link or download inside the proof block itself. This does not remove
-the use-case-page rule above, where a secondary supporting link helps a visitor
-before they have seen the rest of that page.
-
-A direct human email may appear as a visible secondary contact route. Keep the
-workload-specific scope CTA primary, show the literal address rather than
-hiding it behind a generic label, and keep English and Dutch contact paths
-aligned. Current lead contact: `hello@solvyr.com`.
+The intake prepares an email and can copy the request summary. Describe the
+task first; agree sample rights and a transfer channel before sharing files.
+A website visitor's prepared enquiry is not an email sent by an agent.
 
 ## Header Navigation Rule
 
@@ -558,27 +476,30 @@ body links, but the top-right nav should not become contextual per page.
 
 Current product nav separates product discovery from the two next actions:
 
-- English: `Product`, `Use cases`, `Proof`, `Security`, `Example run`, `Scope a run`
-- Dutch: `Product`, `Toepassingen`, `Proefrun`, `Security`, `Voorbeeldrun`, `Run afbakenen`
-- `Product` contains `Fast Corpus`, `Fit`, and `Output`, linking to the dedicated
-  Fast Corpus route without giving every section equal top-level weight.
+- English: `Document intake`, `Product`, `Use cases`, `Proof`, `Security`, `Example run`, `Discuss a test`
+- Dutch: `Documentintake`, `Product`, `Toepassingen`, `Proefrun`, `Security`, `Voorbeeldrun`, `Bespreek een test`
+- `Document intake` / `Documentintake` is the first, direct main-navigation
+  link. It appears once in the navigation, outside both dropdowns.
+- `Product` preserves `Fast Corpus`, `Fit`, and `Output`.
+- `Use cases` / `Toepassingen` preserves the other three application routes.
+  Jan selected this final arrangement on 2026-11-06, replacing the earlier
+  duplicated dropdown entries.
 - `Example run` / `Voorbeeldrun` opens the real four-record public .gitignore sample in
   an inspectable completed-run surface. It is a public example, not a customer
   account, login, self-service dashboard, or claim of broad product access.
-- `Scope a run` / `Run afbakenen` remains the primary acquisition action and
+- `Discuss a test` / `Bespreek een test` remains the primary acquisition action and
   routes to the controlled pilot intake.
 
 `Product` and `Use cases` / `Toepassingen` are dropdowns. Keep their entries stable:
 
-- English: `PDF to RAG corpus`, `Document re-indexing`, `Public-data quality runs`
-- Dutch: `PDF naar RAG-corpus`, `Documenten herindexeren`,
-  `Publieke datakwaliteit`
-- Add `Document intake` / `Documentintake` as an ERP-adjacent use case only
-  when it stays bounded to reviewable import-ready output and does not claim
-  direct ERP write-back, certified accounting automation, or named vendor
-  integration.
+- English, in order: `PDF to RAG corpus`,
+  `Document re-indexing`, `Public-data quality runs`.
+- Dutch, in order: `PDF naar RAG-corpus`,
+  `Documenten herindexeren`, `Publieke datakwaliteit`.
+- Document intake covers classification, extraction, matching and enrichment;
+  approval and downstream action remain with the customer/workflow partner.
 
-`Scope a run` / `Run afbakenen` should route to the intake page, not a
+`Discuss a test` / `Bespreek een test` should route to the intake page, not a
 page-specific local section.
 Do not remove an existing primary nav route without explicit approval.
 If a page has a translated counterpart, keep the language switch visible on
@@ -783,8 +704,8 @@ state the broader vision:
 build a European AI execution network that grows approved compute behind real
 workload demand. Underused organizational hardware is one potential capacity
 source, alongside Solvyr-controlled workers and commercial European providers.
-Keep Fast Corpus explicit as the first bounded workload and current commercial
-wedge, not the whole long-term model. Europe is the first proving ground for
+Keep Fast Corpus explicit as a demonstrated workload and dedicated corpus
+offer alongside the document-intake customer entry. Europe is the first proving ground for
 location, ownership, policy, and evidence—not the geographic ceiling.
 
 Separate ambition from proof. Better hardware utilization, resilience,

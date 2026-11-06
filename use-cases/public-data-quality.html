@@ -3,24 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Public-Data Quality Runs - Solvyr Fast Corpus</title>
+    <title>Catalogue checks and enrichment - Solvyr</title>
     <meta
       name="description"
-      content="Run repeatable checks on public metadata, catalog exports, and harvest workflows with reviewable reports, issue lists, and controlled European execution context."
+      content="Check metadata exports, suggest improvements and repeat the work after updates. Start with an export and a clear quality target."
     />
-    <meta property="og:title" content="Public-Data Quality Runs - Solvyr Fast Corpus" />
+    <meta property="og:title" content="Catalogue checks and enrichment - Solvyr" />
     <meta
       property="og:description"
-      content="Repeatable batch checks for public metadata, catalog exports, harvest workflows, and downstream data refreshes."
+      content="Check metadata exports, suggest improvements and repeat the work after updates. Start with an export and a clear quality target."
     />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://solvyr.com/use-cases/public-data-quality.html" />
     <meta property="og:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Solvyr: Ship reliable AI document workflows while keeping the customer and workflow." />
+    <meta property="og:image:alt" content="Solvyr: AI document processing with clarity on quality and cost." />
     <meta name="twitter:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
-    <meta name="twitter:image:alt" content="Solvyr: Ship reliable AI document workflows while keeping the customer and workflow." />
+    <meta name="twitter:image:alt" content="Solvyr: AI document processing with clarity on quality and cost." />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://solvyr.com/use-cases/public-data-quality.html" />
     <link rel="alternate" hreflang="en" href="https://solvyr.com/use-cases/public-data-quality.html" />
@@ -29,7 +29,7 @@
     <link rel="icon" href="/assets/brand/solvyr-icon-hybrid.svg?v=20260820-2" type="image/svg+xml" sizes="any" />
     <link rel="icon" href="/favicon.ico?v=20260820-2" sizes="16x16 32x32 48x48" />
     <link rel="apple-touch-icon" href="/assets/brand/solvyr-icon-hybrid-256.png?v=20260820-2" />
-    <link rel="stylesheet" href="../styles.css?v=20260823-1" />
+    <link rel="stylesheet" href="../styles.css?v=20261106-2" />
       <script>
 (() => {
   const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
@@ -97,7 +97,7 @@
         <a class="brand" href="/" aria-label="Solvyr home">
           <div class="brandtext">
             <img class="brandLogo" src="/assets/brand/solvyr-logo-hybrid.svg" alt="Solvyr" width="175" height="35" />
-            <div class="tag">Reliable AI work, running where customers choose</div>
+            <div class="tag">AI document processing</div>
           </div>
         </a>
 
@@ -108,6 +108,7 @@
           </div>
 
           <nav class="tabs" aria-label="Primary navigation">
+            <a class="tab navDocument" href="/use-cases/document-intake.html">Document intake</a>
             <details class="navDropdown navProduct" name="primary-navigation">
               <summary class="tab">Product</summary>
               <div class="dropdownMenu">
@@ -122,111 +123,63 @@
                 <a href="/use-cases/pdf-to-rag-corpus.html">PDF to RAG corpus</a>
                 <a href="/use-cases/document-reindexing.html">Document re-indexing</a>
                 <a href="/use-cases/public-data-quality.html">Public-data quality runs</a>
-                <a href="/use-cases/document-intake.html">Document intake</a>
               </div>
             </details>
             <a class="tab" href="/proof.html">Proof</a>
             <a class="tab" href="/security.html">Security</a>
             <a class="tab navExample" href="/sample-output.html">Example run</a>
-            <a class="tab cta" href="../pilot-intake.html#intent=public-data-quality&source=public-data-quality-use-case">Scope a run</a>
+            <a class="tab cta" href="../pilot-intake.html#intent=public-data-quality&source=public-data-quality-use-case">Discuss a test</a>
           </nav>
         </div>
       </div>
     </header>
 
     <main id="main-content" class="container shell">
-      <section class="hero">
-        <p class="eyebrow">Use case</p>
-        <h1>Run repeatable checks on public metadata, catalog exports, and harvest workflows.</h1>
-        <p class="lede">
-          Solvyr supports reviewable batch runs over public or test metadata
-          before wider publication, harvesting, indexing, or downstream reuse.
-          Each run returns issue lists, suggested fixes, caveats, and a
-          decision-ready report to the team that owns the catalog workflow.
-        </p>
-        <div class="heroActions">
-          <a class="button primary" href="../pilot-intake.html#intent=public-data-quality&source=public-data-quality-use-case">Scope a public-data run</a>
-          <a class="button secondary" href="#output">See the expected quality output</a>
-        </div>
-      </section>
-
-      <div class="summaryGrid">
-        <article class="panel">
-          <p class="miniLabel">Catalog quality</p>
-          <h2>Find issues before records move downstream.</h2>
-          <p>Check records for missing fields, broken links, stale references, inconsistent classifications, duplicates, and profile drift.</p>
-        </article>
-        <article class="panel">
-          <p class="miniLabel">Recurring runs</p>
-          <h2>Repeat the same workflow after exports refresh.</h2>
-          <p>Useful when metadata, portals, indexes, or reporting systems are refreshed on a predictable cycle.</p>
-        </article>
-        <article class="panel">
-          <p class="miniLabel">Review package</p>
-          <h2>Return visible evidence, not silent pass/fail.</h2>
-          <p>Each run should produce issue data, record-level notes, summary counts, caveats, and recommended next actions.</p>
-        </article>
+<section class="hero">
+      <p class="eyebrow">Public-data quality</p>
+      <h1>Get your catalogue ready for its next release.</h1>
+      <p class="lede">Check a metadata export for missing information, inconsistencies and improvements. Your team receives findings and enrichment suggestions to review.</p>
+      <div class="heroActions"><a href="../pilot-intake.html#intent=public-data-quality&source=public-data-quality-use-case" class="button primary">Discuss a data test</a><a href="#output" class="button secondary">See the output</a>
       </div>
-
-      <section class="split">
-        <article class="panel">
-          <h2>Use this when</h2>
-          <ul class="cleanList">
-            <li>You manage a public-data, archive, library, or research-data catalog.</li>
-            <li>You exchange metadata through DCAT, XML, CSV, JSON, or portal exports.</li>
-            <li>You need checks before publication, harvesting, indexing, or reuse.</li>
-            <li>The data is public, low-sensitivity, redacted, or safe test data.</li>
-            <li>An internal owner can review suggested fixes before anything changes.</li>
-          </ul>
-        </article>
-        <article class="panel mutedPanel">
-          <h2>Current operating model</h2>
-          <ul class="cleanList">
-            <li>The existing catalog remains the system of record.</li>
-            <li>A human owner reviews recommendations before changes are made.</li>
-            <li>Runs follow an export or refresh cycle.</li>
-            <li>Public, test, redacted, or agreed low-sensitivity data enters the route.</li>
-            <li>Results support an operational decision by the catalog owner.</li>
-          </ul>
-        </article>
       </section>
-
-      <section class="band compact" id="output" aria-labelledby="output-title">
-        <div>
-          <p class="eyebrow">Output</p>
-          <h2 id="output-title">What a public-data quality run returns.</h2>
-        </div>
-        <p>
-          A typical bundle can include issue CSV/JSON, record-level notes,
-          broken-link and stale-reference findings, schema or profile warnings,
-          duplicate and classification signals, enrichment suggestions, summary
-          counts, caveats, and a reviewed recommendation for the next run.
-        </p>
+      <section class="taskGrid sectionGap" aria-label="Data tasks">
+      <article class="panel">
+      <h3>Check</h3>
+      <p>Review missing fields, duplicate records, references and classifications.</p>
+      </article>
+      <article class="panel">
+      <h3>Enrich</h3>
+      <p>Suggest additions and corrections using agreed sources.</p>
+      </article>
+      <article class="panel">
+      <h3>Repeat</h3>
+      <p>Run the same checks after an export or a new release.</p>
+      </article>
       </section>
-
+      <section class="band" id="output" aria-labelledby="output-title">
+      <div>
+      <p class="eyebrow">Output</p>
+      <h2 id="output-title">A clear list to work through.</h2>
+      </div>
+      <p>Record-level findings, suggested improvements and a summary in CSV, JSON or an agreed report. Your team reviews the suggestions and keeps control of the catalogue.</p>
+      </section>
       <section class="band compact" aria-labelledby="boundary-title">
-        <div>
-          <p class="eyebrow">Data route</p>
-          <h2 id="boundary-title">Start with public or test metadata and a clear acceptance rule.</h2>
-        </div>
-        <p>
-          The strongest first run has one export, visible validation criteria,
-          and a clear reviewer. Sensitive production data uses an agreed
-          transfer route with retention, deletion, and operator access defined
-          before transfer.
-        </p>
+      <div>
+      <p class="eyebrow">Data</p>
+      <h2 id="boundary-title">Start with one export.</h2>
+      </div>
+      <div>
+      <p>Public or test data is a straightforward starting point. For other data, we agree access, transfer and retention first.</p>
+      </div>
       </section>
-
       <section class="band compact" aria-labelledby="next-title">
-        <div>
-          <p class="eyebrow">Next step</p>
-          <h2 id="next-title">Scope one export or refresh cycle.</h2>
-        </div>
-        <p>
-          Share the record count, export format, current catalog or exchange
-          process, known quality problems, target downstream system, recurrence,
-          sensitivity, and how your team would validate the report.
-        </p>
+      <div>
+      <p class="eyebrow">First test</p>
+      <h2 id="next-title">What needs to improve in your data?</h2>
+      </div>
+      <div>
+      <p>Bring an example export and describe what needs to improve. We test the value of the findings and the cost of repeated processing.</p>
+      </div>
       </section>
     </main>
 
@@ -253,7 +206,7 @@
 
           </details>
           <!--email_off--><a href="mailto:hello@solvyr.com">hello@solvyr.com</a><!--/email_off-->
-          <a href="../pilot-intake.html#intent=public-data-quality&source=public-data-quality-use-case">Pilot intake</a>
+          <a href="../pilot-intake.html#intent=public-data-quality&source=public-data-quality-use-case">Discuss a test</a>
         </div>
       </div>
     </footer>

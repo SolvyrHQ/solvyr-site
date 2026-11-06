@@ -2238,3 +2238,70 @@ textarea:focus {
     transition-duration: 0.001ms !important;
   }
 }
+
+/* Document-first local revision, 6 November 2026. */
+.headlineAccent { color: var(--blue-dark); }
+.corporateHero { grid-template-columns: minmax(0, 1.25fr) minmax(320px, .8fr); gap: clamp(32px, 6vw, 76px); }
+.corporateHero h1 { max-width: 21ch; font-size: clamp(42px, 4.5vw, 60px); line-height: 1.08; }
+.corporateHero .lede { font-size: 18px; }
+.documentExample { padding: 28px; border-radius: 22px; color: var(--paper); background: var(--ink); box-shadow: var(--shadow); }
+.exampleCaption { margin-bottom: 20px; color: #aebbd4; font-size: 11px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+.exampleDocument { display: grid; gap: 8px; width: 80%; padding: 22px; border-radius: 10px; color: var(--ink); background: var(--paper); }
+.exampleDocument > span { font-size: 12px; color: var(--muted); }
+.exampleDocument > strong { font-size: 20px; }
+.exampleDocument i { width: 90%; height: 5px; margin-top: 4px; border-radius: 5px; background: var(--line); }
+.exampleDocument i:last-child { width: 65%; }
+.exampleArrow { padding: 10px 0; color: #9ebcff; font-size: 26px; text-align: center; }
+.exampleResult { padding: 22px; border: 1px solid #35415b; border-radius: 12px; background: var(--ink-soft); }
+.exampleResult > span { display: block; margin-bottom: 7px; color: #aebbd4; font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
+.exampleResult > strong { color: var(--paper); font-size: 18px; }
+.exampleResult dl { display: grid; gap: 9px; margin: 18px 0 0; }
+.exampleResult dl > div { display: grid; grid-template-columns: 85px minmax(0, 1fr); gap: 12px; font-size: 12px; }
+.exampleResult dt { color: #aebbd4; }
+.exampleResult dd { margin: 0; color: var(--paper); }
+.workSection { margin-block: 44px 64px; }
+.sectionHeading { margin-bottom: 24px; max-width: 700px; }
+.taskGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.taskGrid .panel { padding: 26px; }
+.taskGrid h3 { font-size: 20px; }
+.taskGrid p { margin-bottom: 0; color: var(--muted); }
+.ownershipLine { margin: 22px 0; color: var(--muted); font-size: 14px; }
+.sampleFlow { grid-template-columns: 1fr; gap: 28px; }
+.testSteps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px; margin: 0; padding: 0; list-style: none; }
+.testSteps li > span { display: grid; place-items: center; width: 30px; height: 30px; margin-bottom: 14px; border: 1px solid var(--line-strong); border-radius: 50%; color: var(--blue-dark); background: var(--paper); font-size: 13px; font-weight: 750; }
+.testSteps h3 { font-size: 17px; }
+.testSteps p { margin: 0; color: var(--muted); font-size: 14px; }
+.textLinks, .proofLink { display: flex; flex-wrap: wrap; gap: 12px 22px; margin-top: 18px; font-size: 14px; }
+.proofLink { padding-top: 18px; border-top: 1px solid var(--line); }
+.closingTest { margin-top: 32px; padding: clamp(28px, 5vw, 48px); }
+.closingTest h2 { max-width: 22ch; font-size: clamp(28px, 3vw, 38px); }
+.closingTest .contactActions { margin-top: 22px; }
+.corpusSummary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.intakeNext { display: grid; gap: 12px; margin: 28px 0 0; padding-left: 20px; color: var(--muted); font-size: 14px; }
+.introQuote { font-size: 19px; }
+
+@media (max-width: 980px) {
+  .corporateHero { grid-template-columns: 1fr; }
+  .documentExample { max-width: 560px; width: 100%; }
+}
+@media (max-width: 760px) {
+  .taskGrid, .testSteps, .corpusSummary { grid-template-columns: 1fr; }
+  .corporateHero h1 { font-size: clamp(38px, 8vw, 56px); max-width: 21ch; }
+  .corporateHero .lede { font-size: 17px; }
+  .workSection { margin-block: 32px 40px; }
+  .testSteps { gap: 24px; }
+  .testSteps li { position: relative; padding-left: 46px; }
+  .testSteps li > span { position: absolute; left: 0; top: 0; }
+  .documentExample { padding: 22px; }
+  .exampleResult dl > div { grid-template-columns: 72px minmax(0, 1fr); gap: 8px; }
+}
+
+/* The primary product stays visible outside the supporting dropdowns. */
+.tabs { flex-wrap: wrap; }
+.tab.navDocument { color: var(--blue-dark); font-weight: 780; }
+@media (min-width: 761px) and (max-width: 1180px) {
+  html { scroll-padding-top: 164px; }
+}
+@media (max-width: 760px) {
+  html { scroll-padding-top: 216px; }
+}

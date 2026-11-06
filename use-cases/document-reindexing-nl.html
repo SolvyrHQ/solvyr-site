@@ -3,24 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Documenten Herindexeren en Corpusrefresh - Solvyr Fast Corpus</title>
+    <title>Documenten herindexeren - Solvyr Fast Corpus</title>
     <meta
       name="description"
-      content="Gebruik Solvyr Fast Corpus om schone documentbacklogs te vernieuwen naar AI-ready JSONL, chunks, embeddings, stabiele IDs en een runrapport."
+      content="Vernieuw je documentcorpus voor zoeken, RAG en AI-workflows. Test outputkwaliteit en kosten met een representatieve selectie."
     />
-    <meta property="og:title" content="Documenten Herindexeren en Corpusrefresh - Solvyr" />
+    <meta property="og:title" content="Documenten herindexeren - Solvyr Fast Corpus" />
     <meta
       property="og:description"
-      content="Vernieuw documentbacklogs voor RAG, search, evals en agent-workflows met schone PDF/tekst naar JSONL-verwerking."
+      content="Vernieuw je documentcorpus voor zoeken, RAG en AI-workflows. Test outputkwaliteit en kosten met een representatieve selectie."
     />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://solvyr.com/use-cases/document-reindexing-nl.html" />
     <meta property="og:image" content="https://solvyr.com/assets/brand/solvyr-social-card-nl.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Solvyr: Lever betrouwbare AI-documentroutes en behoud klant en workflow." />
+    <meta property="og:image:alt" content="Solvyr: AI-documentverwerking met grip op kwaliteit en kosten." />
     <meta name="twitter:image" content="https://solvyr.com/assets/brand/solvyr-social-card-nl.png" />
-    <meta name="twitter:image:alt" content="Solvyr: Lever betrouwbare AI-documentroutes en behoud klant en workflow." />
+    <meta name="twitter:image:alt" content="Solvyr: AI-documentverwerking met grip op kwaliteit en kosten." />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://solvyr.com/use-cases/document-reindexing-nl.html" />
     <link rel="alternate" hreflang="en" href="https://solvyr.com/use-cases/document-reindexing.html" />
@@ -29,7 +29,7 @@
     <link rel="icon" href="/assets/brand/solvyr-icon-hybrid.svg?v=20260820-2" type="image/svg+xml" sizes="any" />
     <link rel="icon" href="/favicon.ico?v=20260820-2" sizes="16x16 32x32 48x48" />
     <link rel="apple-touch-icon" href="/assets/brand/solvyr-icon-hybrid-256.png?v=20260820-2" />
-    <link rel="stylesheet" href="../styles.css?v=20260823-1" />
+    <link rel="stylesheet" href="../styles.css?v=20261106-2" />
       <script>
 (() => {
   const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
@@ -97,7 +97,7 @@
         <a class="brand" href="/nl.html" aria-label="Solvyr home">
           <div class="brandtext">
             <img class="brandLogo" src="/assets/brand/solvyr-logo-hybrid.svg" alt="Solvyr" width="175" height="35" />
-            <div class="tag">Betrouwbaar AI-werk, uitgevoerd waar klanten kiezen</div>
+            <div class="tag">AI-documentverwerking</div>
           </div>
         </a>
 
@@ -108,6 +108,7 @@
           </div>
 
           <nav class="tabs" aria-label="Primaire navigatie">
+            <a class="tab navDocument" href="/use-cases/document-intake-nl.html">Documentintake</a>
             <details class="navDropdown navProduct" name="primary-navigation">
               <summary class="tab">Product</summary>
               <div class="dropdownMenu">
@@ -122,78 +123,42 @@
                 <a href="/use-cases/pdf-to-rag-corpus-nl.html">PDF naar RAG-corpus</a>
                 <a href="/use-cases/document-reindexing-nl.html">Documenten herindexeren</a>
                 <a href="/use-cases/public-data-quality-nl.html">Publieke datakwaliteit</a>
-                <a href="/use-cases/document-intake-nl.html">Documentintake</a>
               </div>
             </details>
             <a class="tab" href="/proof-nl.html">Proefrun</a>
             <a class="tab" href="/security-nl.html">Security</a>
             <a class="tab navExample" href="/sample-output-nl.html">Voorbeeldrun</a>
-            <a class="tab cta" href="../pilot-intake-nl.html#intent=fast-corpus&source=reindexing-use-case-nl">Run afbakenen</a>
+            <a class="tab cta" href="../pilot-intake-nl.html#intent=fast-corpus&source=reindexing-use-case-nl">Bespreek een test</a>
           </nav>
         </div>
       </div>
     </header>
 
     <main id="main-content" class="container shell">
-      <section class="hero">
-        <p class="eyebrow">Toepassing</p>
-        <h1>Vernieuw en herindexeer documentbacklogs zonder er een nieuw pipelineproject van te maken.</h1>
-        <p class="lede">
-          Fast Corpus ondersteunt async herverwerking van schone PDF's en
-          tekstarchieven naar AI-ready JSONL, chunks, embeddings, stabiele IDs
-          en een runrapport met zichtbare prijsbasis en Europese
-          uitvoeringscontext.
-        </p>
-        <div class="heroActions">
-          <a class="button primary" href="../pilot-intake-nl.html#intent=fast-corpus&source=reindexing-use-case-nl">Scope een herindexeringsrun</a>
-          <a class="button secondary" href="../proof/100-pdf-fast-corpus-run-nl.html">Bekijk de gemeten clean-PDF-run</a>
-        </div>
-      </section>
-
-      <div class="summaryGrid">
-        <article class="panel">
-          <p class="miniLabel">Backlogs</p>
-          <h2>Verwerk archieven opnieuw naar doorzoekbare chunks.</h2>
-          <p>Handig wanneer oudere documentsets bruikbaar moeten worden voor RAG, search of agent-workflows.</p>
-        </article>
-        <article class="panel">
-          <p class="miniLabel">Refresh</p>
-          <h2>Herhaal de corpusjob wanneer brondocumenten veranderen.</h2>
-          <p>Terugkerende refresh is de businesslaag nadat de eerste Fast Corpus-test fit bewijst.</p>
-        </article>
-        <article class="panel">
-          <p class="miniLabel">Kosten</p>
-          <h2>Hou fouten en prijsbasis zichtbaar.</h2>
-          <p>De output moet aantallen, caveats en de vervolgbeslissing voor het corpuspad laten zien.</p>
-        </article>
+<section class="hero">
+      <p class="eyebrow">Documenten herindexeren</p>
+      <h1>Een actueel corpus wanneer je documenten veranderen.</h1>
+      <p class="lede">Laat nieuwe en gewijzigde documenten opnieuw verwerken voor je zoekindex, RAG-toepassing of AI-workflow. Fast Corpus levert tekst, chunks, embeddings, stabiele IDs en een runrapport.</p>
+      <div class="heroActions"><a href="../pilot-intake-nl.html#intent=fast-corpus&source=reindexing-use-case-nl" class="button primary">Bespreek een herindexering</a><a href="../proof/100-pdf-fast-corpus-run-nl.html" class="button secondary">Bekijk de gemeten PDF-test</a>
       </div>
-
-      <section class="band compact" aria-labelledby="fit-title">
-        <div>
-          <p class="eyebrow">Fit</p>
-          <h2 id="fit-title">Het sterkst wanneer het werk batchgericht en retrybaar is.</h2>
-        </div>
-        <p>
-          Documentherindexering past bij Solvyr wanneer input in begrensde
-          taken kan worden gesplitst, de job asynchrone levering tolereert, en
-          de koper voorspelbare kosten per bruikbare output wil in plaats van
-          realtime serving. Het past natuurlijk bij archieven en publieke teams
-          die AI-ready output nodig hebben en Europese uitvoeringscontrole
-          zichtbaar willen houden.
-        </p>
       </section>
-
+      <section class="band compact" aria-labelledby="fit-title">
+      <div>
+      <p class="eyebrow">Gebruik</p>
+      <h2 id="fit-title">Eenmalig opruimen of terugkerend vernieuwen.</h2>
+      </div>
+      <div>
+      <p>Voor archieven, handleidingen, kennisbanken en andere documentverzamelingen. We spreken af welke documenten meegaan, welke output je nodig hebt en hoe vaak de verwerking terugkomt.</p>
+      </div>
+      </section>
       <section class="band compact" aria-labelledby="cta-title">
-        <div>
-          <p class="eyebrow">Volgende stap</p>
-          <h2 id="cta-title">Start met een representatieve sample.</h2>
-        </div>
-        <p>
-          Deel geschat pagina-aantal, inputtype, gewenste output, gevoeligheid
-          en of dit eenmalig of terugkerend is. Scope de run een keer, ken de
-          startunit en beslis op basis van geinspecteerde output. Het huidige
-          tarief en de scope staan op de aparte <a href="/fast-corpus-nl.html">Fast Corpus-pagina</a>.
-        </p>
+      <div>
+      <p class="eyebrow">Eerste stap</p>
+      <h2 id="cta-title">Probeer een representatieve selectie.</h2>
+      </div>
+      <div>
+      <p>Met enkele voorbeelden beoordelen we kwaliteit, kosten en de aansluiting op je index. De startprijs en inbegrepen verwerking staan op de <a href="/fast-corpus-nl.html">Fast Corpus-pagina</a>.</p>
+      </div>
       </section>
     </main>
 
@@ -220,7 +185,7 @@
 
           </details>
           <!--email_off--><a href="mailto:hello@solvyr.com">hello@solvyr.com</a><!--/email_off-->
-          <a href="../pilot-intake-nl.html#intent=fast-corpus&source=reindexing-use-case-nl">Pilot intake</a>
+          <a href="../pilot-intake-nl.html#intent=fast-corpus&source=reindexing-use-case-nl">Test bespreken</a>
         </div>
       </div>
     </footer>

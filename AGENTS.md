@@ -11,14 +11,20 @@ agent-readable files, read:
 Use the guide as the website brandbook. Keep the corporate first-screen promise
 focused on the supported result and partner ownership boundary:
 
-> reliable AI work, running where customers choose
+> AI document processing, with clarity on quality and cost
 
 > partners keep the customer and workflow; Solvyr owns bounded AI execution,
 > validation, exceptions, and typed result delivery
 
-Introduce flexible compute only after the result flow. Keep capacity expansion
-demand-led: Solvyr-controlled workers today, approved organizational capacity
-next, and European-provider overflow when real workloads require it.
+Current local brief (Jan, 2026-11-06): start with example documents and the
+intended task, then test quality and processing costs. Classification,
+extraction, matching and enrichment are work to scope and build. Reduce
+repetition and capacity-source explanations; keep execution-network strategy
+in supporting context. Lower costs remain an ambition to test per task.
+Customer hardware is optional and its deployment is agreed per task. Preserve
+all routes and link destinations. Jan reviewed the local revision and authorized the live update on
+2026-11-06. Document intake is the first direct main-navigation link, outside
+both dropdowns. Future publication still requires task-specific authority.
 
 Keep dedicated Fast Corpus first screens focused on:
 

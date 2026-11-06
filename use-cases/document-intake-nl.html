@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Documentintake voor ERP-workflows - Solvyr</title>
-    <meta name="description" content="Bereid terugkerende facturen en bedrijfsdocumenten voor op reviewbare ERP-aangrenzende intake met velden, validatienotities, caveats en importklare output." />
-    <meta property="og:title" content="Documentintake voor ERP-workflows - Solvyr" />
-    <meta property="og:description" content="Terugkerende bedrijfsdocumenten naar reviewbare, importklare output voor downstream ERP- of operations-workflows." />
+    <title>Documentintake en enrichment met AI - Solvyr</title>
+    <meta name="description" content="Laat documenten herkennen, uitlezen, matchen en verrijken voor je workflow. Begin met voorbeelden en test kwaliteit en verwerkingskosten." />
+    <meta property="og:title" content="Documentintake en enrichment met AI - Solvyr" />
+    <meta property="og:description" content="Laat documenten herkennen, uitlezen, matchen en verrijken voor je workflow. Begin met voorbeelden en test kwaliteit en verwerkingskosten." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://solvyr.com/use-cases/document-intake-nl.html" />
     <meta property="og:image" content="https://solvyr.com/assets/brand/solvyr-social-card-nl.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Solvyr: Lever betrouwbare AI-documentroutes en behoud klant en workflow." />
+    <meta property="og:image:alt" content="Solvyr: AI-documentverwerking met grip op kwaliteit en kosten." />
     <meta name="twitter:image" content="https://solvyr.com/assets/brand/solvyr-social-card-nl.png" />
-    <meta name="twitter:image:alt" content="Solvyr: Lever betrouwbare AI-documentroutes en behoud klant en workflow." />
+    <meta name="twitter:image:alt" content="Solvyr: AI-documentverwerking met grip op kwaliteit en kosten." />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://solvyr.com/use-cases/document-intake-nl.html" />
     <link rel="alternate" hreflang="en" href="https://solvyr.com/use-cases/document-intake.html" />
@@ -23,7 +23,7 @@
     <link rel="icon" href="/assets/brand/solvyr-icon-hybrid.svg?v=20260820-2" type="image/svg+xml" sizes="any" />
     <link rel="icon" href="/favicon.ico?v=20260820-2" sizes="16x16 32x32 48x48" />
     <link rel="apple-touch-icon" href="/assets/brand/solvyr-icon-hybrid-256.png?v=20260820-2" />
-    <link rel="stylesheet" href="../styles.css?v=20260823-1" />
+    <link rel="stylesheet" href="../styles.css?v=20261106-2" />
       <script>
 (() => {
   const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
@@ -90,7 +90,7 @@
         <a class="brand" href="/nl.html" aria-label="Solvyr home">
           <div class="brandtext">
             <img class="brandLogo" src="/assets/brand/solvyr-logo-hybrid.svg" alt="Solvyr" width="175" height="35" />
-            <div class="tag">Betrouwbaar AI-werk, uitgevoerd waar klanten kiezen</div>
+            <div class="tag">AI-documentverwerking</div>
           </div>
         </a>
         <div class="headerTools">
@@ -99,6 +99,7 @@
             <a class="lang active" href="document-intake-nl.html" aria-label="Nederlandse versie"><span aria-hidden="true">🇳🇱</span><span>NL</span></a>
           </div>
           <nav class="tabs" aria-label="Primaire navigatie">
+            <a class="tab navDocument active" href="/use-cases/document-intake-nl.html" aria-current="page">Documentintake</a>
             <details class="navDropdown navProduct" name="primary-navigation">
               <summary class="tab">Product</summary>
               <div class="dropdownMenu">
@@ -113,50 +114,53 @@
                 <a href="/use-cases/pdf-to-rag-corpus-nl.html">PDF naar RAG-corpus</a>
                 <a href="/use-cases/document-reindexing-nl.html">Documenten herindexeren</a>
                 <a href="/use-cases/public-data-quality-nl.html">Publieke datakwaliteit</a>
-                <a href="/use-cases/document-intake-nl.html">Documentintake</a>
               </div>
             </details>
             <a class="tab" href="/proof-nl.html">Proefrun</a>
             <a class="tab" href="/security-nl.html">Security</a>
             <a class="tab navExample" href="/sample-output-nl.html">Voorbeeldrun</a>
-            <a class="tab cta" href="../pilot-intake-nl.html#intent=document-intake&source=document-intake-use-case-nl">Run afbakenen</a>
+            <a class="tab cta" href="../pilot-intake-nl.html#intent=document-intake&source=document-intake-use-case-nl">Bespreek een test</a>
           </nav>
         </div>
       </div>
     </header>
     <main id="main-content" class="container shell">
-      <section class="hero">
-        <p class="eyebrow">Toepassing</p>
-        <h1>Lever gevalideerde documentresultaten vóór ERP-intake.</h1>
-        <p class="lede">U behoudt klant en downstream workflow. Solvyr bakent de AI-extractie en uitzonderingsstap af en levert reviewbare output met een expliciet geaccepteerde, afgewezen of reviewplichtige status. Directe ERP-write-back en accounting automation blijven in de bestaande downstream workflow.</p>
-        <div class="heroActions">
-          <a class="button primary" href="../pilot-intake-nl.html#intent=document-intake&source=document-intake-use-case-nl">Scope een documentintake-run</a>
-          <a class="button secondary" href="#output">Bekijk de verwachte intake-output</a>
-        </div>
+<section class="hero">
+      <p class="eyebrow">Documentintake</p>
+      <h1>Van factuur, order of bijlage naar bruikbare gegevens.</h1>
+      <p class="lede">Laat documenten herkennen, uitlezen, controleren en verrijken voor jouw proces. Jij bepaalt wat eruit moet komen; Solvyr verzorgt de AI-verwerking.</p>
+      <div class="heroActions"><a href="../pilot-intake-nl.html#intent=document-intake&source=document-intake-use-case-nl" class="button primary">Bespreek een documenttest</a><a href="#output" class="button secondary">Bekijk het resultaat</a>
+      </div>
       </section>
-      <section class="split">
-        <article class="panel">
-          <h2>Gebruik dit wanneer</h2>
-          <ul class="cleanList">
-            <li>Je terugkerende facturen, orderdocumenten, statements of zakelijke PDF's ontvangt.</li>
-            <li>Je velden, validatienotities en reviewbare output nodig hebt voor import.</li>
-            <li>Een menselijke eigenaar uitzonderingen kan goedkeuren voordat iets downstream gaat.</li>
-            <li>De eerste sample veilig gedeeld kan worden onder een schriftelijke scope.</li>
-          </ul>
-        </article>
-        <article class="panel mutedPanel">
-          <h2>Niet voor</h2>
-          <ul class="cleanList">
-            <li>Directe ERP-write-back in het huidige publieke aanbod.</li>
-            <li>Gecertificeerde accounting automation of betaaluitvoering.</li>
-            <li>Realtime vervanging van AP-workflows.</li>
-            <li>Hooggevoelige financiele data zonder voorafgaande afspraak.</li>
-          </ul>
-        </article>
+      <section class="taskGrid sectionGap" aria-label="Documenttaken">
+      <article class="panel">
+      <h3>Herkennen en routeren</h3>
+      <p>Bepaal het documenttype en de juiste vervolgstap.</p>
+      </article>
+      <article class="panel">
+      <h3>Velden en regels uitlezen</h3>
+      <p>Haal bedragen, aantallen, datums en andere afgesproken gegevens op.</p>
+      </article>
+      <article class="panel">
+      <h3>Matchen en verrijken</h3>
+      <p>Koppel gegevens aan je artikelbestand, klantgegevens of andere afgesproken bronnen.</p>
+      </article>
       </section>
-      <section class="band compact" id="output" aria-labelledby="output-title">
-        <div><p class="eyebrow">Output</p><h2 id="output-title">Wat een documentintake-run oplevert.</h2></div>
-        <p>Een scoped run kan geextraheerde velden, bronverwijzingen, confidence- of validatienotities, uitzonderingslijsten, caveats en een runrapport opleveren. Het handoff-formaat wordt voor de pilot afgesproken, zodat de downstream eigenaar kan reviewen voor import.</p>
+      <section class="band" id="output" aria-labelledby="output-title">
+      <div>
+      <p class="eyebrow">Resultaat</p>
+      <h2 id="output-title">Gegevens die je proces kan gebruiken.</h2>
+      </div>
+      <p>Je ontvangt de afgesproken velden en bronverwijzingen, aangevuld met wat controle nodig heeft. Het formaat stemmen we af op je ERP of andere applicatie. Jij behoudt de workflow, goedkeuring en vervolgstappen.</p>
+      </section>
+      <section class="band compact">
+      <div>
+      <p class="eyebrow">Eerste test</p>
+      <h2>Werkt het goed genoeg, en kan het goedkoper?</h2>
+      </div>
+      <div>
+      <p>We beginnen met enkele representatieve documenten en het gewenste resultaat. We bekijken de kwaliteit, het handmatige controlewerk en de kosten. Bij scans, bijzondere layouts of aanvullende verrijking bepalen we wat de taak nodig heeft.</p>
+      </div>
       </section>
     </main>
     <footer class="footer">
@@ -173,7 +177,7 @@
   <a href="../pricing.yaml">Pricing YAML</a>
 </details>
           <!--email_off--><a href="mailto:hello@solvyr.com">hello@solvyr.com</a><!--/email_off-->
-          <a href="../pilot-intake-nl.html#intent=document-intake&source=document-intake-use-case-nl">Pilot intake</a>
+          <a href="../pilot-intake-nl.html#intent=document-intake&source=document-intake-use-case-nl">Test bespreken</a>
         </div>
       </div>
     </footer>

@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Document Intake for ERP Workflows - Solvyr</title>
-    <meta name="description" content="Prepare recurring invoices and business documents for reviewable ERP-adjacent intake with extracted fields, validation notes, caveats, and import-ready output." />
-    <meta property="og:title" content="Document Intake for ERP Workflows - Solvyr" />
-    <meta property="og:description" content="Recurring business documents to reviewable, import-ready output before downstream ERP or operations workflows." />
+    <title>Document intake and enrichment with AI - Solvyr</title>
+    <meta name="description" content="Classify, extract, match and enrich documents for your workflow. Start with example documents and test quality and processing costs." />
+    <meta property="og:title" content="Document intake and enrichment with AI - Solvyr" />
+    <meta property="og:description" content="Classify, extract, match and enrich documents for your workflow. Start with example documents and test quality and processing costs." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://solvyr.com/use-cases/document-intake.html" />
     <meta property="og:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Solvyr: Ship reliable AI document workflows while keeping the customer and workflow." />
+    <meta property="og:image:alt" content="Solvyr: AI document processing with clarity on quality and cost." />
     <meta name="twitter:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
-    <meta name="twitter:image:alt" content="Solvyr: Ship reliable AI document workflows while keeping the customer and workflow." />
+    <meta name="twitter:image:alt" content="Solvyr: AI document processing with clarity on quality and cost." />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://solvyr.com/use-cases/document-intake.html" />
     <link rel="alternate" hreflang="en" href="https://solvyr.com/use-cases/document-intake.html" />
@@ -23,7 +23,7 @@
     <link rel="icon" href="/assets/brand/solvyr-icon-hybrid.svg?v=20260820-2" type="image/svg+xml" sizes="any" />
     <link rel="icon" href="/favicon.ico?v=20260820-2" sizes="16x16 32x32 48x48" />
     <link rel="apple-touch-icon" href="/assets/brand/solvyr-icon-hybrid-256.png?v=20260820-2" />
-    <link rel="stylesheet" href="../styles.css?v=20260823-1" />
+    <link rel="stylesheet" href="../styles.css?v=20261106-2" />
       <script>
 (() => {
   const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
@@ -90,7 +90,7 @@
         <a class="brand" href="/" aria-label="Solvyr home">
           <div class="brandtext">
             <img class="brandLogo" src="/assets/brand/solvyr-logo-hybrid.svg" alt="Solvyr" width="175" height="35" />
-            <div class="tag">Reliable AI work, running where customers choose</div>
+            <div class="tag">AI document processing</div>
           </div>
         </a>
         <div class="headerTools">
@@ -99,6 +99,7 @@
             <a class="lang" href="document-intake-nl.html" aria-label="Nederlandse versie"><span aria-hidden="true">🇳🇱</span><span>NL</span></a>
           </div>
           <nav class="tabs" aria-label="Primary navigation">
+            <a class="tab navDocument active" href="/use-cases/document-intake.html" aria-current="page">Document intake</a>
             <details class="navDropdown navProduct" name="primary-navigation">
               <summary class="tab">Product</summary>
               <div class="dropdownMenu">
@@ -113,50 +114,53 @@
                 <a href="/use-cases/pdf-to-rag-corpus.html">PDF to RAG corpus</a>
                 <a href="/use-cases/document-reindexing.html">Document re-indexing</a>
                 <a href="/use-cases/public-data-quality.html">Public-data quality runs</a>
-                <a href="/use-cases/document-intake.html">Document intake</a>
               </div>
             </details>
             <a class="tab" href="/proof.html">Proof</a>
             <a class="tab" href="/security.html">Security</a>
             <a class="tab navExample" href="/sample-output.html">Example run</a>
-            <a class="tab cta" href="../pilot-intake.html#intent=document-intake&source=document-intake-use-case">Scope a run</a>
+            <a class="tab cta" href="../pilot-intake.html#intent=document-intake&source=document-intake-use-case">Discuss a test</a>
           </nav>
         </div>
       </div>
     </header>
     <main id="main-content" class="container shell">
-      <section class="hero">
-        <p class="eyebrow">Use case</p>
-        <h1>Return validated document results before ERP intake.</h1>
-        <p class="lede">You keep the customer and downstream workflow. Solvyr scopes the bounded AI extraction and exception step, then returns reviewable output with explicit accepted, rejected, or review-required state. Direct ERP write-back and accounting automation stay with the existing downstream workflow.</p>
-        <div class="heroActions">
-          <a class="button primary" href="../pilot-intake.html#intent=document-intake&source=document-intake-use-case">Scope a document intake run</a>
-          <a class="button secondary" href="#output">See the expected intake output</a>
-        </div>
+<section class="hero">
+      <p class="eyebrow">Document intake</p>
+      <h1>Turn invoices, orders and attachments into useful data.</h1>
+      <p class="lede">Classify, extract, check and enrich documents for your process. You define what should come out; Solvyr handles the AI processing.</p>
+      <div class="heroActions"><a href="../pilot-intake.html#intent=document-intake&source=document-intake-use-case" class="button primary">Discuss a document test</a><a href="#output" class="button secondary">See the output</a>
+      </div>
       </section>
-      <section class="split">
-        <article class="panel">
-          <h2>Use this when</h2>
-          <ul class="cleanList">
-            <li>You receive recurring invoices, order documents, statements, or business PDFs.</li>
-            <li>You need extracted fields, validation notes, and reviewable output before import.</li>
-            <li>A human owner can approve exceptions before anything moves downstream.</li>
-            <li>The first sample can be shared safely under a written scope.</li>
-          </ul>
-        </article>
-        <article class="panel mutedPanel">
-          <h2>Not for</h2>
-          <ul class="cleanList">
-            <li>Direct ERP write-back in the current public offer.</li>
-            <li>Certified accounting automation or payment execution.</li>
-            <li>Realtime AP workflow replacement.</li>
-            <li>Highly sensitive financial data without prior agreement.</li>
-          </ul>
-        </article>
+      <section class="taskGrid sectionGap" aria-label="Document tasks">
+      <article class="panel">
+      <h3>Classify and route</h3>
+      <p>Identify the document type and the right next step.</p>
+      </article>
+      <article class="panel">
+      <h3>Extract fields and line items</h3>
+      <p>Get amounts, quantities, dates and the other details you agree on.</p>
+      </article>
+      <article class="panel">
+      <h3>Match and enrich</h3>
+      <p>Connect data to your item catalogue, customer records or other agreed sources.</p>
+      </article>
       </section>
-      <section class="band compact" id="output" aria-labelledby="output-title">
-        <div><p class="eyebrow">Output</p><h2 id="output-title">What a document intake run returns.</h2></div>
-        <p>A scoped run can return extracted fields, source references, confidence or validation notes, exception lists, caveats, and a run report. The handoff format is agreed before the pilot, so the downstream owner can review before import.</p>
+      <section class="band" id="output" aria-labelledby="output-title">
+      <div>
+      <p class="eyebrow">Output</p>
+      <h2 id="output-title">Data your workflow can use.</h2>
+      </div>
+      <p>Receive the agreed fields and source references, with anything that needs review made clear. We agree a format for your ERP or other application. You keep the workflow, approval and downstream actions.</p>
+      </section>
+      <section class="band compact">
+      <div>
+      <p class="eyebrow">First test</p>
+      <h2>Does it work well enough, and can it cost less?</h2>
+      </div>
+      <div>
+      <p>Start with a few representative documents and the intended result. We assess quality, human review and cost. For scans, unusual layouts or additional enrichment, we work out what the task needs.</p>
+      </div>
       </section>
     </main>
     <footer class="footer">
@@ -173,7 +177,7 @@
   <a href="../pricing.yaml">Pricing YAML</a>
 </details>
           <!--email_off--><a href="mailto:hello@solvyr.com">hello@solvyr.com</a><!--/email_off-->
-          <a href="../pilot-intake.html#intent=document-intake&source=document-intake-use-case">Pilot intake</a>
+          <a href="../pilot-intake.html#intent=document-intake&source=document-intake-use-case">Discuss a test</a>
         </div>
       </div>
     </footer>

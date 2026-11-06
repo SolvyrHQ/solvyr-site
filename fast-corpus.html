@@ -9,30 +9,30 @@
       }
     </script>
 
-    <title>Solvyr Fast Corpus - Document backlogs to AI-ready JSONL</title>
+    <title>Solvyr Fast Corpus - Documents to an AI-ready corpus</title>
     <meta
       name="description"
-      content="Solvyr Fast Corpus turns clean PDF and text backlogs into AI-ready JSONL with run evidence, predictable starting-unit pricing, and a practical route for European public-sector teams."
+      content="Turn digital PDFs and text into JSONL, chunks, embeddings, stable source IDs and a run report. Start with examples and review quality and cost."
     />
-    <meta property="og:title" content="Solvyr Fast Corpus - Document backlogs to AI-ready JSONL" />
+    <meta property="og:title" content="Solvyr Fast Corpus - Documents to an AI-ready corpus" />
     <meta
       property="og:description"
-      content="Turn clean PDF and text backlogs into AI-ready corpus output for RAG, search, evals, fine-tuning prep, and agent memory with a scoped, cost-effective run and European execution context."
+      content="Turn digital PDFs and text into JSONL, chunks, embeddings, stable source IDs and a run report. Start with examples and review quality and cost."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://solvyr.com/fast-corpus.html" />
     <meta property="og:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Solvyr: Ship reliable AI document workflows while keeping the customer and workflow." />
+    <meta property="og:image:alt" content="Solvyr: AI document processing with clarity on quality and cost." />
     <meta name="twitter:image" content="https://solvyr.com/assets/brand/solvyr-social-card.png" />
-    <meta name="twitter:image:alt" content="Solvyr: Ship reliable AI document workflows while keeping the customer and workflow." />
+    <meta name="twitter:image:alt" content="Solvyr: AI document processing with clarity on quality and cost." />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://solvyr.com/fast-corpus.html" />
-    <meta name="twitter:title" content="Solvyr Fast Corpus - Document backlogs to AI-ready JSONL" />
+    <meta name="twitter:title" content="Solvyr Fast Corpus - Documents to an AI-ready corpus" />
     <meta
       name="twitter:description"
-      content="Clean PDF and text backlogs to AI-ready JSONL with visible run reporting."
+      content="Turn digital PDFs and text into JSONL, chunks, embeddings, stable source IDs and a run report. Start with examples and review quality and cost."
     />
 
     <link rel="icon" href="/assets/brand/solvyr-icon-hybrid.svg?v=20260820-2" type="image/svg+xml" sizes="any" />
@@ -46,7 +46,7 @@
     <link rel="alternate" type="application/yaml" href="capabilities.yaml" title="Fast Corpus capabilities" />
     <link rel="help" href="llms.txt" />
     <meta name="theme-color" content="#f7f9fc" />
-    <link rel="stylesheet" href="styles.css?v=20260823-1" />
+    <link rel="stylesheet" href="styles.css?v=20261106-2" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -178,6 +178,7 @@
           </div>
 
           <nav class="tabs" aria-label="Primary navigation">
+            <a class="tab navDocument" href="/use-cases/document-intake.html">Document intake</a>
             <details class="navDropdown navProduct" name="primary-navigation">
               <summary class="tab active">Product</summary>
               <div class="dropdownMenu">
@@ -192,472 +193,131 @@
                 <a href="/use-cases/pdf-to-rag-corpus.html">PDF to RAG corpus</a>
                 <a href="/use-cases/document-reindexing.html">Document re-indexing</a>
                 <a href="/use-cases/public-data-quality.html">Public-data quality runs</a>
-                <a href="/use-cases/document-intake.html">Document intake</a>
               </div>
             </details>
             <a class="tab" href="/proof.html">Proof</a>
             <a class="tab" href="/security.html">Security</a>
             <a class="tab navExample" href="/sample-output.html">Example run</a>
-            <a class="tab cta" href="pilot-intake.html#intent=fast-corpus&source=site-nav">Scope a run</a>
+            <a class="tab cta" href="pilot-intake.html#intent=fast-corpus&source=site-nav">Discuss a test</a>
           </nav>
         </div>
       </div>
     </header>
 
     <main id="main-content" class="container shell">
-      <section class="page active" id="overview-panel" data-page="overview" aria-labelledby="overview-title">
-        <div class="hero heroGrid">
-          <div class="heroCopy">
-            <p class="eyebrow">Solvyr Fast Corpus</p>
-            <h1 id="overview-title">Turn a document backlog into an AI-ready corpus.</h1>
-            <p class="lede">
-              Send a bounded batch of clean PDFs or text. Get extracted text,
-              chunks, embeddings, stable IDs, and a run report your team can
-              inspect and accept.
-            </p>
-            <div class="heroActions">
-              <a class="button primary" href="pilot-intake.html#intent=fast-corpus&source=homepage-hero">Scope a backlog run <span aria-hidden="true">→</span></a>
-            </div>
-            <p class="heroContact">
-              Or talk directly with
-              <!--email_off--><a href="mailto:hello@solvyr.com?subject=Solvyr%20Fast%20Corpus%20inquiry">the founder at hello@solvyr.com</a><!--/email_off-->.
-            </p>
-          </div>
-
-          <div class="orchestrationStage" aria-label="Illustration: many documents converge into one accepted corpus output">
-            <div class="stageTopline">
-              <span>Bounded workload</span>
-              <span class="liveState"><i></i> controlled run</span>
-            </div>
-            <div class="inputStack" aria-hidden="true">
-              <span>PDF batch</span>
-              <span>Text files</span>
-              <span>Metadata</span>
-            </div>
-            <div class="flowLines" aria-hidden="true">
-              <i class="flowLine flowOne"></i>
-              <i class="flowLine flowTwo"></i>
-              <i class="flowLine flowThree"></i>
-              <i class="flowResolve"></i>
-              <i class="flowDot"></i>
-            </div>
-            <div class="outputCard">
-              <span class="outputLabel">Accepted output</span>
-              <strong>AI-ready corpus</strong>
-              <small>JSONL · chunks · embeddings · run report</small>
-            </div>
-            <div class="stageFoot">
-              <span>assigned</span><span>validated</span><span>returned</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="reasonGrid" aria-label="Why teams pilot Solvyr">
-          <article class="panel">
-            <p class="miniLabel">Backlog</p>
-            <h2>Thousands of clean PDF pages, without an internal corpus project.</h2>
-            <p>
-              Start with one bounded batch and one output target.
-            </p>
-          </article>
-          <article class="panel">
-            <p class="miniLabel">Price</p>
-            <h2>Standard clean batches start at EUR 0.95 per 1000 pages.</h2>
-            <p>
-              This is the processing starting rate. Pilot and service scope
-              are agreed separately; your team does not build the pipeline.
-            </p>
-          </article>
-          <article class="panel">
-            <p class="miniLabel">Output</p>
-            <h2>Get corpus files your team can inspect and accept.</h2>
-            <p>
-              Extracted text, chunks, embeddings, stable IDs, and run evidence.
-            </p>
-          </article>
-          <article class="panel">
-            <p class="miniLabel">Pilot</p>
-            <h2>Test a representative sample before committing further.</h2>
-            <p>
-              Continue, adjust the scope, or stop after inspecting the output.
-            </p>
-          </article>
-        </div>
-
-        <section class="reportPreview" aria-labelledby="benchmark-title">
-          <div class="reportCopy">
-            <p class="eyebrow">Measured proof</p>
-            <h2 id="benchmark-title">Recent internal run: 100 PDFs and 2,052 pages in one measured pass.</h2>
-            <p>
-              The run covered clean digital PDFs, text extraction, chunking,
-              and embeddings. It completed with zero failures and zero retries.
-            </p>
-          </div>
-          <div class="metricCard" aria-label="Recent benchmark metrics">
-            <div>
-              <span>Input</span>
-              <strong>100 PDFs / 2,052 pages</strong>
-            </div>
-            <div>
-              <span>Execution</span>
-              <strong>215s wall-clock / 0.281 GPU-hours measured</strong>
-            </div>
-            <div>
-              <span>Output</span>
-              <strong>987 chunks / about 1.3M estimated tokens</strong>
-            </div>
-            <div>
-              <span>Reliability</span>
-              <strong>0 failures / 0 retries</strong>
-            </div>
-          </div>
-        </section>
-
-        <section class="flowPanel" aria-labelledby="pilot-flow-title">
-          <div>
-            <p class="eyebrow">Pilot flow</p>
-            <h2 id="pilot-flow-title">One sample. One output target. Then decide.</h2>
-          </div>
-          <ol class="flowSteps">
-            <li>
-              <span>1</span>
-              <strong>Scope</strong>
-              <small>Backlog, pages, output target, sensitivity.</small>
-            </li>
-            <li>
-              <span>2</span>
-              <strong>Sample</strong>
-              <small>Share the smallest safe representative set.</small>
-            </li>
-            <li>
-              <span>3</span>
-              <strong>Process</strong>
-              <small>Turn the sample into inspectable corpus output.</small>
-            </li>
-            <li>
-              <span>4</span>
-              <strong>Decide</strong>
-              <small>One-time output, recurring refresh, or stop.</small>
-            </li>
-          </ol>
-        </section>
+<section class="page active" id="overview-panel" data-page="overview" aria-labelledby="overview-title">
+      <div class="hero">
+      <p class="eyebrow">Solvyr Fast Corpus</p>
+      <h1 id="overview-title">Turn a document backlog into a useful AI corpus.</h1>
+      <p class="lede">Process digital PDFs and text into text, chunks and embeddings for RAG, search or other AI applications. Receive JSONL, stable source IDs and a run report.</p>
+      <div class="heroActions"><a href="pilot-intake.html#intent=fast-corpus&source=homepage-hero" class="button primary">Discuss a corpus test →</a>
+      </div>
+      <p class="heroContact"><!--email_off--><a href="mailto:hello@solvyr.com?subject=Solvyr%20Fast%20Corpus%20inquiry">hello@solvyr.com</a><!--/email_off-->
+      </p>
+      </div>
+ <div class="corpusSummary">
+      <article class="panel">
+      <p class="eyebrow">Starting rate</p>
+      <h2>EUR 0.95 per 1000 pages</h2>
+      <p>For standard clean digital PDF/text processing, excluding VAT. Pilot and service scope are agreed separately.</p>
+      </article>
+      <article class="panel">
+      <p class="eyebrow">First test</p>
+      <h2 id="pilot-flow-title">A few examples, then decide.</h2>
+      <p>Review output and cost before agreeing a larger batch or recurring processing.</p>
+      </article>
+      </div>
+ <section class="band compact" aria-labelledby="benchmark-title">
+      <div>
+      <p class="eyebrow">Measured PDF test</p>
+      <h2 id="benchmark-title">100 PDFs. 2,052 pages. 987 chunks.</h2>
+      </div>
+      <div>
+      <p>Text extraction, chunking and embeddings in 215 seconds, with 0 failures and 0 retries. Measured GPU use: 0.281 hours.</p><a class="inlineLink" href="/proof/100-pdf-fast-corpus-run.html">Read the test</a>
+      </div>
       </section>
-
+      </section>
       <section class="page" id="who-panel" data-page="who" aria-labelledby="who-title">
-        <div class="pageHeader">
-          <p class="eyebrow">Fit</p>
-          <h1 id="who-title">For teams with a real corpus backlog—and connectors who can spot one.</h1>
-          <p>
-            AI teams usually enter through output, price, and proof. Archives
-            and public teams use the same bounded run while adding location,
-            oversight, and data-handling requirements.
-          </p>
-        </div>
-
-        <div class="split">
-          <section class="panel" aria-labelledby="good-fit-title">
-            <h2 id="good-fit-title">Good fit</h2>
-            <ul class="cleanList">
-              <li>Thousands of clean digital PDF pages or text files</li>
-              <li>RAG, search, evals, fine-tuning prep, or agent memory</li>
-              <li>Embedding refreshes, re-indexing, enrichment, or backfills</li>
-              <li>Cost or delivery pressure makes a scoped run attractive</li>
-              <li>A representative non-sensitive sample can be shared</li>
-            </ul>
-          </section>
-
-          <section class="panel mutedPanel" aria-labelledby="poor-fit-title">
-            <h2 id="poor-fit-title">Not the current fit</h2>
-            <ul class="cleanList">
-              <li>Realtime chat or model serving</li>
-              <li>OCR-heavy scans unless scoped separately</li>
-              <li>Custom structured extraction in the current trial</li>
-              <li>High-sensitivity data without prior agreement</li>
-            </ul>
-          </section>
-        </div>
-
-        <div class="split sectionGap">
-          <section class="panel" aria-labelledby="customer-types-title">
-            <h2 id="customer-types-title">What makes a pilot timely</h2>
-            <ul class="cleanList">
-              <li>A backlog of documents waiting to be made usable</li>
-              <li>A recurring index or corpus refresh</li>
-              <li>A team already building RAG, search, eval, or agent systems</li>
-              <li>A cost target or delivery deadline makes a scoped run attractive</li>
-              <li>A public-sector or archive team wants European execution context</li>
-              <li>A clear owner for input quality and output validation</li>
-            </ul>
-          </section>
-
-          <section class="panel" aria-labelledby="use-cases-title">
-            <h2 id="use-cases-title">Common paths</h2>
-            <ul class="cleanList">
-              <li>Reprocessing an archive into searchable chunks</li>
-              <li>Preparing a RAG corpus from PDFs or text exports</li>
-              <li>Building an eval or fine-tuning prep dataset</li>
-              <li>Creating a repeatable corpus refresh process</li>
-              <li>Running recurring public metadata quality checks before downstream reuse</li>
-            </ul>
-          </section>
-        </div>
-
+      <div class="pageHeader">
+      <p class="eyebrow">Fit</p>
+      <h1 id="who-title">For teams turning documents into usable data.</h1>
+      <p>An archive, knowledge base, document backlog or recurring update is a useful starting point.</p>
+      </div>
+      <div class="split">
+      <article class="panel">
+      <h2 id="good-fit-title">Use it for</h2>
+      <ul class="cleanList" id="use-cases-title">
+      <li>RAG and search</li>
+      <li>Evaluations, datasets and AI memory</li>
+      <li>Re-indexing and recurring corpus updates</li>
+      </ul>
+      </article>
+      <article class="panel">
+      <h2 id="poor-fit-title">Need more than standard processing?</h2>
+      <p>We include scans, unusual layouts, field extraction or enrichment in the task definition and cost assessment.</p>
+      </article>
+      </div>
+      <section class="band compact" aria-labelledby="customer-types-title">
+      <div>
+      <p class="eyebrow">Who it helps</p>
+      <h2 id="customer-types-title">AI teams, archives and their partners.</h2>
+      </div>
+      <p>Bring a sample and describe how your team will use the output. We include processing location and other data requirements from the start.</p>
       </section>
-
+      </section>
       <section class="page" id="deliver-panel" data-page="deliver" aria-labelledby="deliver-title">
-        <div class="pageHeader">
-          <p class="eyebrow">Output</p>
-          <h1 id="deliver-title">A corpus your AI team can inspect, reuse, and accept.</h1>
-          <p>
-            You receive files and run evidence, not a processing status with
-            nothing useful behind it.
-          </p>
-        </div>
-
-        <div class="process">
-          <article class="step">
-            <div class="num">1</div>
-            <div>
-              <h2>Define the batch and acceptance target</h2>
-              <p>
-                Input format, page count, sensitivity, output target, recurrence,
-                and success criteria.
-              </p>
-            </div>
-          </article>
-
-          <article class="step">
-            <div class="num">2</div>
-            <div>
-              <h2>Process the corpus</h2>
-              <p>
-                Clean digital PDF/text extraction, chunking, embedding generation,
-                stable IDs, and visible terminal states.
-              </p>
-            </div>
-          </article>
-
-          <article class="step">
-            <div class="num">3</div>
-            <div>
-              <h2>Inspect the result and decide</h2>
-              <p>
-                AI-ready JSONL, run summary, caveats, and whether this should
-                become one-time output or recurring refresh.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <div class="summaryGrid">
-          <article class="panel">
-            <h2>Expected artifacts</h2>
-            <p>
-              Extracted text, chunks, embeddings, stable IDs, success/failure
-              counts, and run notes.
-            </p>
-            <p><a href="sample-output.html">Inspect the public .gitignore corpus sample</a></p>
-          </article>
-          <article class="panel">
-            <h2>Review package</h2>
-            <p>
-              Enough detail to decide what to index, rerun, narrow, or stop
-              before it disappears into a downstream system.
-            </p>
-          </article>
-          <article class="panel">
-            <h2>Operating principle</h2>
-            <p>
-              Manual review is fine. Silent failure is not.
-            </p>
-          </article>
-        </div>
-
-        <section class="reportPreview" aria-labelledby="report-preview-title">
-          <div class="reportCopy">
-            <p class="eyebrow">Example output</p>
-            <h2 id="report-preview-title">The run report should make the next decision easy.</h2>
-            <p>
-              It shows what was accepted, what failed, the price basis, and
-              whether to repeat, narrow, or stop the work.
-            </p>
-          </div>
-          <div class="metricCard" aria-label="Example pilot report fields">
-            <div>
-              <span>Run status</span>
-              <strong>Completed / partial / stopped</strong>
-            </div>
-            <div>
-              <span>Useful output</span>
-              <strong>JSONL + source IDs + review notes</strong>
-            </div>
-            <div>
-              <span>Economics</span>
-              <strong>Runtime + price basis + caveats</strong>
-            </div>
-            <div>
-              <span>Next step</span>
-              <strong>Continue, narrow, or stop</strong>
-            </div>
-          </div>
-        </section>
+      <div class="pageHeader">
+      <p class="eyebrow">Output</p>
+      <h1 id="deliver-title">A corpus your team can inspect and use.</h1>
+      <p>The agreed package includes text, chunks, embeddings, source IDs and a run report with counts and any failures.</p>
+      </div>
+      <div class="split">
+      <article class="panel">
+      <h2>Usable files</h2>
+      <p>JSONL with joined text and embeddings. Stable IDs connect the output to its source documents.</p>
+      </article>
+      <article class="panel">
+      <h2 id="report-preview-title">A clear view of the run</h2>
+      <p>See what completed, what needs attention and what you want to run again.</p>
+      </article>
+      </div>
+      <div class="heroActions sectionGap"><a href="sample-output.html" class="button secondary">Inspect and download real example output</a>
+      </div>
       </section>
-
       <section class="page" id="security-panel" data-page="security" aria-labelledby="security-title">
-        <div class="pageHeader">
-          <p class="eyebrow">Security</p>
-          <h1 id="security-title">Set the pilot boundary before the data moves.</h1>
-          <p>
-            For suitable low- or moderate-sensitivity work, define lifecycle,
-            access, deletion, data minimization, and execution context before
-            the run.
-          </p>
-        </div>
-
-        <div class="split">
-          <section class="panel" aria-labelledby="level-one-title">
-            <h2 id="level-one-title">What we can define for a pilot</h2>
-            <ul class="cleanList">
-              <li>Data lifecycle, retention, and deletion</li>
-              <li>Execution and storage location for the pilot</li>
-              <li>Input and output storage locations</li>
-              <li>Scoped operator access</li>
-              <li>Data minimization before execution</li>
-              <li>Payload logging checks</li>
-              <li>Temporary scratch cleanup checks</li>
-            </ul>
-          </section>
-
-          <section class="panel mutedPanel" aria-labelledby="security-boundaries-title">
-            <h2 id="security-boundaries-title">Current pilot fit</h2>
-            <ul class="cleanList">
-              <li>Low- or moderate-sensitivity data</li>
-              <li>A safe representative sample</li>
-              <li>Explicit location, access, retention, and deletion rules</li>
-              <li>Solvyr-maintained workloads within the agreed route</li>
-            </ul>
-          </section>
-        </div>
-
-        <section class="band compact" aria-labelledby="europe-security-title">
-          <div>
-            <p class="eyebrow">European execution context</p>
-            <h2 id="europe-security-title">Location and oversight belong in the pilot boundary.</h2>
-          </div>
-          <p>
-            For archive, public-sector, and European AI pilots, execution
-            location, storage location, retention, deletion, and operator access
-            can be made explicit before data is shared.
-          </p>
-        </section>
-
-        <section class="band compact" aria-labelledby="redaction-title">
-          <div>
-            <p class="eyebrow">Risk reduction</p>
-            <h2 id="redaction-title">Redaction or pseudonymization can be part of the pilot design.</h2>
-          </div>
-          <p>
-            We can help define pre-upload redaction or pseudonymization.
-            Pseudonymization reduces exposure while rehydration remains
-            customer-side.
-          </p>
-        </section>
-
-        <section class="band compact" aria-labelledby="security-summary-title">
-          <div>
-            <p class="eyebrow">Data fit</p>
-            <h2 id="security-summary-title">Bring the right data into the pilot.</h2>
-          </div>
-          <p>
-            Suitable workloads get explicit lifecycle, access, deletion, and
-            execution rules before anything is shared.
-          </p>
-        </section>
-
-        <section class="appendixGrid" aria-labelledby="security-appendix-title">
-          <div>
-            <p class="eyebrow">Security appendix</p>
-            <h2 id="security-appendix-title">Topics to settle before a pilot run.</h2>
-          </div>
-          <dl>
-            <div>
-              <dt>Data lifecycle</dt>
-              <dd>What is uploaded, produced, retained, deleted, and when.</dd>
-            </div>
-            <div>
-              <dt>Execution context</dt>
-              <dd>Where pilot work runs and where input, output, and scratch artifacts are stored.</dd>
-            </div>
-            <div>
-              <dt>Scoped access</dt>
-              <dd>Who can see payloads, logs, outputs, and operational metadata.</dd>
-            </div>
-            <div>
-              <dt>Redaction</dt>
-              <dd>Which fields can be removed, replaced, or kept customer-side.</dd>
-            </div>
-            <div>
-              <dt>Logging and scratch</dt>
-              <dd>What payload logging is allowed and how temporary files are cleaned.</dd>
-            </div>
-          </dl>
-        </section>
+      <div class="pageHeader">
+      <p class="eyebrow">Security</p>
+      <h1 id="security-title">Clear terms for your documents.</h1>
+      <p id="europe-security-title">Before the test, we agree where processing and storage take place, who has access and when data is deleted.</p>
+      </div>
+      <div class="split">
+      <article class="panel">
+      <h2 id="level-one-title">Data and access</h2>
+      <p>Start with representative examples you have permission to share. Sensitive data needs appropriate handling terms first.</p>
+      </article>
+      <article class="panel" id="security-appendix-title">
+      <h2 id="security-boundaries-title">Processing and retention</h2>
+      <p>Location, operator access, logging, temporary files and deletion are part of the agreement. <span id="redaction-title">Where needed, we define fields to redact or replace before transfer.</span></p>
+      </article>
+      </div>
+      <div class="heroActions sectionGap" id="security-summary-title"><a class="button secondary" href="/security.html">Read about security and data handling</a>
+      </div>
       </section>
-
       <section class="page" id="pilot-panel" data-page="pilot" aria-labelledby="pilot-title">
-        <div class="pageHeader">
-          <p class="eyebrow">Pilot</p>
-          <h1 id="pilot-title">Bring one sample and one clear output target.</h1>
-          <p>
-            The first conversation is about the batch, the result, and how your
-            team will judge it.
-          </p>
-        </div>
+      <div class="pageHeader">
+      <p class="eyebrow">First test</p>
+      <h1 id="pilot-title">What should your documents make possible?</h1>
+      <p>Describe your documents and the output you need. We agree on a few examples and test quality and cost.</p>
+      </div>
+      <div class="panel contactCard">
+      <h2 id="pilot-outcome-title">Start with examples, then choose the next step.</h2>
+      <p>One-off processing or recurring updates: agree the next step based on the output. The EUR 0.95 starting rate per 1000 pages covers standard clean processing; additional work and the pilot are agreed separately.</p>
+      <div class="contactActions"><a href="pilot-intake.html#intent=fast-corpus&source=site-pilot" class="button primary">Discuss a corpus test</a><!--email_off--><a
 
-        <div class="pilotBox">
-          <div>
-            <h2>What to send</h2>
-            <ul class="cleanList">
-              <li>Estimated page and document count</li>
-              <li>Input type: clean PDF, text, mixed, or OCR-heavy</li>
-              <li>Target output: JSONL, chunks, embeddings, or re-indexing artifact</li>
-              <li>Use case: RAG, search, evals, fine-tuning prep, or agent memory</li>
-              <li>Data sensitivity and whether a safe sample can be shared</li>
-              <li>Whether this is one-time or recurring</li>
-            </ul>
-          </div>
-
-          <div class="contactCard">
-            <p class="eyebrow">Contact</p>
-            <h2>Scope a Fast Corpus test</h2>
-            <p>
-              The starting processing rate for standard clean digital PDF/text
-              batches is EUR 0.95 per 1000 pages, excl. VAT. Pilot and service
-              scope are agreed separately; decide from inspected output.
-            </p>
-            <div class="contactActions">
-              <a class="button primary" href="pilot-intake.html#intent=fast-corpus&source=site-pilot">Open pilot intake</a>
-              <!--email_off--><a
-                class="button secondary"
                 href="mailto:hello@solvyr.com?subject=Solvyr%20Fast%20Corpus%20pilot"
-              >
-                hello@solvyr.com
-              </a><!--/email_off-->
-              <a class="button secondary" href="https://nl.linkedin.com/in/janwoutervandalen" target="_blank" rel="noopener noreferrer">Jan on LinkedIn</a>
-            </div>
-          </div>
-        </div>
-
-        <section class="band compact" aria-labelledby="pilot-outcome-title">
-          <div>
-            <p class="eyebrow">Pilot outcome</p>
-            <h2 id="pilot-outcome-title">The pilot ends with a decision, not another discovery phase.</h2>
-          </div>
-          <p>
-            Accept one-time output, move to recurring refresh, adjust the
-            scope, or stop.
-          </p>
-        </section>
+               class="button secondary">hello@solvyr.com</a><!--/email_off--><a href="https://nl.linkedin.com/in/janwoutervandalen" target="_blank" rel="noopener noreferrer" class="button secondary">Jan on LinkedIn</a>
+      </div>
+      </div>
       </section>
     </main>
 
@@ -684,7 +344,7 @@
 
           </details>
           <!--email_off--><a href="mailto:hello@solvyr.com">hello@solvyr.com</a><!--/email_off-->
-          <a href="pilot-intake.html#intent=fast-corpus&source=site-footer">Pilot intake</a>
+          <a href="pilot-intake.html#intent=fast-corpus&source=site-footer">Discuss a test</a>
         </div>
       </div>
     </footer>
