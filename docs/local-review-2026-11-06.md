@@ -1,8 +1,8 @@
 # Local website review — 6 November 2026
 
-Status: reviewed local revision. Jan subsequently requested a direct
-document-intake main-navigation link and authorized a live update in his
-final sentence. Publication and live verification are pending below. The existing unrelated rotating-words preference in the
+Status: published and independently verified on 2026-11-06. Jan requested
+document intake as the direct main-navigation product and authorized the live
+update in his final sentence. The release and verification record is below. The existing unrelated rotating-words preference in the
 messaging guide was preserved. The knowledge repository was not edited.
 
 ## Review entry points
@@ -136,7 +136,7 @@ not processing performance or customer results.
 The bundled Node runtime was used because the system `node` executable has an
 incompatible CPU architecture. No system runtime or dependency was changed.
 
-## Local review follow-up — document intake first
+## Initial local review follow-up — superseded by direct navigation
 
 Jan selected document intake as the principal offering. It is now the first
 item under both Product and Use cases / Toepassingen on all 30 content routes.
@@ -169,3 +169,33 @@ outside this change. Baseline/rollback source is
 `d6aa44c1a3b089fb0a75608834f1d92c8d44520b`. A rollback would restore the
 previous website commit through a new reviewed Git commit and the same Pages
 workflow, preserving source history.
+
+## Verified publication
+
+- Release PR: https://github.com/SolvyrHQ/solvyr-site/pull/25 (merged).
+- Deployed source: `236e2048d060a26657a29e9d1a92c3bb70f80dee`.
+- Successful Pages deployment: https://github.com/SolvyrHQ/solvyr-site/actions/runs/42214776376.
+- Live Dutch homepage: https://solvyr.com/nl.html.
+- Live English homepage: https://solvyr.com/.
+- Local full audit and production build passed before release. The post-release
+  trusted-network `audit-live-deploy.mjs` passed for all 36 sitemap URLs. The
+  GitHub-hosted runner's live-audit warning was resolved by this independent
+  check; no Cloudflare setting was changed.
+- An independent read-only comparison verified all 30 content routes against
+  the reviewed titles, main-navigation labels, exactly one direct
+  document-intake navigation destination and stylesheet key `20261106-2`.
+- Live browser checks passed for the EN/NL language switch, direct product
+  route and current-page indication, both supporting dropdowns, and 390px
+  English/Dutch layout without page overflow. The mobile output anchor sits
+  below the sticky header (about 216px versus 195px).
+- Product keeps Fast Corpus, Fit and Output. Use cases keeps PDF-to-RAG,
+  re-indexing and public-data quality. Every prior route, unique link
+  destination and HTML ID remains.
+- No rollback was needed. The previous website source remains available at
+  `d6aa44c1a3b089fb0a75608834f1d92c8d44520b`. Provider/DNS/security settings and
+  the scheduler, dashboard and worker applications were not changed.
+
+This completion record changes repository documentation only. It is excluded
+from `.site-dist/`; the verified public artifact is unchanged. The original
+unrelated rotating-words guide edit remains local and was not included in the
+release.
