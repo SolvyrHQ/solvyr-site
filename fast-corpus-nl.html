@@ -100,6 +100,79 @@
   });
 })();
       </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://solvyr.com/fast-corpus-nl.html#webpage",
+      "url": "https://solvyr.com/fast-corpus-nl.html",
+      "name": "Solvyr Fast Corpus - Documenten naar een AI-ready corpus",
+      "description": "Zet digitale PDF’s en tekst om in JSONL, chunks, embeddings, stabiele bron-IDs en een runrapport. Begin met voorbeelden en beoordeel kwaliteit en kosten.",
+      "inLanguage": "nl",
+      "isPartOf": {
+        "@id": "https://solvyr.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://solvyr.com/fast-corpus-nl.html#service"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Solvyr Fast Corpus",
+      "provider": {
+        "@type": "Organization",
+        "name": "Solvyr",
+        "legalName": "Solvyr OÜ",
+        "identifier": "Estonian registry code 17471643",
+        "email": "hello@solvyr.com",
+        "url": "https://solvyr.com/",
+        "@id": "https://solvyr.com/#organization"
+      },
+      "url": "https://solvyr.com/fast-corpus-nl.html",
+      "description": "Zet digitale PDF’s en tekst om in JSONL, chunks, embeddings, stabiele bron-IDs en een runrapport. Begin met voorbeelden en beoordeel kwaliteit en kosten.",
+      "serviceType": "Asynchrone document- en corpusvoorbereiding",
+      "areaServed": "Worldwide",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "AI-teams, corpuseigenaren, archieven, bibliotheken, gemeenten, onderzoeksnetwerken en publieke organisaties"
+      },
+      "subjectOf": [
+        {
+          "@type": "CreativeWork",
+          "name": "Solvyr Fast Corpus agent brief",
+          "url": "https://solvyr.com/ai/fast-corpus.md"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "100 PDF Fast Corpus proof note",
+          "url": "https://solvyr.com/proof/100-pdf-fast-corpus-run-nl.html"
+        },
+        {
+          "@type": "Dataset",
+          "name": "Solvyr Fast Corpus openbare voorbeeldbundel",
+          "url": "https://solvyr.com/sample-output-nl.html",
+          "description": "Vier bruikbare tekst- en embeddingrecords uit de officiële Python-, Node- en Visual Studio-.gitignore-templates van GitHub, met vastgelegde CC0-bronnen, stabiele IDs, complete vectoren, een runrapport en geverifieerde checksums.",
+          "creator": {
+            "@type": "Organization",
+            "name": "Solvyr OÜ",
+            "url": "https://solvyr.com/"
+          },
+          "license": "https://solvyr.com/downloads/fast-corpus-gitignore-sample/SOURCE-LICENSE-CC0-1.0.txt"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0.95",
+        "priceCurrency": "EUR",
+        "description": "Indicatieve vanafprijs per 1000 pagina’s voor standaard batchverwerking van schone digitale PDF’s en tekst, exclusief btw en belastingen tenzij anders afgesproken."
+      },
+      "@id": "https://solvyr.com/fast-corpus-nl.html#service"
+    }
+  ]
+}
+    </script>
   </head>
 
   <body>
@@ -124,7 +197,7 @@
             <details class="navDropdown navProduct" name="primary-navigation">
               <summary class="tab active">Fast Corpus</summary>
               <div class="dropdownMenu">
-                <a href="#overview" data-tab-target="overview">Fast Corpus</a>
+                <a href="#overview" data-tab-target="overview">Overzicht</a>
                 <a href="#who" data-tab-target="who">Fit</a>
                 <a href="#deliver" data-tab-target="deliver">Output</a>
               </div>
@@ -300,6 +373,7 @@
       const pages = [...document.querySelectorAll("[data-page]")];
       const tabs = [...document.querySelectorAll("[data-tab-target]")];
       const productSummary = document.querySelector(".navProduct > summary");
+      const overviewTitle = document.title;
 
       function setActivePage(pageName) {
         if (pageName === "model") {
@@ -336,7 +410,7 @@
 
         document.title =
           targetPage === "overview"
-            ? "Solvyr Fast Corpus - Documentachterstanden naar AI-ready JSONL"
+            ? overviewTitle
             : `${document.querySelector(`[data-page="${targetPage}"] .eyebrow`).textContent} - Solvyr`;
       }
 

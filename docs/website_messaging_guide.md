@@ -482,8 +482,9 @@ Current product nav separates product discovery from the two next actions:
   link. Its product label appears once, outside both dropdowns. A task-specific
   application link to its output section may appear in the shared Use cases menu.
 - The `Fast Corpus` dropdown (formerly `Product`) preserves the existing
-  Fast Corpus overview, Fit and Output links. Jan selected the clearer label
-  in both languages on 2026-11-06.
+  overview, Fit and Output destinations. Its first link is `Overview` in
+  English and `Overzicht` in Dutch; do not repeat `Fast Corpus` inside the
+  dropdown. Jan selected these labels in both languages on 2026-11-06.
 - `Use cases` / `Toepassingen` is shared by document intake and Fast Corpus.
   `Extract and enrich data` / `Gegevens uitlezen en verrijken` links to the
   existing document-intake output section. The three corpus/data applications
@@ -606,6 +607,21 @@ For meaningful website changes, prefer the full local suite:
 changes, run `node scripts/audit-live-deploy.mjs`.
 
 ## Answer-Engine Discovery Rule
+
+Use `docs/website_discoverability_runbook.md` for the current operational
+sequence, including Search Console, live crawler access and IndexNow. It
+updates the older knowledge-repository discoverability playbook for the
+document-intake entry and current sample bundle.
+
+Keep canonical `Organization` and `WebSite` identity on both homepages, and
+localized `WebPage`/`Service` data on both document-intake and Fast Corpus
+pages. Descriptions must reflect visible copy. Document intake must not inherit
+the Fast Corpus starting rate. These descriptions are semantic data, not a
+promise of a Google rich result or an AI recommendation.
+
+Sitemap `lastmod` dates record significant content, metadata, structured-data
+or link changes. Do not refresh every date on a routine deploy. Omit an
+unknown date rather than inventing one.
 
 Generative-engine discovery should expose the same bounded offer and evidence
 that the human website presents, without reopening the full site to broad

@@ -120,6 +120,16 @@ const sitemap = sitemapUrls();
 const sitemapSet = new Set(sitemap);
 const robots = readFileSync(join(repoRoot, "robots.txt"), "utf8");
 
+for (const entry of readFileSync(join(repoRoot, "sitemap.xml"), "utf8").matchAll(/<url>([\s\S]*?)<\/url>/g)) {
+  const url = entry[1].match(/<loc>([^<]+)<\/loc>/)?.[1];
+  const lastmod = entry[1].match(/<lastmod>([^<]+)<\/lastmod>/)?.[1];
+  if (!lastmod) continue; // Omission is preferable to an invented update date.
+  const date = new Date(`${lastmod}T00:00:00Z`);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(lastmod) || !Number.isFinite(date.getTime()) || date.toISOString().slice(0, 10) !== lastmod || date.getTime() > Date.now()) {
+    failures.push(`sitemap.xml: invalid or future lastmod for ${url}: ${lastmod}`);
+  }
+}
+
 if (sitemapSet.size !== sitemap.length) {
   failures.push("sitemap.xml: contains duplicate URLs");
 }

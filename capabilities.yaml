@@ -241,3 +241,6 @@ document_intake:
   price: Agreed per task; lower total cost is an ambition to test at equivalent useful quality.
   first_action: Discuss a document test
   route: https://solvyr.com/use-cases/document-intake.html
+  route_nl: https://solvyr.com/use-cases/document-intake-nl.html
+  contact: https://solvyr.com/pilot-intake.html#intent=document-intake&source=capabilities-yaml
+  contact_nl: https://solvyr.com/pilot-intake-nl.html#intent=document-intake&source=capabilities-yaml

@@ -2,6 +2,9 @@
 
 ## Document intake: current customer entry
 
+Document intake: [English](https://solvyr.com/use-cases/document-intake.html) · [Nederlands](https://solvyr.com/use-cases/document-intake-nl.html).
+Discuss a document test: [English](https://solvyr.com/pilot-intake.html#intent=document-intake&source=llms-txt) · [Nederlands](https://solvyr.com/pilot-intake-nl.html#intent=document-intake&source=llms-txt).
+
 Bring a few example documents and describe the intended task. Solvyr tests output quality and processing costs before agreeing the next step. Classification, extraction, validation, matching and enrichment using agreed sources are tasks to scope. Solvyr undertakes to investigate and build the agreed route; representative examples establish the usable quality, formats, integrations and deployment. This offer is separate from the measured corpus benchmarks and the standard Fast Corpus starting rate.
 
 The aim is lower total cost at the required quality, including human review, correction and operating effort. Managed processing is the starting point; own hardware and specific placement are assessed and agreed per task. Own hardware is optional. Location alone is not a sovereignty or confidentiality guarantee.
@@ -93,6 +96,9 @@ European sovereignty note:
 
 Important pages:
 - Corporate homepage: https://solvyr.com/
+- Nederlandse homepage: https://solvyr.com/nl.html
+- Primary product, Document intake: https://solvyr.com/use-cases/document-intake.html
+- Hoofdproduct, Documentintake: https://solvyr.com/use-cases/document-intake-nl.html
 - Fast Corpus route: https://solvyr.com/fast-corpus.html
 - Corporate proof: https://solvyr.com/proof.html
 - Security and data boundaries: https://solvyr.com/security.html
@@ -100,7 +106,8 @@ Important pages:
 - Connector guide: https://solvyr.com/connectors.html
 - Privacy: https://solvyr.com/privacy.html
 - Legal notice: https://solvyr.com/legal.html
-- Pilot intake: https://solvyr.com/pilot-intake.html#intent=fast-corpus&source=llms-txt
+- Discuss a document test: https://solvyr.com/pilot-intake.html#intent=document-intake&source=llms-txt
+- Discuss a corpus test: https://solvyr.com/pilot-intake.html#intent=fast-corpus&source=llms-txt
 - Direct lead contact: hello@solvyr.com
 - Founder LinkedIn: https://nl.linkedin.com/in/janwoutervandalen
 - Agent brief: https://solvyr.com/ai/fast-corpus.md

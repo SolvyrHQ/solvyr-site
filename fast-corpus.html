@@ -48,57 +48,77 @@
     <meta name="theme-color" content="#f7f9fc" />
     <link rel="stylesheet" href="styles.css?v=20261106-2" />
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Solvyr Fast Corpus",
-        "provider": {
-          "@type": "Organization",
-          "name": "Solvyr",
-          "legalName": "Solvyr OÜ",
-          "identifier": "Estonian registry code 17471643",
-          "email": "hello@solvyr.com",
-          "url": "https://solvyr.com/"
-        },
-        "url": "https://solvyr.com/fast-corpus.html",
-        "description": "Clean PDF and text backlogs to AI-ready JSONL with extracted text, chunks, embeddings, stable IDs, a run report, predictable starting unit pricing, and European execution context.",
-        "serviceType": "Async document corpus preparation",
-        "areaServed": "Worldwide",
-        "audience": {
-          "@type": "BusinessAudience",
-          "audienceType": "AI teams, corpus owners, archives, libraries, municipalities, research networks, and public-sector teams"
-        },
-        "subjectOf": [
-          {
-            "@type": "CreativeWork",
-            "name": "Solvyr Fast Corpus agent brief",
-            "url": "https://solvyr.com/ai/fast-corpus.md"
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "100 PDF Fast Corpus proof note",
-            "url": "https://solvyr.com/proof/100-pdf-fast-corpus-run.html"
-          },
-          {
-            "@type": "Dataset",
-            "name": "Solvyr Fast Corpus public sample bundle",
-            "url": "https://solvyr.com/sample-output.html",
-            "description": "Four usable text-and-embedding records from GitHub's official Python, Node, and Visual Studio .gitignore templates, with pinned CC0 sources, stable IDs, complete vectors, a run report, and verified checksums.",
-            "creator": {
-              "@type": "Organization",
-              "name": "Solvyr OÜ",
-              "url": "https://solvyr.com/"
-            },
-            "license": "https://solvyr.com/downloads/fast-corpus-gitignore-sample/SOURCE-LICENSE-CC0-1.0.txt"
-          }
-        ],
-        "offers": {
-          "@type": "Offer",
-          "price": "0.95",
-          "priceCurrency": "EUR",
-          "description": "Indicative starting price per 1000 pages for standard clean digital PDF/text batch processing, excluding VAT and taxes unless agreed otherwise."
-        }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://solvyr.com/fast-corpus.html#webpage",
+      "url": "https://solvyr.com/fast-corpus.html",
+      "name": "Solvyr Fast Corpus - Documents to an AI-ready corpus",
+      "description": "Turn digital PDFs and text into JSONL, chunks, embeddings, stable source IDs and a run report. Start with examples and review quality and cost.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://solvyr.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://solvyr.com/fast-corpus.html#service"
       }
+    },
+    {
+      "@type": "Service",
+      "name": "Solvyr Fast Corpus",
+      "provider": {
+        "@type": "Organization",
+        "name": "Solvyr",
+        "legalName": "Solvyr OÜ",
+        "identifier": "Estonian registry code 17471643",
+        "email": "hello@solvyr.com",
+        "url": "https://solvyr.com/",
+        "@id": "https://solvyr.com/#organization"
+      },
+      "url": "https://solvyr.com/fast-corpus.html",
+      "description": "Turn digital PDFs and text into JSONL, chunks, embeddings, stable source IDs and a run report. Start with examples and review quality and cost.",
+      "serviceType": "Async document corpus preparation",
+      "areaServed": "Worldwide",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "AI teams, corpus owners, archives, libraries, municipalities, research networks, and public-sector teams"
+      },
+      "subjectOf": [
+        {
+          "@type": "CreativeWork",
+          "name": "Solvyr Fast Corpus agent brief",
+          "url": "https://solvyr.com/ai/fast-corpus.md"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "100 PDF Fast Corpus proof note",
+          "url": "https://solvyr.com/proof/100-pdf-fast-corpus-run.html"
+        },
+        {
+          "@type": "Dataset",
+          "name": "Solvyr Fast Corpus public sample bundle",
+          "url": "https://solvyr.com/sample-output.html",
+          "description": "Four usable text-and-embedding records from GitHub's official Python, Node, and Visual Studio .gitignore templates, with pinned CC0 sources, stable IDs, complete vectors, a run report, and verified checksums.",
+          "creator": {
+            "@type": "Organization",
+            "name": "Solvyr OÜ",
+            "url": "https://solvyr.com/"
+          },
+          "license": "https://solvyr.com/downloads/fast-corpus-gitignore-sample/SOURCE-LICENSE-CC0-1.0.txt"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0.95",
+        "priceCurrency": "EUR",
+        "description": "Indicative starting price per 1000 pages for standard clean digital PDF/text batch processing, excluding VAT and taxes unless agreed otherwise."
+      },
+      "@id": "https://solvyr.com/fast-corpus.html#service"
+    }
+  ]
+}
     </script>
       <script>
 (() => {
@@ -182,7 +202,7 @@
             <details class="navDropdown navProduct" name="primary-navigation">
               <summary class="tab active">Fast Corpus</summary>
               <div class="dropdownMenu">
-                <a href="#overview" data-tab-target="overview">Fast Corpus</a>
+                <a href="#overview" data-tab-target="overview">Overview</a>
                 <a href="#who" data-tab-target="who">Fit</a>
                 <a href="#deliver" data-tab-target="deliver">Output</a>
               </div>
@@ -358,6 +378,7 @@
       const pages = [...document.querySelectorAll("[data-page]")];
       const tabs = [...document.querySelectorAll("[data-tab-target]")];
       const productSummary = document.querySelector(".navProduct > summary");
+      const overviewTitle = document.title;
 
       function setActivePage(pageName) {
         if (pageName === "model") {
@@ -394,7 +415,7 @@
 
         document.title =
           targetPage === "overview"
-            ? "Solvyr Fast Corpus - Document backlogs to AI-ready JSONL"
+            ? overviewTitle
             : `${document.querySelector(`[data-page="${targetPage}"] .eyebrow`).textContent} - Solvyr`;
       }
 
