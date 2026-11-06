@@ -268,6 +268,8 @@
     "comparison": "Compare at equivalent useful quality, including human checking, correction and operating costs.",
     "starting_action": "Discuss a document test",
     "route": "https://solvyr.com/use-cases/document-intake.html",
-    "contact": "https://solvyr.com/pilot-intake.html#intent=document-intake&source=agent-packet"
+    "contact": "https://solvyr.com/pilot-intake.html#intent=document-intake&source=agent-packet",
+    "route_nl": "https://solvyr.com/use-cases/document-intake-nl.html",
+    "contact_nl": "https://solvyr.com/pilot-intake-nl.html#intent=document-intake&source=agent-packet"
   }
 }

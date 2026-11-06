@@ -2,6 +2,9 @@
 
 ## Document intake: current customer entry
 
+Document intake: [English](https://solvyr.com/use-cases/document-intake.html) · [Nederlands](https://solvyr.com/use-cases/document-intake-nl.html).
+Discuss a document test: [English](https://solvyr.com/pilot-intake.html#intent=document-intake&source=agent-brief) · [Nederlands](https://solvyr.com/pilot-intake-nl.html#intent=document-intake&source=agent-brief).
+
 Bring a few example documents and describe the intended task. Solvyr tests output quality and processing costs before agreeing the next step. Classification, extraction, validation, matching and enrichment using agreed sources are tasks to scope. Solvyr undertakes to investigate and build the agreed route; representative examples establish the usable quality, formats, integrations and deployment. This offer is separate from the measured corpus benchmarks and the standard Fast Corpus starting rate.
 
 The aim is lower total cost at the required quality, including human review, correction and operating effort. Managed processing is the starting point; own hardware and specific placement are assessed and agreed per task. Own hardware is optional. Location alone is not a sovereignty or confidentiality guarantee.

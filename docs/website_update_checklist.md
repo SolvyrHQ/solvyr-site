@@ -44,7 +44,7 @@ Revision reviewed locally on 2026-11-06; Jan subsequently authorized the live up
 - [ ] Every `use-cases/*.html` page has first-screen hero buttons: workload-specific scope CTA plus a human-facing proof, sample, or supporting context link.
 - [ ] Scans, layouts, extraction, matching and enrichment are tasks to agree, not blanket rejections; price and actual data-handling requirements remain clear.
 - [ ] Product-page header navigation stays stable, including the `Use cases` / `Toepassingen` dropdown; do not invent contextual top-right nav per page.
-- [ ] `Document intake` / `Documentintake` appears once as the first direct main-navigation link; the `Fast Corpus` dropdown preserves the overview, Fit and Output links.
+- [ ] `Document intake` / `Documentintake` appears once as the first direct main-navigation link; the `Fast Corpus` dropdown starts with `Overview` / `Overzicht` and preserves the overview, Fit and Output destinations.
 - [ ] Existing primary nav routes, especially `Fit` and `Security`, remain reachable unless explicitly approved.
 - [ ] The corporate homepage follows the document-first path: task, output, sample test, quality/cost review, processing requirements and next action.
 - [ ] The local corporate homepage has five concise sections; the removed capacity-source diagram and internal commercial milestones do not reappear.
@@ -81,6 +81,9 @@ Revision reviewed locally on 2026-11-06; Jan subsequently authorized the live up
 - [ ] If public routes, metadata, canonicals, hreflang, `robots.txt`, or `sitemap.xml` changed, run the indexability audit.
 - [ ] Answer-engine access still separates search/retrieval bots from training bots.
 - [ ] Cloudflare content signals remain `search=yes, ai-input=yes, ai-train=no`.
+- [ ] Homepage Organization/WebSite identity and localized document-intake/Fast Corpus Service/WebPage data match the visible copy, canonical URLs and language; document intake does not inherit corpus pricing.
+- [ ] Sitemap `lastmod` dates reflect significant edits, rather than being reset on every deploy.
+- [ ] Follow `docs/website_discoverability_runbook.md` after substantial discovery changes; record actual Search Console/live-test and IndexNow responses separately from indexing.
 - [ ] `Google-Extended` remains limited to the curated agent-readable paths unless broader access had explicit approval.
 - [ ] Agent-readable files distinguish the company-level AI execution and supported result layer from Fast Corpus, the managed document-to-corpus route; neither is described as a GPU provider, marketplace, generic orchestration offer, or generic data platform.
 - [ ] Agent-readable files match the human copy:

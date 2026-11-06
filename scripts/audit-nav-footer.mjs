@@ -7,9 +7,9 @@ const repoRoot = dirname(dirname(fileURLToPath(import.meta.url)));
 const expected = {
   en: {
     nav: ["Document intake", "Fast Corpus", "Use cases", "Proof", "Security", "Example run", "Discuss a test"],
-    product: ["Fast Corpus", "Fit", "Output"],
+    product: ["Overview", "Fit", "Output"],
     productHrefIncludes: {
-      "Fast Corpus": "#overview",
+      Overview: "#overview",
       Fit: "#who",
       Output: "#deliver",
     },
@@ -36,9 +36,9 @@ const expected = {
   },
   nl: {
     nav: ["Documentintake", "Fast Corpus", "Toepassingen", "Proefrun", "Security", "Voorbeeldrun", "Bespreek een test"],
-    product: ["Fast Corpus", "Fit", "Output"],
+    product: ["Overzicht", "Fit", "Output"],
     productHrefIncludes: {
-      "Fast Corpus": "#overview",
+      Overzicht: "#overview",
       Fit: "#who",
       Output: "#deliver",
     },
