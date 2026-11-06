@@ -44,7 +44,7 @@ Revision reviewed locally on 2026-11-06; Jan subsequently authorized the live up
 - [ ] Every `use-cases/*.html` page has first-screen hero buttons: workload-specific scope CTA plus a human-facing proof, sample, or supporting context link.
 - [ ] Scans, layouts, extraction, matching and enrichment are tasks to agree, not blanket rejections; price and actual data-handling requirements remain clear.
 - [ ] Product-page header navigation stays stable, including the `Use cases` / `Toepassingen` dropdown; do not invent contextual top-right nav per page.
-- [ ] `Document intake` / `Documentintake` appears once as the first direct main-navigation link; `Product` preserves `Fast Corpus`, `Fit`, and `Output`.
+- [ ] `Document intake` / `Documentintake` appears once as the first direct main-navigation link; the `Fast Corpus` dropdown preserves the overview, Fit and Output links.
 - [ ] Existing primary nav routes, especially `Fit` and `Security`, remain reachable unless explicitly approved.
 - [ ] The corporate homepage follows the document-first path: task, output, sample test, quality/cost review, processing requirements and next action.
 - [ ] The local corporate homepage has five concise sections; the removed capacity-source diagram and internal commercial milestones do not reappear.
@@ -58,7 +58,7 @@ Revision reviewed locally on 2026-11-06; Jan subsequently authorized the live up
 - [ ] Measured multi-worker bars are directly labelled, proportional to the published elapsed times, and the green result band contains verified evidence only; internal run identifiers stay out of public copy.
 - [ ] The Security trust-zone visual preserves the current bounded controls, encrypted external path, plaintext scheduler/worker processing boundary and later narrowing path without implying present confidential computing or attestation.
 - [ ] The homepage has no hidden execution-model content; deeper execution context stays on the About execution section.
-- [ ] Use-case dropdown links stay parallel in English and Dutch; document intake is the direct main-navigation link and is not repeated in either dropdown.
+- [ ] Use-case dropdown links stay parallel in English and Dutch and cover both products. The document-intake task link is `Extract and enrich data` / `Gegevens uitlezen en verrijken`; the Document intake product label appears only as a direct main-navigation link.
 - [ ] Footer links stay stable by language; do not randomly drop `About`/`Over`, `Connectors`, legal/privacy, `hello@solvyr.com`, or agent-readable links.
 - [ ] If agent-readable footer links are visually grouped, their literal links and machine-discovery signals remain intact.
 
