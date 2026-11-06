@@ -21,6 +21,8 @@ direct main-navigation link and one continuous page in each language. Its
 former dropdown and tabs are removed at Jan's request; all section hashes,
 content and routes remain. Use cases is shared by document intake
 and Fast Corpus, with task-specific labels and existing route destinations.
+Navigation dimensions and mobile grid placement are shared across routes;
+opening the applications menu must not resize or hide the other controls.
 
 - Preserve the corporate ownership message: ERP and document-workflow builders
   keep the customer and workflow while Solvyr owns bounded AI execution,

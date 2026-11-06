@@ -34,6 +34,7 @@ const publicPaths = [
   "llms.txt",
   "measure",
   "nl.html",
+  "navigation.js",
   "pilot-intake-nl.html",
   "pilot-intake.html",
   "pricing.yaml",

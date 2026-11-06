@@ -118,7 +118,16 @@ for (const file of walk(repoRoot).sort()) {
   const relPath = relative(repoRoot, file);
   const html = readFileSync(file, "utf8");
   const lang = languageFor(relPath);
-
+  const homeHref = lang === "nl" ? "/nl.html" : "/";
+  for (const brand of ["brand", "footerBrand"]) {
+    const tag = html.match(new RegExp(`<a\\b[^>]*class="${brand}"[^>]*>`))?.[0] || "";
+    if (!tag.includes(`href="${homeHref}"`) || !/aria-label="[^"]+"/.test(tag)) {
+      failures.push(`${relPath}: ${brand} must link to its language homepage with an accessible name`);
+    }
+  }
+  if (!html.includes('src="/navigation.js?v=20261106-1" defer')) {
+    failures.push(`${relPath}: missing shared navigation behavior`);
+  }
   const nav = html.match(/<nav class="tabs"[\s\S]*?<\/nav>/);
   const footer = html.match(/<div class="footerLinks">([\s\S]*?)<\/div>/);
 
@@ -195,8 +204,11 @@ for (const file of walk(repoRoot).sort()) {
 }
 
 const styles = readFileSync(join(repoRoot, "styles.css"), "utf8");
-if (!/\.tabs:has\(\.navDropdown\[open\]\)\s*>\s*:not\(\.navDropdown\[open\]\)\s*\{[\s\S]*?display:\s*none/.test(styles)) {
-  failures.push("styles.css mobile nav: an open menu does not suppress clipped sibling controls");
+if (/\.tabs:has\(\.navDropdown\[open\]\)[^{]*\{[^}]*display:\s*none/.test(styles)) {
+  failures.push("styles.css mobile nav: opening a menu must not hide or move sibling controls");
+}
+if (!styles.includes("--nav-control-height: 44px") || !styles.includes("grid-template-columns: repeat(4, minmax(0, 1fr))")) {
+  failures.push("styles.css mobile nav: shared control height and fixed grid are missing");
 }
 
 if (failures.length) {

@@ -29,6 +29,11 @@ Only Use cases / Toepassingen is a dropdown. Preserve legacy Fast Corpus
 section hashes and the #model redirect. Future publication still requires
 task-specific authority.
 
+Keep navigation geometry shared and stable across pages and interaction
+states. Mobile uses the fixed shared grid; opening applications must not
+hide, resize or move the other controls. Header and footer logos lead to the
+matching English or Dutch homepage.
+
 Keep dedicated Fast Corpus first screens focused on:
 
 > bounded document/text backlog to AI-ready corpus output and run evidence

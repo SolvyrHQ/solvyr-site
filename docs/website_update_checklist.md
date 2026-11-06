@@ -66,6 +66,7 @@ Revision reviewed locally on 2026-11-06; Jan subsequently authorized the live up
 ## Consistency
 
 - [ ] Logo artwork uses the exact working B Hybrid source asset rather than a CSS or hand-drawn approximation.
+- [ ] Header and footer logo links open the language homepage (`/` or `/nl.html`) and have a matching accessible name.
 - [ ] Favicon and browser-tab assets use the approved compact mark; no old or generic icon remains in page heads or the production artifact.
 - [ ] Brand colours follow the canonical working tokens and their semantic roles.
 - [ ] Inter remains self-hosted and `assets/fonts/Inter-OFL.txt` ships with the font unless an approved typography/licensing change replaces it.
@@ -103,7 +104,11 @@ Revision reviewed locally on 2026-11-06; Jan subsequently authorized the live up
 - [ ] Prepared email body omits empty optional fields and keeps each value on one physical line.
 - [ ] `git diff --check` passes.
 - [ ] Homepage renders without horizontal overflow on a narrow viewport.
-- [ ] On a narrow viewport, the active primary-nav tab scrolls into view and the open use-case menu does not leave clipped sibling tabs visible.
+- [ ] On a narrow viewport, all primary navigation controls remain visible and aligned, including while the applications menu is open.
+- [ ] Navigation controls keep the same dimensions and positions across pages, active/hover/focus states, and applications-menu open/close. Mobile uses the shared fixed grid; all seven controls remain visible and no menu overlays another control.
+- [ ] The applications menu closes with Escape, outside click, or keyboard focus leaving it; its four destination links work in both languages.
+- [ ] Fast Corpus shows its starting price/scope once and one first-test invitation at the end, preserving all existing IDs.
+- [ ] Removed CSS selectors are proven absent from public HTML and script states; retained layouts are checked across all content routes.
 - [ ] Main CTA target opens.
 - [ ] Native Fast Corpus section links scroll correctly below the sticky header, browser back/forward works, and language switching preserves the section hash.
 - [ ] `Use cases` / `Toepassingen` opens and its links work in the browser on desktop and narrow viewports; a static href check alone is not treated as interaction proof.
