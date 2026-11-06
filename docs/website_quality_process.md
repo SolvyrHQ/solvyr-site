@@ -104,7 +104,7 @@ Do not hand-edit the generated public sample files.
 | Shared stylesheet changes | Bump the stylesheet cache key on every affected public page, then verify the deployed page loads the new key |
 | Contact-address change | Scan source and `.site-dist/` for the retired address; verify visible mailto links, prepared pilot email, and conversion matching in both languages without sending mail |
 | Dropdown or external-profile-link change | Static audit plus browser interaction check; verify external profiles use a new tab and `noopener noreferrer` |
-| Horizontally scrollable mobile navigation | Verify direct hash routes reveal the active tab and the expanded menu has a clean, unambiguous layout |
+| Mobile navigation | Compare control geometry across both languages/pages, active/focus and menu open/closed states; verify native anchors stay below the actual sticky header |
 | After deploy of route/metadata/indexing-sensitive changes | `node scripts/audit-live-deploy.mjs` |
 | Adding schema.org structured data | Add/run a structured-data audit and manually verify rich-result eligibility |
 | Large asset or layout-heavy change | Browser check; consider performance budget/PageSpeed check |

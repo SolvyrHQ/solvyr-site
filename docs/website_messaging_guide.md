@@ -424,6 +424,10 @@ uses the five-section path in Corporate Homepage And Route Hierarchy.
 - Fast Corpus is one continuous page per language, like document intake.
   Overview, Fit, Output, Security and Pilot are visible sections with native
   anchors; preserve their existing hash destinations and panel/heading IDs.
+- State the Fast Corpus starting rate and its complete scope once, near the
+  top. Keep one concise first-test invitation at the end, including the old
+  `pilot-flow-title` ID; do not repeat a first-test card above it or the price
+  in the closing card.
 - Keep measured proof numbers, diagrams and download contents tied to their
   exact test. Schema validity is a format check, not a content-accuracy result.
 - Preserve concrete processing, storage, access, retention, deletion, logging,
@@ -509,6 +513,18 @@ applications menu names tasks, rather than repeating the main product name:
   `Documenten herindexeren`, `Publieke datakwaliteit`.
 - Document intake covers classification, extraction, matching and enrichment;
   approval and downstream action remain with the customer/workflow partner.
+
+Keep navigation geometry in the shared stylesheet and its behavior in
+`navigation.js`. Controls use a consistent 44px height. The mobile four-track
+grid places the two products first, applications/proof/security second, and
+example/test actions last. Active and hover states must not change dimensions.
+Opening applications overlays the menu below the header without hiding or
+moving other controls. Escape, outside click and leaving the menu with the
+keyboard close it. Do not restore page-specific button rules or content-driven
+mobile wrapping.
+
+Both header and footer logos lead to the matching language homepage: `/` in
+English and `/nl.html` in Dutch. Product section links retain their own anchors.
 
 `Discuss a test` / `Bespreek een test` should route to the intake page, not a
 page-specific local section.
