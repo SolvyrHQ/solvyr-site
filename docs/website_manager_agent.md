@@ -16,8 +16,10 @@ optional. Reduce duplication, capacity diagrams and defensive exclusions,
 while preserving all existing routes, link destinations, measured proof,
 price scope and concrete data-handling content. Jan authorized publication after local review. Document intake is the
 primary offer and the first direct main-navigation link in both languages;
-its product label is not duplicated inside dropdowns. The Fast Corpus dropdown
-replaces the generic Product label. Use cases is shared by document intake
+its product label is not duplicated inside dropdowns. Fast Corpus is the second
+direct main-navigation link and one continuous page in each language. Its
+former dropdown and tabs are removed at Jan's request; all section hashes,
+content and routes remain. Use cases is shared by document intake
 and Fast Corpus, with task-specific labels and existing route destinations.
 
 - Preserve the corporate ownership message: ERP and document-workflow builders

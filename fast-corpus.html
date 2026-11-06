@@ -46,7 +46,7 @@
     <link rel="alternate" type="application/yaml" href="capabilities.yaml" title="Fast Corpus capabilities" />
     <link rel="help" href="llms.txt" />
     <meta name="theme-color" content="#f7f9fc" />
-    <link rel="stylesheet" href="styles.css?v=20261106-2" />
+    <link rel="stylesheet" href="styles.css?v=20261106-3" />
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -184,7 +184,7 @@
     <a class="skipLink" href="#main-content">Skip to content</a>
     <header class="top">
       <div class="container topbar">
-        <a class="brand" href="#overview" data-tab-target="overview" aria-label="Solvyr home">
+        <a class="brand" href="#overview" aria-label="Solvyr home">
           <div class="brandtext">
             <img class="brandLogo" src="/assets/brand/solvyr-logo-hybrid.svg" alt="Solvyr" width="175" height="35" />
             <div class="tag">Fast Corpus for European AI teams</div>
@@ -199,14 +199,7 @@
 
           <nav class="tabs" aria-label="Primary navigation">
             <a class="tab navDocument" href="/use-cases/document-intake.html">Document intake</a>
-            <details class="navDropdown navProduct" name="primary-navigation">
-              <summary class="tab active">Fast Corpus</summary>
-              <div class="dropdownMenu">
-                <a href="#overview" data-tab-target="overview">Overview</a>
-                <a href="#who" data-tab-target="who">Fit</a>
-                <a href="#deliver" data-tab-target="deliver">Output</a>
-              </div>
-            </details>
+            <a class="tab navCorpus active" href="/fast-corpus.html" aria-current="page">Fast Corpus</a>
             <details class="navDropdown navUseCases" name="primary-navigation">
               <summary class="tab">Use cases</summary>
               <div class="dropdownMenu">
@@ -225,9 +218,9 @@
       </div>
     </header>
 
-    <main id="main-content" class="container shell">
-<section class="page active" id="overview-panel" data-page="overview" aria-labelledby="overview-title">
-      <div class="hero">
+    <main id="main-content" class="container shell corpusPage">
+<section class="corpusSection" id="overview-panel" aria-labelledby="overview-title">
+      <div class="hero" id="overview">
       <p class="eyebrow">Solvyr Fast Corpus</p>
       <h1 id="overview-title">Turn a document backlog into a useful AI corpus.</h1>
       <p class="lede">Process digital PDFs and text into text, chunks and embeddings for RAG, search or other AI applications. Receive JSONL, stable source IDs and a run report.</p>
@@ -258,15 +251,15 @@
       </div>
       </section>
       </section>
-      <section class="page" id="who-panel" data-page="who" aria-labelledby="who-title">
-      <div class="pageHeader">
+      <section class="corpusSection" id="who-panel" aria-labelledby="who-title">
+      <div class="pageHeader" id="who">
       <p class="eyebrow">Fit</p>
-      <h1 id="who-title">For teams turning documents into usable data.</h1>
+      <h2 id="who-title">For teams turning documents into usable data.</h2>
       <p>An archive, knowledge base, document backlog or recurring update is a useful starting point.</p>
       </div>
       <div class="split">
       <article class="panel">
-      <h2 id="good-fit-title">Use it for</h2>
+      <h3 id="good-fit-title">Use it for</h3>
       <ul class="cleanList" id="use-cases-title">
       <li>RAG and search</li>
       <li>Evaluations, datasets and AI memory</li>
@@ -274,64 +267,64 @@
       </ul>
       </article>
       <article class="panel">
-      <h2 id="poor-fit-title">Need more than standard processing?</h2>
+      <h3 id="poor-fit-title">Need more than standard processing?</h3>
       <p>We include scans, unusual layouts, field extraction or enrichment in the task definition and cost assessment.</p>
       </article>
       </div>
       <section class="band compact" aria-labelledby="customer-types-title">
       <div>
       <p class="eyebrow">Who it helps</p>
-      <h2 id="customer-types-title">AI teams, archives and their partners.</h2>
+      <h3 id="customer-types-title">AI teams, archives and their partners.</h3>
       </div>
       <p>Bring a sample and describe how your team will use the output. We include processing location and other data requirements from the start.</p>
       </section>
       </section>
-      <section class="page" id="deliver-panel" data-page="deliver" aria-labelledby="deliver-title">
-      <div class="pageHeader">
+      <section class="corpusSection" id="deliver-panel" aria-labelledby="deliver-title">
+      <div class="pageHeader" id="deliver">
       <p class="eyebrow">Output</p>
-      <h1 id="deliver-title">A corpus your team can inspect and use.</h1>
+      <h2 id="deliver-title">A corpus your team can inspect and use.</h2>
       <p>The agreed package includes text, chunks, embeddings, source IDs and a run report with counts and any failures.</p>
       </div>
       <div class="split">
       <article class="panel">
-      <h2>Usable files</h2>
+      <h3>Usable files</h3>
       <p>JSONL with joined text and embeddings. Stable IDs connect the output to its source documents.</p>
       </article>
       <article class="panel">
-      <h2 id="report-preview-title">A clear view of the run</h2>
+      <h3 id="report-preview-title">A clear view of the run</h3>
       <p>See what completed, what needs attention and what you want to run again.</p>
       </article>
       </div>
       <div class="heroActions sectionGap"><a href="sample-output.html" class="button secondary">Inspect and download real example output</a>
       </div>
       </section>
-      <section class="page" id="security-panel" data-page="security" aria-labelledby="security-title">
-      <div class="pageHeader">
+      <section class="corpusSection" id="security-panel" aria-labelledby="security-title">
+      <div class="pageHeader" id="security">
       <p class="eyebrow">Security</p>
-      <h1 id="security-title">Clear terms for your documents.</h1>
+      <h2 id="security-title">Clear terms for your documents.</h2>
       <p id="europe-security-title">Before the test, we agree where processing and storage take place, who has access and when data is deleted.</p>
       </div>
       <div class="split">
       <article class="panel">
-      <h2 id="level-one-title">Data and access</h2>
+      <h3 id="level-one-title">Data and access</h3>
       <p>Start with representative examples you have permission to share. Sensitive data needs appropriate handling terms first.</p>
       </article>
       <article class="panel" id="security-appendix-title">
-      <h2 id="security-boundaries-title">Processing and retention</h2>
+      <h3 id="security-boundaries-title">Processing and retention</h3>
       <p>Location, operator access, logging, temporary files and deletion are part of the agreement. <span id="redaction-title">Where needed, we define fields to redact or replace before transfer.</span></p>
       </article>
       </div>
       <div class="heroActions sectionGap" id="security-summary-title"><a class="button secondary" href="/security.html">Read about security and data handling</a>
       </div>
       </section>
-      <section class="page" id="pilot-panel" data-page="pilot" aria-labelledby="pilot-title">
-      <div class="pageHeader">
+      <section class="corpusSection" id="pilot-panel" aria-labelledby="pilot-title">
+      <div class="pageHeader" id="pilot">
       <p class="eyebrow">First test</p>
-      <h1 id="pilot-title">What should your documents make possible?</h1>
+      <h2 id="pilot-title">What should your documents make possible?</h2>
       <p>Describe your documents and the output you need. We agree on a few examples and test quality and cost.</p>
       </div>
       <div class="panel contactCard">
-      <h2 id="pilot-outcome-title">Start with examples, then choose the next step.</h2>
+      <h3 id="pilot-outcome-title">Start with examples, then choose the next step.</h3>
       <p>One-off processing or recurring updates: agree the next step based on the output. The EUR 0.95 starting rate per 1000 pages covers standard clean processing; additional work and the pilot are agreed separately.</p>
       <div class="contactActions"><a href="pilot-intake.html#intent=fast-corpus&source=site-pilot" class="button primary">Discuss a corpus test</a><!--email_off--><a
 
@@ -371,86 +364,20 @@
     </footer>
 
     <script>
-      if ("scrollRestoration" in history) {
-        history.scrollRestoration = "manual";
-      }
+      document.getElementById("y").textContent = new Date().getFullYear();
 
-      const pages = [...document.querySelectorAll("[data-page]")];
-      const tabs = [...document.querySelectorAll("[data-tab-target]")];
-      const productSummary = document.querySelector(".navProduct > summary");
-      const overviewTitle = document.title;
-
-      function setActivePage(pageName) {
-        if (pageName === "model") {
-          location.assign("about.html#execution");
+      function syncSectionLinks() {
+        if (location.hash === "#model") {
+          location.replace("about.html#execution");
           return;
         }
-        const targetPage = pages.some((page) => page.dataset.page === pageName)
-          ? pageName
-          : "overview";
-        let activeTab = null;
-
-        pages.forEach((page) => {
-          page.classList.toggle("active", page.dataset.page === targetPage);
+        document.querySelectorAll("[data-language-link]").forEach((link) => {
+          link.href = `${link.dataset.languageLink}${location.hash}`;
         });
-
-        tabs.forEach((tab) => {
-          const isActive = tab.dataset.tabTarget === targetPage;
-          if (tab.classList.contains("tab")) {
-            tab.classList.toggle("active", isActive);
-            tab.setAttribute("aria-selected", String(isActive));
-            if (isActive) activeTab = tab;
-          }
-        });
-
-        const productIsActive = ["overview", "who", "deliver"].includes(targetPage);
-        productSummary?.classList.toggle("active", productIsActive);
-        if (productIsActive) activeTab = productSummary;
-
-        if (activeTab && window.matchMedia("(max-width: 560px)").matches) {
-          requestAnimationFrame(() => {
-            activeTab.scrollIntoView({ block: "nearest", inline: "center" });
-          });
-        }
-
-        document.title =
-          targetPage === "overview"
-            ? overviewTitle
-            : `${document.querySelector(`[data-page="${targetPage}"] .eyebrow`).textContent} - Solvyr`;
       }
 
-      tabs.forEach((tab) => {
-        tab.addEventListener("click", (event) => {
-          const pageName = tab.dataset.tabTarget;
-          if (!pageName) return;
-          event.preventDefault();
-          tab.closest("details")?.removeAttribute("open");
-          history.pushState(null, "", `#${pageName}`);
-          setActivePage(pageName);
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-      });
-
-      window.addEventListener("popstate", () => {
-        setActivePage(location.hash.replace("#", ""));
-      });
-
-      document.querySelectorAll("[data-language-link]").forEach((link) => {
-        link.addEventListener("click", () => {
-          const hash = location.hash || "#overview";
-          link.href = `${link.dataset.languageLink}${hash}`;
-        });
-      });
-
-      document.getElementById("y").textContent = new Date().getFullYear();
-      const initialPage = location.hash.replace("#", "");
-      setActivePage(initialPage);
-      if (initialPage) {
-        const resetInitialScroll = () => window.scrollTo({ top: 0, behavior: "auto" });
-        resetInitialScroll();
-        setTimeout(resetInitialScroll, 0);
-        window.addEventListener("load", resetInitialScroll, { once: true });
-      }
+      window.addEventListener("hashchange", syncSectionLinks);
+      syncSectionLinks();
     </script>
   </body>
 </html>

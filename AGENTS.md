@@ -23,8 +23,11 @@ repetition and capacity-source explanations; keep execution-network strategy
 in supporting context. Lower costs remain an ambition to test per task.
 Customer hardware is optional and its deployment is agreed per task. Preserve
 all routes and link destinations. Jan reviewed the local revision and authorized the live update on
-2026-11-06. Document intake is the first direct main-navigation link, outside
-both dropdowns. Future publication still requires task-specific authority.
+2026-11-06. Document intake is the first direct main-navigation link; Fast
+Corpus is the second. Both products use one continuous page per language.
+Only Use cases / Toepassingen is a dropdown. Preserve legacy Fast Corpus
+section hashes and the #model redirect. Future publication still requires
+task-specific authority.
 
 Keep dedicated Fast Corpus first screens focused on:
 

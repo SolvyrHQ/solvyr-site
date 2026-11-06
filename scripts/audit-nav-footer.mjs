@@ -7,12 +7,6 @@ const repoRoot = dirname(dirname(fileURLToPath(import.meta.url)));
 const expected = {
   en: {
     nav: ["Document intake", "Fast Corpus", "Use cases", "Proof", "Security", "Example run", "Discuss a test"],
-    product: ["Overview", "Fit", "Output"],
-    productHrefIncludes: {
-      Overview: "#overview",
-      Fit: "#who",
-      Output: "#deliver",
-    },
     useCases: ["Extract and enrich data", "PDF to RAG corpus", "Document re-indexing", "Public-data quality runs"],
     useCaseHrefIncludes: {
       "Extract and enrich data": "use-cases/document-intake.html#output",
@@ -36,12 +30,6 @@ const expected = {
   },
   nl: {
     nav: ["Documentintake", "Fast Corpus", "Toepassingen", "Proefrun", "Security", "Voorbeeldrun", "Bespreek een test"],
-    product: ["Overzicht", "Fit", "Output"],
-    productHrefIncludes: {
-      Overzicht: "#overview",
-      Fit: "#who",
-      Output: "#deliver",
-    },
     useCases: ["Gegevens uitlezen en verrijken", "PDF naar RAG-corpus", "Documenten herindexeren", "Publieke datakwaliteit"],
     useCaseHrefIncludes: {
       "Gegevens uitlezen en verrijken": "use-cases/document-intake-nl.html#output",
@@ -145,14 +133,10 @@ for (const file of walk(repoRoot).sort()) {
     if (documentLinks.length !== 1 || documentLinks[0]?.label !== documentLabel || documentLinks[0]?.href !== documentHref || !/class="tab navDocument/.test(nav[0])) {
       failures.push(`${relPath} nav: document intake must appear once as the direct primary-product link`);
     }
-    const productLinks = links(dropdownFragment(nav[0], "navProduct"));
-    const productResult = compare(relPath, "product dropdown", productLinks.map((link) => link.label), expected[lang].product);
-    if (productResult) failures.push(productResult);
-    for (const link of productLinks) {
-      const required = expected[lang].productHrefIncludes[link.label];
-      if (required && !link.href.includes(required)) {
-        failures.push(`${relPath} product href for ${link.label}: expected to include ${required}, got ${link.href}`);
-      }
+    const corpusLinks = links(nav[0]).filter((link) => link.label === "Fast Corpus");
+    const corpusHref = `/fast-corpus${lang === "nl" ? "-nl" : ""}.html`;
+    if (corpusLinks.length !== 1 || corpusLinks[0]?.href !== corpusHref || !/class="tab navCorpus/.test(nav[0]) || /\bnavProduct\b/.test(nav[0])) {
+      failures.push(`${relPath} nav: Fast Corpus must appear once as a direct product link, without a dropdown`);
     }
     const useCaseLinks = links(dropdownFragment(nav[0], "navUseCases"));
     const dropdownResult = compare(relPath, "use-case dropdown", useCaseLinks.map((link) => link.label), expected[lang].useCases);
@@ -166,10 +150,13 @@ for (const file of walk(repoRoot).sort()) {
   }
 
   if (relPath === "fast-corpus.html" || relPath === "fast-corpus-nl.html") {
-    if (
-      !/scrollIntoView\(\{\s*block:\s*"nearest",\s*inline:\s*"center"\s*\}\)/.test(html)
-    ) {
-      failures.push(`${relPath} nav: active mobile tab is not scrolled into view`);
+    if ([...html.matchAll(/<h1\b/g)].length !== 1 || /data-page=|data-tab-target=|setActivePage/.test(html)) {
+      failures.push(`${relPath}: Fast Corpus must be one continuous page with one H1 and no tab controller`);
+    }
+    for (const section of ["overview", "who", "deliver", "security", "pilot"]) {
+      if (!html.includes(`id="${section}"`) || !html.includes(`id="${section}-panel"`)) {
+        failures.push(`${relPath}: missing native legacy anchor or panel ID for ${section}`);
+      }
     }
   }
 
