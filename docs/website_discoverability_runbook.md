@@ -29,11 +29,11 @@ sample bundle and the present search/retrieval permission policy.
    just because the deployment ran.
 6. Run `node scripts/audit-website.mjs`, then
    `node scripts/build-production.mjs`. Preview `.site-dist/` and test both
-   languages: desktop/mobile dropdown, first overview link and its actual
-   Fast Corpus overview view. Keep Document intake directly visible.
-   The overview's browser title must equal its static title after JavaScript
-   runs, including after switching away and back; avoid stale duplicate title
-   strings in the tab controller.
+   languages: desktop/mobile product links, the shared applications dropdown,
+   and Fast Corpus's continuous content. Both products stay directly visible.
+   Fast Corpus keeps native overview/fit/output/security/pilot anchors and all
+   old panel IDs; browser back/forward and language switches preserve section
+   navigation. Its browser title stays equal to its static title at every hash.
 
 ## Crawler policy
 

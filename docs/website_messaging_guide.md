@@ -421,7 +421,9 @@ uses the five-section path in Corporate Homepage And Route Hierarchy.
 - Reduce defensive exclusion lists. Explain scans, layouts, extraction and
   enrichment as work to agree and price, rather than a reason to reject the
   conversation. Preserve actual data-handling requirements and price scope.
-- Keep Fast Corpus's Overview, Fit, Output, Security and Pilot hash views.
+- Fast Corpus is one continuous page per language, like document intake.
+  Overview, Fit, Output, Security and Pilot are visible sections with native
+  anchors; preserve their existing hash destinations and panel/heading IDs.
 - Keep measured proof numbers, diagrams and download contents tied to their
   exact test. Schema validity is a format check, not a content-accuracy result.
 - Preserve concrete processing, storage, access, retention, deletion, logging,
@@ -479,12 +481,13 @@ Current product nav separates product discovery from the two next actions:
 - English: `Document intake`, `Fast Corpus`, `Use cases`, `Proof`, `Security`, `Example run`, `Discuss a test`
 - Dutch: `Documentintake`, `Fast Corpus`, `Toepassingen`, `Proefrun`, `Security`, `Voorbeeldrun`, `Bespreek een test`
 - `Document intake` / `Documentintake` is the first, direct main-navigation
-  link. Its product label appears once, outside both dropdowns. A task-specific
+  link. Its product label appears once, outside the applications dropdown. A task-specific
   application link to its output section may appear in the shared Use cases menu.
-- The `Fast Corpus` dropdown (formerly `Product`) preserves the existing
-  overview, Fit and Output destinations. Its first link is `Overview` in
-  English and `Overzicht` in Dutch; do not repeat `Fast Corpus` inside the
-  dropdown. Jan selected these labels in both languages on 2026-11-06.
+- `Fast Corpus` is the second direct main-navigation link, to the single
+  English or Dutch product page. On 2026-11-06 Jan replaced its dropdown and
+  tab views with one continuous page, like document intake. The existing
+  `#overview`, `#who`, `#deliver`, `#security` and `#pilot` links scroll to
+  visible sections. Keep the old `#model` redirect to About's execution section.
 - `Use cases` / `Toepassingen` is shared by document intake and Fast Corpus.
   `Extract and enrich data` / `Gegevens uitlezen en verrijken` links to the
   existing document-intake output section. The three corpus/data applications
@@ -497,7 +500,7 @@ Current product nav separates product discovery from the two next actions:
 - `Discuss a test` / `Bespreek een test` remains the primary acquisition action and
   routes to the controlled pilot intake.
 
-`Fast Corpus` and `Use cases` / `Toepassingen` are dropdowns. The shared
+Only `Use cases` / `Toepassingen` is a dropdown. The shared
 applications menu names tasks, rather than repeating the main product name:
 
 - English, in order: `Extract and enrich data`, `PDF to RAG corpus`,

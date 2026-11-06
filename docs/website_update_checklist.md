@@ -44,8 +44,9 @@ Revision reviewed locally on 2026-11-06; Jan subsequently authorized the live up
 - [ ] Every `use-cases/*.html` page has first-screen hero buttons: workload-specific scope CTA plus a human-facing proof, sample, or supporting context link.
 - [ ] Scans, layouts, extraction, matching and enrichment are tasks to agree, not blanket rejections; price and actual data-handling requirements remain clear.
 - [ ] Product-page header navigation stays stable, including the `Use cases` / `Toepassingen` dropdown; do not invent contextual top-right nav per page.
-- [ ] `Document intake` / `Documentintake` appears once as the first direct main-navigation link; the `Fast Corpus` dropdown starts with `Overview` / `Overzicht` and preserves the overview, Fit and Output destinations.
-- [ ] Existing primary nav routes, especially `Fit` and `Security`, remain reachable unless explicitly approved.
+- [ ] `Document intake` / `Documentintake` and `Fast Corpus` are the first two direct main-navigation links; only `Use cases` / `Toepassingen` is a dropdown.
+- [ ] Fast Corpus is one continuous page per language with one H1; all content is visible without tab switching. Native `#overview`, `#who`, `#deliver`, `#security`, `#pilot` and all old panel/heading IDs work; `#model` keeps its About redirect.
+- [ ] Existing routes, including the Fit section and standalone Security route, remain reachable.
 - [ ] The corporate homepage follows the document-first path: task, output, sample test, quality/cost review, processing requirements and next action.
 - [ ] The local corporate homepage has five concise sections; the removed capacity-source diagram and internal commercial milestones do not reappear.
 - [ ] Processing location is expressed as a task requirement and agreement; detailed execution strategy remains on About and in agent context.
@@ -104,7 +105,7 @@ Revision reviewed locally on 2026-11-06; Jan subsequently authorized the live up
 - [ ] Homepage renders without horizontal overflow on a narrow viewport.
 - [ ] On a narrow viewport, the active primary-nav tab scrolls into view and the open use-case menu does not leave clipped sibling tabs visible.
 - [ ] Main CTA target opens.
-- [ ] Tab navigation still works.
+- [ ] Native Fast Corpus section links scroll correctly below the sticky header, browser back/forward works, and language switching preserves the section hash.
 - [ ] `Use cases` / `Toepassingen` opens and its links work in the browser on desktop and narrow viewports; a static href check alone is not treated as interaction proof.
 - [ ] Prepared pilot emails target `hello@solvyr.com`, without sending a test message.
 - [ ] `node scripts/audit-website.mjs` passes for meaningful website changes.
