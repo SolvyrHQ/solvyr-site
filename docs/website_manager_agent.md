@@ -16,7 +16,9 @@ optional. Reduce duplication, capacity diagrams and defensive exclusions,
 while preserving all existing routes, link destinations, measured proof,
 price scope and concrete data-handling content. Jan authorized publication after local review. Document intake is the
 primary offer and the first direct main-navigation link in both languages;
-it is not duplicated inside Product or Use cases dropdowns.
+its product label is not duplicated inside dropdowns. The Fast Corpus dropdown
+replaces the generic Product label. Use cases is shared by document intake
+and Fast Corpus, with task-specific labels and existing route destinations.
 
 - Preserve the corporate ownership message: ERP and document-workflow builders
   keep the customer and workflow while Solvyr owns bounded AI execution,

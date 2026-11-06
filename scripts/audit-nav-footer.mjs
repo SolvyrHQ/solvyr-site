@@ -6,15 +6,16 @@ const repoRoot = dirname(dirname(fileURLToPath(import.meta.url)));
 
 const expected = {
   en: {
-    nav: ["Document intake", "Product", "Use cases", "Proof", "Security", "Example run", "Discuss a test"],
+    nav: ["Document intake", "Fast Corpus", "Use cases", "Proof", "Security", "Example run", "Discuss a test"],
     product: ["Fast Corpus", "Fit", "Output"],
     productHrefIncludes: {
       "Fast Corpus": "#overview",
       Fit: "#who",
       Output: "#deliver",
     },
-    useCases: ["PDF to RAG corpus", "Document re-indexing", "Public-data quality runs"],
+    useCases: ["Extract and enrich data", "PDF to RAG corpus", "Document re-indexing", "Public-data quality runs"],
     useCaseHrefIncludes: {
+      "Extract and enrich data": "use-cases/document-intake.html#output",
       "PDF to RAG corpus": "use-cases/pdf-to-rag-corpus.html",
       "Document re-indexing": "use-cases/document-reindexing.html",
       "Public-data quality runs": "use-cases/public-data-quality.html",
@@ -34,15 +35,16 @@ const expected = {
     },
   },
   nl: {
-    nav: ["Documentintake", "Product", "Toepassingen", "Proefrun", "Security", "Voorbeeldrun", "Bespreek een test"],
+    nav: ["Documentintake", "Fast Corpus", "Toepassingen", "Proefrun", "Security", "Voorbeeldrun", "Bespreek een test"],
     product: ["Fast Corpus", "Fit", "Output"],
     productHrefIncludes: {
       "Fast Corpus": "#overview",
       Fit: "#who",
       Output: "#deliver",
     },
-    useCases: ["PDF naar RAG-corpus", "Documenten herindexeren", "Publieke datakwaliteit"],
+    useCases: ["Gegevens uitlezen en verrijken", "PDF naar RAG-corpus", "Documenten herindexeren", "Publieke datakwaliteit"],
     useCaseHrefIncludes: {
+      "Gegevens uitlezen en verrijken": "use-cases/document-intake-nl.html#output",
       "PDF naar RAG-corpus": "use-cases/pdf-to-rag-corpus-nl.html",
       "Documenten herindexeren": "use-cases/document-reindexing-nl.html",
       "Publieke datakwaliteit": "use-cases/public-data-quality-nl.html",

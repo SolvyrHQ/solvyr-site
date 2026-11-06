@@ -476,12 +476,18 @@ body links, but the top-right nav should not become contextual per page.
 
 Current product nav separates product discovery from the two next actions:
 
-- English: `Document intake`, `Product`, `Use cases`, `Proof`, `Security`, `Example run`, `Discuss a test`
-- Dutch: `Documentintake`, `Product`, `Toepassingen`, `Proefrun`, `Security`, `Voorbeeldrun`, `Bespreek een test`
+- English: `Document intake`, `Fast Corpus`, `Use cases`, `Proof`, `Security`, `Example run`, `Discuss a test`
+- Dutch: `Documentintake`, `Fast Corpus`, `Toepassingen`, `Proefrun`, `Security`, `Voorbeeldrun`, `Bespreek een test`
 - `Document intake` / `Documentintake` is the first, direct main-navigation
-  link. It appears once in the navigation, outside both dropdowns.
-- `Product` preserves `Fast Corpus`, `Fit`, and `Output`.
-- `Use cases` / `Toepassingen` preserves the other three application routes.
+  link. Its product label appears once, outside both dropdowns. A task-specific
+  application link to its output section may appear in the shared Use cases menu.
+- The `Fast Corpus` dropdown (formerly `Product`) preserves the existing
+  Fast Corpus overview, Fit and Output links. Jan selected the clearer label
+  in both languages on 2026-11-06.
+- `Use cases` / `Toepassingen` is shared by document intake and Fast Corpus.
+  `Extract and enrich data` / `Gegevens uitlezen en verrijken` links to the
+  existing document-intake output section. The three corpus/data applications
+  retain their existing routes.
   Jan selected this final arrangement on 2026-11-06, replacing the earlier
   duplicated dropdown entries.
 - `Example run` / `Voorbeeldrun` opens the real four-record public .gitignore sample in
@@ -490,11 +496,12 @@ Current product nav separates product discovery from the two next actions:
 - `Discuss a test` / `Bespreek een test` remains the primary acquisition action and
   routes to the controlled pilot intake.
 
-`Product` and `Use cases` / `Toepassingen` are dropdowns. Keep their entries stable:
+`Fast Corpus` and `Use cases` / `Toepassingen` are dropdowns. The shared
+applications menu names tasks, rather than repeating the main product name:
 
-- English, in order: `PDF to RAG corpus`,
+- English, in order: `Extract and enrich data`, `PDF to RAG corpus`,
   `Document re-indexing`, `Public-data quality runs`.
-- Dutch, in order: `PDF naar RAG-corpus`,
+- Dutch, in order: `Gegevens uitlezen en verrijken`, `PDF naar RAG-corpus`,
   `Documenten herindexeren`, `Publieke datakwaliteit`.
 - Document intake covers classification, extraction, matching and enrichment;
   approval and downstream action remain with the customer/workflow partner.
