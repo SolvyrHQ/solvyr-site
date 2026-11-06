@@ -17,7 +17,16 @@ Primary CTA: Discuss a document test. Describe the documents and desired result 
 Solvyr Fast Corpus turns clean PDF and text backlogs into AI-ready JSONL
 with extracted text, chunks, embeddings, stable IDs, and an inspectable
 run report at a predictable starting unit price for standard batches.
-The public header tagline is: Fast Corpus for European AI teams.
+The fixed public header descriptor on every page, including Fast Corpus, is
+`AI document processing` in English and `AI-documentverwerking` in Dutch.
+Product and audience copy belongs in the page body.
+
+The Fast Corpus hero is `Your documents, ready for RAG and search.` /
+`Je documenten, klaar voor RAG en zoektoepassingen.` Solvyr handles document
+processing and returns corpus files, source references and a run report, so
+the customer's team can focus on its application. European sovereignty is
+made concrete for each corpus test through agreements on processing and
+storage location, access, retention and deletion before the test.
 
 Fast Corpus now has its own route at https://solvyr.com/fast-corpus.html. The
 corporate homepage at https://solvyr.com/ starts with a document task,

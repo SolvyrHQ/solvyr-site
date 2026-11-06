@@ -30,8 +30,11 @@ European execution-layer direction, while document intake remains the entry.
 - Preserve the corporate ownership message: ERP and document-workflow builders
   keep the customer and workflow while Solvyr owns bounded AI execution,
   validation, exceptions, and typed result delivery.
-- Preserve Fast Corpus as a dedicated bounded document/text backlog route to
-  AI-ready corpus output and run evidence.
+- Preserve Fast Corpus as a dedicated route to documents ready for RAG and
+  search. Solvyr handles corpus processing; the buyer focuses on the
+  application. Keep exact technical outputs under Output and European
+  sovereignty explicit through task-specific location, access and lifecycle
+  agreements.
 - Keep company-level agent answers classified as an AI execution layer and
   supported result layer, and route-level Fast Corpus answers classified as a
   managed corpus service.
@@ -43,9 +46,11 @@ European execution-layer direction, while document intake remains the entry.
 - Keep EU sovereignty and European execution visible for archives, public-sector
   teams, and connectors, while anchoring it in a concrete document or
   public-data workload.
-- Keep the corporate header descriptor consistent: `AI document processing`
-  in English and `AI-documentverwerking` in Dutch. The dedicated Fast Corpus routes may retain their
-  product taglines.
+- Keep the exact header descriptor on every public page, including Fast
+  Corpus: `AI document processing` in English and `AI-documentverwerking` in
+  Dutch. Jan fixed this on 2026-11-06. Product, audience and sovereignty copy
+  belongs in the body; change the descriptor only on his explicit direction.
+  The production-preferences audit rejects page-specific exceptions.
 - Keep capacity demand-led: Solvyr-controlled workers today, approved customer
   or partner capacity next, and European-provider overflow behind real workload
   demand. Do not use capacity acquisition as the corporate homepage CTA.

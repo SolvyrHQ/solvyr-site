@@ -54,6 +54,11 @@ This runs:
 - `scripts/audit-local-links.mjs`
 - `scripts/audit-accessibility-static.mjs`
 
+The production-preferences audit requires the same exact localized line under
+the logo on every public page, including Fast Corpus: `AI document processing`
+in English and `AI-documentverwerking` in Dutch. Product-specific exceptions
+fail the suite. Change this settled descriptor only on Jan's explicit direction.
+
 Also run:
 
 ```sh

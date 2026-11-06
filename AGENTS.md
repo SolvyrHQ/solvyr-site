@@ -34,9 +34,19 @@ states. Mobile uses the fixed shared grid; opening applications must not
 hide, resize or move the other controls. Header and footer logos lead to the
 matching English or Dutch homepage.
 
+The line under the logo is fixed on every public page, including Fast Corpus:
+`AI document processing` in English and `AI-documentverwerking` in Dutch.
+Do not adapt it to the product, audience, campaign or European narrative.
+Product promises and sovereignty context belong in the page body. Jan approved
+this shared rule on 2026-11-06; changing it requires his explicit direction.
+The production-preferences audit enforces the exact localized descriptor.
+
 Keep dedicated Fast Corpus first screens focused on:
 
-> bounded document/text backlog to AI-ready corpus output and run evidence
+> documents ready for RAG and search, with Solvyr handling the corpus pipeline
+
+Keep technical outputs under Output and European sovereignty concrete through
+corpus-specific agreements on processing/storage location, access and deletion.
 
 ## Working visual identity authority
 
