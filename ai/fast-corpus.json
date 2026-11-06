@@ -18,7 +18,8 @@
     "deployment_boundary": "Managed execution is the starting point. Customer hardware and specific placement are assessed and agreed for each task; they are not universal current availability claims.",
     "homepage": "https://solvyr.com/",
     "proof": "https://solvyr.com/proof.html",
-    "security": "https://solvyr.com/security.html"
+    "security": "https://solvyr.com/security.html",
+    "european_direction": "Solvyr is building a European AI execution layer. Control is made concrete through workload-specific agreements on processing location, access and retention."
   },
   "product": "Solvyr Fast Corpus",
   "provider": "Solvyr",

@@ -9,6 +9,8 @@ Bring a few example documents and describe the intended task. Solvyr tests outpu
 
 The aim is lower total cost at the required quality, including human review, correction and operating effort. Managed processing is the starting point; own hardware and specific placement are assessed and agreed per task. Own hardware is optional. Location alone is not a sovereignty or confidentiality guarantee.
 
+Solvyr is building a European AI execution layer. Control is made concrete through workload-specific agreements on processing location, access and retention.
+
 Primary CTA: Discuss a document test. Describe the documents and desired result first; agree sample rights and a transfer channel before sharing customer files. Public wording can be confident without turning unmeasured savings or an untested deployment into established evidence.
 
 

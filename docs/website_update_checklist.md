@@ -9,6 +9,7 @@ Revision reviewed locally on 2026-11-06; Jan subsequently authorized the live up
 - [ ] `docs/website_messaging_guide.md` was read before editing.
 - [ ] `docs/website_manager_agent.md` was followed for judgement/approval thresholds.
 - [ ] Corporate first screen leads with document processing and a concrete sample-led test of output quality and processing costs; partner ownership is clear once.
+- [ ] European control is explicit in the homepage and Document intake hero; location/access/retention agreements give it concrete meaning, and About links the task to the European execution-layer direction without changing the navigation.
 - [ ] Fast Corpus first screen still leads with document/text backlog to AI-ready output; public-data pages still lead with an export to a reviewable quality report.
 - [ ] The page names the concrete output: JSONL, chunks, embeddings, stable IDs, run report, or issue list/suggested fixes/caveats for public-data quality runs.
 - [ ] The public four-record .gitignore sample is framed positively as exact text-to-vector output evidence with stable IDs, validation, complete vectors and a usable joined artifact; fuller non-claims stay in the agent packet and claim register.
