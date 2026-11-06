@@ -244,6 +244,17 @@ buyer to adopt or operate an infrastructure platform.
 
 ## European Sovereignty Rule
 
+Jan approved the explicit European narrative on 2026-11-06: keep document
+intake as the customer entry, with `Document intake. European control.` /
+`Documentintake. Europese regie.` visible above the homepage and intake hero.
+The existing homepage control section states that Solvyr is building European
+AI execution; intake connects control to location, access and retention agreed
+up front. About connects document intake to a European execution layer across
+approved environments/providers, with capacity following real demand.
+Use the existing text blocks and preserve the shared navigation geometry.
+This is an owned development direction and task-specific operating agreement,
+not a universal deployment, residency or compliance guarantee.
+
 European execution and sovereignty should be visible for archives, libraries,
 municipalities, public-sector teams, research networks, and EU/NL connectors.
 Keep it attached to a real workload.

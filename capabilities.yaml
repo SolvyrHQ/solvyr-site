@@ -14,6 +14,7 @@ not_classified_as:
   - generic data platform
   - hosted RAG or search product
 header_tagline: AI document processing
+european_direction: Solvyr is building a European AI execution layer. Control is made concrete through workload-specific agreements on processing location, access and retention.
 summary: Bring example documents and a task. Test output quality and processing costs, then agree the next step. Partners keep the customer and workflow.
 positioning: Buyers delegate a supported result layer, not raw model calls, GPU-hours, arbitrary containers, or generic orchestration.
 partner_route:
